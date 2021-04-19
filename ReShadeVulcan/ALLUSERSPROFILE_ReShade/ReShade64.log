@@ -1,0 +1,96 @@
+10:55:01:366 [10980] | INFO  | Initializing crosire's ReShade version '4.9.1.1003' (64-bit) built on '2021-01-09 21:12:36' loaded from "C:\ProgramData\ReShade\ReShade64.dll" into "D:\No Man's Sky\Binaries\NMS.exe" ...
+10:55:01:377 [10980] | INFO  | Registering hooks for "user32.dll" ...
+10:55:01:377 [10980] | INFO  | > Libraries loaded.
+10:55:01:378 [10980] | INFO  | > Found 14 match(es). Installing ...
+10:55:01:388 [10980] | INFO  | Registering hooks for "ws2_32.dll" ...
+10:55:01:388 [10980] | INFO  | > Libraries loaded.
+10:55:01:388 [10980] | INFO  | > Found 8 match(es). Installing ...
+10:55:01:398 [10980] | INFO  | Registering hooks for "C:\Windows\system32\d2d1.dll" ...
+10:55:01:398 [10980] | INFO  | > Delayed.
+10:55:01:399 [10980] | INFO  | Registering hooks for "C:\Windows\system32\d3d9.dll" ...
+10:55:01:399 [10980] | INFO  | > Delayed.
+10:55:01:399 [10980] | INFO  | Registering hooks for "C:\Windows\system32\d3d10.dll" ...
+10:55:01:400 [10980] | INFO  | > Delayed.
+10:55:01:400 [10980] | INFO  | Registering hooks for "C:\Windows\system32\d3d10_1.dll" ...
+10:55:01:400 [10980] | INFO  | > Delayed.
+10:55:01:400 [10980] | INFO  | Registering hooks for "C:\Windows\system32\d3d11.dll" ...
+10:55:01:401 [10980] | INFO  | > Delayed.
+10:55:01:401 [10980] | INFO  | Registering hooks for "C:\Windows\system32\d3d12.dll" ...
+10:55:01:401 [10980] | INFO  | > Delayed.
+10:55:01:401 [10980] | INFO  | Registering hooks for "C:\Windows\system32\dxgi.dll" ...
+10:55:01:402 [10980] | INFO  | > Delayed.
+10:55:01:402 [10980] | INFO  | Registering hooks for "C:\Windows\system32\opengl32.dll" ...
+10:55:01:402 [10980] | INFO  | > Delayed.
+10:55:01:402 [10980] | INFO  | Initialized.
+10:55:01:403 [10980] | INFO  | Redirecting vkCreateInstance(pCreateInfo = 000000C9934FF630, pAllocator = 0000000000000000, pInstance = 000000C9934FF760) ...
+10:55:01:403 [10980] | INFO  | > Dumping enabled instance extensions:
+10:55:01:403 [10980] | INFO  |   VK_KHR_surface
+10:55:01:404 [10980] | INFO  |   VK_KHR_get_physical_device_properties2
+10:55:01:404 [10980] | INFO  |   VK_EXT_debug_utils
+10:55:01:404 [10980] | INFO  |   VK_KHR_surface
+10:55:01:404 [10980] | INFO  |   VK_KHR_win32_surface
+10:55:01:405 [10980] | INFO  | > Requesting new Vulkan instance for API version 1.1 ...
+10:55:03:562 [10980] | INFO  | Redirecting vkCreateWin32SurfaceKHR(instance = 0000026E4E2D0F60, pCreateInfo = 000000C9934FE9B0, pAllocator = 0000000000000000, pSurface = 00007FF6FCC3A088) ...
+10:55:03:568 [10980] | INFO  | Redirecting vkCreateDevice(physicalDevice = 0000026E771D1480, pCreateInfo = 000000C9934FBDC0, pAllocator = 0000000000000000, pDevice = 000000C9934FBD60) ...
+10:55:03:569 [10980] | INFO  | > Dumping enabled device extensions:
+10:55:03:569 [10980] | INFO  |   VK_KHR_swapchain
+10:55:03:569 [10980] | INFO  |   VK_EXT_shader_subgroup_ballot
+10:55:03:569 [10980] | INFO  |   VK_EXT_hdr_metadata
+10:55:03:569 [10980] | INFO  |   VK_KHR_maintenance1
+10:55:03:570 [10980] | INFO  |   VK_EXT_memory_budget
+10:55:03:570 [10980] | INFO  |   VK_EXT_memory_priority
+10:55:03:570 [10980] | INFO  |   VK_KHR_get_memory_requirements2
+10:55:03:570 [10980] | INFO  |   VK_KHR_dedicated_allocation
+10:55:03:570 [10980] | WARN  | Vulkan queue used for rendering has a low priority (0).
+10:55:03:808 [10980] | INFO  | Redirecting vkCreateSwapchainKHR(device = 0000026E772ADAE8, pCreateInfo = 000000C9934FE650, pAllocator = 0000000000000000, pSwapchain = 00007FF6FCC3A090) ...
+10:55:03:809 [10980] | INFO  | > Dumping swap chain description:
+10:55:03:809 [10980] | INFO  |   +-----------------------------------------+-----------------------------------------+
+10:55:03:809 [10980] | INFO  |   | Parameter                               | Value                                   |
+10:55:03:809 [10980] | INFO  |   +-----------------------------------------+-----------------------------------------+
+10:55:03:809 [10980] | INFO  |   | flags                                   | 0x4                                     |
+10:55:03:810 [10980] | INFO  |   | surface                                 | 0000026E4EF40CA0                        |
+10:55:03:810 [10980] | INFO  |   | minImageCount                           | 3                                       |
+10:55:03:810 [10980] | INFO  |   | imageFormat                             | VK_FORMAT_B8G8R8A8_UNORM                |
+10:55:03:811 [10980] | INFO  |   | imageColorSpace                         | 0                                       |
+10:55:03:811 [10980] | INFO  |   | imageExtent                             | 1920                1080                |
+10:55:03:811 [10980] | INFO  |   | imageArrayLayers                        | 1                                       |
+10:55:03:811 [10980] | INFO  |   | imageUsage                              | 0x17                                    |
+10:55:03:812 [10980] | INFO  |   | imageSharingMode                        | 0                                       |
+10:55:03:812 [10980] | INFO  |   | queueFamilyIndexCount                   | 0                                       |
+10:55:03:812 [10980] | INFO  |   | preTransform                            | 0x1                                     |
+10:55:03:813 [10980] | INFO  |   | compositeAlpha                          | 0x1                                     |
+10:55:03:813 [10980] | INFO  |   | presentMode                             | 2                                       |
+10:55:03:813 [10980] | INFO  |   | clipped                                 | false                                   |
+10:55:03:813 [10980] | INFO  |   | oldSwapchain                            | 0000000000000000                        |
+10:55:03:813 [10980] | INFO  |   +-----------------------------------------+-----------------------------------------+
+10:55:03:815 [10980] | INFO  | Installing delayed hooks for "C:\Windows\system32\opengl32.dll" (Just loaded via LoadLibrary("opengl32.dll")) ...
+10:55:03:815 [10980] | INFO  | > Found 360 match(es). Installing ...
+10:55:03:835 [10980] | INFO  | Redirecting wglSetPixelFormat(hdc = FFFFFFFFB20109AB, iPixelFormat = 1, ppfd = 000000C9934FDF40) ...
+10:55:04:024 [10980] | INFO  | Running on GeForce GTX 1660 Driver 461.72
+10:55:04:029 [10980] | INFO  | Recreated runtime environment on runtime 0000026FC15F3080.
+10:55:04:272 [08484] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\DPX.fx".
+10:55:04:273 [05956] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\LumaSharpen.fx".
+10:55:04:273 [06424] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\Tonemap.fx".
+10:55:04:281 [04944] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\FXAA.fx".
+10:55:04:283 [07648] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\AdaptiveSharpen.fx".
+10:55:04:289 [04944] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\Levels.fx".
+10:55:04:291 [06424] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\Vibrance.fx".
+10:55:04:291 [07648] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\ColorMatrix.fx".
+10:55:04:293 [08484] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\EyeAdaption.fx".
+10:55:04:297 [05956] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\SMAA.fx".
+10:55:04:297 [04944] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\LiftGammaGain.fx".
+10:55:04:302 [08484] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\FakeHDR.fx".
+10:55:04:302 [06424] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\Vignette.fx".
+10:55:04:302 [07648] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\Curves.fx".
+10:55:04:308 [05956] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\Technicolor.fx".
+10:55:04:309 [07648] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\Daltonize.fx".
+10:55:04:310 [08484] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\FilmGrain.fx".
+10:55:04:315 [05956] | INFO  | Successfully loaded "C:\ProgramData\ReShade\Shaders\Technicolor2.fx".
+10:55:04:369 [10980] | INFO  | Loading image files for textures ...
+10:55:16:867 [10980] | INFO  | Loading image files for textures ...
+10:55:19:045 [10980] | INFO  | Loading image files for textures ...
+10:55:22:216 [10980] | INFO  | Loading image files for textures ...
+10:55:27:615 [10980] | INFO  | Loading image files for textures ...
+10:55:29:388 [10980] | INFO  | Loading image files for textures ...
+10:55:29:388 [10980] | ERROR | Source "AreaTex.png" for texture 'V__areaTex' could not be found in any of the texture search paths!
+10:55:29:388 [10980] | ERROR | Source "SearchTex.png" for texture 'V__searchTex' could not be found in any of the texture search paths!
