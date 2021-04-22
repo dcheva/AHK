@@ -1,3 +1,4 @@
+; MIT by cheva 2020
 #SingleInstance force
 #Persistent
 #usehook
