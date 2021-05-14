@@ -1,6 +1,4 @@
 ;-) by Cheva (c) 2017-2021
-;-) POE keys
-            
 ;reload
 $^+R::Reload
 ;suspend/resume
