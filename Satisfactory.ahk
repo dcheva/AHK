@@ -8,11 +8,11 @@ $^+S::Suspend, toggle
 	Send, {LButton Down}
 	Return
 
-+$`::
+;+$`::
 $`::
 	Send, {LShift Down}
 	Send, {W Down}
 	Return
 
-LCtrl:: C
+;LCtrl:: C
 
