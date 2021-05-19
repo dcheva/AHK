@@ -4,7 +4,7 @@ $^+R::Reload
 ;suspend/resume
 $^+S::Suspend, toggle
 
-+$LButton::
+~$LButton::
 	Send, {LButton Down}
 	Return
 
