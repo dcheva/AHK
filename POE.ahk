@@ -23,4 +23,5 @@ $MButton::
   Send, 4
   Send, 5
   Send, {MButton}
+  Send, T
 return
