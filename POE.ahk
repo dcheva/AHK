@@ -25,3 +25,11 @@ $MButton::
   Send, {MButton}
   Send, T
 return
+
+$^A::
+  Send, ^T
+  Send, ^R
+  Send, ^E
+  Send, ^W
+  Send, ^Q
+return
