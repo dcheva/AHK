@@ -8,23 +8,23 @@ $1::
 $2::
 $3::
 $4::
-$5::
+;$5::
   Send, 1
   Send, 2
   Send, 3
   Send, 4
-  Send, 5
+; Send, 5
 return
 
-$MButton::
-  Send, 1
-  Send, 2
-  Send, 3
-  Send, 4
-  Send, 5
-  Send, {MButton}
-  Send, T
-return
+;$MButton::
+;  Send, 1
+;  Send, 2
+;  Send, 3
+;  Send, 4
+;  Send, 5
+;  Send, {MButton}
+;  Send, T
+;return
 
 $^A::
   Send, ^T
