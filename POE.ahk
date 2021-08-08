@@ -4,11 +4,11 @@ $^+R::Reload
 ;suspend/resume
 $^+S::Suspend, toggle
 
-$1:: 
-$2::
-$3::
-$4::
-$5::
+;$1:: 
+;$2::
+;$3::
+;$4::
+;$5::
   Send, 1
   Send, 2
   Send, 3
