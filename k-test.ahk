@@ -1,8 +1,7 @@
-;by cheva
+;by Cheva
 
 ;reload
 $^+R::Reload
 ;suspend/resume
 $^+S::Suspend, toggle
 
-SC021::F
