@@ -13,7 +13,7 @@ $4::
   Send, 2
   Send, 3
   Send, 4
-; Send, 5
+  Send, 5
 return
 
 ;$MButton::
