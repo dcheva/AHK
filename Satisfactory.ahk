@@ -9,10 +9,10 @@ $^+S::Suspend, toggle
 	Return
 
 ;+$`::
-$`::
-	Send, {LShift Down}
-	Send, {W Down}
-	Return
+;$`::
+;	Send, {LShift Down}
+;	Send, {W Down}
+;	Return
 
 ;LCtrl:: C
 
