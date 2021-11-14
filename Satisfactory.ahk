@@ -4,15 +4,23 @@ $^+R::Reload
 ;suspend/resume
 $^+S::Suspend, toggle
 
+CLK:=false
+
 +$LButton::
 	Send, {LButton Down}
-	Return
+Return
 
-;+$`::
-;$`::
-;	Send, {LShift Down}
-;	Send, {W Down}
-;	Return
++$e::
+CLK:=true
+Loop {
+	if(!CLK) 
+		break
+	Send, E
+	Sleep, 100
+}
+Return
 
-;LCtrl:: C
-
+$e::
+	CLK:=false
+	Send, e
+Return
