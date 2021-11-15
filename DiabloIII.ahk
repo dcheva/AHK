@@ -6,7 +6,7 @@ $^+S::Suspend, toggle
 
 $MButton::
 	Send, {MButton}
-	Send, Q
+	Send, q
 	Send, 1
 Return
 
@@ -14,4 +14,9 @@ $`::
 	Send, 2
 	Send, 3
 	Send, 4
+Return
+
+$Space::
+	Send, {Esc}
+	Send, {Space}
 Return
