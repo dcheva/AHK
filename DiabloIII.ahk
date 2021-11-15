@@ -4,8 +4,9 @@ $^+R::Reload
 ;suspend/resume
 $^+S::Suspend, toggle
 
-$LButton::
-	Send, {LButton}
+$MButton::
+	Send, {MButton}
+	Send, Q
 	Send, 1
 Return
 
