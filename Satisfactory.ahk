@@ -1,14 +1,20 @@
 ;-) by Cheva (c) 2017-2021
 ;reload
-$^+R::Reload
+^+$r::Reload
 ;suspend/resume
-$^+S::Suspend, toggle
+^+$s::Suspend, toggle
 
-CLK:=false
+$MButton::Numpad7
 
 +$LButton::
 	Send, {LButton Down}
 Return
+
++$Space::
+	Send, {Space Down}
+Return
+
+CLK:=false
 
 +$e::
 CLK:=true
@@ -22,5 +28,5 @@ Return
 
 $e::
 	CLK:=false
-	Send, e
+	Send, E
 Return
