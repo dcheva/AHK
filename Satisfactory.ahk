@@ -10,10 +10,6 @@ $MButton::Numpad7
 	Send, {LButton Down}
 Return
 
-+$Space::
-	Send, {Space Down}
-Return
-
 CLK:=false
 
 +$e::
