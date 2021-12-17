@@ -1,1 +1,0 @@
-for /d %%d in (*.*) DO "C:\Program Files\7-Zip\7z.exe" a -tzip -mx2 -r ".\%%d.zip" ".\%%d\*"
