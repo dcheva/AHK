@@ -1,5 +1,16 @@
 ;AHK v1.1.32.00
-;by cheva (c) MIT 2017-2019
+;by cheva (c) MIT 2017-2021
+
+SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
+
+;reload
+$^+R::Reload
+
+;suspend/resume
+$^+S::Suspend, toggle
+
+;pause/resume
+$^+P::Pause, toggle
 
 ;overview position
 global ViewTop := 240
@@ -58,17 +69,6 @@ clkLocked(pos:=1)
 	}
 }
 
-SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
-
-;reload
-$^+R::Reload
-
-;suspend/resume
-$^+S::Suspend, toggle
-
-;pause/resume
-$^+P::Pause, toggle
-
 ;enable mouse clicker (random time 1-10 sec, current mouse position)
 $^+C::
 	Send, {^+C}
@@ -83,9 +83,10 @@ $^+C::
 		}
 		MouseGetPos, OrigX, OrigY
 		MouseClick, left, %ClickX%, %ClickY%
+		Sleep, 100
+		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 		MouseMove, %OrigX%, %OrigY%
 		Sleep, % ran(3000, 6000)
-		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 	}
 return
 
