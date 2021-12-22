@@ -1,18 +1,28 @@
 ;-) by Cheva (c) 2017-2021
+
+SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
+
 ;reload
-^+$r::Reload
+ $+R::Reload
+$^+R::Reload
+
 ;suspend/resume
-^+$s::Suspend, toggle
+$^+S::Suspend, toggle
+
+;pause/resume
+$^+P::Pause, toggle
 
 $MButton::Numpad7
 
-+$LButton::
+$+LButton::
+	SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 	Send, {LButton Down}
 Return
 
 CLK:=false
 
-+$e::
+$+e::
+SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 CLK:=true
 Loop {
 	if(!CLK) 
