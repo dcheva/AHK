@@ -31,8 +31,3 @@ Loop {
 	Sleep, 100
 }
 Return
-
-$e::
-	CLK:=false
-	Send, E
-Return
