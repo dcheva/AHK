@@ -1,5 +1,5 @@
 ;AHK v1.1.32.00
-;by cheva (c) MIT 2017-2021
+;by cheva (c) MIT 2012-2022
 
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 
