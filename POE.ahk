@@ -11,7 +11,7 @@ $^+S::Suspend, toggle
 ;pause/resume
 $^+P::Pause, toggle
 
-
+$`::
 $1:: 
 $2::
 $3::
