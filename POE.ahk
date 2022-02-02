@@ -16,7 +16,10 @@ $1::
 $2::
 $3::
 $4::
-;$5::
+$5::
+$f::
+  Send, f
+  Sleep, 10  
   Send, 5
   Sleep, 10  
   Send, 4
@@ -27,16 +30,6 @@ $4::
   Sleep, 10  
   Send, 1
 return
-
-;$MButton::
-;  Send, 1
-;  Send, 2
-;  Send, 3
-;  Send, 4
-;  Send, 5
-;  Send, {MButton}
-;  Send, T
-;return
 
 $^A::
   Send, ^T
