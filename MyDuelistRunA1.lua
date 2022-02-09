@@ -6,8 +6,12 @@
 #------------------------------------------------
 #   Show Duelist A1 [NochSchneller build] v0.1
 #------------------------------------------------
+
+#@todo исключить кинжалы
+
 Show # 
-	AreaLevel <= 5
+	ItemLevel <= 16
+	Rarity <= Normal
 	LinkedSockets 3
 	SocketGroup "GGB"
 	SetFontSize 60
@@ -17,7 +21,8 @@ Show #
 	MinimapIcon 1 White  UpsideDownHouse 
 
 Show # 
-	AreaLevel <= 5
+	ItemLevel <= 16
+	Rarity <= Normal
 	LinkedSockets 3
 	SocketGroup "GGR"
 	SetFontSize 60
@@ -27,7 +32,8 @@ Show #
 	MinimapIcon 1 White  UpsideDownHouse 
 
 Show # 
-	AreaLevel <= 5
+	ItemLevel <= 16
+	Rarity <= Normal
 	LinkedSockets 3
 	SocketGroup "GRR"
 	SetFontSize 60
@@ -37,7 +43,8 @@ Show #
 	MinimapIcon 1 White  UpsideDownHouse 
 
 Show # 
-	AreaLevel <= 5
+	ItemLevel <= 16
+	Rarity <= Normal
 	LinkedSockets 3
 	SocketGroup "GGG"
 	SetFontSize 60
