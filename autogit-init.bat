@@ -1,13 +1,10 @@
-cd %1
-del .git -Y
+for %%I in (.) do set project=%%~nxI
 git init
 git add -A
 git commit -m Initial
-git branch -M initial
-git checkout -b initial
-git remote add origin https://github.com/dcheva/%1.git
-git branch --set-upstream-to=origin/initial initial
-echo # %1 GitHub repo >> README.MD
+git remote add origin https://github.com/dcheva/%project%.git
+git pull
+echo # %project% GitHub repo >> README.MD
 git add -A
 git commit -m Add README.MD
 git push --set-upstream origin initial
