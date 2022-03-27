@@ -2,7 +2,7 @@
 # © 2015-2017 by crosstales LLC (https://www.crosstales.com)
 #
 # List of all radio stations from 'RadioProviderUser'
-# Created: 26.03.2022
+# Created: 27.03.2022
 # Name;Url;DataFormat;AudioFormat;Station (optional);Genres (optional);Bitrate (in kbit/s, optional);Rating (0-5, optional);Description (optional);ExcludeCodec (optional);ChunkSize (in KB, optional);BufferSize (in KB, optional)
 Absolute 70'S Pop Radio;http://185.33.22.15:11006;Stream;MP3;http://1.fm;70s;128;4;;None
 Absolute 90'S Radio;http://185.33.21.112:80/90s_128;Stream;MP3;http://1.fm;90s;128;4;;None
@@ -22,7 +22,7 @@ Bay Smooth Jazz Radio;http://185.33.21.112:11230;Stream;MP3;http://1.fm;jazz;128
 Bossa Nova Hits;http://185.33.21.112:11049;Stream;MP3;http://1.fm;bossa nova;128;2;;None
 Brazilian Birds;http://185.33.21.112:11053;Stream;MP3;http://1.fm;ambient, nature;128;3;;None
 Cafe Radio;http://185.33.21.112:11058;Stream;MP3;http://1.fm;ambient;64;1;;None
-Chillout Lounge Radio;http://185.33.21.112:11065;Stream;MP3;http://1.fm;chill;128;4;;None
+Chillout Lounge Radio;http://185.33.21.112:11065;Stream;MP3;http://1.fm;chill;128;6;;None
 Circuit Pride Radio;http://185.33.21.112:11073;Stream;MP3;http://1.fm;dance;128;3;;None
 Classic Country;http://185.33.21.112:11061;Stream;MP3;http://1.fm;country;128;2;;None
 Classic Rock Replay Radio;http://185.33.21.112:11093;Stream;MP3;http://1.fm;rock;128;4;;None
@@ -144,7 +144,7 @@ Ambi Nature Radio;http://94.23.252.14:8067/;Stream;MP3;http://www.ambinature.xyz
 Celtic Moon;http://streaming.radionomy.com/CelticMoon;Stream;MP3;http://www.celticradio.net/;celtic, folk, new age, medieval;128;3;An Exquisite Mix of Irish, Scottish & Celtic Music. Perfect for night time listening when you desire the softer side of Celtic Music! Dark halls of the Castle await you - illuminated by the glow of the Celtic Moon.. Welcome to Serenity!;None
 Celt-rock-radio;http://streaming.radionomy.com/Celt-Rock-Radio;Stream;MP3;http://www.celticradio.net/;celtic, rock, medieval, folk;128;3;A rowdy mix of hard rocking Celtic music from the Pubs of America, Canada, Ireland and Scotland. Warning: Celt Rock Radio may result in the consuming of large quantities of Stout and other intoxicating beverages. Ok, let's party!;None
 Highlander Radio;http://streaming.radionomy.com/HighlanderRadio;Stream;MP3;http://www.celticradio.net/;celtic, medieval, folk;128;4;Highlander Radio is an award winning internet radio stream broadcasting a wide range of Celtic Music 24 hours day! From the heart pounding Pipes & Drums of the Highlands of Scotland, to the inspirational Gaelic vocals of Ireland. Music, Stories, News, History and more!;None
-Chocolat Radio;http://streaming.radionomy.com/CHOCOLAT-RADIO;Stream;MP3;http://www.chocolatradio.com/;ambient, chill, easy listening, lounge, trip-hop;128;4;;None
+Chocolat Radio;http://streaming.radionomy.com/CHOCOLAT-RADIO;Stream;MP3;http://www.chocolatradio.com/;ambient, chill, easy listening, lounge, trip-hop;128;0;;None
 Classic Rock 109;http://108.61.20.171:10042/stream/;Stream;MP3;http://www.classicrock109.com/;classic rock;128;4;Classic rock from the 60s, 70s, 80s and 90s. Music that stands the test of time.;None
 Discovery 2 Radio;http://streaming.radionomy.com/Discovery-2-Radio;Stream;MP3;http://www.discovery2radio.eu/;hits, pop, rock;128;3;;None
 4Allsounds;http://streaming.radionomy.com/4allsounds;Stream;MP3;http://www.djpeterboer.nl/4allsounds.html;alltime;128;3;for all sounds ever made there is a place and that's right here!;None
@@ -219,7 +219,7 @@ Progulus Radio;http://streaming.radionomy.com/ProgulusRadio;Stream;MP3;http://ww
 Progulus Metal Radio;http://streaming.radionomy.com/ProgulusMetalRadio;Stream;MP3;http://www.progulus.com/metal/;metal, hard rock;128;3;;None
 Punkrockers Radio;http://stream.punkrockers-radio.de:8000/prr.ogg;Stream;OGG;http://www.punkrockers-radio.de/;punk;128;3;;None
 Radio Alperose;http://streaming.radionomy.com/RadioAlperose;Stream;MP3;http://www.radio-alperose.ch/;folk, folktronica, country, oldies, pop, rock, german;128;2;;None
-Buddha Bar;http://streaming.radionomy.com/buddha-bar;Stream;MP3;http://www.radiobuddhabar.com/;chill, easy listening, lounge, trip-hop, ambient;128;4;;None
+Buddha Bar;http://streaming.radionomy.com/buddha-bar;Stream;MP3;http://www.radiobuddhabar.com/;chill, easy listening, lounge, trip-hop, ambient;128;6;;None
 Radio Monacensis;https://laut.fm/monacensis;Stream;MP3;http://www.radio-monacensis.de/;medieval;128;3;;None
 Radio Mozart;http://streaming.radionomy.com/Radio-Mozart;Stream;MP3;http://www.radiomozart.com/;baroque, classic, symphony, opera, chamber;128;4;;None
 Ambiance Brasil;http://streaming.radionomy.com/Ambiance-Brasil;Stream;MP3;http://www.radionomy.com/en/radio/ambiance-brasil/index;bossa nova, brazilian;128;3;;None
