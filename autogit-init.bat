@@ -1,10 +1,12 @@
 for %%I in (.) do set project=%%~nxI
-git init
-git add -A
-git commit -m Initial
+set branch=initial
+
+git init -b %branch%
 git remote add origin https://github.com/dcheva/%project%.git
-git pull
+git pull origin %branch%
+
 echo # %project% GitHub repo >> README.MD
 git add -A
 git commit -m "Add README.MD"
-git push
+git branch --set-upstream-to=origin/%branch% %branch%
+git push origin HEAD
