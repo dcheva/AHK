@@ -6,5 +6,5 @@ git remote add origin https://github.com/dcheva/%project%.git
 git pull
 echo # %project% GitHub repo >> README.MD
 git add -A
-git commit -m Add README.MD
+git commit -m "Add README.MD"
 git push
