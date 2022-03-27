@@ -7,4 +7,4 @@ git pull
 echo # %project% GitHub repo >> README.MD
 git add -A
 git commit -m Add README.MD
-git push --set-upstream origin initial
+git push
