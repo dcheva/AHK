@@ -2,6 +2,7 @@ git add -A
 git commit -am "%1 %2 %3 %4 %5 %6 %7 %8 %9"
 git pull
 git push origin HEAD
+git pull
 @echo off
 IF /I "%1" == "loop" (
     @echo on
