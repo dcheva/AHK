@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="DubsMintMenus.Settings">
+		<ShowMintBillsButton>True</ShowMintBillsButton>
+		<HideFinished>True</HideFinished>
+		<BoxSizeX>90</BoxSizeX>
+		<BoxSizeY>75</BoxSizeY>
+		<infocardW>350</infocardW>
+		<MaxHeight>650</MaxHeight>
+		<InfoWidth>358</InfoWidth>
+		<billTabH>300</billTabH>
+		<bBoxSizeY>55</bBoxSizeY>
+		<listWidth>445</listWidth>
+		<ResearchListWidth>350</ResearchListWidth>
+		<pinnedArchitectTabs IsNull="True" />
+		<ResourceReadout />
+		<WheelDefs />
+		<FBenchTemplates />
+	</ModSettings>
+</SettingsBlock>
