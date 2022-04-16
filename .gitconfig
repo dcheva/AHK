@@ -12,5 +12,8 @@
 	tree  = log --graph --abbrev-commit --decorate --format=format:'%C(bold magenta)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 	list = log --graph --decorate --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=relative
 	files = log --name-status --full-diff --all
+	rc = rm -r --cached .
 [init]
 	defaultBranch = initial
+[gui]
+	recentrepo = C:/Projects/horizons
