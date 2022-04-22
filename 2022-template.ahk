@@ -7,10 +7,16 @@ SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 $^+R::Reload
 
 ;suspend/resume
-$^+S::Suspend, toggle
+$^+S::
+  Suspend, toggle
+  SoundPlay %A_WinDir%\Media\Windows Battery Low.wav
+return
 
 ;pause/resume
-$^+P::Pause, toggle
+$^+P::
+  Pause, toggle
+  SoundPlay %A_WinDir%\Media\Windows Balloon.wav
+return
 
 ;exit
 $^+W::ExitApp
