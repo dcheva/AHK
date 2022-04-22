@@ -11,6 +11,9 @@ $^+S::Suspend, toggle
 ;pause/resume
 $^+P::Pause, toggle
 
+;exit
+$^+W::ExitApp
+
 $`::
 $1:: 
 $2::
