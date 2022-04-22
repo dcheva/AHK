@@ -6,29 +6,38 @@ SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 $^+R::Reload
 
 ;suspend/resume
-$^+S::Suspend, toggle
+$^+S::
+  Suspend, toggle
+  SoundPlay %A_WinDir%\Media\Windows Battery Low.wav
+return
 
 ;pause/resume
-$^+P::Pause, toggle
+$^+P::
+  Pause, toggle
+  SoundPlay %A_WinDir%\Media\Windows Balloon.wav
+return
 
-$`::
+;exit
+$^+W::ExitApp
+
+;$`::
 $1:: 
 $2::
 $3::
 $4::
-$5::
-$f::
-  Send, f
-  Sleep, 10  
-  Send, 5
-  Sleep, 10  
-  Send, 4
-  Sleep, 10  
-  Send, 3
+;$5::
+;$f::
+  Send, 1
   Sleep, 10  
   Send, 2
   Sleep, 10  
-  Send, 1
+  Send, 3
+  Sleep, 10  
+  Send, 4
+;  Sleep, 10  
+;  Send, 5
+;  Sleep, 10  
+;  Send, f
 return
 
 $^A::
@@ -43,6 +52,6 @@ $^A::
   Send, ^Q
 return
 
-$RButton::
-  Send, T
-  Send, {RButton}
+;$RButton::
+;  Send, T
+;  Send, {RButton}

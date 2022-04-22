@@ -115,7 +115,7 @@ try {  ; Hide window title.
         , "int", 1, "int64*", (3<<32)|3, "int", 8)
 }
 OnMessage(0x100, "gui_KeyDown", 2)
-try Gui Add, ActiveX, vwb w600 h400 hwndhwb, Shell.Explorer
+try Gui Add, ActiveX, vwb w600 h420 hwndhwb, Shell.Explorer
 try {
     if !wb
         throw Exception("Failed to create IE control")
@@ -266,17 +266,14 @@ InitUI() {
     w.enabledragdrop.checked := DefaultDragDrop
     w.separatebuttons.checked := DefaultIsHostApp
     w.enableuiaccess.checked := DefaultUIAccess && IsTrustedLocation(DefaultPath)
-    ; w.defaulttoutf8.checked := DefaultToUTF8
+    w.defaulttoutf8.checked := DefaultToUTF8
     if !A_Is64bitOS
         w.it_x64.style.display := "None"
     if A_OSVersion in WIN_2000,WIN_2003,WIN_XP,WIN_VISTA ; i.e. not WIN_7, WIN_8 or a future OS.
         w.separatebuttons.parentNode.style.display := "none"
-    if !UACIsEnabled
-        w.enableuiaccess.parentNode.style.display := "none"
-    else {
+    ; Check UIAccess and install dir do not conflict:
         w.enableuiaccess.onchange := Func("enableuiaccess_onchange")
         w.installdir.onchange := Func("installdir_onchange")
-    }
     w.switchPage("start")
     w.document.body.focus()
     ; Scale UI by screen DPI.  My testing showed that Vista with IE7 or IE9
@@ -292,12 +289,18 @@ InitUI() {
 CheckForUpdates() {
     local w := getWindow(), latestVersion := ""
     try {
-        whr := ComObjCreate("WinHttp.WinHttpRequest.5.1")
-        whr.Open("GET", "https://autohotkey.com/download/1.1/version.txt", true)
-        whr.Send()
-        whr.WaitForResponse()
-        latestVersion := whr.responseText
+        req := ComObjCreate("Msxml2.XMLHTTP")
+        req.open("GET", "https://autohotkey.com/download/1.1/version.txt?" SubStr(A_Now,1,8), true)
+        req.onreadystatechange := Func("VersionReceived").Bind(req)
+        req.send()
     }
+}
+
+VersionReceived(req) {
+    local w := getWindow(), latestVersion := ""
+    if req.readyState != 4
+        return
+    latestVersion := req.responseText
     if RegExMatch(latestVersion, "^(\d+\.){3}\d+") {
         if (latestVersion = ProductVersion)
             w.opt1.firstChild.innerText := "Reinstall (download required)"
@@ -546,10 +549,9 @@ CloseScriptsEtc(installdir, actionToContinue) {
             WinWaitClose % "ahk_id " close[A_Index],, 1
         }
     }
-    ; Close all help file and Window Spy windows automatically:
+    ; Close all help file windows automatically:
     GroupAdd autoclosegroup, AutoHotkey_L Help ahk_class HH Parent
     GroupAdd autoclosegroup, AutoHotkey Help ahk_class HH Parent
-    GroupAdd autoclosegroup, Active Window Info ahk_exe %installdir%\AU3_Spy.exe
     ; Also close the old Ahk2Exe (but the new one is a script, so it
     ; was already handled by the section above):
     GroupAdd autoclosegroup, Ahk2Exe v ahk_exe %installdir%\Compiler\Ahk2Exe.exe
@@ -903,7 +905,7 @@ CustomInstall() {
         ahk2exe: w.installcompiler.checked,
         dragdrop: w.enabledragdrop.checked,
         uiAccess: w.enableuiaccess.checked,
-        utf8: DefaultToUTF8, ;w.defaulttoutf8.checked
+        utf8: w.defaulttoutf8.checked,
         isHostApp: w.separatebuttons.checked
     )})
 }
@@ -947,13 +949,14 @@ Uninstall() {
     FileDelete AutoHotkeyA32_UIA.exe
     FileDelete AutoHotkeyU64_UIA.exe
     
-    FileDelete AU3_Spy.exe
+    FileDelete WindowSpy.ahk
     FileDelete AutoHotkey.chm
     FileDelete license.txt
     
-    ; This file would only exist if an older version of AutoHotkey_L
+    ; These files would only exist if an older version of AutoHotkey(_L)
     ; installed it:
     FileDelete Update.ahk
+    FileDelete AU3_Spy.exe
     
     ; Although the old installer was designed not to overwrite this in
     ; case the user made customizations, the old uninstaller deletes it:
@@ -962,8 +965,14 @@ Uninstall() {
     RemoveCompiler()
     
     FileDelete %ProductName% Website.url
-    if (CurrentStartMenu != "")  ; Must not remove A_ProgramsCommon itself!
-        FileRemoveDir %A_ProgramsCommon%\%CurrentStartMenu%, 1
+    if (CurrentStartMenu != "") { ; Must not remove A_ProgramsCommon itself!
+        local i, lnk
+        for i, lnk in ["AutoHotkey", "AutoIt3 Window Spy", "Active Window Info (Window Spy)"
+            , "AutoHotkey Help File", "Website", "AutoHotkey Setup", "Convert .ahk to .exe"
+            , "Window Spy"]
+            FileDelete %A_ProgramsCommon%\%CurrentStartMenu%\%lnk%.lnk
+        FileRemoveDir %A_ProgramsCommon%\%CurrentStartMenu% ; Only if empty.
+    }
     
     if !SilentMode
         MsgBox 0x2040, AutoHotkey Setup
@@ -978,6 +987,9 @@ Uninstall() {
         FileRemoveDir %CurrentPath%  ; Only if empty.
         ExitApp
     }
+    
+    ; Delete certificate and private key used to sign UIA executables.
+    try EnableUIAccess_DeleteCertAndKey("AutoHotkey")
     
     Gui Cancel
     
@@ -1099,12 +1111,12 @@ _Install(opt) {
         FileCreateDir %smpath%
         FileCreateShortcut %A_WorkingDir%\AutoHotkey.exe, %smpath%\AutoHotkey.lnk
         FileDelete %smpath%\AutoIt3 Window Spy.lnk
-        FileCreateShortcut %A_WorkingDir%\AU3_Spy.exe, %smpath%\Active Window Info (Window Spy).lnk
+        FileCreateShortcut %A_WorkingDir%\WindowSpy.ahk, %smpath%\Window Spy.lnk
         FileCreateShortcut %A_WorkingDir%\AutoHotkey.chm, %smpath%\AutoHotkey Help File.lnk
         IniWrite %ProductWebsite%, %ProductName% Website.url, InternetShortcut, URL
         FileCreateShortcut %A_WorkingDir%\%ProductName% Website.url, %smpath%\Website.lnk
         FileCreateShortcut %A_WorkingDir%\Installer.ahk, %smpath%\AutoHotkey Setup.lnk
-            ,,,, %A_WinDir%\System32\appwiz.cpl,, -1499
+            ,,,, %A_WinDir%\System32\appwiz.cpl,, -1500
         if opt.ahk2exe
             FileCreateShortcut %A_WorkingDir%\Compiler\Ahk2Exe.exe
                 , %smpath%\Convert .ahk to .exe.lnk
@@ -1133,8 +1145,10 @@ _Install(opt) {
     ; Set up system verbs:
     RegWrite REG_SZ, HKCR, %FileTypeKey%\Shell\Open,, Run Script
     RegWrite REG_SZ, HKCR, %FileTypeKey%\Shell\Edit,, Edit Script
-    if opt.ahk2exe
+    if opt.ahk2exe {
         RegWrite REG_SZ, HKCR, %FileTypeKey%\Shell\Compile,, Compile Script
+        RegWrite REG_SZ, HKCR, %FileTypeKey%\Shell\Compile-Gui,, Compile Script (GUI)...
+    }
     
     local value
     
@@ -1150,8 +1164,10 @@ _Install(opt) {
     catch
         RegWrite REG_SZ, HKCR, %FileTypeKey%\Shell\Edit\Command,, notepad.exe `%1
     
-    if opt.ahk2exe
-        RegWrite REG_SZ, HKCR, %FileTypeKey%\Shell\Compile\Command,, "%A_WorkingDir%\Compiler\Ahk2Exe.exe" /in "`%l"
+    if opt.ahk2exe {
+        RegWrite REG_SZ, HKCR, %FileTypeKey%\Shell\Compile\Command,, "%A_WorkingDir%\Compiler\Ahk2Exe.exe" /in "`%l" `%*
+        RegWrite REG_SZ, HKCR, %FileTypeKey%\Shell\Compile-Gui\Command,, "%A_WorkingDir%\Compiler\Ahk2Exe.exe" /gui /in "`%l" `%*
+    }
     
     local cmd
     cmd = "%A_WorkingDir%\AutoHotkey.exe"
@@ -1163,13 +1179,14 @@ _Install(opt) {
     if UACIsEnabled {
         ; Run as administrator
         RegWrite REG_SZ, HKCR, %FileTypeKey%\Shell\RunAs\Command,, "%A_WorkingDir%\AutoHotkey.exe" "`%1" `%*
-        ; Run with UI Access
-        if opt.uiAccess && FileExist(uiafile := StrReplace(exefile, ".exe", "_UIA.exe")) {
-            RegWrite REG_SZ, HKCR, %FileTypeKey%\Shell\uiAccess,, Run with UI Access
-            RegWrite REG_SZ, HKCR, %FileTypeKey%\Shell\uiAccess\Command,, "%A_WorkingDir%\%uiafile%" "`%1" `%*
-        } else
-            RegDelete HKCR, %FileTypeKey%\Shell\uiAccess
+        RegWrite REG_SZ, HKCR, %FileTypeKey%\Shell\RunAs, HasLUAShield
     }
+    ; Run with UI Access
+    if opt.uiAccess && FileExist(uiafile := StrReplace(exefile, ".exe", "_UIA.exe")) {
+        RegWrite REG_SZ, HKCR, %FileTypeKey%\Shell\uiAccess,, Run with UI Access
+        RegWrite REG_SZ, HKCR, %FileTypeKey%\Shell\uiAccess\Command,, "%A_WorkingDir%\%uiafile%" "`%1" `%*
+    } else
+        RegDelete HKCR, %FileTypeKey%\Shell\uiAccess
     
     if opt.dragdrop
         RegWrite REG_SZ, HKCR, %FileTypeKey%\ShellEx\DropHandler,, {86C86720-42A0-1069-A2E8-08002B30309D}
@@ -1192,6 +1209,7 @@ _Install(opt) {
     ; Write uninstaller info.
     RegWrite REG_SZ, HKLM, %UninstallKey%, DisplayName, %ProductName% %ProductVersion%
     RegWrite REG_SZ, HKLM, %UninstallKey%, UninstallString, "%A_WorkingDir%\AutoHotkey.exe" "%A_WorkingDir%\Installer.ahk"
+    RegWrite REG_SZ, HKLM, %UninstallKey%, QuietUninstallString, "%A_WorkingDir%\AutoHotkey.exe" "%A_WorkingDir%\Installer.ahk" /Uninstall
     RegWrite REG_SZ, HKLM, %UninstallKey%, DisplayIcon, %A_WorkingDir%\AutoHotkey.exe
     RegWrite REG_SZ, HKLM, %UninstallKey%, DisplayVersion, %ProductVersion%
     RegWrite REG_SZ, HKLM, %UninstallKey%, URLInfoAbout, %ProductWebsite%
@@ -1208,8 +1226,9 @@ _Install(opt) {
         ; As AutoHotkey.exe is probably in use by this script, the final
         ; step will be completed by another instance of this script:
         reopen_args := ""
-        for _, script in reopen
-            reopen_args .= " """ script.path """ """ script.exe """"
+        if AutoRestart
+            for _, script in reopen
+                reopen_args .= " """ script.path """ """ script.exe """"
         Run .\AutoHotkeyU32.exe "%A_ScriptFullPath%"
                 /exec kill %A_ScriptHwnd%
                 /exec setExe %exefile% %SilentMode%
@@ -1273,7 +1292,7 @@ InstallMainFiles() {
     if A_Is64bitOS
         InstallFile("AutoHotkeyU64.exe")
     
-    InstallFile("AU3_Spy.exe")
+    InstallFile("WindowSpy.ahk")
     InstallFile("AutoHotkey.chm")
     InstallFile("license.txt")
     
@@ -1287,6 +1306,7 @@ InstallMainFiles() {
 
 InstallUIAccessFiles(create) {
     local suffixList := "A32|U32" (A_Is64bitOS ? "|U64" : "")
+    local err, deleted_cert := false
     Loop Parse, suffixList, |
     {
         file = AutoHotkey%A_LoopField%_UIA.exe
@@ -1295,8 +1315,16 @@ InstallUIAccessFiles(create) {
         FileCopy AutoHotkey%A_LoopField%.exe, %file%, 1
         try
             EnableUIAccess(file)
-        catch
-            MsgBox 48, AutoHotkey Setup, Error creating %file%. ; Non-critical.
+        catch err {
+            if (err & 0xffff0000) = 0x80090000 && !deleted_cert {
+                try {
+                    EnableUIAccess_DeleteCertAndKey("AutoHotkey")
+                    EnableUIAccess(file)
+                    continue ; on success
+                }
+            }
+            MsgBox 48, AutoHotkey Setup, Error creating %file% (%err%). ; Non-critical.
+        }
     }
 }
 
@@ -1337,7 +1365,7 @@ EnableUIAccess(filename)
         , "uint", 0, "ptr", 0, "uint", 0x20000 ; SYSTEM_STORE_LOCAL_MACHINE
         , "wstr", "Root", "ptr")
     if !hStore
-        throw
+        throw "CertOpenStore"
     p := DllCall("Crypt32\CertFindCertificateInStore", "ptr", hStore
         , "uint", 0x10001 ; X509_ASN_ENCODING|PKCS_7_ASN_ENCODING
         , "uint", 0, "uint", 0x80007 ; FIND_SUBJECT_STR
@@ -1358,32 +1386,36 @@ EnableUIAccess_SetManifest(file)
         , "xmlns:v1='urn:schemas-microsoft-com:asm.v1' "
         . "xmlns:v3='urn:schemas-microsoft-com:asm.v3'")
     if !xml.load("res://" file "/#24/#1") ; Load current manifest
-        throw
+        throw "manifest/load"
     node := xml.selectSingleNode("/v1:assembly/v3:trustInfo/v3:security"
                     . "/v3:requestedPrivileges/v3:requestedExecutionLevel")
     if !node ; Not AutoHotkey v1.1?
-        throw
+        throw "manifest/parse"
     node.setAttribute("uiAccess", "true")
     xml := RTrim(xml.xml, "`r`n")
     VarSetCapacity(data, data_size := StrPut(xml, "utf-8") - 1)
     StrPut(xml, &data, "utf-8")
     if !(hupd := DllCall("BeginUpdateResource", "str", file, "int", false))
-        throw
+        throw "rsrc"
     r := DllCall("UpdateResource", "ptr", hupd, "ptr", 24, "ptr", 1
                     , "ushort", 1033, "ptr", &data, "uint", data_size)
     if !DllCall("EndUpdateResource", "ptr", hupd, "int", !r) && r
-        throw
+        throw "rsrc"
 }
 EnableUIAccess_CreateCert(CertName, hStore)
 {
     if !DllCall("Advapi32\CryptAcquireContext", "ptr*", hProv
+        , "str", CertName, "ptr", 0, "uint", 1, "uint", 0) ; PROV_RSA_FULL=1, open existing=0
+    {
+        if !DllCall("Advapi32\CryptAcquireContext", "ptr*", hProv
             , "str", CertName, "ptr", 0, "uint", 1, "uint", 8) ; PROV_RSA_FULL=1, CRYPT_NEWKEYSET=8
-        throw
-    prov := new CryptContext(hProv)
-    if !DllCall("Advapi32\CryptGenKey", "ptr", hProv
-            , "uint", 2, "uint", 0x4000001, "ptr*", hKey) ; AT_SIGNATURE=2, EXPORTABLE=..01
-        throw
-    key := new CryptKey(hKey)
+            throw "CryptAcquireContext"
+        prov := new CryptContext(hProv)
+        if !DllCall("Advapi32\CryptGenKey", "ptr", hProv
+                , "uint", 2, "uint", 0x4000001, "ptr*", hKey) ; AT_SIGNATURE=2, EXPORTABLE=..01
+            throw "CryptGenKey"
+        (new CryptKey(hKey)) ; To immediately release it.
+    }
     Loop 2
     {
         if A_Index = 1
@@ -1392,7 +1424,7 @@ EnableUIAccess_CreateCert(CertName, hStore)
             VarSetCapacity(bName, cbName), pbName := &bName
         if !DllCall("Crypt32\CertStrToName", "uint", 1, "str", "CN=" CertName
             , "uint", 3, "ptr", 0, "ptr", pbName, "uint*", cbName, "ptr", 0) ; X509_ASN_ENCODING=1, CERT_X500_NAME_STR=3
-            throw
+            throw "CertStrToName"
     }
     VarSetCapacity(cnb, 2*A_PtrSize), NumPut(pbName, NumPut(cbName, cnb))
     VarSetCapacity(endTime, 16)
@@ -1401,12 +1433,29 @@ EnableUIAccess_CreateCert(CertName, hStore)
     if !hCert := DllCall("Crypt32\CertCreateSelfSignCertificate"
         , "ptr", hProv, "ptr", &cnb, "uint", 0, "ptr", 0
         , "ptr", 0, "ptr", 0, "ptr", &endTime, "ptr", 0, "ptr")
-        throw
+        throw "CertCreateSelfSignCertificate"
     cert := new CertContext(hCert)
     if !DllCall("Crypt32\CertAddCertificateContextToStore", "ptr", hStore
         , "ptr", hCert, "uint", 1, "ptr", 0) ; STORE_ADD_NEW=1
-        throw
+        throw "CertAddCertificateContextToStore"
     return cert
+}
+EnableUIAccess_DeleteCertAndKey(CertName)
+{
+    DllCall("Advapi32\CryptAcquireContext", "ptr*", undefined
+        , "str", CertName, "ptr", 0, "uint", 1, "uint", 16) ; PROV_RSA_FULL=1, CRYPT_DELETEKEYSET=16
+    if !hStore := DllCall("Crypt32\CertOpenStore", "ptr", 10 ; STORE_PROV_SYSTEM_W
+        , "uint", 0, "ptr", 0, "uint", 0x20000 ; SYSTEM_STORE_LOCAL_MACHINE
+        , "wstr", "Root", "ptr")
+		throw "CertOpenStore"
+	if !p := DllCall("Crypt32\CertFindCertificateInStore", "ptr", hStore
+        , "uint", 0x10001 ; X509_ASN_ENCODING|PKCS_7_ASN_ENCODING
+        , "uint", 0, "uint", 0x80007 ; FIND_SUBJECT_STR
+        , "wstr", CertName, "ptr", 0, "ptr")
+		return 0
+	if !DllCall("Crypt32\CertDeleteCertificateFromStore", "ptr", p)
+		throw "CertDeleteCertificateFromStore"
+	return 1
 }
 class CryptContext {
     __New(p) {
@@ -1529,7 +1578,7 @@ body {
 	top: 0;
 	left: 0;
 	width: 600px;
-	height: 400px;
+	height: 420px;
 }
 h1 {
 	font-size: 37px;
@@ -1897,12 +1946,14 @@ function customInstall() {
 	<label for="installcompiler" class="install-only"><input type="checkbox" id="installcompiler" checked="checked"> Install script compiler
 		<p>Installs Ahk2Exe, a tool to convert any .ahk script into a stand-alone EXE.<br>
 		Also adds a "Compile" option to .ahk context menus.</p></label>
+	<label for="defaulttoutf8"><input type="checkbox" id="defaulttoutf8"> Default to UTF-8
+		<p>Adds <a href="#" onclick="AHK('ViewHelp', '/docs/Scripts.htm#CPn')">/CP65001</a> to the command line used when scripts are launched by Explorer.</p></label>
 	<label for="enabledragdrop"><input type="checkbox" id="enabledragdrop"> Enable drag &amp; drop
 		<p>Files dropped onto a .ahk script will launch that script (the files will be passed as parameters).  This can lead to accidental launching so you may wish to disable it.</p></label>
 	<label for="separatebuttons"><input type="checkbox" id="separatebuttons"> Separate taskbar buttons
-		<p>Causes each script which has visible windows to be treated as a separate program, but prevents AutoHotkey.exe from being pinned to the taskbar. <a href="#" onclick="AHK('ViewHelp', '/docs/Scripts.htm#Installer_IsHostApp')">[help]</a></p></label>
+		<p>Causes each script which has visible windows to be treated as a separate program, but prevents AutoHotkey.exe from being pinned to the taskbar. <a href="#" onclick="AHK('ViewHelp', '/docs/Program.htm#Installer_IsHostApp')">[help]</a></p></label>
 	<label for="enableuiaccess"><input type="checkbox" id="enableuiaccess"> Add 'Run with UI Access' to context menus
-		<p>UI Access enables scripts to automate administrative programs. <a href="#" onclick="AHK('ViewHelp', '/docs/Scripts.htm#Installer_uiAccess')">[help]</a></p></label>
+		<p>UI Access enables scripts to automate administrative programs. <a href="#" onclick="AHK('ViewHelp', '/docs/Program.htm#Installer_uiAccess')">[help]</a></p></label>
 	<a href="#" onclick="customInstall(); return false" id="install_button" class="button footer">Install</a>
 </div>
 
