@@ -17,27 +17,7 @@ Show 	#
 	SocketGroup "GGG"
 	SetFontSize 60
 	SetTextColor 0 0 0 255
-	SetBorderColor 255 180 180 255
-	SetBackgroundColor 0 255 0 255
-	MinimapIcon 1 Green  UpsideDownHouse 
-Show 	#
-	Class "Thrusting One Hand Swords" "One Hand Swords" "One Hand Axes" "Shields" "Gloves" "Boots" "Helmets" "Body Armours"
-	ItemLevel <= 16
-	LinkedSockets 3
-	SocketGroup "GGR"
-	SetFontSize 60
-	SetTextColor 0 0 0 255
-	SetBorderColor 255 180 180 255
-	SetBackgroundColor 0 255 0 255
-	MinimapIcon 1 Green  UpsideDownHouse 
-Show 	#
-	Class "Thrusting One Hand Swords" "One Hand Swords" "One Hand Axes" "Shields" "Gloves" "Boots" "Helmets" "Body Armours"
-	ItemLevel <= 16
-	LinkedSockets 3
-	SocketGroup "GRR"
-	SetFontSize 60
-	SetTextColor 0 0 0 255
-	SetBorderColor 255 180 180 255
+	SetBorderColor 255 100 100 255
 	SetBackgroundColor 0 255 0 255
 	MinimapIcon 1 Green  UpsideDownHouse 
 Show 	#
@@ -47,8 +27,28 @@ Show 	#
 	SocketGroup "RRR"
 	SetFontSize 60
 	SetTextColor 0 0 0 255
-	SetBorderColor 255 180 180 255
+	SetBorderColor 255 100 100 255
 	SetBackgroundColor 0 255 0 255
+	MinimapIcon 1 Green  UpsideDownHouse 
+Show 	#
+	Class "Thrusting One Hand Swords" "One Hand Swords" "One Hand Axes" "Shields" "Gloves" "Boots" "Helmets" "Body Armours"
+	ItemLevel <= 16
+	LinkedSockets 3
+	SocketGroup "GGR"
+	SetFontSize 50
+	SetTextColor 0 0 0 255
+	SetBorderColor 25 180 180 255
+	SetBackgroundColor 100 255 150 255
+	MinimapIcon 1 Green  UpsideDownHouse 
+Show 	#
+	Class "Thrusting One Hand Swords" "One Hand Swords" "One Hand Axes" "Shields" "Gloves" "Boots" "Helmets" "Body Armours"
+	ItemLevel <= 16
+	LinkedSockets 3
+	SocketGroup "GRR"
+	SetFontSize 50
+	SetTextColor 0 0 0 255
+	SetBorderColor 25 180 180 255
+	SetBackgroundColor 100 255 150 255
 	MinimapIcon 1 Green  UpsideDownHouse 
 
 #===============================================================================================================
