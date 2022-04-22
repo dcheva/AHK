@@ -1,10 +1,16 @@
-; by Cheva (c) 2017-2022
-; Ловилка Р4: Спининг v1.0.2
+;by cheva (c) MIT 2012-2022
+; Ловилка РР4: Спининг v1.0.2
+
+SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 
 ;reload
 $^+R::Reload
+
 ;suspend/resume
 $^+S::Suspend, toggle
+
+;pause/resume
+$^+P::Pause, toggle
 
 $^Numpad0::
 	Loop

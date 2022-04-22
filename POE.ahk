@@ -16,19 +16,19 @@ $1::
 $2::
 $3::
 $4::
-$5::
-$f::
-  Send, f
-  Sleep, 10  
-  Send, 5
-  Sleep, 10  
-  Send, 4
-  Sleep, 10  
-  Send, 3
+;$5::
+;$f::
+  Send, 1
   Sleep, 10  
   Send, 2
   Sleep, 10  
-  Send, 1
+  Send, 3
+  Sleep, 10  
+  Send, 4
+;  Sleep, 10  
+;  Send, 5
+;  Sleep, 10  
+;  Send, f
 return
 
 $^A::
@@ -43,6 +43,6 @@ $^A::
   Send, ^Q
 return
 
-$RButton::
-  Send, T
-  Send, {RButton}
+;$RButton::
+;  Send, T
+;  Send, {RButton}
