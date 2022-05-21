@@ -7,7 +7,11 @@ Direct3D:
     VRAM:     5992 MB
     Driver:   30.0.15.1259
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 - Completed reload, in  0.042 seconds
+=======
+- Completed reload, in  0.162 seconds
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
 OnLevelWasLoaded was found on PhotonHandler
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
@@ -109,9 +113,13 @@ Add a delegate to SceneManager.sceneLoaded instead to get notifications after sc
 <RI> Initialized touch support.
 WARNING: Shader Unsupported: 'Hidden/PostProcessing/FinalPass' - Pass '' has no vertex shader
 WARNING: Shader Unsupported: 'Hidden/PostProcessing/FinalPass' - Pass '' has no vertex shader
+<<<<<<< HEAD
 WARNING: Shader Unsupported: 'Hidden/PostProcessing/Uber' - Pass '' has no vertex shader
 WARNING: Shader Unsupported: 'Hidden/PostProcessing/Uber' - Pass '' has no vertex shader
 UnloadTime: 0.781200 ms
+=======
+UnloadTime: 1.191400 ms
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
 Unity v2017.4.29f1, Oculus Utilities v1.37.0, OVRPlugin v1.37.0, SDK v0.0.0.
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -157,7 +165,11 @@ ChangeLogo 3
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+<<<<<<< HEAD
 UnloadTime: 1.447700 ms
+=======
+UnloadTime: 2.710000 ms
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
 [OVRManager] OnDestroy
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -172,6 +184,7 @@ Rewired is not initialized! Are you missing a Rewired Input Manager in your scen
 
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 6750.
+<<<<<<< HEAD
 Total: 1.699800 ms (FindLiveObjects: 0.286700 ms CreateObjectMapping: 0.113400 ms MarkObjects: 1.137100 ms  DeleteObjects: 0.162500 ms)
 
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
@@ -180,10 +193,21 @@ Setting up 1 worker threads for Enlighten.
 
 Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 6751.
 Total: 2.698700 ms (FindLiveObjects: 0.429200 ms CreateObjectMapping: 0.320200 ms MarkObjects: 1.941400 ms  DeleteObjects: 0.007800 ms)
+=======
+Total: 2.923700 ms (FindLiveObjects: 0.396200 ms CreateObjectMapping: 0.168900 ms MarkObjects: 1.904000 ms  DeleteObjects: 0.454000 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 598 -> priority: 1 
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 6751.
+Total: 4.431200 ms (FindLiveObjects: 0.620500 ms CreateObjectMapping: 0.477900 ms MarkObjects: 3.270900 ms  DeleteObjects: 0.061600 ms)
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
 
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
 
 Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 6751.
+<<<<<<< HEAD
 Total: 2.174100 ms (FindLiveObjects: 0.285300 ms CreateObjectMapping: 0.158000 ms MarkObjects: 1.725200 ms  DeleteObjects: 0.005500 ms)
 
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/BillboardTree' - Pass '' has no vertex shader
@@ -192,6 +216,16 @@ UnloadTime: 6.182600 ms
 Fallback handler could not load library C:/Games/Ultimate Fishing Simulator/UltimateFishing_GOG_Data/Mono/data-0000019FC4D32C30.dll
 Fallback handler could not load library C:/Games/Ultimate Fishing Simulator/UltimateFishing_GOG_Data/Mono/data-0000019FC4F8F040.dll
 Fallback handler could not load library C:/Games/Ultimate Fishing Simulator/UltimateFishing_GOG_Data/Mono/data-0000019FBB72B040.dll
+=======
+Total: 3.739500 ms (FindLiveObjects: 0.360600 ms CreateObjectMapping: 0.157900 ms MarkObjects: 3.211900 ms  DeleteObjects: 0.008800 ms)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/BillboardTree' - Pass '' has no vertex shader
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.936300 ms
+Fallback handler could not load library D:/Games/Ultimate Fishing Simulator/UltimateFishing_GOG_Data/Mono/data-000001F11DC4A7D0.dll
+Fallback handler could not load library D:/Games/Ultimate Fishing Simulator/UltimateFishing_GOG_Data/Mono/data-000001F11DE15040.dll
+Fallback handler could not load library D:/Games/Ultimate Fishing Simulator/UltimateFishing_GOG_Data/Mono/data-000001F11B0AD040.dll
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
 Rewired: Searching for compatible XInput library...
 Rewired: Found Xinput1_4.dll.
 [OVRManager] OnDestroy
@@ -479,7 +513,11 @@ GalaxyCloudManager GetFileCount: 1
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+<<<<<<< HEAD
 GalaxyCloudManager GetFileNameAndSize(i, out FileSize) : PROFILE_0 - 78236
+=======
+GalaxyCloudManager GetFileNameAndSize(i, out FileSize) : PROFILE_0 - 78113
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -828,6 +866,7 @@ RenderTexture.Create: Depth|ShadowMap RenderTexture requested without a depth bu
 (Filename:  Line: 501)
 
 
+<<<<<<< HEAD
 Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 88299.
 Total: 82.768200 ms (FindLiveObjects: 3.698900 ms CreateObjectMapping: 4.119300 ms MarkObjects: 56.851400 ms  DeleteObjects: 18.098200 ms)
 
@@ -840,6 +879,16 @@ GALAXY Failed to sign in for reason FAILURE_REASON_GALAXY_SERVICE_NOT_AVAILABLE
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+=======
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 88303.
+Total: 132.968000 ms (FindLiveObjects: 9.766200 ms CreateObjectMapping: 7.788500 ms MarkObjects: 87.834300 ms  DeleteObjects: 27.578700 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 88313.
+Total: 113.082800 ms (FindLiveObjects: 7.970600 ms CreateObjectMapping: 7.594000 ms MarkObjects: 97.317900 ms  DeleteObjects: 0.200000 ms)
+
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
 CheckGameVersion gameVersion: 100 savedGameVersion: 100
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -1256,7 +1305,74 @@ ChangeUIInputStyle 2: GAZE
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Save LevelsManager
+GALAXY Failed to sign in for reason FAILURE_REASON_GALAXY_SERVICE_NOT_AVAILABLE
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Screen: 1600 x 900
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Screen.currentResolution: 1920 x 1080 Refresh: 60
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PlayerPrefs: 1600 x 900
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Current Mode:
+	1920 by 1080, 32 bit, 0 degrees, 60 hertz
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+<b><color=orange>ChangeResolution: 1920 | 1600 x 1080 | 900 fullscreen: False 60Hz</color></b>
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+<<<<<<< HEAD
+=======
+Save PlayerSettings
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Save PlayerSettings
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Save PlayerSettings
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Save PlayerSettings
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Save PlayerSettings
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Save RenderSettings
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Save PlayerSettings
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Save PlayerSettings
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Screen: 1600 x 900
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Screen.currentResolution: 1920 x 1080 Refresh: 60
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PlayerPrefs: 1600 x 900
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -1264,8 +1380,25 @@ Save SoundSettings
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+Save RenderSettings
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Save LevelsManager
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
+Save SoundSettings
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+<<<<<<< HEAD
 UnloadTime: 9.119000 ms
+=======
+UnloadTime: 16.708500 ms
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
 [OVRManager] OnDestroy
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -1275,6 +1408,7 @@ Overlay Awake
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 
+<<<<<<< HEAD
 Unloading 211 unused Assets to reduce memory usage. Loaded Objects now: 87191.
 Total: 102.210000 ms (FindLiveObjects: 3.549200 ms CreateObjectMapping: 4.556300 ms MarkObjects: 56.917000 ms  DeleteObjects: 37.187100 ms)
 
@@ -1282,13 +1416,27 @@ Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
 
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 87128.
 Total: 72.402700 ms (FindLiveObjects: 4.435800 ms CreateObjectMapping: 5.216100 ms MarkObjects: 57.927100 ms  DeleteObjects: 4.823400 ms)
+=======
+Unloading 211 unused Assets to reduce memory usage. Loaded Objects now: 87194.
+Total: 181.221400 ms (FindLiveObjects: 6.348700 ms CreateObjectMapping: 6.396300 ms MarkObjects: 92.872300 ms  DeleteObjects: 75.603500 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 87131.
+Total: 165.031400 ms (FindLiveObjects: 11.119200 ms CreateObjectMapping: 8.839600 ms MarkObjects: 135.106300 ms  DeleteObjects: 9.966200 ms)
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
 
 Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/BillboardTree' - Pass '' has no vertex shader
 WARNING: Shader Unsupported: 'Hidden/Nature/Tree Creator Bark Rendertex' - Pass '' has no vertex shader
 WARNING: Shader Unsupported: 'Hidden/Nature/Tree Creator Leaves Rendertex' - Pass '' has no vertex shader
 Shader 'Effects/Explosions/Distortion/CullBack': fallback shader 'Effects/Distortion/Free/CullOff' not found
+<<<<<<< HEAD
 UnloadTime: 4.157200 ms
+=======
+Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.638600 ms
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
 ShowGamepadUI: False
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -1329,7 +1477,11 @@ PhotonNetwork.playerName:
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+<<<<<<< HEAD
 fishSizes: [ 29, 51, 67, 0, 0 ] total: 145
+=======
+fishSizes: [ 36, 56, 54, 0, 0 ] total: 145
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -1394,6 +1546,7 @@ RenderTexture.Create: Depth|ShadowMap RenderTexture requested without a depth bu
 (Filename:  Line: 501)
 
 
+<<<<<<< HEAD
 Unloading 2516 unused Assets to reduce memory usage. Loaded Objects now: 156688.
 Total: 182.234500 ms (FindLiveObjects: 7.986100 ms CreateObjectMapping: 7.220600 ms MarkObjects: 96.667200 ms  DeleteObjects: 70.360100 ms)
 
@@ -1401,8 +1554,25 @@ Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
 
 Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 156694.
 Total: 109.803100 ms (FindLiveObjects: 7.311400 ms CreateObjectMapping: 6.798100 ms MarkObjects: 95.528200 ms  DeleteObjects: 0.164600 ms)
+=======
+Unloading 2514 unused Assets to reduce memory usage. Loaded Objects now: 156803.
+Total: 273.820300 ms (FindLiveObjects: 19.702400 ms CreateObjectMapping: 12.545600 ms MarkObjects: 151.214600 ms  DeleteObjects: 90.357200 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 156808.
+Total: 174.618300 ms (FindLiveObjects: 14.991100 ms CreateObjectMapping: 10.774800 ms MarkObjects: 148.655800 ms  DeleteObjects: 0.196200 ms)
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
 
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+FisheryExit FishingPlayer_Normal
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FisheryExit FishingPlayer_Normal
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 InitAttach
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -1412,8 +1582,12 @@ SitDown: 1,7
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 
+<<<<<<< HEAD
 Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 156714.
 Total: 109.924200 ms (FindLiveObjects: 7.257400 ms CreateObjectMapping: 6.916600 ms MarkObjects: 95.395600 ms  DeleteObjects: 0.354100 ms)
+=======
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 156827.
+Total: 157.130600 ms (FindLiveObjects: 11.905900 ms CreateObjectMapping: 9.349200 ms MarkObjects: 135.671300 ms  DeleteObjects: 0.203800 ms)
 
 FisheryExitExit fisheryExitCounter: 1
  
@@ -1422,9 +1596,22 @@ FisheryExitExit fisheryExitCounter: 1
 FisheryExitExit fisheryExitCounter: 0
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
+
+FisheryExitExit fisheryExitCounter: 1
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+<<<<<<< HEAD
+FisheryExitExit fisheryExitCounter: 0
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
 CheckRequiredEquipment
+=======
+Warning (FishingPlayer_Normal (vp_FPWeaponHandler)) Requested 'StartWeapon' (0FishingHands) was denied, likely by the inventory. Make sure it's present in the inventory from the beginning.
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -1433,19 +1620,163 @@ line.transform.localScale.x: 0,7284042
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 
+<<<<<<< HEAD
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 156720.
 Total: 110.499300 ms (FindLiveObjects: 7.574900 ms CreateObjectMapping: 7.193900 ms MarkObjects: 95.548300 ms  DeleteObjects: 0.182000 ms)
 
 Warning (FishingPlayer_Normal (vp_FPWeaponHandler)) Requested 'StartWeapon' (0FishingHands) was denied, likely by the inventory. Make sure it's present in the inventory from the beginning.
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+=======
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 156832.
+Total: 155.710300 ms (FindLiveObjects: 10.625300 ms CreateObjectMapping: 9.386200 ms MarkObjects: 135.481800 ms  DeleteObjects: 0.216600 ms)
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
 
 InitAttach
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+<<<<<<< HEAD
+=======
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonNetwork.playerName: 
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonNetwork.playerName: 
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonNetwork.playerName: 
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonNetwork.playerName: 
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonNetwork.playerName: 
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonNetwork.playerName: 
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
 Current Mode:
 	1920 by 1080, 32 bit, 0 degrees, 60 hertz
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Screen: 1600 x 900
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Screen.currentResolution: 1920 x 1080 Refresh: 60
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PlayerPrefs: 1600 x 900
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Save PlayerSettings
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -1457,10 +1788,11 @@ Save PlayerSettings
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-SitDown: 1,7
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+<<<<<<< HEAD
 TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -1502,6 +1834,202 @@ MSG: Соединение потеряно
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Соединение потеряно
+=======
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Save PlayerSettings
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ButtonClicked: 2 226
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnInputMappedMouse: 2 468
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnStoppedMouse
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnStopped
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ButtonClicked: 3 227
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnInputMappedMouse: 3 469
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnStoppedMouse
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnStopped
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ButtonClicked: 30 199
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnInputMapped: 30 199
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnStopped
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnStoppedMouse
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ButtonClicked: 5 228
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnInputMappedMouse: 5 470
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnStoppedMouse
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnStopped
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Save SoundSettings
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Save RenderSettings
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+userDataStore_PlayerPrefs Save
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonNetwork.playerName: 
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonNetwork.playerName: 
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Current Mode:
+	1920 by 1080, 32 bit, 0 degrees, 60 hertz
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Save Equipment
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Save PlayerSettings
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonNetwork.playerName: 
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonNetwork.playerName: 
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+throwFakeObject cast position: (162,3, 5,1, -83,5)
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Cast strength: 6392,375
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonNetwork.playerName: 
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -1510,6 +2038,22 @@ ROD_POD PutRod: RodPlace_01 FishingRod_SakuraRyokan_01(Clone) set: 0
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 ChangeEquipmentSet 1
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -1545,11 +2089,19 @@ PhotonNetwork.playerName:
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+<<<<<<< HEAD
 throwFakeObject cast position: (158,8, 4,0, -81,0)
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Cast strength: 8605,338
+=======
+throwFakeObject cast position: (162,0, 6,0, -83,3)
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Cast strength: 6757,577
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -1557,6 +2109,7 @@ ROD_POD PutRod: RodPlace_02 FishingRod_Senseatip9_02(Clone) set: 1
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+<<<<<<< HEAD
 ChangeEquipmentSet 3
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -1841,10 +2394,13 @@ StopSeeingBait
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+=======
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
 LikesBoilie
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+<<<<<<< HEAD
 TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -9146,6 +9702,8 @@ ROD_POD PutRod: RodPlace_02 FishingRod_Senseatip9_02(Clone) set: 1
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+=======
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
 ChangeEquipmentSet 2
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -9186,11 +9744,82 @@ InitAttach
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+<<<<<<< HEAD
 throwFakeObject cast position: (159,0, 3,9, -80,8)
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Cast strength: 8015,744
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+=======
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+<<<<<<< HEAD
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+=======
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
+PhotonNetwork.playerName: 
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+LikesBoilie
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+throwFakeObject cast position: (161,6, 5,3, -82,7)
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Cast strength: 5912,625
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonNetwork.playerName: 
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -9218,15 +9847,50 @@ LikesBoilie
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-LikesBoilie
- 
-(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
+<<<<<<< HEAD
 LikesBoilie
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 fishLength: 0,2448237 fishLengthRange: (0,35 1) False FISH/IDE_NAME
+=======
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+fishLength: 0,5229924 fishLengthRange: (0,2 0,8) True FISH/RAINBOW_TROUT_NAME
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FISH/RAINBOW_TROUT_NAME Bait Fish Interest: False eval: 0
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+fishLength: 0,5636714 fishLengthRange: (0,2 0,8) True FISH/BROWN_TROUT_NAME
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FISH/BROWN_TROUT_NAME Bait Fish Interest: False eval: 0
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonNetwork.playerName: 
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+HideLeftArm
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -9234,6 +9898,28 @@ LikesBoilie
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+LikesBoilie
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+<<<<<<< HEAD
 TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -9720,6 +10406,9 @@ fishLength: 0,6513807 fishLengthRange: (0,35 1) True FISH/BULL_TROUT_NAME
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 FISH/BULL_TROUT_NAME Bait Fish Interest: True eval: 0,6741531
+=======
+PhotonNetwork.playerName: 
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -9727,10 +10416,11 @@ LikesBoilie
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-LikesBoilie
+TimeoutDisconnect while connecting to: ns.exitgames.com:5058. Check if the server is available.
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+<<<<<<< HEAD
 fishLength: 0,6513807 fishLengthRange: (0,35 1) True FISH/BULL_TROUT_NAME
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -22062,6 +22752,21 @@ Save LevelsManager
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
 Network Disconnect
+=======
+OnDisconnectedFromPhoton
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MSG: Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Соединение потеряно
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+PhotonNetwork.playerName: 
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -22142,6 +22847,10 @@ Total: 126.072500 ms (FindLiveObjects: 7.446600 ms CreateObjectMapping: 7.074700
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+Network Disconnect
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 SteamCloudManager FileWrite: PROFILE_0
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -22155,6 +22864,7 @@ LoadStartMode: 1920 1920 1080 1080
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+<<<<<<< HEAD
 NullReferenceException: Object reference not set to an instance of an object
   at UltimateWater.Internal.CpuFFT.ComputeDirectionalSpectra (Int32 scaleIndex, UnityEngine.Vector2[] directional, UnityEngine.Vector3[] kMap) [0x00000] in <filename unknown>:0 
   at UltimateWater.Internal.CpuFFT.Compute (UltimateWater.Internal.WaterTileSpectrum targetSpectrum, Single time, Int32 outputBufferIndex) [0x00000] in <filename unknown>:0 
@@ -22164,10 +22874,13 @@ UnityEngine.DebugLogHandler:LogException(Exception, Object)
 UnityEngine.Logger:LogException(Exception, Object)
 UnityEngine.Debug:LogException(Exception)
 UltimateWater.Internal.WaterAsynchronousTasks:OnDisable()
+=======
+[OVRManager] OnDestroy
+>>>>>>> db30d1a32f551b0399e0d656d8bda4da7ba293b9
  
 (Filename:  Line: -1)
 
-[OVRManager] OnDestroy
+Network Disconnect
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
