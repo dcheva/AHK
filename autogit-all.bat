@@ -1,1 +1,1 @@
-cd . && for /d %%d in (*.*) DO cd "%%d" && autogit up && cd ..
+cd . && for /d %%d in (*.*) DO cd "%%d" && autogit up && cd .. && pause
