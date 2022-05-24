@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PrefsData>
-  <volumeGame>0.8</volumeGame>
-  <volumeMusic>0</volumeMusic>
+  <volumeGame>1</volumeGame>
+  <volumeMusic>0.5100756</volumeMusic>
   <volumeAmbient>1</volumeAmbient>
-  <screenWidth>0</screenWidth>
-  <screenHeight>0</screenHeight>
-  <fullscreen>False</fullscreen>
+  <screenWidth>1920</screenWidth>
+  <screenHeight>1080</screenHeight>
+  <fullscreen>True</fullscreen>
   <uiScale>1</uiScale>
   <customCursorEnabled>True</customCursorEnabled>
   <hatsOnlyOnMap>False</hatsOnlyOnMap>
   <plantWindSway>True</plantWindSway>
   <textureCompression>True</textureCompression>
-  <showRealtimeClock>False</showRealtimeClock>
+  <showRealtimeClock>True</showRealtimeClock>
   <animalNameMode>None</animalNameMode>
   <backgroundExpansionId IsNull="True" />
   <extremeDifficultyUnlocked>False</extremeDifficultyUnlocked>
@@ -19,7 +19,7 @@
   <preferredNames />
   <resourceReadoutCategorized>False</resourceReadoutCategorized>
   <runInBackground>True</runInBackground>
-  <edgeScreenScroll>True</edgeScreenScroll>
+  <edgeScreenScroll>False</edgeScreenScroll>
   <temperatureMode>Celsius</temperatureMode>
   <autosaveIntervalDays>1</autosaveIntervalDays>
   <testMapSizes>False</testMapSizes>

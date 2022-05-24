@@ -1,22 +1,29 @@
-Mono path[0] = 'D:/Games/RimWorld/RimWorldWin64_Data/Managed'
-Mono config path = 'D:/Games/RimWorld/MonoBleedingEdge/etc'
+Mono path[0] = 'C:/Games/RimWorld/RimWorldWin64_Data/Managed'
+Mono config path = 'C:/Games/RimWorld/MonoBleedingEdge/etc'
 Initialize engine version: 2019.4.30f1 (e8c891080a1f)
-[Subsystems] Discovering subsystems at path D:/Games/RimWorld/RimWorldWin64_Data/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Games/RimWorld/RimWorldWin64_Data/UnitySubsystems
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon R7 200 Series (ID=0x6610)
+    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
     Vendor:   
-    VRAM:     1004 MB
-    Driver:   27.20.21026.2006
+    VRAM:     5992 MB
+    Driver:   30.0.15.1259
 Begin MonoManager ReloadAssembly
-- Completed reload, in  0.152 seconds
+- Completed reload, in  0.179 seconds
 <RI> Initializing input.
 <RI> Input initialized.
-D3D11 device created for Microsoft Media Foundation video decoding.
 <RI> Initialized touch support.
-UnloadTime: 1.122700 ms
+UnloadTime: 0.882200 ms
 RimWorld 1.3.3287 rev1379
+Exception parsing latest version: System.FormatException: Input string was not in a correct format.
+  at System.Number.StringToNumber (System.String str, System.Globalization.NumberStyles options, System.Number+NumberBuffer& number, System.Globalization.NumberFormatInfo info, System.Boolean parseDecimal) [0x00057] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Number.ParseInt32 (System.String s, System.Globalization.NumberStyles style, System.Globalization.NumberFormatInfo info) [0x00013] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Int32.Parse (System.String s, System.Globalization.NumberStyles style, System.IFormatProvider provider) [0x0000e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Convert.ToInt32 (System.String value, System.IFormatProvider provider) [0x00005] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at RimWorld.LatestVersionGetter+<Start>d__4.MoveNext () [0x000bf] in <8db1dbcd94b740f783db630681f0c358>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
 Mod Simply More Bridges: targetVersion field is obsolete, use supportedVersions instead. 
 (Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
 
@@ -35,148 +42,136 @@ Mod No Debris is missing supported versions list in About.xml! (example: <suppor
 Mod No Debris is missing packageId in About.xml! (example: <packageId>AuthorName.ModName.Specific</packageId>) 
 (Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
 
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428D5B5010.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000142652328F0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428D76DE20.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428D78B640.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-0000014266ECF770.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-0000014266EDC990.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428D99A2F0.dll
-ReflectionTypeLoadException getting types in assembly SimplyMoreBridges: System.Reflection.ReflectionTypeLoadException: Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
-  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
-  at System.Reflection.Assembly.GetTypes () [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
-  at Verse.ModAssemblyHandler.AssemblyIsUsable (System.Reflection.Assembly asm) [0x00000] in <8db1dbcd94b740f783db630681f0c358>:0 
-
-Loader exceptions:
-   => System.TypeLoadException: Could not resolve type with token 0100000c (from typeref, class/assembly Harmony.CodeInstruction, 0Harmony, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null)
-   => System.TypeLoadException: Could not resolve type with token 0100000c (from typeref, class/assembly Harmony.CodeInstruction, 0Harmony, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null)
- 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DA0CA30.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DA18440.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DAEC060.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DB37A80.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DB93AB0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DBB46C0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DBE64F0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DBE9500.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DC1AB30.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DC2CF60.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DC5F8C0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DC642D0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DC7D4F0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DC7E700.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DC8FB20.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DCBE850.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DCDCA80.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DCDF090.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DCEC0B0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DCF00C0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DD115F0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DD2F610.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DD31020.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DD38840.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DD52860.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DD6ED00.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DDA8010.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DDCDC40.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DDCF250.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DDD0860.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DDE2C80.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DDF3EA0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DEA7D50.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DEAC970.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DF30540.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DF4F570.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DF5C780.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DF64790.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DF743A0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DF9C9D0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DFA75E0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DFDA310.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DFE2D20.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428DFEAD40.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E003D70.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E008980.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E00AB90.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E00F9B0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E02E9D0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E062000.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E066A10.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E145C60.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E14C670.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E15B890.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E164CB0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E16B0C0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E171AD0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E1826E0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E1B1E20.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E1BC830.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E1CE240.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E1D8860.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E257010.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E25CC30.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E25EA40.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E263850.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E269A60.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E270E70.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E9F2C90.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EADCEB0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EAE30C0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EAF06E0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EAF30F0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EAF8F10.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EAFC320.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EAFE730.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428D55A890.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EBD3F90.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428ECB51D0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428ECDC7F0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428ECDE600.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428ECE3810.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428ECE6A20.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428ECEF040.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428E225E80.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428ED07660.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428ED22090.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EDF2AB0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EE169F0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EE1EC00.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EE2D430.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EE30440.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EE31650.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EE35660.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EEF8890.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EEFACA0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EEFEAB0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EFC7CD0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EFDAAE0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EFDBCF0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428EFF4D00.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F0D0940.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F0F4D70.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F113990.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F1359C0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F13B3E0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F232610.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F237620.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F23DC10.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F240C20.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F31AA50.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F393010.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F39A820.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F478450.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F47E260.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F493490.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F55DAB0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F5660C0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428D555870.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F569AE0.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428F795010.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-000001428FA90070.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-0000014267333010.dll
-Fallback handler could not load library D:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000142901FF030.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F6A76040.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F621D120.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234D2FA31B0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F6C4D840.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234D2CB24B0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F6DFD010.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F6E1DC40.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F6E29650.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7CF23F0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7D3DE10.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7D71E20.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7D92A30.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7DC0850.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7DD3870.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7DFCE90.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7E072B0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7E43700.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7E48920.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7E63B50.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7E65570.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7E6E980.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7E9D9A0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7EBE3F0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7EC8A10.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7ED1A30.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7ED5A40.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7F41010.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7F5D030.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7F5EA40.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7F62250.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7F82270.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7F030B0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7F96680.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7FA5AB0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7FAB0D0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7FAC6E0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7FDCB20.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F7FE5D30.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F80DB010.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F80DDC20.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8115840.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F812C860.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8139A70.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8141A80.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F81676C0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F817FCD0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F81928F0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F81DE130.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F81E6B40.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F81EAB50.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F81F3B60.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F81F8770.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F81FA980.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F81FF7A0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F82227C0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8233DD0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F823A7F0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8307A30.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F830EA20.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8315C30.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F831C050.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8322460.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8328E70.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8341A90.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8364CB0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F836F6C0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F83C7010.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F83CD630.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F84B0E60.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F84B2A70.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F84B4880.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F84B9690.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F84CF8B0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F84FACE0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F85D0110.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F86C2340.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F86E2020.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F86ED630.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F86F0040.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F86F1E50.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F86F5260.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F871F690.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F872DB30.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F880CAE0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F88E9D20.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8911340.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8913150.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8919370.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F891C580.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8924BA0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F83A5230.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F893D1C0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8955BE0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8A1E600.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8A42020.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8A4A230.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8A58A60.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8A5BA70.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8A5CC80.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8A60C90.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8B13EB0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8B162C0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8B1A0D0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8B1E4F0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8C25290.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8B41330.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8C264A0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8CF86D0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8B5A340.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8D30500.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8D4E520.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8D51F30.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8E96C30.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8E9BC40.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8EA2C60.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8EA5C70.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8F77A90.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8FAE4B0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8FB5CC0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F90938F0.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F9099700.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F909E920.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F9178F50.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F9181560.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F8726300.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F918BF80.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F92AE050.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F9473140.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F94EB030.dll
+Fallback handler could not load library C:/Games/RimWorld/RimWorldWin64_Data/Mono/data-00000234F9B27BF0.dll
 [HugsLib] version 9.0.1
 [HugsLib] early-initializing AllowTool
 <color=green>Rim73 Compatibility</color> > Added compatibility with SmartSpeed
@@ -188,73 +183,7 @@ Repairable Gear :: initialized
 Loaded What's That Mod.
 [CM_Prioritize_Research] - patching to allow research prioritizing.
 DubsMintMenus v1.3.995
-XML error: <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth> doesn't correspond to any field in type TerrainDef. Context: <TerrainDef ParentName="DeepWaterBridgeMetalBase"><edgeType>Hard</edgeType><renderPrecedence>400</renderPrecedence><layerable>true</layerable><affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances><designationCategory>Structure</designationCategory><fertility>0</fertility><constructEffect>ConstructMetal</constructEffect><acceptTerrainSourceFilth>True</acceptTerrainSourceFilth><destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed><destroyEffect>Bridge_Collapse</destroyEffect><destroyEffectWater>Bridge_CollapseWater</destroyEffectWater><description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description><uiIconPath>Terrain/Surfaces/DeepWaterBridge_MenuIcon</uiIconPath><terrainAffordanceNeeded>BridgeableDeep</terrainAffordanceNeeded><resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed><statBases><WorkToBuild>3200</WorkToBuild><Flammability>0.2</Flammability></statBases><destroyOnBombDamageThreshold>40</destroyOnBombDamageThreshold><designatorDropdown>Bridge_DeepWater</designatorDropdown><researchPrerequisites><li>DeepWaterBridges</li></researchPrerequisites><texturePath>Terrain/Surfaces/DeepWaterBridgeMetal</texturePath><defName>DeepWaterBridgeSteel</defName><label>steel deep water bridge</label><color>(105,105,105)</color><costList><Steel>20</Steel></costList></TerrainDef> 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-XML error: <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth> doesn't correspond to any field in type TerrainDef. Context: <TerrainDef ParentName="DeepWaterBridgeMetalBase"><edgeType>Hard</edgeType><renderPrecedence>400</renderPrecedence><layerable>true</layerable><affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances><designationCategory>Structure</designationCategory><fertility>0</fertility><constructEffect>ConstructMetal</constructEffect><acceptTerrainSourceFilth>True</acceptTerrainSourceFilth><destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed><destroyEffect>Bridge_Collapse</destroyEffect><destroyEffectWater>Bridge_CollapseWater</destroyEffectWater><description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description><uiIconPath>Terrain/Surfaces/DeepWaterBridge_MenuIcon</uiIconPath><terrainAffordanceNeeded>BridgeableDeep</terrainAffordanceNeeded><resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed><statBases><WorkToBuild>3200</WorkToBuild><Flammability>0.2</Flammability></statBases><destroyOnBombDamageThreshold>40</destroyOnBombDamageThreshold><designatorDropdown>Bridge_DeepWater</designatorDropdown><researchPrerequisites><li>DeepWaterBridges</li></researchPrerequisites><texturePath>Terrain/Surfaces/DeepWaterBridgeMetal</texturePath><defName>DeepWaterBridgePlasteel</defName><label>plasteel deep water bridge</label><color>(160,178,181)</color><costList><Steel>5</Steel><Plasteel>15</Plasteel></costList></TerrainDef> 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-XML error: <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth> doesn't correspond to any field in type TerrainDef. Context: <TerrainDef ParentName="DeepWaterBridgeStoneBase"><edgeType>Hard</edgeType><renderPrecedence>400</renderPrecedence><layerable>true</layerable><affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances><designationCategory>Structure</designationCategory><fertility>0</fertility><constructEffect>ConstructMetal</constructEffect><acceptTerrainSourceFilth>True</acceptTerrainSourceFilth><destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed><destroyEffect>Bridge_Collapse</destroyEffect><destroyEffectWater>Bridge_CollapseWater</destroyEffectWater><description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description><uiIconPath>Terrain/Surfaces/DeepWaterBridge_MenuIcon</uiIconPath><terrainAffordanceNeeded>BridgeableDeep</terrainAffordanceNeeded><resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed><statBases><WorkToBuild>3200</WorkToBuild><Flammability>0.2</Flammability></statBases><destroyOnBombDamageThreshold>40</destroyOnBombDamageThreshold><designatorDropdown>Bridge_DeepWater</designatorDropdown><researchPrerequisites><li>DeepWaterBridges</li></researchPrerequisites><texturePath>Terrain/Surfaces/DeepWaterBridgeStone</texturePath><defName>DeepWaterBridgeSandstone</defName><label>sandstone deep water bridge</label><color>(126,104,94)</color><costList><Steel>5</Steel><BlocksSandstone>17</BlocksSandstone></costList></TerrainDef> 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-XML error: <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth> doesn't correspond to any field in type TerrainDef. Context: <TerrainDef ParentName="DeepWaterBridgeStoneBase"><edgeType>Hard</edgeType><renderPrecedence>400</renderPrecedence><layerable>true</layerable><affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances><designationCategory>Structure</designationCategory><fertility>0</fertility><constructEffect>ConstructMetal</constructEffect><acceptTerrainSourceFilth>True</acceptTerrainSourceFilth><destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed><destroyEffect>Bridge_Collapse</destroyEffect><destroyEffectWater>Bridge_CollapseWater</destroyEffectWater><description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description><uiIconPath>Terrain/Surfaces/DeepWaterBridge_MenuIcon</uiIconPath><terrainAffordanceNeeded>BridgeableDeep</terrainAffordanceNeeded><resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed><statBases><WorkToBuild>3200</WorkToBuild><Flammability>0.2</Flammability></statBases><destroyOnBombDamageThreshold>40</destroyOnBombDamageThreshold><designatorDropdown>Bridge_DeepWater</designatorDropdown><researchPrerequisites><li>DeepWaterBridges</li></researchPrerequisites><texturePath>Terrain/Surfaces/DeepWaterBridgeStone</texturePath><defName>DeepWaterBridgeGranite</defName><label>granite deep water bridge</label><color>(105,95,97)</color><costList><Steel>5</Steel><BlocksGranite>17</BlocksGranite></costList></TerrainDef> 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-XML error: <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth> doesn't correspond to any field in type TerrainDef. Context: <TerrainDef ParentName="DeepWaterBridgeStoneBase"><edgeType>Hard</edgeType><renderPrecedence>400</renderPrecedence><layerable>true</layerable><affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances><designationCategory>Structure</designationCategory><fertility>0</fertility><constructEffect>ConstructMetal</constructEffect><acceptTerrainSourceFilth>True</acceptTerrainSourceFilth><destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed><destroyEffect>Bridge_Collapse</destroyEffect><destroyEffectWater>Bridge_CollapseWater</destroyEffectWater><description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description><uiIconPath>Terrain/Surfaces/DeepWaterBridge_MenuIcon</uiIconPath><terrainAffordanceNeeded>BridgeableDeep</terrainAffordanceNeeded><resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed><statBases><WorkToBuild>3200</WorkToBuild><Flammability>0.2</Flammability></statBases><destroyOnBombDamageThreshold>40</destroyOnBombDamageThreshold><designatorDropdown>Bridge_DeepWater</designatorDropdown><researchPrerequisites><li>DeepWaterBridges</li></researchPrerequisites><texturePath>Terrain/Surfaces/DeepWaterBridgeStone</texturePath><defName>DeepWaterBridgeLimestone</defName><label>limestone deep water bridge</label><color>(158,153,135)</color><costList><Steel>5</Steel><BlocksLimestone>17</BlocksLimestone></costList></TerrainDef> 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-XML error: <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth> doesn't correspond to any field in type TerrainDef. Context: <TerrainDef ParentName="DeepWaterBridgeStoneBase"><edgeType>Hard</edgeType><renderPrecedence>400</renderPrecedence><layerable>true</layerable><affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances><designationCategory>Structure</designationCategory><fertility>0</fertility><constructEffect>ConstructMetal</constructEffect><acceptTerrainSourceFilth>True</acceptTerrainSourceFilth><destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed><destroyEffect>Bridge_Collapse</destroyEffect><destroyEffectWater>Bridge_CollapseWater</destroyEffectWater><description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description><uiIconPath>Terrain/Surfaces/DeepWaterBridge_MenuIcon</uiIconPath><terrainAffordanceNeeded>BridgeableDeep</terrainAffordanceNeeded><resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed><statBases><WorkToBuild>3200</WorkToBuild><Flammability>0.2</Flammability></statBases><destroyOnBombDamageThreshold>40</destroyOnBombDamageThreshold><designatorDropdown>Bridge_DeepWater</designatorDropdown><researchPrerequisites><li>DeepWaterBridges</li></researchPrerequisites><texturePath>Terrain/Surfaces/DeepWaterBridgeStone</texturePath><defName>DeepWaterBridgeSlate</defName><label>slate deep water bridge</label><color>(105,105,105)</color><costList><Steel>5</Steel><BlocksSlate>17</BlocksSlate></costList></TerrainDef> 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-XML error: <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth> doesn't correspond to any field in type TerrainDef. Context: <TerrainDef ParentName="DeepWaterBridgeStoneBase"><edgeType>Hard</edgeType><renderPrecedence>400</renderPrecedence><layerable>true</layerable><affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances><designationCategory>Structure</designationCategory><fertility>0</fertility><constructEffect>ConstructMetal</constructEffect><acceptTerrainSourceFilth>True</acceptTerrainSourceFilth><destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed><destroyEffect>Bridge_Collapse</destroyEffect><destroyEffectWater>Bridge_CollapseWater</destroyEffectWater><description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description><uiIconPath>Terrain/Surfaces/DeepWaterBridge_MenuIcon</uiIconPath><terrainAffordanceNeeded>BridgeableDeep</terrainAffordanceNeeded><resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed><statBases><WorkToBuild>3200</WorkToBuild><Flammability>0.2</Flammability></statBases><destroyOnBombDamageThreshold>40</destroyOnBombDamageThreshold><designatorDropdown>Bridge_DeepWater</designatorDropdown><researchPrerequisites><li>DeepWaterBridges</li></researchPrerequisites><texturePath>Terrain/Surfaces/DeepWaterBridgeStone</texturePath><defName>DeepWaterBridgeMarble</defName><label>marble deep water bridge</label><color>(132,135,132)</color><costList><Steel>5</Steel><BlocksMarble>17</BlocksMarble></costList></TerrainDef> 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-XML error: <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth> doesn't correspond to any field in type TerrainDef. Context: <TerrainDef ParentName="HeavyBridgeMetalBase"><edgeType>Hard</edgeType><renderPrecedence>400</renderPrecedence><layerable>true</layerable><affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances><designationCategory>Structure</designationCategory><fertility>0</fertility><constructEffect>ConstructMetal</constructEffect><acceptTerrainSourceFilth>True</acceptTerrainSourceFilth><destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed><destroyEffect>Bridge_Collapse</destroyEffect><destroyEffectWater>Bridge_CollapseWater</destroyEffectWater><description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description><uiIconPath>Terrain/Surfaces/HeavyBridge_MenuIcon</uiIconPath><terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded><statBases><WorkToBuild>2200</WorkToBuild><Flammability>0.2</Flammability></statBases><destroyOnBombDamageThreshold>45</destroyOnBombDamageThreshold><designatorDropdown>Bridge_Heavy</designatorDropdown><researchPrerequisites><li>HeavyBridges</li></researchPrerequisites><texturePath>Terrain/Surfaces/HeavyBridgeMetal</texturePath><defName>HeavyBridgeSteel</defName><label>steel bridge</label><color>(105,105,105)</color><costList><Steel>12</Steel></costList></TerrainDef> 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-XML error: <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth> doesn't correspond to any field in type TerrainDef. Context: <TerrainDef ParentName="HeavyBridgeMetalBase"><edgeType>Hard</edgeType><renderPrecedence>400</renderPrecedence><layerable>true</layerable><affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances><designationCategory>Structure</designationCategory><fertility>0</fertility><constructEffect>ConstructMetal</constructEffect><acceptTerrainSourceFilth>True</acceptTerrainSourceFilth><destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed><destroyEffect>Bridge_Collapse</destroyEffect><destroyEffectWater>Bridge_CollapseWater</destroyEffectWater><description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description><uiIconPath>Terrain/Surfaces/HeavyBridge_MenuIcon</uiIconPath><terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded><statBases><WorkToBuild>2200</WorkToBuild><Flammability>0.2</Flammability></statBases><destroyOnBombDamageThreshold>45</destroyOnBombDamageThreshold><designatorDropdown>Bridge_Heavy</designatorDropdown><researchPrerequisites><li>HeavyBridges</li></researchPrerequisites><texturePath>Terrain/Surfaces/HeavyBridgeMetal</texturePath><defName>HeavyBridgePlasteel</defName><label>plasteel bridge</label><color>(160,178,181)</color><costList><Steel>3</Steel><Plasteel>9</Plasteel></costList></TerrainDef> 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-XML error: <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth> doesn't correspond to any field in type TerrainDef. Context: <TerrainDef ParentName="HeavyBridgeStoneBase"><edgeType>Hard</edgeType><renderPrecedence>400</renderPrecedence><layerable>true</layerable><affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances><designationCategory>Structure</designationCategory><fertility>0</fertility><constructEffect>ConstructMetal</constructEffect><acceptTerrainSourceFilth>True</acceptTerrainSourceFilth><destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed><destroyEffect>Bridge_Collapse</destroyEffect><destroyEffectWater>Bridge_CollapseWater</destroyEffectWater><description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description><uiIconPath>Terrain/Surfaces/HeavyBridge_MenuIcon</uiIconPath><terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded><statBases><WorkToBuild>2200</WorkToBuild><Flammability>0.2</Flammability></statBases><destroyOnBombDamageThreshold>45</destroyOnBombDamageThreshold><designatorDropdown>Bridge_Heavy</designatorDropdown><researchPrerequisites><li>HeavyBridges</li></researchPrerequisites><texturePath>Terrain/Surfaces/HeavyBridgeStone</texturePath><defName>HeavyBridgeSandstone</defName><label>sandstone bridge</label><color>(126,104,94)</color><costList><Steel>3</Steel><BlocksSandstone>10</BlocksSandstone></costList></TerrainDef> 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-XML error: <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth> doesn't correspond to any field in type TerrainDef. Context: <TerrainDef ParentName="HeavyBridgeStoneBase"><edgeType>Hard</edgeType><renderPrecedence>400</renderPrecedence><layerable>true</layerable><affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances><designationCategory>Structure</designationCategory><fertility>0</fertility><constructEffect>ConstructMetal</constructEffect><acceptTerrainSourceFilth>True</acceptTerrainSourceFilth><destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed><destroyEffect>Bridge_Collapse</destroyEffect><destroyEffectWater>Bridge_CollapseWater</destroyEffectWater><description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description><uiIconPath>Terrain/Surfaces/HeavyBridge_MenuIcon</uiIconPath><terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded><statBases><WorkToBuild>2200</WorkToBuild><Flammability>0.2</Flammability></statBases><destroyOnBombDamageThreshold>45</destroyOnBombDamageThreshold><designatorDropdown>Bridge_Heavy</designatorDropdown><researchPrerequisites><li>HeavyBridges</li></researchPrerequisites><texturePath>Terrain/Surfaces/HeavyBridgeStone</texturePath><defName>HeavyBridgeGranite</defName><label>granite bridge</label><color>(105,95,97)</color><costList><Steel>3</Steel><BlocksGranite>10</BlocksGranite></costList></TerrainDef> 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-XML error: <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth> doesn't correspond to any field in type TerrainDef. Context: <TerrainDef ParentName="HeavyBridgeStoneBase"><edgeType>Hard</edgeType><renderPrecedence>400</renderPrecedence><layerable>true</layerable><affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances><designationCategory>Structure</designationCategory><fertility>0</fertility><constructEffect>ConstructMetal</constructEffect><acceptTerrainSourceFilth>True</acceptTerrainSourceFilth><destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed><destroyEffect>Bridge_Collapse</destroyEffect><destroyEffectWater>Bridge_CollapseWater</destroyEffectWater><description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description><uiIconPath>Terrain/Surfaces/HeavyBridge_MenuIcon</uiIconPath><terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded><statBases><WorkToBuild>2200</WorkToBuild><Flammability>0.2</Flammability></statBases><destroyOnBombDamageThreshold>45</destroyOnBombDamageThreshold><designatorDropdown>Bridge_Heavy</designatorDropdown><researchPrerequisites><li>HeavyBridges</li></researchPrerequisites><texturePath>Terrain/Surfaces/HeavyBridgeStone</texturePath><defName>HeavyBridgeLimestone</defName><label>limestone bridge</label><color>(158,153,135)</color><costList><Steel>3</Steel><BlocksLimestone>10</BlocksLimestone></costList></TerrainDef> 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-XML error: <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth> doesn't correspond to any field in type TerrainDef. Context: <TerrainDef ParentName="HeavyBridgeStoneBase"><edgeType>Hard</edgeType><renderPrecedence>400</renderPrecedence><layerable>true</layerable><affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances><designationCategory>Structure</designationCategory><fertility>0</fertility><constructEffect>ConstructMetal</constructEffect><acceptTerrainSourceFilth>True</acceptTerrainSourceFilth><destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed><destroyEffect>Bridge_Collapse</destroyEffect><destroyEffectWater>Bridge_CollapseWater</destroyEffectWater><description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description><uiIconPath>Terrain/Surfaces/HeavyBridge_MenuIcon</uiIconPath><terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded><statBases><WorkToBuild>2200</WorkToBuild><Flammability>0.2</Flammability></statBases><destroyOnBombDamageThreshold>45</destroyOnBombDamageThreshold><designatorDropdown>Bridge_Heavy</designatorDropdown><researchPrerequisites><li>HeavyBridges</li></researchPrerequisites><texturePath>Terrain/Surfaces/HeavyBridgeStone</texturePath><defName>HeavyBridgeSlate</defName><label>slate bridge</label><color>(105,105,105)</color><costList><Steel>3</Steel><BlocksSlate>10</BlocksSlate></costList></TerrainDef> 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-XML error: <acceptTerrainSourceFilth>True</acceptTerrainSourceFilth> doesn't correspond to any field in type TerrainDef. Context: <TerrainDef ParentName="HeavyBridgeStoneBase"><edgeType>Hard</edgeType><renderPrecedence>400</renderPrecedence><layerable>true</layerable><affordances><li>Light</li><li>Medium</li><li>Heavy</li></affordances><designationCategory>Structure</designationCategory><fertility>0</fertility><constructEffect>ConstructMetal</constructEffect><acceptTerrainSourceFilth>True</acceptTerrainSourceFilth><destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed><destroyEffect>Bridge_Collapse</destroyEffect><destroyEffectWater>Bridge_CollapseWater</destroyEffectWater><description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description><uiIconPath>Terrain/Surfaces/HeavyBridge_MenuIcon</uiIconPath><terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded><statBases><WorkToBuild>2200</WorkToBuild><Flammability>0.2</Flammability></statBases><destroyOnBombDamageThreshold>45</destroyOnBombDamageThreshold><designatorDropdown>Bridge_Heavy</designatorDropdown><researchPrerequisites><li>HeavyBridges</li></researchPrerequisites><texturePath>Terrain/Surfaces/HeavyBridgeStone</texturePath><defName>HeavyBridgeMarble</defName><label>marble bridge</label><color>(132,135,132)</color><costList><Steel>3</Steel><BlocksMarble>10</BlocksMarble></costList></TerrainDef> 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
 [CM_Prioritize_Research] - patching to allow research prioritizing.
-Knowledge data was missing key QRY_ReclaimingSoil. Adding it... 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-Knowledge data was missing key DW_Penalties. Adding it... 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-Knowledge data was missing key DW_Settings. Adding it... 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-Knowledge data was missing key BuildersTryMine. Adding it... 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-Knowledge data was missing key QRY_ReclaimingSoil. Adding it... 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-Knowledge data was missing key DW_Penalties. Adding it... 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-Knowledge data was missing key DW_Settings. Adding it... 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
-Knowledge data was missing key BuildersTryMine. Adding it... 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
 Key binding conflict: MainTab_MedicalTab and Misc7 are both bound to M. 
 (Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
 
@@ -274,16 +203,13 @@ Medical Tab :: Tag Tongue is not associated with any pawnCapacity. This may be i
 
 [GLF] Applying compatibility patches for MapReroll.
 <color=orange>[CSG]</color> Symbols Creator Started.
-<color=orange>[CSG]</color> Created 10821 symbolDefs for 3 mods. Took 00.03s.
-Rim73 cached 162 heddifs.
+<color=orange>[CSG]</color> Created 10821 symbolDefs for 3 mods. Took 00.02s.
+Rim73 cached 163 heddifs.
 <color=blue>Optimization: Meats - C# Edition</color>: Mod version: 1.2.4h for RimWorld version: 1.3
 <color=blue>Optimization: Meats - C# Edition</color>: Vanilla Fishing Expanded Detected!
-<color=blue>Optimization: Meats - C# Edition</color>: <color=red>51</color> meat defs have been removed from the game. Elapsed Time: 0.02sec
+<color=blue>Optimization: Meats - C# Edition</color>: <color=red>51</color> meat defs have been removed from the game. Elapsed Time: 0.01sec
 Damage Indicators initialized.
 [CMColorCodedMoodBar] CMColorCodedMoodBar 1.3.3136.1 initialized
-[CMColorCodedMoodBar] Unable To Get Types For: SimplyMoreBridges, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
-
 More Vanilla Biomes initialized
 [ShowDrafteesWeapon] Initialized
 [RimHUD v1.9.1] Initialized
@@ -292,64 +218,40 @@ PickUpAndHaul v0.1.3.2⅔ welcomes you to RimWorld with pointless logspam.
 CharacterEditor v1.3.842 initializing...
 updating labels for russian / русский...
 loading/updating slots...
-loading/updating slots...
 loading/updating customs...
 instance created
 allowing apparel to be colorable...
 checking editor settings...
 CharacterEditor v1.3.842 ...done
 [AllowTool] Applied compatibility patch for "Pick Up And Haul"
-[ModMetaDataCleaner] Removed 0 Metadata and cleaned 119 PreviewImage.
-Removed: 
-Cleaned: Harmony, No Debris, Camera+, Humanoid Alien Races, HugsLib, Allow Tool, Map Reroll, Defensive Positions, Achtung!, More Trade Ships, Work Tab, ED-Embrasures, Medical Tab, Geological Landforms, Русский язык для Vanilla Factions Expanded - Ancients, Vanilla Factions Expanded - Ancients, Rim73 - Performance and Optimisations, RuntimeGC [1.3], [Rus] Age Matters 2.0, Ideology Russian Translation, Optimization: Meats - C# Edition, Repairable Gear, No Lazy Doctors, Vanilla Fishing Expanded - Fishing Treasures AddOn, Vanilla Social Interactions Expanded, Animal Controls, Destroy Item, Quality Colors, Injured Carry, Do Your F****** Research, ResearchPal - Forked, Quest Reward Rebalance, Vanilla Traits Expanded, Age Matters 2.0 [1.2+], ReGrowth Remastered: Core, Vanilla Expanded - Royalty Patches, CaveworldFlora (Continued), What's That Mod, Smarter Construction, ModDiff, Русский язык для Vanilla Events Expanded, Dismiss Trader (Continued), Vanilla Furniture Expanded - Power, Bulk Smelting, Auto links, Automatic Night Owl, Seasonal Weather (Continued), Cybernetic Organism and Neural Network, Expanded Incidents (Continued), Dubs Performance Analyzer, Gunplay, Compact Hediffs, Vanilla Expanded Framework, Stabilize, Bulk Stonecutting, Room Size Tolerance, Vanilla Textures Expanded, Damage Indicators [1.3], PawnTargetFix, Realistic Human Sounds (Continued), Silent Doors (Continued), No Healing Emotes, No ZzZ, Quarry, [Ry]Draw a bead, CM Color Coded Mood Bar [1.1+], Trade Ships Drop Spot, Vanilla Furniture Expanded - Farming, Begone, Message!, Vanilla Events Expanded, More Vanilla Biomes, No Burn Metal, Vanilla Fishing Expanded, Power Tab, Auto-Cut Blight, Vanilla Furniture Expanded - Production, Deep Stack, Character Editor, Vanilla Furniture Expanded - Security, Simple Search Bar, Vanilla Weapons Expanded, More Than Capable, No Random Relations, Trait Rarity Colors, Mortar Accuracy, Vanilla Furniture Expanded - Medical Module, Vanilla Furniture Expanded, DontBlockDoor, Show Draftees Weapon, Bionic icons, Dual Wield, [WD] Partially-Passable Wind Turbines, LWM's Deep Storage, [WD] Soil Contrast, Common Sense, Crafting Quality Rebalanced, Removable Mt.Rock Roof Patche, Where is my weapon?, Cut plants before building, RaiderInfo, RimHUD, [KV] More Trait Slots, [KV] Consolidated Traits, Smart Speed, OgreStack, Dubs Mint Menus, Wall Light, Simply More Bridges, Replace Stuff, Snap Out!, Fixable Mood Debuffs Alert, Pick Up And Haul, RunAndGun, Architect Icons, My Little Planet, Animals Logic, Royalty, Ideology, Core
+[ModMetaDataCleaner] Removed 1 Metadata and cleaned 119 PreviewImage.
+Removed: Simply More Bridges
+Cleaned: Harmony, No Debris, Camera+, Humanoid Alien Races, HugsLib, Allow Tool, Map Reroll, Defensive Positions, Achtung!, More Trade Ships, Work Tab, ED-Embrasures, Medical Tab, Geological Landforms, Русский язык для Vanilla Factions Expanded - Ancients, Vanilla Factions Expanded - Ancients, Rim73 - Performance and Optimisations, RuntimeGC [1.3], [Rus] Age Matters 2.0, Ideology Russian Translation, Optimization: Meats - C# Edition, Repairable Gear, No Lazy Doctors, Vanilla Fishing Expanded - Fishing Treasures AddOn, Vanilla Social Interactions Expanded, Animal Controls, Destroy Item, Quality Colors, Injured Carry, Do Your F****** Research, ResearchPal - Forked, Quest Reward Rebalance, Vanilla Traits Expanded, Age Matters 2.0 [1.2+], ReGrowth Remastered: Core, Vanilla Expanded - Royalty Patches, CaveworldFlora (Continued), What's That Mod, Smarter Construction, ModDiff, Dune (Continued), Русский язык для Vanilla Events Expanded, Dismiss Trader (Continued), Vanilla Furniture Expanded - Power, Bulk Smelting, Auto links, Automatic Night Owl, Seasonal Weather (Continued), Cybernetic Organism and Neural Network, Expanded Incidents (Continued), Dubs Performance Analyzer, Gunplay, Compact Hediffs, Vanilla Expanded Framework, Stabilize, Bulk Stonecutting, Room Size Tolerance, Vanilla Textures Expanded, Damage Indicators [1.3], PawnTargetFix, Realistic Human Sounds (Continued), Silent Doors (Continued), No Healing Emotes, No ZzZ, Quarry, [Ry]Draw a bead, CM Color Coded Mood Bar [1.1+], Trade Ships Drop Spot, Vanilla Furniture Expanded - Farming, Begone, Message!, Vanilla Events Expanded, More Vanilla Biomes, No Burn Metal, Vanilla Fishing Expanded, Power Tab, Auto-Cut Blight, Vanilla Furniture Expanded - Production, Deep Stack, Character Editor, Vanilla Furniture Expanded - Security, Simple Search Bar, Vanilla Weapons Expanded, More Than Capable, No Random Relations, Trait Rarity Colors, Mortar Accuracy, Vanilla Furniture Expanded - Medical Module, Vanilla Furniture Expanded, DontBlockDoor, Show Draftees Weapon, Bionic icons, Dual Wield, [WD] Partially-Passable Wind Turbines, LWM's Deep Storage, [WD] Soil Contrast, Common Sense, Crafting Quality Rebalanced, Removable Mt.Rock Roof Patche, Where is my weapon?, Cut plants before building, RaiderInfo, RimHUD, [KV] More Trait Slots, [KV] Consolidated Traits, Smart Speed, OgreStack, Dubs Mint Menus, Wall Light, Replace Stuff, Snap Out!, Fixable Mood Debuffs Alert, Pick Up And Haul, RunAndGun, Architect Icons, My Little Planet, Animals Logic, Royalty, Ideology, Core
 [RuntimeGC] Detour completed: MuteGC
 ResearchPal :: Research layout initialized
-  --> [What's That Mod] Took 0.34 seconds to scan all patches. <--
-What's That Mod: Wrote to 2308 mod descriptions, 30 patched defs resolved.
-What's That Mod took 383 milliseconds to generate all def descriptions.
+  --> [What's That Mod] Took 0.15 seconds to scan all patches. <--
+What's That Mod: Wrote to 2305 mod descriptions, 30 patched defs resolved.
+What's That Mod took 170 milliseconds to generate all def descriptions.
 [HugsLib] initializing MapReroll, DefensivePositions, Troopersmith1.AgeMatters, Linkolas.Stabilize, DeepStack, Roolo.DualWield, LWM_DeepStorage, RunAndGun
 [HugsLib][warn] Missing enum setting labels for enum MapReroll.MapRerollController+MapGeneratorMode 
 (Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
 
-[DefensivePositions] Cleared 'toggle beauty display' key binding
 [OgreStack]: Modify Stack Sizes Complete
 Unloading 5 Unused Serialized files (Serialized files now loaded: 3)
-
-Unloading 276 unused Assets to reduce memory usage. Loaded Objects now: 24209.
-Total: 261.491200 ms (FindLiveObjects: 2.606800 ms CreateObjectMapping: 2.601200 ms MarkObjects: 255.520500 ms  DeleteObjects: 0.761700 ms)
-
-Grammar unresolvable. Root 'r_name'
-
-GRAMMAR RESOLUTION TRACE
-     r_name → UNRESOLVABLE
-
-INCLUDES
-ZBiome_NamerGrasslands
-WorldFeatureNamerCommon
-OutlanderPlaceNameUtility
-TribalWordUtility
-
-CUSTOM RULES
- 
+UnloadTime: 0.587100 ms
+Exception parsing latest version: System.FormatException: Input string was not in a correct format.
+  at System.Number.StringToNumber (System.String str, System.Globalization.NumberStyles options, System.Number+NumberBuffer& number, System.Globalization.NumberFormatInfo info, System.Boolean parseDecimal) [0x00057] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Number.ParseInt32 (System.String s, System.Globalization.NumberStyles style, System.Globalization.NumberFormatInfo info) [0x00013] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Int32.Parse (System.String s, System.Globalization.NumberStyles style, System.IFormatProvider provider) [0x0000e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Convert.ToInt32 (System.String value, System.IFormatProvider provider) [0x00005] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at RimWorld.LatestVersionGetter+<Start>d__4.MoveNext () [0x000bf] in <8db1dbcd94b740f783db630681f0c358>:0  
 (Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
 
-Failed to resolve text. Trying again with English. 
-(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
 
-Achtung v3.4.4.0 Info: To make Achtung log some performance info, create an empty 'AchtungPerformance.txt' file in same directory as Player.log
-Expanded Incident - Settings loaded
-Unloading 2 Unused Serialized files (Serialized files now loaded: 3)
+Unloading 276 unused Assets to reduce memory usage. Loaded Objects now: 24283.
+Total: 235.200400 ms (FindLiveObjects: 1.847300 ms CreateObjectMapping: 1.864600 ms MarkObjects: 229.341900 ms  DeleteObjects: 2.144100 ms)
 
-Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 25436.
-Total: 295.894000 ms (FindLiveObjects: 2.244800 ms CreateObjectMapping: 2.934200 ms MarkObjects: 290.575800 ms  DeleteObjects: 0.138600 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 3)
-UnloadTime: 2.210900 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 25932.
-Total: 292.544900 ms (FindLiveObjects: 2.223200 ms CreateObjectMapping: 2.367300 ms MarkObjects: 287.825900 ms  DeleteObjects: 0.127900 ms)
-
-Initializing new game with mods:
+Loading game from file 0000 with mods:
   - brrainz.harmony
   - Ludeon.RimWorld
   - Ludeon.RimWorld.Royalty
@@ -361,7 +263,6 @@ Initializing new game with mods:
   - Compilatron.PowerTab
   - gguake.ui.simplesearchbar
   - Bar0th.NoRandomRelations
-  - Lanilor150.SimplyHMoreHBridges
   - brrainz.cameraplus
   - erdelf.HumanoidAlienRaces
   - UnlimitedHugs.HugsLib
@@ -469,17 +370,126 @@ Initializing new game with mods:
   - com.bymarcin.ArchitectIcons
   - Oblitus.MyLittlePlanet
   - Oblitus.AnimalsLogic
+  - Mlie.Dune
+Achtung v3.4.4.0 Info: To make Achtung log some performance info, create an empty 'AchtungPerformance.txt' file in same directory as Player.log
+Expanded Incident - Settings loaded
+Could not resolve reference to object with loadID Faction_14 of type RimWorld.Faction. Was it compressed away, destroyed, had no ID number, or not saved/loaded right? curParent=VanillaStorytellersExpanded.RaidGroup curPathRelToParent= 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Could not resolve reference to object with loadID Faction_14 of type RimWorld.Faction. Was it compressed away, destroyed, had no ID number, or not saved/loaded right? curParent=VanillaSocialInteractionsExpanded.RaidGroup curPathRelToParent= 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
 checking editor settings...
-SeasonalWeather: season changed
-SeasonalWeather: adjusting baseWeatherCommonalities
 Rim73 > Loaded new game, resetting caching variables 
 (Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
 
 Unloading 0 Unused Serialized files (Serialized files now loaded: 3)
 
-Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 30196.
-Total: 388.274100 ms (FindLiveObjects: 1.673300 ms CreateObjectMapping: 2.796400 ms MarkObjects: 383.603800 ms  DeleteObjects: 0.199200 ms)
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 28654.
+Total: 283.112300 ms (FindLiveObjects: 1.284900 ms CreateObjectMapping: 2.035200 ms MarkObjects: 279.475200 ms  DeleteObjects: 0.316200 ms)
 
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1f44 -> priority: 1 
-  Thread -> id: 9ac -> priority: 1 
+[AllowTool] Adjusted work type priority of FinishingOff for pawns:
+Bret:0->3
+reinnited 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+reinnited 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+reinnited 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Dee pathing from (128, 0, 114) to Thing_ChunkSlagSteel48676 ran out of cells to process.
+Job:HaulToInventory (Job_288163) A=Thing_ChunkSlagSteel48676 B=(142, 0, 122)
+Faction: Covans 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+reinnited 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Dee tried to place hauled thing in container but is not hauling anything. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Dee tried to place hauled thing in container but is not hauling anything. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Dee tried to place hauled thing in container but is not hauling anything. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Bret tried to place hauled thing in container but is not hauling anything. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+ReequipAndRetake:Caskey, Лекарка
+Dee pathing from (104, 0, 76) to (125, 0, 91) ran out of cells to process.
+Job:Hunt (Job_316335) A=Thing_Corpse_Turkey51224 B=(125, 0, 91)
+Faction: Covans 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Dee pathing from (104, 0, 76) to (125, 0, 91) ran out of cells to process.
+Job:HaulToCell (Job_319726) A=Thing_Corpse_Turkey51224 B=(125, 0, 91)
+Faction: Covans 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Dee pathing from (104, 0, 76) to (125, 0, 91) ran out of cells to process.
+Job:HaulToCell (Job_320174) A=Thing_Corpse_Turkey51224 B=(125, 0, 91)
+Faction: Covans 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Dee pathing from (104, 0, 76) to (125, 0, 91) ran out of cells to process.
+Job:HaulToCell (Job_320266) A=Thing_Corpse_Turkey51224 B=(125, 0, 91)
+Faction: Covans 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Dee pathing from (104, 0, 76) to (125, 0, 91) ran out of cells to process.
+Job:HaulToCell (Job_320301) A=Thing_Corpse_Turkey51224 B=(125, 0, 91)
+Faction: Covans 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Dee pathing from (104, 0, 76) to (125, 0, 91) ran out of cells to process.
+Job:HaulToCell (Job_320423) A=Thing_Corpse_Turkey51224 B=(125, 0, 91)
+Faction: Covans 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Dee pathing from (104, 0, 76) to (125, 0, 91) ran out of cells to process.
+Job:HaulToCell (Job_320515) A=Thing_Corpse_Turkey51224 B=(125, 0, 91)
+Faction: Covans 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Dee pathing from (104, 0, 76) to (125, 0, 91) ran out of cells to process.
+Job:HaulToCell (Job_320614) A=Thing_Corpse_Turkey51224 B=(125, 0, 91)
+Faction: Covans 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Dee pathing from (104, 0, 76) to (125, 0, 91) ran out of cells to process.
+Job:HaulToCell (Job_320711) A=Thing_Corpse_Turkey51224 B=(125, 0, 91)
+Faction: Covans 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Dee pathing from (104, 0, 76) to (125, 0, 91) ran out of cells to process.
+Job:HaulToCell (Job_320862) A=Thing_Corpse_Turkey51224 B=(125, 0, 91)
+Faction: Covans 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+reinnited 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Bret tried to place hauled thing in container but is not hauling anything. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Bret tried to place hauled thing in container but is not hauling anything. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Bret tried to place hauled thing in container but is not hauling anything. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Bret tried to place hauled thing in container but is not hauling anything. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+reinnited 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+ReequipAndRetake:рысь
+Setting up 3 worker threads for Enlighten.
+  Thread -> id: 1b8c -> priority: 1 
+  Thread -> id: 6f0 -> priority: 1 
+  Thread -> id: dec -> priority: 1 

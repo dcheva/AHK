@@ -11,7 +11,7 @@
     </li>
     <li>
       <key>Rescuing</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>Capturing</key>
@@ -19,7 +19,7 @@
     </li>
     <li>
       <key>ShieldBelts</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>InteractingWithTraders</key>
@@ -39,7 +39,7 @@
     </li>
     <li>
       <key>AnimalsDontAttackDoors</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>BillsTab</key>
@@ -51,11 +51,11 @@
     </li>
     <li>
       <key>DrugAddiction</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>DrugPolicies</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>TVForSickPeople</key>
@@ -71,7 +71,7 @@
     </li>
     <li>
       <key>DrugBurning</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>DoorOpenSpeed</key>
@@ -103,7 +103,7 @@
     </li>
     <li>
       <key>Forbidding</key>
-      <value>0.6787084</value>
+      <value>1</value>
     </li>
     <li>
       <key>GrowingFood</key>
@@ -115,7 +115,7 @@
     </li>
     <li>
       <key>Alerts</key>
-      <value>0.7087689</value>
+      <value>1</value>
     </li>
     <li>
       <key>Mining</key>
@@ -123,19 +123,19 @@
     </li>
     <li>
       <key>WorkTab</key>
-      <value>0.1241705</value>
+      <value>1</value>
     </li>
     <li>
       <key>ForbiddingDoors</key>
-      <value>0.08944131</value>
+      <value>1</value>
     </li>
     <li>
       <key>CoverAndShooting</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>FormCaravan</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>AnimalTaming</key>
@@ -143,7 +143,7 @@
     </li>
     <li>
       <key>AnimalTraining</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>InfoCard</key>
@@ -155,27 +155,27 @@
     </li>
     <li>
       <key>HomeArea</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>SpoilageAndFreezers</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>Deterioration</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>HostilityResponse</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>AllowedAreas</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>MedicalOperations</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>TimeAssignments</key>
@@ -183,39 +183,39 @@
     </li>
     <li>
       <key>ManualWorkPriorities</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>GettingMoreTraders</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>InspectRoomStats</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>Outfits</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>FirePreparation</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>HistoryTab</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>ClickingMessages</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>ShotAccuracyTooltip</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>FriendlyFireSafety</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>TradeGoodsMustBeNearBeacon</key>
@@ -223,7 +223,7 @@
     </li>
     <li>
       <key>ArrestingCreatesEnemies</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>SwitchFlickingDesignation</key>
@@ -243,7 +243,7 @@
     </li>
     <li>
       <key>MeditationDesiredPsyfocus</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>EditingMemes</key>
@@ -259,11 +259,11 @@
     </li>
     <li>
       <key>DW_Penalties</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>DW_Settings</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>BuildersTryMine</key>

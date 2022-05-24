@@ -3,4 +3,4 @@
 None|None|
 
 
-FremenMelee_Crysknife,crysknife,Medieval,Sellable,True,10,Woody|Stony,MaxHitPoints!100|Flammability!1|DeteriorationRate!0.5|Beauty!-3|SellPriceFactor!0.2|WorkToMake!800|Mass!0.4,PawnBeauty!2;MeleeWeapon_PlasmaSword,плазменный меч,Undefined,All,True,0,,MaxHitPoints!100|Flammability!1|DeteriorationRate!2|Beauty!-3|SellPriceFactor!0.2|MarketValue!2000|Mass!2,PawnBeauty!3;MedicineIndustrial,медикаменты,Industrial,All,True,0,,Beauty!-4|MaxHitPoints!60|MarketValue!18|Mass!0.5|Flammability!0.7|MedicalPotency!1|MedicalQualityMax!1|DeteriorationRate!2|WorkToMake!700,;Chocolate,шоколад,Undefined,All,True,0,,Beauty!-4|MaxHitPoints!60|MarketValue!3|Mass!0.075|Flammability!1|DeteriorationRate!8|Nutrition!0.25|Comfort!0.25|MeditationFocusStrength!0.25|CONN_HealthPointAddedToPart!0.25,;
+
