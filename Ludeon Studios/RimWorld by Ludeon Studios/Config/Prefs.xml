@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PrefsData>
   <volumeGame>1</volumeGame>
-  <volumeMusic>0.5100756</volumeMusic>
+  <volumeMusic>0</volumeMusic>
   <volumeAmbient>1</volumeAmbient>
   <screenWidth>1920</screenWidth>
   <screenHeight>1080</screenHeight>
@@ -12,6 +12,7 @@
   <plantWindSway>True</plantWindSway>
   <textureCompression>True</textureCompression>
   <showRealtimeClock>True</showRealtimeClock>
+  <disableTinyText>False</disableTinyText>
   <animalNameMode>None</animalNameMode>
   <backgroundExpansionId IsNull="True" />
   <extremeDifficultyUnlocked>False</extremeDifficultyUnlocked>

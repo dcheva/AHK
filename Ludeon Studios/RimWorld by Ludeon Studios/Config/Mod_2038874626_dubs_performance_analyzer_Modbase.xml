@@ -9,7 +9,11 @@
 		<dnspyPath />
 		<SavedPatches_Update />
 		<SavedPatches_Tick />
-		<allEnabled IsNull="True" />
+		<allEnabled>
+			<li>False</li>
+			<li>False</li>
+			<li>False</li>
+		</allEnabled>
 		<alertfilter>
 			<keys />
 			<values />
