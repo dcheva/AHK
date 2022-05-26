@@ -50,7 +50,7 @@ $+e::
 Return
 
 ;stop
-$e::
-	Send, E
-	CLK:=0
-Return
+;$e::
+;	Send, E
+;	CLK:=0
+;Return
