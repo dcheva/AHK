@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="DubsBadHygiene.Settings">
+		<LastVersion>dubwise.dubsbadhygiene 3.0.2187</LastVersion>
+		<BladderRace />
+		<BladderBody />
+		<BladderHediff />
+		<HygieneRace />
+		<HygieneBody />
+		<HygieneHediff />
+		<PriorityIndoorCleaning>False</PriorityIndoorCleaning>
+		<RimefellerLink>False</RimefellerLink>
+		<PassiveWaterCoolers>False</PassiveWaterCoolers>
+		<sosLink>False</sosLink>
+		<QualityComps>False</QualityComps>
+		<CoolingEfficiency>True</CoolingEfficiency>
+		<RainIrrigation>False</RainIrrigation>
+		<AllowDrinkPacking>True</AllowDrinkPacking>
+		<AllowModdedDrinks>True</AllowModdedDrinks>
+		<Hydroponics>False</Hydroponics>
+		<SurvivalMode>False</SurvivalMode>
+		<RimatomicsLink>False</RimatomicsLink>
+		<EnableBladder>True</EnableBladder>
+		<EnableHygiene>True</EnableHygiene>
+		<PrivacyChecks>True</PrivacyChecks>
+		<PrisonersGetBladder>True</PrisonersGetBladder>
+		<PrisonersGetHygiene>True</PrisonersGetHygiene>
+		<GuestsGetBladder>True</GuestsGetBladder>
+		<GuestsGetHygiene>True</GuestsGetHygiene>
+		<AnimalsGetBladder>False</AnimalsGetBladder>
+		<PetsGetThirst>False</PetsGetThirst>
+		<PetsGetBladder>False</PetsGetBladder>
+		<ThirstNeed>False</ThirstNeed>
+		<LiteMode>False</LiteMode>
+		<AllowNonHuman>True</AllowNonHuman>
+		<FertilizerVisible>True</FertilizerVisible>
+		<OverrideNd>False</OverrideNd>
+		<DrinkMin>0</DrinkMin>
+		<DrinkCount>2</DrinkCount>
+		<DrinkPackSearchRange>20</DrinkPackSearchRange>
+		<ModOptionDefValues>
+			<keys />
+			<values />
+		</ModOptionDefValues>
+	</ModSettings>
+</SettingsBlock>

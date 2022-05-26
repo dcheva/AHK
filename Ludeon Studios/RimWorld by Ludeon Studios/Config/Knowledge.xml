@@ -31,7 +31,7 @@
     </li>
     <li>
       <key>GroupGotoHereDragging</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>BuildOrbitalTradeBeacon</key>
@@ -267,7 +267,7 @@
     </li>
     <li>
       <key>BuildersTryMine</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>SteamDeckControlsMainMenu</key>
@@ -283,7 +283,7 @@
     </li>
     <li>
       <key>Concept_SidearmsDropping</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>Concept_SidearmsMissing</key>
@@ -363,6 +363,22 @@
     </li>
     <li>
       <key>BM_Enemy_Mounting</key>
+      <value>1</value>
+    </li>
+    <li>
+      <key>GuestBeds</key>
+      <value>1</value>
+    </li>
+    <li>
+      <key>RecruitGuest</key>
+      <value>1</value>
+    </li>
+    <li>
+      <key>GuestWork</key>
+      <value>0</value>
+    </li>
+    <li>
+      <key>Hospitality</key>
       <value>1</value>
     </li>
   </knowledge>

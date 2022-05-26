@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Theme Version="1.9.1">
+<Theme Version="1.10.1">
   <HudOptions>
     <RefreshRate>5</RefreshRate>
   </HudOptions>
@@ -11,7 +11,7 @@
   </HudPosition>
   <HudDimensions>
     <Width>320</Width>
-    <Height>412</Height>
+    <Height>396</Height>
   </HudDimensions>
   <InspectPane>
     <Modify>True</Modify>
@@ -65,6 +65,8 @@
     <Independent>66E6FFFF</Independent>
     <Hostile>FF1A00FF</Hostile>
     <Wild>CC8033FF</Wild>
+    <Prisoner>D9FF80FF</Prisoner>
+    <Slave>F2D91AFF</Slave>
   </FactionColors>
   <SkillColors>
     <MinorPassion>FFE6B2FF</MinorPassion>
