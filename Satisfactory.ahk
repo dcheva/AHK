@@ -21,17 +21,18 @@ return
 ;exit
 $^+W::ExitApp
 
-CLK:=false
+global CLK := 0
 
 ;functions
-collect(msec,reps)
+collect()
 {
-	Loop, reps
+	Loop, 100
 	{
-		if(!CLK) 
-			break
+		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 		Send, E
-		Sleep, msec
+		Sleep, 100
+		if(CLK == 0) 
+			break
 	}
 }
 
@@ -42,13 +43,14 @@ $+LButton::
 	Send, {LButton Down}
 Return
 
+;start
 $+e::
-	SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
-	CLK:=true
-	collect(100,100)
+	CLK:=1
+	collect()
 Return
 
-$+e::
-	SoundPlay %A_WinDir%\Media\Windows Logoff Sound.wav
-	CLK:=false
+;stop
+$e::
+	Send, E
+	CLK:=0
 Return
