@@ -48,3 +48,14 @@ $+e::
 	CLK:=1
 	collect()
 Return
+
+;fly start/stop
+$+~::
+	Send, {Enter}
+	Sleep, 100
+	Send, {!}
+	Sleep, 100
+	Send, fly
+	Sleep, 100
+	Send, {Enter}
+Return
