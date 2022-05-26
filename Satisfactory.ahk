@@ -48,9 +48,3 @@ $+e::
 	CLK:=1
 	collect()
 Return
-
-;stop
-;$e::
-;	Send, E
-;	CLK:=0
-;Return
