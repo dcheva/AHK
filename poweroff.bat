@@ -1,1 +1,1 @@
-pushd C:\Projects && autogit-all && shutdown -h -f -y -t 12
+pushd C:\Projects && autogit-all && shutdown -h -f -t 10
