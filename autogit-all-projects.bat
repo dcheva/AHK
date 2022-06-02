@@ -1,1 +1,1 @@
-pushd C:\Projects && autogit-all
+pushd C:\Projects && autogit-all && pause
