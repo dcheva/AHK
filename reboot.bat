@@ -1,1 +1,1 @@
-autogit-all-projects && rundll32.exe shell32.dll,SHExitWindowsE 6
+cd "C:\Projects" && autogit-all && shutdown -r -f -y -t 10
