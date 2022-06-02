@@ -1,3 +1,1 @@
-cd C:\Projects && for /d %%d in (*.*) DO (
-	cd "%%d" && autogit up && cd .. 
-) && echo rundll32.exe shell32.dll,SHExitWindowsE 6
+autogit-all-projects && rundll32.exe shell32.dll,SHExitWindowsE 6
