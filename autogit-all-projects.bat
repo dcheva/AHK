@@ -1,2 +1,1 @@
-cd C:\Projects
-AHK\autogit-all.bat
+cd C:\Projects && for /d %%d in (*.*) DO cd "%%d" && autogit up && cd ..
