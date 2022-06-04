@@ -36,8 +36,6 @@ collect()
 	}
 }
 
-$MButton::Numpad7
-
 $+LButton::
 	SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 	Send, {LButton Down}
