@@ -36,10 +36,10 @@ collect()
 	}
 }
 
-$+LButton::
-	SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
-	Send, {LButton Down}
-Return
+;$+LButton::
+;	SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
+;	Send, {LButton Down}
+;Return
 
 ;start
 $+e::
