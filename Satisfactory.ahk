@@ -29,23 +29,24 @@ collect()
 	Loop, 100
 	{
 		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
-		Send, E
+		Send, e
 		Sleep, 100
 		if(CLK == 0) 
 			break
 	}
 }
 
+;produce v<0.6.0
 ;$+LButton::
 ;	SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 ;	Send, {LButton Down}
 ;Return
 
-;start
-$+e::
-	CLK:=1
-	collect()
-Return
+;collect v<0.6.0
+;$+e::
+;	CLK:=1
+;	collect()
+;Return
 
 ;fly start/stop
 $+~::
