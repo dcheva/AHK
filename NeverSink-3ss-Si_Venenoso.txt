@@ -1,0 +1,22 @@
+Show # %D4 $type->leveling->normalmagic->4l $tier->general
+	LinkedSockets >= 4
+	SetFontSize 40
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 251 255 198 255
+	PlayEffect Purple
+	SocketGroup "ggg" "gggg" "ggbb" "grbb"
+	Class "Body Armours" "Boots" "Gloves" "Helmets" "Shields"
+	SetTextColor 27 0 200 255
+	MinimapIcon 1 Purple Hexagon
+
+Show # %D2 $type->leveling->normalmagic->3l $tier->general
+	LinkedSockets = 3
+	SetFontSize 35
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 198 253 255 255
+	PlayEffect Pink
+	SocketGroup "ggg" "ggr"
+	Class "Body Armours" "Boots" "Gloves" "Helmets" "Shields"
+	SetTextColor 117 16 16 255
+	MinimapIcon 1 Pink Hexagon
+	
