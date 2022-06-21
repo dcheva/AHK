@@ -1,3 +1,4 @@
+;AHK v1.1.33.11
 ;by cheva (c) MIT 2012-2022
 
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
@@ -21,14 +22,14 @@ return
 $^+W::ExitApp
 
 ;$`::
-$1:: 
+;$1:: 
 $2::
 $3::
 $4::
 ;$5::
 ;$f::
-  Send, 1
-  Sleep, 10  
+;  Send, 1
+;  Sleep, 10  
   Send, 2
   Sleep, 10  
   Send, 3
