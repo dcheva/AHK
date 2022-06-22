@@ -22,23 +22,20 @@ return
 $^+W::ExitApp
 
 ;$`::
-;$1:: 
-;$2::
+$1:: 
+$2::
 $3::
 $4::
-$5::
-;$f::
-;  Send, 1
-;  Sleep, 10  
-;  Send, 2
-;  Sleep, 10  
+;$5::
+  Send, 1
+  Sleep, 10  
+  Send, 2
+  Sleep, 10  
   Send, 3
   Sleep, 10  
   Send, 4
-  Sleep, 10  
-  Send, 5
 ;  Sleep, 10  
-;  Send, f
+;  Send, 5
 return
 
 $^A::
@@ -51,6 +48,8 @@ $^A::
   Send, ^W
   Sleep, 10  
   Send, ^Q
+  Sleep, 10  
+  Send, {MButton}
 return
 
 ;$RButton::

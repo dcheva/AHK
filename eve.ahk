@@ -1,4 +1,4 @@
-;AHK v1.1.32.00
+;AHK v1.1.33.11
 ;by cheva (c) MIT 2012-2022
 
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
@@ -7,10 +7,19 @@ SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 $^+R::Reload
 
 ;suspend/resume
-$^+S::Suspend, toggle
+$^+S::
+  Suspend, toggle
+  SoundPlay %A_WinDir%\Media\Windows Battery Low.wav
+return
 
 ;pause/resume
-$^+P::Pause, toggle
+$^+P::
+  Pause, toggle
+  SoundPlay %A_WinDir%\Media\Windows Balloon.wav
+return
+
+;exit
+$^+W::ExitApp
 
 ;overview position
 global ViewTop := 240
@@ -71,6 +80,7 @@ clkLocked(pos:=1)
 
 ;enable mouse clicker (random time 1-10 sec, current mouse position)
 $^+C::
+	BreakLoop := 0
 	Send, {^+C}
 	MouseGetPos, ClickX, ClickY
 	SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
@@ -186,3 +196,9 @@ $^+a::
 		MouseMove, %OrigX%, %OrigY%
 		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 return	
+
+; break clicker loop
+$Space::
+	BreakLoop := 1
+	Send, {Space}
+return
