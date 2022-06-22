@@ -27,6 +27,7 @@ $2::
 $3::
 $4::
 ;$5::
+;$f::
   Send, 1
   Sleep, 10  
   Send, 2
@@ -36,9 +37,13 @@ $4::
   Send, 4
 ;  Sleep, 10  
 ;  Send, 5
+;  Sleep, 10  
+;  Send, 5
 return
 
 $^A::
+  Send, T
+  Sleep, 10  
   Send, ^T
   Sleep, 10  
   Send, ^R
