@@ -1,5 +1,5 @@
+;AHK v1.1.33.11
 ;by cheva (c) MIT 2012-2022
-; Ловилка РР4: Спининг v1.0.2
 
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 
@@ -7,10 +7,19 @@ SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 $^+R::Reload
 
 ;suspend/resume
-$^+S::Suspend, toggle
+$^+S::
+  Suspend, toggle
+  SoundPlay %A_WinDir%\Media\Windows Battery Low.wav
+return
 
 ;pause/resume
-$^+P::Pause, toggle
+$^+P::
+  Pause, toggle
+  SoundPlay %A_WinDir%\Media\Windows Balloon.wav
+return
+
+;exit
+$^+W::ExitApp
 
 $^Numpad0::
 	Loop
