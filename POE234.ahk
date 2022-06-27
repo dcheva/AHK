@@ -26,7 +26,7 @@ $^+W::ExitApp
 $2::
 $3::
 $4::
-$5::
+;$5::
 ;$f::
 ;  Send, 1
 ;  Sleep, 10  
@@ -35,10 +35,10 @@ $5::
   Send, 3
   Sleep, 10  
   Send, 4
-  Sleep, 10  
-  Send, 5
 ;  Sleep, 10  
 ;  Send, 5
+;  Sleep, 10  
+;  Send, f
 return
 
 $^A::
