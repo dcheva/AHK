@@ -42,7 +42,7 @@ $5::
 return
 
 $^A::
-  Send, T
+  Send, {T}
   Sleep, 10  
   Send, ^T
   Sleep, 10  
@@ -57,6 +57,8 @@ $^A::
   Send, {MButton}
 return
 
-;$RButton::
-;  Send, T
-;  Send, {RButton}
+$R::
+  Send, {R}
+  Sleep, 200  
+  Send, {D}
+return
