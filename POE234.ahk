@@ -43,22 +43,30 @@ return
 
 $^A::
   Send, {T}
-  Sleep, 10  
+  Sleep, 10 
   Send, ^T
-  Sleep, 10  
+  Sleep, 10 
   Send, ^R
-  Sleep, 10  
+  Sleep, 10 
   Send, ^E
-  Sleep, 10  
+  Sleep, 10
   Send, ^W
-  Sleep, 10  
+  Sleep, 10 
   Send, ^Q
-  Sleep, 10  
+  Sleep, 100  
   Send, {MButton}
 return
 
 $R::
   Send, {R}
-  Sleep, 200  
+  Sleep, 200 
   Send, {D}
+return
+
+$Space::
+  Send, {Space}
+;  Sleep, 10 
+;  Send, {T}
+  Sleep, 10
+  Send, {MButton}
 return
