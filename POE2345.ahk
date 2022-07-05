@@ -21,6 +21,31 @@ return
 ;exit
 $^+W::ExitApp
 
+;functions
+clkToKill()
+{
+	Send, {Q}
+	Sleep, 100
+	Send, {F}
+	Sleep, 100
+	Send, {E}
+	Sleep, 100
+	Send, {LButton}
+	Sleep, 100
+	Send, {MButton}
+	Sleep, 100
+	Send, {RButton}
+	SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
+}
+
+$^Numpad0::
+	Loop
+	{
+		clkToKill()
+		Sleep, 5000
+	}
+return
+
 ;$`::
 ;$1:: 
 $2::
@@ -65,8 +90,9 @@ return
 
 $Space::
   Send, {Space}
-;  Sleep, 10 
-;  Send, {T}
+  Sleep, 10 
+  Send, {T}
   Sleep, 10
   Send, {MButton}
 return
+
