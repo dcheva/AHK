@@ -53,8 +53,8 @@ $3::
 $4::
 $5::
 ;$f::
-;  Send, 1
-;  Sleep, 10  
+  Send, 1
+  Sleep, 10  
   Send, 2
   Sleep, 10  
   Send, 3
@@ -91,8 +91,8 @@ return
 $Space::
   Send, {Space}
   Sleep, 10 
-  Send, {T}
-  Sleep, 10
   Send, {MButton}
+;  Send, {T}
+;  Sleep, 10
 return
 
