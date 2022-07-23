@@ -82,6 +82,7 @@ $^A::
   Send, {MButton}
 return
 
+; achtung minen!
 $R::
   Send, {R}
   Sleep, 200 
