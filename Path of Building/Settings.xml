@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
 	<Mode mode="BUILD">
-		<Arg string="C:\Users\dmytr\Documents/Path of Building/Builds/POB_saves/Is_Crusher.xml"/>
-		<Arg string="Is_Crusher"/>
+		<Arg string="C:\Users\dmytr\Documents/Path of Building/Builds/POB_saves/forbidden-rite.xml"/>
+		<Arg string="forbidden-rite"/>
 	</Mode>
 	<Accounts lastAccountName="dmytro_cheva" lastRealm="PC">
 		<Account accountName="dmytro_cheva"/>
