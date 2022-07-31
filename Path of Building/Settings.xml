@@ -8,5 +8,5 @@
 		<Account accountName="dmytro_cheva"/>
 	</Accounts>
 	<SharedItems/>
-	<Misc slotOnlyTooltips="true" showTitlebarName="true" showWarnings="true" defaultCharLevel="1" nodePowerTheme="RED/BLUE" connectionProtocol="nil" thousandsSeparator="," betaTest="false" decimalSeparator="." defaultGemQuality="0" showThousandsSeparators="true" buildSortMode="NAME"/>
+	<Misc slotOnlyTooltips="true" showWarnings="true" showTitlebarName="true" defaultItemAffixQuality="0.5" defaultCharLevel="1" nodePowerTheme="RED/BLUE" connectionProtocol="nil" thousandsSeparator="," betaTest="false" decimalSeparator="." defaultGemQuality="0" showThousandsSeparators="true" buildSortMode="NAME"/>
 </PathOfBuilding>
