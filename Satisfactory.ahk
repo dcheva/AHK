@@ -43,10 +43,10 @@ collect()
 ;Return
 
 ;collect v<0.6.0
-$+e::
-	CLK:=1
-	collect()
-Return
+;$+e::
+;	CLK:=1
+;	collect()
+;Return
 $^e::
 	Send, {E Down}
 Return
