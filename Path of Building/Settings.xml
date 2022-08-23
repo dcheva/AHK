@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
 	<Mode mode="BUILD">
-		<Arg string="C:\Users\dmytr\Documents/Path of Building/Builds/POB_saves/SplashRider.xml"/>
-		<Arg string="SplashRider"/>
+		<Arg string="C:\Users\dmytr\Documents/Path of Building/Builds/POB_saves/Totom-Go-Laba.xml"/>
+		<Arg string="Totom-Go-Laba"/>
 	</Mode>
 	<Accounts lastAccountName="dmytro_cheva" lastRealm="PC">
 		<Account accountName="dmytro_cheva"/>
 	</Accounts>
 	<SharedItems/>
-	<Misc slotOnlyTooltips="true" showWarnings="true" showTitlebarName="true" defaultItemAffixQuality="0.5" defaultCharLevel="1" nodePowerTheme="RED/BLUE" connectionProtocol="nil" thousandsSeparator="," betaTest="false" decimalSeparator="." defaultGemQuality="0" showThousandsSeparators="true" buildSortMode="NAME"/>
+	<Misc betaTest="false" connectionProtocol="nil" thousandsSeparator="," showThousandsSeparators="true" slotOnlyTooltips="true" invertSliderScrollDirection="false" showTitlebarName="true" defaultCharLevel="1" nodePowerTheme="RED/BLUE" buildSortMode="NAME" showWarnings="true" defaultItemAffixQuality="0.5" defaultGemQuality="0" decimalSeparator="."/>
 </PathOfBuilding>
