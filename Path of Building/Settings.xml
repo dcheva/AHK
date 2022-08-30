@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
 	<Mode mode="BUILD">
-		<Arg string="C:\Users\dmytr\Documents/Path of Building/Builds/POB_saves/Totom-Go-Laba.xml"/>
-		<Arg string="Totom-Go-Laba"/>
+		<Arg string="C:\Users\dmytr\Documents/Path of Building/Builds/Lightning Conduit Build  Elementalist.xml"/>
+		<Arg string="Lightning Conduit Build  Elementalist"/>
 	</Mode>
 	<Accounts lastAccountName="dmytro_cheva" lastRealm="PC">
 		<Account accountName="dmytro_cheva"/>
