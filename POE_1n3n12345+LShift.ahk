@@ -100,5 +100,7 @@ return
 $LShift::
 GetKeyState, state, LButton
 if (state = "D")
+  Send, {R}
+  Sleep, 10 
   Send, {E}
 return
