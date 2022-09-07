@@ -93,8 +93,6 @@ $Space::
   Send, {Space}
   Sleep, 10 
   Send, {MButton}
-;  Send, {T}
-;  Sleep, 10
 return
 
 $LShift::
