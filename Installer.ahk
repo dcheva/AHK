@@ -29,7 +29,7 @@ AutoRestart := false
 ProductName := "AutoHotkey"
 ProductVersion := A_AhkVersion
 ProductPublisher := "Lexikos"
-ProductWebsite := "https://autohotkey.com/"
+ProductWebsite := "https://www.autohotkey.com/"
 
 EnvGet ProgramW6432, ProgramW6432
 DefaultPath := (ProgramW6432 ? ProgramW6432 : A_ProgramFiles) "\AutoHotkey"
@@ -194,6 +194,7 @@ DetermineVersion() {
         CurrentStartMenu := ""
         return
     }
+    RegRead CurrentInstallCommand, HKLM, %AutoHotkeyKey%, InstallCommand
     RegRead CurrentVersion, HKLM, %AutoHotkeyKey%, Version
     RegRead CurrentStartMenu, HKLM, %AutoHotkeyKey%, StartMenuFolder
     RegRead url, HKLM, %UninstallKey%, URLInfoAbout
@@ -204,18 +205,13 @@ DetermineVersion() {
     else
         CurrentName := "AutoHotkey"
     ; Identify which build is installed/set as default:
-    FileAppend ExitApp `% (A_IsUnicode=1) << 8 | (A_PtrSize=8) << 9, %A_Temp%\VersionTest.ahk
-    RunWait %CurrentPath%\AutoHotkey.exe "%A_Temp%\VersionTest.ahk",, UseErrorLevel
-    if ErrorLevel = 0x300
-        CurrentType := "x64"
-    else if ErrorLevel = 0x100
-        CurrentType := "Unicode"
-    else if ErrorLevel = 0
-        CurrentType := "ANSI"
-    else
-        CurrentType := ""
-    FileDelete %A_Temp%\VersionTest.ahk
-    ; Set some default parameter based on current installation:
+    static v1_types := {"Unicode 64-bit": "x64", "Unicode 32-bit": "Unicode", "ANSI 32-bit": "ANSI"}
+    try {
+        local exe := GetExeInfo(CurrentPath "\AutoHotkey.exe")
+        if SubStr(exe.Description, 1, 11) = "AutoHotkey " && exe.Version = CurrentVersion
+            CurrentType := v1_types[SubStr(exe.Description, 12)]
+    }
+    ; Set some default parameters based on current installation:
     if CurrentType
         DefaultType := CurrentType
     DefaultPath := CurrentPath
@@ -229,6 +225,18 @@ DetermineVersion() {
     DefaultUIAccess := !ErrorLevel && UACIsEnabled
     RegRead v, HKCR, %FileTypeKey%\Shell\Open\Command
     DefaultToUTF8 := InStr(v, " /CP65001 ") != 0
+}
+
+GetExeInfo(exe) {
+    if !(verSize := DllCall("version\GetFileVersionInfoSize", "str", exe, "uint*", 0, "uint"))
+        || !DllCall("version\GetFileVersionInfo", "str", exe, "uint", 0, "uint", VarSetCapacity(verInfo, verSize), "ptr", &verInfo)
+        throw
+    prop := {}
+    Loop Parse, % "Version Description", " "
+        if DllCall("version\VerQueryValue", "ptr", &verInfo, "str", "\StringFileInfo\040904b0\File" A_LoopField, "ptr*", p:=0, "uint*", len:=0)
+            prop[A_LoopField] := StrGet(p, len)
+        else throw
+    return prop
 }
 
 InitUI() {
@@ -246,11 +254,11 @@ InitUI() {
     if !w || !w.initOptions
         throw 1
     w.AHK := Func("JS_AHK")
-    if (!CurrentType && A_ScriptDir != DefaultPath)
+    if (!CurrentType && A_ScriptDir != DefaultPath && !CurrentInstallCommand)
         CurrentName := ""  ; Avoid showing the Reinstall option since we don't know which version it was.
     w.initOptions(CurrentName, CurrentVersion, CurrentType
                 , ProductVersion, DefaultPath, DefaultStartMenu
-                , DefaultType, A_Is64bitOS = 1)
+                , DefaultType, A_Is64bitOS = 1, CurrentInstallCommand)
     w.configureMode := ConfigureMode
     w.document.body.className := ConfigureMode ? "config-mode" : ""
     if ConfigureMode {
@@ -262,11 +270,11 @@ InitUI() {
         w.opt1.removeAttribute("href")
         w.opt1.firstChild.innerText := "Checking for updates..."
     }
-    w.installcompiler.checked := DefaultCompiler
-    w.enabledragdrop.checked := DefaultDragDrop
-    w.separatebuttons.checked := DefaultIsHostApp
-    w.enableuiaccess.checked := DefaultUIAccess && IsTrustedLocation(DefaultPath)
-    w.defaulttoutf8.checked := DefaultToUTF8
+    w.installcompiler.checked := ComObject(0xB, -DefaultCompiler)  ; Some systems seem to treat 0 as true, so pass proper boolean.
+    w.enabledragdrop.checked := ComObject(0xB, -DefaultDragDrop)
+    w.separatebuttons.checked := ComObject(0xB, -DefaultIsHostApp)
+    w.enableuiaccess.checked := ComObject(0xB, -(DefaultUIAccess && IsTrustedLocation(DefaultPath)))
+    w.defaulttoutf8.checked := ComObject(0xB, -DefaultToUTF8)
     if !A_Is64bitOS
         w.it_x64.style.display := "None"
     if A_OSVersion in WIN_2000,WIN_2003,WIN_XP,WIN_VISTA ; i.e. not WIN_7, WIN_8 or a future OS.
@@ -287,10 +295,9 @@ InitUI() {
 }
 
 CheckForUpdates() {
-    local w := getWindow(), latestVersion := ""
     try {
         req := ComObjCreate("Msxml2.XMLHTTP")
-        req.open("GET", "https://autohotkey.com/download/1.1/version.txt?" SubStr(A_Now,1,8), true)
+        req.open("GET", "https://www.autohotkey.com/download/1.1/version.txt?" SubStr(A_Now,1,8), true)
         req.onreadystatechange := Func("VersionReceived").Bind(req)
         req.send()
     }
@@ -303,9 +310,9 @@ VersionReceived(req) {
     latestVersion := req.responseText
     if RegExMatch(latestVersion, "^(\d+\.){3}\d+") {
         if (latestVersion = ProductVersion)
-            w.opt1.firstChild.innerText := "Reinstall (download required)"
+            w.opt1.innerHTML := "<span>Reinstall (download required)</span>"
         else
-            w.opt1.firstChild.innerText := "Download v" latestVersion
+            w.opt1.innerHTML := "<span>Download v" latestVersion "</span>"
         w.opt1.href := "#"
         w.opt1.onclick := Func("DownloadAHK")
     } else
@@ -360,7 +367,7 @@ SetWBClientSite()
         IServiceProvider: [3]
         IInternetSecurityManager: [1,1,3,4,8,7,3,3]
     )}
-    unkQI      := RegisterCallback("WBClientSite_QI", "Fast")
+    unkQI      := RegisterCallback("WBClientSite_QI")
     unkAddRef  := RegisterCallback("WBClientSite_AddRef", "Fast")
     unkRelease := RegisterCallback("WBClientSite_Release", "Fast")
     WBClientSite := {_buffers: bufs := {}}, bufn := 0, 
@@ -373,7 +380,7 @@ SetWBClientSite()
         NumPut(unkAddRef,   buf + 2*A_PtrSize)
         NumPut(unkRelease,  buf + 3*A_PtrSize)
         for i, prmc in prms
-            NumPut(RegisterCallback("WBClientSite_" name, "Fast", prmc+1, i), buf + (3+i)*A_PtrSize)
+            NumPut(RegisterCallback("WBClientSite_" name, "", prmc+1, i), buf + (3+i)*A_PtrSize)
         NumPut(buf + A_PtrSize, buf + 0)
         WBClientSite[name] := buf
     }
@@ -677,7 +684,7 @@ ViewHelp(topic) {
     if FileExist(path)
         Run_("hh.exe", "mk:@MSITStore:" path "::" topic)
     else
-        Run_("https://autohotkey.com" topic)
+        Run_("https://www.autohotkey.com" topic)
 }
 
 RunAutoHotkey() {
@@ -791,7 +798,7 @@ DownloadAHK() {
     file := A_Temp "\ahk-install.exe"
     switchPage("downloading")
     Sleep 10
-    if !Download("https://autohotkey.com/download/ahk-install.exe", file, "DownloadAHK_Progress") {
+    if !Download("https://www.autohotkey.com/download/ahk-install.exe", file, "DownloadAHK_Progress") {
         MsgBox 0x2010,, Download failed.
         switchPage("start")
         return
@@ -834,7 +841,7 @@ DownloadSize(n) {
     return Round(n, 2) " KB"
 }
 
-; Based on code by Sean and SKAN @ http://www.autohotkey.com/forum/viewtopic.php?p=184468#184468
+; Based on code by Sean and SKAN @ https://www.autohotkey.com/board/topic/17915-/?p=174581
 Download(url, file, callback) {
     static vt
     if !VarSetCapacity(vt) {
@@ -910,6 +917,13 @@ CustomInstall() {
     )})
 }
 
+RunInstallCommand() {
+    global
+    switchPage("wait")
+    RunWait % StrReplace(CurrentInstallCommand, "%1", A_ScriptDir)
+    ExitApp
+}
+
 ; Uninstall.
 Uninstall() {
     global
@@ -974,6 +988,9 @@ Uninstall() {
         FileRemoveDir %A_ProgramsCommon%\%CurrentStartMenu% ; Only if empty.
     }
     
+    ; Delete certificate and private key used to sign UIA executables.
+    try EnableUIAccess_DeleteCertAndKey("AutoHotkey")
+    
     if !SilentMode
         MsgBox 0x2040, AutoHotkey Setup
             , Setup will now close to complete the uninstallation.
@@ -987,9 +1004,6 @@ Uninstall() {
         FileRemoveDir %CurrentPath%  ; Only if empty.
         ExitApp
     }
-    
-    ; Delete certificate and private key used to sign UIA executables.
-    try EnableUIAccess_DeleteCertAndKey("AutoHotkey")
     
     Gui Cancel
     
@@ -1114,7 +1128,7 @@ _Install(opt) {
         FileCreateShortcut %A_WorkingDir%\WindowSpy.ahk, %smpath%\Window Spy.lnk
         FileCreateShortcut %A_WorkingDir%\AutoHotkey.chm, %smpath%\AutoHotkey Help File.lnk
         IniWrite %ProductWebsite%, %ProductName% Website.url, InternetShortcut, URL
-        FileCreateShortcut %A_WorkingDir%\%ProductName% Website.url, %smpath%\Website.lnk
+        FileCreateShortcut %A_WorkingDir%\%ProductName% Website.url, %smpath%\Website.lnk,,,, shell32.dll,, -14
         FileCreateShortcut %A_WorkingDir%\Installer.ahk, %smpath%\AutoHotkey Setup.lnk
             ,,,, %A_WinDir%\System32\appwiz.cpl,, -1500
         if opt.ahk2exe
@@ -1214,7 +1228,6 @@ _Install(opt) {
     RegWrite REG_SZ, HKLM, %UninstallKey%, DisplayVersion, %ProductVersion%
     RegWrite REG_SZ, HKLM, %UninstallKey%, URLInfoAbout, %ProductWebsite%
     RegWrite REG_SZ, HKLM, %UninstallKey%, Publisher, %ProductPublisher%
-    RegWrite REG_SZ, HKLM, %UninstallKey%, NoModify, 1
     
     ; Notify other programs (e.g. explorer.exe) that file type associations have changed.
     ; This may be necessary to update the icon when upgrading from an older version of AHK.
@@ -1289,8 +1302,7 @@ InstallFile(file, target="") {
 InstallMainFiles() {
     InstallFile("AutoHotkeyU32.exe")
     InstallFile("AutoHotkeyA32.exe")
-    if A_Is64bitOS
-        InstallFile("AutoHotkeyU64.exe")
+    InstallFile("AutoHotkeyU64.exe")
     
     InstallFile("WindowSpy.ahk")
     InstallFile("AutoHotkey.chm")
@@ -1793,7 +1805,7 @@ function onload() {
 		}
 	})
 }
-function initOptions(curName, curVer, curType, newVer, instDir, smFolder, defType, is64) {
+function initOptions(curName, curVer, curType, newVer, instDir, smFolder, defType, is64, instCmd) {
 	if (onload) onload(), onload = null;
 	var opt;
 	var warn;
@@ -1817,19 +1829,25 @@ function initOptions(curName, curVer, curType, newVer, instDir, smFolder, defTyp
 			"AHK('QuickInstall')", "Express Installation", "Default version: " + defTypeName + "<br>Install in: " + instDir,
 			"AHK('Customize')", "Custom Installation", ""
 		];
-	} else if (curVer != newVer) {
-		start_intro.innerText = curName + " v" + curVer + curTypeName + " is installed. What do you want to do?";
-		opt = [
-			"AHK('Upgrade', '" + defType + "')", (curVer < newVer ? "Upgrade" : "Downgrade") + " to v" + newVer + " (" + defTypeName + ")", "",
-			"AHK('Customize')", "Custom Installation", ""
-		];
 	} else {
 		start_intro.innerText = curName + " v" + curVer + curTypeName + " is installed. What do you want to do?";
-		opt = [
-			"AHK('QuickInstall')", "Repair", "",
-			"AHK('Customize')", "Modify", "",
-			"AHK('Uninstall')", "Uninstall", ""
-		];
+		if (instCmd) {
+			opt = [
+				"AHK('RunInstallCommand')", "Install as additional version", "Run a previously installed script to integrate v" + newVer,
+				"AHK('Customize')", "Custom Installation", "Not recommended: may partially overwrite the existing installation"
+			];
+		} else if (curVer != newVer) {
+			opt = [
+				"AHK('Upgrade', '" + defType + "')", (curVer < newVer ? "Upgrade" : "Downgrade") + " to v" + newVer + " (" + defTypeName + ")", "",
+				"AHK('Customize')", "Custom Installation", ""
+			];
+		} else {
+			opt = [
+				"AHK('QuickInstall')", "Repair", "",
+				"AHK('Customize')", "Modify", "",
+				"AHK('Uninstall')", "Uninstall", ""
+			];
+		}
 	}
 	var i, html = [];
 	for (i = 0; i < opt.length; i += 3) {
