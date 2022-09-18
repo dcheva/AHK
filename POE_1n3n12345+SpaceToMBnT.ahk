@@ -49,9 +49,9 @@ return
 ;$`::
 ;$1:: 
 $2::
-$3::
+;$3::
 $4::
-$5::
+;$5::
 ;$f::
   Send, 1
   Sleep, 10  
@@ -91,9 +91,7 @@ return
 
 $Space::
   Send, {Space}
-  Sleep, 10 
+  Send, {T}
+  Sleep, 250
   Send, {MButton}
-;  Send, {T}
-;  Sleep, 10
 return
-
