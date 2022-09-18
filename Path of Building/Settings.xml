@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
 	<Mode mode="BUILD">
-		<Arg string="C:\Users\dmytr\Documents/Path of Building/Builds/Lightning Conduit Build  Elementalist.xml"/>
-		<Arg string="Lightning Conduit Build  Elementalist"/>
+		<Arg string="c:\projects\POB/VooDeeCovan.xml"/>
+		<Arg string="VooDeeCovan"/>
 	</Mode>
-	<Accounts lastAccountName="dmytro_cheva" lastRealm="PC">
+	<Accounts lastAccountName="SteamCovan" lastRealm="PC">
 		<Account accountName="dmytro_cheva"/>
+		<Account accountName="SteamCovan"/>
 	</Accounts>
 	<SharedItems/>
-	<Misc betaTest="false" connectionProtocol="nil" thousandsSeparator="," showThousandsSeparators="true" slotOnlyTooltips="true" invertSliderScrollDirection="false" showTitlebarName="true" defaultCharLevel="1" nodePowerTheme="RED/BLUE" buildSortMode="NAME" showWarnings="true" defaultItemAffixQuality="0.5" defaultGemQuality="0" decimalSeparator="."/>
+	<Misc betaTest="false" connectionProtocol="0" thousandsSeparator="," showThousandsSeparators="true" slotOnlyTooltips="true" invertSliderScrollDirection="false" showTitlebarName="true" defaultCharLevel="1" nodePowerTheme="RED/BLUE" buildSortMode="NAME" showWarnings="true" defaultItemAffixQuality="0.5" defaultGemQuality="0" decimalSeparator="." buildPath="c:\projects\POB/"/>
 </PathOfBuilding>
