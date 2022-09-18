@@ -91,15 +91,7 @@ return
 
 $Space::
   Send, {Space}
-  Sleep, 10 
-  Send, {MButton}
-  Sleep, 10 
   Send, {T}
-return
-
-$LShift::
-GetKeyState, state, LButton
-if (state = "D") {
-  Send, {R}
-}
+  Sleep, 250
+  Send, {MButton}
 return
