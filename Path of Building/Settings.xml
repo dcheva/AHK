@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
 	<Mode mode="BUILD">
-		<Arg string="c:\projects\POB/VooDeeCovan.xml"/>
-		<Arg string="VooDeeCovan"/>
+		<Arg string="c:\projects\POB/arc-elementalist.xml"/>
+		<Arg string="arc-elementalist"/>
 	</Mode>
 	<Accounts lastAccountName="SteamCovan" lastRealm="PC">
 		<Account accountName="dmytro_cheva"/>
