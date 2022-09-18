@@ -49,9 +49,9 @@ return
 ;$`::
 ;$1:: 
 $2::
-$3::
+;$3::
 $4::
-$5::
+;$5::
 ;$f::
   Send, 1
   Sleep, 10  
@@ -93,7 +93,13 @@ $Space::
   Send, {Space}
   Sleep, 10 
   Send, {MButton}
-;  Send, {T}
-;  Sleep, 10
+  Sleep, 10 
+  Send, {T}
 return
 
+$LShift::
+GetKeyState, state, LButton
+if (state = "D") {
+  Send, {R}
+}
+return
