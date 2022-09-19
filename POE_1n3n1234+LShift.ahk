@@ -95,6 +95,7 @@ $Space::
   Send, {MButton}
 return
 
+; Shift + Click
 $LShift::
 GetKeyState, state, LButton
 if (state = "D") {

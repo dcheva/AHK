@@ -89,12 +89,6 @@ $R::
   Send, {D}
 return
 
-$W::
-  Send, {W}
-  Sleep, 100 
-  Send, {D}
-return
-
 $Space::
   Send, {Space}
   Sleep, 10
