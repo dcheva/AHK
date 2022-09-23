@@ -67,8 +67,8 @@ $4::
 return
 
 $^A::
-  Send, {T}
-  Sleep, 10 
+;  Send, {T}
+;  Sleep, 10 
   Send, ^T
   Sleep, 10 
   Send, ^R
