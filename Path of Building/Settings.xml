@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
 	<Mode mode="BUILD">
-		<Arg string="c:\projects\POB/ArCovan-fe-000-items-skills-tree-v1.xml"/>
-		<Arg string="ArCovan-fe-000-items-skills-tree-v1"/>
+		<Arg string="c:\projects\POB/firestarter-100-items.xml"/>
+		<Arg string="firestarter-100-items"/>
 	</Mode>
 	<Accounts lastAccountName="SteamCovan" lastRealm="PC">
 		<Account accountName="dmytro_cheva"/>
