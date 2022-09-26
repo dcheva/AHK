@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
 	<Mode mode="BUILD">
-		<Arg string="c:\projects\POB/firestarter-100-items.xml"/>
-		<Arg string="firestarter-100-items"/>
+		<Arg string="c:\projects\POB/firestarter.xml"/>
+		<Arg string="firestarter"/>
 	</Mode>
 	<Accounts lastAccountName="SteamCovan" lastRealm="PC">
 		<Account accountName="dmytro_cheva"/>
