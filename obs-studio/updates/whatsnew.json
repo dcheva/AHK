@@ -1,0 +1,30 @@
+[
+	{
+		"version": "28.0.0",
+		"Beta": 1,
+		"url": "https://obsproject.com/startup/please-update",
+		"increment": 35
+	},
+	{
+		"version": "28.0.0",
+		"Beta": 2,
+		"url": "https://obsproject.com/startup/please-update",
+		"increment": 32
+	},
+	{
+		"version": "28.0.0",
+		"RC": 1,
+		"url": "https://obsproject.com/startup/please-update",
+		"increment": 1
+	},
+	{
+		"version": "28.0.0",
+		"url": "https://obsproject.com/startup/obs-studio-28-release",
+		"increment": 1
+	},
+	{
+		"version": "28.0.1",
+		"url": "https://obsproject.com/startup/obs-studio-28-release",
+		"increment": 1
+	}
+]
