@@ -1,0 +1,351 @@
+09:48:30.208: CPU Name: Intel(R) Core(TM) i5-9600K CPU @ 3.70GHz
+09:48:30.208: CPU Speed: 3696MHz
+09:48:30.208: Physical Cores: 6, Logical Cores: 6
+09:48:30.208: Physical Memory: 16302MB Total, 13076MB Free
+09:48:30.208: Windows Version: 10.0 Build 19044 (release: 2009; revision: 2006; 64-bit)
+09:48:30.208: Running as administrator: false
+09:48:30.208: Aero is Enabled (Aero is always on for windows 8 and above)
+09:48:30.208: Windows 10/11 Gaming Features:
+09:48:30.208: 	Game Bar: Off
+09:48:30.208: 	Game DVR: Off
+09:48:30.208: 	Game DVR Background Recording: Off
+09:48:30.208: 	Game Mode: On
+09:48:30.208: 	Hardware GPU Scheduler: On
+09:48:30.211: Sec. Software Status:
+09:48:30.211: 
+09:48:30.212: 	ESET Security: enabled (AV)
+09:48:30.212: 
+09:48:30.212: Current Date/Time: 2022-09-29, 09:48:30
+09:48:30.213: Browser Hardware Acceleration: true
+09:48:30.213: Hide OBS windows from screen capture: false
+09:48:30.213: Qt Version: 6.3.1 (runtime), 6.3.1 (compiled)
+09:48:30.213: Portable mode: false
+09:48:30.843: OBS 28.0.2 (64-bit, windows)
+09:48:30.843: ---------------------------------
+09:48:30.896: ---------------------------------
+09:48:30.896: audio settings reset:
+09:48:30.896: 	samples per sec: 48000
+09:48:30.896: 	speakers:        2
+09:48:30.896: 	max buffering:   960 milliseconds
+09:48:30.896: 	buffering type:  dynamically increasing
+09:48:30.897: ---------------------------------
+09:48:30.897: Initializing D3D11...
+09:48:30.897: Available Video Adapters: 
+09:48:30.898: 	Adapter 0: NVIDIA GeForce GTX 1660
+09:48:30.899: 	  Dedicated VRAM: 1988100096
+09:48:30.899: 	  Shared VRAM:    4252080128
+09:48:30.899: 	  PCI ID:         10de:2184
+09:48:30.899: 	  Driver Version: 30.0.15.1259
+09:48:30.899: 	  output 0:
+09:48:30.899: 	    name=X223HQ
+09:48:30.899: 	    pos={0, 0}
+09:48:30.899: 	    size={1920, 1080}
+09:48:30.899: 	    attached=true
+09:48:30.899: 	    refresh=60
+09:48:30.899: 	    space=RGB_FULL_G22_NONE_P709
+09:48:30.899: 	    sdr_white_nits=80
+09:48:30.899: 	    nit_range=[min=0.500000, max=270.000000, max_full_frame=270.000000]
+09:48:30.902: Loading up D3D11 on adapter NVIDIA GeForce GTX 1660 (0)
+09:48:30.990: D3D11 loaded successfully, feature level used: b000
+09:48:30.990: DXGI increase maximum frame latency success
+09:48:30.990: D3D11 GPU priority setup failed (not admin?)
+09:48:32.460: ---------------------------------
+09:48:32.460: video settings reset:
+09:48:32.460: 	base resolution:   1920x1080
+09:48:32.460: 	output resolution: 1920x1080
+09:48:32.460: 	downscale filter:  Bicubic
+09:48:32.460: 	fps:               50/1
+09:48:32.460: 	format:            NV12
+09:48:32.460: 	YUV mode:          Rec. 709/Partial
+09:48:32.461: NV12 texture support enabled
+09:48:32.461: P010 texture support not available
+09:48:32.462: Audio monitoring device:
+09:48:32.462: 	name: Default
+09:48:32.462: 	id: default
+09:48:32.462: ---------------------------------
+09:48:32.466: No AJA devices found, skipping loading AJA UI plugin
+09:48:32.466: Failed to initialize module 'aja-output-ui.dll'
+09:48:32.468: No AJA devices found, skipping loading AJA plugin
+09:48:32.468: Failed to initialize module 'aja.dll'
+09:48:32.469: Skipping module '../../obs-plugins/64bit/chrome_elf.dll', not an OBS plugin
+09:48:32.473: [CoreAudio encoder]: CoreAudio AAC encoder not installed on the system or couldn't be loaded
+09:48:32.474: Failed to load 'en-US' text for module: 'decklink-captions.dll'
+09:48:32.475: Failed to load 'en-US' text for module: 'decklink-output-ui.dll'
+09:48:32.478: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+09:48:32.478: Failed to initialize module 'decklink.dll'
+09:48:32.479: Skipping module '../../obs-plugins/64bit/DirectML.dll', not an OBS plugin
+09:48:32.513: [AMF] Unable to load 'amfrt64.dll', error code 126.
+09:48:32.515: [AMF] AMF Test failed due to one or more errors.
+09:48:32.515: Failed to initialize module 'enc-amf.dll'
+09:48:32.526: Skipping module '../../obs-plugins/64bit/libcef.dll', not an OBS plugin
+09:48:32.527: Skipping module '../../obs-plugins/64bit/libEGL.dll', not an OBS plugin
+09:48:32.528: Skipping module '../../obs-plugins/64bit/libGLESv2.dll', not an OBS plugin
+09:48:32.546: [obs-browser]: Version 2.18.5
+09:48:32.546: [obs-browser]: CEF Version 103.0.5060.134 (runtime), 103.0.0-5060-shared-textures.2591+g4204d54+chromium-103.0.5060.134 (compiled)
+09:48:32.554: NVENC supported
+09:48:32.557: [noise suppress]: NVIDIA RTX denoiser disabled, redistributable not found
+09:48:32.558: [NVIDIA RTX VIDEO FX]: FX disabled, redistributable not found.
+09:48:32.680: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.0.1 | RPC Version: 1)
+09:48:32.680: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.3.1 | Qt version (run-time): 6.3.1
+09:48:32.680: [obs-websocket] [obs_module_load] Linked ASIO Version: 101201
+09:48:32.691: [obs-websocket] [obs_module_load] Module loaded.
+09:48:32.694: Skipping module '../../obs-plugins/64bit/onnxruntime.dll', not an OBS plugin
+09:48:32.700: [vlc-video]: Couldn't find VLC installation, VLC video source disabled
+09:48:32.711: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+09:48:32.711: No blackmagic support
+09:48:32.719: ---------------------------------
+09:48:32.719:   Loaded Modules:
+09:48:32.719:     win-wasapi.dll
+09:48:32.719:     win-mf.dll
+09:48:32.719:     win-dshow.dll
+09:48:32.719:     win-decklink.dll
+09:48:32.719:     win-capture.dll
+09:48:32.719:     vlc-video.dll
+09:48:32.719:     text-freetype2.dll
+09:48:32.719:     rtmp-services.dll
+09:48:32.719:     obs-x264.dll
+09:48:32.719:     obs-websocket.dll
+09:48:32.719:     obs-vst.dll
+09:48:32.719:     obs-virtualbg.dll
+09:48:32.719:     obs-transitions.dll
+09:48:32.719:     obs-text.dll
+09:48:32.719:     obs-qsv11.dll
+09:48:32.719:     obs-outputs.dll
+09:48:32.719:     obs-filters.dll
+09:48:32.719:     obs-ffmpeg.dll
+09:48:32.719:     obs-browser.dll
+09:48:32.719:     image-source.dll
+09:48:32.719:     frontend-tools.dll
+09:48:32.719:     decklink-output-ui.dll
+09:48:32.719:     decklink-captions.dll
+09:48:32.719:     coreaudio-encoder.dll
+09:48:32.719: ---------------------------------
+09:48:32.719: ==== Startup complete ===============================================
+09:48:32.776: All scene data cleared
+09:48:32.776: ------------------------------------------------
+09:48:32.790: [win-wasapi: 'Устройство воспроизведения'] update settings:
+09:48:32.790: 	device id: {0.0.0.00000000}.{8f63ec93-c2bb-4c45-889f-1e154fcbb8db}
+09:48:32.790: 	use device timing: 1
+09:48:32.799: [Loaded global audio device]: 'Устройство воспроизведения'
+09:48:32.815: WASAPI: Device 'Звук (Realtek High Definition Audio)' [48000 Hz] initialized
+09:48:32.858: [duplicator-monitor-capture: 'Захват экрана'] update settings:
+09:48:32.858: 	display: 1 (1920x1080)
+09:48:32.858: 	cursor: true
+09:48:32.858: 	method: DXGI
+09:48:32.858: [win-wasapi: 'Захват входного аудиопотока'] update settings:
+09:48:32.858: 	device id: default
+09:48:32.858: 	use device timing: 0
+09:48:32.858: [noise suppress: 'Noise Suppression'] NVAFX redist is not installed.
+09:48:32.859: User selected new VST plugin: 'C:/Program Files/Steinberg/VstPlugins/TDR/TDR Nova GE.dll'
+09:48:32.903: WASAPI: Device 'Микрофон (Realtek High Definition Audio)' [48000 Hz] initialized
+09:48:32.915: [Media Source 'Kalandra trailer']: settings:
+09:48:32.915: 	input:                   C:/[VideoEditor]/Parts/Path of Exile Lake of Kalandra Official Trailer.mkv
+09:48:32.915: 	input_format:            (null)
+09:48:32.915: 	speed:                   100
+09:48:32.915: 	is_looping:              yes
+09:48:32.915: 	is_linear_alpha:         no
+09:48:32.915: 	is_hw_decoding:          no
+09:48:32.915: 	is_clear_on_media_end:   yes
+09:48:32.915: 	restart_on_activate:     yes
+09:48:32.915: 	close_when_inactive:     no
+09:48:32.915: 	ffmpeg_options:          
+09:48:32.915: Set FFmpeg options: 
+09:48:32.916: [Media Source 'Champion loop']: settings:
+09:48:32.916: 	input:                   C:/[VideoEditor]/Parts/Champion and Alcoholics 2.mkv
+09:48:32.916: 	input_format:            (null)
+09:48:32.916: 	speed:                   100
+09:48:32.916: 	is_looping:              yes
+09:48:32.916: 	is_linear_alpha:         no
+09:48:32.916: 	is_hw_decoding:          no
+09:48:32.916: 	is_clear_on_media_end:   yes
+09:48:32.916: 	restart_on_activate:     yes
+09:48:32.916: 	close_when_inactive:     no
+09:48:32.916: 	ffmpeg_options:          
+09:48:32.916: Set FFmpeg options: 
+09:48:32.916: Switched to scene 'Trailer'
+09:48:32.916: ------------------------------------------------
+09:48:32.916: Loaded scenes:
+09:48:32.916: - scene '--- Monitor 1 ---':
+09:48:32.916:     - source: 'Захват экрана' (monitor_capture)
+09:48:32.916:     - source: 'Захват входного аудиопотока' (wasapi_input_capture)
+09:48:32.916:         - filter: 'Noise Suppression' (noise_suppress_filter_v2)
+09:48:32.916:         - filter: 'VST 2.x Plug-in' (vst_filter)
+09:48:32.916: - scene 'Trailer':
+09:48:32.916:     - source: 'Kalandra trailer' (ffmpeg_source)
+09:48:32.916: - scene 'Champion':
+09:48:32.916:     - source: 'Champion loop' (ffmpeg_source)
+09:48:32.916: - scene 'Pause':
+09:48:32.916:     - source: 'Image' (image_source)
+09:48:32.916: ------------------------------------------------
+09:48:32.955: adding 42 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Захват входного аудиопотока)
+09:48:32.955: 
+09:48:37.109: User switched to scene 'Pause'
+09:48:38.768: User switched to scene '--- Monitor 1 ---'
+09:48:39.962: User switched to scene 'Pause'
+10:25:13.128: Uploading thumbnail file "C:/[VideoEditor]/Images/Alcoholic.jpg"...
+10:25:30.021: User switched to scene 'Champion'
+10:25:35.207: User switched to scene 'Trailer'
+10:36:35.837: User added source 'Image 2' (image_source) to scene 'Trailer'
+10:41:58.004: User switched to scene 'Pause'
+10:42:00.942: User switched to scene 'Champion'
+10:42:11.199: User added source 'Image 2' (image_source) to scene 'Champion'
+10:42:15.058: User switched to scene 'Pause'
+10:42:16.142: User switched to scene 'Trailer'
+10:42:37.726: Source 'Image 2' renamed to 'Alcoholic biold add'
+10:42:39.796: User switched to scene 'Pause'
+10:42:43.089: User switched to scene 'Champion'
+10:42:54.591: Source 'Alcoholic biold add' renamed to 'Alcoholic build add'
+10:48:26.305: [jim-nvenc: 'advanced_video_stream'] settings:
+10:48:26.305: 	codec:        H264
+10:48:26.305: 	rate_control: CBR
+10:48:26.305: 	bitrate:      12000
+10:48:26.305: 	cqp:          20
+10:48:26.305: 	keyint:       50
+10:48:26.305: 	preset:       hq
+10:48:26.305: 	profile:      high
+10:48:26.305: 	width:        1920
+10:48:26.305: 	height:       1080
+10:48:26.305: 	2-pass:       false
+10:48:26.305: 	b-frames:     2
+10:48:26.305: 	lookahead:    false
+10:48:26.305: 	psycho_aq:    true
+10:48:26.305: 
+10:48:26.319: ---------------------------------
+10:48:26.319: [FFmpeg aac encoder: 'adv_stream_aac'] bitrate: 160, channels: 2, channel_layout: 3
+10:48:26.319: 
+10:48:26.321: [rtmp stream: 'adv_stream'] Connecting to RTMP URL rtmps://a.rtmps.youtube.com:443/live2...
+10:48:26.328: [rtmp stream: 'adv_stream'] Interface: Realtek PCIe GbE Family Controller (ethernet, 100 mbps)
+10:48:26.995: [rtmp stream: 'adv_stream'] Connection to rtmps://a.rtmps.youtube.com:443/live2 successful
+10:48:26.996: [rtmp stream: 'adv_stream'] Socket send buffer is 65536 bytes
+10:48:27.003: ==== Streaming Start ===============================================
+10:59:19.473: User switched to scene '--- Monitor 1 ---'
+10:59:28.404: WASAPI: Default input device changed
+10:59:28.417: Device 'Микрофон (Realtek High Definition Audio)' invalidated.  Retrying (source: Захват входного аудиопотока)
+10:59:28.425: WASAPI: Device 'Line 1 (Virtual Audio Cable)' [48000 Hz] initialized
+10:59:30.406: WASAPI: Default input device changed
+10:59:30.410: Device 'Line 1 (Virtual Audio Cable)' invalidated.  Retrying (source: Захват входного аудиопотока)
+10:59:30.451: WASAPI: Device 'Микрофон (Realtek High Definition Audio)' [48000 Hz] initialized
+10:59:37.901: WASAPI: Default input device changed
+10:59:37.913: Device 'Микрофон (Realtek High Definition Audio)' invalidated.  Retrying (source: Захват входного аудиопотока)
+10:59:37.921: WASAPI: Device 'Line 1 (Virtual Audio Cable)' [48000 Hz] initialized
+10:59:39.905: WASAPI: Default input device changed
+10:59:39.907: Device 'Line 1 (Virtual Audio Cable)' invalidated.  Retrying (source: Захват входного аудиопотока)
+10:59:39.949: WASAPI: Device 'Микрофон (Realtek High Definition Audio)' [48000 Hz] initialized
+11:00:00.402: WASAPI: Default input device changed
+11:00:00.414: Device 'Микрофон (Realtek High Definition Audio)' invalidated.  Retrying (source: Захват входного аудиопотока)
+11:00:00.429: WASAPI: Device 'Line 1 (Virtual Audio Cable)' [48000 Hz] initialized
+11:00:02.407: WASAPI: Default input device changed
+11:00:02.410: Device 'Line 1 (Virtual Audio Cable)' invalidated.  Retrying (source: Захват входного аудиопотока)
+11:00:02.451: WASAPI: Device 'Микрофон (Realtek High Definition Audio)' [48000 Hz] initialized
+11:06:40.968: User added source 'Alcoholic build add' (image_source) to scene '--- Monitor 1 ---'
+11:08:16.613: User switched to scene 'Champion'
+11:09:11.268: User switched to scene '--- Monitor 1 ---'
+11:13:25.935: User switched to scene 'Champion'
+11:13:30.807: User switched to scene 'Trailer'
+11:13:42.008: [Media Source 'Kalandra trailer']: settings:
+11:13:42.008: 	input:                   C:/[VideoEditor]/Parts/Path of Exile Lake of Kalandra Official Trailer.mkv
+11:13:42.008: 	input_format:            (null)
+11:13:42.008: 	speed:                   100
+11:13:42.008: 	is_looping:              no
+11:13:42.008: 	is_linear_alpha:         no
+11:13:42.008: 	is_hw_decoding:          no
+11:13:42.008: 	is_clear_on_media_end:   yes
+11:13:42.008: 	restart_on_activate:     yes
+11:13:42.008: 	close_when_inactive:     no
+11:13:42.008: 	ffmpeg_options:          
+11:13:42.009: Set FFmpeg options: 
+11:14:09.403: WASAPI: Default input device changed
+11:14:09.416: Device 'Микрофон (Realtek High Definition Audio)' invalidated.  Retrying (source: Захват входного аудиопотока)
+11:14:09.426: WASAPI: Device 'Line 1 (Virtual Audio Cable)' [48000 Hz] initialized
+11:15:28.940: [rtmp stream: 'adv_stream'] User stopped the stream
+11:15:28.940: [rtmp stream: 'adv_stream'] Socket send buffer is 2097152 bytes
+11:15:28.940: Output 'adv_stream': stopping
+11:15:28.940: Output 'adv_stream': Total frames output: 81084
+11:15:28.940: Output 'adv_stream': Total drawn frames: 81130 (81131 attempted)
+11:15:28.940: Output 'adv_stream': Number of lagged frames due to rendering lag/stalls: 1 (0.0%)
+11:15:28.941: Video stopped, number of skipped frames due to encoding lag: 1/81096 (0.0%)
+11:15:28.943: ==== Streaming Stop ================================================
+11:15:29.917: ==== Shutting down ==================================================
+11:15:29.954: Switched to scene 'Trailer'
+11:15:29.958: Switched to scene 'Trailer'
+11:15:29.964: WASAPI: Device 'Звук (Realtek High Definition Audio)' Terminated
+11:15:29.967: WASAPI: Device 'Line 1 (Virtual Audio Cable)' Terminated
+11:15:30.032: All scene data cleared
+11:15:30.032: ------------------------------------------------
+11:15:30.182: [obs-websocket] [obs_module_unload] Shutting down...
+11:15:30.182: [obs-websocket] [obs_module_unload] Finished shutting down.
+11:15:30.204: [Scripting] Total detached callbacks: 0
+11:15:30.204: Freeing OBS context data
+11:15:30.204: 1 views remain at shutdown
+11:15:30.248: == Profiler Results =============================
+11:15:30.248: run_program_init: 3002.31 ms
+11:15:30.248:  ┣OBSApp::AppInit: 30.783 ms
+11:15:30.248:  ┃ ┗OBSApp::InitLocale: 2.493 ms
+11:15:30.248:  ┗OBSApp::OBSInit: 2947.25 ms
+11:15:30.248:    ┣obs_startup: 4.55 ms
+11:15:30.248:    ┗OBSBasic::OBSInit: 2259.82 ms
+11:15:30.248:      ┣OBSBasic::InitBasicConfig: 0.454 ms
+11:15:30.248:      ┣OBSBasic::ResetAudio: 0.114 ms
+11:15:30.248:      ┣OBSBasic::ResetVideo: 1566.3 ms
+11:15:30.248:      ┣OBSBasic::InitOBSCallbacks: 0.006 ms
+11:15:30.248:      ┣OBSBasic::InitHotkeys: 0.042 ms
+11:15:30.248:      ┣obs_load_all_modules2: 256.151 ms
+11:15:30.248:      ┃ ┣obs_init_module(aja-output-ui.dll): 0.229 ms
+11:15:30.248:      ┃ ┣obs_init_module(aja.dll): 0.098 ms
+11:15:30.248:      ┃ ┣obs_init_module(coreaudio-encoder.dll): 2.077 ms
+11:15:30.248:      ┃ ┣obs_init_module(decklink-captions.dll): 0 ms
+11:15:30.248:      ┃ ┣obs_init_module(decklink-output-ui.dll): 0 ms
+11:15:30.248:      ┃ ┣obs_init_module(decklink.dll): 1.101 ms
+11:15:30.248:      ┃ ┣obs_init_module(enc-amf.dll): 33.752 ms
+11:15:30.248:      ┃ ┣obs_init_module(frontend-tools.dll): 5.751 ms
+11:15:30.248:      ┃ ┣obs_init_module(image-source.dll): 0.007 ms
+11:15:30.248:      ┃ ┣obs_init_module(obs-browser.dll): 0.383 ms
+11:15:30.248:      ┃ ┣obs_init_module(obs-ffmpeg.dll): 2.583 ms
+11:15:30.248:      ┃ ┃ ┗nvenc_check: 1.015 ms
+11:15:30.248:      ┃ ┣obs_init_module(obs-filters.dll): 1.805 ms
+11:15:30.248:      ┃ ┣obs_init_module(obs-outputs.dll): 0.009 ms
+11:15:30.248:      ┃ ┣obs_init_module(obs-qsv11.dll): 105.262 ms
+11:15:30.248:      ┃ ┣obs_init_module(obs-text.dll): 0.184 ms
+11:15:30.248:      ┃ ┣obs_init_module(obs-transitions.dll): 0.006 ms
+11:15:30.248:      ┃ ┣obs_init_module(obs-virtualbg.dll): 0.005 ms
+11:15:30.248:      ┃ ┣obs_init_module(obs-vst.dll): 0.001 ms
+11:15:30.248:      ┃ ┣obs_init_module(obs-websocket.dll): 11.065 ms
+11:15:30.248:      ┃ ┣obs_init_module(obs-x264.dll): 0.002 ms
+11:15:30.248:      ┃ ┣obs_init_module(rtmp-services.dll): 0.98 ms
+11:15:30.248:      ┃ ┣obs_init_module(text-freetype2.dll): 0.043 ms
+11:15:30.248:      ┃ ┣obs_init_module(vlc-video.dll): 0.044 ms
+11:15:30.248:      ┃ ┣obs_init_module(win-capture.dll): 6.51 ms
+11:15:30.248:      ┃ ┣obs_init_module(win-decklink.dll): 1.401 ms
+11:15:30.248:      ┃ ┣obs_init_module(win-dshow.dll): 1.399 ms
+11:15:30.248:      ┃ ┣obs_init_module(win-mf.dll): 0 ms
+11:15:30.248:      ┃ ┣obs_init_module(win-wasapi.dll): 0.009 ms
+11:15:30.248:      ┃ ┗reset_win32_symbol_paths: 0.43 ms
+11:15:30.248:      ┣OBSBasic::ResetOutputs: 0.448 ms
+11:15:30.248:      ┣OBSBasic::CreateHotkeys: 0.243 ms
+11:15:30.248:      ┣OBSBasic::InitService: 1.782 ms
+11:15:30.248:      ┣OBSBasic::InitPrimitives: 0.119 ms
+11:15:30.248:      ┗OBSBasic::Load: 196.084 ms
+11:15:30.248: obs_hotkey_thread(25 ms): min=0.003 ms, median=0.005 ms, max=8.762 ms, 99th percentile=0.172 ms, 100% below 25 ms
+11:15:30.248: audio_thread(Audio): min=0.01 ms, median=0.092 ms, max=16.711 ms, 99th percentile=0.873 ms
+11:15:30.248:  ┗receive_audio: min=0.004 ms, median=0.311 ms, max=4.422 ms, 99th percentile=1.791 ms, 0.310672 calls per parent call
+11:15:30.248:    ┣buffer_audio: min=0.001 ms, median=0.001 ms, max=0.185 ms, 99th percentile=0.003 ms
+11:15:30.248:    ┗do_encode: min=0.026 ms, median=0.307 ms, max=4.418 ms, 99th percentile=1.787 ms
+11:15:30.248:      ┣encode(adv_stream_aac): min=0.02 ms, median=0.291 ms, max=4.407 ms, 99th percentile=1.772 ms
+11:15:30.248:      ┗send_packet: min=0.001 ms, median=0.01 ms, max=0.758 ms, 99th percentile=0.103 ms
+11:15:30.248: obs_graphics_thread(20 ms): min=0.061 ms, median=0.826 ms, max=120.047 ms, 99th percentile=2.176 ms, 99.9724% below 20 ms
+11:15:30.248:  ┣tick_sources: min=0.001 ms, median=0.013 ms, max=113.806 ms, 99th percentile=0.484 ms
+11:15:30.248:  ┣output_frame: min=0.048 ms, median=0.467 ms, max=120.031 ms, 99th percentile=1.642 ms
+11:15:30.248:  ┃ ┗gs_context(video->graphics): min=0.047 ms, median=0.466 ms, max=120.03 ms, 99th percentile=1.641 ms
+11:15:30.248:  ┃   ┣render_video: min=0.004 ms, median=0.402 ms, max=28.04 ms, 99th percentile=1.521 ms
+11:15:30.248:  ┃   ┃ ┣render_main_texture: min=0.003 ms, median=0.066 ms, max=27.589 ms, 99th percentile=1.191 ms
+11:15:30.248:  ┃   ┃ ┣render_convert_texture: min=0.008 ms, median=0.012 ms, max=4.01 ms, 99th percentile=0.041 ms, 0.310956 calls per parent call
+11:15:30.248:  ┃   ┃ ┗output_gpu_encoders: min=0 ms, median=0.041 ms, max=15.214 ms, 99th percentile=0.166 ms, 0.310956 calls per parent call
+11:15:30.248:  ┃   ┗gs_flush: min=0.005 ms, median=0.129 ms, max=119.984 ms, 99th percentile=0.315 ms
+11:15:30.248:  ┗render_displays: min=0 ms, median=0.089 ms, max=6.558 ms, 99th percentile=0.481 ms
+11:15:30.248: send_packet: min=0.002 ms, median=0.013 ms, max=1.984 ms, 99th percentile=0.118 ms
+11:15:30.248: =================================================
+11:15:30.248: == Profiler Time Between Calls ==================
+11:15:30.248: obs_hotkey_thread(25 ms): min=24.367 ms, median=25.501 ms, max=141.819 ms, 49.356% within ±2% of 25 ms (0.00586158% lower, 50.6382% higher)
+11:15:30.248: obs_graphics_thread(20 ms): min=0.277 ms, median=20 ms, max=120.052 ms, 99.4946% within ±2% of 20 ms (0.250769% lower, 0.254603% higher)
+11:15:30.248: =================================================
+11:15:30.535: Number of memory leaks: 0
