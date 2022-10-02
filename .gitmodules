@@ -7,3 +7,6 @@
 [submodule "Reshade/stormshade"]
 	path = Reshade/stormshade
 	url = https://github.com/Otakumouse/stormshade.git
+[submodule "Reshade/3AReal"]
+	path = Reshade/3AReal
+	url = https://github.com/UTwelve/3AReal.git
