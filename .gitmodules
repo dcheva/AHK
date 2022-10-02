@@ -4,3 +4,6 @@
 [submodule "Reshade/fubax-shaders"]
 	path = Reshade/fubax-shaders
 	url = https://github.com/Fubaxiusz/fubax-shaders.git
+[submodule "Reshade/stormshade"]
+	path = Reshade/stormshade
+	url = https://github.com/Otakumouse/stormshade.git
