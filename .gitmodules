@@ -1,3 +1,6 @@
 [submodule "Reshade/Reshade/fubax-shaders"]
 	path = Reshade/Reshade/fubax-shaders
 	url = https://github.com/Fubaxiusz/fubax-shaders.git
+[submodule "Reshade/fubax-shaders"]
+	path = Reshade/fubax-shaders
+	url = https://github.com/Fubaxiusz/fubax-shaders.git
