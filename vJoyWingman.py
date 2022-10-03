@@ -10,9 +10,12 @@ if starting:
 	jMax = 1
 	jMin = -1
 	jCut = jMax * 0.03 # 3% слепая зона
-	jSleep = 1/100
+	jSleep = 0.01
 	jLog = [0] * 100
-	jX = 0
+	vCenter = 0
+	vCurrent = 0
+	vC = 0.0
+	vCC = 0.0
 	
 def shift(input, n):
     return input[n:] + input[:n]
@@ -42,70 +45,6 @@ def toString(ls):
         r += str(el) + " "
     return r
 
-vJoy[0].setButton(1,int(keyboard.getKeyDown(Key.Tab))) 
-vJoy[0].setButton(2,int(keyboard.getKeyDown(Key.LeftAlt))) 
-vJoy[0].setButton(3,int(keyboard.getKeyDown(Key.LeftControl))) 
-vJoy[0].setButton(4,int(keyboard.getKeyDown(Key.LeftShift))) 
-#vJoy[0].setButton(5,int(keyboard.getKeyDown(Key.RightControl))) 
-#vJoy[0].setButton(6,int(keyboard.getKeyDown(Key.RightShift))) 
-#vJoy[0].setButton(7,int(keyboard.getKeyDown(Key.Return)))
-#vJoy[0].setButton(8,int(keyboard.getKeyDown(Key.NumberPadEnter))) 
-#vJoy[0].setButton(10,int(keyboard.getKeyDown(Key.NumberPadPlus))) 
-#vJoy[0].setButton(11,int(keyboard.getKeyDown(Key.NumberPadMinus)))
-#vJoy[0].setButton(12,int(keyboard.getKeyDown(Key.NumberPad0)))
-#vJoy[0].setButton(13,int(keyboard.getKeyDown(Key.NumberPad1)))
-#vJoy[0].setButton(14,int(keyboard.getKeyDown(Key.NumberPad2)))
-#vJoy[0].setButton(15,int(keyboard.getKeyDown(Key.NumberPad3)))
-#vJoy[0].setButton(16,int(keyboard.getKeyDown(Key.NumberPad4)))
-#vJoy[0].setButton(17,int(keyboard.getKeyDown(Key.NumberPad5)))
-#vJoy[0].setButton(18,int(keyboard.getKeyDown(Key.NumberPad6)))
-#vJoy[0].setButton(19,int(keyboard.getKeyDown(Key.NumberPad7)))
-#vJoy[0].setButton(20,int(keyboard.getKeyDown(Key.NumberPad8)))
-#vJoy[0].setButton(21,int(keyboard.getKeyDown(Key.NumberPad9))) 
-vJoy[0].setButton(22,int(keyboard.getKeyDown(Key.Space)))
-vJoy[0].setButton(23,int(keyboard.getKeyDown(Key.Q)))
-vJoy[0].setButton(24,int(keyboard.getKeyDown(Key.W)))
-vJoy[0].setButton(25,int(keyboard.getKeyDown(Key.E)))
-vJoy[0].setButton(26,int(keyboard.getKeyDown(Key.R)))
-#vJoy[0].setButton(27,int(keyboard.getKeyDown(Key.T)))
-#vJoy[0].setButton(28,int(keyboard.getKeyDown(Key.Y)))
-#vJoy[0].setButton(29,int(keyboard.getKeyDown(Key.A)))
-#vJoy[0].setButton(30,int(keyboard.getKeyDown(Key.S)))
-#vJoy[0].setButton(31,int(keyboard.getKeyDown(Key.D)))
-vJoy[0].setButton(32,int(keyboard.getKeyDown(Key.F)))
-#vJoy[0].setButton(33,int(keyboard.getKeyDown(Key.G)))
-#vJoy[0].setButton(34,int(keyboard.getKeyDown(Key.H)))
-#vJoy[0].setButton(35,int(keyboard.getKeyDown(Key.Z)))
-#vJoy[0].setButton(36,int(keyboard.getKeyDown(Key.X)))
-#vJoy[0].setButton(37,int(keyboard.getKeyDown(Key.C)))
-vJoy[0].setButton(38,int(keyboard.getKeyDown(Key.V)))
-#vJoy[0].setButton(39,int(keyboard.getKeyDown(Key.B)))
-#vJoy[0].setButton(9,int(keyboard.getKeyDown(Key.N)))
-#vJoy[0].setButton(40,int(keyboard.getKeyDown(Key.Grave)))
-vJoy[0].setButton(41,int(keyboard.getKeyDown(Key.D1)))
-vJoy[0].setButton(42,int(keyboard.getKeyDown(Key.D2)))
-#vJoy[0].setButton(43,int(keyboard.getKeyDown(Key.D3)))
-#vJoy[0].setButton(44,int(keyboard.getKeyDown(Key.D4)))
-#vJoy[0].setButton(45,int(keyboard.getKeyDown(Key.D5)))
-#vJoy[0].setButton(46,int(keyboard.getKeyDown(Key.D6)))
-#vJoy[0].setButton(47,int(keyboard.getKeyDown(Key.D7)))
-#vJoy[0].setButton(48,int(keyboard.getKeyDown(Key.D8)))
-#vJoy[0].setButton(49,int(keyboard.getKeyDown(Key.D9)))
-#vJoy[0].setButton(50,int(keyboard.getKeyDown(Key.D0)))
-#vJoy[0].setButton(51,int(keyboard.getKeyDown(Key.Minus)))
-#vJoy[0].setButton(52,int(keyboard.getKeyDown(Key.Equals)))
-#vJoy[0].setButton(53,int(keyboard.getKeyDown(Key.Backspace)))
-#vJoy[0].setButton(54,int(keyboard.getKeyDown(Key.F1)))
-#vJoy[0].setButton(55,int(keyboard.getKeyDown(Key.F2)))
-#vJoy[0].setButton(56,int(keyboard.getKeyDown(Key.F3)))
-#vJoy[0].setButton(57,int(keyboard.getKeyDown(Key.F3)))
-#vJoy[0].setButton(58,int(keyboard.getKeyDown(Key.F4)))
-#vJoy[0].setButton(59,int(keyboard.getKeyDown(Key.F5)))
-#vJoy[0].setButton(60,int(keyboard.getKeyDown(Key.F6)))
-#vJoy[0].setButton(61,int(keyboard.getKeyDown(Key.F7)))
-#vJoy[0].setButton(62,int(keyboard.getKeyDown(Key.F8)))
-#vJoy[0].setButton(63,int(keyboard.getKeyDown(Key.Escape)))
-
 #myarray = [1, 3, 5, 7, 9]
 #print(rotate(myarray, 2)) #rotate left
 #print(rotate(myarray, -2)) #rotate right
@@ -118,17 +57,44 @@ if joystick[1].x > jMax:
 if joystick[1].x < jMin:
 	jMin = joystick[1].x
 	
-jLog = shift(jLog, -1)
-jLog[0] = int(joystick[1].x)
+jX = int(joystick[1].x)
+vX = int(vJoy[0].x)
+vLeft = vX - 100
+vRight = vX + 100
 
-vJoy[0].x = mean(jLog)
+jLog = shift(jLog, -1)
+jLog[0] = jX
+jMean = mean(jLog)
+	
+dX = jX - jMean
+if abs(dX) < 100: 
+	dX = int(dX * dX * 0.01)
+	
+vC += (jX - vCenter) * jSleep * 10
+vCenter = int(vC)
+vLeft = vCenter - 100
+vRight = vCenter + 100
+	
+if vLeft < -1000:
+	vLeft = -1000
+	
+if vRight > 1000:
+	vRight = 1000
+	
+vCC = (jX - vCenter)/10 + vCenter
+if jX > vLeft and jX < vRight:
+	vCurrent = int(vCC)
+else: vCurrent = jX
+	
+vJoy[0].x = vCurrent
 vJoy[0].y = joystick[1].y
 vJoy[0].z = joystick[1].z
 
-time.sleep(jSleep)
+time.sleep(0.1)
 
-diagnostics.watch(jMax)
-diagnostics.watch(jMin)
+diagnostics.watch(vCenter)
+diagnostics.watch(vCurrent)
+diagnostics.watch(dX)
 diagnostics.watch(toString(jLog))
 diagnostics.watch(joystick[1].x)
 diagnostics.watch(joystick[1].y)
