@@ -24,24 +24,40 @@ newJoyX = joystick[1].x
 if oldJoyX == newJoyX: #->
 	newStepN = oldStepN
 	newX = oldX
-	m = '-> ' + m
+	m = '-> '
 	
 else:
 	if oldJoyX < newJoyX: #->r
 		if oldStepN <= 0: #cl->r 
 			newStepN = 1
-			m = 'cl->r ' + m
+			m = 'cl->r '
 		if oldStepN > 0: #r->r 
 			newStepN += 1
-			m = 'r->r ' + m
+			m = 'r->r '
 	if oldJoyX > newJoyX: #->l
 		if oldStepN >= 0: #cr->l 
 			newStepN = -1
-			m = 'cr->l ' + m
+			m = 'cr->l '
 		if oldStepN < 0: #l->l 
 			newStepN -= 1
-			m = 'l->l ' + m
+			m = 'l->l '
 
+if newStepN > 8: newStepN = 8
+if newStepN <-8: newStepN =-8
+newStep = steps[newStepN]
+
+if oldJoyX <> newJoyX: #!->
+	dJoyX = newJoyX - oldJoyX
+	if abs(dJoyX) > 64: newStep = dJoyX 
+	newX = oldX + newStep
+	m = '!-> ' + str(dJoyX)
+
+#if newStepN > 0 and (newX > newJoyX or newStep > dJoyX): newX = newJoyX
+#if newStepN < 0 and (newX < newJoyX or newStep > dJoyX): newX = newJoyX
+if newStepN > 0 and newX > newJoyX: newX = newJoyX
+if newStepN < 0 and newX < newJoyX: newX = newJoyX
+
+oldStep = newStep
 oldStepN = newStepN
 oldJoyX = newJoyX
 oldX = newX
@@ -56,10 +72,14 @@ diagnostics.watch(newX)
 diagnostics.watch(oldX)
 diagnostics.watch(newStepN)
 diagnostics.watch(oldStepN)
+diagnostics.watch(newStep)
+diagnostics.watch(oldStep)
 ################################################################
 diagnostics.watch(joystick[1].x)
 ################################################################
 diagnostics.watch(vJoy[0].x)
+diagnostics.watch(vJoy[0].y)
+diagnostics.watch(vJoy[0].z)
 ################################################################
 
-time.sleep(1)
+#time.sleep(0.5)
