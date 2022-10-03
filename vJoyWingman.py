@@ -1,3 +1,4 @@
+import time
 from System import Int16
 from ctypes import windll, Structure, c_ulong, byref
 
@@ -9,8 +10,37 @@ if starting:
 	jMax = 1
 	jMin = -1
 	jCut = jMax * 0.03 # 3% слепая зона
+	jSleep = 1/100
+	jLog = [0] * 100
+	jX = 0
 	
-## Let's dance
+def shift(input, n):
+    return input[n:] + input[:n]
+    
+def median(ls):
+    # sort the list
+    ls_sorted = ls.sort()
+    # find the median
+    if len(ls) % 2 != 0:
+        # total number of values are odd
+        # subtract 1 since indexing starts at 0
+        m = int((len(ls)+1)/2 - 1)
+        return ls[m]
+    else:
+        m1 = int(len(ls)/2 - 1)
+        m2 = int(len(ls)/2)
+        return (ls[m1]+ls[m2])/2
+        
+def mean(ls):
+   return sum(ls) / len(ls)
+
+def toString(ls):
+    # initialize an empty string
+    r = ""
+    # traverse in the string
+    for el in ls:
+        r += str(el) + " "
+    return r
 
 vJoy[0].setButton(1,int(keyboard.getKeyDown(Key.Tab))) 
 vJoy[0].setButton(2,int(keyboard.getKeyDown(Key.LeftAlt))) 
@@ -76,25 +106,30 @@ vJoy[0].setButton(42,int(keyboard.getKeyDown(Key.D2)))
 #vJoy[0].setButton(62,int(keyboard.getKeyDown(Key.F8)))
 #vJoy[0].setButton(63,int(keyboard.getKeyDown(Key.Escape)))
 
-def rotate(input, n):
-    return input[n:] + input[:n]
-
 #myarray = [1, 3, 5, 7, 9]
 #print(rotate(myarray, 2)) #rotate left
 #print(rotate(myarray, -2)) #rotate right
+
+## Let's dance
 
 if joystick[1].x > jMax:
 	jMax = joystick[1].x
 
 if joystick[1].x < jMin:
 	jMin = joystick[1].x
+	
+jLog = shift(jLog, -1)
+jLog[0] = int(joystick[1].x)
 
-vJoy[0].x = joystick[1].x
+vJoy[0].x = mean(jLog)
 vJoy[0].y = joystick[1].y
 vJoy[0].z = joystick[1].z
 
+time.sleep(jSleep)
+
 diagnostics.watch(jMax)
 diagnostics.watch(jMin)
+diagnostics.watch(toString(jLog))
 diagnostics.watch(joystick[1].x)
 diagnostics.watch(joystick[1].y)
 diagnostics.watch(joystick[1].z)
