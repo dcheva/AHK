@@ -19,8 +19,9 @@ if starting:
 ## Map 32 keys
 ################################################################
 
-vJoy[0].setButton(0,mouse.getButton(0)) 
-
+#vJoy[0].setButton(0,mouse.getButton(0)) 
+#vJoy[0].setButton(1,mouse.getButton(1)) 
+#vJoy[0].setButton(2,mouse.getButton(2)) 
 vJoy[0].setButton(0,int(keyboard.getKeyDown(Key.NumberPad1)))
 vJoy[0].setButton(1,int(keyboard.getKeyDown(Key.NumberPad2)))
 vJoy[0].setButton(2,int(keyboard.getKeyDown(Key.NumberPad3)))
