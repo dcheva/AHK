@@ -60,8 +60,8 @@ $4::
   Send, 3
   Sleep, 10  
   Send, 4
-  Sleep, 10  
-  Send, 5
+;  Sleep, 10  
+;  Send, 5
 ;  Sleep, 10  
 ;  Send, f
 return
@@ -91,7 +91,6 @@ return
 
 $Space::
   Send, {Space}
-  Send, {T}
-  Sleep, 250
+  Sleep, 10 
   Send, {MButton}
 return

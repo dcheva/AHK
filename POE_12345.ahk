@@ -83,7 +83,7 @@ $^A::
 return
 
 ; achtung minen!
-$R::
+R::
   Send, {R}
   Sleep, 200 
   Send, {D}

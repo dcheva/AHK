@@ -91,6 +91,7 @@ return
 
 $Space::
   Send, {Space}
-  Sleep, 10
+  Sleep, 10 
   Send, {MButton}
 return
+
