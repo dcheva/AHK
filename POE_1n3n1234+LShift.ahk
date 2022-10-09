@@ -95,6 +95,13 @@ $Space::
   Send, {MButton}
 return
 
+;go hideout on F5
+$F5::
+  Send, {Enter}
+  Send, /hideout
+  Send, {Enter}
+return
+
 ; Shift + Click
 $LShift::
 GetKeyState, state, LButton
@@ -104,3 +111,4 @@ if (state = "D") {
   Send, {D}
 }
 return
+

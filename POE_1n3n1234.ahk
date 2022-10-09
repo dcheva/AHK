@@ -94,3 +94,10 @@ $Space::
   Sleep, 10 
   Send, {MButton}
 return
+
+;go hideout on F5
+$F5::
+  Send, {Enter}
+  Send, /hideout
+  Send, {Enter}
+return
