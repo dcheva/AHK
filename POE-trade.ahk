@@ -41,8 +41,9 @@ $^+C::
 		}
 		Send, {.}
 		Sleep, 100
-		Send, {Backspace}	
-		Sleep, % ran(500, 5000)
+		Send, {Backspace}
+		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
+		Sleep, % ran(30*1000, 60*1000)
 	}
 return
 
