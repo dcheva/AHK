@@ -31,11 +31,7 @@ ran(min, max)
 ;enable mouse clicker (random time 1-10 sec, current mouse position)
 $^+C::
 	BreakLoop := 0
-	Send, {^+C}
-	;MouseGetPos, ClickX, ClickY
-	ClickX := 10
-	ClickY := 10
-	SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
+	;SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
 	Loop
 	{
 		if (BreakLoop == 1)
@@ -43,12 +39,10 @@ $^+C::
 			BreakLoop = 0
 			break
 		}
-		MouseGetPos, OrigX, OrigY
-		MouseClick, left, %ClickX%, %ClickY%
+		Send, {.}
 		Sleep, 100
-		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
-		MouseMove, %OrigX%, %OrigY%
-		Sleep, % ran(30000, 60000)
+		Send, {Backspace}	
+		Sleep, % ran(500, 5000)
 	}
 return
 
