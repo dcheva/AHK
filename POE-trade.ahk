@@ -1,4 +1,4 @@
-;AHK v1.1.33.11
+;for AHK 1.1.34.04
 ;by cheva (c) MIT 2012-2022
 
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
@@ -8,18 +8,26 @@ $^+R::Reload
 
 ;suspend/resume
 $^+S::
-  Suspend, toggle
+  Send, {^+S}
   SoundPlay %A_WinDir%\Media\Windows Battery Low.wav
+  Suspend, toggle
 return
 
 ;pause/resume
 $^+P::
-  Pause, toggle
+  Send, {^+P}
   SoundPlay %A_WinDir%\Media\Windows Balloon.wav
+  Pause, toggle
 return
 
 ;exit
-$^+W::ExitApp
+$^+W::
+  Send, {^+W}
+  SoundPlay %A_WinDir%\Media\Windows Logoff Sound.wav
+  Sleep, 1000
+  ExitApp
+return
+
 
 ;functions
 ran(min, max)
