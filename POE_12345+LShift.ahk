@@ -1,4 +1,4 @@
-;AHK v1.1.33.11
+;for AHK 1.1.34.04
 ;by cheva (c) MIT 2012-2022
 
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
@@ -8,18 +8,25 @@ $^+R::Reload
 
 ;suspend/resume
 $^+S::
-  Suspend, toggle
-  SoundPlay %A_WinDir%\Media\Windows Battery Low.wav
-return
-
 ;pause/resume
 $^+P::
-  Pause, toggle
-  SoundPlay %A_WinDir%\Media\Windows Balloon.wav
-return
+;use both to sleep/pause
+  ;thanks to Rohwedder
+  ;https://www.autohotkey.com/boards/viewtopic.php?t=50594
+  Suspend ;Suspend Hotkeys
+  Pause,,1 ;Pause Script
+  If !(Reload := !Reload)
+    Reload ;Reload Script
+Return
 
 ;exit
-$^+W::ExitApp
+$^+W::
+  Send, {^+W}
+  SoundPlay %A_WinDir%\Media\Windows Logoff Sound.wav
+  Sleep, 1000
+  ExitApp
+return
+;-----Let's play!-----
 
 ;functions
 clkToKill()
