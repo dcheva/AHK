@@ -4,28 +4,28 @@
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 
 ;reload
-$^+R::Reload
+;$^+R::Reload
 
 ;suspend/resume
-$^+S::
+;$^+S::
 ;pause/resume
-$^+P::
+;$^+P::
 ;use both to sleep/pause
   ;thanks to Rohwedder
   ;https://www.autohotkey.com/boards/viewtopic.php?t=50594
-  Suspend ;Suspend Hotkeys
-  Pause,,1 ;Pause Script
-  If !(Reload := !Reload)
-    Reload ;Reload Script
-Return
+;  Suspend ;Suspend Hotkeys
+;  Pause,,1 ;Pause Script
+;  If !(Reload := !Reload)
+;    Reload ;Reload Script
+;Return
 
 ;exit
-$^+W::
-  Send, {^+W}
-  SoundPlay %A_WinDir%\Media\Windows Logoff Sound.wav
-  Sleep, 1000
-  ExitApp
-return
+;$^+W::
+;  Send, {^+W}
+;  SoundPlay %A_WinDir%\Media\Windows Logoff Sound.wav
+;  Sleep, 1000
+;  ExitApp
+;return
 ;-----Let's play!-----
 
 #SingleInstance force
