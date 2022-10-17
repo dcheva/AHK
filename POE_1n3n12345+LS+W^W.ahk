@@ -85,7 +85,7 @@ $^A::
   Send, ^W
   Sleep, 10 
   Send, ^Q
-  Sleep, 10
+  Sleep, 20
   Send, {MButton}
 return
 
@@ -121,6 +121,7 @@ return
 
 ;double charge
 $W::
-  Send, W
+  Send, {W}
+  Sleep, 10
   Send, ^W
 return
