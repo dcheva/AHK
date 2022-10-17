@@ -85,7 +85,7 @@ $^A::
   Send, ^W
   Sleep, 10 
   Send, ^Q
-  Sleep, 100  
+  Sleep, 10
   Send, {MButton}
 return
 

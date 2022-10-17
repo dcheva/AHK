@@ -109,7 +109,7 @@ $F5::
   Send, {Enter}
 return
 
-; Shift + Click
+;Shift + Click
 $LShift::
 GetKeyState, state, LButton
 if (state = "D") {
@@ -119,3 +119,8 @@ if (state = "D") {
 }
 return
 
+;double charge
+$W::
+  Send, W
+  Send, ^W
+return
