@@ -10,7 +10,7 @@ $^+R::Reload
 $^+S::
 ;pause/resume
 $^+P::
-;use both to sleep/pause
+  ;use both to sleep/pause
   ;thanks to Rohwedder
   ;https://www.autohotkey.com/boards/viewtopic.php?t=50594
   Suspend ;Suspend Hotkeys
