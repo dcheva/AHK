@@ -120,10 +120,10 @@ if (state = "D") {
 return
 
 ;double charge
-$W::
-  Send, {W}
+$Q::
+  Send, {Q}
   Sleep, 100
   Send, {LCtrl Down}
-  Send, {W}
+  Send, {Q}
   Send, {LCtrl Up}
 return
