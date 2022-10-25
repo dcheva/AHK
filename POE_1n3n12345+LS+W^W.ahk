@@ -121,7 +121,11 @@ return
 
 ;double charge
 $W::
-  Send, {W}
-  Sleep, 10
-  Send, ^W
+  Send, W
+  Sleep, 50
+  Send, {LCtrl Down}
+  Sleep, 50
+  Send, W
+  Sleep, 50
+  Send, {LCtrl Up}
 return
