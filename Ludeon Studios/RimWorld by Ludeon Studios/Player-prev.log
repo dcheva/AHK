@@ -10,118 +10,168 @@ Direct3D:
     VRAM:     1004 MB
     Driver:   27.20.21003.1028
 Begin MonoManager ReloadAssembly
-- Completed reload, in  0.192 seconds
+- Completed reload, in  0.252 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 D3D11 device created for Microsoft Media Foundation video decoding.
 <RI> Initialized touch support.
-UnloadTime: 1.139200 ms
+UnloadTime: 0.971100 ms
 [Steamworks.NET] SteamAPI.Init() failed. Possible causes: Steam client not running, launched from outside Steam without steam_appid.txt in place, running with different privileges than Steam client (e.g. "as administrator") 
 (Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
 
 RimWorld 1.3.3326 rev562
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E2797F2DC0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279569DC0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E2798D6820.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27990A830.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E2797C5A30.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279AAECC0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279751020.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279AB0ED0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E253086500.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279C26E20.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E253095520.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279C5A830.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E2530A0740.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E25323C090.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279C5CE40.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279C7ED70.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E2535AE040.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279C99D90.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279C9D5A0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279CC53C0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279B5FCF0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279CEA3F0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27975D650.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E2530A5750.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279CFC010.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279D0C430.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279D15640.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279E1D020.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279E1FC30.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279E92010.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279E9D020.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279EE1A70.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E253258100.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279E5ED10.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279EEE290.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279F22EC0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279FE7F20.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27962CDE0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279FFED60.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A00A570.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E2795689B0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A03D2A0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A041AB0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A0498C0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A04CAE0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A073B20.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A0B0460.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279E76DD0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A0C9A80.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A0CBC90.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A0E61C0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A1105E0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A1123F0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A122810.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E25325C110.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A163160.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A172190.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A1D1530.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A1D3F40.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A1D7350.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A1DC560.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A2A0D90.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A2A97B0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A1A52A0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A2E4F00.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A2EA120.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A2FEB40.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A328D50.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A37D8B0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A3894D0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A38A6E0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A393AF0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A3B4320.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A47B270.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E2532480C0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27AC092A0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27AC1C0B0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27AC452E0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A1C53A0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27A4AA530.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27AC77D00.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27962F5F0.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27ACF4020.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27AD02640.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27AD06250.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27AD0DA60.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27AD25E80.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27AD2C090.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E279706060.dll
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27B1D2140.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE08DDB0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FDE27CD0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FDFC2DC0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE1B2010.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147D7E55020.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FDF078B0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE052030.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE35E4B0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE064650.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE4926D0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147D7981520.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE508010.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147D798C740.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147D7B510E0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE50A620.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE52C030.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE546040.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147D799D780.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE547A50.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE56F870.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE4DC1E0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE5948A0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE5A24B0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147D79A1FA0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE5A5AD0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE5B3EE0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE5BD0F0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147D79A35B0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE6C8010.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE700840.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE70B850.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE73F270.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147D7B35070.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE6B0410.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE745A90.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE7766B0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE83C710.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE8547A0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE87C570.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE887D80.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FDE254B0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE8FC010.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE900E00.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147D79A86F0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE908C10.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE929C30.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE978070.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE8CC670.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE989E90.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE98E690.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE9A86A0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE9DCAE0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE9DE8F0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE9E7D10.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147D7B39080.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEA28660.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEA2D670.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEA4CBB0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEA515D0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEA5C9F0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEA62000.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEB26830.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEB2D240.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE8EA760.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEB789A0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEB79BB0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEB865C0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEBB07D0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEC46F50.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEC54B80.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEC55D90.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEC5F1A0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEC819E0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FED46920.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147D7B59100.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000146201AB220.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000146201BE030.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000146201DF250.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FEBFF530.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-0000014620211C70.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-0000014620216690.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE860FF0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000146202470B0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000146202556D0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000146202592E0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-0000014620268B00.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001462027EF20.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-0000014620285130.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE856FB0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001462036A570.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001462046BD90.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147FE8597C0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001462053B5C0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001462058D010.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-0000014620666640.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001462081E0C0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000146208FC110.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000146209CE550.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000146209D3960.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-0000014620E290B0.dll
 [HugsLib] version 9.0.1
-Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-000001E27B63CAA0.dll
+Fallback handler could not load library C:/Games/Rimworld 1.3.3326 rev562 Dune Minimalism/RimWorldWin64_Data/Mono/data-00000147D7DBA850.dll
 [HugsLib] early-initializing AllowTool
 Rim73 1.4a Initialized
 [VanillaAchievementsExpanded] version 1.3.7862
 QualityBuilder successfully patched Replace Stuff
 Dubs Mint Minimap 1.3.787
+DependencyChecker!
 LWM Deep Storage: activated compatibility patch for Vanilla Cooking Expanded
 SimplyMoreBridges: Found 7 materials to generate bridge-definitions for.
 SimplyMoreBridges: Generated the following stony bridges: HeavyBridgeSandstone,DeepWaterBridgeSandstone,HeavyBridgeGranite,DeepWaterBridgeGranite,HeavyBridgeLimestone,DeepWaterBridgeLimestone,HeavyBridgeSlate,DeepWaterBridgeSlate,HeavyBridgeMarble,DeepWaterBridgeMarble
 SimplyMoreBridges: Generated the following metal bridges: HeavyBridgeSteel,HeavyBridgePlasteel
 SimplyMoreBridges: Generated the following woody bridges: 
+Knowledge data was missing key WTH_Hacking. Adding it... 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Knowledge data was missing key WTH_Platform. Adding it... 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Knowledge data was missing key WTH_Modification. Adding it... 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Knowledge data was missing key WTH_Caravanning. Adding it... 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Knowledge data was missing key WTH_Maintenance. Adding it... 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Knowledge data was missing key WTH_Power. Adding it... 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Knowledge data was missing key WTH_Concept_MechanoidParts. Adding it... 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Knowledge data was missing key WTH_Concept_RogueAI. Adding it... 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Knowledge data was missing key WTH_Concept_RogueAI_LevelUp. Adding it... 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Knowledge data was missing key WTH_Concept_RogueAI_Mood. Adding it... 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Knowledge data was missing key GUC_Animal_Handling. Adding it... 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Knowledge data was missing key BM_Mounting. Adding it... 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Knowledge data was missing key BM_Enemy_Mounting. Adding it... 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
 <color=orange>[OskarObnoxious]</color> version 1.3.0010
 Key binding conflict: MainTab_MedicalTab and Misc7 are both bound to M. 
 (Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
@@ -137,12 +187,16 @@ d3d11: failed to create 2D texture shader resource view id=17475 [D3D error was 
  
 (Filename:  Line: 537)
 
+[MVCF] Applying RunAndGun compatibility patch
 [MVCF] Applying Dual Wield compatibility patch
-Translation data for language Russian / Русский has 152 errors. Generate translation report for more info. 
+Translation data for language Russian / Русский has 153 errors. Generate translation report for more info. 
 (Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
 
 RimThreaded 2.6.4.0  is patching methods...
 RimThreaded Field Replacements Complete.
+RimThreaded is patching GiddyUpCore.Storage.ExtendedDataStorage DeleteExtendedDataFor
+RimThreaded is patching GiddyUpCore.Storage.ExtendedDataStorage GetExtendedDataFor
+RimThreaded is patching GiddyUpCore.Jobs.JobDriver_Mounted <waitForRider>b__8_0
 RimThreaded is patching VEE.FertilityGrid_Patch Postfix
 RimThreaded is patching VEE.Plant_GrowthRate_Patch Postfix
 RimThreaded is patching VEE.Plant_TickLong_Patch Postfix
@@ -161,9 +215,11 @@ Potential RimThreaded mod conflicts :
   RimThreaded priority: 0
   owner: majorhoff.rimthreaded -   priority: 400
   owner: majorhoff.rimthreaded -   priority: 400
+  owner: majorhoff.rimthreaded -   priority: 400
 
   ---Patch method: RimThreaded.PortraitsCache_Patch Boolean RemoveExpiredCachedPortraits()---
   RimThreaded priority: 0
+  owner: majorhoff.rimthreaded -   priority: 400
   owner: majorhoff.rimthreaded -   priority: 400
   owner: majorhoff.rimthreaded -   priority: 400
 
@@ -171,10 +227,11 @@ Potential RimThreaded mod conflicts :
   RimThreaded priority: 0
   owner: majorhoff.rimthreaded -   priority: 400
   owner: majorhoff.rimthreaded -   priority: 400
+  owner: majorhoff.rimthreaded -   priority: 400
  
 (Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
 
-Rim73 cached 255 heddifs.
+Rim73 cached 259 heddifs.
 <color=orange>[CSG]</color> Symbols Creator Started.
 <color=orange>[CSG]</color> Created 15769 symbolDefs for 3 mods. Took 00.05s.
 Medical Tab :: Tag Tongue is not associated with any pawnCapacity. This may be intentional. For modders; if the tag defName contains the capacity defName the two will be linked. 
@@ -194,7 +251,2081 @@ instance created
 allowing apparel to be colorable...
 checking editor settings...
 CharacterEditor v1.3.842 ...done
-[HugsLib] initializing LWM_DeepStorage, Roolo.DualWield
+found Stloc_1
+[HugsLib] initializing LWM_DeepStorage, Roolo.DualWield, AlmostThere, WhatTheHack, RunAndGun, SearchAndDestroy, GiddyUpMechanoids, GiddyUpCore, GiddyUpRideAndRoll, GiddyUpCaravan, BattleMounts
+Unloading 5 Unused Serialized files (Serialized files now loaded: 2)
+
+Unloading 287 unused Assets to reduce memory usage. Loaded Objects now: 35389.
+Total: 1232.526700 ms (FindLiveObjects: 193.042600 ms CreateObjectMapping: 4.897900 ms MarkObjects: 1027.424300 ms  DeleteObjects: 7.161500 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 2)
+UnloadTime: 0.975300 ms
+QualityBuilder added property to '354' things
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 35757.
+Total: 546.007000 ms (FindLiveObjects: 3.196300 ms CreateObjectMapping: 8.051000 ms MarkObjects: 534.651500 ms  DeleteObjects: 0.107800 ms)
+
+Initializing new game with mods:
+  - brrainz.harmony
+  - Ludeon.RimWorld
+  - Ludeon.RimWorld.Royalty
+  - Ludeon.RimWorld.Ideology
+  - UnlimitedHugs.HugsLib
+  - majorhoff.rimthreaded
+  - GhostRolly.Rim73
+  - Dubwise.DubsPerformanceAnalyzer
+  - OskarPotocki.VanillaFactionsExpanded.Core
+  - VanillaExpanded.VFEA
+  - OskarPotocki.VanillaFactionsExpanded.MedievalModule
+  - VanillaExpanded.VanillaTradingExpanded
+  - VanillaExpanded.Ideo.RelicsAndArtifacts
+  - VanillaExpanded.Ideo.IconsandSymbols
+  - VanillaExpanded.VAEAccessories
+  - VanillaExpanded.VFECore
+  - VanillaExpanded.VTEXVariations
+  - vanillaexpanded.achievements
+  - VanillaExpanded.VCEF
+  - VanillaExpanded.VCEFAddon
+  - VSE.NeronNeolithic
+  - VSE.MaynardMedieval
+  - VSE.DiegoIndustrial
+  - VanillaExpanded.VWETB
+  - VanillaExpanded.VWENL
+  - VanillaExpanded.VWE
+  - VanillaExpanded.VWEQ
+  - VanillaExpanded.VWEL
+  - VanillaExpanded.VWEHW
+  - VanillaExpanded.VWEC
+  - OskarPotocki.VanillaFactionsExpanded.SettlersModule
+  - VanillaExpanded.VWEFT
+  - VSE.OskarObnoxious
+  - VanillaExpanded.VanillaSocialInteractionsExpanded
+  - VanillaExpanded.VWEMS
+  - VanillaExpanded.VAEEndAndExt
+  - rimfridge.kv.rw
+  - LWM.DeepStorage
+  - OskarPotocki.VFE.Mechanoid
+  - VanillaExpanded.VanillaTraitsExpanded
+  - VanillaExpanded.VBrewE
+  - VanillaExpanded.VBrewECandT
+  - VanillaExpanded.VAETF
+  - OskarPotocki.VanillaExpanded.RoyaltyPatches
+  - VSE.IgorInvader
+  - VSE.FreyaFierce
+  - OskarPotocki.VFE.Vikings
+  - VanillaExpanded.VPlantsESucculents
+  - VanillaExpanded.VWEG
+  - VanillaExpanded.VBooksE
+  - VanillaExpanded.VCookESushi
+  - OskarPotocki.VFE.Insectoid
+  - VSE.EmpressEvil
+  - VSE.PerryPersistent
+  - VanillaExpanded.VCookEStews
+  - VanillaExpanded.VPlantsE
+  - VanillaExpanded.VCookE
+  - VanillaExpanded.VFEPropsandDecor
+  - VanillaExpanded.VFEPower
+  - VanillaExpanded.VFESpacer
+  - VanillaExpanded.VTEXE
+  - VanillaExpanded.VFEArt
+  - VanillaExpanded.VAEAU
+  - VanillaExpanded.VFEFarming
+  - VanillaExpanded.VEE
+  - VanillaExpanded.VAETS
+  - VanillaExpanded.VAETR
+  - VanillaExpanded.VAEBF
+  - VanillaExpanded.VAEIS
+  - VanillaExpanded.VAET
+  - VanillaExpanded.VHE
+  - VanillaExpanded.VFEProduction
+  - VanillaExpanded.VAEED
+  - VanillaExpanded.VAED
+  - VanillaExpanded.VFESecurity
+  - VanillaExpanded.VAEAS
+  - VanillaExpanded.VAECD
+  - VanillaExpanded.VARME
+  - VanillaExpanded.VAPPE
+  - VanillaExpanded.VFEMedical
+  - FrozenSnowFox.VanillaBionicsExpansion
+  - tidal.morevanilla.textures
+  - Mlie.Dune
+  - bodlosh.WeaponStats
+  - Daniledman.HardworkingAnimals
+  - PeteTimesSix.SimpleSidearms
+  - UnlimitedHugs.AllowTool
+  - hatti.qualitybuilder
+  - Fluffy.MedicalTab
+  - Mlie.MuzzyUtils
+  - Daniledman.CombatUpdate
+  - void.charactereditor
+  - dubwise.dubsmintminimap
+  - Roolo.DualWield
+  - mastertea.RandomPlus
+  - Uuugggg.ReplaceStuff
+  - tradingspot.kv.rw
+  - Daniledman.FastRegen
+  - ratys.rtfuse
+  - GT.Sam.TilledSoil
+  - Mlie.MechalitCore
+  - Mlie.MechalitEquipmentFaction
+  - Daniledman.Carpets
+  - Mlie.MoreFactionInteraction
+  - Mlie.AnimalHusbandryRaids
+  - Mlie.SimplyMoreBridges
+  - Daniledman.CyberFauna
+  - Telkir.TMods.MoreFloors
+  - Mlie.AnimalHarvestingSpot
+  - Mlie.AsSimpleAsARack
+  - FrozenSnowFox.FilthVanishesWithRainAndTime
+  - Murmur.WallLight
+  - CodeOptimist.JobsOfOpportunity
+  - denev.ResumableJobProgress
+  - m00nl1ght.GeologicalLandforms
+  - roolo.AlmostThere
+  - roolo.whatthehack
+  - roolo.RunAndGun
+  - roolo.SearchAndDestroy
+  - roolo.giddyupcore
+  - roolo.giddyupmechanoids
+  - roolo.giddyuprideandroll
+  - roolo.giddyupcaravan
+  - roolo.giddyupbattlemounts
+RimThreaded is building new Reservations Dictionary...
+Scatterer RimWorld.GenStep_ScatterRoadDebris could not find cell to generate at. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Scatterer RimWorld.GenStep_ScatterCaveDebris could not find cell to generate at. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Scatterer RimWorld.GenStep_ScatterAncientMechs could not find cell to generate at. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+RimThreaded is caching Cells...
+Can't enable CompPowerTrader(parent=Ancientborehole40604 at=(221, 0, 235))
+Can't enable CompPowerTrader(parent=Ancientborehole40605 at=(201, 0, 70))
+Can't enable CompPowerTrader(parent=Ancientborehole40606 at=(113, 0, 229))
+Can't enable CompPowerTrader(parent=Ancientborehole40607 at=(72, 0, 195))
+Can't enable CompPowerTrader(parent=Ancientborehole40608 at=(195, 0, 143))
+Can't enable CompPowerTrader(parent=Ancientborehole40609 at=(134, 0, 88))
+Can't enable CompPowerTrader(parent=Ancientborehole40610 at=(73, 0, 143))
+Can't enable CompPowerTrader(parent=Ancientborehole40611 at=(231, 0, 124))
+Can't enable CompPowerTrader(parent=VFEA_WallLamp52151 at=(96, 0, 118))
+checking editor settings...
+Cleaned up 0 deprecated records from What the Hack!?
+QualityBuilder added to приказы category.
+Rim73 > Loaded new game, resetting caching variables 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 2)
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 37962.
+Total: 2391.412800 ms (FindLiveObjects: 4.746400 ms CreateObjectMapping: 11.421600 ms MarkObjects: 2375.162500 ms  DeleteObjects: 0.082000 ms)
+
+null texture passed to GUI.DrawTexture 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+RimThreaded is caching Cells...
+Unloading 3 Unused Serialized files (Serialized files now loaded: 2)
+UnloadTime: 0.892200 ms
+allowing apparel to be colorable...
+checking editor settings...
+CharacterEditor v1.3.842 ...done
+
+Unloading 2404 unused Assets to reduce memory usage. Loaded Objects now: 36020.
+Total: 587.649500 ms (FindLiveObjects: 3.752100 ms CreateObjectMapping: 3.937100 ms MarkObjects: 576.039100 ms  DeleteObjects: 3.920700 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 2)
+UnloadTime: 0.333900 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 36040.
+Total: 578.473700 ms (FindLiveObjects: 1.918600 ms CreateObjectMapping: 4.310600 ms MarkObjects: 572.183900 ms  DeleteObjects: 0.060300 ms)
+
+Loading game from file Dune Expanded with mods:
+  - brrainz.harmony
+  - Ludeon.RimWorld
+  - Ludeon.RimWorld.Royalty
+  - Ludeon.RimWorld.Ideology
+  - UnlimitedHugs.HugsLib
+  - majorhoff.rimthreaded
+  - GhostRolly.Rim73
+  - Dubwise.DubsPerformanceAnalyzer
+  - OskarPotocki.VanillaFactionsExpanded.Core
+  - VanillaExpanded.VFEA
+  - OskarPotocki.VanillaFactionsExpanded.MedievalModule
+  - VanillaExpanded.VanillaTradingExpanded
+  - VanillaExpanded.Ideo.RelicsAndArtifacts
+  - VanillaExpanded.Ideo.IconsandSymbols
+  - VanillaExpanded.VAEAccessories
+  - VanillaExpanded.VFECore
+  - VanillaExpanded.VTEXVariations
+  - vanillaexpanded.achievements
+  - VanillaExpanded.VCEF
+  - VanillaExpanded.VCEFAddon
+  - VSE.NeronNeolithic
+  - VSE.MaynardMedieval
+  - VSE.DiegoIndustrial
+  - VanillaExpanded.VWETB
+  - VanillaExpanded.VWENL
+  - VanillaExpanded.VWE
+  - VanillaExpanded.VWEQ
+  - VanillaExpanded.VWEL
+  - VanillaExpanded.VWEHW
+  - VanillaExpanded.VWEC
+  - OskarPotocki.VanillaFactionsExpanded.SettlersModule
+  - VanillaExpanded.VWEFT
+  - VSE.OskarObnoxious
+  - VanillaExpanded.VanillaSocialInteractionsExpanded
+  - VanillaExpanded.VWEMS
+  - VanillaExpanded.VAEEndAndExt
+  - rimfridge.kv.rw
+  - LWM.DeepStorage
+  - OskarPotocki.VFE.Mechanoid
+  - VanillaExpanded.VanillaTraitsExpanded
+  - VanillaExpanded.VBrewE
+  - VanillaExpanded.VBrewECandT
+  - VanillaExpanded.VAETF
+  - OskarPotocki.VanillaExpanded.RoyaltyPatches
+  - VSE.IgorInvader
+  - VSE.FreyaFierce
+  - OskarPotocki.VFE.Vikings
+  - VanillaExpanded.VPlantsESucculents
+  - VanillaExpanded.VWEG
+  - VanillaExpanded.VBooksE
+  - VanillaExpanded.VCookESushi
+  - OskarPotocki.VFE.Insectoid
+  - VSE.EmpressEvil
+  - VSE.PerryPersistent
+  - VanillaExpanded.VCookEStews
+  - VanillaExpanded.VPlantsE
+  - VanillaExpanded.VCookE
+  - VanillaExpanded.VFEPropsandDecor
+  - VanillaExpanded.VFEPower
+  - VanillaExpanded.VFESpacer
+  - VanillaExpanded.VTEXE
+  - VanillaExpanded.VFEArt
+  - VanillaExpanded.VAEAU
+  - VanillaExpanded.VFEFarming
+  - VanillaExpanded.VEE
+  - VanillaExpanded.VAETS
+  - VanillaExpanded.VAETR
+  - VanillaExpanded.VAEBF
+  - VanillaExpanded.VAEIS
+  - VanillaExpanded.VAET
+  - VanillaExpanded.VHE
+  - VanillaExpanded.VFEProduction
+  - VanillaExpanded.VAEED
+  - VanillaExpanded.VAED
+  - VanillaExpanded.VFESecurity
+  - VanillaExpanded.VAEAS
+  - VanillaExpanded.VAECD
+  - VanillaExpanded.VARME
+  - VanillaExpanded.VAPPE
+  - VanillaExpanded.VFEMedical
+  - FrozenSnowFox.VanillaBionicsExpansion
+  - tidal.morevanilla.textures
+  - Mlie.Dune
+  - bodlosh.WeaponStats
+  - Daniledman.HardworkingAnimals
+  - PeteTimesSix.SimpleSidearms
+  - UnlimitedHugs.AllowTool
+  - hatti.qualitybuilder
+  - Fluffy.MedicalTab
+  - Mlie.MuzzyUtils
+  - Daniledman.CombatUpdate
+  - void.charactereditor
+  - dubwise.dubsmintminimap
+  - Roolo.DualWield
+  - mastertea.RandomPlus
+  - Uuugggg.ReplaceStuff
+  - tradingspot.kv.rw
+  - Daniledman.FastRegen
+  - ratys.rtfuse
+  - GT.Sam.TilledSoil
+  - Mlie.MechalitCore
+  - Mlie.MechalitEquipmentFaction
+  - Daniledman.Carpets
+  - Mlie.MoreFactionInteraction
+  - Mlie.AnimalHusbandryRaids
+  - Mlie.SimplyMoreBridges
+  - Daniledman.CyberFauna
+  - Telkir.TMods.MoreFloors
+  - Mlie.AnimalHarvestingSpot
+  - Mlie.AsSimpleAsARack
+  - FrozenSnowFox.FilthVanishesWithRainAndTime
+  - Murmur.WallLight
+  - CodeOptimist.JobsOfOpportunity
+  - denev.ResumableJobProgress
+  - m00nl1ght.GeologicalLandforms
+  - roolo.AlmostThere
+  - roolo.whatthehack
+  - roolo.RunAndGun
+  - roolo.SearchAndDestroy
+  - roolo.giddyupcore
+  - roolo.giddyupmechanoids
+  - roolo.giddyuprideandroll
+  - roolo.giddyupcaravan
+  - roolo.giddyupbattlemounts
+QualityBuilder added property to '0' things
+RimThreaded is building new Reservations Dictionary...
+RimThreaded is caching Cells...
+checking editor settings...
+Cleaned up 35 deprecated records from What the Hack!?
+Rim73 > Loaded new game, resetting caching variables 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 2)
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 38321.
+Total: 828.074300 ms (FindLiveObjects: 2.322700 ms CreateObjectMapping: 3.727200 ms MarkObjects: 821.964600 ms  DeleteObjects: 0.059400 ms)
+
+null texture passed to GUI.DrawTexture 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 2)
+UnloadTime: 0.482500 ms
+allowing apparel to be colorable...
+checking editor settings...
+CharacterEditor v1.3.842 ...done
+
+Unloading 2240 unused Assets to reduce memory usage. Loaded Objects now: 36043.
+Total: 622.842900 ms (FindLiveObjects: 3.669500 ms CreateObjectMapping: 3.945600 ms MarkObjects: 611.786800 ms  DeleteObjects: 3.440600 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 2)
+UnloadTime: 0.282800 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 36063.
+Total: 599.927200 ms (FindLiveObjects: 1.931900 ms CreateObjectMapping: 3.430200 ms MarkObjects: 594.501600 ms  DeleteObjects: 0.062900 ms)
+
+Loading game from file Dune Expanded with mods:
+  - brrainz.harmony
+  - Ludeon.RimWorld
+  - Ludeon.RimWorld.Royalty
+  - Ludeon.RimWorld.Ideology
+  - UnlimitedHugs.HugsLib
+  - majorhoff.rimthreaded
+  - GhostRolly.Rim73
+  - Dubwise.DubsPerformanceAnalyzer
+  - OskarPotocki.VanillaFactionsExpanded.Core
+  - VanillaExpanded.VFEA
+  - OskarPotocki.VanillaFactionsExpanded.MedievalModule
+  - VanillaExpanded.VanillaTradingExpanded
+  - VanillaExpanded.Ideo.RelicsAndArtifacts
+  - VanillaExpanded.Ideo.IconsandSymbols
+  - VanillaExpanded.VAEAccessories
+  - VanillaExpanded.VFECore
+  - VanillaExpanded.VTEXVariations
+  - vanillaexpanded.achievements
+  - VanillaExpanded.VCEF
+  - VanillaExpanded.VCEFAddon
+  - VSE.NeronNeolithic
+  - VSE.MaynardMedieval
+  - VSE.DiegoIndustrial
+  - VanillaExpanded.VWETB
+  - VanillaExpanded.VWENL
+  - VanillaExpanded.VWE
+  - VanillaExpanded.VWEQ
+  - VanillaExpanded.VWEL
+  - VanillaExpanded.VWEHW
+  - VanillaExpanded.VWEC
+  - OskarPotocki.VanillaFactionsExpanded.SettlersModule
+  - VanillaExpanded.VWEFT
+  - VSE.OskarObnoxious
+  - VanillaExpanded.VanillaSocialInteractionsExpanded
+  - VanillaExpanded.VWEMS
+  - VanillaExpanded.VAEEndAndExt
+  - rimfridge.kv.rw
+  - LWM.DeepStorage
+  - OskarPotocki.VFE.Mechanoid
+  - VanillaExpanded.VanillaTraitsExpanded
+  - VanillaExpanded.VBrewE
+  - VanillaExpanded.VBrewECandT
+  - VanillaExpanded.VAETF
+  - OskarPotocki.VanillaExpanded.RoyaltyPatches
+  - VSE.IgorInvader
+  - VSE.FreyaFierce
+  - OskarPotocki.VFE.Vikings
+  - VanillaExpanded.VPlantsESucculents
+  - VanillaExpanded.VWEG
+  - VanillaExpanded.VBooksE
+  - VanillaExpanded.VCookESushi
+  - OskarPotocki.VFE.Insectoid
+  - VSE.EmpressEvil
+  - VSE.PerryPersistent
+  - VanillaExpanded.VCookEStews
+  - VanillaExpanded.VPlantsE
+  - VanillaExpanded.VCookE
+  - VanillaExpanded.VFEPropsandDecor
+  - VanillaExpanded.VFEPower
+  - VanillaExpanded.VFESpacer
+  - VanillaExpanded.VTEXE
+  - VanillaExpanded.VFEArt
+  - VanillaExpanded.VAEAU
+  - VanillaExpanded.VFEFarming
+  - VanillaExpanded.VEE
+  - VanillaExpanded.VAETS
+  - VanillaExpanded.VAETR
+  - VanillaExpanded.VAEBF
+  - VanillaExpanded.VAEIS
+  - VanillaExpanded.VAET
+  - VanillaExpanded.VHE
+  - VanillaExpanded.VFEProduction
+  - VanillaExpanded.VAEED
+  - VanillaExpanded.VAED
+  - VanillaExpanded.VFESecurity
+  - VanillaExpanded.VAEAS
+  - VanillaExpanded.VAECD
+  - VanillaExpanded.VARME
+  - VanillaExpanded.VAPPE
+  - VanillaExpanded.VFEMedical
+  - FrozenSnowFox.VanillaBionicsExpansion
+  - tidal.morevanilla.textures
+  - Mlie.Dune
+  - bodlosh.WeaponStats
+  - Daniledman.HardworkingAnimals
+  - PeteTimesSix.SimpleSidearms
+  - UnlimitedHugs.AllowTool
+  - hatti.qualitybuilder
+  - Fluffy.MedicalTab
+  - Mlie.MuzzyUtils
+  - Daniledman.CombatUpdate
+  - void.charactereditor
+  - dubwise.dubsmintminimap
+  - Roolo.DualWield
+  - mastertea.RandomPlus
+  - Uuugggg.ReplaceStuff
+  - tradingspot.kv.rw
+  - Daniledman.FastRegen
+  - ratys.rtfuse
+  - GT.Sam.TilledSoil
+  - Mlie.MechalitCore
+  - Mlie.MechalitEquipmentFaction
+  - Daniledman.Carpets
+  - Mlie.MoreFactionInteraction
+  - Mlie.AnimalHusbandryRaids
+  - Mlie.SimplyMoreBridges
+  - Daniledman.CyberFauna
+  - Telkir.TMods.MoreFloors
+  - Mlie.AnimalHarvestingSpot
+  - Mlie.AsSimpleAsARack
+  - FrozenSnowFox.FilthVanishesWithRainAndTime
+  - Murmur.WallLight
+  - CodeOptimist.JobsOfOpportunity
+  - denev.ResumableJobProgress
+  - m00nl1ght.GeologicalLandforms
+  - roolo.AlmostThere
+  - roolo.whatthehack
+  - roolo.RunAndGun
+  - roolo.SearchAndDestroy
+  - roolo.giddyupcore
+  - roolo.giddyupmechanoids
+  - roolo.giddyuprideandroll
+  - roolo.giddyupcaravan
+  - roolo.giddyupbattlemounts
+QualityBuilder added property to '0' things
+RimThreaded is building new Reservations Dictionary...
+RimThreaded is caching Cells...
+checking editor settings...
+Cleaned up 35 deprecated records from What the Hack!?
+Rim73 > Loaded new game, resetting caching variables 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 2)
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 38327.
+Total: 881.601800 ms (FindLiveObjects: 1.999200 ms CreateObjectMapping: 3.842400 ms MarkObjects: 875.698000 ms  DeleteObjects: 0.061700 ms)
+
+null texture passed to GUI.DrawTexture 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+RimThreaded is caching Cells...
+Unloading 3 Unused Serialized files (Serialized files now loaded: 2)
+UnloadTime: 0.440800 ms
+allowing apparel to be colorable...
+checking editor settings...
+CharacterEditor v1.3.842 ...done
+
+Unloading 2278 unused Assets to reduce memory usage. Loaded Objects now: 36057.
+Total: 650.917200 ms (FindLiveObjects: 2.341700 ms CreateObjectMapping: 3.775800 ms MarkObjects: 641.437300 ms  DeleteObjects: 3.361900 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 2)
+
+Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 35994.
+Total: 931.269300 ms (FindLiveObjects: 4.515300 ms CreateObjectMapping: 4.129500 ms MarkObjects: 922.111700 ms  DeleteObjects: 0.512200 ms)
+
+Tried to change priority on disabled worktype Firefighter for pawn Kimmy 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Tried to change priority on disabled worktype Doctor for pawn Kimmy 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Tried to change priority on disabled worktype BasicWorker for pawn Kimmy 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Tried to change priority on disabled worktype Warden for pawn Kimmy 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Tried to change priority on disabled worktype Handling for pawn Kimmy 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Tried to change priority on disabled worktype Cooking for pawn Kimmy 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Tried to change priority on disabled worktype Hunting for pawn Kimmy 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Tried to change priority on disabled worktype Cleaning for pawn Kimmy 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Tried to change priority on disabled worktype Research for pawn Kimmy 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Tried to change priority on disabled worktype FinishingOff for pawn Kimmy 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Pawn Weeks, Вычислитель got primaryInt equipment VWEFT_Gun_Derringer936 while already having primaryInt equipment VWEFT_Gun_HeavyRevolver935 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Pawn Weeks, Вычислитель got primaryInt equipment VWEFT_Gun_Derringer1074 while already having primaryInt equipment VWEFT_Gun_HeavyRevolver1073 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Tried to change priority on disabled worktype Hunting for pawn Cali 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Tried to change priority on disabled worktype FinishingOff for pawn Cali 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Tried to change priority on disabled worktype Hunting for pawn Dee 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Tried to change priority on disabled worktype FinishingOff for pawn Dee 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+TryMakePreToilReservations() returned false right after TryTakeOrderedJob(). This should have been checked before. job=Ingest (Job_0) A=Thing_Chocolate1253 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+TryMakePreToilReservations() returned false right after TryTakeOrderedJob(). This should have been checked before. job=Ingest (Job_1) A=Thing_Chocolate1253 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 2)
+UnloadTime: 0.450100 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 36248.
+Total: 659.017100 ms (FindLiveObjects: 3.830800 ms CreateObjectMapping: 3.481100 ms MarkObjects: 651.611500 ms  DeleteObjects: 0.093100 ms)
+
+Initializing new game with mods:
+  - brrainz.harmony
+  - Ludeon.RimWorld
+  - Ludeon.RimWorld.Royalty
+  - Ludeon.RimWorld.Ideology
+  - UnlimitedHugs.HugsLib
+  - majorhoff.rimthreaded
+  - GhostRolly.Rim73
+  - Dubwise.DubsPerformanceAnalyzer
+  - OskarPotocki.VanillaFactionsExpanded.Core
+  - VanillaExpanded.VFEA
+  - OskarPotocki.VanillaFactionsExpanded.MedievalModule
+  - VanillaExpanded.VanillaTradingExpanded
+  - VanillaExpanded.Ideo.RelicsAndArtifacts
+  - VanillaExpanded.Ideo.IconsandSymbols
+  - VanillaExpanded.VAEAccessories
+  - VanillaExpanded.VFECore
+  - VanillaExpanded.VTEXVariations
+  - vanillaexpanded.achievements
+  - VanillaExpanded.VCEF
+  - VanillaExpanded.VCEFAddon
+  - VSE.NeronNeolithic
+  - VSE.MaynardMedieval
+  - VSE.DiegoIndustrial
+  - VanillaExpanded.VWETB
+  - VanillaExpanded.VWENL
+  - VanillaExpanded.VWE
+  - VanillaExpanded.VWEQ
+  - VanillaExpanded.VWEL
+  - VanillaExpanded.VWEHW
+  - VanillaExpanded.VWEC
+  - OskarPotocki.VanillaFactionsExpanded.SettlersModule
+  - VanillaExpanded.VWEFT
+  - VSE.OskarObnoxious
+  - VanillaExpanded.VanillaSocialInteractionsExpanded
+  - VanillaExpanded.VWEMS
+  - VanillaExpanded.VAEEndAndExt
+  - rimfridge.kv.rw
+  - LWM.DeepStorage
+  - OskarPotocki.VFE.Mechanoid
+  - VanillaExpanded.VanillaTraitsExpanded
+  - VanillaExpanded.VBrewE
+  - VanillaExpanded.VBrewECandT
+  - VanillaExpanded.VAETF
+  - OskarPotocki.VanillaExpanded.RoyaltyPatches
+  - VSE.IgorInvader
+  - VSE.FreyaFierce
+  - OskarPotocki.VFE.Vikings
+  - VanillaExpanded.VPlantsESucculents
+  - VanillaExpanded.VWEG
+  - VanillaExpanded.VBooksE
+  - VanillaExpanded.VCookESushi
+  - OskarPotocki.VFE.Insectoid
+  - VSE.EmpressEvil
+  - VSE.PerryPersistent
+  - VanillaExpanded.VCookEStews
+  - VanillaExpanded.VPlantsE
+  - VanillaExpanded.VCookE
+  - VanillaExpanded.VFEPropsandDecor
+  - VanillaExpanded.VFEPower
+  - VanillaExpanded.VFESpacer
+  - VanillaExpanded.VTEXE
+  - VanillaExpanded.VFEArt
+  - VanillaExpanded.VAEAU
+  - VanillaExpanded.VFEFarming
+  - VanillaExpanded.VEE
+  - VanillaExpanded.VAETS
+  - VanillaExpanded.VAETR
+  - VanillaExpanded.VAEBF
+  - VanillaExpanded.VAEIS
+  - VanillaExpanded.VAET
+  - VanillaExpanded.VHE
+  - VanillaExpanded.VFEProduction
+  - VanillaExpanded.VAEED
+  - VanillaExpanded.VAED
+  - VanillaExpanded.VFESecurity
+  - VanillaExpanded.VAEAS
+  - VanillaExpanded.VAECD
+  - VanillaExpanded.VARME
+  - VanillaExpanded.VAPPE
+  - VanillaExpanded.VFEMedical
+  - FrozenSnowFox.VanillaBionicsExpansion
+  - tidal.morevanilla.textures
+  - Mlie.Dune
+  - bodlosh.WeaponStats
+  - Daniledman.HardworkingAnimals
+  - PeteTimesSix.SimpleSidearms
+  - UnlimitedHugs.AllowTool
+  - hatti.qualitybuilder
+  - Fluffy.MedicalTab
+  - Mlie.MuzzyUtils
+  - Daniledman.CombatUpdate
+  - void.charactereditor
+  - dubwise.dubsmintminimap
+  - Roolo.DualWield
+  - mastertea.RandomPlus
+  - Uuugggg.ReplaceStuff
+  - tradingspot.kv.rw
+  - Daniledman.FastRegen
+  - ratys.rtfuse
+  - GT.Sam.TilledSoil
+  - Mlie.MechalitCore
+  - Mlie.MechalitEquipmentFaction
+  - Daniledman.Carpets
+  - Mlie.MoreFactionInteraction
+  - Mlie.AnimalHusbandryRaids
+  - Mlie.SimplyMoreBridges
+  - Daniledman.CyberFauna
+  - Telkir.TMods.MoreFloors
+  - Mlie.AnimalHarvestingSpot
+  - Mlie.AsSimpleAsARack
+  - FrozenSnowFox.FilthVanishesWithRainAndTime
+  - Murmur.WallLight
+  - CodeOptimist.JobsOfOpportunity
+  - denev.ResumableJobProgress
+  - m00nl1ght.GeologicalLandforms
+  - roolo.AlmostThere
+  - roolo.whatthehack
+  - roolo.RunAndGun
+  - roolo.SearchAndDestroy
+  - roolo.giddyupcore
+  - roolo.giddyupmechanoids
+  - roolo.giddyuprideandroll
+  - roolo.giddyupcaravan
+  - roolo.giddyupbattlemounts
+QualityBuilder added property to '0' things
+RimThreaded is building new Reservations Dictionary...
+Scatterer RimWorld.GenStep_ScatterRoadDebris could not find cell to generate at. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Scatterer RimWorld.GenStep_ScatterCaveDebris could not find cell to generate at. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Scatterer RimWorld.GenStep_ScatterAncientMechs could not find cell to generate at. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+RimThreaded is caching Cells...
+Can't enable CompPowerTrader(parent=Ancientborehole16891 at=(98, 0, 219))
+Can't enable CompPowerTrader(parent=Ancientborehole16892 at=(230, 0, 231))
+Can't enable CompPowerTrader(parent=Ancientborehole16893 at=(208, 0, 154))
+Can't enable CompPowerTrader(parent=Ancientborehole16895 at=(203, 0, 93))
+Can't enable CompPowerTrader(parent=Ancientborehole16896 at=(217, 0, 54))
+Can't enable CompPowerTrader(parent=Ancientborehole16898 at=(146, 0, 79))
+Can't enable CompPowerTrader(parent=Ancientborehole16899 at=(56, 0, 209))
+Can't enable CompPowerTrader(parent=VFEA_Turret_AncientPointDefense39138 at=(121, 0, 79))
+Can't enable CompPowerTrader(parent=VFEA_AncientHeater39676 at=(96, 0, 99))
+checking editor settings...
+Cleaned up 0 deprecated records from What the Hack!?
+Rim73 > Loaded new game, resetting caching variables 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentException: An item with the same key has already been added. Key: VAE_Footwear_Boots
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x000c1] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at AchievementsExpanded.ItemTrackerMultipleVanillaApparel..ctor (AchievementsExpanded.ItemTrackerMultipleVanillaApparel reference) [0x0005c] in <d8262e7e89fc4b2b8f321716a423a8e4>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoCMethod.InternalInvoke(System.Reflection.MonoCMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00002] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00014] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.DoInvoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0007a] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.Invoke (System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceImpl (System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes, System.Threading.StackCrawlMark& stackMark) [0x00213] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes) [0x00095] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Object[] args) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at AchievementsExpanded.AchievementCard..ctor (AchievementsExpanded.AchievementDef def, System.Boolean preUnlocked) [0x0006b] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoCMethod.InternalInvoke(System.Reflection.MonoCMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00002] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00014] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.DoInvoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0007a] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.Invoke (System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceImpl (System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes, System.Threading.StackCrawlMark& stackMark) [0x00213] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes) [0x00095] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Object[] args) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at AchievementsExpanded.AchievementGenerator.VerifyAchievementList (System.Collections.Generic.HashSet`1[AchievementsExpanded.AchievementCard]& achievementCards, System.Boolean debugOutput) [0x0007a] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at AchievementsExpanded.AchievementPointManager.PreInit (System.Boolean debug) [0x000ac] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at AchievementsExpanded.AchievementPointManager.StartedNewGame () [0x00008] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at (wrapper dynamic-method) Verse.GameComponentUtility.Verse.GameComponentUtility.StartedNewGame_Patch1() 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 2)
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 38750.
+Total: 1451.252900 ms (FindLiveObjects: 3.853400 ms CreateObjectMapping: 3.965900 ms MarkObjects: 1443.370300 ms  DeleteObjects: 0.062800 ms)
+
+null texture passed to GUI.DrawTexture 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+RimThreaded is caching Cells...
+Exception ticking Dee (at (129, 0, 126)). Suppressing further errors. Exception: System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at ResumableJobProgress.Settings.get_IsDisabledDeconstruct () [0x00000] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at ResumableJobProgress.HarmonyPatches+SetUpToils_Patch.Postfix (Verse.AI.JobDriver __instance, System.Collections.Generic.List`1[Verse.AI.Toil]& ___toils) [0x00078] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at (wrapper dynamic-method) Verse.AI.JobDriver.Verse.AI.JobDriver.SetupToils_Patch3(Verse.AI.JobDriver)
+  at RimThreaded.Pawn_JobTracker_Patch.StartJob (Verse.AI.Pawn_JobTracker __instance, Verse.AI.Job newJob, Verse.AI.JobCondition lastJobEndCondition, Verse.AI.ThinkNode jobGiver, System.Boolean resumeCurJobAfterwards, System.Boolean cancelBusyStances, Verse.ThinkTreeDef thinkTree, System.Nullable`1[T] tag, System.Boolean fromQueue, System.Boolean canReturnCurJobToPool) [0x00451] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.StartJob_Patch3(Verse.AI.Pawn_JobTracker,Verse.AI.Job,Verse.AI.JobCondition,Verse.AI.ThinkNode,bool,bool,Verse.ThinkTreeDef,System.Nullable`1<Verse.AI.JobTag>,bool,bool)
+  at RimThreaded.Pawn_JobTracker_Patch.TryFindAndStartJob (Verse.AI.Pawn_JobTracker __instance) [0x000cd] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.TryFindAndStartJob_Patch1(Verse.AI.Pawn_JobTracker)
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.EndCurrentJob_Patch1(Verse.AI.Pawn_JobTracker,Verse.AI.JobCondition,bool,bool)
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.JobTrackerTick_Patch1(Verse.AI.Pawn_JobTracker)
+  at (wrapper dynamic-method) Verse.Pawn.Verse.Pawn.Tick_Patch1(Verse.Pawn)
+  at RimThreaded.TickList_Patch.NormalThingTick () [0x00025] in <61c687c4d8ae440b8962a72b165158e2>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 2)
+UnloadTime: 0.579900 ms
+allowing apparel to be colorable...
+checking editor settings...
+CharacterEditor v1.3.842 ...done
+
+Unloading 2518 unused Assets to reduce memory usage. Loaded Objects now: 36285.
+Total: 763.316500 ms (FindLiveObjects: 3.816400 ms CreateObjectMapping: 4.129000 ms MarkObjects: 750.996500 ms  DeleteObjects: 4.374100 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 2)
+
+Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 36427.
+Total: 737.077900 ms (FindLiveObjects: 3.256200 ms CreateObjectMapping: 5.377500 ms MarkObjects: 727.971400 ms  DeleteObjects: 0.472300 ms)
+
+Exception filling window for RimWorld.Dialog_ConfigureIdeo: System.NullReferenceException: Object reference not set to an instance of an object
+  at Verse.Widgets.ThingIconWorker (UnityEngine.Rect rect, Verse.ThingDef thingDef, UnityEngine.Texture resolvedIcon, System.Single resolvedIconAngle, System.Single scale) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Widgets.ThingIcon (UnityEngine.Rect rect, Verse.Thing thing, System.Single alpha, System.Nullable`1[T] rot) [0x00289] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoPawnIcons (System.Collections.Generic.List`1[T] pawns, System.Single startX, System.Single& curY, System.Single width, System.Single iconSize) [0x00020] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DrawIdeoRow (RimWorld.Ideo ideo, System.Single& curY, UnityEngine.Rect fillRect, System.Boolean& mouseover, System.Int32 row, System.Collections.Generic.List`1[T] pawns) [0x00183] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoList (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition, System.Single& scrollViewHeight, RimWorld.Ideo& mouseoverIdeo, System.Boolean showCreateNewButton, System.Collections.Generic.List`1[T] pawns, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Boolean showLoadExistingIdeoBtn, System.Action createFluidBtnAct) [0x0030f] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoListAndDetails (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition_list, System.Single& scrollViewHeight_list, UnityEngine.Vector2& scrollPosition_details, System.Single& scrollViewHeight_details, System.Boolean editMode, System.Boolean showCreateIdeoButton, System.Collections.Generic.List`1[T] pawns, RimWorld.Ideo onlyEditIdeo, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Action`1[T] ideoLoadedFromFile, System.Boolean showLoadExistingIdeoBtn, System.Boolean allowLoad, System.Action createFluidBtnAct) [0x000ae] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Dialog_ConfigureIdeo.DoWindowContents (UnityEngine.Rect inRect) [0x0006d] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced. 
+(Filename:  Line: 580)
+
+Mouse position stack is not empty. There were more calls to BeginScrollView than EndScrollView. Fixing. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for RimWorld.Dialog_ConfigureIdeo: System.NullReferenceException: Object reference not set to an instance of an object
+  at (wrapper dynamic-method) Verse.LanguageWordInfo.Verse.LanguageWordInfo.TryResolveGender_Patch0(Verse.LanguageWordInfo,string,Verse.Gender&)
+  at Verse.LanguageWordInfo.ResolveGender (System.String str, System.String fallback) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.LoadedLanguage.ResolveGender (System.String str, System.String fallback) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.LanguageWorker.WithIndefiniteArticle (System.String str, System.Boolean plural, System.Boolean name) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.GrammarResolverSimple.TryResolveSymbol (System.Object obj, System.String subSymbol, System.String symbolArgs, Verse.TaggedString& resolvedStr, System.String fullStringForReference) [0x023f5] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) Verse.GrammarResolverSimple.Verse.GrammarResolverSimple.TryResolveInner_Patch0(Verse.TaggedString,int,System.Text.StringBuilder,System.Collections.Generic.List`1<string>,System.Collections.Generic.List`1<object>)
+  at (wrapper dynamic-method) Verse.GrammarResolverSimple.Verse.GrammarResolverSimple.Formatted_Patch0(Verse.TaggedString,System.Collections.Generic.List`1<string>,System.Collections.Generic.List`1<object>)
+  at (wrapper dynamic-method) Verse.GrammarResolverSimpleStringExtensions.Verse.GrammarResolverSimpleStringExtensions.Formatted_Patch0(string,Verse.NamedArgument)
+  at Verse.GrammarResolverSimpleStringExtensions.Formatted (Verse.TaggedString str, Verse.NamedArgument arg1) [0x00007] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.TranslatorFormattedStringExtensions.Translate (System.String key, Verse.NamedArgument arg1) [0x00006] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimThreaded.RitualObligationTargetWorker_GraveWithTarget_Patch+<GetTargetInfos_E>d__1.MoveNext () [0x000a7] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at System.Linq.Enumerable.Any[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00015] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at RimWorld.Precept_Ritual.TipExtraPart () [0x00020] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept_Ritual.GetTip () [0x00006] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept.DrawPreceptBox (UnityEngine.Rect preceptBox, RimWorld.IdeoEditMode editMode, System.Boolean forceHighlight) [0x005c2] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept_Ritual.DrawPreceptBox (UnityEngine.Rect preceptBox, RimWorld.IdeoEditMode editMode, System.Boolean forceHighlight) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) RimWorld.IdeoUIUtility.RimWorld.IdeoUIUtility.DoPreceptsInt_Patch0(string,string,bool,RimWorld.Ideo,RimWorld.IdeoEditMode,single&,single,System.Func`2<RimWorld.PreceptDef, bool>,bool)
+  at RimWorld.IdeoUIUtility.DoPrecepts (System.Single& curY, System.Single width, RimWorld.Ideo ideo, RimWorld.IdeoEditMode editMode) [0x000ae] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoDetails (UnityEngine.Rect inRect, RimWorld.Ideo ideo, UnityEngine.Vector2& scrollPosition, System.Single& viewHeight, System.Boolean editMode, System.Action`1[T] ideoLoadedFromFile, System.Boolean allowLoad, System.Boolean allowSave, System.Boolean reform, System.Boolean forArchonexusRestart) [0x001d1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoListAndDetails (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition_list, System.Single& scrollViewHeight_list, UnityEngine.Vector2& scrollPosition_details, System.Single& scrollViewHeight_details, System.Boolean editMode, System.Boolean showCreateIdeoButton, System.Collections.Generic.List`1[T] pawns, RimWorld.Ideo onlyEditIdeo, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Action`1[T] ideoLoadedFromFile, System.Boolean showLoadExistingIdeoBtn, System.Boolean allowLoad, System.Action createFluidBtnAct) [0x00167] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Dialog_ConfigureIdeo.DoWindowContents (UnityEngine.Rect inRect) [0x0006d] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced. 
+(Filename:  Line: 580)
+
+Exception filling window for RimWorld.Dialog_ConfigureIdeo: System.NullReferenceException: Object reference not set to an instance of an object
+  at (wrapper dynamic-method) Verse.LanguageWordInfo.Verse.LanguageWordInfo.TryResolveGender_Patch0(Verse.LanguageWordInfo,string,Verse.Gender&)
+  at Verse.LanguageWordInfo.ResolveGender (System.String str, System.String fallback) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.LoadedLanguage.ResolveGender (System.String str, System.String fallback) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.LanguageWorker.WithIndefiniteArticle (System.String str, System.Boolean plural, System.Boolean name) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.GrammarResolverSimple.TryResolveSymbol (System.Object obj, System.String subSymbol, System.String symbolArgs, Verse.TaggedString& resolvedStr, System.String fullStringForReference) [0x023f5] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) Verse.GrammarResolverSimple.Verse.GrammarResolverSimple.TryResolveInner_Patch0(Verse.TaggedString,int,System.Text.StringBuilder,System.Collections.Generic.List`1<string>,System.Collections.Generic.List`1<object>)
+  at (wrapper dynamic-method) Verse.GrammarResolverSimple.Verse.GrammarResolverSimple.Formatted_Patch0(Verse.TaggedString,System.Collections.Generic.List`1<string>,System.Collections.Generic.List`1<object>)
+  at (wrapper dynamic-method) Verse.GrammarResolverSimpleStringExtensions.Verse.GrammarResolverSimpleStringExtensions.Formatted_Patch0(string,Verse.NamedArgument)
+  at Verse.GrammarResolverSimpleStringExtensions.Formatted (Verse.TaggedString str, Verse.NamedArgument arg1) [0x00007] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.TranslatorFormattedStringExtensions.Translate (System.String key, Verse.NamedArgument arg1) [0x00006] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimThreaded.RitualObligationTargetWorker_GraveWithTarget_Patch+<GetTargetInfos_E>d__1.MoveNext () [0x000a7] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at System.Linq.Enumerable.Any[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00015] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at RimWorld.Precept_Ritual.TipExtraPart () [0x00020] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept_Ritual.GetTip () [0x00006] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept.DrawPreceptBox (UnityEngine.Rect preceptBox, RimWorld.IdeoEditMode editMode, System.Boolean forceHighlight) [0x005c2] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept_Ritual.DrawPreceptBox (UnityEngine.Rect preceptBox, RimWorld.IdeoEditMode editMode, System.Boolean forceHighlight) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) RimWorld.IdeoUIUtility.RimWorld.IdeoUIUtility.DoPreceptsInt_Patch0(string,string,bool,RimWorld.Ideo,RimWorld.IdeoEditMode,single&,single,System.Func`2<RimWorld.PreceptDef, bool>,bool)
+  at RimWorld.IdeoUIUtility.DoPrecepts (System.Single& curY, System.Single width, RimWorld.Ideo ideo, RimWorld.IdeoEditMode editMode) [0x000ae] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoDetails (UnityEngine.Rect inRect, RimWorld.Ideo ideo, UnityEngine.Vector2& scrollPosition, System.Single& viewHeight, System.Boolean editMode, System.Action`1[T] ideoLoadedFromFile, System.Boolean allowLoad, System.Boolean allowSave, System.Boolean reform, System.Boolean forArchonexusRestart) [0x001d1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoListAndDetails (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition_list, System.Single& scrollViewHeight_list, UnityEngine.Vector2& scrollPosition_details, System.Single& scrollViewHeight_details, System.Boolean editMode, System.Boolean showCreateIdeoButton, System.Collections.Generic.List`1[T] pawns, RimWorld.Ideo onlyEditIdeo, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Action`1[T] ideoLoadedFromFile, System.Boolean showLoadExistingIdeoBtn, System.Boolean allowLoad, System.Action createFluidBtnAct) [0x00167] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Dialog_ConfigureIdeo.DoWindowContents (UnityEngine.Rect inRect) [0x0006d] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced. 
+(Filename:  Line: 580)
+
+Mouse position stack is not empty. There were more calls to BeginScrollView than EndScrollView. Fixing. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for RimWorld.Dialog_ConfigureIdeo: System.NullReferenceException: Object reference not set to an instance of an object
+  at (wrapper dynamic-method) Verse.LanguageWordInfo.Verse.LanguageWordInfo.TryResolveGender_Patch0(Verse.LanguageWordInfo,string,Verse.Gender&)
+  at Verse.LanguageWordInfo.ResolveGender (System.String str, System.String fallback) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.LoadedLanguage.ResolveGender (System.String str, System.String fallback) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.LanguageWorker.WithIndefiniteArticle (System.String str, System.Boolean plural, System.Boolean name) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.GrammarResolverSimple.TryResolveSymbol (System.Object obj, System.String subSymbol, System.String symbolArgs, Verse.TaggedString& resolvedStr, System.String fullStringForReference) [0x023f5] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) Verse.GrammarResolverSimple.Verse.GrammarResolverSimple.TryResolveInner_Patch0(Verse.TaggedString,int,System.Text.StringBuilder,System.Collections.Generic.List`1<string>,System.Collections.Generic.List`1<object>)
+  at (wrapper dynamic-method) Verse.GrammarResolverSimple.Verse.GrammarResolverSimple.Formatted_Patch0(Verse.TaggedString,System.Collections.Generic.List`1<string>,System.Collections.Generic.List`1<object>)
+  at (wrapper dynamic-method) Verse.GrammarResolverSimpleStringExtensions.Verse.GrammarResolverSimpleStringExtensions.Formatted_Patch0(string,Verse.NamedArgument)
+  at Verse.GrammarResolverSimpleStringExtensions.Formatted (Verse.TaggedString str, Verse.NamedArgument arg1) [0x00007] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.TranslatorFormattedStringExtensions.Translate (System.String key, Verse.NamedArgument arg1) [0x00006] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimThreaded.RitualObligationTargetWorker_GraveWithTarget_Patch+<GetTargetInfos_E>d__1.MoveNext () [0x000a7] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at System.Linq.Enumerable.Any[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00015] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at RimWorld.Precept_Ritual.TipExtraPart () [0x00020] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept_Ritual.GetTip () [0x00006] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept.DrawPreceptBox (UnityEngine.Rect preceptBox, RimWorld.IdeoEditMode editMode, System.Boolean forceHighlight) [0x005c2] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept_Ritual.DrawPreceptBox (UnityEngine.Rect preceptBox, RimWorld.IdeoEditMode editMode, System.Boolean forceHighlight) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) RimWorld.IdeoUIUtility.RimWorld.IdeoUIUtility.DoPreceptsInt_Patch0(string,string,bool,RimWorld.Ideo,RimWorld.IdeoEditMode,single&,single,System.Func`2<RimWorld.PreceptDef, bool>,bool)
+  at RimWorld.IdeoUIUtility.DoPrecepts (System.Single& curY, System.Single width, RimWorld.Ideo ideo, RimWorld.IdeoEditMode editMode) [0x000ae] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoDetails (UnityEngine.Rect inRect, RimWorld.Ideo ideo, UnityEngine.Vector2& scrollPosition, System.Single& viewHeight, System.Boolean editMode, System.Action`1[T] ideoLoadedFromFile, System.Boolean allowLoad, System.Boolean allowSave, System.Boolean reform, System.Boolean forArchonexusRestart) [0x001d1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoListAndDetails (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition_list, System.Single& scrollViewHeight_list, UnityEngine.Vector2& scrollPosition_details, System.Single& scrollViewHeight_details, System.Boolean editMode, System.Boolean showCreateIdeoButton, System.Collections.Generic.List`1[T] pawns, RimWorld.Ideo onlyEditIdeo, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Action`1[T] ideoLoadedFromFile, System.Boolean showLoadExistingIdeoBtn, System.Boolean allowLoad, System.Action createFluidBtnAct) [0x00167] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Dialog_ConfigureIdeo.DoWindowContents (UnityEngine.Rect inRect) [0x0006d] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced. 
+(Filename:  Line: 580)
+
+Exception filling window for RimWorld.Dialog_ConfigureIdeo: System.NullReferenceException: Object reference not set to an instance of an object
+  at (wrapper dynamic-method) Verse.LanguageWordInfo.Verse.LanguageWordInfo.TryResolveGender_Patch0(Verse.LanguageWordInfo,string,Verse.Gender&)
+  at Verse.LanguageWordInfo.ResolveGender (System.String str, System.String fallback) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.LoadedLanguage.ResolveGender (System.String str, System.String fallback) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.LanguageWorker.WithIndefiniteArticle (System.String str, System.Boolean plural, System.Boolean name) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.GrammarResolverSimple.TryResolveSymbol (System.Object obj, System.String subSymbol, System.String symbolArgs, Verse.TaggedString& resolvedStr, System.String fullStringForReference) [0x023f5] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) Verse.GrammarResolverSimple.Verse.GrammarResolverSimple.TryResolveInner_Patch0(Verse.TaggedString,int,System.Text.StringBuilder,System.Collections.Generic.List`1<string>,System.Collections.Generic.List`1<object>)
+  at (wrapper dynamic-method) Verse.GrammarResolverSimple.Verse.GrammarResolverSimple.Formatted_Patch0(Verse.TaggedString,System.Collections.Generic.List`1<string>,System.Collections.Generic.List`1<object>)
+  at (wrapper dynamic-method) Verse.GrammarResolverSimpleStringExtensions.Verse.GrammarResolverSimpleStringExtensions.Formatted_Patch0(string,Verse.NamedArgument)
+  at Verse.GrammarResolverSimpleStringExtensions.Formatted (Verse.TaggedString str, Verse.NamedArgument arg1) [0x00007] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.TranslatorFormattedStringExtensions.Translate (System.String key, Verse.NamedArgument arg1) [0x00006] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimThreaded.RitualObligationTargetWorker_GraveWithTarget_Patch+<GetTargetInfos_E>d__1.MoveNext () [0x000a7] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at System.Linq.Enumerable.Any[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00015] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at RimWorld.Precept_Ritual.TipExtraPart () [0x00020] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept_Ritual.GetTip () [0x00006] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept.DrawPreceptBox (UnityEngine.Rect preceptBox, RimWorld.IdeoEditMode editMode, System.Boolean forceHighlight) [0x005c2] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept_Ritual.DrawPreceptBox (UnityEngine.Rect preceptBox, RimWorld.IdeoEditMode editMode, System.Boolean forceHighlight) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) RimWorld.IdeoUIUtility.RimWorld.IdeoUIUtility.DoPreceptsInt_Patch0(string,string,bool,RimWorld.Ideo,RimWorld.IdeoEditMode,single&,single,System.Func`2<RimWorld.PreceptDef, bool>,bool)
+  at RimWorld.IdeoUIUtility.DoPrecepts (System.Single& curY, System.Single width, RimWorld.Ideo ideo, RimWorld.IdeoEditMode editMode) [0x000ae] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoDetails (UnityEngine.Rect inRect, RimWorld.Ideo ideo, UnityEngine.Vector2& scrollPosition, System.Single& viewHeight, System.Boolean editMode, System.Action`1[T] ideoLoadedFromFile, System.Boolean allowLoad, System.Boolean allowSave, System.Boolean reform, System.Boolean forArchonexusRestart) [0x001d1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoListAndDetails (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition_list, System.Single& scrollViewHeight_list, UnityEngine.Vector2& scrollPosition_details, System.Single& scrollViewHeight_details, System.Boolean editMode, System.Boolean showCreateIdeoButton, System.Collections.Generic.List`1[T] pawns, RimWorld.Ideo onlyEditIdeo, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Action`1[T] ideoLoadedFromFile, System.Boolean showLoadExistingIdeoBtn, System.Boolean allowLoad, System.Action createFluidBtnAct) [0x00167] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Dialog_ConfigureIdeo.DoWindowContents (UnityEngine.Rect inRect) [0x0006d] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced. 
+(Filename:  Line: 580)
+
+Mouse position stack is not empty. There were more calls to BeginScrollView than EndScrollView. Fixing. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for RimWorld.Dialog_ConfigureIdeo: System.NullReferenceException: Object reference not set to an instance of an object
+  at Verse.Widgets.ThingIconWorker (UnityEngine.Rect rect, Verse.ThingDef thingDef, UnityEngine.Texture resolvedIcon, System.Single resolvedIconAngle, System.Single scale) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Widgets.ThingIcon (UnityEngine.Rect rect, Verse.Thing thing, System.Single alpha, System.Nullable`1[T] rot) [0x00289] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoPawnIcons (System.Collections.Generic.List`1[T] pawns, System.Single startX, System.Single& curY, System.Single width, System.Single iconSize) [0x00020] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DrawIdeoRow (RimWorld.Ideo ideo, System.Single& curY, UnityEngine.Rect fillRect, System.Boolean& mouseover, System.Int32 row, System.Collections.Generic.List`1[T] pawns) [0x00183] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoList (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition, System.Single& scrollViewHeight, RimWorld.Ideo& mouseoverIdeo, System.Boolean showCreateNewButton, System.Collections.Generic.List`1[T] pawns, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Boolean showLoadExistingIdeoBtn, System.Action createFluidBtnAct) [0x0030f] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoListAndDetails (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition_list, System.Single& scrollViewHeight_list, UnityEngine.Vector2& scrollPosition_details, System.Single& scrollViewHeight_details, System.Boolean editMode, System.Boolean showCreateIdeoButton, System.Collections.Generic.List`1[T] pawns, RimWorld.Ideo onlyEditIdeo, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Action`1[T] ideoLoadedFromFile, System.Boolean showLoadExistingIdeoBtn, System.Boolean allowLoad, System.Action createFluidBtnAct) [0x000ae] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Dialog_ConfigureIdeo.DoWindowContents (UnityEngine.Rect inRect) [0x0006d] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced. 
+(Filename:  Line: 580)
+
+Mouse position stack is not empty. There were more calls to BeginScrollView than EndScrollView. Fixing. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for RimWorld.Dialog_ConfigureIdeo: System.NullReferenceException: Object reference not set to an instance of an object
+  at (wrapper dynamic-method) Verse.LanguageWordInfo.Verse.LanguageWordInfo.TryResolveGender_Patch0(Verse.LanguageWordInfo,string,Verse.Gender&)
+  at Verse.LanguageWordInfo.ResolveGender (System.String str, System.String fallback) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.LoadedLanguage.ResolveGender (System.String str, System.String fallback) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.LanguageWorker.WithIndefiniteArticle (System.String str, System.Boolean plural, System.Boolean name) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.GrammarResolverSimple.TryResolveSymbol (System.Object obj, System.String subSymbol, System.String symbolArgs, Verse.TaggedString& resolvedStr, System.String fullStringForReference) [0x023f5] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) Verse.GrammarResolverSimple.Verse.GrammarResolverSimple.TryResolveInner_Patch0(Verse.TaggedString,int,System.Text.StringBuilder,System.Collections.Generic.List`1<string>,System.Collections.Generic.List`1<object>)
+  at (wrapper dynamic-method) Verse.GrammarResolverSimple.Verse.GrammarResolverSimple.Formatted_Patch0(Verse.TaggedString,System.Collections.Generic.List`1<string>,System.Collections.Generic.List`1<object>)
+  at (wrapper dynamic-method) Verse.GrammarResolverSimpleStringExtensions.Verse.GrammarResolverSimpleStringExtensions.Formatted_Patch0(string,Verse.NamedArgument)
+  at Verse.GrammarResolverSimpleStringExtensions.Formatted (Verse.TaggedString str, Verse.NamedArgument arg1) [0x00007] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.TranslatorFormattedStringExtensions.Translate (System.String key, Verse.NamedArgument arg1) [0x00006] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimThreaded.RitualObligationTargetWorker_GraveWithTarget_Patch+<GetTargetInfos_E>d__1.MoveNext () [0x000a7] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at System.Linq.Enumerable.Any[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00015] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at RimWorld.Precept_Ritual.TipExtraPart () [0x00020] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept_Ritual.GetTip () [0x00006] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept.DrawPreceptBox (UnityEngine.Rect preceptBox, RimWorld.IdeoEditMode editMode, System.Boolean forceHighlight) [0x005c2] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept_Ritual.DrawPreceptBox (UnityEngine.Rect preceptBox, RimWorld.IdeoEditMode editMode, System.Boolean forceHighlight) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) RimWorld.IdeoUIUtility.RimWorld.IdeoUIUtility.DoPreceptsInt_Patch0(string,string,bool,RimWorld.Ideo,RimWorld.IdeoEditMode,single&,single,System.Func`2<RimWorld.PreceptDef, bool>,bool)
+  at RimWorld.IdeoUIUtility.DoPrecepts (System.Single& curY, System.Single width, RimWorld.Ideo ideo, RimWorld.IdeoEditMode editMode) [0x000ae] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoDetails (UnityEngine.Rect inRect, RimWorld.Ideo ideo, UnityEngine.Vector2& scrollPosition, System.Single& viewHeight, System.Boolean editMode, System.Action`1[T] ideoLoadedFromFile, System.Boolean allowLoad, System.Boolean allowSave, System.Boolean reform, System.Boolean forArchonexusRestart) [0x001d1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoListAndDetails (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition_list, System.Single& scrollViewHeight_list, UnityEngine.Vector2& scrollPosition_details, System.Single& scrollViewHeight_details, System.Boolean editMode, System.Boolean showCreateIdeoButton, System.Collections.Generic.List`1[T] pawns, RimWorld.Ideo onlyEditIdeo, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Action`1[T] ideoLoadedFromFile, System.Boolean showLoadExistingIdeoBtn, System.Boolean allowLoad, System.Action createFluidBtnAct) [0x00167] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Dialog_ConfigureIdeo.DoWindowContents (UnityEngine.Rect inRect) [0x0006d] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced. 
+(Filename:  Line: 580)
+
+Exception filling window for RimWorld.Dialog_ConfigureIdeo: System.NullReferenceException: Object reference not set to an instance of an object
+  at (wrapper dynamic-method) Verse.LanguageWordInfo.Verse.LanguageWordInfo.TryResolveGender_Patch0(Verse.LanguageWordInfo,string,Verse.Gender&)
+  at Verse.LanguageWordInfo.ResolveGender (System.String str, System.String fallback) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.LoadedLanguage.ResolveGender (System.String str, System.String fallback) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.LanguageWorker.WithIndefiniteArticle (System.String str, System.Boolean plural, System.Boolean name) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.GrammarResolverSimple.TryResolveSymbol (System.Object obj, System.String subSymbol, System.String symbolArgs, Verse.TaggedString& resolvedStr, System.String fullStringForReference) [0x023f5] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) Verse.GrammarResolverSimple.Verse.GrammarResolverSimple.TryResolveInner_Patch0(Verse.TaggedString,int,System.Text.StringBuilder,System.Collections.Generic.List`1<string>,System.Collections.Generic.List`1<object>)
+  at (wrapper dynamic-method) Verse.GrammarResolverSimple.Verse.GrammarResolverSimple.Formatted_Patch0(Verse.TaggedString,System.Collections.Generic.List`1<string>,System.Collections.Generic.List`1<object>)
+  at (wrapper dynamic-method) Verse.GrammarResolverSimpleStringExtensions.Verse.GrammarResolverSimpleStringExtensions.Formatted_Patch0(string,Verse.NamedArgument)
+  at Verse.GrammarResolverSimpleStringExtensions.Formatted (Verse.TaggedString str, Verse.NamedArgument arg1) [0x00007] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.TranslatorFormattedStringExtensions.Translate (System.String key, Verse.NamedArgument arg1) [0x00006] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimThreaded.RitualObligationTargetWorker_GraveWithTarget_Patch+<GetTargetInfos_E>d__1.MoveNext () [0x000a7] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at System.Linq.Enumerable.Any[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00015] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
+  at RimWorld.Precept_Ritual.TipExtraPart () [0x00020] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept_Ritual.GetTip () [0x00006] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept.DrawPreceptBox (UnityEngine.Rect preceptBox, RimWorld.IdeoEditMode editMode, System.Boolean forceHighlight) [0x005c2] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Precept_Ritual.DrawPreceptBox (UnityEngine.Rect preceptBox, RimWorld.IdeoEditMode editMode, System.Boolean forceHighlight) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) RimWorld.IdeoUIUtility.RimWorld.IdeoUIUtility.DoPreceptsInt_Patch0(string,string,bool,RimWorld.Ideo,RimWorld.IdeoEditMode,single&,single,System.Func`2<RimWorld.PreceptDef, bool>,bool)
+  at RimWorld.IdeoUIUtility.DoPrecepts (System.Single& curY, System.Single width, RimWorld.Ideo ideo, RimWorld.IdeoEditMode editMode) [0x000ae] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoDetails (UnityEngine.Rect inRect, RimWorld.Ideo ideo, UnityEngine.Vector2& scrollPosition, System.Single& viewHeight, System.Boolean editMode, System.Action`1[T] ideoLoadedFromFile, System.Boolean allowLoad, System.Boolean allowSave, System.Boolean reform, System.Boolean forArchonexusRestart) [0x001d1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoListAndDetails (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition_list, System.Single& scrollViewHeight_list, UnityEngine.Vector2& scrollPosition_details, System.Single& scrollViewHeight_details, System.Boolean editMode, System.Boolean showCreateIdeoButton, System.Collections.Generic.List`1[T] pawns, RimWorld.Ideo onlyEditIdeo, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Action`1[T] ideoLoadedFromFile, System.Boolean showLoadExistingIdeoBtn, System.Boolean allowLoad, System.Action createFluidBtnAct) [0x00167] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Dialog_ConfigureIdeo.DoWindowContents (UnityEngine.Rect inRect) [0x0006d] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced. 
+(Filename:  Line: 580)
+
+Mouse position stack is not empty. There were more calls to BeginScrollView than EndScrollView. Fixing. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for RimWorld.Dialog_ConfigureIdeo: System.NullReferenceException: Object reference not set to an instance of an object
+  at Verse.Widgets.ThingIconWorker (UnityEngine.Rect rect, Verse.ThingDef thingDef, UnityEngine.Texture resolvedIcon, System.Single resolvedIconAngle, System.Single scale) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Widgets.ThingIcon (UnityEngine.Rect rect, Verse.Thing thing, System.Single alpha, System.Nullable`1[T] rot) [0x00289] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoPawnIcons (System.Collections.Generic.List`1[T] pawns, System.Single startX, System.Single& curY, System.Single width, System.Single iconSize) [0x00020] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DrawIdeoRow (RimWorld.Ideo ideo, System.Single& curY, UnityEngine.Rect fillRect, System.Boolean& mouseover, System.Int32 row, System.Collections.Generic.List`1[T] pawns) [0x00183] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoList (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition, System.Single& scrollViewHeight, RimWorld.Ideo& mouseoverIdeo, System.Boolean showCreateNewButton, System.Collections.Generic.List`1[T] pawns, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Boolean showLoadExistingIdeoBtn, System.Action createFluidBtnAct) [0x0030f] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoListAndDetails (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition_list, System.Single& scrollViewHeight_list, UnityEngine.Vector2& scrollPosition_details, System.Single& scrollViewHeight_details, System.Boolean editMode, System.Boolean showCreateIdeoButton, System.Collections.Generic.List`1[T] pawns, RimWorld.Ideo onlyEditIdeo, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Action`1[T] ideoLoadedFromFile, System.Boolean showLoadExistingIdeoBtn, System.Boolean allowLoad, System.Action createFluidBtnAct) [0x000ae] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Dialog_ConfigureIdeo.DoWindowContents (UnityEngine.Rect inRect) [0x0006d] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced. 
+(Filename:  Line: 580)
+
+Mouse position stack is not empty. There were more calls to BeginScrollView than EndScrollView. Fixing. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for RimWorld.Dialog_ConfigureIdeo: System.NullReferenceException: Object reference not set to an instance of an object
+  at Verse.Widgets.ThingIconWorker (UnityEngine.Rect rect, Verse.ThingDef thingDef, UnityEngine.Texture resolvedIcon, System.Single resolvedIconAngle, System.Single scale) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Widgets.ThingIcon (UnityEngine.Rect rect, Verse.Thing thing, System.Single alpha, System.Nullable`1[T] rot) [0x00289] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoPawnIcons (System.Collections.Generic.List`1[T] pawns, System.Single startX, System.Single& curY, System.Single width, System.Single iconSize) [0x00020] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DrawIdeoRow (RimWorld.Ideo ideo, System.Single& curY, UnityEngine.Rect fillRect, System.Boolean& mouseover, System.Int32 row, System.Collections.Generic.List`1[T] pawns) [0x00183] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoList (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition, System.Single& scrollViewHeight, RimWorld.Ideo& mouseoverIdeo, System.Boolean showCreateNewButton, System.Collections.Generic.List`1[T] pawns, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Boolean showLoadExistingIdeoBtn, System.Action createFluidBtnAct) [0x0030f] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoListAndDetails (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition_list, System.Single& scrollViewHeight_list, UnityEngine.Vector2& scrollPosition_details, System.Single& scrollViewHeight_details, System.Boolean editMode, System.Boolean showCreateIdeoButton, System.Collections.Generic.List`1[T] pawns, RimWorld.Ideo onlyEditIdeo, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Action`1[T] ideoLoadedFromFile, System.Boolean showLoadExistingIdeoBtn, System.Boolean allowLoad, System.Action createFluidBtnAct) [0x000ae] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Dialog_ConfigureIdeo.DoWindowContents (UnityEngine.Rect inRect) [0x0006d] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced. 
+(Filename:  Line: 580)
+
+Mouse position stack is not empty. There were more calls to BeginScrollView than EndScrollView. Fixing. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for RimWorld.Dialog_ConfigureIdeo: System.NullReferenceException: Object reference not set to an instance of an object
+  at Verse.Widgets.ThingIconWorker (UnityEngine.Rect rect, Verse.ThingDef thingDef, UnityEngine.Texture resolvedIcon, System.Single resolvedIconAngle, System.Single scale) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Widgets.ThingIcon (UnityEngine.Rect rect, Verse.Thing thing, System.Single alpha, System.Nullable`1[T] rot) [0x00289] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoPawnIcons (System.Collections.Generic.List`1[T] pawns, System.Single startX, System.Single& curY, System.Single width, System.Single iconSize) [0x00020] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DrawIdeoRow (RimWorld.Ideo ideo, System.Single& curY, UnityEngine.Rect fillRect, System.Boolean& mouseover, System.Int32 row, System.Collections.Generic.List`1[T] pawns) [0x00183] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoList (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition, System.Single& scrollViewHeight, RimWorld.Ideo& mouseoverIdeo, System.Boolean showCreateNewButton, System.Collections.Generic.List`1[T] pawns, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Boolean showLoadExistingIdeoBtn, System.Action createFluidBtnAct) [0x0030f] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.IdeoUIUtility.DoIdeoListAndDetails (UnityEngine.Rect fillRect, UnityEngine.Vector2& scrollPosition_list, System.Single& scrollViewHeight_list, UnityEngine.Vector2& scrollPosition_details, System.Single& scrollViewHeight_details, System.Boolean editMode, System.Boolean showCreateIdeoButton, System.Collections.Generic.List`1[T] pawns, RimWorld.Ideo onlyEditIdeo, System.Action createCustomBtnActOverride, System.Boolean forArchonexusRestart, System.Func`2[T,TResult] pawnIdeoGetter, System.Action`1[T] ideoLoadedFromFile, System.Boolean showLoadExistingIdeoBtn, System.Boolean allowLoad, System.Action createFluidBtnAct) [0x000ae] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Dialog_ConfigureIdeo.DoWindowContents (UnityEngine.Rect inRect) [0x0006d] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+GUI Error: You are pushing more GUIClips than you are popping. Make sure they are balanced. 
+(Filename:  Line: 580)
+
+Mouse position stack is not empty. There were more calls to BeginScrollView than EndScrollView. Fixing. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Getting random element from empty collection. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Cannot get current title for null faction. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for Verse.FloatMenu: System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].FindEntry (TKey key) [0x00008] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].ContainsKey (TKey key) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at RimWorld.Pawn_RoyaltyTracker.AssignHeirIfNone (RimWorld.RoyalTitleDef t, RimWorld.Faction faction) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Pawn_RoyaltyTracker.OnPreTitleChanged (RimWorld.Faction faction, RimWorld.RoyalTitleDef currentTitle, RimWorld.RoyalTitleDef newTitle, System.Boolean sendLetter) [0x00003] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Pawn_RoyaltyTracker.SetTitle (RimWorld.Faction faction, RimWorld.RoyalTitleDef title, System.Boolean grantRewards, System.Boolean rewardsOnlyForNewestTitle, System.Boolean sendLetter) [0x00015] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at CharacterEditor.NameTool.SetTitle (Verse.Pawn pawn, System.String defName) [0x00059] in <d4b25da8dafd4c6995e095fc1136348e>:0 
+  at CharacterEditor.CEditor+EditorUI+BlockBio.ASetTitle (RimWorld.RoyalTitleDef r) [0x0001c] in <d4b25da8dafd4c6995e095fc1136348e>:0 
+  at CharacterEditor.SZWidgets+<>c__DisplayClass40_1`1[T].<FloatMenuOnRect>b__0 () [0x00013] in <d4b25da8dafd4c6995e095fc1136348e>:0 
+  at Verse.FloatMenuOption.Chosen (System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x00030] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuOption.DoGUI (UnityEngine.Rect rect, System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x003b1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenu.DoWindowContents (UnityEngine.Rect rect) [0x000fb] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Getting random element from empty collection. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Cannot get current title for null faction. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for Verse.FloatMenu: System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].FindEntry (TKey key) [0x00008] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].ContainsKey (TKey key) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at RimWorld.Pawn_RoyaltyTracker.AssignHeirIfNone (RimWorld.RoyalTitleDef t, RimWorld.Faction faction) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Pawn_RoyaltyTracker.OnPreTitleChanged (RimWorld.Faction faction, RimWorld.RoyalTitleDef currentTitle, RimWorld.RoyalTitleDef newTitle, System.Boolean sendLetter) [0x00003] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Pawn_RoyaltyTracker.SetTitle (RimWorld.Faction faction, RimWorld.RoyalTitleDef title, System.Boolean grantRewards, System.Boolean rewardsOnlyForNewestTitle, System.Boolean sendLetter) [0x00015] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at CharacterEditor.NameTool.SetTitle (Verse.Pawn pawn, System.String defName) [0x00059] in <d4b25da8dafd4c6995e095fc1136348e>:0 
+  at CharacterEditor.CEditor+EditorUI+BlockBio.ASetTitle (RimWorld.RoyalTitleDef r) [0x0001c] in <d4b25da8dafd4c6995e095fc1136348e>:0 
+  at CharacterEditor.SZWidgets+<>c__DisplayClass40_1`1[T].<FloatMenuOnRect>b__0 () [0x00013] in <d4b25da8dafd4c6995e095fc1136348e>:0 
+  at Verse.FloatMenuOption.Chosen (System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x00030] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuOption.DoGUI (UnityEngine.Rect rect, System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x003b1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenu.DoWindowContents (UnityEngine.Rect rect) [0x000fb] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Getting random element from empty collection. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Cannot get current title for null faction. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for Verse.FloatMenu: System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].FindEntry (TKey key) [0x00008] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].ContainsKey (TKey key) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at RimWorld.Pawn_RoyaltyTracker.AssignHeirIfNone (RimWorld.RoyalTitleDef t, RimWorld.Faction faction) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Pawn_RoyaltyTracker.OnPreTitleChanged (RimWorld.Faction faction, RimWorld.RoyalTitleDef currentTitle, RimWorld.RoyalTitleDef newTitle, System.Boolean sendLetter) [0x00003] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Pawn_RoyaltyTracker.SetTitle (RimWorld.Faction faction, RimWorld.RoyalTitleDef title, System.Boolean grantRewards, System.Boolean rewardsOnlyForNewestTitle, System.Boolean sendLetter) [0x00015] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at CharacterEditor.NameTool.SetTitle (Verse.Pawn pawn, System.String defName) [0x00059] in <d4b25da8dafd4c6995e095fc1136348e>:0 
+  at CharacterEditor.CEditor+EditorUI+BlockBio.ASetTitle (RimWorld.RoyalTitleDef r) [0x0001c] in <d4b25da8dafd4c6995e095fc1136348e>:0 
+  at CharacterEditor.SZWidgets+<>c__DisplayClass40_1`1[T].<FloatMenuOnRect>b__0 () [0x00013] in <d4b25da8dafd4c6995e095fc1136348e>:0 
+  at Verse.FloatMenuOption.Chosen (System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x00030] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuOption.DoGUI (UnityEngine.Rect rect, System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x003b1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenu.DoWindowContents (UnityEngine.Rect rect) [0x000fb] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Getting random element from empty collection. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Cannot get current title for null faction. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for Verse.FloatMenu: System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].FindEntry (TKey key) [0x00008] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].ContainsKey (TKey key) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at RimWorld.Pawn_RoyaltyTracker.AssignHeirIfNone (RimWorld.RoyalTitleDef t, RimWorld.Faction faction) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Pawn_RoyaltyTracker.OnPreTitleChanged (RimWorld.Faction faction, RimWorld.RoyalTitleDef currentTitle, RimWorld.RoyalTitleDef newTitle, System.Boolean sendLetter) [0x00003] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Pawn_RoyaltyTracker.SetTitle (RimWorld.Faction faction, RimWorld.RoyalTitleDef title, System.Boolean grantRewards, System.Boolean rewardsOnlyForNewestTitle, System.Boolean sendLetter) [0x00015] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at CharacterEditor.NameTool.SetTitle (Verse.Pawn pawn, System.String defName) [0x00059] in <d4b25da8dafd4c6995e095fc1136348e>:0 
+  at CharacterEditor.CEditor+EditorUI+BlockBio.ASetTitle (RimWorld.RoyalTitleDef r) [0x0001c] in <d4b25da8dafd4c6995e095fc1136348e>:0 
+  at CharacterEditor.SZWidgets+<>c__DisplayClass40_1`1[T].<FloatMenuOnRect>b__0 () [0x00013] in <d4b25da8dafd4c6995e095fc1136348e>:0 
+  at Verse.FloatMenuOption.Chosen (System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x00030] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuOption.DoGUI (UnityEngine.Rect rect, System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x003b1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenu.DoWindowContents (UnityEngine.Rect rect) [0x000fb] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Getting random element from empty collection. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Cannot get current title for null faction. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for Verse.FloatMenu: System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].FindEntry (TKey key) [0x00008] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].ContainsKey (TKey key) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at RimWorld.Pawn_RoyaltyTracker.AssignHeirIfNone (RimWorld.RoyalTitleDef t, RimWorld.Faction faction) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Pawn_RoyaltyTracker.OnPreTitleChanged (RimWorld.Faction faction, RimWorld.RoyalTitleDef currentTitle, RimWorld.RoyalTitleDef newTitle, System.Boolean sendLetter) [0x00003] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Pawn_RoyaltyTracker.SetTitle (RimWorld.Faction faction, RimWorld.RoyalTitleDef title, System.Boolean grantRewards, System.Boolean rewardsOnlyForNewestTitle, System.Boolean sendLetter) [0x00015] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at CharacterEditor.NameTool.SetTitle (Verse.Pawn pawn, System.String defName) [0x00059] in <d4b25da8dafd4c6995e095fc1136348e>:0 
+  at CharacterEditor.CEditor+EditorUI+BlockBio.ASetTitle (RimWorld.RoyalTitleDef r) [0x0001c] in <d4b25da8dafd4c6995e095fc1136348e>:0 
+  at CharacterEditor.SZWidgets+<>c__DisplayClass40_1`1[T].<FloatMenuOnRect>b__0 () [0x00013] in <d4b25da8dafd4c6995e095fc1136348e>:0 
+  at Verse.FloatMenuOption.Chosen (System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x00030] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuOption.DoGUI (UnityEngine.Rect rect, System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x003b1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenu.DoWindowContents (UnityEngine.Rect rect) [0x000fb] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+loading/updating slots...
+loading/updating slots...
+loading/updating slots...
+Failed to generate a unique precept name:  at 0% uniqueness 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 2)
+UnloadTime: 0.325300 ms
+QualityBuilder added property to '0' things
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 36838.
+Total: 710.146600 ms (FindLiveObjects: 1.863400 ms CreateObjectMapping: 3.930200 ms MarkObjects: 704.244900 ms  DeleteObjects: 0.107600 ms)
+
+Initializing new game with mods:
+  - brrainz.harmony
+  - Ludeon.RimWorld
+  - Ludeon.RimWorld.Royalty
+  - Ludeon.RimWorld.Ideology
+  - UnlimitedHugs.HugsLib
+  - majorhoff.rimthreaded
+  - GhostRolly.Rim73
+  - Dubwise.DubsPerformanceAnalyzer
+  - OskarPotocki.VanillaFactionsExpanded.Core
+  - VanillaExpanded.VFEA
+  - OskarPotocki.VanillaFactionsExpanded.MedievalModule
+  - VanillaExpanded.VanillaTradingExpanded
+  - VanillaExpanded.Ideo.RelicsAndArtifacts
+  - VanillaExpanded.Ideo.IconsandSymbols
+  - VanillaExpanded.VAEAccessories
+  - VanillaExpanded.VFECore
+  - VanillaExpanded.VTEXVariations
+  - vanillaexpanded.achievements
+  - VanillaExpanded.VCEF
+  - VanillaExpanded.VCEFAddon
+  - VSE.NeronNeolithic
+  - VSE.MaynardMedieval
+  - VSE.DiegoIndustrial
+  - VanillaExpanded.VWETB
+  - VanillaExpanded.VWENL
+  - VanillaExpanded.VWE
+  - VanillaExpanded.VWEQ
+  - VanillaExpanded.VWEL
+  - VanillaExpanded.VWEHW
+  - VanillaExpanded.VWEC
+  - OskarPotocki.VanillaFactionsExpanded.SettlersModule
+  - VanillaExpanded.VWEFT
+  - VSE.OskarObnoxious
+  - VanillaExpanded.VanillaSocialInteractionsExpanded
+  - VanillaExpanded.VWEMS
+  - VanillaExpanded.VAEEndAndExt
+  - rimfridge.kv.rw
+  - LWM.DeepStorage
+  - OskarPotocki.VFE.Mechanoid
+  - VanillaExpanded.VanillaTraitsExpanded
+  - VanillaExpanded.VBrewE
+  - VanillaExpanded.VBrewECandT
+  - VanillaExpanded.VAETF
+  - OskarPotocki.VanillaExpanded.RoyaltyPatches
+  - VSE.IgorInvader
+  - VSE.FreyaFierce
+  - OskarPotocki.VFE.Vikings
+  - VanillaExpanded.VPlantsESucculents
+  - VanillaExpanded.VWEG
+  - VanillaExpanded.VBooksE
+  - VanillaExpanded.VCookESushi
+  - OskarPotocki.VFE.Insectoid
+  - VSE.EmpressEvil
+  - VSE.PerryPersistent
+  - VanillaExpanded.VCookEStews
+  - VanillaExpanded.VPlantsE
+  - VanillaExpanded.VCookE
+  - VanillaExpanded.VFEPropsandDecor
+  - VanillaExpanded.VFEPower
+  - VanillaExpanded.VFESpacer
+  - VanillaExpanded.VTEXE
+  - VanillaExpanded.VFEArt
+  - VanillaExpanded.VAEAU
+  - VanillaExpanded.VFEFarming
+  - VanillaExpanded.VEE
+  - VanillaExpanded.VAETS
+  - VanillaExpanded.VAETR
+  - VanillaExpanded.VAEBF
+  - VanillaExpanded.VAEIS
+  - VanillaExpanded.VAET
+  - VanillaExpanded.VHE
+  - VanillaExpanded.VFEProduction
+  - VanillaExpanded.VAEED
+  - VanillaExpanded.VAED
+  - VanillaExpanded.VFESecurity
+  - VanillaExpanded.VAEAS
+  - VanillaExpanded.VAECD
+  - VanillaExpanded.VARME
+  - VanillaExpanded.VAPPE
+  - VanillaExpanded.VFEMedical
+  - FrozenSnowFox.VanillaBionicsExpansion
+  - tidal.morevanilla.textures
+  - Mlie.Dune
+  - bodlosh.WeaponStats
+  - Daniledman.HardworkingAnimals
+  - PeteTimesSix.SimpleSidearms
+  - UnlimitedHugs.AllowTool
+  - hatti.qualitybuilder
+  - Fluffy.MedicalTab
+  - Mlie.MuzzyUtils
+  - Daniledman.CombatUpdate
+  - void.charactereditor
+  - dubwise.dubsmintminimap
+  - Roolo.DualWield
+  - mastertea.RandomPlus
+  - Uuugggg.ReplaceStuff
+  - tradingspot.kv.rw
+  - Daniledman.FastRegen
+  - ratys.rtfuse
+  - GT.Sam.TilledSoil
+  - Mlie.MechalitCore
+  - Mlie.MechalitEquipmentFaction
+  - Daniledman.Carpets
+  - Mlie.MoreFactionInteraction
+  - Mlie.AnimalHusbandryRaids
+  - Mlie.SimplyMoreBridges
+  - Daniledman.CyberFauna
+  - Telkir.TMods.MoreFloors
+  - Mlie.AnimalHarvestingSpot
+  - Mlie.AsSimpleAsARack
+  - FrozenSnowFox.FilthVanishesWithRainAndTime
+  - Murmur.WallLight
+  - CodeOptimist.JobsOfOpportunity
+  - denev.ResumableJobProgress
+  - m00nl1ght.GeologicalLandforms
+  - roolo.AlmostThere
+  - roolo.whatthehack
+  - roolo.RunAndGun
+  - roolo.SearchAndDestroy
+  - roolo.giddyupcore
+  - roolo.giddyupmechanoids
+  - roolo.giddyuprideandroll
+  - roolo.giddyupcaravan
+  - roolo.giddyupbattlemounts
+RimThreaded is building new Reservations Dictionary...
+Scatterer RimWorld.GenStep_ScatterRoadDebris could not find cell to generate at. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Scatterer RimWorld.GenStep_ScatterAncientMechs could not find cell to generate at. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+RimThreaded is caching Cells...
+Can't enable CompPowerTrader(parent=Ancientborehole33357 at=(161, 0, 22))
+Can't enable CompPowerTrader(parent=Ancientborehole33358 at=(153, 0, 194))
+Can't enable CompPowerTrader(parent=Ancientborehole33359 at=(226, 0, 65))
+Can't enable CompPowerTrader(parent=Ancientborehole33360 at=(182, 0, 54))
+Can't enable CompPowerTrader(parent=Ancientborehole33361 at=(192, 0, 111))
+Can't enable CompPowerTrader(parent=Ancientborehole33362 at=(206, 0, 222))
+Can't enable CompPowerTrader(parent=Ancientborehole33363 at=(204, 0, 175))
+Can't enable CompPowerTrader(parent=Ancientborehole33364 at=(193, 0, 231))
+Can't enable CompPowerTrader(parent=Ancientborehole33365 at=(81, 0, 16))
+checking editor settings...
+Cleaned up 0 deprecated records from What the Hack!?
+Rim73 > Loaded new game, resetting caching variables 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentException: An item with the same key has already been added. Key: VAE_Footwear_Boots
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x000c1] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at AchievementsExpanded.ItemTrackerMultipleVanillaApparel..ctor (AchievementsExpanded.ItemTrackerMultipleVanillaApparel reference) [0x0005c] in <d8262e7e89fc4b2b8f321716a423a8e4>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoCMethod.InternalInvoke(System.Reflection.MonoCMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00002] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00014] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.DoInvoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0007a] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.Invoke (System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceImpl (System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes, System.Threading.StackCrawlMark& stackMark) [0x00213] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes) [0x00095] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Object[] args) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at AchievementsExpanded.AchievementCard..ctor (AchievementsExpanded.AchievementDef def, System.Boolean preUnlocked) [0x0006b] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoCMethod.InternalInvoke(System.Reflection.MonoCMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00002] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00014] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.DoInvoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0007a] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.Invoke (System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceImpl (System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes, System.Threading.StackCrawlMark& stackMark) [0x00213] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes) [0x00095] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Object[] args) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at AchievementsExpanded.AchievementGenerator.VerifyAchievementList (System.Collections.Generic.HashSet`1[AchievementsExpanded.AchievementCard]& achievementCards, System.Boolean debugOutput) [0x0007a] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at AchievementsExpanded.AchievementPointManager.PreInit (System.Boolean debug) [0x000ac] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at AchievementsExpanded.AchievementPointManager.StartedNewGame () [0x00008] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at (wrapper dynamic-method) Verse.GameComponentUtility.Verse.GameComponentUtility.StartedNewGame_Patch1() 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 2)
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 39271.
+Total: 1106.546100 ms (FindLiveObjects: 4.074200 ms CreateObjectMapping: 3.982000 ms MarkObjects: 1098.419800 ms  DeleteObjects: 0.069600 ms)
+
+null texture passed to GUI.DrawTexture 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for Verse.FloatMenuMap: System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at ResumableJobProgress.Settings.get_IsDisabledDeconstruct () [0x00000] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at ResumableJobProgress.HarmonyPatches+SetUpToils_Patch.Postfix (Verse.AI.JobDriver __instance, System.Collections.Generic.List`1[Verse.AI.Toil]& ___toils) [0x00078] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at (wrapper dynamic-method) Verse.AI.JobDriver.Verse.AI.JobDriver.SetupToils_Patch3(Verse.AI.JobDriver)
+  at RimThreaded.Pawn_JobTracker_Patch.StartJob (Verse.AI.Pawn_JobTracker __instance, Verse.AI.Job newJob, Verse.AI.JobCondition lastJobEndCondition, Verse.AI.ThinkNode jobGiver, System.Boolean resumeCurJobAfterwards, System.Boolean cancelBusyStances, Verse.ThinkTreeDef thinkTree, System.Nullable`1[T] tag, System.Boolean fromQueue, System.Boolean canReturnCurJobToPool) [0x00451] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.StartJob_Patch3(Verse.AI.Pawn_JobTracker,Verse.AI.Job,Verse.AI.JobCondition,Verse.AI.ThinkNode,bool,bool,Verse.ThinkTreeDef,System.Nullable`1<Verse.AI.JobTag>,bool,bool)
+  at RimThreaded.Pawn_JobTracker_Patch.TryFindAndStartJob (Verse.AI.Pawn_JobTracker __instance) [0x000cd] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.TryFindAndStartJob_Patch1(Verse.AI.Pawn_JobTracker)
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.EndCurrentJob_Patch1(Verse.AI.Pawn_JobTracker,Verse.AI.JobCondition,bool,bool)
+  at Verse.AI.JobDriver.EndJobWith (Verse.AI.JobCondition condition) [0x00028] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.TryTakeOrderedJob_Patch2(Verse.AI.Pawn_JobTracker,Verse.AI.Job,System.Nullable`1<Verse.AI.JobTag>,bool)
+  at Verse.AI.Pawn_JobTracker.TryTakeOrderedJobPrioritizedWork (Verse.AI.Job job, RimWorld.WorkGiver giver, Verse.IntVec3 cell) [0x00012] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.FloatMenuMakerMap+<>c__DisplayClass12_2.<AddJobGiverWorkOrders>b__1 () [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuOption.Chosen (System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x00030] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuOption.DoGUI (UnityEngine.Rect rect, System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x003b1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenu.DoWindowContents (UnityEngine.Rect rect) [0x000fb] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuMap.DoWindowContents (UnityEngine.Rect inRect) [0x0014c] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+RimThreaded is caching Cells...
+Exception filling window for Verse.FloatMenuMap: System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at ResumableJobProgress.Settings.get_IsDisabledDeconstruct () [0x00000] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at ResumableJobProgress.HarmonyPatches+SetUpToils_Patch.Postfix (Verse.AI.JobDriver __instance, System.Collections.Generic.List`1[Verse.AI.Toil]& ___toils) [0x00078] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at (wrapper dynamic-method) Verse.AI.JobDriver.Verse.AI.JobDriver.SetupToils_Patch3(Verse.AI.JobDriver)
+  at RimThreaded.Pawn_JobTracker_Patch.StartJob (Verse.AI.Pawn_JobTracker __instance, Verse.AI.Job newJob, Verse.AI.JobCondition lastJobEndCondition, Verse.AI.ThinkNode jobGiver, System.Boolean resumeCurJobAfterwards, System.Boolean cancelBusyStances, Verse.ThinkTreeDef thinkTree, System.Nullable`1[T] tag, System.Boolean fromQueue, System.Boolean canReturnCurJobToPool) [0x00451] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.StartJob_Patch3(Verse.AI.Pawn_JobTracker,Verse.AI.Job,Verse.AI.JobCondition,Verse.AI.ThinkNode,bool,bool,Verse.ThinkTreeDef,System.Nullable`1<Verse.AI.JobTag>,bool,bool)
+  at RimThreaded.Pawn_JobTracker_Patch.TryFindAndStartJob (Verse.AI.Pawn_JobTracker __instance) [0x000cd] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.TryFindAndStartJob_Patch1(Verse.AI.Pawn_JobTracker)
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.EndCurrentJob_Patch1(Verse.AI.Pawn_JobTracker,Verse.AI.JobCondition,bool,bool)
+  at Verse.AI.JobDriver.EndJobWith (Verse.AI.JobCondition condition) [0x00028] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.TryTakeOrderedJob_Patch2(Verse.AI.Pawn_JobTracker,Verse.AI.Job,System.Nullable`1<Verse.AI.JobTag>,bool)
+  at Verse.AI.Pawn_JobTracker.TryTakeOrderedJobPrioritizedWork (Verse.AI.Job job, RimWorld.WorkGiver giver, Verse.IntVec3 cell) [0x00012] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.FloatMenuMakerMap+<>c__DisplayClass12_2.<AddJobGiverWorkOrders>b__1 () [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuOption.Chosen (System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x00030] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuOption.DoGUI (UnityEngine.Rect rect, System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x003b1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenu.DoWindowContents (UnityEngine.Rect rect) [0x000fb] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuMap.DoWindowContents (UnityEngine.Rect inRect) [0x0014c] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for Verse.FloatMenuMap: System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at ResumableJobProgress.Settings.get_IsDisabledDeconstruct () [0x00000] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at ResumableJobProgress.HarmonyPatches+SetUpToils_Patch.Postfix (Verse.AI.JobDriver __instance, System.Collections.Generic.List`1[Verse.AI.Toil]& ___toils) [0x00078] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at (wrapper dynamic-method) Verse.AI.JobDriver.Verse.AI.JobDriver.SetupToils_Patch3(Verse.AI.JobDriver)
+  at RimThreaded.Pawn_JobTracker_Patch.StartJob (Verse.AI.Pawn_JobTracker __instance, Verse.AI.Job newJob, Verse.AI.JobCondition lastJobEndCondition, Verse.AI.ThinkNode jobGiver, System.Boolean resumeCurJobAfterwards, System.Boolean cancelBusyStances, Verse.ThinkTreeDef thinkTree, System.Nullable`1[T] tag, System.Boolean fromQueue, System.Boolean canReturnCurJobToPool) [0x00451] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.StartJob_Patch3(Verse.AI.Pawn_JobTracker,Verse.AI.Job,Verse.AI.JobCondition,Verse.AI.ThinkNode,bool,bool,Verse.ThinkTreeDef,System.Nullable`1<Verse.AI.JobTag>,bool,bool)
+  at RimThreaded.Pawn_JobTracker_Patch.TryFindAndStartJob (Verse.AI.Pawn_JobTracker __instance) [0x000cd] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.TryFindAndStartJob_Patch1(Verse.AI.Pawn_JobTracker)
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.EndCurrentJob_Patch1(Verse.AI.Pawn_JobTracker,Verse.AI.JobCondition,bool,bool)
+  at Verse.AI.JobDriver.EndJobWith (Verse.AI.JobCondition condition) [0x00028] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.TryTakeOrderedJob_Patch2(Verse.AI.Pawn_JobTracker,Verse.AI.Job,System.Nullable`1<Verse.AI.JobTag>,bool)
+  at Verse.AI.Pawn_JobTracker.TryTakeOrderedJobPrioritizedWork (Verse.AI.Job job, RimWorld.WorkGiver giver, Verse.IntVec3 cell) [0x00012] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.FloatMenuMakerMap+<>c__DisplayClass12_2.<AddJobGiverWorkOrders>b__1 () [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuOption.Chosen (System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x00030] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuOption.DoGUI (UnityEngine.Rect rect, System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x003b1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenu.DoWindowContents (UnityEngine.Rect rect) [0x000fb] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuMap.DoWindowContents (UnityEngine.Rect inRect) [0x0014c] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for Verse.FloatMenuMap: System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at ResumableJobProgress.Settings.get_IsDisabledDeconstruct () [0x00000] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at ResumableJobProgress.HarmonyPatches+SetUpToils_Patch.Postfix (Verse.AI.JobDriver __instance, System.Collections.Generic.List`1[Verse.AI.Toil]& ___toils) [0x00078] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at (wrapper dynamic-method) Verse.AI.JobDriver.Verse.AI.JobDriver.SetupToils_Patch3(Verse.AI.JobDriver)
+  at RimThreaded.Pawn_JobTracker_Patch.StartJob (Verse.AI.Pawn_JobTracker __instance, Verse.AI.Job newJob, Verse.AI.JobCondition lastJobEndCondition, Verse.AI.ThinkNode jobGiver, System.Boolean resumeCurJobAfterwards, System.Boolean cancelBusyStances, Verse.ThinkTreeDef thinkTree, System.Nullable`1[T] tag, System.Boolean fromQueue, System.Boolean canReturnCurJobToPool) [0x00451] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.StartJob_Patch3(Verse.AI.Pawn_JobTracker,Verse.AI.Job,Verse.AI.JobCondition,Verse.AI.ThinkNode,bool,bool,Verse.ThinkTreeDef,System.Nullable`1<Verse.AI.JobTag>,bool,bool)
+  at RimThreaded.Pawn_JobTracker_Patch.TryFindAndStartJob (Verse.AI.Pawn_JobTracker __instance) [0x000cd] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.TryFindAndStartJob_Patch1(Verse.AI.Pawn_JobTracker)
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.EndCurrentJob_Patch1(Verse.AI.Pawn_JobTracker,Verse.AI.JobCondition,bool,bool)
+  at Verse.AI.JobDriver.EndJobWith (Verse.AI.JobCondition condition) [0x00028] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.TryTakeOrderedJob_Patch2(Verse.AI.Pawn_JobTracker,Verse.AI.Job,System.Nullable`1<Verse.AI.JobTag>,bool)
+  at Verse.AI.Pawn_JobTracker.TryTakeOrderedJobPrioritizedWork (Verse.AI.Job job, RimWorld.WorkGiver giver, Verse.IntVec3 cell) [0x00012] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.FloatMenuMakerMap+<>c__DisplayClass12_2.<AddJobGiverWorkOrders>b__1 () [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuOption.Chosen (System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x00030] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuOption.DoGUI (UnityEngine.Rect rect, System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x003b1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenu.DoWindowContents (UnityEngine.Rect rect) [0x000fb] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuMap.DoWindowContents (UnityEngine.Rect inRect) [0x0014c] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception filling window for Verse.FloatMenuMap: System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at ResumableJobProgress.Settings.get_IsDisabledDeconstruct () [0x00000] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at ResumableJobProgress.HarmonyPatches+SetUpToils_Patch.Postfix (Verse.AI.JobDriver __instance, System.Collections.Generic.List`1[Verse.AI.Toil]& ___toils) [0x00078] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at (wrapper dynamic-method) Verse.AI.JobDriver.Verse.AI.JobDriver.SetupToils_Patch3(Verse.AI.JobDriver)
+  at RimThreaded.Pawn_JobTracker_Patch.StartJob (Verse.AI.Pawn_JobTracker __instance, Verse.AI.Job newJob, Verse.AI.JobCondition lastJobEndCondition, Verse.AI.ThinkNode jobGiver, System.Boolean resumeCurJobAfterwards, System.Boolean cancelBusyStances, Verse.ThinkTreeDef thinkTree, System.Nullable`1[T] tag, System.Boolean fromQueue, System.Boolean canReturnCurJobToPool) [0x00451] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.StartJob_Patch3(Verse.AI.Pawn_JobTracker,Verse.AI.Job,Verse.AI.JobCondition,Verse.AI.ThinkNode,bool,bool,Verse.ThinkTreeDef,System.Nullable`1<Verse.AI.JobTag>,bool,bool)
+  at RimThreaded.Pawn_JobTracker_Patch.TryFindAndStartJob (Verse.AI.Pawn_JobTracker __instance) [0x000cd] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.TryFindAndStartJob_Patch1(Verse.AI.Pawn_JobTracker)
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.EndCurrentJob_Patch1(Verse.AI.Pawn_JobTracker,Verse.AI.JobCondition,bool,bool)
+  at Verse.AI.JobDriver.EndJobWith (Verse.AI.JobCondition condition) [0x00028] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.TryTakeOrderedJob_Patch2(Verse.AI.Pawn_JobTracker,Verse.AI.Job,System.Nullable`1<Verse.AI.JobTag>,bool)
+  at Verse.AI.Pawn_JobTracker.TryTakeOrderedJobPrioritizedWork (Verse.AI.Job job, RimWorld.WorkGiver giver, Verse.IntVec3 cell) [0x00012] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.FloatMenuMakerMap+<>c__DisplayClass12_2.<AddJobGiverWorkOrders>b__1 () [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuOption.Chosen (System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x00030] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuOption.DoGUI (UnityEngine.Rect rect, System.Boolean colonistOrdering, Verse.FloatMenu floatMenu) [0x003b1] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenu.DoWindowContents (UnityEngine.Rect rect) [0x000fb] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.FloatMenuMap.DoWindowContents (UnityEngine.Rect inRect) [0x0014c] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 2)
+UnloadTime: 0.610000 ms
+
+Unloading 2497 unused Assets to reduce memory usage. Loaded Objects now: 36838.
+Total: 798.650600 ms (FindLiveObjects: 3.776100 ms CreateObjectMapping: 4.401900 ms MarkObjects: 786.188400 ms  DeleteObjects: 4.283800 ms)
+
+Loading game from file Autosave-4 with mods:
+  - brrainz.harmony
+  - Ludeon.RimWorld
+  - Ludeon.RimWorld.Royalty
+  - Ludeon.RimWorld.Ideology
+  - UnlimitedHugs.HugsLib
+  - majorhoff.rimthreaded
+  - GhostRolly.Rim73
+  - Dubwise.DubsPerformanceAnalyzer
+  - OskarPotocki.VanillaFactionsExpanded.Core
+  - VanillaExpanded.VFEA
+  - OskarPotocki.VanillaFactionsExpanded.MedievalModule
+  - VanillaExpanded.VanillaTradingExpanded
+  - VanillaExpanded.Ideo.RelicsAndArtifacts
+  - VanillaExpanded.Ideo.IconsandSymbols
+  - VanillaExpanded.VAEAccessories
+  - VanillaExpanded.VFECore
+  - VanillaExpanded.VTEXVariations
+  - vanillaexpanded.achievements
+  - VanillaExpanded.VCEF
+  - VanillaExpanded.VCEFAddon
+  - VSE.NeronNeolithic
+  - VSE.MaynardMedieval
+  - VSE.DiegoIndustrial
+  - VanillaExpanded.VWETB
+  - VanillaExpanded.VWENL
+  - VanillaExpanded.VWE
+  - VanillaExpanded.VWEQ
+  - VanillaExpanded.VWEL
+  - VanillaExpanded.VWEHW
+  - VanillaExpanded.VWEC
+  - OskarPotocki.VanillaFactionsExpanded.SettlersModule
+  - VanillaExpanded.VWEFT
+  - VSE.OskarObnoxious
+  - VanillaExpanded.VanillaSocialInteractionsExpanded
+  - VanillaExpanded.VWEMS
+  - VanillaExpanded.VAEEndAndExt
+  - rimfridge.kv.rw
+  - LWM.DeepStorage
+  - OskarPotocki.VFE.Mechanoid
+  - VanillaExpanded.VanillaTraitsExpanded
+  - VanillaExpanded.VBrewE
+  - VanillaExpanded.VBrewECandT
+  - VanillaExpanded.VAETF
+  - OskarPotocki.VanillaExpanded.RoyaltyPatches
+  - VSE.IgorInvader
+  - VSE.FreyaFierce
+  - OskarPotocki.VFE.Vikings
+  - VanillaExpanded.VPlantsESucculents
+  - VanillaExpanded.VWEG
+  - VanillaExpanded.VBooksE
+  - VanillaExpanded.VCookESushi
+  - OskarPotocki.VFE.Insectoid
+  - VSE.EmpressEvil
+  - VSE.PerryPersistent
+  - VanillaExpanded.VCookEStews
+  - VanillaExpanded.VPlantsE
+  - VanillaExpanded.VCookE
+  - VanillaExpanded.VFEPropsandDecor
+  - VanillaExpanded.VFEPower
+  - VanillaExpanded.VFESpacer
+  - VanillaExpanded.VTEXE
+  - VanillaExpanded.VFEArt
+  - VanillaExpanded.VAEAU
+  - VanillaExpanded.VFEFarming
+  - VanillaExpanded.VEE
+  - VanillaExpanded.VAETS
+  - VanillaExpanded.VAETR
+  - VanillaExpanded.VAEBF
+  - VanillaExpanded.VAEIS
+  - VanillaExpanded.VAET
+  - VanillaExpanded.VHE
+  - VanillaExpanded.VFEProduction
+  - VanillaExpanded.VAEED
+  - VanillaExpanded.VAED
+  - VanillaExpanded.VFESecurity
+  - VanillaExpanded.VAEAS
+  - VanillaExpanded.VAECD
+  - VanillaExpanded.VARME
+  - VanillaExpanded.VAPPE
+  - VanillaExpanded.VFEMedical
+  - FrozenSnowFox.VanillaBionicsExpansion
+  - tidal.morevanilla.textures
+  - Mlie.Dune
+  - bodlosh.WeaponStats
+  - Daniledman.HardworkingAnimals
+  - PeteTimesSix.SimpleSidearms
+  - UnlimitedHugs.AllowTool
+  - hatti.qualitybuilder
+  - Fluffy.MedicalTab
+  - Mlie.MuzzyUtils
+  - Daniledman.CombatUpdate
+  - void.charactereditor
+  - dubwise.dubsmintminimap
+  - Roolo.DualWield
+  - mastertea.RandomPlus
+  - Uuugggg.ReplaceStuff
+  - tradingspot.kv.rw
+  - Daniledman.FastRegen
+  - ratys.rtfuse
+  - GT.Sam.TilledSoil
+  - Mlie.MechalitCore
+  - Mlie.MechalitEquipmentFaction
+  - Daniledman.Carpets
+  - Mlie.MoreFactionInteraction
+  - Mlie.AnimalHusbandryRaids
+  - Mlie.SimplyMoreBridges
+  - Daniledman.CyberFauna
+  - Telkir.TMods.MoreFloors
+  - Mlie.AnimalHarvestingSpot
+  - Mlie.AsSimpleAsARack
+  - FrozenSnowFox.FilthVanishesWithRainAndTime
+  - Murmur.WallLight
+  - CodeOptimist.JobsOfOpportunity
+  - denev.ResumableJobProgress
+  - m00nl1ght.GeologicalLandforms
+  - roolo.AlmostThere
+  - roolo.whatthehack
+  - roolo.RunAndGun
+  - roolo.SearchAndDestroy
+  - roolo.giddyupcore
+  - roolo.giddyupmechanoids
+  - roolo.giddyuprideandroll
+  - roolo.giddyupcaravan
+  - roolo.giddyupbattlemounts
+QualityBuilder added property to '0' things
+RimThreaded is building new Reservations Dictionary...
+RimThreaded is caching Cells...
+checking editor settings...
+Cleaned up 0 deprecated records from What the Hack!?
+Rim73 > Loaded new game, resetting caching variables 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentException: An item with the same key has already been added. Key: VAE_Footwear_Boots
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x000c1] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at AchievementsExpanded.ItemTrackerMultipleVanillaApparel..ctor (AchievementsExpanded.ItemTrackerMultipleVanillaApparel reference) [0x0005c] in <d8262e7e89fc4b2b8f321716a423a8e4>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoCMethod.InternalInvoke(System.Reflection.MonoCMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00002] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00014] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.DoInvoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0007a] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.Invoke (System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceImpl (System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes, System.Threading.StackCrawlMark& stackMark) [0x00213] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes) [0x00095] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Object[] args) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at AchievementsExpanded.AchievementCard..ctor (AchievementsExpanded.AchievementDef def, System.Boolean preUnlocked) [0x0006b] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoCMethod.InternalInvoke(System.Reflection.MonoCMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00002] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00014] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.DoInvoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0007a] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.Invoke (System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceImpl (System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes, System.Threading.StackCrawlMark& stackMark) [0x00213] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes) [0x00095] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Object[] args) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at AchievementsExpanded.AchievementGenerator.VerifyAchievementList (System.Collections.Generic.HashSet`1[AchievementsExpanded.AchievementCard]& achievementCards, System.Boolean debugOutput) [0x0007a] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at AchievementsExpanded.AchievementPointManager.PreInit (System.Boolean debug) [0x000ac] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at AchievementsExpanded.AchievementPointManager.LoadedGame () [0x00008] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at (wrapper dynamic-method) Verse.GameComponentUtility.Verse.GameComponentUtility.LoadedGame_Patch2() 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 2)
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 39350.
+Total: 1065.930300 ms (FindLiveObjects: 2.397800 ms CreateObjectMapping: 3.904200 ms MarkObjects: 1059.566600 ms  DeleteObjects: 0.060800 ms)
+
+null texture passed to GUI.DrawTexture 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 2)
+UnloadTime: 0.441300 ms
+QualityBuilder added property to '0' things
+
+Unloading 2484 unused Assets to reduce memory usage. Loaded Objects now: 36845.
+Total: 934.312000 ms (FindLiveObjects: 3.395800 ms CreateObjectMapping: 5.343500 ms MarkObjects: 922.168100 ms  DeleteObjects: 3.404200 ms)
+
+Loading game from file Autosave-4 with mods:
+  - brrainz.harmony
+  - Ludeon.RimWorld
+  - Ludeon.RimWorld.Royalty
+  - Ludeon.RimWorld.Ideology
+  - UnlimitedHugs.HugsLib
+  - majorhoff.rimthreaded
+  - GhostRolly.Rim73
+  - Dubwise.DubsPerformanceAnalyzer
+  - OskarPotocki.VanillaFactionsExpanded.Core
+  - VanillaExpanded.VFEA
+  - OskarPotocki.VanillaFactionsExpanded.MedievalModule
+  - VanillaExpanded.VanillaTradingExpanded
+  - VanillaExpanded.Ideo.RelicsAndArtifacts
+  - VanillaExpanded.Ideo.IconsandSymbols
+  - VanillaExpanded.VAEAccessories
+  - VanillaExpanded.VFECore
+  - VanillaExpanded.VTEXVariations
+  - vanillaexpanded.achievements
+  - VanillaExpanded.VCEF
+  - VanillaExpanded.VCEFAddon
+  - VSE.NeronNeolithic
+  - VSE.MaynardMedieval
+  - VSE.DiegoIndustrial
+  - VanillaExpanded.VWETB
+  - VanillaExpanded.VWENL
+  - VanillaExpanded.VWE
+  - VanillaExpanded.VWEQ
+  - VanillaExpanded.VWEL
+  - VanillaExpanded.VWEHW
+  - VanillaExpanded.VWEC
+  - OskarPotocki.VanillaFactionsExpanded.SettlersModule
+  - VanillaExpanded.VWEFT
+  - VSE.OskarObnoxious
+  - VanillaExpanded.VanillaSocialInteractionsExpanded
+  - VanillaExpanded.VWEMS
+  - VanillaExpanded.VAEEndAndExt
+  - rimfridge.kv.rw
+  - LWM.DeepStorage
+  - OskarPotocki.VFE.Mechanoid
+  - VanillaExpanded.VanillaTraitsExpanded
+  - VanillaExpanded.VBrewE
+  - VanillaExpanded.VBrewECandT
+  - VanillaExpanded.VAETF
+  - OskarPotocki.VanillaExpanded.RoyaltyPatches
+  - VSE.IgorInvader
+  - VSE.FreyaFierce
+  - OskarPotocki.VFE.Vikings
+  - VanillaExpanded.VPlantsESucculents
+  - VanillaExpanded.VWEG
+  - VanillaExpanded.VBooksE
+  - VanillaExpanded.VCookESushi
+  - OskarPotocki.VFE.Insectoid
+  - VSE.EmpressEvil
+  - VSE.PerryPersistent
+  - VanillaExpanded.VCookEStews
+  - VanillaExpanded.VPlantsE
+  - VanillaExpanded.VCookE
+  - VanillaExpanded.VFEPropsandDecor
+  - VanillaExpanded.VFEPower
+  - VanillaExpanded.VFESpacer
+  - VanillaExpanded.VTEXE
+  - VanillaExpanded.VFEArt
+  - VanillaExpanded.VAEAU
+  - VanillaExpanded.VFEFarming
+  - VanillaExpanded.VEE
+  - VanillaExpanded.VAETS
+  - VanillaExpanded.VAETR
+  - VanillaExpanded.VAEBF
+  - VanillaExpanded.VAEIS
+  - VanillaExpanded.VAET
+  - VanillaExpanded.VHE
+  - VanillaExpanded.VFEProduction
+  - VanillaExpanded.VAEED
+  - VanillaExpanded.VAED
+  - VanillaExpanded.VFESecurity
+  - VanillaExpanded.VAEAS
+  - VanillaExpanded.VAECD
+  - VanillaExpanded.VARME
+  - VanillaExpanded.VAPPE
+  - VanillaExpanded.VFEMedical
+  - FrozenSnowFox.VanillaBionicsExpansion
+  - tidal.morevanilla.textures
+  - Mlie.Dune
+  - bodlosh.WeaponStats
+  - Daniledman.HardworkingAnimals
+  - PeteTimesSix.SimpleSidearms
+  - UnlimitedHugs.AllowTool
+  - hatti.qualitybuilder
+  - Fluffy.MedicalTab
+  - Mlie.MuzzyUtils
+  - Daniledman.CombatUpdate
+  - void.charactereditor
+  - dubwise.dubsmintminimap
+  - Roolo.DualWield
+  - mastertea.RandomPlus
+  - Uuugggg.ReplaceStuff
+  - tradingspot.kv.rw
+  - Daniledman.FastRegen
+  - ratys.rtfuse
+  - GT.Sam.TilledSoil
+  - Mlie.MechalitCore
+  - Mlie.MechalitEquipmentFaction
+  - Daniledman.Carpets
+  - Mlie.MoreFactionInteraction
+  - Mlie.AnimalHusbandryRaids
+  - Mlie.SimplyMoreBridges
+  - Daniledman.CyberFauna
+  - Telkir.TMods.MoreFloors
+  - Mlie.AnimalHarvestingSpot
+  - Mlie.AsSimpleAsARack
+  - FrozenSnowFox.FilthVanishesWithRainAndTime
+  - Murmur.WallLight
+  - CodeOptimist.JobsOfOpportunity
+  - denev.ResumableJobProgress
+  - m00nl1ght.GeologicalLandforms
+  - roolo.AlmostThere
+  - roolo.whatthehack
+  - roolo.RunAndGun
+  - roolo.SearchAndDestroy
+  - roolo.giddyupcore
+  - roolo.giddyupmechanoids
+  - roolo.giddyuprideandroll
+  - roolo.giddyupcaravan
+  - roolo.giddyupbattlemounts
+RimThreaded is building new Reservations Dictionary...
+RimThreaded is caching Cells...
+checking editor settings...
+Cleaned up 0 deprecated records from What the Hack!?
+Rim73 > Loaded new game, resetting caching variables 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentException: An item with the same key has already been added. Key: VAE_Footwear_Boots
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x000c1] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at AchievementsExpanded.ItemTrackerMultipleVanillaApparel..ctor (AchievementsExpanded.ItemTrackerMultipleVanillaApparel reference) [0x0005c] in <d8262e7e89fc4b2b8f321716a423a8e4>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoCMethod.InternalInvoke(System.Reflection.MonoCMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00002] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00014] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.DoInvoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0007a] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.Invoke (System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceImpl (System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes, System.Threading.StackCrawlMark& stackMark) [0x00213] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes) [0x00095] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Object[] args) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at AchievementsExpanded.AchievementCard..ctor (AchievementsExpanded.AchievementDef def, System.Boolean preUnlocked) [0x0006b] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at (wrapper managed-to-native) System.Reflection.MonoCMethod.InternalInvoke(System.Reflection.MonoCMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00002] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoCMethod.InternalInvoke (System.Object obj, System.Object[] parameters) [0x00014] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.DoInvoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0007a] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Reflection.MonoCMethod.Invoke (System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.RuntimeType.CreateInstanceImpl (System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes, System.Threading.StackCrawlMark& stackMark) [0x00213] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Object[] args, System.Globalization.CultureInfo culture, System.Object[] activationAttributes) [0x00095] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at System.Activator.CreateInstance (System.Type type, System.Object[] args) [0x00000] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at AchievementsExpanded.AchievementGenerator.VerifyAchievementList (System.Collections.Generic.HashSet`1[AchievementsExpanded.AchievementCard]& achievementCards, System.Boolean debugOutput) [0x0007a] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at AchievementsExpanded.AchievementPointManager.PreInit (System.Boolean debug) [0x000ac] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at AchievementsExpanded.AchievementPointManager.LoadedGame () [0x00008] in <164c7d83a4c942b29ad1749c99b18e23>:0 
+  at (wrapper dynamic-method) Verse.GameComponentUtility.Verse.GameComponentUtility.LoadedGame_Patch2() 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 2)
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 39354.
+Total: 1249.198600 ms (FindLiveObjects: 4.172100 ms CreateObjectMapping: 4.137700 ms MarkObjects: 1240.828600 ms  DeleteObjects: 0.059800 ms)
+
+null texture passed to GUI.DrawTexture 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+RimThreaded is caching Cells...
+Exception filling window for Verse.Dialog_InfoCard: System.NullReferenceException: Object reference not set to an instance of an object
+  at Verse.Widgets.ThingIconWorker (UnityEngine.Rect rect, Verse.ThingDef thingDef, UnityEngine.Texture resolvedIcon, System.Single resolvedIconAngle, System.Single scale) [0x00000] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Widgets.ThingIcon (UnityEngine.Rect rect, Verse.Thing thing, System.Single alpha, System.Nullable`1[T] rot) [0x00289] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Dialog_InfoCard.DoWindowContents (UnityEngine.Rect inRect) [0x00072] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.Window.InnerWindowOnGUI (System.Int32 x) [0x001d3] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception ticking Dee (at (105, 0, 122)). Suppressing further errors. Exception: System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at ResumableJobProgress.Settings.get_IsDisabledDeconstruct () [0x00000] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at ResumableJobProgress.HarmonyPatches+SetUpToils_Patch.Postfix (Verse.AI.JobDriver __instance, System.Collections.Generic.List`1[Verse.AI.Toil]& ___toils) [0x00078] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at (wrapper dynamic-method) Verse.AI.JobDriver.Verse.AI.JobDriver.SetupToils_Patch3(Verse.AI.JobDriver)
+  at RimThreaded.Pawn_JobTracker_Patch.StartJob (Verse.AI.Pawn_JobTracker __instance, Verse.AI.Job newJob, Verse.AI.JobCondition lastJobEndCondition, Verse.AI.ThinkNode jobGiver, System.Boolean resumeCurJobAfterwards, System.Boolean cancelBusyStances, Verse.ThinkTreeDef thinkTree, System.Nullable`1[T] tag, System.Boolean fromQueue, System.Boolean canReturnCurJobToPool) [0x00451] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.StartJob_Patch3(Verse.AI.Pawn_JobTracker,Verse.AI.Job,Verse.AI.JobCondition,Verse.AI.ThinkNode,bool,bool,Verse.ThinkTreeDef,System.Nullable`1<Verse.AI.JobTag>,bool,bool)
+  at RimThreaded.Pawn_JobTracker_Patch.TryFindAndStartJob (Verse.AI.Pawn_JobTracker __instance) [0x000cd] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.TryFindAndStartJob_Patch1(Verse.AI.Pawn_JobTracker)
+  at (wrapper dynamic-method) MonoMod.Utils.DynamicMethodDefinition.FastInvoke_TryFindAndStartJob_indirect(object,object[])
+  at Rim73.Rim73_Jobs+Pawn_JobsTick.Prefix (Verse.AI.Pawn_JobTracker& __instance, Verse.Pawn ___pawn) [0x00332] in <21bb332e850344e78bd033b33c4655aa>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.JobTrackerTick_Patch1(Verse.AI.Pawn_JobTracker)
+  at (wrapper dynamic-method) Verse.Pawn.Verse.Pawn.Tick_Patch1(Verse.Pawn)
+  at RimThreaded.TickList_Patch.NormalThingTick () [0x00025] in <61c687c4d8ae440b8962a72b165158e2>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+null texture passed to GUI.DrawTexture 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Exception in JobDriver tick for pawn Dee driver=JobDriver_LayDown (toilIndex=2) driver.job=(LayDown (Job_62729) A=Thing_SleepingSpot53629)
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <eae584ce26bc40229c1b1aa476bfa589>:0 
+  at ResumableJobProgress.Settings.get_IsDisabledDeconstruct () [0x00000] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at ResumableJobProgress.HarmonyPatches+SetUpToils_Patch.Postfix (Verse.AI.JobDriver __instance, System.Collections.Generic.List`1[Verse.AI.Toil]& ___toils) [0x00078] in <994b05e5b73e4cf693a9809455207cae>:0 
+  at (wrapper dynamic-method) Verse.AI.JobDriver.Verse.AI.JobDriver.SetupToils_Patch3(Verse.AI.JobDriver)
+  at RimThreaded.Pawn_JobTracker_Patch.StartJob (Verse.AI.Pawn_JobTracker __instance, Verse.AI.Job newJob, Verse.AI.JobCondition lastJobEndCondition, Verse.AI.ThinkNode jobGiver, System.Boolean resumeCurJobAfterwards, System.Boolean cancelBusyStances, Verse.ThinkTreeDef thinkTree, System.Nullable`1[T] tag, System.Boolean fromQueue, System.Boolean canReturnCurJobToPool) [0x00451] in <61c687c4d8ae440b8962a72b165158e2>:0 
+  at (wrapper dynamic-method) Verse.AI.Pawn_JobTracker.Verse.AI.Pawn_JobTracker.StartJob_Patch3(Verse.AI.Pawn_JobTracker,Verse.AI.Job,Verse.AI.JobCondition,Verse.AI.ThinkNode,bool,bool,Verse.ThinkTreeDef,System.Nullable`1<Verse.AI.JobTag>,bool,bool)
+  at Verse.AI.Pawn_JobTracker.CheckForJobOverride () [0x00056] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Toils_LayDown+<>c__DisplayClass3_0.<LayDown>b__1 () [0x0036f] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.AI.JobDriver.DriverTick () [0x001a1] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+JobDriver threw exception in initAction for pawn Dee driver=JobDriver_Ingest (toilIndex=1) driver.job=(Ingest (Job_87135) A=Thing_MealSurvivalPack83447)
+System.ArgumentNullException: Value cannot be null.
+Parameter name: root
+  at (wrapper dynamic-method) Verse.CellFinder.Verse.CellFinder.RandomRegionNear_Patch0(Verse.Region,int,Verse.TraverseParms,System.Predicate`1<Verse.Region>,Verse.Pawn,Verse.RegionType)
+  at RimWorld.RCellFinder.SpotToChewStandingNear (Verse.Pawn pawn, Verse.Thing ingestible, System.Predicate`1[T] extraValidator) [0x00133] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at RimWorld.Toils_Ingest+<>c__DisplayClass3_0.<CarryIngestibleToChewSpot>b__0 () [0x0010c] in <99518a644a3e4a7ea3fde566568df84a>:0 
+  at Verse.AI.JobDriver.TryActuallyStartNextToil () [0x001de] in <99518a644a3e4a7ea3fde566568df84a>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
+get_AssigningCandidates patch skipped
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: f14 -> priority: 1 
-  Thread -> id: 2328 -> priority: 1 
+  Thread -> id: 32c8 -> priority: 1 
+  Thread -> id: 58c -> priority: 1 

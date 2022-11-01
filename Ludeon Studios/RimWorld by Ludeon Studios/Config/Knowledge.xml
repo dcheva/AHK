@@ -295,7 +295,7 @@
     </li>
     <li>
       <key>Concept_SimpleSidearmsAdvancedRanged</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>Concept_SimpleSidearmsAdvancedMelee</key>
@@ -303,7 +303,7 @@
     </li>
     <li>
       <key>Concept_SimpleSidearmsAdvancedDrafted</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>Concept_SimpleSidearmsLosingWeapons</key>
@@ -375,7 +375,7 @@
     </li>
     <li>
       <key>GuestWork</key>
-      <value>0</value>
+      <value>1</value>
     </li>
     <li>
       <key>Hospitality</key>
