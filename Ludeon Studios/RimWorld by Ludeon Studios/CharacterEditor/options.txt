@@ -1,6 +1,0 @@
-1|1|0|0|0|1|1|1|0|1|1|0|1|0|1|1|1|1|
-800|100|10|90|
-None|None|
-
-
-Chocolate,,Undefined,All,True,0,,Beauty!-4|MaxHitPoints!60|MarketValue!3|Mass!0.075|Flammability!1|DeteriorationRate!1|Nutrition!0.4|Comfort!0.1|BedRestEffectiveness!0.1|JoyGainFactor!0.1,;
