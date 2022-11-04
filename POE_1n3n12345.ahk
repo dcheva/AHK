@@ -10,7 +10,7 @@ $^+R::Reload
 $^+S::
 ;pause/resume
 $^+P::
-;use both to sleep/pause
+  ;use both to sleep/pause
   ;thanks to Rohwedder
   ;https://www.autohotkey.com/boards/viewtopic.php?t=50594
   Suspend ;Suspend Hotkeys
@@ -74,8 +74,8 @@ $4::
 return
 
 $^A::
-;  Send, {T}
-;  Sleep, 10 
+  Send, {T}
+  Sleep, 10 
   Send, ^T
   Sleep, 10 
   Send, ^R
@@ -100,6 +100,8 @@ $Space::
   Send, {Space}
   Sleep, 10 
   Send, {MButton}
+  Sleep, 100T
+  Send, {T}
 return
 
 ;go hideout on F5
@@ -108,3 +110,4 @@ $F5::
   Send, /hideout
   Send, {Enter}
 return
+
