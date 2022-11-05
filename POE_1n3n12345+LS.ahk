@@ -96,6 +96,7 @@ $R::
   Send, {D}
 return
 
+;T for banner
 $Space::
   Send, {Space}
   Sleep, 10 
