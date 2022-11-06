@@ -97,6 +97,7 @@ $R::
 return
 
 ;T for banner
+;MB for mark or curse
 $Space::
   Send, {Space}
   Sleep, 10 
