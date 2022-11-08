@@ -96,12 +96,14 @@ $R::
   Send, {D}
 return
 
+;T for banner
+;MB for mark or curse
 $Space::
   Send, {Space}
   Sleep, 10 
   Send, {MButton}
-  Sleep, 100
-  Send, {T}
+;  Sleep, 100
+;  Send, {T}
 return
 
 ;go hideout on F5
