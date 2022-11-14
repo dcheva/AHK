@@ -1,0 +1,4803 @@
+commit 6b24d076f98e87170725eead83129940c996c6c4
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Mon Nov 14 06:34:36 2022 +0200
+
+    up
+
+M	POE_1n3n12345+LS.ahk
+
+commit 6a766c3e541401aaa99d0fc1a53d68bdaaa260c9
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri Nov 11 07:58:44 2022 +0200
+
+    up
+
+A	sandbeach.hideout
+
+commit 4018ed4345a5f1d6d777a82a50137f60e33c3325
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Nov 8 14:58:52 2022 +0200
+
+    Update poe-12345
+
+D	POE_12345+LShift.ahk
+D	POE_1n3n1234+LShift.ahk
+D	POE_1n3n1234.ahk
+M	POE_1n3n12345+LS+Q^Q.ahk
+M	POE_1n3n12345+LS+W^W.ahk
+D	POE_1n3n12345+LShift.ahk
+D	POE_1n3n12345+Q^Q.ahk
+D	POE_1n3n12345.ahk
+
+commit 2a2ecda0b5f883392a5f1e8788f480418e977a36
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Mon Nov 7 00:11:02 2022 +0200
+
+    up
+
+M	POE_1n3n12345+LS.ahk
+
+commit 87e747ac2a3c147b2ea26a261f46a6012891bfb0
+Merge: 693fde2 fb47ee9
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sun Nov 6 21:06:45 2022 +0200
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+commit fb47ee940789b2ecc2c1e4f8bd0bcacaba4fba0e
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sun Nov 6 18:56:58 2022 +0200
+
+    up
+
+M	POE_1n3n12345+LS.ahk
+
+commit 693fde2f5db0b83489e82613cb13f9ffec880510
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sun Nov 6 18:20:33 2022 +0200
+
+    up
+
+M	POE_1n3n12345+LS.ahk
+
+commit 6b85013627295b887633ab04a5c5b9056e08d214
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sat Nov 5 15:47:11 2022 +0200
+
+    up
+
+M	POE_1n3n12345+LS.ahk
+
+commit ba269821bab90094ede22cde724d8bc40e680ce2
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri Nov 4 22:51:51 2022 +0200
+
+    up
+
+M	POE_1n3n12345.ahk
+
+commit 6814cc11aa233e92e28482e9f8503d09f18a5db5
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed Nov 2 01:27:25 2022 +0200
+
+    Move rimworlds to separate branch
+
+D	Ludeon Studios/RimWorld by Ludeon Studios/CharacterEditor/capsulesetup0.txt
+D	Ludeon Studios/RimWorld by Ludeon Studios/CharacterEditor/options.txt
+D	Ludeon Studios/RimWorld by Ludeon Studios/CharacterEditor/pawnslots.txt
+D	Ludeon Studios/RimWorld by Ludeon Studios/Config/KeyPrefs.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/Config/Knowledge.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/Config/LastPlayedVersion.txt
+D	Ludeon Studios/RimWorld by Ludeon Studios/Config/Mod_1446523594_dubs_mint_menus_DubsMintMenusMod.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/Config/Mod_1662119905_dubs_mint_minimap_DubsMintMinimapMod.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/Config/Mod_2006605356_cm_color_coded_mood_bar_1_1_MoodPatchMod.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/Config/Mod_2038874626_dubs_performance_analyzer_Modbase.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/Config/Mod_2200054867_moddiff_RWLayoutModInternal.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/Config/Mod_836308268_dubs_bad_hygiene_DubsBadHygieneMod.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/Config/Mod_DubsMiniMap_DubsMintMinimapMod.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/Config/ModsConfig.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/Config/Prefs.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/Config/RimHUD/Config.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/Config/RimHUD/Docked.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/Config/RimHUD/Floating.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/HugsLib/LastSeenNews.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/HugsLib/ModSettings.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/HugsLib/SpottedMods.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/OgreStack/Overrides.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/Player-prev.log
+D	Ludeon Studios/RimWorld by Ludeon Studios/Player.log
+D	Ludeon Studios/RimWorld by Ludeon Studios/RocketMan/Logs/Assemblies.log
+D	Ludeon Studios/RimWorld by Ludeon Studios/RocketMan/Logs/Patching.log
+D	Ludeon Studios/RimWorld by Ludeon Studios/RocketMan/Logs/Rocket.log
+D	Ludeon Studios/RimWorld by Ludeon Studios/RocketMan/Logs/Types.Proton.log
+D	Ludeon Studios/RimWorld by Ludeon Studios/RocketMan/Logs/Types.Soyuz.log
+D	Ludeon Studios/RimWorld by Ludeon Studios/RocketMan/Logs/Types.log
+D	Ludeon Studios/RimWorld by Ludeon Studios/RocketMan/Mod_RocketMan_RocketMod.xml
+D	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-1.rws
+D	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-2.rws
+D	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-3.rws
+D	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-4.rws
+D	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-5.rws
+D	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Covans.rws
+D	Ludeon Studios/RimWorld by Ludeon Studios/Saves/dee.rws
+
+commit b11b1574290af06149cddfa3936a6cc8cdb2ce82
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed Nov 2 00:23:13 2022 +0200
+
+    up
+
+A	ShiftInsert.ahk
+
+commit 8633318b66c50f0c028ffef4231f88fbb5980def
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Nov 1 05:54:37 2022 +0200
+
+    up
+
+M	Ludeon Studios/RimWorld by Ludeon Studios/CharacterEditor/pawnslots.txt
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/Knowledge.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/LastPlayedVersion.txt
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/ModsConfig.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/Prefs.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/RimHUD/Config.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/HugsLib/LastSeenNews.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/HugsLib/ModSettings.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/HugsLib/SpottedMods.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Player-prev.log
+M	Ludeon Studios/RimWorld by Ludeon Studios/Player.log
+D	Ludeon Studios/RimWorld by Ludeon Studios/Saves/0000.rws
+D	Ludeon Studios/RimWorld by Ludeon Studios/Saves/0003.rws
+D	Ludeon Studios/RimWorld by Ludeon Studios/Saves/0004.rws
+D	Ludeon Studios/RimWorld by Ludeon Studios/Saves/0005.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-1.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-2.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-3.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-4.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-5.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Covans.rws
+D	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Dune.rws
+R055	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Dune Expanded.rws	Ludeon Studios/RimWorld by Ludeon Studios/Saves/dee.rws
+
+commit 3b0ff3bbf37a30895a91e9d601964ea4857e00f5
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Mon Oct 31 17:06:57 2022 +0200
+
+    up
+
+A	POE_1n3n12345+LS.ahk
+
+commit 9fe9b29f42c2cfc50cc8ab1c391917763664db9f
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri Oct 28 08:43:27 2022 +0300
+
+    up
+
+M	POE_1n3n12345+LS+Q^Q.ahk
+
+commit fa8e7130971785e50870e5803f8b65ff6c814364
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Oct 27 06:10:53 2022 +0300
+
+    up
+
+A	POE_1n3n12345+Q^Q.ahk
+
+commit 580648fc322d7da4a009adc83a6f6677d82a7e21
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Oct 25 22:38:19 2022 +0300
+
+    up
+
+A	POE_1n3n12345+LS+Q^Q.ahk
+M	POE_1n3n12345+LS+W^W.ahk
+
+commit b811529f651195c8e2857c44ba6f354edacebb7e
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Oct 25 11:33:35 2022 +0300
+
+    up
+
+M	POE_1n3n12345+LS+W^W.ahk
+M	POE_1n3n12345+LShift.ahk
+
+commit b6310775a5b561a5fe34918423a8a6e87a8608b5
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Oct 20 06:46:32 2022 +0300
+
+    Update AutoHotKey
+
+M	AutoHotkey.exe
+M	Compiler/AutoHotkeySC.bin
+M	POE_1n3n12345+LS+W^W.ahk
+
+commit 6c61acae10e36626c7facd8efc7c65b10d2f41f0
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Mon Oct 17 15:40:34 2022 +0300
+
+    up
+
+M	POE_12345+LShift.ahk
+M	POE_1n3n1234+LShift.ahk
+M	POE_1n3n1234.ahk
+M	POE_1n3n12345+LS+W^W.ahk
+M	POE_1n3n12345+LShift.ahk
+M	POE_1n3n12345.ahk
+
+commit de4be1805d0167afd0e0c89b8e4f8a1d543611de
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Mon Oct 17 11:05:51 2022 +0300
+
+    add
+
+M	POE_12345+LShift.ahk
+M	POE_1n3n1234+LShift.ahk
+M	POE_1n3n1234.ahk
+A	POE_1n3n12345+LS+W^W.ahk
+M	POE_1n3n12345+LShift.ahk
+M	POE_1n3n12345.ahk
+
+commit 24e400c217249f2462366450848ef6c9c66dda0a
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sun Oct 16 03:41:29 2022 +0300
+
+    up
+
+M	FixMouseClick.ahk
+M	FixMouseClick.exe
+
+commit abf4307e289e2ffb76b98058dabe1a9da9da598f
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Oct 15 07:22:38 2022 +0300
+
+    up
+
+M	vm.rdp
+
+commit 449a033415041060c44544d071796ac507ff25dc
+Merge: 3ca82c2 bdfaa2d
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Oct 14 03:42:06 2022 +0300
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+commit 3ca82c203591fef036c39b53711aeaa2fbced3ba
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Oct 14 03:42:05 2022 +0300
+
+    up
+
+A	vm.rdp
+
+commit bdfaa2dfeeb0878ee6d1b09425742b1eb9c828cb
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Oct 13 19:37:42 2022 +0300
+
+    up
+
+M	FixMouseClick.exe
+
+commit 17db9d355cd04202db18ddfa3a784fe0c9cae83d
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Oct 13 19:36:35 2022 +0300
+
+    Fix sleep/pause
+
+M	AF.ahk
+M	ATS.ahk
+M	CtrlClk.ahk
+M	DRO.ahk
+M	DiabloIII.ahk
+M	FishingPlanet.ahk
+M	FixMouseClick.ahk
+M	FixMouseClick.exe
+M	Medieval.ahk
+M	POE-trade.ahk
+M	POE_12345+LShift.ahk
+M	POE_1n3n1234+LShift.ahk
+M	POE_1n3n1234.ahk
+M	POE_1n3n12345+LShift.ahk
+M	POE_1n3n12345.ahk
+M	RR.ahk
+M	Satisfactory.ahk
+M	WGT.ahk
+M	eve.ahk
+M	rimworld-planshet.ahk
+M	scroll.ahk
+M	scrollMore.ahk
+M	sound-clicker.ahk
+M	template.ahk
+M	torn.ahk
+
+commit cdcf18de84075cbb31681fb07b1d6bb40d74d44a
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Oct 13 19:05:20 2022 +0300
+
+    Update AHK headers
+
+M	AF.ahk
+M	ATS.ahk
+M	CtrlClk.ahk
+M	DRO.ahk
+M	DiabloIII.ahk
+M	FishingPlanet.ahk
+M	FixMouseClick.ahk
+A	FixMouseClick.exe
+M	Medieval.ahk
+M	POE-trade.ahk
+M	POE_12345+LShift.ahk
+M	POE_1n3n1234+LShift.ahk
+M	POE_1n3n1234.ahk
+M	POE_1n3n12345+LShift.ahk
+M	POE_1n3n12345.ahk
+M	RR.ahk
+M	Satisfactory.ahk
+M	WGT.ahk
+M	eve.ahk
+M	rimworld-planshet.ahk
+M	scroll.ahk
+M	scrollMore.ahk
+M	sound-clicker.ahk
+M	template.ahk
+M	torn.ahk
+D	vJoyWingman3.py.bak
+
+commit 09217d319295b9c086275a1726b3de89d9e3caef
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Oct 13 13:48:08 2022 +0300
+
+    up
+
+M	POE-trade.ahk
+M	POE-trade.exe
+
+commit bd50817e82e342e2550a2e6abbf7733193f7ac18
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Oct 12 00:19:59 2022 +0300
+
+    up
+
+M	POE-trade.exe
+
+commit 35e02ebb7f62cde3fa33ac82403afb4ebb8b90a8
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Oct 11 13:24:57 2022 +0300
+
+    Update POE trade script
+
+M	POE-trade.ahk
+M	POE-trade.exe
+
+commit 067faeebfc814b4cd8803135aa8fc21a3587244d
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Oct 11 12:57:12 2022 +0300
+
+    Update POE trade script
+
+M	POE-trade.ahk
+A	POE-trade.exe
+D	POE.exe
+
+commit b12d410f71e6c7d6af2054a594e33b8a456eedb5
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Oct 11 12:44:36 2022 +0300
+
+    Update POE trade script
+
+R067	POE.ahk	POE-trade.ahk
+
+commit d69a37cab707aef8078e0831e2eb08e9368328af
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Oct 11 08:14:49 2022 +0300
+
+    Make poe non-afk clicker script
+
+A	POE.ahk
+A	POE.exe
+
+commit 942131b19d9195f2ae7881b8af36474892f01027
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Mon Oct 10 00:16:16 2022 +0300
+
+    up
+
+R084	POE_12345.ahk	POE_12345+LShift.ahk
+M	POE_1n3n1234+LShift.ahk
+M	POE_1n3n1234.ahk
+M	POE_1n3n12345+LShift.ahk
+M	POE_1n3n12345.ahk
+
+commit e48f154a4a2f22575248d66d3ef07df5daf54da8
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sun Oct 9 12:56:41 2022 +0300
+
+    up
+
+M	POE_12345.ahk
+M	POE_1n3n1234+LShift.ahk
+R095	POE_1n3n12345+SpaceToMBnT.ahk	POE_1n3n1234.ahk
+M	POE_1n3n12345+LShift.ahk
+M	POE_1n3n12345.ahk
+
+commit 4e740479d994011dfbb762415c5bca9d3f72aa8b
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Oct 4 14:52:49 2022 +0300
+
+    Correct map keys in vJoyWingman3.py
+
+M	vJoyWingman3.py
+
+commit 0185bc213bb35dd2ff1e5fda51a7c794b77508e0
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Oct 4 14:51:59 2022 +0300
+
+    Correct map keys in vJoyWingman3.py
+
+M	vJoyWingman3.py
+A	vJoyWingman3.py.bak
+
+commit f5d9a3747f4aee5bbe461e97ea98988155626b15
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Oct 4 05:34:30 2022 +0300
+
+    up
+
+M	vJoyWingman3.py
+
+commit 69f2b7970344c8998e952e9dd57caea0f225d845
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Oct 4 02:32:11 2022 +0300
+
+    test vJoyWingman3.py
+
+M	vJoyWingman3.py
+
+commit c3ba9ccc00c0893d496369b859503926c64a274a
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Oct 4 01:36:08 2022 +0300
+
+    vJoyWingman3.py working StepN switcher
+
+M	vJoyWingman3.py
+
+commit b58be08787e0860e246ffa072f8f94e03446af98
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Mon Oct 3 23:47:04 2022 +0300
+
+    up
+
+M	vJoyWingman3.py
+
+commit 4b62af35dc94381f3a3e071bf029294ba54c78ac
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Mon Oct 3 22:43:20 2022 +0300
+
+    vJoyWingman3.py
+
+A	vJoyWingman3.py
+
+commit 417eca316b9f9aa242099fb02e9a0c03a72518f6
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Oct 3 21:44:56 2022 +0300
+
+    up
+
+M	vJoyWingman.py
+A	vJoyWingman2.py
+
+commit f5622419feb619c726fb8c9434e5a241dd9a99ae
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Oct 3 19:22:34 2022 +0300
+
+    up
+
+M	vJoyWingman.py
+
+commit 6239dc1ac9e60053f8cf5a952c1680c39af994c5
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Oct 3 15:00:08 2022 +0300
+
+    vJoyWingman.py 1 second low pass filter
+
+M	vJoyWingman.py
+
+commit 5a2dfeea9d83eb11774eff9a9f914903b4b4ee0c
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Oct 3 13:49:58 2022 +0300
+
+    vJoyWingman.py Calibrate wheel
+
+A	vJoyWingman.py
+
+commit d458072c7dfe1cff1ddd8a1613e4f88f245e3513
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Oct 3 03:39:10 2022 +0300
+
+    Clean up
+
+D	Path of Building/Builds/POB_saves/Is_Crusher.xml
+D	Path of Building/Builds/POB_saves/NiceSplasher.xml
+D	Path of Building/Builds/POB_saves/NiceSplasherDDD.xml
+D	Path of Building/Builds/POB_saves/SplashRider.xml
+D	Path of Building/Builds/POB_saves/Totom-Go-Laba.xml
+D	Path of Building/Builds/POB_saves/Totom-Kill-Maiven.xml
+D	Path of Building/Builds/POB_saves/forbidden-rite.xml
+D	Path of Building/Settings.xml
+
+commit 94dd69fc118c3af1f9d596ac46fb735b141e1902
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Oct 3 03:33:34 2022 +0300
+
+    Clean up
+
+D	Mining/Saved/Config/CrashReportClient/UE4CC-Windows-71726D9244C0EB65E55B73A31984EC84/CrashReportClient.ini
+D	Mining/Saved/Config/CrashReportClient/UE4CC-Windows-843E578347CCF179F7A22EABD7155E89/CrashReportClient.ini
+D	Mining/Saved/Config/CrashReportClient/UE4CC-Windows-984FAD1A4F032F7044ABBCB42D9818C6/CrashReportClient.ini
+D	Mining/Saved/Config/CrashReportClient/UE4CC-Windows-F8CFEE874E9AFF405C9892A809C87A8F/CrashReportClient.ini
+D	Mining/Saved/Config/WindowsNoEditor/AutoSettings.ini
+D	Mining/Saved/Config/WindowsNoEditor/Compat.ini
+D	Mining/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+D	Mining/Saved/Config/WindowsNoEditor/EditorScriptingUtilities.ini
+D	Mining/Saved/Config/WindowsNoEditor/Engine.ini
+D	Mining/Saved/Config/WindowsNoEditor/Game.ini
+D	Mining/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+D	Mining/Saved/Config/WindowsNoEditor/GameplayTags.ini
+D	Mining/Saved/Config/WindowsNoEditor/Hardware.ini
+D	Mining/Saved/Config/WindowsNoEditor/Input.ini
+D	Mining/Saved/Config/WindowsNoEditor/MagicLeap.ini
+D	Mining/Saved/Config/WindowsNoEditor/MagicLeapLightEstimation.ini
+D	Mining/Saved/Config/WindowsNoEditor/MotoSynth.ini
+D	Mining/Saved/Config/WindowsNoEditor/Niagara.ini
+D	Mining/Saved/Config/WindowsNoEditor/Paper2D.ini
+D	Mining/Saved/Config/WindowsNoEditor/PhysXVehicles.ini
+D	Mining/Saved/Config/WindowsNoEditor/RuntimeOptions.ini
+D	Mining/Saved/Config/WindowsNoEditor/Scalability.ini
+D	Mining/Saved/Config/WindowsNoEditor/Settings.ini
+D	Mining/Saved/Config/WindowsNoEditor/Synthesis.ini
+D	Mining/Saved/Config/WindowsNoEditor/VariantManagerContent.ini
+D	Mining/Saved/Config/WindowsNoEditor/VoxelPro.ini
+D	Mining/Saved/Logs/NGX/NGX_2022.05.21-16.17.22_D02734754F9A1AEB48F34C87BB3FF46C/nvngx.log
+D	Mining/Saved/Logs/NGX/NGX_2022.05.21-16.17.22_D02734754F9A1AEB48F34C87BB3FF46C/nvsdk_ngx.log
+D	Mining/Saved/Logs/NGX/NGX_2022.05.21-16.46.27_DFCA41964243E8100C846B960EC5E8CC/nvngx.log
+D	Mining/Saved/Logs/NGX/NGX_2022.05.21-16.46.27_DFCA41964243E8100C846B960EC5E8CC/nvsdk_ngx.log
+D	Mining/Saved/Logs/NGX/NGX_2022.05.21-16.50.43_8416F9DC4AAC4D079A38E38A693D55CA/nvngx.log
+D	Mining/Saved/Logs/NGX/NGX_2022.05.21-16.50.43_8416F9DC4AAC4D079A38E38A693D55CA/nvsdk_ngx.log
+D	Mining/Saved/Logs/NGX/NGX_2022.05.22-21.56.36_E3F24F15448036B49FF96EA8BA08A53B/nvngx.log
+D	Mining/Saved/Logs/NGX/NGX_2022.05.22-21.56.36_E3F24F15448036B49FF96EA8BA08A53B/nvsdk_ngx.log
+D	Mining/Saved/SaveGames/Cheva/Level.sav
+D	Mining/Saved/SaveGames/Cheva/Player.sav
+D	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+D	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+D	PlayWay/Ultimate Fishing Simulator 2 Playtest/I2Source_I2Languages1DjXS0qM1dyD_A1vxjM45uOsqY7i02DfdXAt4QEKSdk4.loc
+D	PlayWay/Ultimate Fishing Simulator 2 Playtest/Player-prev.log
+D	PlayWay/Ultimate Fishing Simulator 2 Playtest/Player.log
+D	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165143894000009.2fbf6095/c
+D	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165143894000009.2fbf6095/e
+D	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165143894000009.2fbf6095/g
+D	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165143894000009.2fbf6095/s
+D	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165307912000003.55674cd9/c
+D	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165307912000003.55674cd9/e
+D	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165307912000003.55674cd9/g
+D	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165307912000003.55674cd9/s
+D	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/config
+D	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/values
+D	PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0
+D	"PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0 \342\200\224 \320\272\320\276\320\277\320\270\321\217"
+D	"PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0 \342\200\224 \320\272\320\276\320\277\320\270\321\217 (2)"
+D	"PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0 \342\200\224 \320\272\320\276\320\277\320\270\321\217 (3)"
+D	PlayWay/UltimateFishing_GOG/PROFILE_0
+D	PlayWay/UltimateFishing_GOG/Radios_user.txt
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165227006500000.2c5b9b1b/e
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165227006500000.2c5b9b1b/g
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165227006500000.2c5b9b1b/s
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165227050900001.2c5b9b1b/e
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165227050900001.2c5b9b1b/g
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165227050900001.2c5b9b1b/s
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165291193400000.00d12a3d/e
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165291193400000.00d12a3d/g
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165291193400000.00d12a3d/s
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165291871600001.00d12a3d/e
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165291871600001.00d12a3d/g
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165291871600001.00d12a3d/s
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296194100000.93d69e87/e
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296194100000.93d69e87/g
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296194100000.93d69e87/s
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296597000001.93d69e87/e
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296597000001.93d69e87/g
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296597000001.93d69e87/s
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296607200000.c465a7df/e
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296607200000.c465a7df/g
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296607200000.c465a7df/s
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296880900001.c465a7df/e
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296880900001.c465a7df/g
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296880900001.c465a7df/s
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/config
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/values
+
+commit b580c9db4a1ae9953d9d8d3b954b00bc0983fea9
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Oct 3 03:32:08 2022 +0300
+
+    Move reshade to own repository
+
+D	Reshade/3areal-shaders/Shaders/BloomAndLensFlares.fx
+D	Reshade/3areal-shaders/Shaders/CinematicDOF.fx
+D	Reshade/3areal-shaders/Shaders/Comic.fx
+D	Reshade/3areal-shaders/Shaders/PD80_02_Bloom.fx
+D	Reshade/3areal-shaders/Shaders/PPFX_Bloom.fx
+D	Reshade/3areal-shaders/Shaders/PerfectPerspective.fx
+D	Reshade/3areal-shaders/Shaders/RTGI/Normal.fxh
+D	Reshade/3areal-shaders/Shaders/RTGI/Projection.fxh
+D	Reshade/3areal-shaders/Shaders/RTGI/RaySorting.fxh
+D	Reshade/3areal-shaders/Shaders/RTGI/RayTracing.fxh
+D	Reshade/3areal-shaders/Shaders/ReShade.fxh
+D	Reshade/3areal-shaders/Shaders/ReShadeUI.fxh
+D	Reshade/3areal-shaders/Shaders/Smart_Sharp.fx
+D	Reshade/3areal-shaders/Shaders/VHSPro.fx
+D	Reshade/3areal-shaders/Shaders/qUINT_common.fxh
+D	Reshade/3areal-shaders/Shaders/qUINT_dof.fx
+D	Reshade/3areal-shaders/Shaders/qUINT_sharp.fx
+D	Reshade/3areal-shaders/Textures/3AReal_LUT.png
+D	Reshade/3areal-shaders/Textures/ArcaneBloom_Dirt.png
+D	Reshade/3areal-shaders/Textures/AreaTex.dds
+D	Reshade/3areal-shaders/Textures/Clamp.png
+D	Reshade/3areal-shaders/Textures/Dirt12.png
+D	Reshade/3areal-shaders/Textures/FontAtlas.png
+D	Reshade/3areal-shaders/Textures/LUTs/3AReal_ByUTwelve.png
+D	"Reshade/3areal-shaders/Textures/LUTs/DefaultLUT/\347\251\272\347\231\275lut.png"
+D	Reshade/3areal-shaders/Textures/LUTs/LutBall.png
+D	"Reshade/3areal-shaders/Textures/LUTs/\345\206\267\346\232\226\345\257\271\346\257\224_By\345\261\261\346\245\202.png"
+D	Reshade/3areal-shaders/Textures/LensSprite.png
+D	Reshade/3areal-shaders/Textures/SearchTex.dds
+D	Reshade/3areal-shaders/Textures/bayer16x16.png
+D	Reshade/3areal-shaders/Textures/bluenoise.png
+D	Reshade/3areal-shaders/Textures/cursor.png
+D	Reshade/3areal-shaders/Textures/haze.png
+D	Reshade/3areal-shaders/Textures/permtexture.png
+D	Reshade/ReS ED.ini
+D	Reshade/ReS ETS.ini
+D	Reshade/ReS EVE.ini
+D	Reshade/ReS ExM.ini
+D	Reshade/ReS FS19.ini
+D	Reshade/ReS FS22.ini
+D	Reshade/ReS Factory.ini
+D	Reshade/ReS Horizons.ini
+D	Reshade/ReS POE.ini
+D	Reshade/ReS Stream POE.ini
+D	Reshade/ReS Stream Racing.ini
+D	Reshade/ReShade.ini
+D	Reshade/ReShadePreset.ini
+D	Reshade/ReShadePresetHigh.ini
+D	Reshade/dxgi.dll
+D	Reshade/fubax-shaders
+D	Reshade/reshade-shaders/Shaders/Blending.fxh
+D	Reshade/reshade-shaders/Shaders/ColorMatrix.fx
+D	Reshade/reshade-shaders/Shaders/Curves.fx
+D	Reshade/reshade-shaders/Shaders/DPX.fx
+D	Reshade/reshade-shaders/Shaders/DrawText.fxh
+D	Reshade/reshade-shaders/Shaders/EyeAdaption.fx
+D	Reshade/reshade-shaders/Shaders/FXAA.fx
+D	Reshade/reshade-shaders/Shaders/FXAA.fxh
+D	Reshade/reshade-shaders/Shaders/FakeHDR.fx
+D	Reshade/reshade-shaders/Shaders/Levels.fx
+D	Reshade/reshade-shaders/Shaders/LumaSharpen.fx
+D	Reshade/reshade-shaders/Shaders/Macros.fxh
+D	Reshade/reshade-shaders/Shaders/ReShade.fxh
+D	Reshade/reshade-shaders/Shaders/ReShadeUI.fxh
+D	Reshade/reshade-shaders/Shaders/SMAA.fx
+D	Reshade/reshade-shaders/Shaders/SMAA.fxh
+D	Reshade/reshade-shaders/Shaders/Technicolor.fx
+D	Reshade/reshade-shaders/Shaders/Technicolor2.fx
+D	Reshade/reshade-shaders/Shaders/Tonemap.fx
+D	Reshade/reshade-shaders/Shaders/TriDither.fxh
+D	Reshade/reshade-shaders/Shaders/UIDetect.fxh
+D	Reshade/reshade-shaders/Shaders/Vibrance.fx
+D	Reshade/reshade-shaders/Shaders/Vignette.fx
+D	Reshade/reshade-shaders/Textures/AreaTex.png
+D	Reshade/reshade-shaders/Textures/FontAtlas.png
+D	Reshade/reshade-shaders/Textures/Layer.png
+D	Reshade/reshade-shaders/Textures/SearchTex.png
+D	Reshade/reshade-shaders/Textures/UIDetectMaskRGB.png
+D	Reshade/reshade-shaders/Textures/lut.png
+
+commit f33a1560d1bc3643d10820543dbac2f6b4d0ecc8
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Oct 2 21:04:03 2022 +0300
+
+    up
+
+D	Reshade/ReS Stream.ini
+
+commit 9fec9bad8dc927182651d48f44680f6f2dcca605
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Oct 2 19:32:05 2022 +0300
+
+    Upate inis
+
+M	Reshade/ReS EVE.ini
+M	Reshade/ReS POE.ini
+
+commit d1b03e7fa9f9512c1a6ad39dfe4d832369033130
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Oct 2 19:23:38 2022 +0300
+
+    up
+
+M	Path of Building/Settings.xml
+M	Reshade/ReS Stream Racing.ini
+
+commit 2df3dab1a5b8616c49a108f9d1117e4a8a344d47
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Oct 2 14:20:19 2022 +0300
+
+    Clean up shaders
+
+D	Reshade/3areal-shaders/Shaders/AdaptiveFog.fx
+D	Reshade/3areal-shaders/Shaders/ArcaneBloom.fx
+D	Reshade/3areal-shaders/Shaders/ArcaneBloom.fxh
+D	Reshade/3areal-shaders/Shaders/BloomingHDR.fx
+D	Reshade/3areal-shaders/Shaders/Border.fx
+D	Reshade/3areal-shaders/Shaders/Chromakey.fx
+D	Reshade/3areal-shaders/Shaders/DisplayDepth.fx
+D	Reshade/3areal-shaders/Shaders/EyeAdaption.fx
+D	Reshade/3areal-shaders/Shaders/FrameBlend.fx
+D	Reshade/3areal-shaders/Shaders/GaussianBlur.fx
+D	Reshade/3areal-shaders/Shaders/GemFX.fx
+D	Reshade/3areal-shaders/Shaders/HackUImask.fx
+D	Reshade/3areal-shaders/Shaders/HexLensFlare.fx
+D	Reshade/3areal-shaders/Shaders/LUTBall.fx
+D	Reshade/3areal-shaders/Shaders/LightClamp.fx
+D	Reshade/3areal-shaders/Shaders/MXAO.fx
+D	Reshade/3areal-shaders/Shaders/PD80_01_Remove_Tint.fx
+D	Reshade/3areal-shaders/Shaders/PD80_06_Chromatic_Aberration.fx
+D	Reshade/3areal-shaders/Shaders/PD80_06_Film_Grain.fx
+D	Reshade/3areal-shaders/Shaders/RemoveTint.fx
+D	Reshade/3areal-shaders/Shaders/SMAA.fx
+D	Reshade/3areal-shaders/Shaders/SMAA.fxh
+D	Reshade/3areal-shaders/Shaders/SkyFog.fx
+D	Reshade/3areal-shaders/Shaders/qUINT_bloom.fx
+D	Reshade/3areal-shaders/Shaders/qUINT_dither.fx
+D	Reshade/3areal-shaders/Shaders/qUINT_lightroom.fx
+D	Reshade/3areal-shaders/Shaders/qUINT_ssr.fx
+M	Reshade/ReS Stream Racing.ini
+D	Reshade/reshade-shaders/Shaders/FilmGrain.fx
+
+commit 29368686794d6ba951f4b3edbf46ce0ce5e35d6e
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Oct 2 12:59:45 2022 +0300
+
+    Rename 3areal-shaders
+
+M	.gitmodules
+A	Reshade/3areal-shaders/Shaders/AdaptiveFog.fx
+A	Reshade/3areal-shaders/Shaders/ArcaneBloom.fx
+A	Reshade/3areal-shaders/Shaders/ArcaneBloom.fxh
+A	Reshade/3areal-shaders/Shaders/BloomAndLensFlares.fx
+A	Reshade/3areal-shaders/Shaders/BloomingHDR.fx
+A	Reshade/3areal-shaders/Shaders/Border.fx
+A	Reshade/3areal-shaders/Shaders/Chromakey.fx
+A	Reshade/3areal-shaders/Shaders/CinematicDOF.fx
+A	Reshade/3areal-shaders/Shaders/Comic.fx
+A	Reshade/3areal-shaders/Shaders/DisplayDepth.fx
+A	Reshade/3areal-shaders/Shaders/EyeAdaption.fx
+A	Reshade/3areal-shaders/Shaders/FrameBlend.fx
+A	Reshade/3areal-shaders/Shaders/GaussianBlur.fx
+A	Reshade/3areal-shaders/Shaders/GemFX.fx
+A	Reshade/3areal-shaders/Shaders/HackUImask.fx
+A	Reshade/3areal-shaders/Shaders/HexLensFlare.fx
+A	Reshade/3areal-shaders/Shaders/LUTBall.fx
+A	Reshade/3areal-shaders/Shaders/LightClamp.fx
+A	Reshade/3areal-shaders/Shaders/MXAO.fx
+A	Reshade/3areal-shaders/Shaders/PD80_01_Remove_Tint.fx
+A	Reshade/3areal-shaders/Shaders/PD80_02_Bloom.fx
+A	Reshade/3areal-shaders/Shaders/PD80_06_Chromatic_Aberration.fx
+A	Reshade/3areal-shaders/Shaders/PD80_06_Film_Grain.fx
+A	Reshade/3areal-shaders/Shaders/PPFX_Bloom.fx
+A	Reshade/3areal-shaders/Shaders/PerfectPerspective.fx
+A	Reshade/3areal-shaders/Shaders/RTGI/Normal.fxh
+A	Reshade/3areal-shaders/Shaders/RTGI/Projection.fxh
+A	Reshade/3areal-shaders/Shaders/RTGI/RaySorting.fxh
+A	Reshade/3areal-shaders/Shaders/RTGI/RayTracing.fxh
+A	Reshade/3areal-shaders/Shaders/ReShade.fxh
+A	Reshade/3areal-shaders/Shaders/ReShadeUI.fxh
+A	Reshade/3areal-shaders/Shaders/RemoveTint.fx
+A	Reshade/3areal-shaders/Shaders/SMAA.fx
+A	Reshade/3areal-shaders/Shaders/SMAA.fxh
+A	Reshade/3areal-shaders/Shaders/SkyFog.fx
+A	Reshade/3areal-shaders/Shaders/Smart_Sharp.fx
+A	Reshade/3areal-shaders/Shaders/VHSPro.fx
+A	Reshade/3areal-shaders/Shaders/qUINT_bloom.fx
+A	Reshade/3areal-shaders/Shaders/qUINT_common.fxh
+A	Reshade/3areal-shaders/Shaders/qUINT_dither.fx
+A	Reshade/3areal-shaders/Shaders/qUINT_dof.fx
+A	Reshade/3areal-shaders/Shaders/qUINT_lightroom.fx
+A	Reshade/3areal-shaders/Shaders/qUINT_sharp.fx
+A	Reshade/3areal-shaders/Shaders/qUINT_ssr.fx
+A	Reshade/3areal-shaders/Textures/3AReal_LUT.png
+A	Reshade/3areal-shaders/Textures/ArcaneBloom_Dirt.png
+A	Reshade/3areal-shaders/Textures/AreaTex.dds
+A	Reshade/3areal-shaders/Textures/Clamp.png
+A	Reshade/3areal-shaders/Textures/Dirt12.png
+A	Reshade/3areal-shaders/Textures/FontAtlas.png
+A	Reshade/3areal-shaders/Textures/LUTs/3AReal_ByUTwelve.png
+A	"Reshade/3areal-shaders/Textures/LUTs/DefaultLUT/\347\251\272\347\231\275lut.png"
+A	Reshade/3areal-shaders/Textures/LUTs/LutBall.png
+A	"Reshade/3areal-shaders/Textures/LUTs/\345\206\267\346\232\226\345\257\271\346\257\224_By\345\261\261\346\245\202.png"
+A	Reshade/3areal-shaders/Textures/LensSprite.png
+A	Reshade/3areal-shaders/Textures/SearchTex.dds
+A	Reshade/3areal-shaders/Textures/bayer16x16.png
+A	Reshade/3areal-shaders/Textures/bluenoise.png
+A	Reshade/3areal-shaders/Textures/cursor.png
+A	Reshade/3areal-shaders/Textures/haze.png
+A	Reshade/3areal-shaders/Textures/permtexture.png
+M	Reshade/ReShade.ini
+
+commit 836b8e07889304e8fed08f2cfcc7587288c79378
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Oct 2 12:49:01 2022 +0300
+
+    Delete submodule fubax-shaders
+
+M	.gitmodules
+
+commit 6ca2a76e173912cfea0f824cb1dc04269e2e4e6c
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Oct 2 12:46:18 2022 +0300
+
+    Add submodule fubax-shaders
+
+M	.gitmodules
+A	Reshade/fubax-shaders
+
+commit 52e60bddea943e4d4e3d86b5aab7113a6562537e
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Oct 2 12:45:52 2022 +0300
+
+    Delete fubax-shaders
+
+A	.gitmodules
+D	Reshade/fubax-shaders
+
+commit 88555ad345d3be540f922a0b81b3637e4a725bce
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Oct 2 12:42:08 2022 +0300
+
+    Add fubax-shaders
+
+M	Reshade/ReShade.ini
+A	Reshade/fubax-shaders
+
+commit d3ac600a1e5a5a8e0e6e56762327805bcbe43b67
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Oct 1 21:42:07 2022 +0300
+
+    up
+
+A	Reshade/ReS Stream POE.ini
+
+commit e1d7ca8fcf6bcab324afd6c1fb9e61744474da2c
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Oct 1 11:25:41 2022 +0300
+
+    Update poe scripts
+
+A	POE_1n3n12345+LShift.ahk
+
+commit a03fc214ae0141674b803aa1d1a658977e065659
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Oct 1 09:36:27 2022 +0300
+
+    ReS Stream and all links updated
+
+M	Reshade/ReS Stream Racing.ini
+M	Reshade/ReShade.ini
+
+commit 3fb416b5f2648b1b3aa70cabf37dadc7dce4e945
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Oct 1 00:17:19 2022 +0300
+
+    ReS Stream Racing
+
+A	Reshade/ReS Stream Racing.ini
+
+commit 70262953adea489cc3be97f75d812e66199c4444
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Sep 30 15:06:22 2022 +0300
+
+    Move obs-studio to own repository
+
+D	obs-studio/.gitignore
+D	obs-studio/basic/profiles/Dee/basic.ini
+D	obs-studio/basic/profiles/Dee/recordEncoder.json
+D	obs-studio/basic/profiles/Dee/recordEncoder.json.bak
+D	obs-studio/basic/profiles/Dee/service.json
+D	obs-studio/basic/profiles/Dee/streamEncoder.json
+D	obs-studio/basic/profiles/Dee/streamEncoder.json.bak
+D	"obs-studio/basic/profiles/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271/basic.ini"
+D	"obs-studio/basic/profiles/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271/service.json"
+D	"obs-studio/basic/profiles/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271/streamEncoder.json"
+D	"obs-studio/basic/scenes/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271.json"
+D	"obs-studio/basic/scenes/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271.json.bak"
+D	obs-studio/global.ini
+D	obs-studio/logs/2022-09-29 09-48-30.txt
+D	obs-studio/logs/2022-09-29 13-15-58.txt
+D	obs-studio/logs/2022-09-29 13-27-14.txt
+D	obs-studio/logs/2022-09-29 14-58-12.txt
+D	obs-studio/logs/2022-09-29 19-10-32.txt
+D	obs-studio/plugin_config/obs-browser/000003.log
+D	obs-studio/plugin_config/obs-browser/CURRENT
+D	obs-studio/plugin_config/obs-browser/Cache/Cache_Data/data_0
+D	obs-studio/plugin_config/obs-browser/Cache/Cache_Data/data_1
+D	obs-studio/plugin_config/obs-browser/Cache/Cache_Data/data_2
+D	obs-studio/plugin_config/obs-browser/Cache/Cache_Data/data_3
+D	obs-studio/plugin_config/obs-browser/Cache/Cache_Data/index
+D	obs-studio/plugin_config/obs-browser/Code Cache/js/index
+D	obs-studio/plugin_config/obs-browser/Code Cache/js/index-dir/the-real-index
+D	obs-studio/plugin_config/obs-browser/Code Cache/wasm/index
+D	obs-studio/plugin_config/obs-browser/Code Cache/wasm/index-dir/the-real-index
+D	obs-studio/plugin_config/obs-browser/GPUCache/data_0
+D	obs-studio/plugin_config/obs-browser/GPUCache/data_1
+D	obs-studio/plugin_config/obs-browser/GPUCache/data_2
+D	obs-studio/plugin_config/obs-browser/GPUCache/data_3
+D	obs-studio/plugin_config/obs-browser/GPUCache/index
+D	obs-studio/plugin_config/obs-browser/LOCK
+D	obs-studio/plugin_config/obs-browser/LOG
+D	obs-studio/plugin_config/obs-browser/LOG.old
+D	obs-studio/plugin_config/obs-browser/Local Storage/leveldb/000003.log
+D	obs-studio/plugin_config/obs-browser/Local Storage/leveldb/CURRENT
+D	obs-studio/plugin_config/obs-browser/Local Storage/leveldb/LOCK
+D	obs-studio/plugin_config/obs-browser/Local Storage/leveldb/LOG
+D	obs-studio/plugin_config/obs-browser/Local Storage/leveldb/LOG.old
+D	obs-studio/plugin_config/obs-browser/Local Storage/leveldb/MANIFEST-000001
+D	obs-studio/plugin_config/obs-browser/LocalPrefs.json
+D	obs-studio/plugin_config/obs-browser/MANIFEST-000001
+D	obs-studio/plugin_config/obs-browser/Network/Cookies
+D	obs-studio/plugin_config/obs-browser/Network/Cookies-journal
+D	obs-studio/plugin_config/obs-browser/Network/Network Persistent State
+D	obs-studio/plugin_config/obs-browser/Network/NetworkDataMigrated
+D	obs-studio/plugin_config/obs-browser/Network/Reporting and NEL
+D	obs-studio/plugin_config/obs-browser/Network/Reporting and NEL-journal
+D	obs-studio/plugin_config/obs-browser/Network/TransportSecurity
+D	obs-studio/plugin_config/obs-browser/Session Storage/000003.log
+D	obs-studio/plugin_config/obs-browser/Session Storage/CURRENT
+D	obs-studio/plugin_config/obs-browser/Session Storage/LOCK
+D	obs-studio/plugin_config/obs-browser/Session Storage/LOG
+D	obs-studio/plugin_config/obs-browser/Session Storage/LOG.old
+D	obs-studio/plugin_config/obs-browser/Session Storage/MANIFEST-000001
+D	obs-studio/plugin_config/obs-browser/Visited Links
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/000003.log
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/CURRENT
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/Cookies
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/Cookies-journal
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/LOCK
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/LOG
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/LOG.old
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/MANIFEST-000001
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/Network Persistent State
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/TransportSecurity
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/Visited Links
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/000003.log
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/CURRENT
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Code Cache/js/index
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Code Cache/js/index-dir/the-real-index
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Code Cache/wasm/index
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Code Cache/wasm/index-dir/the-real-index
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/GPUCache/data_0
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/GPUCache/data_1
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/GPUCache/data_2
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/GPUCache/data_3
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/GPUCache/index
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/LOCK
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/LOG
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/LOG.old
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/000003.log
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/CURRENT
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/LOCK
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/LOG
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/LOG.old
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/MANIFEST-000001
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/MANIFEST-000001
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Network/Cookies
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Network/Cookies-journal
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Network/Network Persistent State
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Network/NetworkDataMigrated
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Network/Reporting and NEL
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Network/Reporting and NEL-journal
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Network/TransportSecurity
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Session Storage/000003.log
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Session Storage/CURRENT
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Session Storage/LOCK
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Session Storage/LOG
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Session Storage/LOG.old
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Session Storage/MANIFEST-000001
+D	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Visited Links
+D	obs-studio/plugin_config/rtmp-services/meta.json
+D	obs-studio/plugin_config/rtmp-services/package.json
+D	obs-studio/plugin_config/rtmp-services/services.json
+D	obs-studio/plugin_config/rtmp-services/twitch_ingests.json
+D	obs-studio/profiler_data/2022-09-26 23-21-27.csv.gz
+D	obs-studio/profiler_data/2022-09-27 08-11-42.csv.gz
+D	obs-studio/profiler_data/2022-09-27 10-29-10.csv.gz
+D	obs-studio/profiler_data/2022-09-28 23-56-24.csv.gz
+D	obs-studio/profiler_data/2022-09-29 00-11-33.csv.gz
+D	obs-studio/profiler_data/2022-09-29 03-27-19.csv.gz
+D	obs-studio/profiler_data/2022-09-29 09-48-30.csv.gz
+D	obs-studio/profiler_data/2022-09-29 13-15-58.csv.gz
+D	obs-studio/profiler_data/2022-09-29 13-27-14.csv.gz
+D	obs-studio/profiler_data/2022-09-29 14-58-12.csv.gz
+D	obs-studio/profiler_data/2022-09-29 19-10-32.csv.gz
+D	obs-studio/updates/manifest.json
+D	obs-studio/updates/whatsnew.json
+
+commit 29cd48a735a25a3f9adecf4301fc9caebf50edfc
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Sep 29 19:11:36 2022 +0300
+
+    up
+
+M	"obs-studio/basic/scenes/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271.json"
+A	obs-studio/logs/2022-09-29 19-10-32.txt
+M	obs-studio/plugin_config/obs-browser/LOG
+M	obs-studio/plugin_config/obs-browser/LOG.old
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/LOG
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/LOG.old
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/LOG
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/LOG.old
+D	obs-studio/profiler_data/2022-09-26 23-09-22.csv.gz
+A	obs-studio/profiler_data/2022-09-29 19-10-32.csv.gz
+
+commit 6aec661bb2ce79846a2eea791563e92004707602
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Sep 29 18:50:40 2022 +0300
+
+    up
+
+M	Reshade/ReS Stream.ini
+M	obs-studio/basic/profiles/Dee/basic.ini
+M	"obs-studio/basic/scenes/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271.json"
+M	"obs-studio/basic/scenes/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271.json.bak"
+M	obs-studio/global.ini
+A	obs-studio/logs/2022-09-29 14-58-12.txt
+M	obs-studio/plugin_config/obs-browser/LOG
+M	obs-studio/plugin_config/obs-browser/LOG.old
+M	obs-studio/plugin_config/obs-browser/LocalPrefs.json
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/LOG
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/LOG.old
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/LOG
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/LOG.old
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Network/Network Persistent State
+D	obs-studio/profiler_data/2022-09-26 21-23-09.csv.gz
+A	obs-studio/profiler_data/2022-09-29 14-58-12.csv.gz
+
+commit f3185a52869e96dc44a9eaeef5de56e4a480205d
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Sep 29 14:49:42 2022 +0300
+
+    up
+
+M	Reshade/ReS POE.ini
+M	obs-studio/basic/profiles/Dee/basic.ini
+M	obs-studio/basic/profiles/Dee/streamEncoder.json
+M	"obs-studio/basic/scenes/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271.json"
+M	"obs-studio/basic/scenes/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271.json.bak"
+A	obs-studio/logs/2022-09-29 13-15-58.txt
+A	obs-studio/logs/2022-09-29 13-27-14.txt
+M	obs-studio/plugin_config/obs-browser/LOG
+M	obs-studio/plugin_config/obs-browser/LOG.old
+M	obs-studio/plugin_config/obs-browser/LocalPrefs.json
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/LOG
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/LOG.old
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/LOG
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/LOG.old
+D	obs-studio/profiler_data/2022-09-26 20-36-49.csv.gz
+D	obs-studio/profiler_data/2022-09-26 21-20-15.csv.gz
+A	obs-studio/profiler_data/2022-09-29 13-15-58.csv.gz
+A	obs-studio/profiler_data/2022-09-29 13-27-14.csv.gz
+
+commit 38b71b635e4425f8b910004ca1b1bb766b430e6e
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Sep 29 13:11:00 2022 +0300
+
+    up
+
+M	obs-studio/basic/profiles/Dee/basic.ini
+M	"obs-studio/basic/scenes/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271.json"
+M	"obs-studio/basic/scenes/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271.json.bak"
+A	obs-studio/logs/2022-09-29 09-48-30.txt
+M	obs-studio/plugin_config/obs-browser/LOG
+M	obs-studio/plugin_config/obs-browser/LOG.old
+M	obs-studio/plugin_config/obs-browser/LocalPrefs.json
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/LOG
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/LOG.old
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/LOG
+M	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/LOG.old
+D	obs-studio/profiler_data/2022-09-26 14-28-33.csv.gz
+A	obs-studio/profiler_data/2022-09-29 09-48-30.csv.gz
+
+commit fd54d0731876819e8d5467d55d34d600d1ce9cd2
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Sep 29 09:42:35 2022 +0300
+
+    Add obs-studio folder
+
+M	Reshade/ReS Stream.ini
+A	obs-studio/.gitignore
+A	obs-studio/basic/profiles/Dee/basic.ini
+A	obs-studio/basic/profiles/Dee/recordEncoder.json
+A	obs-studio/basic/profiles/Dee/recordEncoder.json.bak
+A	obs-studio/basic/profiles/Dee/service.json
+A	obs-studio/basic/profiles/Dee/streamEncoder.json
+A	obs-studio/basic/profiles/Dee/streamEncoder.json.bak
+A	"obs-studio/basic/profiles/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271/basic.ini"
+A	"obs-studio/basic/profiles/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271/service.json"
+A	"obs-studio/basic/profiles/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271/streamEncoder.json"
+A	"obs-studio/basic/scenes/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271.json"
+A	"obs-studio/basic/scenes/\320\221\320\265\320\267\321\213\320\274\321\217\320\275\320\275\321\213\320\271.json.bak"
+A	obs-studio/global.ini
+A	obs-studio/plugin_config/obs-browser/000003.log
+A	obs-studio/plugin_config/obs-browser/CURRENT
+A	obs-studio/plugin_config/obs-browser/Cache/Cache_Data/data_0
+A	obs-studio/plugin_config/obs-browser/Cache/Cache_Data/data_1
+A	obs-studio/plugin_config/obs-browser/Cache/Cache_Data/data_2
+A	obs-studio/plugin_config/obs-browser/Cache/Cache_Data/data_3
+A	obs-studio/plugin_config/obs-browser/Cache/Cache_Data/index
+A	obs-studio/plugin_config/obs-browser/Code Cache/js/index
+A	obs-studio/plugin_config/obs-browser/Code Cache/js/index-dir/the-real-index
+A	obs-studio/plugin_config/obs-browser/Code Cache/wasm/index
+A	obs-studio/plugin_config/obs-browser/Code Cache/wasm/index-dir/the-real-index
+A	obs-studio/plugin_config/obs-browser/GPUCache/data_0
+A	obs-studio/plugin_config/obs-browser/GPUCache/data_1
+A	obs-studio/plugin_config/obs-browser/GPUCache/data_2
+A	obs-studio/plugin_config/obs-browser/GPUCache/data_3
+A	obs-studio/plugin_config/obs-browser/GPUCache/index
+A	obs-studio/plugin_config/obs-browser/LOCK
+A	obs-studio/plugin_config/obs-browser/LOG
+A	obs-studio/plugin_config/obs-browser/LOG.old
+A	obs-studio/plugin_config/obs-browser/Local Storage/leveldb/000003.log
+A	obs-studio/plugin_config/obs-browser/Local Storage/leveldb/CURRENT
+A	obs-studio/plugin_config/obs-browser/Local Storage/leveldb/LOCK
+A	obs-studio/plugin_config/obs-browser/Local Storage/leveldb/LOG
+A	obs-studio/plugin_config/obs-browser/Local Storage/leveldb/LOG.old
+A	obs-studio/plugin_config/obs-browser/Local Storage/leveldb/MANIFEST-000001
+A	obs-studio/plugin_config/obs-browser/LocalPrefs.json
+A	obs-studio/plugin_config/obs-browser/MANIFEST-000001
+A	obs-studio/plugin_config/obs-browser/Network/Cookies
+A	obs-studio/plugin_config/obs-browser/Network/Cookies-journal
+A	obs-studio/plugin_config/obs-browser/Network/Network Persistent State
+A	obs-studio/plugin_config/obs-browser/Network/NetworkDataMigrated
+A	obs-studio/plugin_config/obs-browser/Network/Reporting and NEL
+A	obs-studio/plugin_config/obs-browser/Network/Reporting and NEL-journal
+A	obs-studio/plugin_config/obs-browser/Network/TransportSecurity
+A	obs-studio/plugin_config/obs-browser/Session Storage/000003.log
+A	obs-studio/plugin_config/obs-browser/Session Storage/CURRENT
+A	obs-studio/plugin_config/obs-browser/Session Storage/LOCK
+A	obs-studio/plugin_config/obs-browser/Session Storage/LOG
+A	obs-studio/plugin_config/obs-browser/Session Storage/LOG.old
+A	obs-studio/plugin_config/obs-browser/Session Storage/MANIFEST-000001
+A	obs-studio/plugin_config/obs-browser/Visited Links
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/000003.log
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/CURRENT
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/Cookies
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/Cookies-journal
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/LOCK
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/LOG
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/LOG.old
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/MANIFEST-000001
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/Network Persistent State
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/TransportSecurity
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A066395EC54DD3EE/Visited Links
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/000003.log
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/CURRENT
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Code Cache/js/index
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Code Cache/js/index-dir/the-real-index
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Code Cache/wasm/index
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Code Cache/wasm/index-dir/the-real-index
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/GPUCache/data_0
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/GPUCache/data_1
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/GPUCache/data_2
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/GPUCache/data_3
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/GPUCache/index
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/LOCK
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/LOG
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/LOG.old
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/000003.log
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/CURRENT
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/LOCK
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/LOG
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/LOG.old
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Local Storage/leveldb/MANIFEST-000001
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/MANIFEST-000001
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Network/Cookies
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Network/Cookies-journal
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Network/Network Persistent State
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Network/NetworkDataMigrated
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Network/Reporting and NEL
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Network/Reporting and NEL-journal
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Network/TransportSecurity
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Session Storage/000003.log
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Session Storage/CURRENT
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Session Storage/LOCK
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Session Storage/LOG
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Session Storage/LOG.old
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Session Storage/MANIFEST-000001
+A	obs-studio/plugin_config/obs-browser/obs_profile_cookies/A1DAF164A1687526/Visited Links
+A	obs-studio/plugin_config/rtmp-services/meta.json
+A	obs-studio/plugin_config/rtmp-services/package.json
+A	obs-studio/plugin_config/rtmp-services/services.json
+A	obs-studio/plugin_config/rtmp-services/twitch_ingests.json
+A	obs-studio/profiler_data/2022-09-26 14-28-33.csv.gz
+A	obs-studio/profiler_data/2022-09-26 20-36-49.csv.gz
+A	obs-studio/profiler_data/2022-09-26 21-20-15.csv.gz
+A	obs-studio/profiler_data/2022-09-26 21-23-09.csv.gz
+A	obs-studio/profiler_data/2022-09-26 23-09-22.csv.gz
+A	obs-studio/profiler_data/2022-09-26 23-21-27.csv.gz
+A	obs-studio/profiler_data/2022-09-27 08-11-42.csv.gz
+A	obs-studio/profiler_data/2022-09-27 10-29-10.csv.gz
+A	obs-studio/profiler_data/2022-09-28 23-56-24.csv.gz
+A	obs-studio/profiler_data/2022-09-29 00-11-33.csv.gz
+A	obs-studio/profiler_data/2022-09-29 03-27-19.csv.gz
+A	obs-studio/updates/manifest.json
+A	obs-studio/updates/whatsnew.json
+
+commit 63ddbf779baedab19eaa98992f8b949d597ff1fb
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Sep 29 04:23:54 2022 +0300
+
+    up
+
+M	Reshade/ReS POE.ini
+
+commit ea54472c334e18ebeb4957df1251e580f9159811
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Sep 28 15:43:21 2022 +0300
+
+    up
+
+M	Reshade/ReS EVE.ini
+M	Reshade/ReShadePreset.ini
+
+commit 1c2f436fb31a6a7edd65d30bc22e9a2494094bb2
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Sep 28 00:37:09 2022 +0300
+
+    up
+
+M	Reshade/ReS Stream.ini
+M	Reshade/ReShadePresetHigh.ini
+
+commit c21dd653e3dd7ff5f60d1fc0327cc32d9c894c51
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Sep 26 23:07:09 2022 +0300
+
+    Add CtrlClick
+
+A	CtrlClk.ahk
+A	Reshade/ReS Stream.ini
+
+commit 33d8394c5818d99c4751bf480f5d8febc2f58417
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Sep 26 18:30:07 2022 +0300
+
+    up
+
+M	Path of Building/Settings.xml
+
+commit ade11683f271e4f3502fdc3d6ec145b4adb2a8de
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Sep 26 03:04:01 2022 +0300
+
+    up
+
+M	Path of Building/Settings.xml
+
+commit 12cbca7ab518077e19d6572fc26da88fbfec66e9
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Sep 25 21:04:26 2022 +0300
+
+    up
+
+M	Path of Building/Settings.xml
+
+commit 4c1fedb2f36a77b5139d8b5d3985706bde058716
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Sep 24 16:00:18 2022 +0300
+
+    up
+
+M	Path of Building/Settings.xml
+
+commit a343e2720f65b6d2bc7a8fba71f1bf4c368562c8
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Sep 24 11:47:04 2022 +0300
+
+    up
+
+M	Reshade/ReS POE.ini
+
+commit c7816114dea96557a0fdb4cb1d37d154bae0c172
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Sep 24 01:58:18 2022 +0300
+
+    up
+
+M	POE_1n3n12345.ahk
+M	Path of Building/Settings.xml
+
+commit b08bf85eaac5b00b8039c97571bf0e3dc24d7681
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Sep 23 14:32:41 2022 +0300
+
+    up
+
+M	Path of Building/Settings.xml
+
+commit 8235f447cfbc44a746f29d7a9c919a0efd4eb7c3
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Sep 23 13:50:52 2022 +0300
+
+    up
+
+M	Path of Building/Settings.xml
+
+commit 87a5d2918f2b23c7bdaccde9de3dc43bb3b23b18
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Sep 23 07:56:00 2022 +0300
+
+    up
+
+M	Reshade/ReS Factory.ini
+M	Reshade/ReS POE.ini
+
+commit e6192bbd362487d3d98e8a4b9a063583f06a15ca
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Sep 22 10:19:27 2022 +0300
+
+    up
+
+M	Reshade/ReS POE.ini
+
+commit 758b9760b44e203c514a5294ecbc0f0a08c54ee6
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Sep 21 15:29:53 2022 +0300
+
+    up
+
+M	Reshade/ReS Factory.ini
+
+commit 883d08332a83f64f51c081c2f577281c59d055d7
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Sep 20 17:58:15 2022 +0300
+
+    up
+
+M	Reshade/ReS POE.ini
+M	Reshade/ReShade.ini
+M	Reshade/dxgi.dll
+
+commit 362a5a2796147e55a73a7dc2a2152623e84363ff
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Sep 19 22:27:38 2022 +0300
+
+    up
+
+A	Reshade/ReS FS19.ini
+
+commit 6806a93374c20e078e0c686f3339d6b345d094ea
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Sep 19 15:31:39 2022 +0300
+
+    up
+
+M	POE_1n3n1234+LShift.ahk
+R095	POE_1n3n12345+WD.ahk	POE_1n3n12345.ahk
+D	POE_30_pass.png
+
+commit d6d2cc7e45d4b29c728669f908595578ddd84feb
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Sep 19 05:06:43 2022 +0300
+
+    up
+
+D	POEkeys.ico
+
+commit c37f14d1010acebdf6c6facdfa209013876600b0
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Mon Sep 19 00:34:45 2022 +0300
+
+    up
+
+A	POE-Arc.png
+A	POE_1n3n12345+WD.ahk
+M	Path of Building/Settings.xml
+
+commit a6c1b83921811b45a77358a234fdede4c2400089
+Merge: ed9b9b8 002332c
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sun Sep 18 20:05:39 2022 +0300
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+commit ed9b9b8f9cf3bab9ab44739b91c041881f7834c5
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sun Sep 18 20:05:37 2022 +0300
+
+    Remove exe files
+
+A	Ahk2Exe.exe
+D	FixMouseClick.exe
+D	FixMouseClick32.exe
+D	FixMouseClick64.exe
+D	POE_12345.exe
+D	POE_1n12345.exe
+D	POE_1n3n1234+LShift.exe
+D	POE_1n3n12345.exe
+D	Path of Building/Builds/Is_Crusher.xml
+D	Path of Building/Builds/Lightning Conduit Build  Elementalist.xml
+M	Path of Building/Settings.xml
+D	sound-clicker.exe
+
+commit 002332c7d25e82d2641ab4ab155eeba0ca6b3856
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Sep 18 13:05:18 2022 +0300
+
+    up
+
+D	POE_1n3n12345+LShift+SpaceToMBnT.exe
+R091	POE_1n3n12345+LShift+SpaceToMBnT.ahk	POE_1n3n12345+SpaceToMBnT.ahk
+
+commit d0ae083d614e5e645e982106af7452a3086f8fa3
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Sep 18 09:21:03 2022 +0300
+
+    POE_1n3n12345+LShift+SpaceToMBnT
+
+A	Ahk2Exe.exe
+D	POE_1n12345.ahk
+R097	POE_1n3n12345+LShift.ahk	POE_1n3n12345+LShift+SpaceToMBnT.ahk
+R051	POE_1n12345.exe	POE_1n3n12345+LShift+SpaceToMBnT.exe
+D	POE_1n3n12345.ahk
+D	POE_1n3n12345.exe
+
+commit 78f4eae72b6a664b24daf13bf89f03f36affbb68
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Sep 16 09:02:08 2022 +0300
+
+    up
+
+R100	POE_1and12345.ahk	POE_1n12345.ahk
+R100	POE_1and12345.exe	POE_1n12345.exe
+A	POE_1n3n1234+LShift.ahk
+R069	POE_1n3n12345+LShift.exe	POE_1n3n1234+LShift.exe
+
+commit 9e0febe997d8bfb97bf150e1cb163c053388a39b
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Sep 10 18:38:15 2022 +0300
+
+    up
+
+M	Reshade/ReS POE.ini
+
+commit df73cb130f8aaad4e626ac32cf84fd16522e55cd
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Sep 10 06:23:04 2022 +0300
+
+    up
+
+M	Reshade/ReS EVE.ini
+
+commit c899cf9aea01e582cd0c894d21c49e1041dcbc1c
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Sep 9 09:57:50 2022 +0300
+
+    up
+
+M	Reshade/ReShadePreset.ini
+
+commit c2bcfc6ff807819ae8c5132fdd01c69f9b0e864e
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Sep 9 02:16:34 2022 +0300
+
+    up
+
+D	Ahk2Exe.exe
+A	POE_1n3n12345+LShift.exe
+
+commit 8a52ede279021abc7e897e1c5f48dfd3ba50339a
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Sep 8 19:24:28 2022 +0300
+
+    Upgrade to 1.1.34.04 32 bit
+
+M	AutoHotkey.exe
+M	Compiler/AutoHotkeySC.bin
+
+commit 4ab08181108035ce10a93568008897ad5ee1ce7f
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Sep 8 19:22:30 2022 +0300
+
+    Upgrade to 1.1.34.04
+
+M	AutoHotkey Website.url
+M	AutoHotkey.chm
+M	AutoHotkey.exe
+M	AutoHotkeyA32.exe
+M	AutoHotkeyU32.exe
+M	AutoHotkeyU64.exe
+M	Compiler/ANSI 32-bit.bin
+M	Compiler/Ahk2Exe.exe
+M	Compiler/AutoHotkeySC.bin
+M	Compiler/Unicode 32-bit.bin
+M	Compiler/Unicode 64-bit.bin
+M	Installer.ahk
+M	POE_1n3n12345+LShift.ahk
+
+commit 88885817c0e0a710ad67e4bbb6babcf0f5c27912
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed Sep 7 16:07:25 2022 +0300
+
+    up
+
+M	POE_1n3n12345+LShift.ahk
+
+commit 83b67950a6a9703380527938ca27e11d2a001cd0
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Sep 6 18:47:05 2022 +0300
+
+    up
+
+M	POE_1n3n12345+LShift.ahk
+
+commit 92ab7b65c784c00ae2618016f16b489387faaf81
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Sep 6 08:45:46 2022 +0300
+
+    POE_1n3n12345+LShift
+
+M	POE_1n3n12345+LShift.ahk
+
+commit 6baef3153aafbb8d3b44f50bf4c39225941acb18
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Sep 6 08:30:10 2022 +0300
+
+    POE_1n3n12345+LShift
+
+A	POE_1n3n12345+LShift.ahk
+
+commit 47e16b06f8e3585570be42b9070077d7a2aea95f
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Sep 2 01:36:17 2022 +0300
+
+    up
+
+M	Reshade/ReS EVE.ini
+
+commit 95a8c48a0e7f2fc09c8b580da7a46d26ebe59ad4
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Sep 1 05:21:17 2022 +0300
+
+    up
+
+M	Reshade/ReS ED.ini
+A	Reshade/ReS EVE.ini
+M	Reshade/ReShade.ini
+M	Reshade/ReShadePreset.ini
+D	Reshade/ReShade_Setup_5.3.0._X_
+D	Reshade/d3d9.dll
+M	Reshade/dxgi.dll
+
+commit 6ab9299c9105bc36f29cca4e49a48594ddbe15fc
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Aug 30 08:21:29 2022 +0300
+
+    up
+
+A	POE_30_pass.png
+A	Path of Building/Builds/Lightning Conduit Build  Elementalist.xml
+M	Path of Building/Settings.xml
+
+commit 15071e32315e8d941b848ff96df3b975d4e812bd
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Aug 23 23:31:00 2022 +0300
+
+    up
+
+A	Path of Building/Builds/POB_saves/NiceSplasher.xml
+A	Path of Building/Builds/POB_saves/NiceSplasherDDD.xml
+M	Path of Building/Builds/POB_saves/SplashRider.xml
+A	Path of Building/Builds/POB_saves/Totom-Go-Laba.xml
+A	Path of Building/Builds/POB_saves/Totom-Kill-Maiven.xml
+M	Path of Building/Settings.xml
+
+commit 9107602e5799d2573ecdf81315c5cca24bf40ab4
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri Aug 19 19:25:03 2022 +0300
+
+    New POE AHK
+
+M	POE_12345.exe
+A	POEkeys.ico
+
+commit 6cf730c7bbccc32d22afe9bd6eb83afe1bf1df4e
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri Aug 19 19:16:14 2022 +0300
+
+    CReDate
+
+A	POE.ico
+A	POE_12345.ahk
+A	POE_12345.exe
+A	POE_1and12345.exe
+A	POE_1n3n12345.exe
+
+commit 3f33ab5809f2c50ae88e76b257ee2eae3b147da5
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sun Aug 7 20:51:08 2022 +0300
+
+    up
+
+A	Path of Building/Builds/POB_saves/SplashRider.xml
+M	Path of Building/Settings.xml
+
+commit c2cb42f3cd43e3f78267cc32fde0ca285841892e
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Aug 7 15:57:01 2022 +0300
+
+    up
+
+M	Reshade/ReS ExM.ini
+M	Reshade/ReS POE.ini
+
+commit 3a7aa72e34a94a978f3d6f0eb07c4282891d6183
+Merge: 606088f d07ab23
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Aug 5 00:00:10 2022 +0300
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+commit 606088f8e4e152066795c228f030537df1c6234c
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Aug 5 00:00:08 2022 +0300
+
+    up
+
+M	Satisfactory.ahk
+
+commit d07ab231fe906f2f7e5ddb0fe3af9814792c4974
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Aug 4 15:14:45 2022 +0300
+
+    up
+
+M	Satisfactory.ahk
+
+commit 21c93c9fbc0964b79d18eefba2921f34e4dec50d
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Aug 4 10:28:55 2022 +0300
+
+    up
+
+M	Reshade/ReS ETS.ini
+A	Reshade/ReS ExM.ini
+A	Reshade/d3d9.dll
+M	Satisfactory.ahk
+
+commit f498291a743e1a99f6eb57b76e0bcedd700e85f0
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sun Jul 31 21:15:53 2022 +0300
+
+    up
+
+M	Path of Building/Settings.xml
+
+commit 8aad78d31908b377e9c5c178759c900238fc0319
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jul 28 18:02:35 2022 +0300
+
+    up
+
+A	Path of Building/Builds/POB_saves/forbidden-rite.xml
+M	Path of Building/Settings.xml
+
+commit 340ee3437c8e115f942fe65c07047665a08cc989
+Merge: 543158e b96773f
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Jul 27 23:37:27 2022 +0300
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+commit 543158ef0d0a8cef9b0c2cb9c4e1827318999a90
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Jul 27 23:37:26 2022 +0300
+
+    Up
+
+M	Reshade/ReS Factory.ini
+
+commit b96773f55cb4bcfb83239c97e8d2f77ccfa9e2d2
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed Jul 27 11:59:30 2022 +0300
+
+    POE up
+
+D	POE234.ahk
+R096	POE1-5.ahk	POE_1n3n12345.ahk
+
+commit 98d8644b0bf12f18d1f81d9571b6d3201182ce5c
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Jul 26 11:32:08 2022 +0300
+
+    up
+
+M	Reshade/ReS Factory.ini
+
+commit d39957daba90bebba338265dccc841e114976411
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Jul 25 20:48:38 2022 +0300
+
+    up
+
+M	Reshade/ReS ED.ini
+M	Reshade/ReS Factory.ini
+
+commit 7a51f6b464c182c835daf467cad1ba2d2c3d5b98
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Jul 25 16:44:24 2022 +0300
+
+    Update Reshade
+
+M	Reshade/ReS ED.ini
+M	Reshade/ReS ETS.ini
+M	Reshade/ReS FS22.ini
+M	Reshade/ReS Factory.ini
+M	Reshade/ReS Horizons.ini
+M	Reshade/ReS POE.ini
+M	Reshade/ReShade.ini
+M	Reshade/ReShadePreset.ini
+M	Reshade/ReShadePresetHigh.ini
+D	Reshade/ReShade_Setup_5.2.2._x_
+A	Reshade/ReShade_Setup_5.3.0._X_
+M	Reshade/dxgi.dll
+A	Reshade/reshade-shaders/Shaders/UIDetect.fxh
+
+commit 0fe42c88a249066454c7b75458e6ea4437ea0ef6
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Jul 24 01:36:27 2022 +0300
+
+    Up
+
+M	POE_1and12345.ahk
+M	Reshade/ReS POE.ini
+
+commit 2712299045544d9da822a47e74f647909e71bb74
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Jul 15 09:23:40 2022 +0300
+
+    up
+
+M	POE_1and12345.ahk
+A	Reshade/ReS ED.ini
+M	Reshade/ReS POE.ini
+
+commit 867630a32f96859161169b3d7f8167cd982f9784
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jul 14 23:57:29 2022 +0300
+
+    up
+
+M	POE_1and12345.ahk
+
+commit 384096cd6e1d1ce34bd2443923354a0dc995654c
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Jul 12 13:39:48 2022 +0300
+
+    Add WGT.ahk
+
+R095	POE2345.ahk	POE_1and12345.ahk
+A	WGT.ahk
+
+commit 2c1379c2e43cfa504d51916841145d60a18364ac
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Jul 10 12:37:22 2022 +0300
+
+    up
+
+M	POE1-5.ahk
+
+commit e561b4685af8badadeeda33afff2762f9c7abcf7
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Jul 10 05:21:14 2022 +0300
+
+    Add vJoyF122
+
+A	vJoyF122.py
+
+commit 7e62e64911f06dad6a67a672990af9f7dfa64aaf
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Jul 9 03:00:27 2022 +0300
+
+    Update POE
+
+D	POE12345.ahk
+
+commit d37e8c8a2c1b21ceb102ca60adfc8b2bba41d24f
+Merge: 31ccd53 d3728dd
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Jul 9 02:51:47 2022 +0300
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+commit 31ccd53bc2c49c440feed6e152e6be43484aa00f
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Jul 9 02:51:46 2022 +0300
+
+    up
+
+A	POE12345.ahk
+
+commit d3728ddf67cff94a44ef40947fe78d84f77a0372
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri Jul 8 23:36:21 2022 +0300
+
+    merged theirs
+
+A	Path of Building/Builds/Is_Crusher.xml
+A	Path of Building/Builds/POB_saves/Is_Crusher.xml
+A	Path of Building/Settings.xml
+
+commit 564b63e7194f298b5a175665616897dc8e512d28
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri Jul 8 22:32:01 2022 +0300
+
+    Update POE scripts
+
+A	POE1-5.ahk
+
+commit 8fc97c24b2fe9644a6ab096346a1832ebd6425f9
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Jul 8 01:54:09 2022 +0300
+
+    up
+
+M	Reshade/ReS POE.ini
+
+commit 7b53a29df0ed22f5bb04723a4658b5242a8c6b47
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Jul 5 11:41:24 2022 +0300
+
+    Update T
+
+M	POE2345.ahk
+
+commit 3dc11090729fc055e9ef1500599f3ea2006aa935
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Jul 4 07:37:25 2022 +0300
+
+    up
+
+M	Reshade/ReS POE.ini
+
+commit 32c34c8eb1da2b84da495c4d2d62f347eab53998
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri Jul 1 00:41:43 2022 +0300
+
+    up POE234.ahk
+
+M	POE234.ahk
+
+commit cfbc7141a0de9255a3eba99316ffb0871dd3ba43
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 30 18:19:51 2022 +0300
+
+    up
+
+M	POE2345.ahk
+
+commit f2b4640e3e98fac22cb1eedfd70f799e9526c0d6
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Jun 28 17:31:23 2022 +0300
+
+    up
+
+M	POE2345.ahk
+
+commit 88664bd4353b37c1ece6f7ecbf080bf2b4471fb6
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Jun 28 16:26:33 2022 +0300
+
+    up
+
+M	POE2345.ahk
+M	Reshade/ReS POE.ini
+A	Reshade/ReShade_Setup_5.2.2._x_
+
+commit 8347043161a99e4c4b440cc478a45ecf221c750d
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Jun 27 22:40:43 2022 +0300
+
+    up
+
+M	POE234.ahk
+M	POE2345.ahk
+
+commit 646315e7d8436e9c8c27921b6ee2300ac413208e
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Jun 27 16:46:49 2022 +0300
+
+    up
+
+A	POE234.ahk
+R096	POE.ahk	POE2345.ahk
+
+commit 300e69850210dc2e6b4b37c6f0b576ded1e93dc9
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Jun 26 03:55:05 2022 +0300
+
+    up
+
+M	Reshade/ReS Factory.ini
+
+commit bfb4ab924faebd65967cebb80fa513dda75d09ad
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Jun 24 23:19:17 2022 +0300
+
+    up
+
+M	Reshade/ReS POE.ini
+
+commit 19ff22c1e834fe7e2ff9d9e63a36ea8eee465629
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Jun 24 05:10:05 2022 +0300
+
+    up
+
+M	Reshade/ReS POE.ini
+
+commit 8a447ab021d3cc376a370799c316ece5be8322a5
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 23 17:35:23 2022 +0300
+
+    up
+
+M	RR.ahk
+
+commit d7444e8635e46b7182091c79bd6c6fb0e45cba81
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed Jun 22 20:04:50 2022 +0300
+
+    up
+
+M	POE.ahk
+
+commit 693712e56d5e54011025243bad6ec4a6a5f321f1
+Merge: 88f44c0 82682cc
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed Jun 22 16:58:01 2022 +0300
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+commit 88f44c0cb6b54a704d1cec70ebde12b287a89839
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed Jun 22 16:58:00 2022 +0300
+
+    up
+
+M	POE.ahk
+M	eve.ahk
+
+commit 82682cc278a9d9b549241631269fa989ee4af478
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Jun 22 16:57:53 2022 +0300
+
+    up
+
+M	POE.ahk
+
+commit cfa30b163c529ca98e9a33825c18b414af7fb413
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Jun 22 07:10:27 2022 +0300
+
+    up
+
+M	Reshade/ReS FS22.ini
+M	Reshade/ReS POE.ini
+M	Reshade/ReShade.ini
+M	Reshade/ReShadePreset.ini
+
+commit d3998e55b4e2ae0979871fa870a39c80f2e7acec
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Jun 21 11:30:09 2022 +0300
+
+    Update ReShade
+
+M	Reshade/ReShade.ini
+
+commit 10d28189918a4f55934d0e2313429157edab1693
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Jun 21 11:27:21 2022 +0300
+
+    Update ReShade
+
+A	Reshade/ReS FS22.ini
+M	Reshade/ReShade.ini
+A	Reshade/dxgi.dll
+
+commit f4b4dd8e314e9cfd34dbf884ea35b7f210fb92ae
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Jun 21 07:10:49 2022 +0300
+
+    up
+
+M	POE.ahk
+M	Reshade/ReS POE.ini
+
+commit 2d60f789af8889399e25d8b5fc89c55f71a8179c
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Jun 21 04:57:46 2022 +0300
+
+    up POE.ahk
+
+M	POE.ahk
+
+commit 87ac469b7a577a3d27ddf79684c893bba8664a62
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Jun 20 00:49:37 2022 +0300
+
+    up
+
+A	Reshade/ReS ETS.ini
+M	Reshade/ReShadePreset.ini
+
+commit 6262c265dbf866aeff2e5b807d30f2fbfe017f53
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Jun 18 16:27:32 2022 +0300
+
+    up
+
+A	NeverSink-3ss-Si_Venenoso.txt
+
+commit ff99a3d45feb714ae9c44b9f987099efb3260675
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Jun 15 11:25:04 2022 +0300
+
+    up
+
+M	Reshade/ReS Factory.ini
+
+commit 8b90bade779c9d2a9f994c17c6768b9704f3f853
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Jun 15 05:55:14 2022 +0300
+
+    up
+
+A	Reshade/ReS Factory.ini
+M	Satisfactory.ahk
+
+commit 549a237686bb861d6ccb487aacb368ddd5d2e718
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Jun 14 16:27:42 2022 +0300
+
+    Create autogit-gc.bat
+
+A	autogit-gc.bat
+
+commit 7995e704d79d71f1876dbac81cd2c962b89e3bf3
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Jun 14 14:45:58 2022 +0300
+
+    up
+
+M	Reshade/ReS POE.ini
+
+commit 028b52ac5cc68750181f1b611217029fc4bfddaa
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Jun 13 01:58:10 2022 +0300
+
+    up
+
+M	Reshade/ReS Horizons.ini
+
+commit f41b354c79e3af95a9693cac42bd1905347d964d
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Jun 11 03:04:39 2022 +0300
+
+    up
+
+M	Reshade/ReS POE.ini
+
+commit 8c708cb3c62f62ef59e971eb427fd4415ed00f4f
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Jun 10 03:25:17 2022 +0300
+
+    up
+
+M	Reshade/ReS Horizons.ini
+
+commit d790047abd4d3d212c9b85297fbdd446c46dfcdc
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 9 20:11:55 2022 +0300
+
+    up
+
+M	Satisfactory.ahk
+
+commit d684fdc6b7405e906aa6c339619e15d7ea18897e
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 9 04:48:05 2022 +0300
+
+    up
+
+A	Reshade/ReS Horizons.ini
+A	Reshade/ReS POE.ini
+
+commit e8465314ed8a7ad75ffbea333a8a1bb969c4dbf0
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Jun 8 04:15:05 2022 +0300
+
+    up
+
+M	Reshade/ReShadePresetHigh.ini
+
+commit 586ff4f2a71c39136f0d04412f0e3a0e2e85e7d1
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Jun 7 10:19:15 2022 +0300
+
+    up
+
+M	Reshade/ReShadePreset.ini
+
+commit 19b99e8f81b62bbe75545b0dd1635138cddf93fa
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Jun 7 04:14:10 2022 +0300
+
+    up
+
+M	Reshade/ReShadePreset.ini
+
+commit 14554ad0bc2adbd8b5c2582c50e1fbee090082cf
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Jun 6 09:44:12 2022 +0300
+
+    up
+
+M	Reshade/ReShadePresetHigh.ini
+
+commit e2d5ea86267e941b8b1c747582ec28aadd696d57
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Jun 6 08:41:40 2022 +0300
+
+    up
+
+M	Reshade/ReShadePresetHigh.ini
+
+commit cdbc5e01b4d8dad7a375e1fd1fb9edf4a53272a4
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Jun 6 03:45:46 2022 +0300
+
+    up
+
+M	Reshade/ReShadePreset.ini
+A	Reshade/ReShadePresetHigh.ini
+
+commit e7529f4efa1a2d6612ec588a12a83253f5190548
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Jun 6 00:11:12 2022 +0300
+
+    rm github.pub
+
+D	github
+D	github.pub
+
+commit e318fce57e24f2500354b104087bd422764c5adb
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Jun 6 00:08:59 2022 +0300
+
+    github.pub
+
+A	github
+A	github.pub
+
+commit 180043f1fa49f72c7d0295f87dd456c5f11089cc
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Jun 5 03:18:13 2022 +0300
+
+    up
+
+M	Reshade/ReShadePreset.ini
+
+commit 61fa63482685726005c2a438cacf6888c36eb942
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Jun 5 01:29:37 2022 +0300
+
+    Update sf script
+
+M	Satisfactory.ahk
+
+commit ddd39cab404b691d1c7471d0487def5022a3abbf
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Jun 5 01:18:24 2022 +0300
+
+    Update reshade preset
+
+M	Reshade/ReShade.ini
+M	Reshade/ReShadePreset.ini
+
+commit fa99e2bc85a4db0baa6a5f21f11e5e84f44cfc9b
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Jun 5 00:49:39 2022 +0300
+
+    up
+
+M	Reshade/ReShadePreset.ini
+
+commit 258cb96b7a15db776114c331e9e6a313349bd3b8
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat Jun 4 23:56:02 2022 +0300
+
+    up
+
+M	Reshade/ReShadePreset.ini
+
+commit 2d1351274800c9e48d017b662c8d6d8a27363374
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Jun 3 00:50:00 2022 +0300
+
+    up
+
+M	autogit-all-projects.bat
+
+commit f930a33fa8132ada4c2213b8d36771532e0da20a
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 2 22:36:04 2022 +0300
+
+    up
+
+A	autogit-all-projects.bat
+
+commit 3ba91fcea0015a27f8fefa145d146ca3b2f5dc3b
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 2 18:31:56 2022 +0300
+
+    up
+
+M	poweroff.bat
+M	reboot.bat
+
+commit d9fcdd7997a831442db3f820ec0a898532d745ac
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 2 17:04:17 2022 +0300
+
+    up
+
+M	poweroff.bat
+M	reboot.bat
+
+commit d02c0ee747f793cf39b6d52842bf4602fdae9b7a
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 2 14:56:07 2022 +0300
+
+    up
+
+M	poweroff.bat
+M	reboot.bat
+
+commit 9568fccb7533b7a71f59906229d5852af069eace
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 2 14:54:21 2022 +0300
+
+    up
+
+M	poweroff.bat
+M	reboot.bat
+
+commit bf1ac2883efef160c85635040fe949150b5d606d
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 2 14:51:42 2022 +0300
+
+    up
+
+M	poweroff.bat
+
+commit 3a1044e1024e2a3c4e1d2b8fc654a94fe6a563a3
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 2 11:25:40 2022 +0300
+
+    up
+
+M	poweroff.bat
+M	reboot.bat
+
+commit 5546128d9d8bf822be4c50c450bc7cd55e4cafb4
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 2 11:20:02 2022 +0300
+
+    up
+
+D	autogit-all-projects.bat
+M	autogit.bat
+A	poweroff.bat
+M	reboot.bat
+D	shutdown.bat
+
+commit 4eb8bc2cd38eabe5ba406122eefec6be168317ee
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 2 10:28:38 2022 +0300
+
+    up
+
+M	autogit-all-projects.bat
+M	autogit-all.bat
+M	reboot.bat
+M	shutdown.bat
+
+commit 037e6abb0b0b3b45c3291a48cb17cc9ffbc4e3f6
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 2 10:23:34 2022 +0300
+
+    up
+
+M	reboot.bat
+
+commit 4395b206561d72abe0951878b200d29c2ea06bd8
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 2 10:22:11 2022 +0300
+
+    up
+
+M	reboot.bat
+
+commit a27bcfd80b213c22cab7456a0440069c0a766e1e
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 2 10:21:45 2022 +0300
+
+    up
+
+M	reboot.bat
+
+commit 7438603f2f50f43f2071987d4c32687f929468c4
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 2 10:17:19 2022 +0300
+
+    up
+
+M	reboot.bat
+M	shutdown.bat
+
+commit e882126cd4ec1e5a80d41849bb5702ee28d78324
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 2 10:14:23 2022 +0300
+
+    up
+
+M	reboot.bat
+M	shutdown.bat
+
+commit c81ea03b2f2a9ad4945da33b19b0c70da28e682a
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Jun 2 10:13:35 2022 +0300
+
+    up
+
+M	autogit-all-projects.bat
+A	reboot.bat
+A	shutdown.bat
+
+commit ecd40a1ef30e776d087fc8ec9e28284f0b78b7ec
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Jun 1 08:52:02 2022 +0300
+
+    Reshade up
+
+M	Reshade/ReShade.ini
+D	Reshade/reshade-shaders/Shaders/Daltonize.fx
+D	Reshade/reshade-shaders/Shaders/Deband.fx
+D	Reshade/reshade-shaders/Shaders/DisplayDepth.fx
+D	Reshade/reshade-shaders/Shaders/LUT.fx
+D	Reshade/reshade-shaders/Shaders/UIMask.fx
+D	Reshade/reshade-shaders/Textures/pd80_bluenoise.png
+D	Reshade/reshade-shaders/Textures/pd80_bluenoise_rgba.png
+D	Reshade/reshade-shaders/Textures/pd80_cinelut.png
+D	Reshade/reshade-shaders/Textures/pd80_clean_lut.png
+D	Reshade/reshade-shaders/Textures/pd80_example-lut.png
+D	Reshade/reshade-shaders/Textures/pd80_gaussnoise.png
+D	Reshade/reshade-shaders/Textures/pd80_neutral-lut.png
+D	Reshade/reshade-shaders/Textures/pd80_permtexture.png
+
+commit 59a2621c2a54c6bc246ad899ddaf8f29190b05d6
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Jun 1 08:32:58 2022 +0300
+
+    Reshade up
+
+M	Reshade/ReShadePreset.ini
+A	Reshade/reshade-shaders/Shaders/Daltonize.fx
+A	Reshade/reshade-shaders/Shaders/Deband.fx
+A	Reshade/reshade-shaders/Shaders/DisplayDepth.fx
+A	Reshade/reshade-shaders/Shaders/LUT.fx
+A	Reshade/reshade-shaders/Shaders/UIMask.fx
+
+commit 76a23d971a0011ecd19a349834ab17ebd691ccbd
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sat May 28 23:17:55 2022 +0300
+
+    up
+
+D	Duelist skills.pdn
+D	Duelist skills.png
+
+commit 85311e80c4e39561ee0a700941c330cb3ca20b7c
+Merge: 7ad721f fa7b226
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu May 26 23:55:55 2022 +0300
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+commit 7ad721f1485e1fad23a577262c342c81df18b61c
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu May 26 23:55:46 2022 +0300
+
+    up
+
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/Knowledge.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/Config/Mod_836308268_dubs_bad_hygiene_DubsBadHygieneMod.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/ModsConfig.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/Prefs.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/RimHUD/Config.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/RimHUD/Docked.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/RimHUD/Floating.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-1.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-2.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-3.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-4.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-5.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Dune Expanded.rws
+
+commit fa7b22683521a4ebdaffdef7d166782d5f7e11d0
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu May 26 18:19:39 2022 +0300
+
+    up
+
+M	Satisfactory.ahk
+
+commit 8abff21926ff25d3a8b3f27286bec55caaee2e93
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu May 26 07:06:40 2022 +0300
+
+    Update SF script
+
+D	Empyrion.ahk
+M	Satisfactory.ahk
+
+commit 0487decac63e94c6d9499876fead631b78d2ff42
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu May 26 06:54:31 2022 +0300
+
+    Update SF script
+
+M	Satisfactory.ahk
+
+commit e0eefb663e3650c48137a7b7dc75b9ba84bdab72
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu May 26 06:32:59 2022 +0300
+
+    Update SF script
+
+M	Satisfactory.ahk
+
+commit b6de09172b2e80ea9267cfaa4c542f5cbee548b1
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu May 26 06:09:31 2022 +0300
+
+    Update scripts
+
+M	Satisfactory.ahk
+R100	2022-template.ahk	template.ahk
+
+commit 161520a75ec069094500364ce87f1bdf3ad7bb5a
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed May 25 21:03:07 2022 +0300
+
+    up
+
+A	Ludeon Studios/RimWorld by Ludeon Studios/CharacterEditor/capsulesetup0.txt
+M	Ludeon Studios/RimWorld by Ludeon Studios/CharacterEditor/options.txt
+M	Ludeon Studios/RimWorld by Ludeon Studios/CharacterEditor/pawnslots.txt
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/Knowledge.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/LastPlayedVersion.txt
+A	Ludeon Studios/RimWorld by Ludeon Studios/Config/Mod_1662119905_dubs_mint_minimap_DubsMintMinimapMod.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/Mod_2038874626_dubs_performance_analyzer_Modbase.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/Config/Mod_DubsMiniMap_DubsMintMinimapMod.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/ModsConfig.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/Prefs.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/HugsLib/LastSeenNews.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/HugsLib/ModSettings.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/HugsLib/SpottedMods.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Player-prev.log
+M	Ludeon Studios/RimWorld by Ludeon Studios/Player.log
+A	Ludeon Studios/RimWorld by Ludeon Studios/RocketMan/Logs/Assemblies.log
+A	Ludeon Studios/RimWorld by Ludeon Studios/RocketMan/Logs/Patching.log
+A	Ludeon Studios/RimWorld by Ludeon Studios/RocketMan/Logs/Rocket.log
+A	Ludeon Studios/RimWorld by Ludeon Studios/RocketMan/Logs/Types.Proton.log
+A	Ludeon Studios/RimWorld by Ludeon Studios/RocketMan/Logs/Types.Soyuz.log
+A	Ludeon Studios/RimWorld by Ludeon Studios/RocketMan/Logs/Types.log
+A	Ludeon Studios/RimWorld by Ludeon Studios/RocketMan/Mod_RocketMan_RocketMod.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-1.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-2.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-3.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-4.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-5.rws
+A	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Dune Expanded.rws
+
+commit c64483c77505762337c982a254a92969c5812e80
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue May 24 16:29:22 2022 +0300
+
+    up
+
+M	Ludeon Studios/RimWorld by Ludeon Studios/CharacterEditor/options.txt
+M	Ludeon Studios/RimWorld by Ludeon Studios/CharacterEditor/pawnslots.txt
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/Knowledge.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/Config/Mod_2038874626_dubs_performance_analyzer_Modbase.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/ModsConfig.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Config/Prefs.xml
+M	Ludeon Studios/RimWorld by Ludeon Studios/Player-prev.log
+M	Ludeon Studios/RimWorld by Ludeon Studios/Player.log
+A	Ludeon Studios/RimWorld by Ludeon Studios/Saves/0000.rws
+A	Ludeon Studios/RimWorld by Ludeon Studios/Saves/0003.rws
+A	Ludeon Studios/RimWorld by Ludeon Studios/Saves/0004.rws
+A	Ludeon Studios/RimWorld by Ludeon Studios/Saves/0005.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-1.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-2.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-3.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-4.rws
+M	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-5.rws
+A	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Covans.rws
+D	PlayWay/UltimateFishing_GOG/output_log.txt
+
+commit 34817c9a6934e81e1b6b89dea7997efc0265b1c5
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue May 24 12:11:32 2022 +0300
+
+    up
+
+A	Duelist skills.pdn
+A	Duelist skills.png
+
+commit baf49f4b22e7bad057c0b4385d41c0608d9749cc
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon May 23 00:27:44 2022 +0300
+
+    up
+
+A	Mining/Saved/Config/CrashReportClient/UE4CC-Windows-F8CFEE874E9AFF405C9892A809C87A8F/CrashReportClient.ini
+A	Mining/Saved/Logs/NGX/NGX_2022.05.22-21.56.36_E3F24F15448036B49FF96EA8BA08A53B/nvngx.log
+A	Mining/Saved/Logs/NGX/NGX_2022.05.22-21.56.36_E3F24F15448036B49FF96EA8BA08A53B/nvsdk_ngx.log
+M	Mining/Saved/SaveGames/Cheva/Level.sav
+M	Mining/Saved/SaveGames/Cheva/Player.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+
+commit 3576e9827bfdef667abeb9d7957e28c4b1bdf2f0
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun May 22 16:29:44 2022 +0300
+
+    up scripts
+
+M	autogit-all.bat
+
+commit d282a80005fd4062c2e3b9b0c46345f3843d1930
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun May 22 16:29:08 2022 +0300
+
+    up
+
+M	autogit-all.bat
+
+commit 051b3a7fbd2456ab6c903fe6bfdc04c787692bcc
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun May 22 16:28:09 2022 +0300
+
+    up
+
+M	autogit-all.bat
+
+commit a02dd9a116d8667e3aa08504336ab96c36fc034c
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun May 22 16:27:25 2022 +0300
+
+    up
+
+M	autogit-all.bat
+
+commit 88329a9745bbbfa68dad788bc585741004bf2c9f
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun May 22 16:26:18 2022 +0300
+
+    up
+
+M	autogit-all.bat
+
+commit b304aa26d46ad89df18b740630cf8174d67f7471
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun May 22 16:25:10 2022 +0300
+
+    up
+
+M	autogit-all-projects.bat
+M	autogit-all.bat
+
+commit 9621d687988001b29e1ebd9fa1968471990c985c
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun May 22 16:18:50 2022 +0300
+
+    up
+
+M	autogit-all-projects.bat
+M	autogit-all.bat
+
+commit c3cd83625eca66dea7ad0e8879e484eb842e37f6
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun May 22 16:18:08 2022 +0300
+
+    up
+
+A	autogit-all-projects.bat
+M	autogit-all.bat
+
+commit 6a3425547a55950af57546e296711aa0bc3a2415
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun May 22 01:17:36 2022 +0300
+
+    Reshade up
+
+D	Reshade/reshade-shaders/Shaders/Daltonize.fx
+D	Reshade/reshade-shaders/Shaders/Deband.fx
+D	Reshade/reshade-shaders/Shaders/DisplayDepth.fx
+D	Reshade/reshade-shaders/Shaders/LUT.fx
+D	Reshade/reshade-shaders/Shaders/UIMask.fx
+
+commit b684c008ae6db949428ca5679ba1ff02730af4f6
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun May 22 01:14:28 2022 +0300
+
+    Reshade up
+
+M	Reshade/ReShadePreset.ini
+A	Reshade/reshade-shaders/Shaders/Daltonize.fx
+A	Reshade/reshade-shaders/Shaders/Deband.fx
+A	Reshade/reshade-shaders/Shaders/DisplayDepth.fx
+A	Reshade/reshade-shaders/Shaders/LUT.fx
+A	Reshade/reshade-shaders/Shaders/UIMask.fx
+
+commit d868ef5d97b3a14593b0ad8bce727006b8eaf57d
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 18:03:48 2022 +0300
+
+    21.05.2022 at 18:03:48
+
+M	Mining/Saved/Config/WindowsNoEditor/Engine.ini
+M	Mining/Saved/SaveGames/Cheva/Level.sav
+M	Mining/Saved/SaveGames/Cheva/Player.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+
+commit 828e6e08f8f6ed6237a32c2b8f7ac53000c50f03
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 18:02:04 2022 +0300
+
+    21.05.2022 at 18:02:04
+
+M	Mining/Saved/SaveGames/Cheva/Level.sav
+M	Mining/Saved/SaveGames/Cheva/Player.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+
+commit 26d7dc7abf6ff8e94cd686257f5dd28a6127d974
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 17:57:00 2022 +0300
+
+    21.05.2022 at 17:57:00
+
+M	Mining/Saved/SaveGames/Cheva/Level.sav
+M	Mining/Saved/SaveGames/Cheva/Player.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+
+commit 77819167ddeed9f6752a21c7a24500528aeedae6
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 17:51:56 2022 +0300
+
+    21.05.2022 at 17:51:56
+
+M	Mining/Saved/SaveGames/Cheva/Level.sav
+M	Mining/Saved/SaveGames/Cheva/Player.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+
+commit b17a95f58a0f2616e8be5c30f40370c0898ecc1e
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 17:46:52 2022 +0300
+
+    21.05.2022 at 17:46:52
+
+M	Mining/Saved/SaveGames/Cheva/Level.sav
+M	Mining/Saved/SaveGames/Cheva/Player.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+
+commit 6bd50258634324473b476a21dee2b23ceaa91921
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 17:41:48 2022 +0300
+
+    21.05.2022 at 17:41:48
+
+M	Mining/Saved/SaveGames/Cheva/Level.sav
+M	Mining/Saved/SaveGames/Cheva/Player.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+
+commit 438261505700d1daa7831d9def924fa44813d6a3
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 17:36:44 2022 +0300
+
+    21.05.2022 at 17:36:44
+
+M	Mining/Saved/SaveGames/Cheva/Level.sav
+M	Mining/Saved/SaveGames/Cheva/Player.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+
+commit 52ed26f6fb649b51088b5133334cc5f4935325e1
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 17:31:41 2022 +0300
+
+    21.05.2022 at 17:31:41
+
+M	Mining/Saved/SaveGames/Cheva/Level.sav
+M	Mining/Saved/SaveGames/Cheva/Player.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+
+commit e3c7ad85b64165417031a456cf01fdc02f8458b1
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 17:26:37 2022 +0300
+
+    21.05.2022 at 17:26:37
+
+M	Mining/Saved/SaveGames/Cheva/Level.sav
+M	Mining/Saved/SaveGames/Cheva/Player.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+
+commit 4692efcd0ccd156f3248fe1a59de6828fd99a732
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 17:21:33 2022 +0300
+
+    21.05.2022 at 17:16:32
+
+M	Mining/Saved/SaveGames/Cheva/Level.sav
+M	Mining/Saved/SaveGames/Cheva/Player.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+
+commit f7d7ca3811df75109057463c48e26cad57eac39a
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 17:16:28 2022 +0300
+
+    loop 300
+
+M	Mining/Saved/SaveGames/Cheva/Level.sav
+M	Mining/Saved/SaveGames/Cheva/Player.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+M	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+
+commit e0e3bbc2e3fd9fd315d30a6cae528d96b697dc45
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 17:12:26 2022 +0300
+
+    up
+
+A	Mining/Saved/Config/CrashReportClient/UE4CC-Windows-984FAD1A4F032F7044ABBCB42D9818C6/CrashReportClient.ini
+M	Mining/Saved/Config/WindowsNoEditor/Engine.ini
+A	Mining/Saved/Logs/NGX/NGX_2022.05.21-16.50.43_8416F9DC4AAC4D079A38E38A693D55CA/nvngx.log
+A	Mining/Saved/Logs/NGX/NGX_2022.05.21-16.50.43_8416F9DC4AAC4D079A38E38A693D55CA/nvsdk_ngx.log
+A	Mining/Saved/SaveGames/Cheva/Level.sav
+A	Mining/Saved/SaveGames/Cheva/Player.sav
+A	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+A	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+
+commit 1c39ff81f4d43cd2dcfa21e29d3333816d8fc1c7
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 16:50:34 2022 +0300
+
+    up
+
+D	Mining/Saved/SaveGames/Cheva/Level.sav
+D	Mining/Saved/SaveGames/Cheva/Player.sav
+D	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+D	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+
+commit fbc3d10bd5debf32a372018d5bbcd09460c904ad
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 16:49:48 2022 +0300
+
+    up
+
+A	Mining/Saved/Config/CrashReportClient/UE4CC-Windows-71726D9244C0EB65E55B73A31984EC84/CrashReportClient.ini
+A	Mining/Saved/Config/CrashReportClient/UE4CC-Windows-843E578347CCF179F7A22EABD7155E89/CrashReportClient.ini
+A	Mining/Saved/Config/WindowsNoEditor/AutoSettings.ini
+A	Mining/Saved/Config/WindowsNoEditor/Compat.ini
+A	Mining/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+A	Mining/Saved/Config/WindowsNoEditor/EditorScriptingUtilities.ini
+A	Mining/Saved/Config/WindowsNoEditor/Engine.ini
+A	Mining/Saved/Config/WindowsNoEditor/Game.ini
+A	Mining/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+A	Mining/Saved/Config/WindowsNoEditor/GameplayTags.ini
+A	Mining/Saved/Config/WindowsNoEditor/Hardware.ini
+A	Mining/Saved/Config/WindowsNoEditor/Input.ini
+A	Mining/Saved/Config/WindowsNoEditor/MagicLeap.ini
+A	Mining/Saved/Config/WindowsNoEditor/MagicLeapLightEstimation.ini
+A	Mining/Saved/Config/WindowsNoEditor/MotoSynth.ini
+A	Mining/Saved/Config/WindowsNoEditor/Niagara.ini
+A	Mining/Saved/Config/WindowsNoEditor/Paper2D.ini
+A	Mining/Saved/Config/WindowsNoEditor/PhysXVehicles.ini
+A	Mining/Saved/Config/WindowsNoEditor/RuntimeOptions.ini
+A	Mining/Saved/Config/WindowsNoEditor/Scalability.ini
+A	Mining/Saved/Config/WindowsNoEditor/Settings.ini
+A	Mining/Saved/Config/WindowsNoEditor/Synthesis.ini
+A	Mining/Saved/Config/WindowsNoEditor/VariantManagerContent.ini
+A	Mining/Saved/Config/WindowsNoEditor/VoxelPro.ini
+A	Mining/Saved/Logs/NGX/NGX_2022.05.21-16.17.22_D02734754F9A1AEB48F34C87BB3FF46C/nvngx.log
+A	Mining/Saved/Logs/NGX/NGX_2022.05.21-16.17.22_D02734754F9A1AEB48F34C87BB3FF46C/nvsdk_ngx.log
+A	Mining/Saved/Logs/NGX/NGX_2022.05.21-16.46.27_DFCA41964243E8100C846B960EC5E8CC/nvngx.log
+A	Mining/Saved/Logs/NGX/NGX_2022.05.21-16.46.27_DFCA41964243E8100C846B960EC5E8CC/nvsdk_ngx.log
+A	Mining/Saved/SaveGames/Cheva/Level.sav
+A	Mining/Saved/SaveGames/Cheva/Player.sav
+A	Mining/Saved/SaveGames/Cheva_backup_1/Level.sav
+A	Mining/Saved/SaveGames/Cheva_backup_1/Player.sav
+
+commit d7576e4fd8797a53a4936cf465612cbff35e9c29
+Merge: 54fad98 db30d1a
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 10:16:31 2022 +0300
+
+    merged
+
+commit 54fad9885181e8995cdd747c1d0e053374b8e14b
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 10:16:30 2022 +0300
+
+    up
+
+M	PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0
+M	PlayWay/UltimateFishing_GOG/PROFILE_0
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165037449800001.d5f62232/e
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165037449800001.d5f62232/s
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165291193400000.00d12a3d/e
+R100	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165037449800001.d5f62232/g	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165291193400000.00d12a3d/g
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165291193400000.00d12a3d/s
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165291871600001.00d12a3d/e
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165291871600001.00d12a3d/g
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165291871600001.00d12a3d/s
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296194100000.93d69e87/e
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296194100000.93d69e87/g
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296194100000.93d69e87/s
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296597000001.93d69e87/e
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296597000001.93d69e87/g
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296597000001.93d69e87/s
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296607200000.c465a7df/e
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296607200000.c465a7df/g
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296607200000.c465a7df/s
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296880900001.c465a7df/e
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296880900001.c465a7df/g
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165296880900001.c465a7df/s
+M	PlayWay/UltimateFishing_GOG/output_log.txt
+M	Reshade/ReShade.ini
+M	Reshade/ReShadePreset.ini
+D	Reshade/reshade-shaders/Shaders/Daltonize.fx
+D	Reshade/reshade-shaders/Shaders/Deband.fx
+D	Reshade/reshade-shaders/Shaders/DisplayDepth.fx
+D	Reshade/reshade-shaders/Shaders/LUT.fx
+D	Reshade/reshade-shaders/Shaders/LiftGammaGain.fx
+D	Reshade/reshade-shaders/Shaders/UIMask.fx
+
+commit db30d1a32f551b0399e0d656d8bda4da7ba293b9
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sat May 21 09:19:19 2022 +0300
+
+    up
+
+A	PlayWay/Ultimate Fishing Simulator 2 Playtest/I2Source_I2Languages1DjXS0qM1dyD_A1vxjM45uOsqY7i02DfdXAt4QEKSdk4.loc
+A	PlayWay/Ultimate Fishing Simulator 2 Playtest/Player-prev.log
+M	PlayWay/Ultimate Fishing Simulator 2 Playtest/Player.log
+A	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165307912000003.55674cd9/c
+A	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165307912000003.55674cd9/e
+A	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165307912000003.55674cd9/g
+A	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165307912000003.55674cd9/s
+M	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/values
+
+commit 61aeb7b5a659f161c102e0ad2309cd3f53812d87
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri May 20 23:38:25 2022 +0300
+
+    up
+
+A	PlayWay/Ultimate Fishing Simulator 2 Playtest/Player.log
+A	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165143894000009.2fbf6095/c
+A	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165143894000009.2fbf6095/e
+A	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165143894000009.2fbf6095/g
+A	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/ArchivedEvents/165143894000009.2fbf6095/s
+A	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/config
+A	PlayWay/Ultimate Fishing Simulator 2 Playtest/Unity/e7ed4169-eae1-4ba5-bf86-2353c09d3742/Analytics/values
+
+commit 455abdee75b2830875325a35a15707c909115bb3
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri May 20 23:27:36 2022 +0300
+
+    up
+
+M	PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0
+M	PlayWay/UltimateFishing_GOG/PROFILE_0
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165227006500000.2c5b9b1b/e
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165227006500000.2c5b9b1b/g
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165227006500000.2c5b9b1b/s
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165227050900001.2c5b9b1b/e
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165227050900001.2c5b9b1b/g
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165227050900001.2c5b9b1b/s
+M	PlayWay/UltimateFishing_GOG/output_log.txt
+
+commit c0adaa09d743aae8107cc35a0baa840cbd44047c
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sat May 7 22:07:19 2022 +0300
+
+    up
+
+M	autogit.bat
+
+commit 64a9f7c0bd3a77ae409ee8366fdb24e4a8fda591
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed May 4 17:39:57 2022 +0300
+
+    up
+
+M	autogit-findall-junctions.bat
+
+commit 0a94b064158e2b4288a34d630130228c6b4363cf
+Merge: e810d7d a2b32c0
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Apr 22 22:45:45 2022 +0300
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit e810d7db826baf4fb7fc0dbf8d6dee1f1a61ae6a
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Apr 22 22:45:43 2022 +0300
+
+    up
+
+M	DuelistRunA1.v03
+
+commit a2b32c04297914033b59756eecf340d992bda2a0
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri Apr 22 19:13:22 2022 +0300
+
+    up
+
+M	2022-template.ahk
+M	POE.ahk
+
+commit f31244a255f6dcd7430bdb354817c6fc8ce684fc
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri Apr 22 17:41:38 2022 +0300
+
+    AHK v1.1.33.11
+
+M	README.md
+
+commit bd629a92309d5dba027bac20f4c7f97aa1f63685
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri Apr 22 17:41:10 2022 +0300
+
+    Update AHK v1.1.33.11
+
+M	2022-template.ahk
+A	AutoHotkey Website.url
+M	AutoHotkey.chm
+M	AutoHotkey.exe
+M	AutoHotkeyA32.exe
+M	AutoHotkeyU32.exe
+M	AutoHotkeyU64.exe
+A	Compiler/ANSI 32-bit.bin
+A	Compiler/Ahk2Exe.exe
+A	Compiler/AutoHotkeySC.bin
+A	Compiler/Unicode 32-bit.bin
+A	Compiler/Unicode 64-bit.bin
+M	Installer.ahk
+M	POE.ahk
+M	WindowSpy.ahk
+
+commit c85a8c665cca989814e66db368eab30948c53d57
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri Apr 22 17:29:54 2022 +0300
+
+    Fix AHK v1.1.26
+
+M	README.md
+
+commit 66e866ff3668c83f4c8321557b8c21c23003eb2b
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri Apr 22 17:29:20 2022 +0300
+
+    Fix AHK v1.1.26
+
+A	2022-template.ahk
+R100	FP.ahk	FishingPlanet.ahk
+D	FixMouseClick
+D	Mickey.pdn
+D	Mickey.png
+D	MyDuelistRunA1.lua
+D	POE splits.lsl
+D	POE splits.lss
+M	POE.ahk
+D	PlayGround.eapx
+M	RR.ahk
+D	SatisfactoryAHK.exe
+D	SatisfactoryTrainer.exe
+D	Verdana Small Grey.eddtheme
+D	debug.log
+D	discordB1.ico
+D	discordB2.ico
+D	discordG1.ico
+D	discordG2.ico
+D	discordW1.ico
+D	discordW2.ico
+D	dxgi.dll
+D	git.log
+D	k-test.ahk
+D	random.csv
+
+commit 772fb95c0ee71bd23553190a0c235f2518e6a256
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Apr 22 05:19:09 2022 +0300
+
+    up
+
+D	AutoHotkey Website.url
+R086	DuelistRunA1.v02	DuelistRunA1.v03
+
+commit 90ab208fda1809d23cade8b3d4749f4f36e686e4
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed Apr 20 16:40:55 2022 +0300
+
+    up
+
+M	.gitconfig
+
+commit a3cea1a86ddca24fe0a7e8e2bdb29370bd5da7dd
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Tue Apr 19 16:21:53 2022 +0300
+
+    up
+
+M	PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0
+M	PlayWay/UltimateFishing_GOG/PROFILE_0
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164993632600001.7d833e37/e
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165037449800001.d5f62232/e
+R100	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164993632600001.7d833e37/g	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165037449800001.d5f62232/g
+R052	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164993632600001.7d833e37/s	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/165037449800001.d5f62232/s
+M	PlayWay/UltimateFishing_GOG/output_log.txt
+
+commit 26dbf3418b303d8346279a57d8069ecf5d709bb1
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sun Apr 17 00:02:20 2022 +0300
+
+    up
+
+M	.gitconfig
+
+commit 51b2e921059c5ddf27a2fce3e6d17622e9d1fe9a
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Apr 14 22:59:45 2022 +0300
+
+    up
+
+M	PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0
+M	PlayWay/UltimateFishing_GOG/PROFILE_0
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164990221700001.9b175955/e
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164990221700001.9b175955/s
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164993632600001.7d833e37/e
+R100	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164990221700001.9b175955/g	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164993632600001.7d833e37/g
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164993632600001.7d833e37/s
+M	PlayWay/UltimateFishing_GOG/output_log.txt
+
+commit 1f0b42bc4c86e13bb43fe79eb97ac1f70c0fe0ef
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Apr 14 06:31:54 2022 +0300
+
+    up
+
+M	PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0
+M	PlayWay/UltimateFishing_GOG/PROFILE_0
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164954340300001.8eefe861/e
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164990221700001.9b175955/e
+R100	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164954340300001.8eefe861/g	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164990221700001.9b175955/g
+R052	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164954340300001.8eefe861/s	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164990221700001.9b175955/s
+M	PlayWay/UltimateFishing_GOG/output_log.txt
+
+commit cec23942fd1ad31009a23d3d8a43a5660b8b5130
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Apr 13 01:29:32 2022 +0300
+
+    up
+
+M	Reshade/ReShade.ini
+M	Reshade/ReShadePreset.ini
+D	Reshade/dxgi.dll
+A	Reshade/reshade-shaders/Shaders/Daltonize.fx
+A	Reshade/reshade-shaders/Shaders/Deband.fx
+A	Reshade/reshade-shaders/Shaders/DisplayDepth.fx
+A	Reshade/reshade-shaders/Shaders/TriDither.fxh
+A	Reshade/reshade-shaders/Shaders/UIMask.fx
+A	Reshade/reshade-shaders/Textures/pd80_bluenoise.png
+A	Reshade/reshade-shaders/Textures/pd80_bluenoise_rgba.png
+A	Reshade/reshade-shaders/Textures/pd80_cinelut.png
+A	Reshade/reshade-shaders/Textures/pd80_clean_lut.png
+A	Reshade/reshade-shaders/Textures/pd80_example-lut.png
+A	Reshade/reshade-shaders/Textures/pd80_gaussnoise.png
+A	Reshade/reshade-shaders/Textures/pd80_neutral-lut.png
+A	Reshade/reshade-shaders/Textures/pd80_permtexture.png
+
+commit bdd0682aaad40dfa21c944843b530ffb52432699
+Merge: 63d0387 4c78811
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Apr 11 05:02:54 2022 +0300
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit 63d03870d1b65ae06e6623a42e62926844977798
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Apr 11 05:02:52 2022 +0300
+
+    up
+
+M	PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0
+M	PlayWay/UltimateFishing_GOG/PROFILE_0
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164954340300001.8eefe861/e
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164954340300001.8eefe861/g
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164954340300001.8eefe861/s
+M	PlayWay/UltimateFishing_GOG/output_log.txt
+
+commit 4c7881172be1f811e9ce02e84dde9b43da2d9dca
+Merge: 4425143 9ae5aa9
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sun Apr 10 12:24:55 2022 +0300
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit 442514358d3a0628da92035db5172885802f9744
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sun Apr 10 12:24:53 2022 +0300
+
+    Add RimWorld saves - Dune Ancients 1.3.3287 rev1379
+
+A	Ludeon Studios/RimWorld by Ludeon Studios/CharacterEditor/options.txt
+A	Ludeon Studios/RimWorld by Ludeon Studios/CharacterEditor/pawnslots.txt
+A	Ludeon Studios/RimWorld by Ludeon Studios/Config/KeyPrefs.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/Config/Knowledge.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/Config/LastPlayedVersion.txt
+A	Ludeon Studios/RimWorld by Ludeon Studios/Config/Mod_1446523594_dubs_mint_menus_DubsMintMenusMod.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/Config/Mod_2006605356_cm_color_coded_mood_bar_1_1_MoodPatchMod.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/Config/Mod_2200054867_moddiff_RWLayoutModInternal.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/Config/ModsConfig.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/Config/Prefs.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/Config/RimHUD/Config.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/Config/RimHUD/Docked.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/Config/RimHUD/Floating.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/HugsLib/LastSeenNews.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/HugsLib/ModSettings.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/HugsLib/SpottedMods.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/OgreStack/Overrides.xml
+A	Ludeon Studios/RimWorld by Ludeon Studios/Player-prev.log
+A	Ludeon Studios/RimWorld by Ludeon Studios/Player.log
+A	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-1.rws
+A	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-2.rws
+A	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-3.rws
+A	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-4.rws
+A	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Autosave-5.rws
+A	Ludeon Studios/RimWorld by Ludeon Studios/Saves/Dune.rws
+
+commit 9ae5aa9f62f50076dfef0c3f66ecba0621bd48df
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Apr 10 00:09:25 2022 +0300
+
+    up
+
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164935932700001.b921b3bb/e
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164935932700001.b921b3bb/g
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164935932700001.b921b3bb/s
+M	PlayWay/UltimateFishing_GOG/output_log.txt
+
+commit ca02a742ae4de095bde6ae8de1fc2927dae2f163
+Merge: cd67486 3437308
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri Apr 8 18:46:29 2022 +0300
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit cd67486d08dfcf459a29bdc5af3a930bf7a0581b
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Fri Apr 8 18:46:27 2022 +0300
+
+    up
+
+M	PlayWay/UltimateFishing_GOG/PROFILE_0
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164924441800001.39dc65b5/e
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164935932700001.b921b3bb/e
+R100	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164924441800001.39dc65b5/g	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164935932700001.b921b3bb/g
+R052	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164924441800001.39dc65b5/s	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164935932700001.b921b3bb/s
+M	PlayWay/UltimateFishing_GOG/output_log.txt
+
+commit 34373080140e283556648a3c8428405c953024e1
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Apr 8 07:27:41 2022 +0300
+
+    DuelistRun filter v02
+
+A	DuelistRunA1.v02
+
+commit 29ad20d5a0b76ff072872287c9c980b7c667e08c
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Apr 8 06:53:37 2022 +0300
+
+    Splits up
+
+A	POE splits.lsl
+A	POE splits.lss
+
+commit acdce5326efcfa845a8783f4d4108d665ed18eea
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed Apr 6 16:20:01 2022 +0300
+
+    up
+
+M	PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164871658900001.6a08568a/e
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164871658900001.6a08568a/s
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164919588000001.ae1b2460/e
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164919588000001.ae1b2460/g
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164919588000001.ae1b2460/s
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164924441800001.39dc65b5/e
+R100	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164871658900001.6a08568a/g	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164924441800001.39dc65b5/g
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164924441800001.39dc65b5/s
+A	PlayWay/UltimateFishing_GOG/output_log.txt
+
+commit c28e7f070a9b021462eff9ad6143b77244a8bda3
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed Apr 6 12:45:36 2022 +0300
+
+    up
+
+D	PlayWay/UltimateFishing_GOG/output_log.txt
+M	autogit.bat
+
+commit e42da10ec4509864ebb16360c6d52041719c4fe9
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed Apr 6 12:37:42 2022 +0300
+
+    up
+
+M	autogit.bat
+
+commit 517e61d893d1974c4d0965ee105ef76b7f9d6483
+Merge: 9c86d7b 36bebaa
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed Apr 6 12:35:44 2022 +0300
+
+    up
+
+commit 9c86d7b4987263affba594c49575c122e622d85a
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed Apr 6 12:35:15 2022 +0300
+
+    up
+
+M	PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0
+M	PlayWay/UltimateFishing_GOG/PROFILE_0
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164866407800001.5b653bb4/e
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164866407800001.5b653bb4/s
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164919588000001.ae1b2460/e
+R100	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164866407800001.5b653bb4/g	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164919588000001.ae1b2460/g
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164919588000001.ae1b2460/s
+M	PlayWay/UltimateFishing_GOG/output_log.txt
+
+commit 36bebaa1812a9ef8ceab42299212e869800b0d2b
+Merge: 1f0125c 07d0350
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Apr 6 03:27:14 2022 +0300
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit 1f0125c285af3cf02056fba6dc156130d9b55f96
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Apr 6 03:27:13 2022 +0300
+
+    up
+
+M	PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0
+A	"PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0 \342\200\224 \320\272\320\276\320\277\320\270\321\217 (3)"
+M	PlayWay/UltimateFishing_GOG/PROFILE_0
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164866407800001.5b653bb4/e
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164871658900001.6a08568a/e
+R100	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164866407800001.5b653bb4/g	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164871658900001.6a08568a/g
+R052	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164866407800001.5b653bb4/s	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164871658900001.6a08568a/s
+M	PlayWay/UltimateFishing_GOG/output_log.txt
+
+commit 07d0350881350912873905c44352239187fa5b38
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Thu Mar 31 14:17:32 2022 +0300
+
+    up
+
+A	autogit-cp.bat
+
+commit 0e7eae703a7e35b18a88d194790e6b40b13662f4
+Merge: 74db578 d8d7b2e
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Mar 31 05:42:34 2022 +0300
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit 74db5780d02426ce8cfa7de6cd7b3e4e45e6c47d
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Mar 31 05:42:33 2022 +0300
+
+    up
+
+M	autogit-all.bat
+
+commit d8d7b2ee26010d83c54bc4014380a52e36ff637a
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Wed Mar 30 21:15:44 2022 +0300
+
+    Fishing up
+
+M	PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0
+A	"PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0 \342\200\224 \320\272\320\276\320\277\320\270\321\217 (2)"
+M	PlayWay/UltimateFishing_GOG/PROFILE_0
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164849546600001.a592fee4/e
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164849546600001.a592fee4/s
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164866407800001.5b653bb4/e
+R100	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164849546600001.a592fee4/g	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164866407800001.5b653bb4/g
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164866407800001.5b653bb4/s
+M	PlayWay/UltimateFishing_GOG/output_log.txt
+
+commit 2e79a6f0e6e9727e2fb8cf65406404f5ac0bf5e4
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Mar 28 22:25:13 2022 +0300
+
+    up
+
+M	PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0
+M	PlayWay/UltimateFishing_GOG/PROFILE_0
+D	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164839343600001.310a6121/e
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164849546600001.a592fee4/e
+R100	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164839343600001.310a6121/g	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164849546600001.a592fee4/g
+R052	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164839343600001.310a6121/s	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164849546600001.a592fee4/s
+M	PlayWay/UltimateFishing_GOG/output_log.txt
+A	Verdana Small Grey.eddtheme
+
+commit 1f4d7ec1074fbe6b96773141fbefc7e0a0eaa26b
+Merge: 3eac7d0 799a1b6
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Mar 27 23:56:17 2022 +0300
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit 3eac7d0fc61e8e577e0475d8b55ba4196caccf32
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Mar 27 23:53:16 2022 +0300
+
+    up
+
+A	PlayGround.eapx
+A	random.csv
+
+commit 799a1b606841ea50f75199ae464141b986200bd9
+Author: Dmytro Cheva <dmytro.cheva@gmail.com>
+Date:   Sun Mar 27 22:48:30 2022 +0300
+
+    Update autogit-init.bat
+
+M	.gitconfig
+M	autogit-init.bat
+
+commit 3e920cd56fa29a3a91b9f964267ec598274478d2
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Mar 27 22:03:41 2022 +0300
+
+    Updated autogit-init
+
+M	README.md
+D	StartGame.bat
+
+commit 637c97969ecf017f917eb8fc23e1ad91ecfff7c6
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Mar 27 22:02:25 2022 +0300
+
+    Add README.MD
+
+M	README.md
+
+commit 958efdfc16392399036a438625cc5464ac46d2ef
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Mar 27 22:02:24 2022 +0300
+
+    Initial
+
+M	README.md
+M	autogit-init.bat
+
+commit e8a24e7fd2c66d36a33c7f2c9b1a36c7b4e0f7e9
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Mar 27 22:01:20 2022 +0300
+
+    Initial
+
+M	README.md
+M	autogit-init.bat
+
+commit 5adb683118245802e7a5c5644fa65188ac36db3a
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Mar 27 21:59:34 2022 +0300
+
+    Initial
+
+M	PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0
+M	PlayWay/UltimateFishing_GOG/PROFILE_0
+M	PlayWay/UltimateFishing_GOG/Radios_user.txt
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164839343600001.310a6121/e
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164839343600001.310a6121/g
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/ArchivedEvents/164839343600001.310a6121/s
+M	PlayWay/UltimateFishing_GOG/output_log.txt
+M	README.md
+M	autogit-init.bat
+
+commit bdadec082495c9de400e31c024d6b4462b308073
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Mar 27 13:00:40 2022 +0300
+
+    PlayWay up
+
+M	PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0
+M	PlayWay/UltimateFishing_GOG/PROFILE_0
+M	PlayWay/UltimateFishing_GOG/output_log.txt
+
+commit 1b44a4194d2f9fc556bf881b5d6acea7593e5536
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Mar 27 12:35:28 2022 +0300
+
+    Reshade up
+
+D	Reshade/reshade-shaders/Textures/pd80_bluenoise.png
+D	Reshade/reshade-shaders/Textures/pd80_bluenoise_rgba.png
+D	Reshade/reshade-shaders/Textures/pd80_cinelut.png
+D	Reshade/reshade-shaders/Textures/pd80_clean_lut.png
+D	Reshade/reshade-shaders/Textures/pd80_example-lut.png
+D	Reshade/reshade-shaders/Textures/pd80_gaussnoise.png
+D	Reshade/reshade-shaders/Textures/pd80_neutral-lut.png
+D	Reshade/reshade-shaders/Textures/pd80_permtexture.png
+
+commit b6e4ccb072a115e2d2f8d2cb6e272307b5e0a970
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Mar 27 12:33:56 2022 +0300
+
+    Reshade 5.0.2
+
+D	Reshade/Executable/ReShade.ini
+D	Reshade/Executable/ReShadePreset.ini
+D	Reshade/Executable/Reshade/Shaders/AdaptiveSharpen.fx
+D	Reshade/Executable/Reshade/Shaders/Daltonize.fx
+D	Reshade/Executable/Reshade/Shaders/Monochrome.fx
+D	Reshade/Executable/Reshade/Shaders/Nostalgia.fx
+D	Reshade/Executable/Reshade/Shaders/Sepia.fx
+D	Reshade/Executable/Reshade/Shaders/TriDither.fxh
+D	Reshade/Executable/Reshade/Textures/Dirt.png
+D	Reshade/Executable/Reshade/Textures/DirtA.png
+D	Reshade/Executable/Reshade/Textures/DirtOVB.png
+D	Reshade/Executable/Reshade/Textures/DirtOVR.png
+D	Reshade/Executable/Reshade/Textures/LensDB.png
+D	Reshade/Executable/Reshade/Textures/LensDB2.png
+D	Reshade/Executable/Reshade/Textures/LensDOV.png
+D	Reshade/Executable/Reshade/Textures/LensDUV.png
+D	Reshade/Executable/Reshade/Textures/LensSprite.png
+D	Reshade/Executable/Reshade/Textures/MagicBloom_Dirt.png
+D	Reshade/Executable/Reshade/Textures/MultiLut_atlas1.png
+D	Reshade/Executable/Reshade/Textures/Stage.png
+D	Reshade/Executable/Reshade/Textures/UIMask.png
+D	Reshade/Executable/Reshade/Textures/bayer16x16.png
+D	Reshade/Executable/Reshade/Textures/ssdonoise.png
+D	Reshade/Executable/dxgi.dll
+R057	Reshade/Vulkan/ReShade.ini	Reshade/ReShade.ini
+A	Reshade/ReShadePreset.ini
+D	Reshade/ReShade_Setup_4.9.1.exe
+D	Reshade/Vulkan/ReShade32.dll
+D	Reshade/Vulkan/ReShade32.json
+D	Reshade/Vulkan/ReShade32.log
+D	Reshade/Vulkan/ReShade64.dll
+D	Reshade/Vulkan/ReShade64.json
+D	Reshade/Vulkan/ReShade64.log
+D	Reshade/Vulkan/ReShadePreset.ini
+D	Reshade/Vulkan/Shaders/AdaptiveSharpen.fx
+D	Reshade/Vulkan/Shaders/Blending.fxh
+D	Reshade/Vulkan/Shaders/ColorMatrix.fx
+D	Reshade/Vulkan/Shaders/Curves.fx
+D	Reshade/Vulkan/Shaders/DPX.fx
+D	Reshade/Vulkan/Shaders/Daltonize.fx
+D	Reshade/Vulkan/Shaders/DrawText.fxh
+D	Reshade/Vulkan/Shaders/EyeAdaption.fx
+D	Reshade/Vulkan/Shaders/FXAA.fx
+D	Reshade/Vulkan/Shaders/FXAA.fxh
+D	Reshade/Vulkan/Shaders/FakeHDR.fx
+D	Reshade/Vulkan/Shaders/FilmGrain.fx
+D	Reshade/Vulkan/Shaders/Levels.fx
+D	Reshade/Vulkan/Shaders/LiftGammaGain.fx
+D	Reshade/Vulkan/Shaders/LumaSharpen.fx
+D	Reshade/Vulkan/Shaders/Macros.fxh
+D	Reshade/Vulkan/Shaders/Monochrome.fx
+D	Reshade/Vulkan/Shaders/Nostalgia.fx
+D	Reshade/Vulkan/Shaders/ReShade.fxh
+D	Reshade/Vulkan/Shaders/ReShadeUI.fxh
+D	Reshade/Vulkan/Shaders/SMAA.fx
+D	Reshade/Vulkan/Shaders/SMAA.fxh
+D	Reshade/Vulkan/Shaders/Sepia.fx
+D	Reshade/Vulkan/Shaders/Technicolor.fx
+D	Reshade/Vulkan/Shaders/Technicolor2.fx
+D	Reshade/Vulkan/Shaders/Tonemap.fx
+D	Reshade/Vulkan/Shaders/TriDither.fxh
+D	Reshade/Vulkan/Shaders/Vibrance.fx
+D	Reshade/Vulkan/Shaders/Vignette.fx
+D	Reshade/Vulkan/Textures/AreaTex.png
+D	Reshade/Vulkan/Textures/Dirt.png
+D	Reshade/Vulkan/Textures/DirtA.png
+D	Reshade/Vulkan/Textures/DirtOVB.png
+D	Reshade/Vulkan/Textures/DirtOVR.png
+D	Reshade/Vulkan/Textures/FontAtlas.png
+D	Reshade/Vulkan/Textures/Layer.png
+D	Reshade/Vulkan/Textures/LensDB.png
+D	Reshade/Vulkan/Textures/LensDB2.png
+D	Reshade/Vulkan/Textures/LensDOV.png
+D	Reshade/Vulkan/Textures/LensDUV.png
+D	Reshade/Vulkan/Textures/LensSprite.png
+D	Reshade/Vulkan/Textures/MagicBloom_Dirt.png
+D	Reshade/Vulkan/Textures/MultiLut_atlas1.png
+D	Reshade/Vulkan/Textures/SearchTex.png
+D	Reshade/Vulkan/Textures/Stage.png
+D	Reshade/Vulkan/Textures/UIDetectMaskRGB.png
+D	Reshade/Vulkan/Textures/UIMask.png
+D	Reshade/Vulkan/Textures/bayer16x16.png
+D	Reshade/Vulkan/Textures/lut.png
+D	Reshade/Vulkan/Textures/ssdonoise.png
+A	Reshade/dxgi.dll
+R100	Reshade/Executable/Reshade/Shaders/Blending.fxh	Reshade/reshade-shaders/Shaders/Blending.fxh
+R100	Reshade/Executable/Reshade/Shaders/ColorMatrix.fx	Reshade/reshade-shaders/Shaders/ColorMatrix.fx
+R100	Reshade/Executable/Reshade/Shaders/Curves.fx	Reshade/reshade-shaders/Shaders/Curves.fx
+R100	Reshade/Executable/Reshade/Shaders/DPX.fx	Reshade/reshade-shaders/Shaders/DPX.fx
+R100	Reshade/Executable/Reshade/Shaders/DrawText.fxh	Reshade/reshade-shaders/Shaders/DrawText.fxh
+R100	Reshade/Executable/Reshade/Shaders/EyeAdaption.fx	Reshade/reshade-shaders/Shaders/EyeAdaption.fx
+R100	Reshade/Executable/Reshade/Shaders/FXAA.fx	Reshade/reshade-shaders/Shaders/FXAA.fx
+R100	Reshade/Executable/Reshade/Shaders/FXAA.fxh	Reshade/reshade-shaders/Shaders/FXAA.fxh
+R100	Reshade/Executable/Reshade/Shaders/FakeHDR.fx	Reshade/reshade-shaders/Shaders/FakeHDR.fx
+R100	Reshade/Executable/Reshade/Shaders/FilmGrain.fx	Reshade/reshade-shaders/Shaders/FilmGrain.fx
+A	Reshade/reshade-shaders/Shaders/LUT.fx
+R100	Reshade/Executable/Reshade/Shaders/Levels.fx	Reshade/reshade-shaders/Shaders/Levels.fx
+R100	Reshade/Executable/Reshade/Shaders/LiftGammaGain.fx	Reshade/reshade-shaders/Shaders/LiftGammaGain.fx
+R100	Reshade/Executable/Reshade/Shaders/LumaSharpen.fx	Reshade/reshade-shaders/Shaders/LumaSharpen.fx
+R100	Reshade/Executable/Reshade/Shaders/Macros.fxh	Reshade/reshade-shaders/Shaders/Macros.fxh
+R100	Reshade/Executable/Reshade/Shaders/ReShade.fxh	Reshade/reshade-shaders/Shaders/ReShade.fxh
+R100	Reshade/Executable/Reshade/Shaders/ReShadeUI.fxh	Reshade/reshade-shaders/Shaders/ReShadeUI.fxh
+R100	Reshade/Executable/Reshade/Shaders/SMAA.fx	Reshade/reshade-shaders/Shaders/SMAA.fx
+R100	Reshade/Executable/Reshade/Shaders/SMAA.fxh	Reshade/reshade-shaders/Shaders/SMAA.fxh
+R100	Reshade/Executable/Reshade/Shaders/Technicolor.fx	Reshade/reshade-shaders/Shaders/Technicolor.fx
+R100	Reshade/Executable/Reshade/Shaders/Technicolor2.fx	Reshade/reshade-shaders/Shaders/Technicolor2.fx
+R100	Reshade/Executable/Reshade/Shaders/Tonemap.fx	Reshade/reshade-shaders/Shaders/Tonemap.fx
+R100	Reshade/Executable/Reshade/Shaders/Vibrance.fx	Reshade/reshade-shaders/Shaders/Vibrance.fx
+R100	Reshade/Executable/Reshade/Shaders/Vignette.fx	Reshade/reshade-shaders/Shaders/Vignette.fx
+R100	Reshade/Executable/Reshade/Textures/AreaTex.png	Reshade/reshade-shaders/Textures/AreaTex.png
+R100	Reshade/Executable/Reshade/Textures/FontAtlas.png	Reshade/reshade-shaders/Textures/FontAtlas.png
+R100	Reshade/Executable/Reshade/Textures/Layer.png	Reshade/reshade-shaders/Textures/Layer.png
+R100	Reshade/Executable/Reshade/Textures/SearchTex.png	Reshade/reshade-shaders/Textures/SearchTex.png
+R100	Reshade/Executable/Reshade/Textures/UIDetectMaskRGB.png	Reshade/reshade-shaders/Textures/UIDetectMaskRGB.png
+R100	Reshade/Executable/Reshade/Textures/lut.png	Reshade/reshade-shaders/Textures/lut.png
+A	Reshade/reshade-shaders/Textures/pd80_bluenoise.png
+A	Reshade/reshade-shaders/Textures/pd80_bluenoise_rgba.png
+A	Reshade/reshade-shaders/Textures/pd80_cinelut.png
+A	Reshade/reshade-shaders/Textures/pd80_clean_lut.png
+A	Reshade/reshade-shaders/Textures/pd80_example-lut.png
+A	Reshade/reshade-shaders/Textures/pd80_gaussnoise.png
+A	Reshade/reshade-shaders/Textures/pd80_neutral-lut.png
+A	Reshade/reshade-shaders/Textures/pd80_permtexture.png
+A	dxgi.dll
+
+commit 4f872efc08afdaec8e38eac092e18728fce2b58f
+Merge: 53a27b9 08fe153
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Mar 27 12:18:14 2022 +0300
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit 53a27b915de20d2094ae81c8f62e37b4a707e422
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Mar 27 12:18:13 2022 +0300
+
+    up
+
+M	autogit-zipall.bat
+
+commit 08fe15386c9dd34cfa1111685577306a039f7921
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Mar 27 06:44:23 2022 +0200
+
+    up
+
+A	PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0
+A	"PlayWay/UltimateFishing_GOG/BACKUPS/PROFILE_0 \342\200\224 \320\272\320\276\320\277\320\270\321\217"
+A	PlayWay/UltimateFishing_GOG/PROFILE_0
+A	PlayWay/UltimateFishing_GOG/Radios_user.txt
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/config
+A	PlayWay/UltimateFishing_GOG/Unity/local.295c23978312da341813616276ac8cc7/Analytics/values
+A	PlayWay/UltimateFishing_GOG/output_log.txt
+
+commit 1568505f47c1622b2912eb2b2c632d6bd77b1908
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Mar 10 16:44:41 2022 +0200
+
+    up
+
+D	Pedalboard2 Limiter.pdl
+
+commit acb827caebc2be076e7680b4af9c733b9d611d92
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Sun Mar 6 00:12:42 2022 +0200
+
+    up
+
+A	Pedalboard2 Limiter.pdl
+
+commit 0ec3a1aea817923e97af8e4bbd0dd742eca96236
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Mar 2 03:40:54 2022 +0200
+
+    up
+
+M	RR.ahk
+
+commit 495d7f61e39288ff4bf06627aecb7d324164d107
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Fri Feb 11 11:26:38 2022 +0200
+
+    up
+
+M	MyDuelistRunA1.lua
+
+commit d4285cdaf3c5ed9f59d307e77c64f592431d84f5
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Feb 9 15:45:54 2022 +0200
+
+    up
+
+M	MyDuelistRunA1.lua
+
+commit 3b23d413d6c07d336b94d2d330bb43e9d8b3c749
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Feb 9 13:58:51 2022 +0200
+
+    up
+
+M	MyDuelistRunA1.lua
+
+commit 91ef79882dfd3a8b5fd1902c4b6b7c064bb8f2db
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Feb 9 13:14:55 2022 +0200
+
+    MyDuelistRunA1.lua
+
+D	MyDuelistRunA1
+A	MyDuelistRunA1.lua
+
+commit 8f5b1a377b518e0f74f91a198faeef3b0d1b9f6e
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Feb 9 10:50:50 2022 +0200
+
+    MyDuelistRun A1 filter
+
+A	MyDuelistRunA1
+
+commit 6b1d224de8db96cd16e15ae60490b7e9a4451d57
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Feb 3 22:23:14 2022 +0200
+
+    up
+
+M	autogit-init.bat
+
+commit f472d2c7ac0be741992015aef3a2dfac2355b845
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Thu Feb 3 22:11:31 2022 +0200
+
+    up
+
+M	autogit-init.bat
+
+commit 7da88412de866ceca86421d8ade1d4c04fe1f9a8
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Wed Feb 2 02:37:48 2022 +0200
+
+    up
+
+M	POE.ahk
+
+commit 5628f18d98f678731b4597bed8c168c2324004ed
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Feb 1 14:03:21 2022 +0200
+
+    up
+
+M	POE.ahk
+
+commit 15f3ad66422afcbac7a6ae769213fa1b00dc1a54
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Feb 1 03:59:30 2022 +0200
+
+    up
+
+M	POE.ahk
+
+commit 80b6b570a48324bcef043c6071d9df7890568c36
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Feb 1 03:41:39 2022 +0200
+
+    up
+
+M	POE.ahk
+
+commit 1b34eae9a1757b22344ca7f0a8b702ca0ef060c7
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Tue Jan 11 01:12:24 2022 +0200
+
+    up
+
+M	POE.ahk
+M	eve.ahk
+
+commit 6eeda5932163939d454b1062dad83ee96128ea2e
+Merge: 7aa387e d2b060f
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Mon Dec 27 08:40:38 2021 +0200
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit 7aa387e5064eee3518b7c469a4810d2efc3061c9
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Mon Dec 27 08:40:38 2021 +0200
+
+    Update github init script
+
+M	autogit-init.bat
+
+commit d2b060f35f2f180036ff33748509458bf3465d3c
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Sun Dec 26 22:43:39 2021 +0200
+
+    Update SF scripts
+
+M	README.md
+M	Satisfactory.ahk
+M	SatisfactoryAHK.exe
+R100	Start Game.bat	StartGame.bat
+
+commit 0b10ef882badf819a079396066270b5aa5b75b83
+Merge: 232299a 120c0c3
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Wed Dec 22 07:06:47 2021 +0200
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit 232299af0b342757e96b55cf4ebb08b2ece077f7
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Wed Dec 22 07:06:46 2021 +0200
+
+    up
+
+M	Satisfactory.ahk
+A	Start Game.bat
+
+commit 120c0c3c893255fe0bec7e8c34fd93b80db586cd
+Merge: 7517c84 ea3bd90
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Mon Dec 20 17:02:57 2021 +0200
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit 7517c84afa15a33371670a332388107cde889033
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Mon Dec 20 17:02:56 2021 +0200
+
+    up
+
+M	eve.ahk
+
+commit ea3bd9047e3d9e64e3ab0f4da2ff0ceaaeadee10
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Sun Dec 19 16:10:56 2021 +0200
+
+    Update README.md
+
+M	README.md
+
+commit e41be55e4d18d07579a9fa0f87acea2c5187984b
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Sat Dec 18 21:45:33 2021 +0200
+
+    up
+
+A	discordB1.ico
+A	discordB2.ico
+A	discordG1.ico
+A	discordG2.ico
+A	discordW1.ico
+A	discordW2.ico
+M	eve.ahk
+A	iconfile.ico
+A	sound-clicker.ahk
+A	sound-clicker.exe
+
+commit 3471e22a0f130465c19738ed7053da422628e5ba
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Fri Dec 17 19:51:34 2021 +0200
+
+    Change .gitinit
+
+M	.gitconfig
+D	autozip-all.bat
+
+commit db3372e44507822ca30968bbe535bb0fec5efe1e
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Fri Dec 17 19:10:35 2021 +0200
+
+    Add findall-junctions
+
+A	autogit-findall-junctions.bat
+
+commit 6dfd1376429a4590ce521d5052cc262e4ea598a4
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Thu Dec 16 21:40:36 2021 +0200
+
+    up
+
+D	Program.cs
+
+commit 49f4c691c3adf5395aeffa79bca36f20ee08a0c1
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Thu Dec 16 21:40:12 2021 +0200
+
+    up
+
+A	Program.cs
+D	Reshade.zip
+
+commit 4cd0254d0eca9056e505325fe110c4b1414a900e
+Merge: 3701140 e872c20
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Sun Dec 12 03:48:47 2021 +0200
+
+    up -f
+
+commit 37011404cb01fa11df2e8a083df977d8ad1d0c61
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Sun Dec 12 03:48:09 2021 +0200
+
+    up
+
+R100	Compiler/ANSI 32-bit.bin	ANSI 32-bit.bin
+R100	Compiler/Ahk2Exe.exe	Ahk2Exe.exe
+R100	Compiler/AutoHotkeySC.bin	AutoHotkeySC.bin
+D	Compiler/Satisfactory.ahk
+R100	Compiler/FixMouseClick	FixMouseClick
+A	Reshade.zip
+R100	Compiler/SatisfactoryAHK.exe	SatisfactoryAHK.exe
+R100	Compiler/Unicode 32-bit.bin	Unicode 32-bit.bin
+R100	Compiler/Unicode 64-bit.bin	Unicode 64-bit.bin
+
+commit e872c208e0a3bf0785b8b662b8f1a777ce9ccf61
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Sat Dec 11 18:36:19 2021 +0200
+
+    Reshade finally up
+
+M	Reshade.zip
+M	Reshade/Executable/ReShade.ini
+
+commit 7d327f89994ca906669ed5fe9f83ea10caaa5aff
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Sat Dec 11 18:25:54 2021 +0200
+
+    Reshade finally up
+
+M	Reshade.zip
+M	Reshade/Executable/ReShade.ini
+D	Reshade/Executable/Reshade/ReShadePreset.ini
+D	Reshade/Executable/dxgi.log
+M	Reshade/Vulkan/ReShade.ini
+
+commit b36986ead0c820f8d7a68ffbb6604f7bf31112c7
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Sat Dec 11 18:01:55 2021 +0200
+
+    Reshade up
+
+A	Reshade.zip
+M	Reshade/Executable/ReShade.ini
+M	Reshade/Vulkan/ReShade.ini
+D	Reshade/Vulkan/Shaders/Deband.fx
+D	Reshade/Vulkan/Shaders/LUT.fx
+
+commit fe24659c55907df99cd5ee9fa63fdcd293971612
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Sat Dec 11 17:57:07 2021 +0200
+
+    up
+
+D	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-29-49.png
+D	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-30-13.png
+D	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-38-08.png
+D	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-38-29.png
+D	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-38-45.png
+D	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-42-15.png
+D	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-42-24.png
+D	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-44-34.png
+D	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-46-23.png
+D	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-50-22.png
+D	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-50-31.png
+
+commit 1ef9b531631b8249aaf5d5fd6d18433a0dc543fd
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Sat Dec 11 17:55:14 2021 +0200
+
+    up
+
+M	Reshade/Executable/ReShade.ini
+A	Reshade/Executable/ReShadePreset.ini
+A	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-29-49.png
+A	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-30-13.png
+A	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-38-08.png
+A	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-38-29.png
+A	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-38-45.png
+A	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-42-15.png
+A	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-42-24.png
+A	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-44-34.png
+A	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-46-23.png
+A	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-50-22.png
+A	Reshade/Executable/Reshade/Screenshots/exefile 2021-12-11 17-50-31.png
+A	Reshade/Executable/dxgi.log
+
+commit 01df34e384763af57765bf1621805a046843b96d
+Merge: b66d9e5 6621c3c
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Sat Dec 11 14:15:59 2021 +0200
+
+    up
+
+commit b66d9e5397d12c528e769b279d54b68d574e3ac6
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Sat Dec 11 14:15:42 2021 +0200
+
+    up
+
+M	autozip-all.bat
+
+commit 6621c3c8180aeb634cb5eb02548d8177dfc3db43
+Author: Deem Cheva <47900415+dcheva@users.noreply.github.com>
+Date:   Sat Dec 4 04:28:06 2021 +0200
+
+    Autogit zipall
+
+A	autogit-zipall.bat
+D	autozip-all.bat
+
+commit 427198edf1bb56b7cf89319f6148e3ac466839fb
+Merge: f392566 01b7573
+Author: dmytro.cheva <dmytro.cheva@gmail.com>
+Date:   Fri Nov 26 15:39:56 2021 +0200
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit f392566ce7497d11ad96cec7be7bb60d2b281ccd
+Author: dmytro.cheva <dmytro.cheva@gmail.com>
+Date:   Fri Nov 26 15:39:52 2021 +0200
+
+    up
+
+R100	addzip-all.bat	autozip-all.bat
+
+commit 01b7573d2f190c5632a54d4eba3873e161bb46e2
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Thu Nov 25 22:07:12 2021 +0200
+
+    up
+
+M	Reshade/Executable/ReShade.ini
+M	Reshade/Executable/Reshade/ReShadePreset.ini
+D	Reshade/Executable/Reshade/Shaders/Deband.fx
+D	Reshade/Executable/Reshade/Shaders/LUT.fx
+M	Reshade/Vulkan/ReShade.ini
+M	Reshade/Vulkan/ReShade32.log
+M	Reshade/Vulkan/ReShade64.log
+M	Reshade/Vulkan/ReShadePreset.ini
+
+commit 9f8731bc14743206436fc473e2f4ce4a23c3bd89
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Thu Nov 25 12:37:04 2021 +0200
+
+    Reshade up
+
+R100	Reshade/ReShade.ini	Reshade/Executable/ReShade.ini
+R100	Reshade/Reshade/ReShadePreset.ini	Reshade/Executable/Reshade/ReShadePreset.ini
+R100	Reshade/Reshade/Shaders/AdaptiveSharpen.fx	Reshade/Executable/Reshade/Shaders/AdaptiveSharpen.fx
+R100	Reshade/Reshade/Shaders/Blending.fxh	Reshade/Executable/Reshade/Shaders/Blending.fxh
+R100	Reshade/Reshade/Shaders/ColorMatrix.fx	Reshade/Executable/Reshade/Shaders/ColorMatrix.fx
+R100	Reshade/Reshade/Shaders/Curves.fx	Reshade/Executable/Reshade/Shaders/Curves.fx
+R100	Reshade/Reshade/Shaders/DPX.fx	Reshade/Executable/Reshade/Shaders/DPX.fx
+R100	Reshade/Reshade/Shaders/Daltonize.fx	Reshade/Executable/Reshade/Shaders/Daltonize.fx
+R100	Reshade/Reshade/Shaders/Deband.fx	Reshade/Executable/Reshade/Shaders/Deband.fx
+R100	Reshade/Reshade/Shaders/DrawText.fxh	Reshade/Executable/Reshade/Shaders/DrawText.fxh
+R100	Reshade/Reshade/Shaders/EyeAdaption.fx	Reshade/Executable/Reshade/Shaders/EyeAdaption.fx
+R100	Reshade/Reshade/Shaders/FXAA.fx	Reshade/Executable/Reshade/Shaders/FXAA.fx
+R100	Reshade/Reshade/Shaders/FXAA.fxh	Reshade/Executable/Reshade/Shaders/FXAA.fxh
+R100	Reshade/Reshade/Shaders/FakeHDR.fx	Reshade/Executable/Reshade/Shaders/FakeHDR.fx
+R100	Reshade/Reshade/Shaders/FilmGrain.fx	Reshade/Executable/Reshade/Shaders/FilmGrain.fx
+R100	Reshade/Reshade/Shaders/LUT.fx	Reshade/Executable/Reshade/Shaders/LUT.fx
+R100	Reshade/Reshade/Shaders/Levels.fx	Reshade/Executable/Reshade/Shaders/Levels.fx
+R100	Reshade/Reshade/Shaders/LiftGammaGain.fx	Reshade/Executable/Reshade/Shaders/LiftGammaGain.fx
+R100	Reshade/Reshade/Shaders/LumaSharpen.fx	Reshade/Executable/Reshade/Shaders/LumaSharpen.fx
+R100	Reshade/Reshade/Shaders/Macros.fxh	Reshade/Executable/Reshade/Shaders/Macros.fxh
+R100	Reshade/Reshade/Shaders/Monochrome.fx	Reshade/Executable/Reshade/Shaders/Monochrome.fx
+R100	Reshade/Reshade/Shaders/Nostalgia.fx	Reshade/Executable/Reshade/Shaders/Nostalgia.fx
+R100	Reshade/Reshade/Shaders/ReShade.fxh	Reshade/Executable/Reshade/Shaders/ReShade.fxh
+R100	Reshade/Reshade/Shaders/ReShadeUI.fxh	Reshade/Executable/Reshade/Shaders/ReShadeUI.fxh
+R100	Reshade/Reshade/Shaders/SMAA.fx	Reshade/Executable/Reshade/Shaders/SMAA.fx
+R100	Reshade/Reshade/Shaders/SMAA.fxh	Reshade/Executable/Reshade/Shaders/SMAA.fxh
+R100	Reshade/Reshade/Shaders/Sepia.fx	Reshade/Executable/Reshade/Shaders/Sepia.fx
+R100	Reshade/Reshade/Shaders/Technicolor.fx	Reshade/Executable/Reshade/Shaders/Technicolor.fx
+R100	Reshade/Reshade/Shaders/Technicolor2.fx	Reshade/Executable/Reshade/Shaders/Technicolor2.fx
+R100	Reshade/Reshade/Shaders/Tonemap.fx	Reshade/Executable/Reshade/Shaders/Tonemap.fx
+R100	Reshade/Reshade/Shaders/TriDither.fxh	Reshade/Executable/Reshade/Shaders/TriDither.fxh
+R100	Reshade/Reshade/Shaders/Vibrance.fx	Reshade/Executable/Reshade/Shaders/Vibrance.fx
+R100	Reshade/Reshade/Shaders/Vignette.fx	Reshade/Executable/Reshade/Shaders/Vignette.fx
+R100	Reshade/Reshade/Textures/AreaTex.png	Reshade/Executable/Reshade/Textures/AreaTex.png
+R100	Reshade/Reshade/Textures/Dirt.png	Reshade/Executable/Reshade/Textures/Dirt.png
+R100	Reshade/Reshade/Textures/DirtA.png	Reshade/Executable/Reshade/Textures/DirtA.png
+R100	Reshade/Reshade/Textures/DirtOVB.png	Reshade/Executable/Reshade/Textures/DirtOVB.png
+R100	Reshade/Reshade/Textures/DirtOVR.png	Reshade/Executable/Reshade/Textures/DirtOVR.png
+R100	Reshade/Reshade/Textures/FontAtlas.png	Reshade/Executable/Reshade/Textures/FontAtlas.png
+R100	Reshade/Reshade/Textures/Layer.png	Reshade/Executable/Reshade/Textures/Layer.png
+R100	Reshade/Reshade/Textures/LensDB.png	Reshade/Executable/Reshade/Textures/LensDB.png
+R100	Reshade/Reshade/Textures/LensDB2.png	Reshade/Executable/Reshade/Textures/LensDB2.png
+R100	Reshade/Reshade/Textures/LensDOV.png	Reshade/Executable/Reshade/Textures/LensDOV.png
+R100	Reshade/Reshade/Textures/LensDUV.png	Reshade/Executable/Reshade/Textures/LensDUV.png
+R100	Reshade/Reshade/Textures/LensSprite.png	Reshade/Executable/Reshade/Textures/LensSprite.png
+R100	Reshade/Reshade/Textures/MagicBloom_Dirt.png	Reshade/Executable/Reshade/Textures/MagicBloom_Dirt.png
+R100	Reshade/Reshade/Textures/MultiLut_atlas1.png	Reshade/Executable/Reshade/Textures/MultiLut_atlas1.png
+R100	Reshade/Reshade/Textures/SearchTex.png	Reshade/Executable/Reshade/Textures/SearchTex.png
+R100	Reshade/Reshade/Textures/Stage.png	Reshade/Executable/Reshade/Textures/Stage.png
+R100	Reshade/Reshade/Textures/UIDetectMaskRGB.png	Reshade/Executable/Reshade/Textures/UIDetectMaskRGB.png
+R100	Reshade/Reshade/Textures/UIMask.png	Reshade/Executable/Reshade/Textures/UIMask.png
+R100	Reshade/Reshade/Textures/bayer16x16.png	Reshade/Executable/Reshade/Textures/bayer16x16.png
+R100	Reshade/Reshade/Textures/lut.png	Reshade/Executable/Reshade/Textures/lut.png
+R100	Reshade/Reshade/Textures/ssdonoise.png	Reshade/Executable/Reshade/Textures/ssdonoise.png
+R100	Reshade/dxgi.dll	Reshade/Executable/dxgi.dll
+M	Reshade/Vulkan/ReShade.ini
+M	Reshade/Vulkan/ReShade32.log
+M	Reshade/Vulkan/ReShade64.log
+R088	Reshade/Vulkan/Reshade/ReShadePreset.ini	Reshade/Vulkan/ReShadePreset.ini
+R100	Reshade/Vulkan/Reshade/Shaders/AdaptiveSharpen.fx	Reshade/Vulkan/Shaders/AdaptiveSharpen.fx
+R100	Reshade/Vulkan/Reshade/Shaders/Blending.fxh	Reshade/Vulkan/Shaders/Blending.fxh
+R100	Reshade/Vulkan/Reshade/Shaders/ColorMatrix.fx	Reshade/Vulkan/Shaders/ColorMatrix.fx
+R100	Reshade/Vulkan/Reshade/Shaders/Curves.fx	Reshade/Vulkan/Shaders/Curves.fx
+R100	Reshade/Vulkan/Reshade/Shaders/DPX.fx	Reshade/Vulkan/Shaders/DPX.fx
+R100	Reshade/Vulkan/Reshade/Shaders/Daltonize.fx	Reshade/Vulkan/Shaders/Daltonize.fx
+R100	Reshade/Vulkan/Reshade/Shaders/Deband.fx	Reshade/Vulkan/Shaders/Deband.fx
+R100	Reshade/Vulkan/Reshade/Shaders/DrawText.fxh	Reshade/Vulkan/Shaders/DrawText.fxh
+R100	Reshade/Vulkan/Reshade/Shaders/EyeAdaption.fx	Reshade/Vulkan/Shaders/EyeAdaption.fx
+R100	Reshade/Vulkan/Reshade/Shaders/FXAA.fx	Reshade/Vulkan/Shaders/FXAA.fx
+R100	Reshade/Vulkan/Reshade/Shaders/FXAA.fxh	Reshade/Vulkan/Shaders/FXAA.fxh
+R100	Reshade/Vulkan/Reshade/Shaders/FakeHDR.fx	Reshade/Vulkan/Shaders/FakeHDR.fx
+R100	Reshade/Vulkan/Reshade/Shaders/FilmGrain.fx	Reshade/Vulkan/Shaders/FilmGrain.fx
+R100	Reshade/Vulkan/Reshade/Shaders/LUT.fx	Reshade/Vulkan/Shaders/LUT.fx
+R100	Reshade/Vulkan/Reshade/Shaders/Levels.fx	Reshade/Vulkan/Shaders/Levels.fx
+R100	Reshade/Vulkan/Reshade/Shaders/LiftGammaGain.fx	Reshade/Vulkan/Shaders/LiftGammaGain.fx
+R100	Reshade/Vulkan/Reshade/Shaders/LumaSharpen.fx	Reshade/Vulkan/Shaders/LumaSharpen.fx
+R100	Reshade/Vulkan/Reshade/Shaders/Macros.fxh	Reshade/Vulkan/Shaders/Macros.fxh
+R100	Reshade/Vulkan/Reshade/Shaders/Monochrome.fx	Reshade/Vulkan/Shaders/Monochrome.fx
+R100	Reshade/Vulkan/Reshade/Shaders/Nostalgia.fx	Reshade/Vulkan/Shaders/Nostalgia.fx
+R100	Reshade/Vulkan/Reshade/Shaders/ReShade.fxh	Reshade/Vulkan/Shaders/ReShade.fxh
+R100	Reshade/Vulkan/Reshade/Shaders/ReShadeUI.fxh	Reshade/Vulkan/Shaders/ReShadeUI.fxh
+R100	Reshade/Vulkan/Reshade/Shaders/SMAA.fx	Reshade/Vulkan/Shaders/SMAA.fx
+R100	Reshade/Vulkan/Reshade/Shaders/SMAA.fxh	Reshade/Vulkan/Shaders/SMAA.fxh
+R100	Reshade/Vulkan/Reshade/Shaders/Sepia.fx	Reshade/Vulkan/Shaders/Sepia.fx
+R100	Reshade/Vulkan/Reshade/Shaders/Technicolor.fx	Reshade/Vulkan/Shaders/Technicolor.fx
+R100	Reshade/Vulkan/Reshade/Shaders/Technicolor2.fx	Reshade/Vulkan/Shaders/Technicolor2.fx
+R100	Reshade/Vulkan/Reshade/Shaders/Tonemap.fx	Reshade/Vulkan/Shaders/Tonemap.fx
+R100	Reshade/Vulkan/Reshade/Shaders/TriDither.fxh	Reshade/Vulkan/Shaders/TriDither.fxh
+R100	Reshade/Vulkan/Reshade/Shaders/Vibrance.fx	Reshade/Vulkan/Shaders/Vibrance.fx
+R100	Reshade/Vulkan/Reshade/Shaders/Vignette.fx	Reshade/Vulkan/Shaders/Vignette.fx
+R100	Reshade/Vulkan/Reshade/Textures/AreaTex.png	Reshade/Vulkan/Textures/AreaTex.png
+R100	Reshade/Vulkan/Reshade/Textures/Dirt.png	Reshade/Vulkan/Textures/Dirt.png
+R100	Reshade/Vulkan/Reshade/Textures/DirtA.png	Reshade/Vulkan/Textures/DirtA.png
+R100	Reshade/Vulkan/Reshade/Textures/DirtOVB.png	Reshade/Vulkan/Textures/DirtOVB.png
+R100	Reshade/Vulkan/Reshade/Textures/DirtOVR.png	Reshade/Vulkan/Textures/DirtOVR.png
+R100	Reshade/Vulkan/Reshade/Textures/FontAtlas.png	Reshade/Vulkan/Textures/FontAtlas.png
+R100	Reshade/Vulkan/Reshade/Textures/Layer.png	Reshade/Vulkan/Textures/Layer.png
+R100	Reshade/Vulkan/Reshade/Textures/LensDB.png	Reshade/Vulkan/Textures/LensDB.png
+R100	Reshade/Vulkan/Reshade/Textures/LensDB2.png	Reshade/Vulkan/Textures/LensDB2.png
+R100	Reshade/Vulkan/Reshade/Textures/LensDOV.png	Reshade/Vulkan/Textures/LensDOV.png
+R100	Reshade/Vulkan/Reshade/Textures/LensDUV.png	Reshade/Vulkan/Textures/LensDUV.png
+R100	Reshade/Vulkan/Reshade/Textures/LensSprite.png	Reshade/Vulkan/Textures/LensSprite.png
+R100	Reshade/Vulkan/Reshade/Textures/MagicBloom_Dirt.png	Reshade/Vulkan/Textures/MagicBloom_Dirt.png
+R100	Reshade/Vulkan/Reshade/Textures/MultiLut_atlas1.png	Reshade/Vulkan/Textures/MultiLut_atlas1.png
+R100	Reshade/Vulkan/Reshade/Textures/SearchTex.png	Reshade/Vulkan/Textures/SearchTex.png
+R100	Reshade/Vulkan/Reshade/Textures/Stage.png	Reshade/Vulkan/Textures/Stage.png
+R100	Reshade/Vulkan/Reshade/Textures/UIDetectMaskRGB.png	Reshade/Vulkan/Textures/UIDetectMaskRGB.png
+R100	Reshade/Vulkan/Reshade/Textures/UIMask.png	Reshade/Vulkan/Textures/UIMask.png
+R100	Reshade/Vulkan/Reshade/Textures/bayer16x16.png	Reshade/Vulkan/Textures/bayer16x16.png
+R100	Reshade/Vulkan/Reshade/Textures/lut.png	Reshade/Vulkan/Textures/lut.png
+R100	Reshade/Vulkan/Reshade/Textures/ssdonoise.png	Reshade/Vulkan/Textures/ssdonoise.png
+
+commit 5dbc3ef8c81e9817d44b7fb7828bd53b6192e200
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Wed Nov 24 05:53:14 2021 +0200
+
+    Reshade Vulkan
+
+R100	Reshade-Vulkan/ReShade.ini	Reshade/Vulkan/ReShade.ini
+R100	Reshade-Vulkan/ReShade32.dll	Reshade/Vulkan/ReShade32.dll
+R100	Reshade-Vulkan/ReShade32.json	Reshade/Vulkan/ReShade32.json
+A	Reshade/Vulkan/ReShade32.log
+R100	Reshade-Vulkan/ReShade64.dll	Reshade/Vulkan/ReShade64.dll
+R100	Reshade-Vulkan/ReShade64.json	Reshade/Vulkan/ReShade64.json
+A	Reshade/Vulkan/ReShade64.log
+R094	Reshade-Vulkan/Reshade/ReShadePreset.ini	Reshade/Vulkan/Reshade/ReShadePreset.ini
+R100	Reshade-Vulkan/Reshade/Shaders/AdaptiveSharpen.fx	Reshade/Vulkan/Reshade/Shaders/AdaptiveSharpen.fx
+R100	Reshade-Vulkan/Reshade/Shaders/Blending.fxh	Reshade/Vulkan/Reshade/Shaders/Blending.fxh
+R100	Reshade-Vulkan/Reshade/Shaders/ColorMatrix.fx	Reshade/Vulkan/Reshade/Shaders/ColorMatrix.fx
+R100	Reshade-Vulkan/Reshade/Shaders/Curves.fx	Reshade/Vulkan/Reshade/Shaders/Curves.fx
+R100	Reshade-Vulkan/Reshade/Shaders/DPX.fx	Reshade/Vulkan/Reshade/Shaders/DPX.fx
+R100	Reshade-Vulkan/Reshade/Shaders/Daltonize.fx	Reshade/Vulkan/Reshade/Shaders/Daltonize.fx
+R100	Reshade-Vulkan/Reshade/Shaders/Deband.fx	Reshade/Vulkan/Reshade/Shaders/Deband.fx
+R100	Reshade-Vulkan/Reshade/Shaders/DrawText.fxh	Reshade/Vulkan/Reshade/Shaders/DrawText.fxh
+R100	Reshade-Vulkan/Reshade/Shaders/EyeAdaption.fx	Reshade/Vulkan/Reshade/Shaders/EyeAdaption.fx
+R100	Reshade-Vulkan/Reshade/Shaders/FXAA.fx	Reshade/Vulkan/Reshade/Shaders/FXAA.fx
+R100	Reshade-Vulkan/Reshade/Shaders/FXAA.fxh	Reshade/Vulkan/Reshade/Shaders/FXAA.fxh
+R100	Reshade-Vulkan/Reshade/Shaders/FakeHDR.fx	Reshade/Vulkan/Reshade/Shaders/FakeHDR.fx
+R100	Reshade-Vulkan/Reshade/Shaders/FilmGrain.fx	Reshade/Vulkan/Reshade/Shaders/FilmGrain.fx
+R100	Reshade-Vulkan/Reshade/Shaders/LUT.fx	Reshade/Vulkan/Reshade/Shaders/LUT.fx
+R100	Reshade-Vulkan/Reshade/Shaders/Levels.fx	Reshade/Vulkan/Reshade/Shaders/Levels.fx
+R100	Reshade-Vulkan/Reshade/Shaders/LiftGammaGain.fx	Reshade/Vulkan/Reshade/Shaders/LiftGammaGain.fx
+R100	Reshade-Vulkan/Reshade/Shaders/LumaSharpen.fx	Reshade/Vulkan/Reshade/Shaders/LumaSharpen.fx
+R100	Reshade-Vulkan/Reshade/Shaders/Macros.fxh	Reshade/Vulkan/Reshade/Shaders/Macros.fxh
+R100	Reshade-Vulkan/Reshade/Shaders/Monochrome.fx	Reshade/Vulkan/Reshade/Shaders/Monochrome.fx
+R100	Reshade-Vulkan/Reshade/Shaders/Nostalgia.fx	Reshade/Vulkan/Reshade/Shaders/Nostalgia.fx
+R100	Reshade-Vulkan/Reshade/Shaders/ReShade.fxh	Reshade/Vulkan/Reshade/Shaders/ReShade.fxh
+R100	Reshade-Vulkan/Reshade/Shaders/ReShadeUI.fxh	Reshade/Vulkan/Reshade/Shaders/ReShadeUI.fxh
+R100	Reshade-Vulkan/Reshade/Shaders/SMAA.fx	Reshade/Vulkan/Reshade/Shaders/SMAA.fx
+R100	Reshade-Vulkan/Reshade/Shaders/SMAA.fxh	Reshade/Vulkan/Reshade/Shaders/SMAA.fxh
+R100	Reshade-Vulkan/Reshade/Shaders/Sepia.fx	Reshade/Vulkan/Reshade/Shaders/Sepia.fx
+R100	Reshade-Vulkan/Reshade/Shaders/Technicolor.fx	Reshade/Vulkan/Reshade/Shaders/Technicolor.fx
+R100	Reshade-Vulkan/Reshade/Shaders/Technicolor2.fx	Reshade/Vulkan/Reshade/Shaders/Technicolor2.fx
+R100	Reshade-Vulkan/Reshade/Shaders/Tonemap.fx	Reshade/Vulkan/Reshade/Shaders/Tonemap.fx
+R100	Reshade-Vulkan/Reshade/Shaders/TriDither.fxh	Reshade/Vulkan/Reshade/Shaders/TriDither.fxh
+R100	Reshade-Vulkan/Reshade/Shaders/Vibrance.fx	Reshade/Vulkan/Reshade/Shaders/Vibrance.fx
+R100	Reshade-Vulkan/Reshade/Shaders/Vignette.fx	Reshade/Vulkan/Reshade/Shaders/Vignette.fx
+R100	Reshade-Vulkan/Reshade/Textures/AreaTex.png	Reshade/Vulkan/Reshade/Textures/AreaTex.png
+R100	Reshade-Vulkan/Reshade/Textures/Dirt.png	Reshade/Vulkan/Reshade/Textures/Dirt.png
+R100	Reshade-Vulkan/Reshade/Textures/DirtA.png	Reshade/Vulkan/Reshade/Textures/DirtA.png
+R100	Reshade-Vulkan/Reshade/Textures/DirtOVB.png	Reshade/Vulkan/Reshade/Textures/DirtOVB.png
+R100	Reshade-Vulkan/Reshade/Textures/DirtOVR.png	Reshade/Vulkan/Reshade/Textures/DirtOVR.png
+R100	Reshade-Vulkan/Reshade/Textures/FontAtlas.png	Reshade/Vulkan/Reshade/Textures/FontAtlas.png
+R100	Reshade-Vulkan/Reshade/Textures/Layer.png	Reshade/Vulkan/Reshade/Textures/Layer.png
+R100	Reshade-Vulkan/Reshade/Textures/LensDB.png	Reshade/Vulkan/Reshade/Textures/LensDB.png
+R100	Reshade-Vulkan/Reshade/Textures/LensDB2.png	Reshade/Vulkan/Reshade/Textures/LensDB2.png
+R100	Reshade-Vulkan/Reshade/Textures/LensDOV.png	Reshade/Vulkan/Reshade/Textures/LensDOV.png
+R100	Reshade-Vulkan/Reshade/Textures/LensDUV.png	Reshade/Vulkan/Reshade/Textures/LensDUV.png
+R100	Reshade-Vulkan/Reshade/Textures/LensSprite.png	Reshade/Vulkan/Reshade/Textures/LensSprite.png
+R100	Reshade-Vulkan/Reshade/Textures/MagicBloom_Dirt.png	Reshade/Vulkan/Reshade/Textures/MagicBloom_Dirt.png
+R100	Reshade-Vulkan/Reshade/Textures/MultiLut_atlas1.png	Reshade/Vulkan/Reshade/Textures/MultiLut_atlas1.png
+R100	Reshade-Vulkan/Reshade/Textures/SearchTex.png	Reshade/Vulkan/Reshade/Textures/SearchTex.png
+R100	Reshade-Vulkan/Reshade/Textures/Stage.png	Reshade/Vulkan/Reshade/Textures/Stage.png
+R100	Reshade-Vulkan/Reshade/Textures/UIDetectMaskRGB.png	Reshade/Vulkan/Reshade/Textures/UIDetectMaskRGB.png
+R100	Reshade-Vulkan/Reshade/Textures/UIMask.png	Reshade/Vulkan/Reshade/Textures/UIMask.png
+R100	Reshade-Vulkan/Reshade/Textures/bayer16x16.png	Reshade/Vulkan/Reshade/Textures/bayer16x16.png
+R100	Reshade-Vulkan/Reshade/Textures/lut.png	Reshade/Vulkan/Reshade/Textures/lut.png
+R100	Reshade-Vulkan/Reshade/Textures/ssdonoise.png	Reshade/Vulkan/Reshade/Textures/ssdonoise.png
+
+commit 12efda11f046943901c9f65c031d71f43bc1992b
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Wed Nov 24 05:50:34 2021 +0200
+
+    Reshade added
+
+A	Reshade-Vulkan/ReShade.ini
+A	Reshade-Vulkan/ReShade32.dll
+A	Reshade-Vulkan/ReShade32.json
+A	Reshade-Vulkan/ReShade64.dll
+A	Reshade-Vulkan/ReShade64.json
+A	Reshade-Vulkan/Reshade/ReShadePreset.ini
+A	Reshade-Vulkan/Reshade/Shaders/AdaptiveSharpen.fx
+A	Reshade-Vulkan/Reshade/Shaders/Blending.fxh
+A	Reshade-Vulkan/Reshade/Shaders/ColorMatrix.fx
+A	Reshade-Vulkan/Reshade/Shaders/Curves.fx
+A	Reshade-Vulkan/Reshade/Shaders/DPX.fx
+A	Reshade-Vulkan/Reshade/Shaders/Daltonize.fx
+A	Reshade-Vulkan/Reshade/Shaders/Deband.fx
+A	Reshade-Vulkan/Reshade/Shaders/DrawText.fxh
+A	Reshade-Vulkan/Reshade/Shaders/EyeAdaption.fx
+A	Reshade-Vulkan/Reshade/Shaders/FXAA.fx
+A	Reshade-Vulkan/Reshade/Shaders/FXAA.fxh
+A	Reshade-Vulkan/Reshade/Shaders/FakeHDR.fx
+A	Reshade-Vulkan/Reshade/Shaders/FilmGrain.fx
+A	Reshade-Vulkan/Reshade/Shaders/LUT.fx
+A	Reshade-Vulkan/Reshade/Shaders/Levels.fx
+A	Reshade-Vulkan/Reshade/Shaders/LiftGammaGain.fx
+A	Reshade-Vulkan/Reshade/Shaders/LumaSharpen.fx
+A	Reshade-Vulkan/Reshade/Shaders/Macros.fxh
+A	Reshade-Vulkan/Reshade/Shaders/Monochrome.fx
+A	Reshade-Vulkan/Reshade/Shaders/Nostalgia.fx
+A	Reshade-Vulkan/Reshade/Shaders/ReShade.fxh
+A	Reshade-Vulkan/Reshade/Shaders/ReShadeUI.fxh
+A	Reshade-Vulkan/Reshade/Shaders/SMAA.fx
+A	Reshade-Vulkan/Reshade/Shaders/SMAA.fxh
+A	Reshade-Vulkan/Reshade/Shaders/Sepia.fx
+A	Reshade-Vulkan/Reshade/Shaders/Technicolor.fx
+A	Reshade-Vulkan/Reshade/Shaders/Technicolor2.fx
+A	Reshade-Vulkan/Reshade/Shaders/Tonemap.fx
+A	Reshade-Vulkan/Reshade/Shaders/TriDither.fxh
+A	Reshade-Vulkan/Reshade/Shaders/Vibrance.fx
+A	Reshade-Vulkan/Reshade/Shaders/Vignette.fx
+A	Reshade-Vulkan/Reshade/Textures/AreaTex.png
+A	Reshade-Vulkan/Reshade/Textures/Dirt.png
+A	Reshade-Vulkan/Reshade/Textures/DirtA.png
+A	Reshade-Vulkan/Reshade/Textures/DirtOVB.png
+A	Reshade-Vulkan/Reshade/Textures/DirtOVR.png
+A	Reshade-Vulkan/Reshade/Textures/FontAtlas.png
+A	Reshade-Vulkan/Reshade/Textures/Layer.png
+A	Reshade-Vulkan/Reshade/Textures/LensDB.png
+A	Reshade-Vulkan/Reshade/Textures/LensDB2.png
+A	Reshade-Vulkan/Reshade/Textures/LensDOV.png
+A	Reshade-Vulkan/Reshade/Textures/LensDUV.png
+A	Reshade-Vulkan/Reshade/Textures/LensSprite.png
+A	Reshade-Vulkan/Reshade/Textures/MagicBloom_Dirt.png
+A	Reshade-Vulkan/Reshade/Textures/MultiLut_atlas1.png
+A	Reshade-Vulkan/Reshade/Textures/SearchTex.png
+A	Reshade-Vulkan/Reshade/Textures/Stage.png
+A	Reshade-Vulkan/Reshade/Textures/UIDetectMaskRGB.png
+A	Reshade-Vulkan/Reshade/Textures/UIMask.png
+A	Reshade-Vulkan/Reshade/Textures/bayer16x16.png
+A	Reshade-Vulkan/Reshade/Textures/lut.png
+A	Reshade-Vulkan/Reshade/Textures/ssdonoise.png
+A	Reshade/ReShade.ini
+A	Reshade/ReShade_Setup_4.9.1.exe
+A	Reshade/Reshade/ReShadePreset.ini
+A	Reshade/Reshade/Shaders/AdaptiveSharpen.fx
+A	Reshade/Reshade/Shaders/Blending.fxh
+A	Reshade/Reshade/Shaders/ColorMatrix.fx
+A	Reshade/Reshade/Shaders/Curves.fx
+A	Reshade/Reshade/Shaders/DPX.fx
+A	Reshade/Reshade/Shaders/Daltonize.fx
+A	Reshade/Reshade/Shaders/Deband.fx
+A	Reshade/Reshade/Shaders/DrawText.fxh
+A	Reshade/Reshade/Shaders/EyeAdaption.fx
+A	Reshade/Reshade/Shaders/FXAA.fx
+A	Reshade/Reshade/Shaders/FXAA.fxh
+A	Reshade/Reshade/Shaders/FakeHDR.fx
+A	Reshade/Reshade/Shaders/FilmGrain.fx
+A	Reshade/Reshade/Shaders/LUT.fx
+A	Reshade/Reshade/Shaders/Levels.fx
+A	Reshade/Reshade/Shaders/LiftGammaGain.fx
+A	Reshade/Reshade/Shaders/LumaSharpen.fx
+A	Reshade/Reshade/Shaders/Macros.fxh
+A	Reshade/Reshade/Shaders/Monochrome.fx
+A	Reshade/Reshade/Shaders/Nostalgia.fx
+A	Reshade/Reshade/Shaders/ReShade.fxh
+A	Reshade/Reshade/Shaders/ReShadeUI.fxh
+A	Reshade/Reshade/Shaders/SMAA.fx
+A	Reshade/Reshade/Shaders/SMAA.fxh
+A	Reshade/Reshade/Shaders/Sepia.fx
+A	Reshade/Reshade/Shaders/Technicolor.fx
+A	Reshade/Reshade/Shaders/Technicolor2.fx
+A	Reshade/Reshade/Shaders/Tonemap.fx
+A	Reshade/Reshade/Shaders/TriDither.fxh
+A	Reshade/Reshade/Shaders/Vibrance.fx
+A	Reshade/Reshade/Shaders/Vignette.fx
+A	Reshade/Reshade/Textures/AreaTex.png
+A	Reshade/Reshade/Textures/Dirt.png
+A	Reshade/Reshade/Textures/DirtA.png
+A	Reshade/Reshade/Textures/DirtOVB.png
+A	Reshade/Reshade/Textures/DirtOVR.png
+A	Reshade/Reshade/Textures/FontAtlas.png
+A	Reshade/Reshade/Textures/Layer.png
+A	Reshade/Reshade/Textures/LensDB.png
+A	Reshade/Reshade/Textures/LensDB2.png
+A	Reshade/Reshade/Textures/LensDOV.png
+A	Reshade/Reshade/Textures/LensDUV.png
+A	Reshade/Reshade/Textures/LensSprite.png
+A	Reshade/Reshade/Textures/MagicBloom_Dirt.png
+A	Reshade/Reshade/Textures/MultiLut_atlas1.png
+A	Reshade/Reshade/Textures/SearchTex.png
+A	Reshade/Reshade/Textures/Stage.png
+A	Reshade/Reshade/Textures/UIDetectMaskRGB.png
+A	Reshade/Reshade/Textures/UIMask.png
+A	Reshade/Reshade/Textures/bayer16x16.png
+A	Reshade/Reshade/Textures/lut.png
+A	Reshade/Reshade/Textures/ssdonoise.png
+A	Reshade/dxgi.dll
+
+commit e46710e6ace203f991e0860fa6382eeb685294fb
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Sun Nov 21 00:34:17 2021 +0200
+
+    up
+
+A	Compiler/Satisfactory.ahk
+A	Compiler/SatisfactoryAHK.exe
+
+commit 1a2b750e94b5202fd17811319cbad3054d2c13be
+Merge: f6fbd87 249db87
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Sat Nov 20 01:49:23 2021 +0200
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit f6fbd878dfc6104dd9634492a60ff91be3f8a118
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Sat Nov 20 01:49:22 2021 +0200
+
+    Satisfactory.ahk up
+
+M	Satisfactory.ahk
+
+commit 249db87e97a9418af2488dd6e377dc083d864b1f
+Merge: 13e7be2 f71b1ec
+Author: dmytro.cheva <dmytro.cheva@gmail.com>
+Date:   Fri Nov 19 00:53:57 2021 +0200
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit 13e7be24918747ae7610bf3ef72d154b7c680652
+Author: dmytro.cheva <dmytro.cheva@gmail.com>
+Date:   Fri Nov 19 00:53:55 2021 +0200
+
+    up
+
+A	addzip-all.bat
+
+commit f71b1eca2e65c915269ae74f55de03e2a5023f2d
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Thu Nov 18 20:57:04 2021 +0200
+
+    Satisfactory.ahk done
+
+M	Satisfactory.ahk
+A	SatisfactoryTrainer.exe
+
+commit 0a083c52089b262cb7ce5e1396f84562562fcdfc
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Thu Nov 18 07:59:23 2021 +0200
+
+    DiabloIII.ahk up
+
+M	DiabloIII.ahk
+
+commit dc52f0732d622f6bb4b9e57a021c2bb329e43337
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Mon Nov 15 05:22:36 2021 +0200
+
+    up
+
+M	DiabloIII.ahk
+
+commit 65943df3e6fa9ea2b60853ec1396b4957e5a723c
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Mon Nov 15 04:04:17 2021 +0200
+
+    up
+
+M	DiabloIII.ahk
+
+commit 5b5848c53213ca34dd9a0e3fe6248e1bd40895c7
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Mon Nov 15 04:00:54 2021 +0200
+
+    up
+
+D	FS19_ReFillStationByCheva.7z
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/ReShade.ini
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/ReShade32.dll
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/ReShade32.json
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/ReShade64.dll
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/ReShade64.json
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/ReShade64.log
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/ReShadePreset.ini
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/AdaptiveSharpen.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/ColorMatrix.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/Curves.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/DPX.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/EyeAdaption.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/FXAA.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/FXAA.fxh
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/FakeHDR.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/FilmGrain.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/Levels.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/LiftGammaGain.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/LumaSharpen.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/ReShade.fxh
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/ReShadeUI.fxh
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/SMAA.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/SMAA.fxh
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/Technicolor.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/Technicolor2.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/Tonemap.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/Vibrance.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/Vignette.fx
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/AreaTex.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/Dirt.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/DirtA.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/DirtOVB.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/DirtOVR.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/FontAtlas.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/Layer.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/LensDB.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/LensDB2.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/LensDOV.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/LensDUV.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/LensSprite.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/MagicBloom_Dirt.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/MultiLut_atlas1.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/SearchTex.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/Stage.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/UIMask.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/bayer16x16.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/lut.png
+D	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/ssdonoise.png
+
+commit dcdeea1177e60e9f6f05c2a67060f04dfcfb04ae
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Mon Nov 15 03:59:42 2021 +0200
+
+    DiabloIII.ahk
+
+A	DiabloIII.ahk
+
+commit 37d7af93667aa2fa2ff92b6fcb61b7b4af77cb6d
+Merge: f37f471 fbdf712
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Mon Nov 15 03:56:40 2021 +0200
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit f37f47147403321ca4785881771c97443bb28473
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Mon Nov 15 03:56:39 2021 +0200
+
+    up
+
+A	FS19_ReFillStationByCheva.7z
+
+commit fbdf712a692945e4a20667c020f1f56f4dfd51b3
+Author: dmytro.cheva <dmytro.cheva@gmail.com>
+Date:   Sun Nov 14 23:55:55 2021 +0200
+
+    up
+
+D	Satisfactory Early Access Plus 10 Trainer Updated 2021.03.22.exe
+M	Satisfactory.ahk
+
+commit 066bda73e0fa04551ab9655dbdeee0bae240eef5
+Author: dmytro.cheva <dmytro.cheva@gmail.com>
+Date:   Sat Nov 13 20:06:39 2021 +0200
+
+    up
+
+A	Satisfactory Early Access Plus 10 Trainer Updated 2021.03.22.exe
+M	Satisfactory.ahk
+
+commit d5867ba07228ab335891cc000d5da96838845679
+Merge: 8c735d9 050accc
+Author: dmytro.cheva <dmytro.cheva@gmail.com>
+Date:   Sun Sep 26 10:15:38 2021 +0300
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit 8c735d928f0c37097fb0ebb0c3f1358d3d175015
+Author: dmytro.cheva <dmytro.cheva@gmail.com>
+Date:   Sun Sep 26 10:15:33 2021 +0300
+
+    up
+
+M	POE.ahk
+
+commit 050accc89bd0eaac74465ebbdf582e02eb761219
+Author: unknown <Dmitry Cheusov@Mikle-surface.edimax.com>
+Date:   Sat Aug 14 14:05:16 2021 +0300
+
+    up
+
+M	k-test.ahk
+A	rimworld-planshet.ahk
+
+commit 3ead0c0fc775b8ffc1e06274865d9032591afb66
+Author: unknown <Dmitry Cheusov@Mikle-surface.edimax.com>
+Date:   Sat Aug 14 09:35:33 2021 +0300
+
+    up
+
+A	k-test.ahk
+
+commit 761f5bef43b0dfdcf11a263449f2fe76b0481bcf
+Merge: 5f215b5 c7bb799
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Sun Aug 8 19:48:07 2021 +0300
+
+    up
+
+commit 5f215b53d456955b3a641d92d167051852559a36
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Sun Aug 8 19:45:57 2021 +0300
+
+    up
+
+M	POE.ahk
+
+commit c7bb799d606c3f75445f716899c31166f1950b13
+Author: dmytro.cheva <dmytro.cheva@gmail.com>
+Date:   Mon Aug 2 13:17:14 2021 +0300
+
+    up
+
+M	POE.ahk
+
+commit 823f4bc47be5727b6a9ba70ee1a3105894e630ce
+Author: dmytro.cheva <dmytro.cheva@gmail.com>
+Date:   Mon Aug 2 13:15:32 2021 +0300
+
+    up
+
+D	POE2min.ahk
+
+commit 89d9ec31d4fef03318e84be5738e71df5d8c4720
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Thu Jul 1 23:08:51 2021 +0300
+
+    Add Ctrl-A for all Ctrl hotkeys
+
+M	POE.ahk
+
+commit bd956f7265dd55e5191431c580d162eb0182c99e
+Merge: c2a390b 0c50941
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Mon Jun 21 02:25:29 2021 +0300
+
+    Merge branch 'main' of https://github.com/dcheva/AHK
+
+commit c2a390b32362e498c8003598cb2d35ad45710d90
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Mon Jun 21 02:25:28 2021 +0300
+
+    up
+
+M	POE.ahk
+
+commit 0c509415ce2eafe93e1a1fa4f96ebafbcae27cf4
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Sun Jun 20 18:14:08 2021 +0300
+
+    up
+
+M	POE.ahk
+
+commit d98b8107fbee1caeb4018bcbd334eb2385cbe756
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Sun Jun 20 18:10:32 2021 +0300
+
+    up
+
+A	POE2min.ahk
+M	Satisfactory.ahk
+
+commit 1a940d6d6c4eaf4388665dd4617ad8d9704f1bd0
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Wed May 19 15:29:46 2021 +0300
+
+    Satisfactory script updated
+
+M	Satisfactory.ahk
+
+commit e4d2f588d30a0782823ac31bab94de6a022708e9
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Wed May 19 15:25:09 2021 +0300
+
+    Satisfactory script updated
+
+M	Satisfactory.ahk
+
+commit e1d609c2a81166b6d7de7f1fbb4180739904079b
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Wed May 19 15:19:49 2021 +0300
+
+    up
+
+M	Satisfactory.ahk
+
+commit 57340f820fcbfb150b89684bfdf7f55ccaab40e5
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Sat May 15 02:38:49 2021 +0300
+
+    up
+
+M	POE.ahk
+
+commit e16b6fba862164908f4b0f1079d5a302a017e091
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Thu May 6 07:29:38 2021 +0300
+
+    up
+
+M	POE.ahk
+
+commit 9222314e5b097196ffe97927a57aed560d02d2f1
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Wed May 5 07:35:13 2021 +0300
+
+    up
+
+M	POE.ahk
+
+commit bfada78e409f489aed00b963626d8d709b702acf
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Tue May 4 17:30:24 2021 +0300
+
+    up
+
+M	POE.ahk
+
+commit 6d3a95ada4fd812850ad4a132a452a4c31e3d18d
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Sat May 1 22:59:07 2021 +0300
+
+    up
+
+M	POE.ahk
+
+commit 0d86c2fa5b02a8a44d9f523c283eceb3e8bdf5a4
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Thu Apr 22 17:06:21 2021 +0300
+
+    up
+
+M	POE.ahk
+M	RR.ahk
+
+commit aba01f71a0bcdacc970cb984335271e1e759b9b3
+Author: dcheva <dmitry.cheva@gmail.com>
+Date:   Thu Apr 22 14:17:57 2021 +0300
+
+    up
+
+M	FixMouseClick.ahk
+
+commit 1d143cb4a7f73827102cd1215f28375f05f2f3b6
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Tue Apr 20 00:29:14 2021 +0300
+
+    up
+
+M	debug.log
+
+commit 1ad3f919ed49d6af5a5c8df80d30381c527e3ad1
+Author: dcheva <dmytro.cheva@gmail.com>
+Date:   Mon Apr 19 20:22:53 2021 +0300
+
+    first commit
+
+A	.gitconfig
+A	AF.ahk
+A	ATS.ahk
+A	AU3_Spy.exe
+A	AutoHotkey Website.url
+A	AutoHotkey.chm
+A	AutoHotkey.exe
+A	AutoHotkeyA32.exe
+A	AutoHotkeyU32.exe
+A	AutoHotkeyU64.exe
+A	Compiler/ANSI 32-bit.bin
+A	Compiler/Ahk2Exe.exe
+A	Compiler/AutoHotkeySC.bin
+A	Compiler/FixMouseClick
+A	Compiler/Unicode 32-bit.bin
+A	Compiler/Unicode 64-bit.bin
+A	DRO.ahk
+A	Empyrion.ahk
+A	FP.ahk
+A	FixMouseClick.ahk
+A	FixMouseClick.exe
+A	FixMouseClick32.exe
+A	FixMouseClick64.exe
+A	Installer.ahk
+A	Medieval.ahk
+A	Mickey.ico
+A	Mickey.pdn
+A	Mickey.png
+A	POE.ahk
+A	README.md
+A	RR.ahk
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/ReShade.ini
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/ReShade32.dll
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/ReShade32.json
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/ReShade64.dll
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/ReShade64.json
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/ReShade64.log
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/ReShadePreset.ini
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/AdaptiveSharpen.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/ColorMatrix.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/Curves.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/DPX.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/EyeAdaption.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/FXAA.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/FXAA.fxh
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/FakeHDR.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/FilmGrain.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/Levels.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/LiftGammaGain.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/LumaSharpen.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/ReShade.fxh
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/ReShadeUI.fxh
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/SMAA.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/SMAA.fxh
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/Technicolor.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/Technicolor2.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/Tonemap.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/Vibrance.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Shaders/Vignette.fx
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/AreaTex.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/Dirt.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/DirtA.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/DirtOVB.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/DirtOVR.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/FontAtlas.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/Layer.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/LensDB.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/LensDB2.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/LensDOV.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/LensDUV.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/LensSprite.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/MagicBloom_Dirt.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/MultiLut_atlas1.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/SearchTex.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/Stage.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/UIMask.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/bayer16x16.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/lut.png
+A	ReShadeVulcan/ALLUSERSPROFILE_ReShade/Textures/ssdonoise.png
+A	Satisfactory.ahk
+A	WindowSpy.ahk
+A	autogit-all.bat
+A	autogit-init.bat
+A	autogit-loop.bat
+A	autogit.bat
+A	debug.log
+A	eve.ahk
+A	git.log
+A	license.txt
+A	scroll.ahk
+A	scrollMore.ahk
+A	torn.ahk
+A	vJoyFSX.py
+A	vJoyWTRC.py

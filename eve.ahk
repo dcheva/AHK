@@ -4,7 +4,9 @@
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 
 ;reload
-$^+R::Reload
+$^+R::
+  Reload
+Return
 
 ;suspend/resume
 $^+S::
@@ -25,14 +27,15 @@ $^+W::
   SoundPlay %A_WinDir%\Media\Windows Logoff Sound.wav
   Sleep, 1000
   ExitApp
-return
+Return
 ;-----Let's play!-----
 
 
 ;overview position
-global ViewTop := 240
+;global ViewTop := 240
+global ViewTop := 210
 global ViewLeft := 1700
-global ViewStep := 17
+global ViewStep := 18
 
 ;locked targets position
 global LockedTop := 90
@@ -88,7 +91,6 @@ clkLocked(pos:=1)
 
 ;enable mouse clicker (random time 1-10 sec, current mouse position)
 $^+C::
-	BreakLoop := 0
 	Send, {^+C}
 	MouseGetPos, ClickX, ClickY
 	SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
@@ -101,10 +103,9 @@ $^+C::
 		}
 		MouseGetPos, OrigX, OrigY
 		MouseClick, left, %ClickX%, %ClickY%
-		Sleep, 100
-		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 		MouseMove, %OrigX%, %OrigY%
 		Sleep, % ran(3000, 6000)
+		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 	}
 return
 
@@ -203,10 +204,5 @@ $^+a::
 		MouseClick, Left, 1610, 130, 1, 4, , ; fullscreen 100 windowed 130
 		MouseMove, %OrigX%, %OrigY%
 		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
-return	
-
-; break clicker loop
-$Space::
-	BreakLoop := 1
-	Send, {Space}
 return
+
