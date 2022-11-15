@@ -1,6 +1,76 @@
 ;for AHK 1.1.34.04
 ;by cheva (c) MIT 2012-2022
 
+
+;-=-\ Init \-=-
+
+;overview position
+;fullscreen 210 windowed 240
+global ViewTop := 210
+;global ViewTop := 240
+global ViewLeft := 1700
+global ViewStep := 18
+
+;locked targets position
+;fullscreen 50 windowed 80
+global LockedTop := 50
+global LockedTop := 80
+global LockedLeft := 1450
+global LockedStep := -110
+
+;other globals
+global BreakLoop := 0
+global StopKeys := 1
+global ClickX := 0
+global ClickY := 0
+
+;functions
+ran(min, max)
+{
+	random, ran, min, max
+	return ran
+}
+
+clkView(pos:=1)
+{
+	if(StopKeys == 0)
+	{
+		top := ViewTop + (ViewStep * (pos-1))
+		lft := ViewLeft
+		MouseGetPos, OrigX, OrigY
+		MouseMove, %lft%, %top%
+		;Send, {Ctrl Down}
+		;Sleep, 100
+		;MouseClick, left, , 
+		;Sleep, 100
+		;Send, {Ctrl Up}
+		MouseClick, left, , 
+		MouseMove, %OrigX%, %OrigY%
+		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
+	}
+}
+
+clkLocked(pos:=1)
+{
+	if(StopKeys == 0)
+	{
+		top := LockedTop
+		lft := LockedLeft + (LockedStep * (pos-1))
+		MouseGetPos, OrigX, OrigY
+		MouseMove, %lft%, %top%
+		MouseClick, left, , 
+		Sleep, 100
+		MouseClick, left, , 
+		MouseMove, %OrigX%, %OrigY%
+		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
+	}
+}
+
+;-=-/ Init /-=-
+
+
+
+
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 
 ;reload
@@ -30,64 +100,6 @@ $^+W::
 Return
 ;-----Let's play!-----
 
-
-;overview position
-;global ViewTop := 240
-global ViewTop := 210
-global ViewLeft := 1700
-global ViewStep := 18
-
-;locked targets position
-global LockedTop := 90
-global LockedLeft := 1470
-global LockedStep := -110
-
-;other globals
-global BreakLoop := 0
-global StopKeys := 1
-global ClickX := 0
-global ClickY := 0
-
-;functions
-ran(min, max)
-{
-	random, ran, min, max
-	return ran
-}
-
-clkView(pos:=1)
-{
-	if(StopKeys == 0)
-	{
-		top := ViewTop + (ViewStep * (pos-1))
-		lft := ViewLeft
-		MouseGetPos, OrigX, OrigY
-		MouseMove, %lft%, %top%
-		Send, {Ctrl Down}
-		Sleep, 100
-		MouseClick, left, , 
-		Send, {Ctrl Up}
-		MouseClick, left, , 
-		MouseMove, %OrigX%, %OrigY%
-		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
-	}
-}
-
-clkLocked(pos:=1)
-{
-	if(StopKeys == 0)
-	{
-		top := LockedTop
-		lft := LockedLeft + (LockedStep * (pos-1))
-		MouseGetPos, OrigX, OrigY
-		MouseMove, %lft%, %top%
-		MouseClick, left, , 
-		Sleep, 100
-		MouseClick, left, , 
-		MouseMove, %OrigX%, %OrigY%
-		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
-	}
-}
 
 ;enable mouse clicker (random time 1-10 sec, current mouse position)
 $^+C::
@@ -200,8 +212,11 @@ return
 
 ; jump once
 $^+a::
+$!a::
 		MouseGetPos, OrigX, OrigY
-		MouseClick, Left, 1610, 130, 1, 4, , ; fullscreen 100 windowed 130
+;fullscreen 100 windowed 130
+		MouseClick, Left, 1615, 105, 1, 4, , 
+;		MouseClick, Left, 1615, 135, 1, 4, , 
 		MouseMove, %OrigX%, %OrigY%
 		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 return
