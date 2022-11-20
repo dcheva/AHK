@@ -15,7 +15,7 @@ global ViewStep := 18
 ;fullscreen 50 windowed 80
 global LockedTop := 50
 global LockedTop := 80
-global LockedLeft := 1450
+global LockedLeft := 1500
 global LockedStep := -110
 
 ;other globals
@@ -59,8 +59,8 @@ clkLocked(pos:=1)
 		MouseGetPos, OrigX, OrigY
 		MouseMove, %lft%, %top%
 		MouseClick, left, , 
-		Sleep, 100
-		MouseClick, left, , 
+		;Sleep, 100
+		;MouseClick, left, , 
 		MouseMove, %OrigX%, %OrigY%
 		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 	}
