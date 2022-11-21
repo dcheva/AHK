@@ -75,15 +75,15 @@ return
 
 $^A::
   Send, {T}
-  Sleep, 10 
+  Sleep, 20 
   Send, ^T
-  Sleep, 10 
+  Sleep, 20 
   Send, ^R
-  Sleep, 10 
+  Sleep, 20 
   Send, ^E
   Sleep, 10
   Send, ^W
-  Sleep, 10 
+  Sleep, 20 
   Send, ^Q
   Sleep, 20
   Send, {MButton}
