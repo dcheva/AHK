@@ -96,13 +96,13 @@ $R::
   Send, {D}
 return
 
-;T for banner
-;MB for mark or curse
+;D for mine detonation
+;MB for mine
 $Space::
   Send, {Space}
   Sleep, 10 
   Send, {MButton}
-  Sleep, 200 
+  Sleep, 500
   Send, {D}
 return
 

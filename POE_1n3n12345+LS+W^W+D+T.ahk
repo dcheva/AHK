@@ -96,8 +96,9 @@ $R::
   Send, {D}
 return
 
+;D for mine detonation
+;MB for mine
 ;T for banner
-;MB for mark or curse
 $Space::
   Send, {Space}
   Sleep, 10 
