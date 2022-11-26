@@ -92,18 +92,14 @@ return
 ; achtung minen!
 $R::
   Send, {R}
-  Sleep, 200 
+  Sleep, 250
   Send, {D}
 return
 
-;T for banner
-;MB for mark or curse
 $Space::
   Send, {Space}
   Sleep, 10 
   Send, {MButton}
-;  Sleep, 100
-;  Send, {T}
 return
 
 ;go hideout on F5
@@ -118,7 +114,7 @@ $LShift::
 GetKeyState, state, LButton
 if (state = "D") {
   Send, {R}
-  Sleep, 200 
+  Sleep, 250
   Send, {D}
 }
 return

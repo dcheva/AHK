@@ -92,7 +92,7 @@ return
 ; achtung minen!
 $R::
   Send, {R}
-  Sleep, 200 
+  Sleep, 250
   Send, {D}
 return
 
@@ -102,7 +102,7 @@ $Space::
   Send, {Space}
   Sleep, 10 
   Send, {MButton}
-  Sleep, 500
+  Sleep, 250
   Send, {D}
 return
 
@@ -118,7 +118,7 @@ $LShift::
 GetKeyState, state, LButton
 if (state = "D") {
   Send, {R}
-  Sleep, 200 
+  Sleep, 250
   Send, {D}
 }
 return
