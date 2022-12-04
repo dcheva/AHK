@@ -123,7 +123,5 @@ if (state = "D") {
   Send, {R}
   Sleep, 250
   Send, {D}
-  Sleep, 250
-  Send, {T}
 }
 return
