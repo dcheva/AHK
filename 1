@@ -1,9 +1,21 @@
 
-C:\Projects\AHK>pushd C:\Projects   && cd C:\Projects   && autogit-off-all   && pause
+C:\Projects\AHK>pushd C:\Projects 
 
-C:\Projects>for / %d in (*.*) DO (cd "%d"   && autogit-offline Offline update all   && cd .. ) 
+C:\Projects>autogit-off-all
 
-C:\Projects>(cd "addBot"   && autogit-offline Offline update all   && cd .. ) 
+C:\Projects>cd . 
+
+C:\Projects>for / %d in (*.*) DO (
+cd "%d"  
+ autogit-off-line Offline update all  
+ cd .. 
+) 
+
+C:\Projects>(
+cd "addBot"  
+ autogit-off-line Offline update all  
+ cd .. 
+) 
 
 C:\Projects\addBot>git add -A 
 
@@ -14,32 +26,12 @@ Your branch is ahead of 'origin/initial' by 1 commit.
 
 nothing to commit, working tree clean
 
-C:\Projects\addBot>(cd "AHK"   && autogit-offline Offline update all   && cd .. ) 
+C:\Projects>(
+cd "AHK"  
+ autogit-off-line Offline update all  
+ cd .. 
+) 
 
-C:\Projects\addBot>(cd "ats-142-public"   && autogit-offline Offline update all   && cd .. ) 
+C:\Projects\AHK>git add -A 
 
-C:\Projects\addBot>(cd "dotnet"   && autogit-offline Offline update all   && cd .. ) 
-
-C:\Projects\addBot>(cd "eve_profiles"   && autogit-offline Offline update all   && cd .. ) 
-
-C:\Projects\addBot>(cd "FactoryGame"   && autogit-offline Offline update all   && cd .. ) 
-
-C:\Projects\addBot>(cd "fs22"   && autogit-offline Offline update all   && cd .. ) 
-
-C:\Projects\addBot>(cd "Horizons"   && autogit-offline Offline update all   && cd .. ) 
-
-C:\Projects\addBot>(cd "MM2017"   && autogit-offline Offline update all   && cd .. ) 
-
-C:\Projects\addBot>(cd "POB"   && autogit-offline Offline update all   && cd .. ) 
-
-C:\Projects\addBot>(cd "Reshade"   && autogit-offline Offline update all   && cd .. ) 
-
-C:\Projects\addBot>(cd "RimWorlds"   && autogit-offline Offline update all   && cd .. ) 
-
-C:\Projects\addBot>(cd "SpaceRangersHD"   && autogit-offline Offline update all   && cd .. ) 
-
-C:\Projects\addBot>(cd "Starcom"   && autogit-offline Offline update all   && cd .. ) 
-
-C:\Projects\addBot>(cd "SweetTransit"   && autogit-offline Offline update all   && cd .. ) 
-
-C:\Projects\addBot>(cd "Valheim"   && autogit-offline Offline update all   && cd .. ) 
+C:\Projects\AHK>git commit -am "Offline update all      " 
