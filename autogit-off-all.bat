@@ -3,8 +3,7 @@ cd .
 for /d %%d in (*.*) DO (
 @echo off
 cd "%%d"
-@echo // autogit-off-line Offline update all \\ --------------------
-echo "%%d"
+@echo // autogit-off-line "Offline update all" in "%%d" \\
 autogit-off-line Offline update all
 cd ..
 )
