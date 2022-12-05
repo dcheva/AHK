@@ -6,4 +6,5 @@ cd "%%d"
 echo "%%d"
 autogit-off-line Offline update all
 cd ..
+@echo ----------------
 )
