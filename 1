@@ -2,24 +2,6 @@
 C:\Projects\AHK>pushd C:\Projects 
 
 C:\Projects>autogit-off-all
-
-C:\Projects>cd . 
-
-C:\Projects>for / %d in (*.*) DO (
-cd "%d"  
- autogit-off-line Offline update all  
- cd .. 
-) 
-
-C:\Projects>(
-cd "addBot"  
- autogit-off-line Offline update all  
- cd .. 
-) 
-
-C:\Projects\addBot>git add -A 
-
-C:\Projects\addBot>git commit -am "Offline update all      " 
 On branch initial
 Your branch is ahead of 'origin/initial' by 1 commit.
   (use "git push" to publish your local commits)
