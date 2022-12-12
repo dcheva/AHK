@@ -10,7 +10,7 @@ $^+R::Reload
 $^+S::
 ;pause/resume
 $^+P::
-;use both to sleep/pause
+  ;use both to sleep/pause
   ;thanks to Rohwedder
   ;https://www.autohotkey.com/boards/viewtopic.php?t=50594
   Suspend ;Suspend Hotkeys
@@ -28,23 +28,8 @@ $^+W::
 return
 ;-----Let's play!-----
 
-SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
-
-;reload
-$^+R::Reload
-
-;suspend/resume
-$^+S::
-  Suspend, toggle
-  SoundPlay %A_WinDir%\Media\Windows Battery Low.wav
-return
-
-;pause/resume
-$^+P::
-  Pause, toggle
-  SoundPlay %A_WinDir%\Media\Windows Balloon.wav
-return
-
-;exit
-$^+W::ExitApp
-
+;SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
+;SoundPlay %A_WinDir%\Media\Windows Battery Low.wav
+;SoundPlay %A_WinDir%\Media\Windows Balloon.wav
+;SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
+;SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
