@@ -87,7 +87,7 @@ return
 ;T for banner
 $Space::
   Send, {Space}
-  SendMy("T", 10)
+; SendMy("T", 10)
   SendMy("D", 250)
 return
 
