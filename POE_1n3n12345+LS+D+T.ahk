@@ -92,8 +92,6 @@ return
 ; achtung minen!
 $R::
   Send, {R}
-  Sleep, 250
-  Send, {D}
 return
 
 ;D for mine detonation
@@ -105,7 +103,6 @@ $Space::
   Send, {T}
   Sleep, 100
   Send, {MButton}
-  Sleep, 250
   Send, {D}
 return
 
@@ -121,7 +118,5 @@ $LShift::
 GetKeyState, state, LButton
 if (state = "D") {
   Send, {R}
-  Sleep, 250
-  Send, {D}
 }
 return
