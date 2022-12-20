@@ -101,8 +101,6 @@ $Space::
   Send, {Space}
   Sleep, 20
   Send, {MButton}
-  Sleep, 20
-  Send, {T}
   Sleep, 200
   Send, {D}
 return
