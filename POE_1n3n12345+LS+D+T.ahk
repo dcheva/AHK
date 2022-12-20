@@ -99,9 +99,8 @@ return
 ;T for banner
 $Space::
   Send, {Space}
-  Sleep, 10 
   Send, {T}
-  Sleep, 100
+  Sleep, 200
   Send, {MButton}
   Send, {D}
 return
