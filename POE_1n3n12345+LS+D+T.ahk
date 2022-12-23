@@ -94,11 +94,8 @@ $R::
   Send, {R}
 return
 
-;T for skill
-;D for mine detonation
 $Space::
   Send, {Space}
-  Send, {MButton}
   Send, {T}
   Sleep, 20
   Send, {D}
