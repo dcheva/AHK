@@ -97,7 +97,7 @@ return
 $Space::
   Send, {Space}
   Send, {T}
-  Sleep, 50
+  Sleep, 100
   Send, {D}
 return
 
