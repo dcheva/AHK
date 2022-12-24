@@ -31,18 +31,19 @@ return
 ;functions
 clkToKill()
 {
-	Send, {Q}
-	Sleep, 100
-	Send, {F}
-	Sleep, 100
-	Send, {E}
-	Sleep, 100
-	Send, {LButton}
-	Sleep, 100
-	Send, {MButton}
-	Sleep, 100
-	Send, {RButton}
-	SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
+  Send, {Q}
+  Sleep, 100
+  Send, {F}
+  Sleep, 100
+  Send, {E}
+  Sleep, 100
+  Send, {LButton}
+  Sleep, 100
+  Send, {MButton}
+  Sleep, 100
+  Send, {RButton}
+  Sleep, 100
+  SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 }
 
 $^Numpad0::
@@ -61,13 +62,13 @@ $4::
 ;$5::
 ;$f::
   Send, 1
-  Sleep, 10  
+  Sleep, 10
   Send, 2
-  Sleep, 10  
+  Sleep, 10
   Send, 3
-  Sleep, 10  
+  Sleep, 10
   Send, 4
-  Sleep, 10  
+  Sleep, 10
   Send, 5
 ;  Sleep, 10  
 ;  Send, f
@@ -75,17 +76,17 @@ return
 
 $^A::
   Send, {T}
-  Sleep, 10 
+  Sleep, 100
   Send, ^T
-  Sleep, 10 
+  Sleep, 100
   Send, ^R
-  Sleep, 10 
+  Sleep, 100
   Send, ^E
-  Sleep, 10
+  Sleep, 100
   Send, ^W
-  Sleep, 10 
+  Sleep, 100
   Send, ^Q
-  Sleep, 10
+  Sleep, 100
   Send, {MButton}
 return
 
@@ -96,10 +97,11 @@ return
 
 $Space::
   Send, {Space}
-  Sleep, 10
+  Sleep, 100
   Send, {MButton}
+  Sleep, 100
   Send, {T}
-  Sleep, 200
+  Sleep, 500
   Send, {D}
 return
 
