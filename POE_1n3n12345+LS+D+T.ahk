@@ -75,17 +75,17 @@ return
 
 $^A::
   Send, {T}
-  Sleep, 20 
+  Sleep, 10 
   Send, ^T
-  Sleep, 20 
+  Sleep, 10 
   Send, ^R
-  Sleep, 20 
+  Sleep, 10 
   Send, ^E
   Sleep, 10
   Send, ^W
-  Sleep, 20 
+  Sleep, 10 
   Send, ^Q
-  Sleep, 20
+  Sleep, 10
   Send, {MButton}
 return
 
@@ -96,11 +96,11 @@ return
 
 $Space::
   Send, {Space}
+  Sleep, 10
+  Send, {MButton}
   Send, {T}
-  Sleep, 100
+  Sleep, 200
   Send, {D}
-;  Sleep, 10
-;  Send, {MButton}
 return
 
 ;go hideout on F5
