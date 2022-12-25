@@ -97,11 +97,11 @@ return
 
 $Space::
   Send, {Space}
-  Sleep, 100
+  Sleep, 10
   Send, {MButton}
-  Sleep, 100
+  Sleep, 40
   Send, {T}
-  Sleep, 500
+  Sleep, 200
   Send, {D}
 return
 
