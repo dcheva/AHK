@@ -37,7 +37,7 @@ return
 ; run clicker loop
 #IfWinActive, Path of Exile 
 $^P:: 
-BS::
+$Backspace::
   BreakLoop := 0
   Loop, 1000 { 
     if (BreakLoop == 1) {
@@ -46,6 +46,10 @@ BS::
     }
     Send ^{Click} 
     Sleep, 100 
+    ; hold Backspace to break loop
+    if GetKeyState("Backspace", "P") {
+      BreakLoop := 1
+    }
   }
 return
 
