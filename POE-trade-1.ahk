@@ -40,13 +40,13 @@ $^P::
 $Backspace::
   BreakLoop := 0
   Loop, 1000 { 
+    Send ^{Click} 
+    Sleep, 100 
     ; hold Backspace to break loop
     if (BreakLoop == 1 or GetKeyState("Backspace", "P")) {
       BreakLoop := 0
       break
     }
-    Send ^{Click} 
-    Sleep, 100 
   }
 return
 
