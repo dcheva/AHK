@@ -37,7 +37,7 @@ return
 ; run clicker loop
 #IfWinActive, Path of Exile 
 $^P:: 
-$V::
+BS::
   BreakLoop := 0
   Loop, 1000 { 
     if (BreakLoop == 1) {
