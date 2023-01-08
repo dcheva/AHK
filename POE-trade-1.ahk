@@ -33,3 +33,25 @@ return
 ;SoundPlay %A_WinDir%\Media\Windows Balloon.wav
 ;SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
 ;SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
+
+; run clicker loop
+#IfWinActive, Path of Exile 
+$^P:: 
+$V::
+  BreakLoop := 0
+  Loop, 1000 { 
+    if (BreakLoop == 1) {
+      BreakLoop = 0
+      break
+    }
+    Send ^{Click} 
+    Sleep, 100 
+  }
+return
+
+; break clicker loop
+#IfWinActive, Path of Exile 
+$Space::
+  BreakLoop := 1
+  Send, {Space}
+return
