@@ -99,10 +99,10 @@ $Space::
   Send, {Space}
   Sleep, 10
   Send, {MButton}
-  Sleep, 40
+  Sleep, 250
   Send, {T}
-  Sleep, 200
-  Send, {D}
+;  Sleep, 200
+;  Send, {D}
 return
 
 ;go hideout on F5
