@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/WinGetActiveStats.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:28 GMT -->
+<head>
+<title>WinGetActiveStats - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The WinGetActiveStats command combines the features of WinGetActiveTitle and WinGetPos into one command." />
+<meta name="ahk:equiv-v2" content="lib/WinGetPos.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>WinGetActiveStats</h1>
+
+<p>Combines the functions of <a href="WinGetActiveTitle.html">WinGetActiveTitle</a> and <a href="WinGetPos.html">WinGetPos</a> into one command.</p>
+
+<pre class="Syntax"><span class="func">WinGetActiveStats</span>, OutTitle, OutWidth, OutHeight, OutX, OutY</pre>
+<h2 id="Parameters">Parameters</h2>
+<dl>
+
+  <dt>OutTitle</dt>
+  <dd><p>The name of the output variable in which to store the title of the active window.</p></dd>
+
+  <dt>OutWidth, OutHeight</dt>
+  <dd><p>The names of the output variables in which to store the width and height of the active window.</p></dd>
+
+  <dt>OutX, OutY</dt>
+  <dd><p>The names of the output variables in which to store the X and Y coordinates of the active window's upper left corner.</p></dd>
+
+</dl>
+
+<h2 id="Remarks">Remarks</h2>
+<p>If no matching window is found, the output variables will be made blank.</p>
+<p>This command is equivalent to the following sequence:</p>
+<pre><a href="WinGetTitle.html">WinGetTitle</a>, OutTitle, A
+<a href="WinGetPos.html">WinGetPos</a>, OutX, OutY, OutWidth, OutHeight, A</pre>
+<p>If the active window is a hidden window and <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> is off (the default), all commands except <a href="WinShow.html">WinShow</a> will fail to "see" it. If there is no active window for this reason or any other, this command will set all of its output variables to be blank.</p>
+<h2 id="Related">Related</h2>
+<p><a href="WinGetPos.html">WinGetPos</a>, <a href="WinGetActiveTitle.html">WinGetActiveTitle</a>, <a href="WinGetTitle.html">WinGetTitle</a>, <a href="WinGetClass.html">WinGetClass</a>, <a href="WinGetText.html">WinGetText</a>, <a href="ControlGetText.html">ControlGetText</a></p>
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> Retrieves and reports the title, size and position of the active window.</p>
+<pre>WinGetActiveStats, Title, Width, Height, X, Y
+MsgBox, The active window "%Title%" is %Width% wide`, %Height% tall`, and positioned at %X%`,%Y%.</pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013f79d7977b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/WinGetActiveStats.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:28 GMT -->
+</html>

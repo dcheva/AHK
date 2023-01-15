@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/WinActivateBottom.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:28 GMT -->
+<head>
+<title>WinActivateBottom - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The WinActivateBottom command is similar to the WinActivate command but it activates the bottommost matching window rather than the topmost." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>WinActivateBottom</h1>
+
+<p>Same as <a href="WinActivate.html">WinActivate</a> except that it activates the bottommost matching window rather than the topmost.</p>
+
+<pre class="Syntax"><span class="func">WinActivateBottom</span> <span class="optional">, WinTitle, WinText, ExcludeTitle, ExcludeText</span></pre>
+<h2 id="Parameters">Parameters</h2>
+<dl>
+
+  <dt>WinTitle</dt>
+  <dd><p>A window title or other criteria identifying the target window. See <a href="../misc/WinTitle.html">WinTitle</a>.</p></dd>
+
+  <dt>WinText</dt>
+  <dd><p>If present, this parameter must be a substring from a single text element of the target window (as revealed by the included Window Spy utility). Hidden text elements are detected if <a href="DetectHiddenText.html">DetectHiddenText</a> is ON.</p></dd>
+
+  <dt>ExcludeTitle</dt>
+  <dd><p>Windows whose titles include this value will not be considered.</p></dd>
+
+  <dt>ExcludeText</dt>
+  <dd><p>Windows whose text include this value will not be considered.</p></dd>
+
+</dl>
+
+<h2 id="Remarks">Remarks</h2>
+<p>The bottommost window is typically the one least recently used, except when windows have been reordered, such as with <a href="WinSet.html#Bottom">WinSet Bottom</a>.</p>
+<p>If there is only one matching window, WinActivateBottom behaves identically to <a href="WinActivate.html">WinActivate</a>.</p>
+<p><a href="GroupAdd.html">Window groups</a> are more advanced than this command, so consider using them for more features and flexibility.</p>
+<p>If the window is minimized and inactive, it is automatically restored prior to being activated. <span class="ver">[v1.1.20+]:</span> If <em>WinTitle</em> is the letter "A" and the other parameters are omitted, the active window is restored. <span class="ver">[v1.1.28.02+]:</span> The window is restored even if it was already active.</p>
+<p>Six attempts will be made to activate the target window over the course of 60ms. Thus, it is usually unnecessary to follow it with the <a href="WinWaitActive.html">WinWaitActive</a> command.</p>
+<p>Unlike <a href="WinActivate.html">WinActivate</a>, the <a href="../misc/WinTitle.html#LastFoundWindow">Last Found Window</a> cannot be used because it might not be the bottommost window. Therefore, at least one of the parameters must be non-blank.</p>
+<p>When a window is activated immediately after another window was activated, task bar buttons may start flashing on some systems (depending on OS and settings). To prevent this, use <a href="_WinActivateForce.html">#WinActivateForce</a>.</p>
+<p>Window titles and text are case sensitive. Hidden windows are not detected unless <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> has been turned on.</p>
+
+<h2 id="Related">Related</h2>
+<p><a href="WinActivate.html">WinActivate</a>, <a href="_WinActivateForce.html">#WinActivateForce</a>, <a href="SetTitleMatchMode.html">SetTitleMatchMode</a>, <a href="DetectHiddenWindows.html">DetectHiddenWindows</a>, <a href="WinExist.html">WinExist()</a>, <a href="WinActive.html">WinActive()</a>, <a href="WinWaitActive.html">WinWaitActive</a>, <a href="WinWait.html">WinWait</a>, <a href="WinWaitClose.html">WinWaitClose</a>, <a href="GroupActivate.html">GroupActivate</a></p>
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> Press a hotkey to visit all open browser windows in order from oldest to newest.</p>
+<pre>#i:: <em>; Win+I</em>
+SetTitleMatchMode, 2
+WinActivateBottom, - Microsoft Internet Explorer
+return</pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013f65bd42d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/WinActivateBottom.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:28 GMT -->
+</html>

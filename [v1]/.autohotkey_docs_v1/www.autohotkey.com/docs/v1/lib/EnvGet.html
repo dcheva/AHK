@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/EnvGet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:15 GMT -->
+<head>
+<title>EnvGet - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The EnvGet command retrieves an environment variable." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>EnvGet <span class="ver">[v1.0.43.08+]</span></h1>
+
+<p>Retrieves an environment variable.</p>
+
+<pre class="Syntax"><span class="func">EnvGet</span>, OutputVar, EnvVarName</pre>
+<h2 id="Parameters">Parameters</h2>
+<dl>
+
+  <dt>OutputVar</dt>
+  <dd><p>The name of the output variable in which to store the string.</p></dd>
+
+  <dt>EnvVarName</dt>
+  <dd><p>The name of the <a href="../Concepts.html#environment-variables">environment variable</a> to retrieve. For example: <code>EnvGet, OutputVar, Path</code>.</p></dd>
+
+</dl>
+<h2 id="Remarks">Remarks</h2>
+<p>If the specified environment variable is empty or does not exist, <em>OutputVar</em> is made blank.</p>
+<p>The operating system limits each environment variable to 32 KB of text.</p>
+<h2 id="Related">Related</h2>
+<p><a href="EnvSet.html">EnvSet</a>, <a href="_NoEnv.html">#NoEnv</a>, <a href="../Concepts.html#environment-variables">environment variables</a>, <a href="EnvUpdate.html">EnvUpdate</a>, <a href="SetEnv.html">SetEnv</a>, <a href="Run.html">Run</a>, <a href="Run.html">RunWait</a></p>
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> Retrieves an environment variable and stores its value in <var>OutputVar</var>.</p>
+<pre>EnvGet, OutputVar, LogonServer</pre>
+</div>
+
+<div class="ex" id="ExProgramFiles">
+<p><a class="ex_number" href="#ExProgramFiles"></a> Retrieves and reports the path of the "Program Files" directory. See <a href="RegRead.html#ExProgramFiles">RegRead example #2</a> for an alternative method.</p>
+<pre>EnvGet, OutputVar, % <a href="../Variables.html#Is64bitOS">A_Is64bitOS</a> ? "ProgramW6432" : "ProgramFiles"
+MsgBox, Program files are in: %OutputVar%</pre>
+</div>
+
+<div class="ex" id="ExLocalAppData">
+<p><a class="ex_number" href="#ExLocalAppData"></a> Retrieves and reports the path of the current user's Local AppData directory.</p>
+<pre>EnvGet, LocalAppData, LocalAppData
+MsgBox, %A_UserName%'s Local directory is located at: %LocalAppData%</pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a0133d9f8c2d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/EnvGet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:15 GMT -->
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/WinMove.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:15 GMT -->
+<head>
+<title>WinMove - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The WinMove command changes the position and/or size of the specified window." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>WinMove</h1>
+
+<p>Changes the position and/or size of the specified window.</p>
+
+<pre class="Syntax"><span class="func">WinMove</span>, X, Y
+<span class="func">WinMove</span>, WinTitle, WinText, X, Y <span class="optional">, Width, Height, ExcludeTitle, ExcludeText</span>
+</pre>
+<h2 id="Parameters">Parameters</h2>
+<dl>
+
+  <dt>X, Y</dt>
+  <dd><p>The X and Y coordinates (in pixels) of the upper left corner of the target window's new location, which can be <a href="../Variables.html#Expressions">expressions</a>. The upper-left pixel of the screen is at 0, 0.</p>
+    <p>If these are the only parameters given with the command, the <a href="../misc/WinTitle.html#LastFoundWindow">Last Found Window</a> will be used as the target window.</p>
+    <p>Otherwise, X and/or Y can be omitted, in which case the current position is used.</p></dd>
+
+  <dt>WinTitle</dt>
+  <dd><p>A window title or other criteria identifying the target window. See <a href="../misc/WinTitle.html">WinTitle</a>. See also the <a href="#limitation">known limitation</a> below.</p></dd>
+
+  <dt>WinText</dt>
+  <dd><p>If present, this parameter must be a substring from a single text element of the target window (as revealed by the included Window Spy utility). Hidden text elements are detected if <a href="DetectHiddenText.html">DetectHiddenText</a> is ON. See also the <a href="#limitation">known limitation</a> below.</p></dd>
+
+  <dt>Width, Height</dt>
+  <dd><p>The new width and height of the window (in pixels), which can be <a href="../Variables.html#Expressions">expressions</a>. If either is omitted, blank, or the word DEFAULT, the size in that dimension will not be changed.</p></dd>
+
+  <dt>ExcludeTitle</dt>
+  <dd><p>Windows whose titles include this value will not be considered.</p></dd>
+
+  <dt>ExcludeText</dt>
+  <dd><p>Windows whose text include this value will not be considered.</p></dd>
+
+</dl>
+
+<h2 id="Remarks">Remarks</h2>
+<p>If <em>Width</em> and <em>Height</em> are small (or negative), most windows with a title bar will generally go no smaller than 112 x 27 pixels (however, some types of windows may have a different minimum size). If <em>Width</em> and <em>Height</em> are large, most windows will go no larger than approximately 12 pixels beyond the dimensions of the desktop.</p>
+<p>Negative values are allowed for the x and y coordinates to support multi-monitor systems and to allow a window to be moved entirely off screen.</p>
+<p>Although WinMove cannot move minimized windows, it can move hidden windows if <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> is on.</p>
+<p>The speed of WinMove is affected by <a href="SetWinDelay.html">SetWinDelay</a>.</p>
+<p>Window titles and text are case sensitive. Hidden windows are not detected unless <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> has been turned on.</p>
+<p id="limitation"><strong>Known limitation</strong>: If <em>WinTitle</em> or <em>WinText</em> contains <code>(</code>, <code>[</code> or <code>{</code>, but not the closing counterpart, such as <code>WinMove, KEDIT - [</code>, the parameter is automatically interpreted as an <a href="../Variables.html#Expressions">expression</a>, resulting in an error message. To avoid this, you can use a <a href="../Variables.html#percent-space">leading percent sign</a> to force a literal string instead, such as <code>WinMove, % "KEDIT - ["</code>.</p>
+<p>On systems with multiple screens which have different DPI settings, the final position and size of the window may differ from the requested values due to <a href="../misc/DPIScaling.html">OS DPI scaling</a>.</p>
+
+<h2 id="Related">Related</h2>
+<p><a href="ControlMove.html">ControlMove</a>, <a href="WinGetPos.html">WinGetPos</a>, <a href="WinHide.html">WinHide</a>, <a href="WinMinimize.html">WinMinimize</a>, <a href="WinMaximize.html">WinMaximize</a>, <a href="WinSet.html">WinSet</a></p>
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExLastFound">
+<p><a class="ex_number" href="#ExLastFound"></a> Opens the calculator, waits until it exists and moves it to the upper-left corner of the screen.</p>
+<pre>Run, calc.exe
+WinWait, Calculator
+WinMove, 0, 0 <em>; Use the window found by WinWait.</em></pre>
+</div>
+
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> Creates a fixed-size popup window that shows the contents of the clipboard and moves it to the upper-left corner of the screen.</p>
+<pre>SplashTextOn, 400, 300, Clipboard, The clipboard contains:`n%Clipboard%
+WinMove, Clipboard,, 0, 0
+MsgBox, Press OK to dismiss the SplashText
+SplashTextOff</pre>
+</div>
+
+<div class="ex" id="ExCenter">
+<p><a class="ex_number" href="#ExCenter"></a> Centers a window on the screen.</p>
+<pre>CenterWindow("ahk_class Notepad")
+
+CenterWindow(WinTitle)
+{
+    WinGetPos,,, Width, Height, %WinTitle%
+    WinMove, %WinTitle%,, (A_ScreenWidth/2)-(Width/2), (A_ScreenHeight/2)-(Height/2)
+}</pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013407c8b77b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/WinMove.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:15 GMT -->
+</html>

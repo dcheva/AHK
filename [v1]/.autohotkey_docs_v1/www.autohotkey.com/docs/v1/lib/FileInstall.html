@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileInstall.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:21 GMT -->
+<head>
+<title>FileInstall - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The FileInstall command includes the specified file inside the compiled version of the script." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>FileInstall</h1>
+
+<p>Includes the specified file inside the <a href="../Scripts.html#ahk2exe">compiled version</a> of the script.</p>
+
+<pre class="Syntax"><span class="func">FileInstall</span>, Source, Dest <span class="optional">, Overwrite</span></pre>
+<h2 id="Parameters">Parameters</h2>
+<dl>
+
+  <dt>Source</dt>
+  <dd><p>The name of the file to be added to the compiled EXE. The file is assumed to be in (or relative to) the script's own directory if an absolute path isn't specified.</p>
+    <p>The file name <strong>must not</strong> contain double quotes, variable references (e.g. %A_ProgramFiles%), or wildcards. In addition, any special characters such as literal percent signs and commas must be <a href="../misc/EscapeChar.html">escaped</a> (just like in the parameters of all other commands). Finally, this parameter must be listed to the right of the FileInstall command (that is, not on a <a href="../Scripts.html#continuation">continuation line</a> beneath it).</p></dd>
+
+  <dt>Dest</dt>
+  <dd><p>When <em>Source</em> is extracted from the EXE, this is the name of the file to be created. It is assumed to be in <a href="../Variables.html#WorkingDir">%A_WorkingDir%</a> if an absolute path isn't specified. The destination directory must already exist. Unlike <em>Source</em>, variable references may be used.</p></dd>
+
+  <dt>Overwrite</dt>
+  <dd>
+    <p>This parameter determines whether to overwrite files if they already exist. If this parameter is 1 (true), the command overwrites existing files. If omitted or 0 (false), the command does not overwrite existing files.</p>
+    <p>This parameter can be an <a href="../Variables.html#Expressions">expression</a>, even one that evalutes to true or false (since true and false are stored internally as 1 and 0).</p>
+  </dd>
+
+</dl>
+
+<h2 id="Error_Handling">Error Handling</h2>
+<p><span class="ver">[v1.1.04+]</span>: This command is able to throw an exception on failure. For more information, see <a href="Catch.html#RuntimeErrors">Runtime Errors</a>.</p>
+<p><a href="../misc/ErrorLevel.html">ErrorLevel</a> is set to 1 on failure or 0 on success.</p>
+<p>Any case where the file cannot be written to the destination is considered failure. For example:</p>
+<ul>
+  <li>The destination file already exists and the <em>Overwrite</em> parameter was 0 (false) or omitted.</li>
+  <li>The destination file could not be opened due to a permission error, or because the file is in use.</li>
+  <li>The destination path was invalid or specifies a folder which does not exist.</li>
+  <li>The source file does not exist (only for uncompiled scripts).</li>
+  <li>Source and destination are the same location (only for uncompiled scripts).</li>
+</ul>
+
+<h2 id="Remarks">Remarks</h2>
+<p>When this command is read by <a href="../Scripts.html#ahk2exe">Ahk2Exe</a> during compilation of the script, the file specified by <em>Source</em> is added to the resulting compiled script. Later, when the compiled script EXE runs and the call to FileInstall is executed, the file is extracted from the EXE and written to the location specified by <em>Dest</em>.</p>
+<p>Files added to a script are neither compressed nor encrypted during compilation, but the compiled script EXE can be compressed by using the appropriate option in Ahk2Exe.</p>
+<p>If this command is used in a normal (uncompiled) script, a simple file copy will be performed instead -- this helps the testing of scripts that will eventually be compiled.</p>
+
+<h2 id="Related">Related</h2>
+<p><a href="FileCopy.html">FileCopy</a>, <a href="_Include.html">#Include</a></p>
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> Includes a text file inside the compiled version of the script. Later, when the compiled script is executed, the included file is extracted to another location with another name. If a file with this name already exists at this location, it will be overwritten.</p>
+<pre>FileInstall, My File.txt, %A_Desktop%\Example File.txt, 1</pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a0138a3a7377b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileInstall.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:21 GMT -->
+</html>

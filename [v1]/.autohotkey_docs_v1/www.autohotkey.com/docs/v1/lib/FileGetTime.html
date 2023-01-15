@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileGetTime.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:24 GMT -->
+<head>
+<title>FileGetTime - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The FileGetTime command retrieves the datetime stamp of a file or folder." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>FileGetTime</h1>
+
+<p>Retrieves the datetime stamp of a file or folder.</p>
+
+<pre class="Syntax"><span class="func">FileGetTime</span>, OutputVar <span class="optional">, Filename, WhichTime</span></pre>
+<h2 id="Parameters">Parameters</h2>
+<dl>
+
+  <dt>OutputVar</dt>
+  <dd><p>The name of the output variable in which to store the retrieved date-time in format <a href="FileSetTime.html#YYYYMMDD">YYYYMMDDHH24MISS</a>. The time is your own local time, not UTC/GMT.</p></dd>
+
+  <dt>Filename</dt>
+  <dd><p>The name of the target file or folder, which is assumed to be in <a href="../Variables.html#WorkingDir">%A_WorkingDir%</a> if an absolute path isn't specified. If omitted, the current file of the innermost enclosing <a href="LoopFile.html">File-Loop</a> will be used instead.</p></dd>
+
+  <dt>WhichTime</dt>
+  <dd><p>If blank or omitted, it defaults to M (modification time). Otherwise, specify one of the following letters to set which timestamp should be retrieved:</p>
+    <ul>
+      <li>M = Modification time</li>
+      <li>C = Creation time</li>
+      <li>A = Last access time</li>
+    </ul>
+  </dd>
+
+</dl>
+
+<h2 id="Error_Handling">Error Handling</h2>
+<p><span class="ver">[v1.1.04+]</span>: This command is able to throw an exception on failure. For more information, see <a href="Catch.html#RuntimeErrors">Runtime Errors</a>.</p>
+<p><a href="../misc/ErrorLevel.html">ErrorLevel</a> is set to 1 if there was a problem or 0 otherwise.</p>
+<p><a href="../Variables.html#LastError">A_LastError</a> is set to the result of the operating system's GetLastError() function.</p>
+
+<h2 id="Remarks">Remarks</h2>
+<p>See <a href="FileSetTime.html#YYYYMMDD">YYYYMMDDHH24MISS</a> for an explanation of dates and times.</p>
+<h2 id="Related">Related</h2>
+<p><a href="FileSetTime.html">FileSetTime</a>, <a href="FormatTime.html">FormatTime</a>, <a href="IfIs.html">If var is [not] type</a>, <a href="FileGetAttrib.html">FileGetAttrib</a>, <a href="FileSetAttrib.html">FileSetAttrib</a>, <a href="FileGetSize.html">FileGetSize</a>, <a href="FileGetVersion.html">FileGetVersion</a>, <a href="LoopFile.html">File-loop</a>, <a href="EnvAdd.html">EnvAdd (date math)</a>, <a href="EnvSub.html">EnvSub (date difference)</a></p>
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> Retrieves the modification time and stores it in <var>OutputVar</var>.</p>
+<pre>FileGetTime, OutputVar, C:\My Documents\test.doc</pre>
+</div>
+
+<div class="ex" id="ExC">
+<p><a class="ex_number" href="#ExC"></a> Retrieves the creation time and stores it in <var>OutputVar</var>.</p>
+<pre>FileGetTime, OutputVar, C:\My Documents\test.doc, C</pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013b28c3c2d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileGetTime.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:24 GMT -->
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/SetRegView.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:04 GMT -->
+<head>
+<title>SetRegView - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The SetRegView command sets the registry view used by RegRead, RegWrite, RegDelete and registry loops, allowing them in a 32-bit script to access the 64-bit registry view and vice versa." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>SetRegView <span class="ver">[v1.1.08+]</span></h1>
+<p>Sets the registry view used by <a href="RegRead.html">RegRead</a>, <a href="RegWrite.html">RegWrite</a>, <a href="RegDelete.html">RegDelete</a> and <a href="LoopReg.html">registry loops</a>, allowing them in a 32-bit script to access the 64-bit registry view and vice versa.</p>
+<pre class="Syntax"><span class="func">SetRegView</span>, RegView</pre>
+
+<h2 id="Parameters">Parameters</h2>
+<dl>
+
+  <dt>RegView</dt>
+  <dd>
+      <p>Specify <strong>32</strong> to view the registry as a 32-bit application would, or <strong>64</strong> to view the registry as a 64-bit application would.</p>
+      <p>Specify the word <strong>Default</strong> to restore normal behaviour.</p>
+    </dd>
+
+</dl>
+
+<h2 id="Remarks">Remarks</h2>
+<p>This command is only useful on Windows 64-bit. It has no effect on Windows 32-bit.</p>
+<p>On 64-bit systems, 32-bit applications run on a subsystem of Windows called <a href="http://msdn.microsoft.com/en-us/library/aa384249">WOW64</a>. By default, the system redirects certain <a href="http://msdn.microsoft.com/en-us/library/aa384253">registry keys</a> to prevent conflicts. For example, in a 32-bit script, <code>HKLM\SOFTWARE\AutoHotkey</code> is redirected to <code>HKLM\SOFTWARE\Wow6432Node\AutoHotkey</code>. SetRegView allows the registry commands in a 32-bit script to access redirected keys in the 64-bit registry view and vice versa.</p>
+<p>The built-in variable <strong>A_RegView</strong> contains the current setting.</p>
+<p>Every newly launched <a href="../misc/Threads.html">thread</a> (such as a <a href="../Hotkeys.html">hotkey</a>, <a href="Menu.html">custom menu item</a>, or <a href="SetTimer.html">timed</a> subroutine) starts off fresh with the default setting for this command. That default may be changed by using this command in the auto-execute section (top part of the script).</p>
+
+<h2 id="Related">Related</h2>
+<p><a href="RegRead.html">RegRead</a>, <a href="RegWrite.html">RegWrite</a>, <a href="RegDelete.html">RegDelete</a>, <a href="LoopReg.html">Loop (registry)</a></p>
+
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> Shows how to set a specific registry view, and how registry redirection affects the script.</p>
+<pre id="example1"><em>; Access the registry as a 32-bit application would.</em>
+SetRegView 32
+RegWrite REG_SZ, HKLM, SOFTWARE\Test.ahk, Value, 123
+
+<em>; Access the registry as a 64-bit application would.</em>
+SetRegView 64
+RegRead value, HKLM, SOFTWARE\Wow6432Node\Test.ahk, Value
+RegDelete HKLM, SOFTWARE\Wow6432Node\Test.ahk
+
+MsgBox Read value '%value%' via Wow6432Node.
+
+<em>; Restore the registry view to the default, which
+; depends on whether the script is 32-bit or 64-bit.</em>
+SetRegView Default
+<em>;...</em>
+</pre>
+</div>
+
+<div class="ex" id="Ex32Or64">
+<p><a class="ex_number" href="#Ex32Or64"></a> Shows how to detect the type of EXE and operating system on which the script is running.</p>
+<pre id="example2">if (A_PtrSize = 8)
+    script_is := "64-bit"
+else <em>; if (A_PtrSize = 4)</em>
+    script_is := "32-bit"
+
+if (A_Is64bitOS)
+    OS_is := "64-bit"
+else
+    OS_is := "32-bit, which has only a single registry view"
+
+MsgBox This script is %script_is%, and the OS is %OS_is%.</pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a012b41da277b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/SetRegView.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:04 GMT -->
+</html>

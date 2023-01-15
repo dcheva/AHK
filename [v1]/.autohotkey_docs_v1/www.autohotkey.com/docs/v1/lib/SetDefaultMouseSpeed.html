@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/SetDefaultMouseSpeed.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:21 GMT -->
+<head>
+<title>SetDefaultMouseSpeed - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The SetDefaultMouseSpeed command sets the mouse speed that will be used if unspecified in Click, MouseMove, MouseClick and MouseClickDrag." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>SetDefaultMouseSpeed</h1>
+
+<p>Sets the mouse speed that will be used if unspecified in <a href="Click.html">Click</a> and <a href="MouseMove.html">MouseMove</a>/<a href="MouseClick.html">Click</a>/<a href="MouseClickDrag.html">Drag</a>.</p>
+
+<pre class="Syntax"><span class="func">SetDefaultMouseSpeed</span>, Speed</pre>
+<h2 id="Parameters">Parameters</h2>
+<dl>
+
+  <dt>Speed</dt>
+  <dd><p>The speed to move the mouse in the range 0 (fastest) to 100 (slowest). This parameter can be an <a href="../Variables.html#Expressions">expression</a>.</p>
+  <p class="note"><strong>Note</strong>: A speed of 0 will move the mouse instantly.</p></dd>
+
+</dl>
+
+<h2 id="Remarks">Remarks</h2>
+<p>SetDefaultMouseSpeed is ignored for <a href="SendMode.html">SendInput/Play modes</a>; they move the mouse instantaneously (except when SendInput <a href="Send.html#SendInputUnavail">reverts to SendEvent</a>; also, <a href="SetMouseDelay.html">SetMouseDelay</a> has a mode that applies to SendPlay). To visually move the mouse more slowly -- such as a script that performs a demonstration for an audience -- use <code><a href="Send.html#Click">SendEvent {Click 100 200}</a></code> or <code><a href="SendMode.html">SendMode</a> Event</code> (optionally in conjuction with <a href="BlockInput.html">BlockInput</a>).</p>
+<p>If this command is not used, the default mouse speed is 2.</p>
+<p>The built-in variable <strong>A_DefaultMouseSpeed</strong> contains the current setting.</p>
+<p>The commands <a href="MouseClick.html">MouseClick</a>, <a href="MouseMove.html">MouseMove</a>, and <a href="MouseClickDrag.html">MouseClickDrag</a> all have a parameter to override the  default mouse speed.</p>
+<p>Whenever <em>Speed</em> is greater than zero, <a href="SetMouseDelay.html">SetMouseDelay</a> also influences the speed by producing a delay after each incremental move the mouse makes toward its destination.</p>
+<p>Every newly launched <a href="../misc/Threads.html">thread</a> (such as a <a href="../Hotkeys.html">hotkey</a>, <a href="Menu.html">custom menu item</a>, or <a href="SetTimer.html">timed</a> subroutine) starts off fresh with the default setting for this command. That default may be changed by using this command in the auto-execute section (top part of the script).</p>
+<h2 id="Related">Related</h2>
+<p><a href="SetMouseDelay.html">SetMouseDelay</a>, <a href="SendMode.html">SendMode</a>, <a href="Click.html">Click</a>, <a href="MouseClick.html">MouseClick</a>, <a href="MouseMove.html">MouseMove</a>, <a href="MouseClickDrag.html">MouseClickDrag</a>, <a href="SetWinDelay.html">SetWinDelay</a>, <a href="SetControlDelay.html">SetControlDelay</a>, <a href="SetKeyDelay.html">SetKeyDelay</a>, <a href="SetMouseDelay.html">SetKeyDelay</a></p>
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> Causes the mouse cursor to be moved instantly.</p>
+<pre>SetDefaultMouseSpeed, 0</pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a01380dce72d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/SetDefaultMouseSpeed.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:21 GMT -->
+</html>

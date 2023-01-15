@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Chr.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:21 GMT -->
+<head>
+<title>Chr() - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The Chr function returns the string (usually a single character) corresponding to the character code indicated by the specified number." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>Chr()</h1>
+
+<p>Returns the string (usually a single character) corresponding to the character code indicated by the specified number.</p>
+
+<pre class="Syntax">String := <span class="func">Chr</span>(Number)</pre>
+<h2 id="Parameters">Parameters</h2>
+<dl>
+
+  <dt>Number</dt>
+  <dd><p>If Unicode is supported, <em>Number</em> is a Unicode character code between 0 and 0x10FFFF (or 0xFFFF prior to <span class="ver">[v1.1.21]</span>); otherwise it is an ANSI character code between 0 and 255.</p></dd>
+
+</dl>
+
+<h2 id="Return_Value">Return Value</h2>
+<p>This function returns a string corresponding to <em>Number</em>. If <em>Number</em> is not in the valid range of character codes, an empty string is returned.</p>
+
+<h2 id="Remarks">Remarks</h2>
+<p>This function supersedes <a href="Transform.html#Chr">Transform, OutputVar, Chr</a>.</p>
+<p>The meaning of character codes greater than 127 depends on the <a href="../Compat.html#Format">string encoding</a> in use, which in turn depends on whether a <a href="../Variables.html#IsUnicode">Unicode or ANSI</a> executable is in use.</p>
+<p>Common character codes include 9 (tab), 10 (linefeed), 13 (carriage return), 32 (space), 48-57 (the digits 0-9), 65-90 (uppercase A-Z), and 97-122 (lowercase a-z).</p>
+
+<h2 id="Related">Related</h2>
+<p><a href="Transform.html">Transform</a>, <a href="Ord.html">Ord()</a>, <a href="Asc.html">Asc()</a></p>
+
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> Reports the string corresponding to the character code 116.</p>
+<pre>MsgBox % Chr(116) <em>; Reports "t".</em></pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a01391efa62d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Chr.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:21 GMT -->
+</html>

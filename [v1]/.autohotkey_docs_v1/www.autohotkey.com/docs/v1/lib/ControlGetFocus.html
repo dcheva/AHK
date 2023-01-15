@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ControlGetFocus.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:21 GMT -->
+<head>
+<title>ControlGetFocus - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The ControlGetFocus command retrieves which control of the target window has input focus, if any." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>ControlGetFocus</h1>
+
+<p>Retrieves which control of the target window has input focus, if any.</p>
+
+<pre class="Syntax"><span class="func">ControlGetFocus</span>, OutputVar <span class="optional">, WinTitle, WinText, ExcludeTitle, ExcludeText</span></pre>
+<h2 id="Parameters">Parameters</h2>
+<dl>
+
+  <dt>OutputVar</dt>
+  <dd><p>The name of the output variable in which to store the identifier of the control, which consists of its classname followed by its sequence number within its parent window, e.g. Button12.</p></dd>
+
+  <dt>WinTitle</dt>
+  <dd><p>A window title or other criteria identifying the target window. See <a href="../misc/WinTitle.html">WinTitle</a>.</p></dd>
+
+  <dt>WinText</dt>
+  <dd><p>If present, this parameter must be a substring from a single text element of the target window (as revealed by the included Window Spy utility). Hidden text elements are detected if <a href="DetectHiddenText.html">DetectHiddenText</a> is ON.</p></dd>
+
+  <dt>ExcludeTitle</dt>
+  <dd><p>Windows whose titles include this value will not be considered.</p></dd>
+
+  <dt>ExcludeText</dt>
+  <dd><p>Windows whose text include this value will not be considered.</p></dd>
+
+</dl>
+
+<h2 id="Error_Handling">Error Handling</h2>
+<p><span class="ver">[v1.1.04+]</span>: This command is able to throw an exception on failure. For more information, see <a href="Catch.html#RuntimeErrors">Runtime Errors</a>.</p>
+<p><a href="../misc/ErrorLevel.html">ErrorLevel</a> is set to 0 if the control with input focus was successfully retrieved. Otherwise (e.g. the target window doesn't exist or none of its controls have input focus) it will be set to 1.</p>
+<h2 id="Remarks">Remarks</h2>
+<p>The control retrieved by this command is the one that has keyboard focus, that is, the one that would receive keystrokes if the user were to type any.</p>
+<p>The target window must be active to have a focused control. If the window is not active, <em>OutputVar</em> will be made blank.</p>
+<p>Prior to <span class="ver">[v1.1.19.03]</span>, if ControlGetFocus was executed repeatedly at a high frequency (i.e. every 500 ms or faster), it usually disrupted the user's ability to double-click. This has been fixed.</p>
+<p>Window titles and text are case sensitive. Hidden windows are not detected unless <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> has been turned on.</p>
+<h2 id="Related">Related</h2>
+<p><a href="ControlFocus.html">ControlFocus</a>, <a href="ControlMove.html">ControlMove</a>, <a href="ControlClick.html">ControlClick</a>, <a href="ControlGetText.html">ControlGetText</a>, <a href="ControlSetText.html">ControlSetText</a>, <a href="ControlSend.html">ControlSend</a></p>
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> Reports the ClassNN of the control which has the input focus in Notepad.</p>
+<pre>ControlGetFocus, OutputVar, Untitled - Notepad
+if ErrorLevel
+    MsgBox, The target window doesn't exist or none of its controls has input focus.
+else
+    MsgBox, Control with focus = %OutputVar%</pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a01399ec3e2d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ControlGetFocus.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:21 GMT -->
+</html>

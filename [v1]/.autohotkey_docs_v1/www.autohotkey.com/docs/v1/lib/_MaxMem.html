@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/_MaxMem.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:31 GMT -->
+<head>
+<title>#MaxMem - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The #MaxMem directive sets the maximum capacity of each variable to the specified number of megabytes." />
+<meta name="ahk:equiv-v2" content="v2-changes.html#MaxMem" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>#MaxMem</h1>
+
+<p>Sets the maximum capacity of each <a href="../Variables.html">variable</a> to the specified number of megabytes.</p>
+
+<pre class="Syntax"><span class="func">#MaxMem</span> Megabytes</pre>
+<h2 id="Parameters">Parameters</h2>
+<dl>
+
+  <dt>Megabytes</dt>
+  <dd><p>The number of megabytes to allow for each <a href="../Variables.html">variable</a>. A value larger than 4095 is considered to be 4095. A value less than 1 is considered to be 1.</p></dd>
+
+</dl>
+<h2 id="Remarks">Remarks</h2>
+<p>If this directive is unspecified in the script, it will behave as though set to 64.</p>
+<p>The purpose of limiting each variable's capacity is to prevent a buggy script from consuming all available system memory. Raising or lowering the limit does not affect the performance of a script, nor does it change how much memory the script actually uses (except in the case of <a href="WinGetText.html">WinGetText</a> and <a href="ControlGetText.html">ControlGetText</a>, which will be capable of retrieving more text if #MaxMem is increased).</p>
+<p>This setting is global, meaning that it needs to be specified only once (anywhere in the script) to affect the behavior of the entire script.</p>
+<p>This setting restricts only the automatic expansion that a variable does on its own. It does not affect <a href="VarSetCapacity.html">VarSetCapacity()</a>.</p>
+<p>Like other directives, #MaxMem cannot be executed conditionally.</p>
+<h2 id="Related">Related</h2>
+<p><a href="VarSetCapacity.html">VarSetCapacity()</a>, <a href="../Variables.html">Variables</a>, <a href="Sort.html">Sort</a>, <a href="WinGetText.html">WinGetText</a>, <a href="ControlGetText.html">ControlGetText</a>, <a href="_MaxThreads.html">#MaxThreads</a></p>
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> Allows 256 MB instead of 64 MB per variable.</p>
+<pre>#MaxMem 256</pre>
+</div>
+
+<div class="ex" id="ExMaxedMem">
+<p><a class="ex_number" href="#ExMaxedMem"></a> Allows the maximum amount of MB per variable.</p>
+<pre>#MaxMem 4095</pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a01414584677b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/_MaxMem.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:31 GMT -->
+</html>

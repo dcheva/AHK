@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/_EscapeChar.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:29 GMT -->
+<head>
+<title>#EscapeChar - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The #EscapeChar directive changes the script's escape character (e.g. accent vs. backslash). Also includes the explanation of escape sequences." />
+<meta name="ahk:equiv-v2" content="misc/EscapeChar.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>#EscapeChar</h1>
+
+<p>Changes the script's escape character (e.g. accent vs. backslash).</p>
+<p class="warning"><strong>Deprecated:</strong> This directive is not recommended for use in new scripts. Use the default escape character (accent/backtick) instead.</p>
+
+<pre class="Syntax"><span class="func">#EscapeChar</span> NewChar</pre>
+<h2 id="Parameters">Parameters</h2>
+<dl>
+
+  <dt>NewChar</dt>
+  <dd><p>Specify a single character.</p></dd>
+
+</dl>
+<h2 id="Remarks">Remarks</h2>
+<p>The escape character is used to indicate that the character immediately following it should be interpreted differently than it normally would.</p>
+<p>The default escape character is accent/backtick (`), which is at the upper left corner of most English keyboards. Using this character rather than backslash avoids the need for double blackslashes in file paths.</p>
+<p>See <a href="../misc/EscapeChar.html">Escape Sequences</a> for a complete list of sequences and its results (e.g. <code>`n</code> would produce a linefeed character).</p>
+<p>Like other directives, #EscapeChar cannot be executed conditionally.</p>
+
+<h2 id="Related">Related</h2>
+<p>The following rarely used directives also exist; their usage is shown in these examples:</p>
+<pre>#DerefChar #  <em id="DerefChar">; Change it from its normal default, which is %.</em>
+#Delimiter /  <em id="Delimiter">; Change it from its normal default, which is comma.</em></pre>
+<p class="warning"><strong>Deprecated:</strong> These directives are not recommended for use in new scripts. Use the default dereference character (percent) and the default delimiter character (comma) instead.</p>
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> Changes the default escape character (`) to backslash.</p>
+<pre>#EscapeChar \</pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a0140aec7777b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/_EscapeChar.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:29 GMT -->
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/_InstallKeybdHook.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:26 GMT -->
+<head>
+<title>#InstallKeybdHook - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The #InstallKeybdHook directive forces the unconditional installation of the keyboard hook." />
+<meta name="ahk:equiv-v2" content="lib/InstallKeybdHook.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>#InstallKeybdHook</h1>
+
+<p>Forces the unconditional installation of the keyboard hook.</p>
+
+<pre class="Syntax"><span class="func">#InstallKeybdHook</span></pre>
+<h2 id="Remarks">Remarks</h2>
+<p>The keyboard hook monitors keystrokes for the purpose of activating <a href="../Hotstrings.html">hotstrings</a> and any keyboard <a href="../Hotkeys.html">hotkeys</a> not supported by RegisterHotkey (which is a function built into the operating system). It also supports a few other features such as the <a href="Input.html">Input</a> command.</p>
+<p>AutoHotkey does not install the keyboard and mouse hooks unconditionally because together they consume at least 500 KB of memory. Therefore, the keyboard hook is normally installed only when the script contains one of the following: 1) <a href="../Hotstrings.html">hotstrings</a>; 2) one or more <a href="../Hotkeys.html">hotkeys</a> that require the keyboard hook (most do not); 3) <a href="SetNumScrollCapsLockState.html">SetCaps/Scroll/NumLock AlwaysOn/AlwaysOff</a>; 4) the <a href="Input.html">Input</a> command, for which the hook is installed upon first actual use.</p>
+<p>By contrast, the #InstallKeybdHook directive will unconditionally install the keyboard hook, which might be useful to allow <a href="KeyHistory.html">KeyHistory</a> to display the last 20 keystrokes (for debugging purposes), or to avoid the need for <a href="_HotkeyModifierTimeout.html">#HotkeyModifierTimeout</a>.</p>
+<p>Keyboard hotkeys which do not require the hook will use the <em>reg</em> method even if the #InstallKeybdHook directive is used. By contrast, applying the <a href="_UseHook.html">#UseHook</a> directive or the <a href="../Hotkeys.html#prefixdollar">$ prefix</a> to a keyboard hotkey forces it to require the hook, which causes the hook to be installed if the hotkey is enabled.</p>
+<p>You can determine whether a script is using the hook via the <a href="KeyHistory.html">KeyHistory</a> command or menu item. You can determine which hotkeys are using the hook via the <a href="ListHotkeys.html">ListHotkeys</a> command or menu item.</p>
+<p>This directive also makes a script <a href="_Persistent.html">persistent</a>, meaning that <a href="ExitApp.html">ExitApp</a> should be used to terminate it.</p>
+<p>Like other directives, #InstallKeybdHook cannot be executed conditionally.</p>
+<h2 id="Related">Related</h2>
+<p><a href="_InstallMouseHook.html">#InstallMouseHook</a>, <a href="_UseHook.html">#UseHook</a>, <a href="Hotkey.html">Hotkey</a>, <a href="Input.html">Input</a>, <a href="_Persistent.html">#Persistent</a>, <a href="KeyHistory.html">KeyHistory</a>, <a href="../Hotstrings.html">Hotstrings</a>, <a href="GetKeyState.html#function">GetKeyState()</a>, <a href="KeyWait.html">KeyWait</a></p>
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> Installs the keyboard hook unconditionally.</p>
+<pre>#InstallKeybdHook</pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013d12b942d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/_InstallKeybdHook.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:27 GMT -->
+</html>

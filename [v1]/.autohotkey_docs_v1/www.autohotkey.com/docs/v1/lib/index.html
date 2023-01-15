@@ -1,0 +1,1395 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/index.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:29 GMT -->
+<head>
+<title>Alphabetical Command and Function Index | AutoHotkey</title>
+<meta name="description" content="A tabular list of all language elements (commands, functions, control flow statements, etc.) available in AutoHotkey, including their description." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+<style type="text/css">
+.larger {font-size:130%;font-weight:normal}
+</style>
+</head>
+<body>
+
+<h1>Alphabetical Command and Function Index</h1>
+<p>Click on a command or function name for details. Entries in <span class="larger">large font</span> are the most commonly used.</p>
+<p>Go to entries starting with: <a href="#E">E</a>,  &nbsp; <a href="#I">I</a>,  &nbsp; <a href="#M">M</a>,  &nbsp; <a href="#S">S</a>,  &nbsp; <a href="#W">W</a>, &nbsp; <a href="#hash">#</a></p>
+
+<table class="info">
+  <tr>
+    <th style="width:11em">Name</th>
+    <th abbr="Descr">Description</th>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Block.html">{ ... } (Block)</a></td>
+    <td>Blocks are one or more <a href="../Concepts.html#statement">statements</a> enclosed in braces. Typically used with <a href="../Functions.html#define">function definitions</a> and <a href="../Language.html#control-flow">control flow statements</a>.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="../Objects.html#Usage_Associative_Arrays">{ ... } / Object()</a></td>
+    <td>Creates a scriptable associative array.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="../Objects.html#Usage_Simple_Arrays">[ ... ] / Array()</a></td>
+    <td>Creates a scriptable associative array with integer keys.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#Abs">Abs()</a></td>
+    <td>Returns the absolute value of the specified number.</td>
+  </tr>
+  <tr>
+    <td><a href="AutoTrim.html">AutoTrim</a></td>
+    <td>Determines whether <a href="SetEnv.html">traditional assignments</a> like <code>Var1 = %Var2%</code> omit spaces and tabs from the beginning and end of Var2.</td>
+  </tr>
+  <tr>
+    <td><a href="Asc.html">Asc()</a></td>
+    <td>Returns the numeric value of the first byte or UTF-16 code unit in the specified string.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#ASin">ASin()</a></td>
+    <td>Returns the arcsine (the number whose sine is the specified number) in radians.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#ACos">ACos()</a></td>
+    <td>Returns the arccosine (the number whose cosine is the specified number) in radians.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#ATan">ATan()</a></td>
+    <td>Returns the arctangent (the number whose tangent is the specified number) in radians.</td>
+  </tr>
+  <tr>
+    <td><a href="BlockInput.html">BlockInput</a></td>
+    <td>Disables or enables the user's ability to interact with the computer via keyboard and mouse.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Break.html">Break</a></td>
+    <td>Exits (terminates) any type of <a href="../Language.html#loop-statement">loop statement</a>.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Catch.html">Catch</a></td>
+    <td>Specifies the code to execute if an exception is raised during execution of a <a href="Try.html">try</a> statement.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#Ceil">Ceil()</a></td>
+    <td>Returns the specified number rounded up to the nearest integer (without any .00 suffix).</td>
+  </tr>
+  <tr>
+    <td><a href="Chr.html">Chr()</a></td>
+    <td>Returns the string (usually a single character) corresponding to the character code indicated by the specified number.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Click.html">Click</a></td>
+    <td>Clicks a mouse button at the specified coordinates. It can also hold down a mouse button, turn the mouse wheel, or move the mouse.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="ClipWait.html">ClipWait</a></td>
+    <td>Waits until the <a href="../misc/Clipboard.html">clipboard</a> contains data.</td>
+  </tr>
+  <tr>
+    <td><a href="ComObjActive.html">ComObjActive()</a></td>
+    <td>Retrieves a registered COM object.</td>
+  </tr>
+  <tr>
+    <td><a href="ComObjArray.html">ComObjArray()</a></td>
+    <td>Creates a SafeArray for use with COM.</td>
+  </tr>
+  <tr>
+    <td><a href="ComObjConnect.html">ComObjConnect()</a></td>
+    <td>Connects a COM object's event sources to functions with a given prefix.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="ComObjCreate.html">ComObjCreate()</a></td>
+    <td>Creates a COM object.</td>
+  </tr>
+  <tr>
+    <td><a href="ComObjActive.html">ComObject()</a></td>
+    <td>Creates an object representing a typed value to be passed as a parameter or return value.</td>
+  </tr>
+  <tr>
+    <td><a href="ComObjActive.html">ComObjEnwrap() / ComObjUnwrap()</a></td>
+    <td>Wraps/unwraps a COM object.</td>
+  </tr>
+  <tr>
+    <td><a href="ComObjError.html">ComObjError()</a></td>
+    <td>Enables or disables notification of COM errors.</td>
+  </tr>
+  <tr>
+    <td><a href="ComObjFlags.html">ComObjFlags()</a></td>
+    <td>Retrieves or changes flags which control a COM wrapper object's behaviour.</td>
+  </tr>
+  <tr>
+    <td><a href="ComObjGet.html">ComObjGet()</a></td>
+    <td>Returns a reference to an object provided by a COM component.</td>
+  </tr>
+  <tr>
+    <td><a href="ComObjActive.html">ComObjMissing()</a></td>
+    <td>Creates a "missing parameter" object to pass to a COM method.</td>
+  </tr>
+  <tr>
+    <td><a href="ComObjActive.html">ComObjParameter()</a></td>
+    <td>Wraps a value and type to pass as a parameter to a COM method.</td>
+  </tr>
+  <tr>
+    <td><a href="ComObjQuery.html">ComObjQuery()</a></td>
+    <td>Queries a COM object for an interface or service.</td>
+  </tr>
+  <tr>
+    <td><a href="ComObjType.html">ComObjType()</a></td>
+    <td>Retrieves type information from a COM object.</td>
+  </tr>
+  <tr>
+    <td><a href="ComObjValue.html">ComObjValue()</a></td>
+    <td>Retrieves the value or pointer stored in a COM wrapper object.</td>
+  </tr>
+  <tr>
+    <td><a href="Continue.html">Continue</a></td>
+    <td>Skips the rest of a <a href="../Language.html#loop-statement">loop statement</a>'s current iteration and begins a new one.</td>
+  </tr>
+  <tr>
+    <td><a href="Control.html">Control</a></td>
+    <td>Makes a variety of changes to a control.</td>
+  </tr>
+  <tr>
+    <td><a href="ControlClick.html">ControlClick</a></td>
+    <td>Sends a mouse button or mouse wheel event to a control.</td>
+  </tr>
+  <tr>
+    <td><a href="ControlFocus.html">ControlFocus</a></td>
+    <td>Sets input focus to a given control on a window.</td>
+  </tr>
+  <tr>
+    <td><a href="ControlGet.html">ControlGet</a></td>
+    <td>Retrieves various types of information about a control.</td>
+  </tr>
+  <tr>
+    <td><a href="ControlGetFocus.html">ControlGetFocus</a></td>
+    <td>Retrieves which control of the target window has input focus, if any.</td>
+  </tr>
+  <tr>
+    <td><a href="ControlGetPos.html">ControlGetPos</a></td>
+    <td>Retrieves the position and size of a control.</td>
+  </tr>
+  <tr>
+    <td><a href="ControlGetText.html">ControlGetText</a></td>
+    <td>Retrieves text from a control.</td>
+  </tr>
+  <tr>
+    <td><a href="ControlMove.html">ControlMove</a></td>
+    <td>Moves or resizes a control.</td>
+  </tr>
+  <tr>
+    <td><a href="ControlSend.html">ControlSend / ControlSendRaw</a></td>
+    <td>Sends simulated keystrokes to a window or control.</td>
+  </tr>
+  <tr>
+    <td><a href="ControlSetText.html">ControlSetText</a></td>
+    <td>Changes the text of a control.</td>
+  </tr>
+  <tr>
+    <td><a href="CoordMode.html">CoordMode</a></td>
+    <td>Sets coordinate mode for various commands to be relative to either the active window or the screen.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#Cos">Cos()</a></td>
+    <td>Returns the trigonometric cosine of the specified number.</td>
+  </tr>
+  <tr>
+    <td><a href="Critical.html">Critical</a></td>
+    <td>Prevents the <a href="../misc/Threads.html">current thread</a> from being interrupted by other threads, or enables it to be interrupted.</td>
+  </tr>
+  <tr>
+    <td><a href="DetectHiddenText.html">DetectHiddenText</a></td>
+    <td>Determines whether invisible text in a window is "seen"  for the purpose of finding the window. This affects commands, built-in functions and control flow statements such as WinExist() and WinActivate.</td>
+  </tr>
+  <tr>
+    <td><a href="DetectHiddenWindows.html">DetectHiddenWindows</a></td>
+    <td>Determines whether invisible windows are "seen" by  the script.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="DllCall.html">DllCall()</a></td>
+    <td>Calls a function inside a DLL, such as a standard Windows API function.</td>
+  </tr>
+  <tr>
+    <td><a href="Drive.html">Drive</a></td>
+    <td>Ejects/retracts the tray in a CD or DVD drive, or sets a drive's volume label.</td>
+  </tr>
+  <tr>
+    <td><a href="DriveGet.html">DriveGet</a></td>
+    <td>Retrieves various types of information about the computer's drive(s).</td>
+  </tr>
+  <tr>
+    <td><a href="DriveSpaceFree.html">DriveSpaceFree</a></td>
+    <td>Retrieves the free disk space of the drive which contains the specified path, in megabytes.</td>
+  </tr>
+  <tr id="E">
+    <td><a href="Edit.html">Edit</a></td>
+    <td>Opens the current script for editing in the associated editor.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Else.html">Else</a></td>
+    <td>Specifies one or more <a href="../Concepts.html#statement">statements</a> to execute if an <a href="../Language.html#if-statement">If statement</a> evaluates to false.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="EnvAdd.html">EnvAdd</a></td>
+    <td>Sets a <a href="../Variables.html">variable</a> to the sum of itself plus the given value (can also add or subtract time from a <a href="FileSetTime.html#YYYYMMDD">date-time</a> value). Synonymous with: <code>Var += Value</code>.</td>
+  </tr>
+  <tr>
+    <td><a href="EnvDiv.html">EnvDiv</a></td>
+    <td>Sets a <a href="../Variables.html">variable</a> to itself divided by the given value. Synonymous with: <code>Var /= Value</code>.</td>
+  </tr>
+  <tr>
+    <td><a href="EnvGet.html">EnvGet</a></td>
+    <td>Retrieves an environment variable.</td>
+  </tr>
+  <tr>
+    <td><a href="EnvMult.html">EnvMult</a></td>
+    <td>Sets a <a href="../Variables.html">variable</a> to itself times the given value. Synonymous with: <code>Var *= Value</code>.</td>
+  </tr>
+  <tr>
+    <td><a href="EnvSet.html">EnvSet</a></td>
+    <td>Writes a value to a <a href="../Variables.html">variable</a> contained in the environment.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="EnvSub.html">EnvSub</a></td>
+    <td>Sets a <a href="../Variables.html">variable</a> to itself minus the given value (can also compare <a href="FileSetTime.html#YYYYMMDD">date-time</a> values). Synonymous with: <code>Var -= Value</code>.</td>
+  </tr>
+  <tr>
+    <td><a href="EnvUpdate.html">EnvUpdate</a></td>
+    <td>Notifies the OS and all running applications that <a href="../Variables.html">environment variable(s)</a> have changed.</td>
+  </tr>
+  <tr>
+    <td><a href="Throw.html#Exception">Exception()</a></td>
+    <td>Creates an object with properties, also common to exceptions created by <a href="Catch.html#RuntimeErrors">runtime errors</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="Exit.html">Exit</a></td>
+    <td>Exits the <a href="../misc/Threads.html">current thread</a> or (if the script is not <a href="_Persistent.html">persistent</a>) the entire script.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="ExitApp.html">ExitApp</a></td>
+    <td>Terminates the script.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#Exp">Exp()</a></td>
+    <td>Returns <em>e</em> (which is approximately 2.71828182845905) raised to the <em>N</em>th power.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="FileAppend.html">FileAppend</a></td>
+    <td>Writes text to the end of a file (first creating the file, if necessary).</td>
+  </tr>
+  <tr>
+    <td><a href="FileCopy.html">FileCopy</a></td>
+    <td>Copies one or more files.</td>
+  </tr>
+  <tr>
+    <td><a href="FileCopyDir.html">FileCopyDir</a></td>
+    <td>Copies a folder along with all its sub-folders and files (similar to xcopy).</td>
+  </tr>
+  <tr>
+    <td><a href="FileCreateDir.html">FileCreateDir</a></td>
+    <td>Creates a folder.</td>
+  </tr>
+  <tr>
+    <td><a href="FileCreateShortcut.html">FileCreateShortcut</a></td>
+    <td>Creates a shortcut (.lnk) file.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="FileDelete.html">FileDelete</a></td>
+    <td>Deletes one or more files.</td>
+  </tr>
+  <tr>
+    <td><a href="FileEncoding.html">FileEncoding</a></td>
+    <td>Sets the default encoding for <a href="FileRead.html">FileRead</a>, <a href="FileReadLine.html">FileReadLine</a>, <a href="LoopReadFile.html">Loop Read</a>, <a href="FileAppend.html">FileAppend</a>, and <a href="FileOpen.html">FileOpen()</a>.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="FileExist.html">FileExist()</a></td>
+    <td>Checks for the existence of a file or folder and returns its attributes.</td>
+  </tr>
+  <tr>
+    <td><a href="FileInstall.html">FileInstall</a></td>
+    <td>Includes the specified file inside the <a href="../Scripts.html#ahk2exe">compiled version</a> of the script.</td>
+  </tr>
+  <tr>
+    <td><a href="FileGetAttrib.html">FileGetAttrib</a></td>
+    <td>Reports whether a file or folder is read-only, hidden, etc.</td>
+  </tr>
+  <tr>
+    <td><a href="FileGetShortcut.html">FileGetShortcut</a></td>
+    <td>Retrieves information about a shortcut (.lnk) file, such as its target file.</td>
+  </tr>
+  <tr>
+    <td><a href="FileGetSize.html">FileGetSize</a></td>
+    <td>Retrieves the size of a file.</td>
+  </tr>
+  <tr>
+    <td><a href="FileGetTime.html">FileGetTime</a></td>
+    <td>Retrieves the datetime stamp of a file or folder.</td>
+  </tr>
+  <tr>
+    <td><a href="FileGetVersion.html">FileGetVersion</a></td>
+    <td>Retrieves the version of a file.</td>
+  </tr>
+  <tr>
+    <td><a href="FileMove.html">FileMove</a></td>
+    <td>Moves or renames one or more files.</td>
+  </tr>
+  <tr>
+    <td><a href="FileMoveDir.html">FileMoveDir</a></td>
+    <td>Moves a folder along with all its sub-folders and files. It can also rename a folder.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="FileOpen.html">FileOpen()</a></td>
+    <td>Opens a file to read specific content from it and/or to write new content into it.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="FileRead.html">FileRead</a></td>
+    <td>Reads a file's contents into a <a href="../Variables.html">variable</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="FileReadLine.html">FileReadLine</a></td>
+    <td>Reads the specified line from a file and stores the text in a <a href="../Variables.html">variable</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="FileRecycle.html">FileRecycle</a></td>
+    <td>Sends a file or directory to the recycle bin if possible, or permanently deletes it.</td>
+  </tr>
+  <tr>
+    <td><a href="FileRecycleEmpty.html">FileRecycleEmpty</a></td>
+    <td>Empties the recycle bin.</td>
+  </tr>
+  <tr>
+    <td><a href="FileRemoveDir.html">FileRemoveDir</a></td>
+    <td>Deletes a folder.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="FileSelectFile.html">FileSelectFile</a></td>
+    <td>Displays a standard dialog that allows the user to open or save file(s).</td>
+  </tr>
+  <tr>
+    <td><a href="FileSelectFolder.html">FileSelectFolder</a></td>
+    <td><p>Displays a standard dialog that allows the user to select a folder.</p></td>
+  </tr>
+  <tr>
+    <td><a href="FileSetAttrib.html">FileSetAttrib</a></td>
+    <td>Changes the attributes of one or more files or folders. Wildcards are supported.</td>
+  </tr>
+  <tr>
+    <td><a href="FileSetTime.html">FileSetTime</a></td>
+    <td>Changes the datetime stamp of one or more files or folders. Wildcards are supported.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Finally.html">Finally</a></td>
+    <td>Ensures that one or more statements are always executed after a <a href="Try.html">Try</a> statement finishes.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#Floor">Floor()</a></td>
+    <td>Returns the specified number rounded down to the nearest integer (without any .00 suffix).</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="For.html">For</a></td>
+    <td>Repeats a series of commands once for each key-value pair in an object.</td>
+  </tr>
+  <tr>
+    <td><a href="Format.html">Format()</a></td>
+    <td>Formats a variable number of input values according to a format string.</td>
+  </tr>
+  <tr>
+    <td><a href="FormatTime.html">FormatTime</a></td>
+    <td>Transforms a <a href="FileSetTime.html#YYYYMMDD">YYYYMMDDHH24MISS</a> timestamp into the specified date/time format.</td>
+  </tr>
+  <tr>
+    <td><a href="Func.html#Func">Func()</a></td>
+    <td>Retrieves a <a href="../Objects.html#Function_References">reference</a> to a function.</td>
+  </tr>
+  <tr>
+    <td><a href="GetKey.html">GetKeyName()</a></td>
+    <td>Retrieves the name or text of a key.</td>
+  </tr>
+  <tr>
+    <td><a href="GetKey.html">GetKeyVK()</a></td>
+    <td>Retrieves the virtual key code of a key.</td>
+  </tr>
+  <tr>
+    <td><a href="GetKey.html">GetKeySC()</a></td>
+    <td>Retrieves the scan code of a key.</td>
+  </tr>
+  <tr>
+    <td><a href="GetKeyState.html#command">GetKeyState</a></td>
+    <td>Checks if a keyboard key or mouse/joystick button is down or up. Also retrieves joystick status.</td>
+  </tr>
+  <tr>
+    <td><a href="GetKeyState.html#function">GetKeyState()</a></td>
+    <td>Checks if a keyboard key or mouse/joystick button is down or up. Also retrieves joystick status.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Gosub.html">Gosub</a></td>
+    <td>Jumps to the specified label and continues execution until <a href="Return.html">Return</a> is encountered.</td>
+  </tr>
+  <tr>
+    <td><a href="Goto.html">Goto</a></td>
+    <td>Jumps to the specified label and continues execution.</td>
+  </tr>
+  <tr>
+    <td><a href="GroupActivate.html">GroupActivate</a></td>
+    <td>Activates the next window in a window group that was defined with <a href="GroupAdd.html">GroupAdd</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="GroupAdd.html">GroupAdd</a></td>
+    <td>Adds a window specification to a window group, creating the group if necessary.</td>
+  </tr>
+  <tr>
+    <td><a href="GroupClose.html">GroupClose</a></td>
+    <td>Closes the active window if it was just activated by <a href="GroupActivate.html">GroupActivate</a> or <a href="GroupDeactivate.html">GroupDeactivate</a>. It then activates the next window in the series. It can also close all windows in a group.</td>
+  </tr>
+  <tr>
+    <td><a href="GroupDeactivate.html">GroupDeactivate</a></td>
+    <td>Similar to <a href="GroupActivate.html">GroupActivate</a> except activates the next window <strong>not</strong> in the group.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Gui.html">Gui</a></td>
+    <td>Creates and manages windows and controls. Such windows can be used as data entry forms or custom user interfaces.</td>
+  </tr>
+  <tr>
+    <td><a href="GuiControl.html">GuiControl</a></td>
+    <td>Makes a variety of changes to a control in a GUI window.</td>
+  </tr>
+  <tr>
+    <td><a href="GuiControlGet.html">GuiControlGet</a></td>
+    <td>Retrieves various types of information about a control in a GUI window.</td>
+  </tr>
+  <tr>
+    <td><a href="Hotkey.html">Hotkey</a></td>
+    <td>Creates, modifies, enables, or disables a hotkey while the script is running.</td>
+  </tr>
+  <tr>
+    <td><a href="Hotstring.html">Hotstring()</a></td>
+    <td>Creates, modifies, enables, or disables a hotstring while the script is running.</td>
+  </tr>
+  <tr id="I">
+    <td class="larger"><a href="IfExpression.html">If (expression)</a></td>
+    <td>Specifies one or more <a href="../Concepts.html#statement">statements</a> to execute if an <a href="../Variables.html#Expressions">expression</a> evaluates to true.</td>
+  </tr>
+  <tr>
+    <td><a href="IfEqual.html">If (legacy)</a></td>
+    <td>Specifies one or more <a href="../Concepts.html#statement">statements</a> to execute if the comparison of a <a href="../Variables.html">variable</a> to a value evaluates to true.</td>
+  </tr>
+  <tr>
+    <td><a href="IfBetween.html">If var [not] between</a></td>
+    <td>Checks whether a <a href="../Variables.html">variable's</a> contents are numerically or alphabetically between two values (inclusive).</td>
+  </tr>
+  <tr>
+    <td><a href="IfIn.html">If var [not] in/contains MatchList</a></td>
+    <td>Checks whether a <a href="../Variables.html">variable's</a> contents match one of the items in a list.</td>
+  </tr>
+  <tr>
+    <td><a href="IfIs.html">If var is [not] type</a></td>
+    <td>Checks whether a <a href="../Variables.html">variable's</a> contents are numeric, uppercase, etc.</td>
+  </tr>
+  <tr>
+    <td><a href="IfEqual.html">IfEqual / IfNotEqual</a></td>
+    <td>Compares a <a href="../Variables.html">variable</a> to a value for equality. Synonymous with: <code>if Var = Value</code> | <code>if Var != Value</code>.</td>
+  </tr>
+  <tr>
+    <td><a href="IfExist.html">IfExist / IfNotExist</a></td>
+    <td>Checks for the existence of a file or folder.</td>
+  </tr>
+  <tr>
+    <td><a href="IfEqual.html">IfGreater / IfGreaterOrEqual</a></td>
+    <td>Compares a <a href="../Variables.html">variable</a> to a value. Synonymous with: <code>if Var &gt; Value</code> | <code>if Var &gt;= Value</code>.</td>
+  </tr>
+  <tr>
+    <td><a href="IfInString.html">IfInString / IfNotInString</a></td>
+    <td>Checks if a <a href="../Variables.html">variable</a> contains the specified string.</td>
+  </tr>
+  <tr>
+    <td><a href="IfEqual.html">IfLess / IfLessOrEqual</a></td>
+    <td>Compares a <a href="../Variables.html">variable</a> to a value. Synonymous with: <code>if Var &lt; Value</code> | <code>if Var &lt;= Value</code>.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="IfMsgBox.html">IfMsgBox</a></td>
+    <td>Checks which button was pushed by the user during the most recent <a href="MsgBox.html">MsgBox</a> command.</td>
+  </tr>
+  <tr>
+    <td><a href="IfWinActive.html">IfWinActive / IfWinNotActive</a></td>
+    <td>Checks if the specified window exists and is currently active (foremost).</td>
+  </tr>
+  <tr>
+    <td><a href="IfWinExist.html">IfWinExist / IfWinNotExist</a></td>
+    <td>Checks if the specified window exists.</td>
+  </tr>
+  <tr>
+    <td><a href="ListView.html#IL_Create">IL_Create()</a><br />
+        <a href="ListView.html#IL_Add">IL_Add()</a><br />
+        <a href="ListView.html#IL_Destroy">IL_Destroy()</a></td>
+    <td>The means by which icons are added to a <a href="ListView.html">ListView</a> or <a href="TreeView.html">TreeView</a> control.</td>
+  </tr>
+  <tr>
+    <td><a href="ImageSearch.html">ImageSearch</a></td>
+    <td>Searches a region of the screen for an image.</td>
+  </tr>
+  <tr>
+    <td><a href="IniDelete.html">IniDelete</a></td>
+    <td>Deletes a value from a standard format .ini file.</td>
+  </tr>
+  <tr>
+    <td><a href="IniRead.html">IniRead</a></td>
+    <td>Reads a value, section or list of section names from a standard format .ini file.</td>
+  </tr>
+  <tr>
+    <td><a href="IniWrite.html">IniWrite</a></td>
+    <td>Writes a value or section to a standard format .ini file.</td>
+  </tr>
+  <tr>
+    <td><a href="Input.html">Input</a></td>
+    <td>Waits for the user to type a string.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="InputBox.html">InputBox</a></td>
+    <td>Displays an input box to ask the user to enter a string.</td>
+  </tr>
+  <tr>
+    <td><a href="InputHook.html">InputHook()</a></td>
+    <td>Creates an object which can be used to collect or intercept keyboard input.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="InStr.html">InStr()</a></td>
+    <td>Searches for a given <em>occurrence</em> of a string, from the left or the right.</td>
+  </tr>
+  <tr>
+    <td><a href="IsByRef.html">IsByRef()</a></td>
+    <td>Returns a non-zero number if the specified <a href="../Functions.html#ByRef">ByRef parameter</a> was supplied with a variable.</td>
+  </tr>
+  <tr>
+    <td><a href="IsFunc.html">IsFunc()</a></td>
+    <td>Returns a non-zero number if the specified function exists in the script.</td>
+  </tr>
+  <tr>
+    <td><a href="IsLabel.html">IsLabel()</a></td>
+    <td>Returns a non-zero number if the specified label exists in the script.</td>
+  </tr>
+  <tr>
+    <td><a href="IsObject.html">IsObject()</a></td>
+    <td>Returns a non-zero number if the specified value is an object.</td>
+  </tr>
+  <tr>
+    <td><a href="IsSet.html">IsSet()</a></td>
+    <td>Returns a non-zero number if the specified variable has been assigned a value.</td>
+  </tr>
+  <tr>
+    <td><a href="KeyHistory.html">KeyHistory</a></td>
+    <td>Displays script info and a history of the most recent keystrokes and mouse clicks.</td>
+  </tr>
+  <tr>
+    <td><a href="KeyWait.html">KeyWait</a></td>
+    <td>Waits for a key or mouse/joystick button to be released or pressed down.</td>
+  </tr>
+  <tr>
+    <td><a href="ListHotkeys.html">ListHotkeys</a></td>
+    <td>Displays the hotkeys in use by the current script, whether their subroutines are currently running, and whether or not they use the <a href="_InstallKeybdHook.html">keyboard</a> or <a href="_InstallMouseHook.html">mouse</a> hook.</td>
+  </tr>
+  <tr>
+    <td><a href="ListLines.html">ListLines</a></td>
+    <td>Displays the script lines most recently executed.</td>
+  </tr>
+  <tr>
+    <td><a href="ListVars.html">ListVars</a></td>
+    <td>Displays the script's <a href="../Variables.html">variables</a>: their names and current contents.</td>
+  </tr>
+  <tr>
+    <td><a href="LoadPicture.html">LoadPicture()</a></td>
+    <td>Loads a picture from file and returns a bitmap or icon handle.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#Log">Log()</a></td>
+    <td>Returns the logarithm (base 10) of the specified number.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#Ln">Ln()</a></td>
+    <td>Returns the natural logarithm (base e) of the specified number.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Loop.html">Loop (normal)</a></td>
+    <td>Performs a series of commands repeatedly: either the specified number of times or until <a href="Break.html">break</a> is encountered.</td>
+  </tr>
+  <tr>
+    <td><a href="LoopFile.html">Loop (files &amp; folders)</a></td>
+    <td>Retrieves the specified files or folders, one at a time.</td>
+  </tr>
+  <tr>
+    <td><a href="LoopParse.html">Loop (parse a string)</a></td>
+    <td>Retrieves substrings (fields) from a string, one at a time.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="LoopReadFile.html">Loop (read file contents)</a></td>
+    <td>Retrieves the lines in a text file, one at a time (performs better than <a href="FileReadLine.html">FileReadLine</a>).</td>
+  </tr>
+  <tr>
+    <td><a href="LoopReg.html">Loop (registry)</a></td>
+    <td>Retrieves the contents of the specified registry subkey, one item at a time.</td>
+  </tr>
+  <tr>
+    <td><a href="ListView.html#LV_Add">LV_Add()</a><br />
+    <a href="ListView.html#LV_Delete">LV_Delete()</a><br />
+    <a href="ListView.html#LV_DeleteCol">LV_DeleteCol()</a><br />
+    <a href="ListView.html#LV_GetCount">LV_GetCount()</a><br />
+    <a href="ListView.html#LV_GetNext">LV_GetNext()</a><br />
+    <a href="ListView.html#LV_GetText">LV_GetText()</a><br />
+    <a href="ListView.html#LV_Insert">LV_Insert()</a><br />
+    <a href="ListView.html#LV_InsertCol">LV_InsertCol()</a><br />
+    <a href="ListView.html#LV_Modify">LV_Modify()</a><br />
+    <a href="ListView.html#LV_ModifyCol">LV_ModifyCol()</a><br />
+    <a href="ListView.html#LV_SetImageList">LV_SetImageList()</a></td>
+    <td>The means by which the rows and columns of a <a href="ListView.html">ListView</a> control are added, modified or retrieved.</td>
+  </tr>
+  <tr id="M">
+    <td><a href="Math.html#Max">Max()</a></td>
+    <td>Returns the highest value of one or more numbers.</td>
+  </tr>
+  <tr>
+    <td><a href="Menu.html">Menu</a></td>
+    <td>Creates, deletes, modifies and displays menus and menu items. Changes the tray icon and its tooltip. Controls whether the main window of a <a href="../Scripts.html#ahk2exe">compiled script</a> can be opened.</td>
+  </tr>
+  <tr>
+    <td><a href="MenuGetHandle.html">MenuGetHandle()</a></td>
+    <td>Retrieves the <a href="Menu.html#Win32_Menus">Win32 menu</a> handle of a menu.</td>
+  </tr>
+  <tr>
+    <td><a href="MenuGetName.html">MenuGetName()</a></td>
+    <td>Retrieves the name of a menu given a handle to its underlying <a href="Menu.html#Win32_Menus">Win32 menu</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#Min">Min()</a></td>
+    <td>Returns the lowest value of one or more numbers.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#Mod">Mod()</a></td>
+    <td>Modulo. Returns the remainder of the specified dividend divided by the specified divisor.</td>
+  </tr>
+  <tr>
+    <td><a href="MouseClick.html">MouseClick</a></td>
+    <td>Clicks or holds down a mouse button, or turns the mouse wheel. NOTE: The <a href="Click.html">Click command</a> is generally more flexible and easier to use.</td>
+  </tr>
+  <tr>
+    <td><a href="MouseClickDrag.html">MouseClickDrag</a></td>
+    <td>Clicks and holds the specified mouse button, moves the mouse to the destination coordinates, then releases the button.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="MouseGetPos.html">MouseGetPos</a></td>
+    <td>Retrieves the current position of the mouse cursor, and optionally which window and control it is hovering over.</td>
+  </tr>
+  <tr>
+    <td><a href="MouseMove.html">MouseMove</a></td>
+    <td>Moves the mouse cursor.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="MsgBox.html">MsgBox</a></td>
+    <td>Displays the specified text in a small window containing one or more buttons (such as Yes and No).</td>
+  </tr>
+  <tr>
+    <td><a href="NumGet.html">NumGet()</a></td>
+    <td>Returns the binary number stored at the specified address+offset.</td>
+  </tr>
+  <tr>
+    <td><a href="NumPut.html">NumPut()</a></td>
+    <td>Stores a number in binary format at the specified address+offset.</td>
+  </tr>
+  <tr>
+    <td><a href="ObjAddRef.html">ObjAddRef() / ObjRelease()</a></td>
+    <td>Increments or decrements an object's <a href="../Objects.html#Reference_Counting">reference count</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="ObjBindMethod.html">ObjBindMethod()</a></td>
+    <td>Creates a <a href="../misc/Functor.html#BoundFunc">BoundFunc object</a> which calls a method of a given object.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="Object.html#Clone">ObjClone()</a><br>
+      <a href="Object.html#Count">ObjCount()</a><br>
+      <a href="Object.html#Delete">ObjDelete()</a><br>
+      <a href="Object.html#GetAddress">ObjGetAddress()</a><br>
+      <a href="Object.html#GetCapacity">ObjGetCapacity()</a><br>
+      <a href="Object.html#HasKey">ObjHasKey()</a><br>
+      <a href="Object.html#Insert">ObjInsert()</a><br>
+      <a href="Object.html#InsertAt">ObjInsertAt()</a><br>
+      <a href="Object.html#Length">ObjLength()</a><br>
+      <a href="Object.html#MinMaxIndex">ObjMaxIndex()</a><br>
+      <a href="Object.html#MinMaxIndex">ObjMinIndex()</a><br>
+      <a href="Object.html#NewEnum">ObjNewEnum()</a><br>
+      <a href="Object.html#Pop">ObjPop()</a><br>
+      <a href="Object.html#Push">ObjPush()</a><br>
+      <a href="Object.html#Remove">ObjRemove()</a><br>
+      <a href="Object.html#RemoveAt">ObjRemoveAt()</a><br>
+      <a href="Object.html#SetCapacity">ObjSetCapacity()</a><br>
+    </td>
+    <td>These functions are equivalent to built-in methods of the <a href="Object.html">Object</a> type. It is usually recommended to use the corresponding method instead.</td>
+  </tr>
+  <tr>
+    <td><a href="Object.html#GetBase">ObjGetBase()</a></td>
+    <td>Retrieves an object's <a href="../Objects.html#Custom_Objects">base object</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="Object.html#RawGet">ObjRawGet()</a></td>
+    <td>Retrieves a key-value pair from an object, bypassing the object's <a href="../Objects.html#Meta_Functions">meta-functions</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="Object.html#RawSet">ObjRawSet()</a></td>
+    <td>Stores or overwrites a key-value pair in an object, bypassing the object's <a href="../Objects.html#Meta_Functions">meta-functions</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="Object.html#SetBase">ObjSetBase()</a></td>
+    <td>Sets an object's <a href="../Objects.html#Custom_Objects">base object</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="OnClipboardChange.html#function">OnClipboardChange()</a></td>
+    <td>Registers a <a href="../Functions.html">function</a> or <a href="../misc/Functor.html">function object</a> to run whenever the clipboard's content changes.</td>
+  </tr>
+  <tr>
+    <td><a href="OnError.html">OnError()</a></td>
+    <td>Specifies a <a href="../Functions.html">function</a> to run automatically when an unhandled error occurs.</td>
+  </tr>
+  <tr>
+    <td><a href="OnExit.html#command">OnExit</a></td>
+    <td>Specifies a <a href="Gosub.html">subroutine</a> to run automatically when the script exits.</td>
+  </tr>
+  <tr>
+    <td><a href="OnExit.html#function">OnExit()</a></td>
+    <td>Specifies a <a href="../Functions.html">callback function</a> to run automatically when the script exits.</td>
+  </tr>
+  <tr>
+    <td><a href="OnMessage.html">OnMessage()</a></td>
+    <td>Specifies a <a href="../Functions.html">function</a> or <a href="../misc/Functor.html">function object</a> to call automatically when the script receives the specified message.</td>
+  </tr>
+  <tr>
+    <td><a href="Ord.html">Ord()</a></td>
+    <td>Returns the ordinal value (numeric character code) of the first character in the specified string.</td>
+  </tr>
+  <tr>
+    <td><a href="OutputDebug.html">OutputDebug</a></td>
+    <td>Sends a string to the debugger (if any) for display.</td>
+  </tr>
+  <tr>
+    <td><a href="Pause.html">Pause</a></td>
+    <td>Pauses the script's <a href="../misc/Threads.html">current thread</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="PixelGetColor.html">PixelGetColor</a></td>
+    <td>Retrieves  the color of the pixel at the specified x,y coordinates.</td>
+  </tr>
+  <tr>
+    <td><a href="PixelSearch.html">PixelSearch</a></td>
+    <td>Searches a region of the screen for a pixel of the specified color.</td>
+  </tr>
+  <tr>
+    <td><a href="PostMessage.html">PostMessage</a></td>
+    <td>Places a message in the message queue of a window or control.</td>
+  </tr>
+  <tr>
+    <td><a href="Process.html">Process</a></td>
+    <td>Performs one of the following operations on a process: checks if it exists; changes its priority; closes it; waits for it to close.</td>
+  </tr>
+  <tr>
+    <td><a href="Progress.html">Progress</a></td>
+    <td>Creates or updates a window containing a progress bar.</td>
+  </tr>
+  <tr>
+    <td><a href="Random.html">Random</a></td>
+    <td>Generates a pseudo-random number.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="RegExMatch.html">RegExMatch()</a></td>
+    <td>Determines whether a string contains a pattern (regular expression).</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="RegExReplace.html">RegExReplace()</a></td>
+    <td>Replaces occurrences of a pattern (regular expression) inside a string.</td>
+  </tr>
+  <tr>
+    <td><a href="RegDelete.html">RegDelete</a></td>
+    <td>Deletes a subkey or value from the registry.</td>
+  </tr>
+  <tr>
+    <td><a href="RegRead.html">RegRead</a></td>
+    <td>Reads a value from the registry.</td>
+  </tr>
+  <tr>
+    <td><a href="RegWrite.html">RegWrite</a></td>
+    <td>Writes a value to the registry.</td>
+  </tr>
+  <tr>
+    <td><a href="RegisterCallback.html">RegisterCallback()</a></td>
+    <td>Creates a machine-code address that when called, redirects the call to a <a href="../Functions.html">function</a> in the script.</td>
+  </tr>
+  <tr>
+    <td><a href="Reload.html">Reload</a></td>
+    <td>Replaces the currently running instance of the script with a new one.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Return.html">Return</a></td>
+    <td>Returns from a subroutine to which execution had previously jumped via <a href="../Functions.html">function-call</a>, <a href="Gosub.html">Gosub</a>, <a href="../Hotkeys.html">Hotkey</a> activation, <a href="GroupActivate.html">GroupActivate</a>, or other means.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#Round">Round()</a></td>
+    <td>Returns the specified number rounded to <em>N</em> decimal places.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Run.html">Run</a></td>
+    <td>Runs an external program.</td>
+  </tr>
+  <tr>
+    <td><a href="RunAs.html">RunAs</a></td>
+    <td>Specifies a set of user credentials to use for all subsequent uses of <a href="Run.html">Run</a> and <a href="Run.html">RunWait</a>.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Run.html">RunWait</a></td>
+    <td>Runs an external program and waits until it finishes.</td>
+  </tr>
+  <tr id="S">
+    <td><a href="GuiControls.html#SB_SetIcon">SB_SetIcon()</a><br />
+    <a href="GuiControls.html#SB_SetParts">SB_SetParts()</a><br />
+    <a href="GuiControls.html#SB_SetText">SB_SetText()</a><br /></td>
+    <td>The means by which the bar of a <a href="GuiControls.html#StatusBar">StatusBar</a> control is modified.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Send.html">Send</a> / <a href="Send.html#SendRaw">SendRaw</a> / <a href="Send.html#SendInput">SendInput</a> / <a href="Send.html#SendPlay">SendPlay</a> / <a href="Send.html#SendEvent">SendEvent</a></td>
+    <td>Sends simulated keystrokes and mouse clicks to the <a href="WinActivate.html">active</a> window.</td>
+  </tr>
+  <tr>
+    <td><a href="SendLevel.html">SendLevel</a></td>
+    <td>Controls which artificial keyboard and mouse events are ignored by hotkeys and hotstrings.</td>
+  </tr>
+  <tr>
+    <td><a href="PostMessage.html">SendMessage</a></td>
+    <td>Sends a message to a window or control and waits for acknowledgement.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="SendMode.html">SendMode</a></td>
+    <td>Makes <a href="Send.html">Send</a> synonymous with SendInput or SendPlay rather than the default (SendEvent). Also makes Click and MouseMove/Click/Drag use the specified method.</td>
+  </tr>
+  <tr>
+    <td><a href="SetBatchLines.html">SetBatchLines</a></td>
+    <td>Determines how fast a script will run (affects CPU utilization).</td>
+  </tr>
+  <tr>
+    <td><a href="SetNumScrollCapsLockState.html">SetCapsLockState</a></td>
+    <td>Sets the state of <kbd>CapsLock</kbd>. Can also force the key to stay on or off.</td>
+  </tr>
+  <tr>
+    <td><a href="SetControlDelay.html">SetControlDelay</a></td>
+    <td>Sets the delay that will occur after each control-modifying command.</td>
+  </tr>
+  <tr>
+    <td><a href="SetDefaultMouseSpeed.html">SetDefaultMouseSpeed</a></td>
+    <td>Sets the mouse speed that will be used if unspecified in <a href="Click.html">Click</a> and <a href="MouseMove.html">MouseMove</a>/<a href="MouseClick.html">Click</a>/<a href="MouseClickDrag.html">Drag</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="SetEnv.html">SetEnv (Var = Value)</a></td>
+    <td>Assigns the specified value to a <a href="../Variables.html">variable</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="SetFormat.html">SetFormat</a></td>
+    <td>Sets the format of integers and floating point numbers generated by math operations.</td>
+  </tr>
+  <tr>
+    <td><a href="SetKeyDelay.html">SetKeyDelay</a></td>
+    <td>Sets the delay that will occur after each keystroke sent by <a href="Send.html">Send</a> or <a href="ControlSend.html">ControlSend</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="SetMouseDelay.html">SetMouseDelay</a></td>
+    <td>Sets the delay that will occur after each mouse movement or click.</td>
+  </tr>
+  <tr>
+    <td><a href="SetNumScrollCapsLockState.html">SetNumLockState</a></td>
+    <td>Sets the state of <kbd>NumLock</kbd>. Can also force the key to stay on or off.</td>
+  </tr>
+  <tr>
+    <td><a href="SetNumScrollCapsLockState.html">SetScrollLockState</a></td>
+    <td>Sets the state of <kbd>ScrollLock</kbd>. Can also force the key to stay on or off.</td>
+  </tr>
+  <tr>
+    <td><a href="SetRegView.html">SetRegView</a></td>
+    <td>Sets the registry view used by <a href="RegRead.html">RegRead</a>, <a href="RegWrite.html">RegWrite</a>, <a href="RegDelete.html">RegDelete</a> and <a href="LoopReg.html">registry loops</a>, allowing them in a 32-bit script to access the 64-bit registry view and vice versa.</td>
+  </tr>
+  <tr>
+    <td><a href="SetStoreCapslockMode.html">SetStoreCapsLockMode</a></td>
+    <td>Whether to restore the state of <kbd>CapsLock</kbd> after a <a href="Send.html">Send</a>.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="SetTimer.html">SetTimer</a></td>
+    <td>Causes a subroutine to be launched automatically and repeatedly at a specified time interval.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="SetTitleMatchMode.html">SetTitleMatchMode</a></td>
+    <td>Sets the matching behavior of the WinTitle parameter in commands such as <a href="WinWait.html">WinWait</a>.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="SetWinDelay.html">SetWinDelay</a></td>
+    <td>Sets the delay that will occur after each windowing command, such as <a href="WinActivate.html">WinActivate</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="SetWorkingDir.html">SetWorkingDir</a></td>
+    <td>Changes the script's current working directory.</td>
+  </tr>
+  <tr>
+    <td><a href="Shutdown.html">Shutdown</a></td>
+    <td>Shuts down, restarts, or logs off the system.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#Sin">Sin()</a></td>
+    <td>Returns the trigonometric sine of the specified number.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Sleep.html">Sleep</a></td>
+    <td>Waits the specified amount of time before continuing.</td>
+  </tr>
+  <tr>
+    <td><a href="Sort.html">Sort</a></td>
+    <td>Arranges a variable's contents in alphabetical, numerical, or random order (optionally removing duplicates).</td>
+  </tr>
+  <tr>
+    <td><a href="SoundBeep.html">SoundBeep</a></td>
+    <td>Emits a tone from the PC speaker.</td>
+  </tr>
+  <tr>
+    <td><a href="SoundGet.html">SoundGet</a></td>
+    <td>Retrieves various settings of a sound device (master mute, master volume, etc.)</td>
+  </tr>
+  <tr>
+    <td><a href="SoundGetWaveVolume.html">SoundGetWaveVolume</a></td>
+    <td>Retrieves the wave output volume of a sound device.</td>
+  </tr>
+  <tr>
+    <td><a href="SoundPlay.html">SoundPlay</a></td>
+    <td>Plays a sound, video, or other supported file type.</td>
+  </tr>
+  <tr>
+    <td><a href="SoundSet.html">SoundSet</a></td>
+    <td>Changes various settings of a sound device (master mute, master volume, etc.)</td>
+  </tr>
+  <tr>
+    <td><a href="SoundSetWaveVolume.html">SoundSetWaveVolume</a></td>
+    <td>Changes the wave output volume of a sound device.</td>
+  </tr>
+  <tr>
+    <td><a href="Progress.html">SplashImage</a></td>
+    <td>Creates or updates a window containing an image.</td>
+  </tr>
+  <tr>
+    <td><a href="SplashTextOn.html">SplashTextOn / SplashTextOff</a></td>
+    <td>Creates or removes a customizable text popup window.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="SplitPath.html">SplitPath</a></td>
+    <td>Separates a file name or URL into its name, directory, extension, and drive.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#Sqrt">Sqrt()</a></td>
+    <td>Returns the square root of the specified number.</td>
+  </tr>
+  <tr>
+    <td><a href="StatusBarGetText.html">StatusBarGetText</a></td>
+    <td>Retrieves the text from a standard status bar control.</td>
+  </tr>
+  <tr>
+    <td><a href="StatusBarWait.html">StatusBarWait</a></td>
+    <td>Waits until a window's status bar contains the specified string.</td>
+  </tr>
+  <tr>
+    <td><a href="StrGet.html">StrGet()</a></td>
+    <td>Copies a string from a memory address, optionally converting it from a given code page.</td>
+  </tr>
+  <tr>
+    <td><a href="StringCaseSense.html">StringCaseSense</a></td>
+    <td>Determines whether string comparisons are case sensitive (default is "not case sensitive").</td>
+  </tr>
+  <tr>
+    <td><a href="StringGetPos.html">StringGetPos</a></td>
+    <td>Retrieves the position of the specified substring within a string.</td>
+  </tr>
+  <tr>
+    <td><a href="StringLeft.html">StringLeft</a></td>
+    <td>Retrieves a number of characters from the left-hand side of a string.</td>
+  </tr>
+  <tr>
+    <td><a href="StringLen.html">StringLen</a></td>
+    <td>Retrieves the count of how many characters are in a string.</td>
+  </tr>
+  <tr>
+    <td><a href="StringLower.html">StringLower</a></td>
+    <td>Converts a string to lowercase.</td>
+  </tr>
+  <tr>
+    <td><a href="StringMid.html">StringMid</a></td>
+    <td>Retrieves one or more characters from the specified position in a string.</td>
+  </tr>
+  <tr>
+    <td><a href="StringReplace.html">StringReplace</a></td>
+    <td>Replaces the specified substring with a new string.</td>
+  </tr>
+  <tr>
+    <td><a href="StringLeft.html">StringRight</a></td>
+    <td>Retrieves a number of characters from the right-hand side of a string.</td>
+  </tr>
+  <tr>
+    <td><a href="StringSplit.html">StringSplit</a></td>
+    <td>Separates a string into an array of substrings using the specified delimiters.</td>
+  </tr>
+  <tr>
+    <td><a href="StringTrimLeft.html">StringTrimLeft</a></td>
+    <td>Removes a number of characters from the left-hand side of a string.</td>
+  </tr>
+  <tr>
+    <td><a href="StringTrimLeft.html">StringTrimRight</a></td>
+    <td>Removes a number of characters from the right-hand side of a string.</td>
+  </tr>
+  <tr>
+    <td><a href="StringLower.html">StringUpper</a></td>
+    <td>Converts a string to uppercase.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="StrLen.html">StrLen()</a></td>
+    <td>Retrieves the count of how many characters are in a string.</td>
+  </tr>
+  <tr>
+    <td><a href="StrPut.html">StrPut()</a></td>
+    <td>Copies a string to a memory address, optionally converting it to a given code page.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="StrReplace.html">StrReplace()</a></td>
+    <td>Replaces the specified substring with a new string.</td>
+  </tr>
+  <tr>
+    <td><a href="StrSplit.html">StrSplit()</a></td>
+    <td>Separates a string into an array of substrings using the specified delimiters.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="SubStr.html">SubStr()</a></td>
+    <td>Retrieves one or more characters from the specified position in a string.</td>
+  </tr>
+  <tr>
+    <td><a href="Suspend.html">Suspend</a></td>
+    <td>Disables or enables all or selected <a href="../Hotkeys.html">hotkeys</a> and <a href="../Hotstrings.html">hotstrings</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="Switch.html">Switch</a></td>
+    <td>Executes one case from a list of mutually exclusive candidates.</td>
+  </tr>
+  <tr>
+    <td><a href="SysGet.html">SysGet</a></td>
+    <td>Retrieves screen resolution, multi-monitor info,  dimensions of system objects, and other system properties.</td>
+  </tr>
+  <tr>
+    <td><a href="Math.html#Tan">Tan()</a></td>
+    <td>Returns the trigonometric tangent of the specified number.</td>
+  </tr>
+  <tr>
+    <td><a href="Thread.html">Thread</a></td>
+    <td>Sets the priority or interruptibility of <a href="../misc/Threads.html">threads</a>. It can also temporarily disable all <a href="SetTimer.html">timers</a>.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Throw.html">Throw</a></td>
+    <td>Signals the occurrence of an error. This signal can be caught by a <a href="Try.html">try</a>-<a href="Catch.html">catch</a> statement.</td>
+  </tr>
+  <tr>
+    <td><a href="ToolTip.html">ToolTip</a></td>
+    <td>Creates an always-on-top window anywhere on the screen.</td>
+  </tr>
+  <tr>
+    <td><a href="Transform.html">Transform</a></td>
+    <td>Performs miscellaneous math functions, bitwise operations, and tasks such as ASCII/Unicode conversion.</td>
+  </tr>
+  <tr>
+    <td><a href="TrayTip.html">TrayTip</a></td>
+    <td>Creates a balloon message window near the tray icon. On Windows 10, a toast notification may be shown instead.</td>
+  </tr>
+  <tr>
+    <td><a href="Trim.html">Trim() / LTrim() / RTrim()</a></td>
+    <td>Trims characters from the beginning and/or end of a string.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Try.html">Try</a></td>
+    <td>Guards one or more statements (commands or expressions) against runtime errors and exceptions thrown by the <a href="Throw.html">throw</a> command.</td>
+  </tr>
+  <tr>
+    <td><a href="TreeView.html#TV_Add">TV_Add()</a><br />
+    <a href="TreeView.html#TV_Delete">TV_Delete()</a><br />
+    <a href="TreeView.html#TV_Get">TV_Get()</a><br />
+    <a href="TreeView.html#TV_GetChild">TV_GetChild()</a><br />
+    <a href="TreeView.html#TV_GetCount">TV_GetCount()</a><br />
+    <a href="TreeView.html#TV_GetNext">TV_GetNext()</a><br />
+    <a href="TreeView.html#TV_GetParent">TV_GetParent()</a><br />
+    <a href="TreeView.html#TV_GetPrev">TV_GetPrev()</a><br />
+    <a href="TreeView.html#TV_GetSelection">TV_GetSelection()</a><br />
+    <a href="TreeView.html#TV_GetText">TV_GetText()</a><br />
+    <a href="TreeView.html#TV_Modify">TV_Modify()</a><br />
+    <a href="TreeView.html#TV_SetImageList">TV_SetImageList()</a></td>
+    <td>The means by which the items of a <a href="TreeView.html">TreeView</a> control are added, modified or retrieved.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="Until.html">Until</a></td>
+    <td>Applies a condition to the continuation of a Loop or For-loop.</td>
+  </tr>
+  <tr>
+    <td><a href="URLDownloadToFile.html">UrlDownloadToFile</a></td>
+    <td>Downloads a file from the Internet.</td>
+  </tr>
+  <tr>
+    <td><a href="SetEnv.html">Var = Value</a></td>
+    <td>Assigns the specified value to a <a href="../Variables.html">variable</a>.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="SetExpression.html">Var := expression</a></td>
+    <td>Evaluates an <a href="../Variables.html#Expressions">expression</a> and stores the result in a <a href="../Variables.html">variable</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="VarSetCapacity.html">VarSetCapacity()</a></td>
+    <td>Enlarges a variable's holding capacity or frees its memory. Normally, this is necessary only for unusual circumstances such as <a href="DllCall.html">DllCall()</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="VerCompare.html">VerCompare()</a></td>
+    <td>Compares two version strings.</td>
+  </tr>
+  <tr id="W">
+    <td class="larger"><a href="While.html">While-loop</a></td>
+    <td>Performs a series of commands repeatedly until the specified <a href="../Variables.html#Expressions">expression</a> evaluates to false.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="WinActivate.html">WinActivate</a></td>
+    <td>Activates the specified window.</td>
+  </tr>
+  <tr>
+    <td><a href="WinActivateBottom.html">WinActivateBottom</a></td>
+    <td>Same as <a href="WinActivate.html">WinActivate</a> except that it activates the bottommost matching window rather than the topmost.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="WinActive.html">WinActive()</a></td>
+    <td>Checks if the specified window is active and returns its unique ID (HWND).</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="WinClose.html">WinClose</a></td>
+    <td>Closes the specified window.</td>
+  </tr>
+  <tr>
+  <td class="larger"><a href="WinExist.html">WinExist()</a></td>
+    <td>Checks if the specified window exists and returns the unique ID (HWND) of the first matching window.</td>
+  </tr>
+  <tr>
+    <td><a href="WinGetActiveStats.html">WinGetActiveStats</a></td>
+    <td>Combines the functions of <a href="WinGetActiveTitle.html">WinGetActiveTitle</a> and <a href="WinGetPos.html">WinGetPos</a> into one command.</td>
+  </tr>
+  <tr>
+    <td><a href="WinGetActiveTitle.html">WinGetActiveTitle</a></td>
+    <td>Retrieves the title of the active window.</td>
+  </tr>
+  <tr>
+    <td><a href="WinGetClass.html">WinGetClass</a></td>
+    <td>Retrieves the specified window's class name.</td>
+  </tr>
+  <tr>
+    <td><a href="WinGet.html">WinGet</a></td>
+    <td>Retrieves the specified window's unique ID, process ID, process name, or a list of its controls. It can also retrieve a list of all windows matching the specified criteria.</td>
+  </tr>
+  <tr>
+    <td><a href="WinGetPos.html">WinGetPos</a></td>
+    <td>Retrieves the position and size of the specified window.</td>
+  </tr>
+  <tr>
+    <td><a href="WinGetText.html">WinGetText</a></td>
+    <td>Retrieves the text from the specified window.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="WinGetTitle.html">WinGetTitle</a></td>
+    <td>Retrieves the title of the specified window.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="WinHide.html">WinHide</a></td>
+    <td>Hides the specified window.</td>
+  </tr>
+  <tr>
+    <td><a href="WinKill.html">WinKill</a></td>
+    <td>Forces the specified window to close.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="WinMaximize.html">WinMaximize</a></td>
+    <td>Enlarges the specified window to its maximum size.</td>
+  </tr>
+  <tr>
+    <td><a href="WinMenuSelectItem.html">WinMenuSelectItem</a></td>
+    <td>Invokes a menu item from the menu bar of the specified window.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="WinMinimize.html">WinMinimize</a></td>
+    <td>Collapses the specified window into a button on the task bar.</td>
+  </tr>
+  <tr>
+    <td><a href="WinMinimizeAll.html">WinMinimizeAll / WinMinimizeAllUndo</a></td>
+    <td>Minimizes or unminimizes all windows.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="WinMove.html">WinMove</a></td>
+    <td>Changes the position and/or size of the specified window.</td>
+  </tr>
+  <tr>
+    <td><a href="WinRestore.html">WinRestore</a></td>
+    <td>Unminimizes or unmaximizes the specified window if it is minimized or maximized.</td>
+  </tr>
+  <tr>
+    <td><a href="WinSet.html">WinSet</a></td>
+    <td>Makes a variety of changes to the specified window, such as "always on top" and transparency.</td>
+  </tr>
+  <tr>
+    <td><a href="WinSetTitle.html">WinSetTitle</a></td>
+    <td>Changes the title of the specified window.</td>
+  </tr>
+  <tr>
+    <td><a href="WinShow.html">WinShow</a></td>
+    <td>Unhides the specified window.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="WinWait.html">WinWait</a></td>
+    <td>Waits until the specified window exists.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="WinWaitActive.html">WinWaitActive / WinWaitNotActive</a></td>
+    <td>Waits until the specified window is active or not active.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="WinWaitClose.html">WinWaitClose</a></td>
+    <td>Waits until the specified window does not exist.</td>
+  </tr>
+  <tr id="hash">
+    <td><a href="_ClipboardTimeout.html">#ClipboardTimeout</a></td>
+    <td>Changes how long the script keeps trying to access the clipboard when the first attempt fails.</td>
+  </tr>
+  <tr>
+    <td><a href="_CommentFlag.html">#CommentFlag</a></td>
+    <td>Changes the script's comment symbol from semicolon to some other string.</td>
+  </tr>
+  <tr>
+    <td><a href="_EscapeChar.html#Delimiter">#Delimiter</a></td>
+    <td>Changes the script's command parameter delimiter from comma to some other character.</td>
+  </tr>
+  <tr>
+    <td><a href="_EscapeChar.html#DerefChar">#DerefChar</a></td>
+    <td>Changes the script's dereference symbol from percent to some other character.</td>
+  </tr>
+  <tr>
+    <td><a href="_ErrorStdOut.html">#ErrorStdOut</a></td>
+    <td>Sends any syntax error that prevents a script from launching to the standard error stream (stderr) rather than displaying a dialog.</td>
+  </tr>
+  <tr>
+    <td><a href="_EscapeChar.html">#EscapeChar</a></td>
+    <td>Changes the script's escape character (e.g. backslash vs. accent).</td>
+  </tr>
+  <tr>
+    <td><a href="_HotkeyInterval.html">#HotkeyInterval</a></td>
+    <td>Along with <a href="_MaxHotkeysPerInterval.html">#MaxHotkeysPerInterval</a>, specifies the rate of <a href="../Hotkeys.html">hotkey</a> activations beyond which a warning dialog will be displayed.</td>
+  </tr>
+  <tr>
+    <td><a href="_HotkeyModifierTimeout.html">#HotkeyModifierTimeout</a></td>
+    <td>Affects the behavior of <a href="../Hotkeys.html">hotkey</a> modifiers: <kbd>Ctrl</kbd>, <kbd>Alt</kbd>, <kbd>Win</kbd>, and <kbd>Shift</kbd>.</td>
+  </tr>
+  <tr>
+    <td><a href="_Hotstring.html">#Hotstring</a></td>
+    <td>Changes <a href="../Hotstrings.html">hotstring</a> options or ending characters.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="_If.html">#If</a></td>
+    <td>Creates context-sensitive <a href="../Hotkeys.html">hotkeys</a> and <a href="../Hotstrings.html">hotstrings</a>. Such hotkeys perform a different action (or none at all) depending on the result of an expression.</td>
+  </tr>
+  <tr>
+    <td><a href="_IfTimeout.html">#IfTimeout</a></td>
+    <td>Sets the maximum time that may be spent evaluating a single #If expression.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="_IfWinActive.html">#IfWinActive / #IfWinNotActive / #IfWinExist / #IfWinNotExist</a></td>
+    <td>Creates context-sensitive <a href="../Hotkeys.html">hotkeys</a> and <a href="../Hotstrings.html">hotstrings</a>. Such hotkeys perform a different action (or none at all) depending on the type of window that is active or exists.</td>
+  </tr>
+  <tr>
+    <td><a href="_Include.html">#Include / #IncludeAgain</a></td>
+    <td>Causes the script to behave as though the specified file's contents are present at this exact position.</td>
+  </tr>
+  <tr>
+    <td><a href="_InputLevel.html">#InputLevel</a></td>
+    <td>Controls which artificial keyboard and mouse events are ignored by hotkeys and hotstrings.</td>
+  </tr>
+  <tr>
+    <td><a href="_InstallKeybdHook.html">#InstallKeybdHook</a></td>
+    <td>Forces the unconditional installation of the keyboard hook.</td>
+  </tr>
+  <tr>
+    <td><a href="_InstallMouseHook.html">#InstallMouseHook</a></td>
+    <td>Forces the unconditional installation of the mouse hook.</td>
+  </tr>
+  <tr>
+    <td><a href="_KeyHistory.html">#KeyHistory</a></td>
+    <td>Sets the maximum number of keyboard and mouse events displayed by the <a href="KeyHistory.html">KeyHistory</a> window. You can set it to 0 to disable key history.</td>
+  </tr>
+  <tr>
+    <td><a href="../Scripts.html#LTrim">#LTrim</a></td>
+    <td>Enables or disables trimming of indentation in continuation sections.</td>
+  </tr>
+  <tr>
+    <td><a href="_MaxHotkeysPerInterval.html">#MaxHotkeysPerInterval</a></td>
+    <td>Along with <a href="_HotkeyInterval.html">#HotkeyInterval</a>, specifies the rate of <a href="../Hotkeys.html">hotkey</a> activations beyond which a warning dialog will be displayed.</td>
+  </tr>
+  <tr>
+    <td><a href="_MaxMem.html">#MaxMem</a></td>
+    <td>Sets the maximum capacity of each <a href="../Variables.html">variable</a> to the specified number of megabytes.</td>
+  </tr>
+  <tr>
+    <td><a href="_MaxThreads.html">#MaxThreads</a></td>
+    <td>Sets the maximum number of simultaneous <a href="../misc/Threads.html">threads</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="_MaxThreadsBuffer.html">#MaxThreadsBuffer</a></td>
+    <td>Causes some or all <a href="../Hotkeys.html">hotkeys</a> to buffer rather than ignore keypresses when their <a href="_MaxThreadsPerHotkey.html">#MaxThreadsPerHotkey</a> limit has been reached.</td>
+  </tr>
+  <tr>
+    <td><a href="_MaxThreadsPerHotkey.html">#MaxThreadsPerHotkey</a></td>
+    <td>Sets the maximum number of simultaneous <a href="../misc/Threads.html">threads</a> per <a href="../Hotkeys.html">hotkey</a> or <a href="../Hotstrings.html">hotstring</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="_MenuMaskKey.html">#MenuMaskKey</a></td>
+    <td>Changes which key is used to mask Win or Alt keyup events.</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="_NoEnv.html">#NoEnv</a></td>
+    <td>Avoids checking empty variables to see if they are environment variables (recommended for all new scripts).</td>
+  </tr>
+  <tr>
+    <td class="larger"><a href="_NoTrayIcon.html">#NoTrayIcon</a></td>
+    <td>Disables the showing of a tray icon.</td>
+  </tr>
+  <tr>
+    <td><a href="_Persistent.html">#Persistent</a></td>
+    <td>Keeps a script permanently running (that is, until the user closes it or <a href="ExitApp.html">ExitApp</a> is encountered).</td>
+  </tr>
+  <tr>
+    <td><a href="_Requires.html">#Requires</a></td>
+    <td>Displays an error and quits if a version requirement is not met.</td>
+  </tr>
+  <tr>
+    <td><a href="_SingleInstance.html">#SingleInstance</a></td>
+    <td>Determines whether a script is allowed to run again when it is already running.</td>
+  </tr>
+  <tr>
+    <td><a href="_UseHook.html">#UseHook</a></td>
+    <td>Forces the use of the  hook to implement all or some keyboard <a href="../Hotkeys.html">hotkeys</a>.</td>
+  </tr>
+  <tr>
+    <td><a href="_Warn.html">#Warn</a></td>
+    <td>Enables or disables warnings for specific conditions which may indicate an error, such as a typo or missing "global" declaration.</td>
+  </tr>
+  <tr>
+    <td><a href="_WinActivateForce.html">#WinActivateForce</a></td>
+    <td>Skips the gentle method of activating a window and goes straight to the forceful method.</td>
+  </tr>
+</table>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a01259b94c77b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/index.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:52 GMT -->
+</html>

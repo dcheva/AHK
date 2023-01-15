@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Gosub.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:18 GMT -->
+<head>
+<title>Gosub - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The Gosub statement jumps to the specified label and continues execution until a Return statement is encountered." />
+<meta name="ahk:equiv-v2" content="../Concepts-2.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>Gosub</h1>
+
+<p>Jumps to the specified label and continues execution until <a href="Return.html">Return</a> is encountered.</p>
+
+<pre class="Syntax"><span class="func">Gosub</span>, Label</pre>
+<h2 id="Parameters">Parameters</h2>
+<dl>
+
+  <dt>Label</dt>
+  <dd><p>The name of the <a href="../misc/Labels.html">label</a>, <a href="../Hotkeys.html">hotkey label</a>, or <a href="../Hotstrings.html#label">hotstring label</a> to which to jump, which causes the commands beneath <em>Label</em> to be executed until a Return or Exit is encountered. <a href="Return.html">"Return"</a> causes the script to jump back to the first command beneath the Gosub and resume execution there. <a href="Exit.html">"Exit"</a> terminates the <a href="../misc/Threads.html">current thread</a>.</p></dd>
+
+</dl>
+
+<h2 id="Remarks">Remarks</h2>
+<p>As with the parameters of almost all other commands, <em>Label</em> can be a <a href="../Variables.html">variable</a> reference such as %MyLabel%, in which case the name stored in the variable is used as the target. However, performance is slightly reduced because the target label must be "looked up" each time rather than only once when the script is first loaded.</p>
+<p>When using a dynamic label such as %MyLabel%, an error dialog will be displayed if the label does not exist. To avoid this, call <a href="IsLabel.html">IsLabel()</a> beforehand. For example:</p>
+<pre>if IsLabel(VarContainingLabelName)
+    Gosub %VarContainingLabelName%</pre>
+<p>Although Gosub is useful for simple, general purpose subroutines, consider using <a href="../Functions.html">functions</a> for more complex purposes.</p>
+<h2 id="Related">Related</h2>
+<p><a href="Return.html">Return</a>, <a href="../Functions.html">Functions</a>, <a href="IsLabel.html">IsLabel()</a>, <a href="Block.html">Blocks</a>, <a href="Loop.html">Loop</a>, <a href="Goto.html">Goto</a>, <a href="../Variables.html#ThisLabel">A_ThisLabel</a></p>
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> This example is executed as follows:</p>
+<ol>
+  <li>Jump to the label named "Label1".</li>
+  <li>Show the message "The Label1 subroutine is now running."</li>
+  <li>Return to the line immediately after Gosub.</li>
+  <li>Show the message "The Label1 subroutine has returned (it is finished)."</li>
+  <li>End the <a href="../Language.html#auto-execute-section">auto-execute section</a>.</li>
+</ol>
+<pre>Gosub, Label1 
+MsgBox, The Label1 subroutine has returned (it is finished).
+return
+
+Label1:
+MsgBox, The Label1 subroutine is now running.
+return</pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013662f7e77b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Gosub.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:19 GMT -->
+</html>

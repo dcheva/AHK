@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileRecycle.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:24 GMT -->
+<head>
+<title>FileRecycle - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The FileRecycle command sends a file or directory to the recycle bin if possible, or permanently deletes it." />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>FileRecycle</h1>
+
+<p>Sends a file or directory to the recycle bin if possible, or permanently deletes it.</p>
+
+<pre class="Syntax"><span class="func">FileRecycle</span>, FilePattern</pre>
+<h2 id="Parameters">Parameters</h2>
+<dl>
+
+  <dt>FilePattern</dt>
+  <dd><p>The name of a single file or a wildcard pattern such as C:\Temp\*.tmp. <em>FilePattern</em> is assumed to be in <a href="../Variables.html#WorkingDir">%A_WorkingDir%</a> if an absolute path isn't specified.</p>
+      <p>To recycle an entire directory, provide its name without a trailing backslash.</p></dd>
+
+</dl>
+
+<h2 id="Error_Handling">Error Handling</h2>
+<p><span class="ver">[v1.1.04+]</span>: This command is able to throw an exception on failure. For more information, see <a href="Catch.html#RuntimeErrors">Runtime Errors</a>.</p>
+<p><a href="../misc/ErrorLevel.html">ErrorLevel</a> is set to 1 if there was a problem or 0 otherwise.</p>
+<h2 id="Remarks">Remarks</h2>
+<p><a href="http://msdn.microsoft.com/en-us/library/bb762164.aspx">SHFileOperation</a> is used to do the actual work. This function may permanently delete the file if it is too large to be recycled; as of <span class="ver">[v1.0.96]</span>, a warning should be shown before this occurs.</p>
+<p>The file may be permanently deleted without warning if the file cannot be recycled for other reasons, such as:</p>
+<ul>
+  <li>The file is on a removable drive.</li>
+  <li>The Recycle Bin has been disabled, such as via the <code>NukeOnDelete</code> registry value.</li>
+</ul>
+<h2 id="Related">Related</h2>
+<p><a href="FileRecycleEmpty.html">FileRecycleEmpty</a>, <a href="FileDelete.html">FileDelete</a>, <a href="FileCopy.html">FileCopy</a>, <a href="FileMove.html">FileMove</a></p>
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> Sends all .tmp files in a directory to the recycle bin if possible.</p>
+<pre>FileRecycle, C:\temp files\*.tmp</pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013b83a7477b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileRecycle.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:24 GMT -->
+</html>

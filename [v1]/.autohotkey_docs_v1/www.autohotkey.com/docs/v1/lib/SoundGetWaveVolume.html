@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/SoundGetWaveVolume.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:12 GMT -->
+<head>
+<title>SoundGetWaveVolume - Syntax &amp; Usage | AutoHotkey</title>
+<meta name="description" content="The SoundGetWaveVolume command retrieves the wave output volume of a sound device." />
+<meta name="ahk:equiv-v2" content="lib/SoundGetVolume.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<script src="../static/content.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>SoundGetWaveVolume</h1>
+
+<p>Retrieves the wave output volume of a sound device.</p>
+
+<pre class="Syntax"><span class="func">SoundGetWaveVolume</span>, OutputVar <span class="optional">, DeviceNumber</span></pre>
+<h2 id="Parameters">Parameters</h2>
+<dl>
+
+  <dt>OutputVar</dt>
+  <dd><p>The name of the output variable in which to store the retrieved volume level, which is a floating point number between 0 and 100 inclusive. The variable will be made blank if there was a problem retrieving the volume. The format of the floating point number, such as its decimal places, is determined by <a href="SetFormat.html">SetFormat</a>.</p></dd>
+
+  <dt>DeviceNumber</dt>
+  <dd><p>If this parameter is omitted, it defaults to 1 (the first sound device), which is usually the system's default device for recording and playback. Specify a number higher than 1 to operate upon a different sound device.</p></dd>
+
+</dl>
+<h2 id="Error_Handling">Error Handling</h2>
+<p><span class="ver">[v1.1.04+]</span>: This command is able to throw an exception on failure. For more information, see <a href="Catch.html#RuntimeErrors">Runtime Errors</a>.</p>
+<p><a href="../misc/ErrorLevel.html">ErrorLevel</a> is set to 1 if there was a problem or 0 otherwise.</p>
+<h2 id="Remarks">Remarks</h2>
+<p>The current wave output volume level can be set via <a href="SoundSetWaveVolume.html">SoundSetWaveVolume</a>. Settings such as Master Volume, Synth, Microphone, Mute, Treble, and Bass can be set and retrieved using <a href="SoundSet.html">SoundSet</a> and <a href="SoundGet.html">SoundGet</a>.</p>
+<p><span class="ver">[v1.1.10+]</span>: On Windows Vista and later, this command is equivalent to <a href="SoundGet.html">SoundGet</a> with <em>ComponentType</em> set to <code>Wave</code> and <em>ControlType</em> set to <code>Volume</code>.</p>
+<h2 id="Related">Related</h2>
+<p><a href="SoundSetWaveVolume.html">SoundSetWaveVolume</a>, <a href="SoundSet.html">SoundSet</a>, <a href="SoundGet.html">SoundGet</a>, <a href="SoundPlay.html">SoundPlay</a></p>
+<h2 id="Examples">Examples</h2>
+<div class="ex" id="ExBasic">
+<p><a class="ex_number" href="#ExBasic"></a> Retrieves and reports the current wave output volume.</p>
+<pre>SoundGetWaveVolume, OutputVar
+MsgBox, The current wave output volume level is %OutputVar%`%.</pre>
+</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013169ae677b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/SoundGetWaveVolume.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:13 GMT -->
+</html>
