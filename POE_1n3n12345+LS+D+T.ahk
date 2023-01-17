@@ -28,7 +28,7 @@ $^+W::
 return
 ;-----Let's play!-----
 
-;functions
+; Functions
 clkToKill()
 {
   Send, {Q}
@@ -46,6 +46,7 @@ clkToKill()
   SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 }
 
+; Go smoke
 $^Numpad0::
 	Loop
 	{
@@ -54,6 +55,7 @@ $^Numpad0::
 	}
 return
 
+; Flasks
 ;$`::
 ;$1:: 
 $2::
@@ -74,6 +76,7 @@ $4::
 ;  Send, f
 return
 
+; Auras
 $^A::
   Send, {T}
   Sleep, 100
@@ -91,44 +94,39 @@ $^A::
   Reload ; to refresh variables
 return
 
-; achtung minen!
-$R::
-  Send, {R}
-return
-
-; reactivate auras
-$^W::
+; Reactivate auras
+$^~W:: ; $W::
   if(disW){
     disW := 0
-    Send, {W}
-    Sleep, 100
     Send, ^{W}
+    Sleep, 100
+    Send, {W}
   } else {
     disW := 1
-    Send, ^{W}
-    Sleep, 100
     Send, {W}
+    Sleep, 100
+    Send, ^{W}
   }
 return
 
+; Achtung Minen!!!
 $Space::
   Send, {Space}
-  Sleep, 10
-  Send, {MButton}
-  Sleep, 10
   Send, {T}
+  Sleep, 80
+  Send, {MButton}
   Sleep, 200
   Send, {D}
 return
 
-;go hideout on F5
+; Go hideout on F5
 $F5::
   Send, {Enter}
   Send, /hideout
   Send, {Enter}
 return
 
-;Shift + Click
+; Shift + Click
 $LShift::
 GetKeyState, state, LButton
 if (state = "D") {
