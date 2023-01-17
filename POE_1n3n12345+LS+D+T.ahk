@@ -97,7 +97,7 @@ $R::
 return
 
 ; reactivate auras
-$W::
+$^W::
   if(disW){
     disW := 0
     Send, {W}
@@ -113,9 +113,9 @@ return
 
 $Space::
   Send, {Space}
-;  Sleep, 10
+  Sleep, 10
   Send, {MButton}
-  Sleep, 60
+  Sleep, 10
   Send, {T}
   Sleep, 200
   Send, {D}
