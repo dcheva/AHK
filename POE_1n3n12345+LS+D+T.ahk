@@ -96,17 +96,17 @@ $R::
   Send, {R}
 return
 
-; reactive auras
+; reactivate auras
 $W::
   if(disW){
     disW := 0
     Send, {W}
-    Sleep, 60
+    Sleep, 100
     Send, ^{W}
   } else {
     disW := 1
     Send, ^{W}
-    Sleep, 60
+    Sleep, 100
     Send, {W}
   }
 return
