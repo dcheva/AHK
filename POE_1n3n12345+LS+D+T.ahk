@@ -88,11 +88,27 @@ $^A::
   Send, ^Q
   Sleep, 100
   Send, {MButton}
+  Reload ; to refresh variables
 return
 
 ; achtung minen!
 $R::
   Send, {R}
+return
+
+; reactive auras
+$W::
+  if(disW){
+    disW := 0
+    Send, {W}
+    Sleep, 60
+    Send, ^{W}
+  } else {
+    disW := 1
+    Send, ^{W}
+    Sleep, 60
+    Send, {W}
+  }
 return
 
 $Space::
