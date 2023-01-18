@@ -112,11 +112,12 @@ return
 ; Achtung Minen!!!
 $Space::
   Send, {Space}
-  Send, {T}
-  Sleep, 80
   Send, {MButton}
+  Sleep, 20
+  Send, {T}
   Sleep, 200
   Send, {D}
+  Send, {MButton}
 return
 
 ; Go hideout on F5
