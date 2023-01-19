@@ -96,6 +96,7 @@ return
 
 ; Achtung Minen!!!
 $Space::
+  BreakLoop := 1
   Send, {Space}
   Send, {MButton}
   Sleep, 20
@@ -149,16 +150,3 @@ $^+Backspace::
   }
 return
 
-; break clicker loop
-$Space::
-  BreakLoop := 1
-  ; Achtung Minen!!!
-  Send, {Space}
-  Send, {MButton}
-  Sleep, 20
-  Send, {T}
-  Sleep, 200
-  Send, {D}
-  Send, {MButton}
-  Send, {Space}
-return
