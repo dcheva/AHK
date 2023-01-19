@@ -94,21 +94,6 @@ $^A::
   Reload ; to refresh variables
 return
 
-; Reactivate auras
-$^~W:: ; $W::
-  if(disW){
-    disW := 0
-    Send, ^{W}
-    Sleep, 100
-    Send, {W}
-  } else {
-    disW := 1
-    Send, {W}
-    Sleep, 100
-    Send, ^{W}
-  }
-return
-
 ; Achtung Minen!!!
 $Space::
   Send, {Space}
@@ -133,4 +118,42 @@ GetKeyState, state, LButton
 if (state = "D") {
   Send, {R}
 }
+return
+
+; Reactivate auras
+$^~W:: ; $W::
+  if(disW){
+    disW := 0
+    Send, ^{W}
+    Sleep, 100
+    Send, {W}
+  } else {
+    disW := 1
+    Send, {W}
+    Sleep, 100
+    Send, ^{W}
+  }
+return
+
+; run clicker loop
+#IfWinActive, Path of Exile 
+$^+P:: 
+$^+Backspace::
+  BreakLoop := 0
+  Loop, 1000 { 
+    Send ^{Click} 
+    Sleep, 100 
+    ; hold Backspace to break loop
+    if (BreakLoop == 1 or GetKeyState("Backspace", "P")) {
+      BreakLoop := 0
+      break
+    }
+  }
+return
+
+; break clicker loop
+#IfWinActive, Path of Exile 
+$Space::
+  BreakLoop := 1
+  Send, {Space}
 return

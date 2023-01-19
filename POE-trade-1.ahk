@@ -37,7 +37,7 @@ return
 ; run clicker loop
 #IfWinActive, Path of Exile 
 $^P:: 
-$Backspace::
+$^Backspace::
   BreakLoop := 0
   Loop, 1000 { 
     Send ^{Click} 
