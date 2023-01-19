@@ -136,8 +136,6 @@ $^~W:: ; $W::
 return
 
 ; run clicker loop
-#IfWinActive, Path of Exile 
-$^+P:: 
 $^+Backspace::
   BreakLoop := 0
   Loop, 1000 { 
@@ -152,8 +150,15 @@ $^+Backspace::
 return
 
 ; break clicker loop
-#IfWinActive, Path of Exile 
 $Space::
   BreakLoop := 1
+  ; Achtung Minen!!!
+  Send, {Space}
+  Send, {MButton}
+  Sleep, 20
+  Send, {T}
+  Sleep, 200
+  Send, {D}
+  Send, {MButton}
   Send, {Space}
 return
