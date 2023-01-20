@@ -137,7 +137,7 @@ $^~W:: ; $W::
 return
 
 ; run clicker loop
-$^+Backspace::
+$^Backspace::
   BreakLoop := 0
   Loop, 1000 { 
     Send ^{Click} 
