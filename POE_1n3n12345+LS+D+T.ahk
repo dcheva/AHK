@@ -56,24 +56,16 @@ $^Numpad0::
 return
 
 ; Flasks
-;$`::
 ;$1:: 
 $2::
 ;$3::
 $4::
 ;$5::
-;$f::
   Send, 1
-  Sleep, 10
   Send, 2
-  Sleep, 10
   Send, 3
-  Sleep, 10
   Send, 4
-  Sleep, 10
   Send, 5
-;  Sleep, 10  
-;  Send, f
 return
 
 ; Auras
@@ -98,7 +90,6 @@ return
 $+Space::
   BreakLoop := 1
   Send, {Space}
-  Sleep, 20
   Send, {T}
   Sleep, 200
   Send, {D}
@@ -108,9 +99,7 @@ return
 $Space::
   BreakLoop := 1
   Send, {Space}
-  Sleep, 20
   Send, {T}
-  Sleep, 20
   Send, {MButton}
   Sleep, 200
   Send, {D}
