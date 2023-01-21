@@ -95,7 +95,7 @@ $^A::
 return
 
 ; Achtung Minen!!! T on space
-$Space::
+$+Space::
   BreakLoop := 1
   Send, {Space}
   Sleep, 20
@@ -105,13 +105,13 @@ $Space::
 return
 
 ; Achtung Minen!!! MB and T
-$+Space::
+$Space::
   BreakLoop := 1
   Send, {Space}
   Sleep, 20
-  Send, {MButton}
-  Sleep, 20
   Send, {T}
+  Sleep, 20
+  Send, {MButton}
   Sleep, 200
   Send, {D}
 return
