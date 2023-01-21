@@ -59,7 +59,7 @@ return
 ;$1:: 
 $2::
 ;$3::
-$4::
+;$4::
 ;$5::
   Send, 1
   Send, 2
@@ -147,5 +147,22 @@ $^Backspace::
       break
     }
   }
+return
+
+; run shift-clicker loop
+$+Backspace::
+  BreakLoop := 0
+  Send {LShift Down} 
+  Loop, 1000 { 
+    Send {Click} 
+    Sleep, 100 
+    ; hold Backspace to break loop
+    if (BreakLoop == 1 or GetKeyState("Backspace", "P")) {
+      BreakLoop := 0
+      Send {LShift Up} 
+      break
+    }
+  }
+  Send {LShift Up} 
 return
 
