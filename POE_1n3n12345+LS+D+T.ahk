@@ -121,19 +121,19 @@ if (state = "D") {
 return
 
 ; Reactivate auras
-$^~W:: ; $W::
-  if(disW){
-    disW := 0
-    Send, ^{W}
-    Sleep, 100
-    Send, {W}
-  } else {
-    disW := 1
-    Send, {W}
-    Sleep, 100
-    Send, ^{W}
-  }
-return
+; $W::
+;  if(disW){
+;    disW := 0
+;    Send, ^{W}
+;    Sleep, 100
+;    Send, {W}
+;  } else {
+;    disW := 1
+;    Send, {W}
+;    Sleep, 100
+;    Send, ^{W}
+;  }
+; return
 
 ; run clicker loop
 $^Backspace::
