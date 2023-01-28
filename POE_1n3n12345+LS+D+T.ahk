@@ -86,11 +86,19 @@ $^A::
   Reload ; to refresh variables
 return
 
-; Achtung Minen!!! MB
 $Space::
   BreakLoop := 1
   Send, {MButton}
   Send, {Space}
+return
+
+$A::
+  ; A::chtung Minen!!!
+  ; Drop mine or trap, wait, detonate
+    Send, {T}
+    SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
+    Sleep, 200
+    Send, {D}
 return
 
 ;; Go hideout on F5
@@ -107,15 +115,6 @@ $LShift::
   GetKeyState, state, LButton
   if (state = "D") {
     Send, {R}
-  }
-  ; + Space pressed
-  ; Drop mine or trap, wait, detonate
-  GetKeyState, state, Space
-  if (state = "D") {
-    Send, {T}
-    SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
-    Sleep, 200
-    Send, {D}
   }
 return
 
