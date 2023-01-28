@@ -86,19 +86,19 @@ $^A::
   Reload ; to refresh variables
 return
 
-; Achtung Minen!!! MB
-$Space::
-  BreakLoop := 1
-  Send, {MButton}
-  Send, {Space}
-return
-
 ; Achtung Minen!!! T and D
 $+Space::
   BreakLoop := 1
   Send, {T}
   Sleep, 200
   Send, {D}
+return
+
+; Achtung Minen!!! MB
+$Space::
+  BreakLoop := 1
+  Send, {MButton}
+  Send, {Space}
 return
 
 ;; Go hideout on F5
