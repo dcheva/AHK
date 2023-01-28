@@ -86,21 +86,17 @@ $^A::
   Reload ; to refresh variables
 return
 
-; Achtung Minen!!! T on space
-$+Space::
-  BreakLoop := 1
-  Send, {Space}
-  Send, {T}
-  Sleep, 200
-  Send, {D}
-return
-
-; Achtung Minen!!! MB and T
+; Achtung Minen!!! MB
 $Space::
   BreakLoop := 1
-  Send, {Space}
-  Send, {T}
   Send, {MButton}
+  Send, {Space}
+return
+
+; Achtung Minen!!! T and D
+$+Space::
+  BreakLoop := 1
+  Send, {T}
   Sleep, 200
   Send, {D}
 return
