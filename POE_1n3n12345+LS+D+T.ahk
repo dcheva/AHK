@@ -86,14 +86,6 @@ $^A::
   Reload ; to refresh variables
 return
 
-; Achtung Minen!!! T and D
-$+Space::
-  BreakLoop := 1
-  Send, {T}
-  Sleep, 200
-  Send, {D}
-return
-
 ; Achtung Minen!!! MB
 $Space::
   BreakLoop := 1
@@ -108,12 +100,23 @@ return
 ;  Send, {Enter}
 ;return
 
-; Shift + Click
+; Shift + action
 $LShift::
-GetKeyState, state, LButton
-if (state = "D") {
-  Send, {R}
-}
+  ; + Clicked
+  ; Blink
+  GetKeyState, state, LButton
+  if (state = "D") {
+    Send, {R}
+  }
+  ; + Space pressed
+  ; Drop mine or trap, wait, detonate
+  GetKeyState, state, Space
+  if (state = "D") {
+    Send, {T}
+    SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
+    Sleep, 200
+    Send, {D}
+  }
 return
 
 ;; Reactivate auras
