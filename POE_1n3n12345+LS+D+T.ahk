@@ -101,12 +101,12 @@ $+Space::
   Send, {D}
 return
 
-; Go hideout on F5
-$F5::
-  Send, {Enter}
-  Send, /hideout
-  Send, {Enter}
-return
+;; Go hideout on F5
+;$F5::
+;  Send, {Enter}
+;  Send, /hideout
+;  Send, {Enter}
+;return
 
 ; Shift + Click
 $LShift::
@@ -116,8 +116,8 @@ if (state = "D") {
 }
 return
 
-; Reactivate auras
-; $W::
+;; Reactivate auras
+;$W::
 ;  if(disW){
 ;    disW := 0
 ;    Send, ^{W}
@@ -129,7 +129,7 @@ return
 ;    Sleep, 100
 ;    Send, ^{W}
 ;  }
-; return
+;return
 
 ; run clicker loop
 $^Backspace::
