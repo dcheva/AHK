@@ -109,11 +109,13 @@ return
 ;return
 
 ; Shift + action
+; Left or right mouse is down when shift pressed
 $LShift::
   ; + Clicked
   ; Blink
-  GetKeyState, state, LButton
-  if (state = "D") {
+  GetKeyState, Lst, LButton
+  GetKeyState, Rst, RButton
+  if (Lst = "D" or Rst = "D") {
     Send, {R}
   }
 return
@@ -150,17 +152,28 @@ return
 ; run shift-clicker loop
 $+Backspace::
   BreakLoop := 0
-  Send {LShift Down} 
   Loop, 1000 { 
-    Send {Click} 
+    Send +{Click} 
     Sleep, 100 
     ; hold Backspace to break loop
     if (BreakLoop == 1 or GetKeyState("Backspace", "P")) {
       BreakLoop := 0
-      Send {LShift Up} 
       break
     }
   }
   Send {LShift Up} 
 return
 
+; run control+shift clicker loop
+$+^Backspace::
+  BreakLoop := 0
+  Loop, 1000 { 
+    Send +^{Click} 
+    Sleep, 100 
+    ; hold Backspace to break loop
+    if (BreakLoop == 1 or GetKeyState("Backspace", "P")) {
+      BreakLoop := 0
+      break
+    }
+  }
+return
