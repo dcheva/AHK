@@ -149,20 +149,20 @@ $^Backspace::
   }
 return
 
-; run shift-clicker loop
-$+Backspace::
-  BreakLoop := 0
-  Loop, 1000 { 
-    Send +{Click} 
-    Sleep, 100 
-    ; hold Backspace to break loop
-    if (BreakLoop == 1 or GetKeyState("Backspace", "P")) {
-      BreakLoop := 0
-      break
-    }
-  }
-  Send {LShift Up} 
-return
+;; run shift-clicker loop
+;$+Backspace::
+;  BreakLoop := 0
+;  Loop, 1000 { 
+;    Send +{Click} 
+;    Sleep, 100 
+;    ; hold Backspace to break loop
+;    if (BreakLoop == 1 or GetKeyState("Backspace", "P")) {
+;      BreakLoop := 0
+;      break
+;    }
+;  }
+;  Send {LShift Up} 
+;return
 
 ; run control+shift clicker loop
 $+^Backspace::
