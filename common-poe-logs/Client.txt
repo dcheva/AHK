@@ -15101,3 +15101,1400 @@ flags: 129
 2023/02/07 06:42:36 12521687 6ad47f15 [DEBUG Client 5964] CalculateShortestPathToRoot, nodes evaluated: 105
 2023/02/07 06:42:36 12522312 cffb0734 [INFO Client 5964] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
 2023/02/07 06:42:37 12523046 32759a9f [INFO Client 5964] [SHADER] Delay: ON
+2023/02/07 13:04:33 ***** LOG FILE OPENING *****
+2023/02/07 13:04:34 3465937 f95442e3 [INFO Client 10368] [STARTUP] Job Queues
+2023/02/07 13:04:34 3465968 9e6a0b0a [INFO Client 10368] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/07 13:04:34 3466234 9e6a1d2a [INFO Client 10368] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 13:04:34 3466234 9e6a1363 [INFO Client 10368] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/07 13:04:34 3466234 9e6a0b0a [INFO Client 10368] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/07 13:04:34 3466250 9e6a1d2a [INFO Client 10368] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 13:04:34 3466250 84a7d27d [INFO Client 10368] [ENGINE] Init
+2023/02/07 13:04:34 3466250 55713145 [INFO Client 10368] [JOB] HIGH: 2
+2023/02/07 13:04:34 3466250 55713145 [INFO Client 10368] [JOB] MEDIUM: 2
+2023/02/07 13:04:34 3466250 55713145 [INFO Client 10368] [JOB] LOW: 2
+2023/02/07 13:04:34 3466250 55713145 [INFO Client 10368] [JOB] IDLE: 1
+2023/02/07 13:04:34 3466250 7bb548f [INFO Client 10368] [BUNDLE2] Init
+2023/02/07 13:04:34 3466250 7bb36c4 [INFO Client 10368] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/07 13:04:35 3466781 7bb61e6 [INFO Client 10368] [BUNDLE2] File cache size: 1024
+2023/02/07 13:04:35 3466796 b51d61ab [INFO Client 10368] [RENDER] Async: ON
+2023/02/07 13:04:35 3466796 b51d60c8 [INFO Client 10368] [RENDER] Warmup: ON
+2023/02/07 13:04:35 3466796 b51d60ce [INFO Client 10368] [RENDER] Skip: ON
+2023/02/07 13:04:35 3466796 b51d60eb [INFO Client 10368] [RENDER] Throttling: ON
+2023/02/07 13:04:35 3466796 32759a7a [INFO Client 10368] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/07 13:04:35 3466796 32759a70 [INFO Client 10368] [SHADER] Async: ON
+2023/02/07 13:04:35 3466796 32759a9f [INFO Client 10368] [SHADER] Delay: OFF
+2023/02/07 13:04:35 3466796 32759aba [INFO Client 10368] [SHADER] Limit: ON
+2023/02/07 13:04:35 3466796 32759abc [INFO Client 10368] [SHADER] Warmup: ON
+2023/02/07 13:04:35 3466796 327599d7 [INFO Client 10368] [SHADER] Parallel: OFF
+2023/02/07 13:04:35 3466812 84a7e376 [INFO Client 10368] [ENGINE] Running Engine version 1.7.0
+2023/02/07 13:04:35 3466875 47bbd15b [INFO Client 10368] [SOUND] Buffer size = 64.0 MB
+2023/02/07 13:04:35 3466984 9b0d205 [INFO Client 10368] [VIDEO] Enable: ON
+2023/02/07 13:04:35 3467171 84a7d2d8 [INFO Client 10368] [ENGINE] Ready
+2023/02/07 13:04:35 3467265 951bc0b0 [INFO Client 10368] [STARTUP] Bundle Startup Start
+2023/02/07 13:04:35 3467265 951bc057 [INFO Client 10368] [STARTUP] Bundle Startup in 8.2e-05 seconds
+2023/02/07 13:04:35 3467265 951bc0b0 [INFO Client 10368] [STARTUP] Game Start
+2023/02/07 13:04:36 3467984 ca86fd3f [DEBUG Client 10368] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/07 13:04:37 3469328 951bc057 [INFO Client 10368] [STARTUP] Game in 2.06294 seconds
+2023/02/07 13:04:37 3469328 951bc0b0 [INFO Client 10368] [STARTUP] Window Start
+2023/02/07 13:04:37 3469328 9e6a0b0a [INFO Client 10368] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/07 13:04:38 3469796 9e6a1d2a [INFO Client 10368] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 13:04:38 3469796 9e6a1363 [INFO Client 10368] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/07 13:04:38 3469796 9e6a0b0a [INFO Client 10368] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/07 13:04:38 3469796 9e6a1d2a [INFO Client 10368] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 13:04:38 3469828 951bc057 [INFO Client 10368] [STARTUP] Window in 0.502638 seconds
+2023/02/07 13:04:38 3469875 413b61ff [DEBUG Client 10368] [GamepadManager] Initialising
+2023/02/07 13:04:38 3469875 951bc0b0 [INFO Client 10368] [STARTUP] Device Start
+2023/02/07 13:04:38 3469875 b51d6589 [INFO Client 10368] [RENDER] StartDevice: DirectX11
+2023/02/07 13:04:38 3470187 71b2ea0 [DEBUG Client 10368] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/07 13:04:38 3470312 fafff8cf [DEBUG Client 10368] CreateSwapChain: SetFullScreenState 0
+2023/02/07 13:04:38 3470312 29d4ce01 [INFO Client 10368] [D3D11] Runtime version = 11.1
+2023/02/07 13:04:38 3470312 29d4ce00 [INFO Client 10368] [D3D11] Feature Level = 11.1
+2023/02/07 13:04:38 3470312 29d4ce03 [INFO Client 10368] [D3D11] Driver Command Lists = NO
+2023/02/07 13:04:38 3470312 29d4ce02 [INFO Client 10368] [D3D11] Driver Concurrent Creates = YES
+2023/02/07 13:04:38 3470312 29d4ce05 [INFO Client 10368] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/07 13:04:38 3470671 9d4eeb40 [DEBUG Client 10368] [WINDOW] TrigggerDeviceCreate
+2023/02/07 13:04:39 3471484 9d4eeba7 [DEBUG Client 10368] [WINDOW] TrigggerDeviceReset
+2023/02/07 13:04:40 3472109 9d4eec8a [DEBUG Client 10368] [WINDOW] TrigggerDeviceLost
+2023/02/07 13:04:40 3472109 9d4eeba7 [DEBUG Client 10368] [WINDOW] TrigggerDeviceReset
+2023/02/07 13:04:40 3472125 951bc057 [INFO Client 10368] [STARTUP] Device in 2.25137 seconds
+2023/02/07 13:04:40 3472125 951bc0b0 [INFO Client 10368] [STARTUP] Tencent Start
+2023/02/07 13:04:40 3472125 951bc057 [INFO Client 10368] [STARTUP] Tencent in 0.000288 seconds
+2023/02/07 13:04:40 3472125 951bc0b0 [INFO Client 10368] [STARTUP] Loading Start
+2023/02/07 13:04:40 3472265 951bc057 [INFO Client 10368] [STARTUP] Loading in 0.144546 seconds
+2023/02/07 13:04:40 3472265 951bc0b0 [INFO Client 10368] [STARTUP] DebugGUI Start
+2023/02/07 13:04:40 3472265 951bc057 [INFO Client 10368] [STARTUP] DebugGUI in 3e-05 seconds
+2023/02/07 13:04:40 3472265 951bc0b0 [INFO Client 10368] [STARTUP] Bundle Tiny Start
+2023/02/07 13:04:40 3472265 951bc0b0 [INFO Client 10368] [STARTUP] Bundle Login Start
+2023/02/07 13:04:40 3472265 951bc057 [INFO Client 10368] [STARTUP] Bundle Login in 4.2e-05 seconds
+2023/02/07 13:04:40 3472265 951bc0b0 [INFO Client 10368] [STARTUP] Registration Start
+2023/02/07 13:04:40 3472265 951bc057 [INFO Client 10368] [STARTUP] Bundle Tiny in 0.00011 seconds
+2023/02/07 13:04:40 3472281 951bc0b0 [INFO Client 10368] [STARTUP] Audio Start
+2023/02/07 13:04:40 3472281 47bbee1b [INFO Client 10368] [SOUND] Channel count = 64 (asked for 64)
+2023/02/07 13:04:40 3472281 47bbee18 [INFO Client 10368] [SOUND] Source count = 512
+2023/02/07 13:04:41 3473312 47bbea59 [INFO Client 10368] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/07 13:04:41 3473312 951bc057 [INFO Client 10368] [STARTUP] Audio in 1.03135 seconds
+2023/02/07 13:04:42 3474078 951bc057 [INFO Client 10368] [STARTUP] Registration in 1.80436 seconds
+2023/02/07 13:04:42 3474359 509417f7 [WARN Client 10368] tool_settings.json was not found. Resetting to default settings.
+2023/02/07 13:04:51 3482984 890d9d5f [INFO Client 10368] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/07 13:04:51 3483031 890d9cd8 [INFO Client 10368] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/07 13:04:56 3487765 88a904ed [DEBUG Client 10368] Got Instance Details from login server
+2023/02/07 13:04:57 3488734 32759a9f [INFO Client 10368] [SHADER] Delay: OFF
+2023/02/07 13:04:57 3488734 ca3a6a7f [INFO Client 10368] Connecting to instance server at 169.51.201.158:6112
+2023/02/07 13:04:57 3488812 ca3a4dbd [DEBUG Client 10368] Connect time to instance server was 31ms
+2023/02/07 13:04:57 3488890 1186a0e3 [DEBUG Client 10368] Generating level 69 area "2_11_endgame_town" with seed 1
+2023/02/07 13:05:12 3503984 f22b6987 [INFO Client 10368] Tile hash: 3144825756
+2023/02/07 13:05:12 3503984 f22b6986 [INFO Client 10368] Doodad hash: 2535089436
+2023/02/07 13:05:16 3508125 11870f60 [DEBUG Client 10368] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 13:05:16 3508140 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:05:16 3508140 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:05:16 3508187 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:05:16 3508187 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:05:16 3508187 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:05:18 3510390 cffb0734 [INFO Client 10368] &: ОБЪЯВЛЕНИЕ ГИЛЬДИИ: В гостяк у CARDIFF 
+2023/02/07 13:05:19 3511484 cffb0734 [INFO Client 10368] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Берега Каруи.
+2023/02/07 13:05:19 3511484 cffb0734 [INFO Client 10368] #LCBaam: А шо с нее падает?
+2023/02/07 13:05:19 3511484 cffb0734 [INFO Client 10368] #LCBaam: Просто не разу не закрывал
+2023/02/07 13:05:19 3511484 cffb0734 [INFO Client 10368] #PolomalUshi: прямая кишка
+2023/02/07 13:05:19 3511484 cffb0734 [INFO Client 10368] #Melograger: карточка на миррор
+2023/02/07 13:05:21 3512750 cffb0734 [INFO Client 10368] #<z³=9> MunaimHeraldThunder: с неё ничего не падает
+2023/02/07 13:05:22 3514468 32759a9f [INFO Client 10368] [SHADER] Delay: ON
+2023/02/07 13:05:23 3515187 374e0d22 [INFO Client 10368] [Item Filter] Preparing to download online filter J40EP1CX
+2023/02/07 13:05:23 3515187 374e0cc3 [INFO Client 10368] [Item Filter] Hash for online filter J40EP1CX is: 2973e5610fd1794f55172938e648806e
+2023/02/07 13:05:23 3515500 374e0cc9 [INFO Client 10368] [Item Filter] Online item filter J40EP1CX returned status: 200
+2023/02/07 13:05:23 3515500 374e0ce3 [DEBUG Client 10368] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/07 13:05:23 3515500 374e0e8e [DEBUG Client 10368] [Item Filter] X-HW: 1675767923.dop206.pa1.t,1675767924.cds217.pa1.shn,1675767924.dop206.pa1.t,1675767924.cds204.pa1.c
+2023/02/07 13:05:23 3515515 374df808 [INFO Client 10368] [Item Filter] Successfully saved online filter J40EP1CX. Hash is now: 2973e5610fd1794f55172938e648806e
+2023/02/07 13:05:23 3515546 788474c3 [INFO Client 10368] [Item Filter] Finished reloading online filter J40EP1CX. Result: true. Hash: 2973e5610fd1794f55172938e648806e. Type: Normal. Message: 
+2023/02/07 13:05:23 3515546 2a14910e [INFO Client 10368] PrecalcBaseTypeHashMap
+2023/02/07 13:05:24 3515687 2a149100 [INFO Client 10368] PrecalcModNameHashMap
+2023/02/07 13:05:26 3517734 2a149169 [INFO Client 10368] PrecalcItemClassMap
+2023/02/07 13:05:26 3517734 2a14916b [INFO Client 10368] PrecalcSoundEffects
+2023/02/07 13:05:26 3517734 2a14916d [INFO Client 10368] PrecalcDropEffects
+2023/02/07 13:05:26 3517734 2a14916f [INFO Client 10368] PrecalcNonEnchantModHashes
+2023/02/07 13:05:26 3517734 2a149161 [INFO Client 10368] PrecalcRuleNameToTypeMap
+2023/02/07 13:05:26 3517750 2a148c01 [INFO Client 10368] PrecalcCJESPNIndexMap
+2023/02/07 13:05:26 3517750 2a148c03 [INFO Client 10368] PrecalcGemAlternateQualityMap
+2023/02/07 13:05:53 3545062 88a904ed [DEBUG Client 10368] Got Instance Details from login server
+2023/02/07 13:05:53 3545109 32759a9f [INFO Client 10368] [SHADER] Delay: OFF
+2023/02/07 13:05:53 3545109 ca3a6a7f [INFO Client 10368] Connecting to instance server at 159.122.142.236:6112
+2023/02/07 13:05:53 3545390 ca3a4dbd [DEBUG Client 10368] Connect time to instance server was 47ms
+2023/02/07 13:05:53 3545453 1186a0e3 [DEBUG Client 10368] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/07 13:05:54 3546296 f22b6987 [INFO Client 10368] Tile hash: 805187908
+2023/02/07 13:05:54 3546296 f22b6986 [INFO Client 10368] Doodad hash: 0
+2023/02/07 13:05:55 3547015 11870f60 [DEBUG Client 10368] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 13:05:55 3547031 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:05:55 3547031 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:05:55 3547062 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:05:55 3547062 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:05:55 3547062 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:05:55 3547062 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:05:55 3547062 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:05:55 3547062 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:05:55 3547062 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:05:57 3548843 cffb0734 [INFO Client 10368] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/07 13:05:59 3551343 32759a9f [INFO Client 10368] [SHADER] Delay: ON
+2023/02/07 13:07:34 3646203 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:07:34 3646203 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:11:02 3854171 cffb0734 [INFO Client 10368] &<RiPE> SK_PAK: Невинный Без следа Мастер-ремесленник Акклиматизация Баламут Синее море Изобретатель Три лика в темноте
+2023/02/07 13:12:49 3960765 cffb0734 [INFO Client 10368] &<RiPE> ГорячаяБошка: Парни, хочу проверить может билд в соло вынести Очищенный камень Разлома Чаюлы при полной, пати, без помощи..., ни кто не хочет на халяву сбегать разик?)
+2023/02/07 13:13:11 3983234 cffb0734 [INFO Client 10368] &<RiPE> насвайчик: +
+2023/02/07 13:33:12 5184328 cffb0734 [INFO Client 10368] @Кому Orewkokol: Здравствуйте, хочу купить у вас уровень 5 20% Пробужденный: Сотворение чар при поддержании за 1 divine в лиге Sanctum (секция "$$$$$"; позиция: 8 столбец, 7 ряд)
+2023/02/07 13:33:23 5195421 88a904ed [DEBUG Client 10368] Got Instance Details from login server
+2023/02/07 13:33:23 5195437 32759a9f [INFO Client 10368] [SHADER] Delay: OFF
+2023/02/07 13:33:23 5195437 ca3a6a7f [INFO Client 10368] Connecting to instance server at 37.61.221.247:6112
+2023/02/07 13:33:23 5195484 ca3a4dbd [DEBUG Client 10368] Connect time to instance server was 31ms
+2023/02/07 13:33:23 5195562 1186a0e3 [DEBUG Client 10368] Generating level 60 area "HideoutForest" with seed 1
+2023/02/07 13:33:24 5195921 f22b6987 [INFO Client 10368] Tile hash: 3482012158
+2023/02/07 13:33:24 5195921 f22b6986 [INFO Client 10368] Doodad hash: 0
+2023/02/07 13:33:24 5196406 11870f60 [DEBUG Client 10368] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 13:33:24 5196406 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:24 5196406 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:24 5196468 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:24 5196468 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:24 5196468 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:24 5196468 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:24 5196468 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:24 5196468 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:24 5196468 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:26 5198093 cffb0734 [INFO Client 10368] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесное убежище.
+2023/02/07 13:33:30 5202156 32759a9f [INFO Client 10368] [SHADER] Delay: ON
+2023/02/07 13:33:42 5214640 cffb0734 [INFO Client 10368] : Сделка совершена.
+2023/02/07 13:33:44 5216421 cffb0734 [INFO Client 10368] @Кому Orewkokol: ty gl!
+2023/02/07 13:33:46 5217921 cffb0734 [INFO Client 10368] @От кого Orewkokol: ty
+2023/02/07 13:33:47 5218890 88a904ed [DEBUG Client 10368] Got Instance Details from login server
+2023/02/07 13:33:47 5218890 32759a9f [INFO Client 10368] [SHADER] Delay: OFF
+2023/02/07 13:33:47 5218890 ca3a6a7f [INFO Client 10368] Connecting to instance server at 159.122.142.236:6112
+2023/02/07 13:33:47 5218953 ca3a4dbd [DEBUG Client 10368] Connect time to instance server was 31ms
+2023/02/07 13:33:47 5219015 1186a0e3 [DEBUG Client 10368] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/07 13:33:47 5219046 f22b6987 [INFO Client 10368] Tile hash: 805187908
+2023/02/07 13:33:47 5219062 f22b6986 [INFO Client 10368] Doodad hash: 0
+2023/02/07 13:33:48 5219718 11870f60 [DEBUG Client 10368] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 13:33:48 5219718 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:48 5219718 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:48 5219750 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:48 5219750 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:48 5219750 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:48 5219750 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:48 5219750 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:48 5219750 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:48 5219750 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:33:48 5220453 cffb0734 [INFO Client 10368] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/07 13:33:49 5221203 32759a9f [INFO Client 10368] [SHADER] Delay: ON
+2023/02/07 13:35:46 5338484 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:35:46 5338484 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:36:43 5395093 fb7abd85 [INFO Client 10368] Successfully unallocated passive skill id: freeze_notable1799, name: Дыхание стужи
+2023/02/07 13:36:44 5396296 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:36:44 5396296 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 104
+2023/02/07 13:37:19 5431031 fb7ab846 [INFO Client 10368] Successfully allocated mastery effect id: 55886, mastery: mastery_mana163, name: Мастерство маны
+2023/02/07 13:37:29 5440765 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:37:29 5440765 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:37:43 5455296 88a904ed [DEBUG Client 10368] Got Instance Details from login server
+2023/02/07 13:37:43 5455328 32759a9f [INFO Client 10368] [SHADER] Delay: OFF
+2023/02/07 13:37:43 5455328 ca3a6a7f [INFO Client 10368] Connecting to instance server at 169.51.201.167:6112
+2023/02/07 13:37:43 5455406 ca3a4dbd [DEBUG Client 10368] Connect time to instance server was 31ms
+2023/02/07 13:37:43 5455500 1186a0e3 [DEBUG Client 10368] Generating level 34 area "Delve_Main" with seed 4211739454
+2023/02/07 13:37:48 5459859 f22b6987 [INFO Client 10368] Tile hash: 1838652597
+2023/02/07 13:37:48 5459859 f22b6986 [INFO Client 10368] Doodad hash: 0
+2023/02/07 13:37:50 5462093 11870f60 [DEBUG Client 10368] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 13:37:50 5462093 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:37:50 5462093 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:37:50 5462093 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:37:50 5462093 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:37:50 5462093 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:37:50 5462093 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:37:50 5462109 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:37:50 5462109 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:37:50 5462109 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:37:51 5463281 cffb0734 [INFO Client 10368] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Азуритовая шахта.
+2023/02/07 13:37:54 5466015 32759a9f [INFO Client 10368] [SHADER] Delay: ON
+2023/02/07 13:39:16 5548093 88a904ed [DEBUG Client 10368] Got Instance Details from login server
+2023/02/07 13:39:16 5548093 32759a9f [INFO Client 10368] [SHADER] Delay: OFF
+2023/02/07 13:39:16 5548093 ca3a6a7f [INFO Client 10368] Connecting to instance server at 169.51.201.167:6112
+2023/02/07 13:39:16 5548156 ca3a4dbd [DEBUG Client 10368] Connect time to instance server was 47ms
+2023/02/07 13:39:16 5548250 1186a0e3 [DEBUG Client 10368] Generating level 76 area "Delve_Main" with seed 707746770
+2023/02/07 13:39:18 5550375 f22b6987 [INFO Client 10368] Tile hash: 3278345837
+2023/02/07 13:39:18 5550375 f22b6986 [INFO Client 10368] Doodad hash: 1424611252
+2023/02/07 13:39:20 5552437 11870f60 [DEBUG Client 10368] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 13:39:20 5552437 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:39:20 5552437 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:39:20 5552468 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:39:20 5552468 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:39:20 5552468 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:39:20 5552468 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:39:20 5552484 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:39:20 5552484 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:39:20 5552484 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:39:21 5553484 cffb0734 [INFO Client 10368] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Азуритовая шахта.
+2023/02/07 13:39:22 5554656 32759a9f [INFO Client 10368] [SHADER] Delay: ON
+2023/02/07 13:42:15 5727187 cffb0734 [INFO Client 10368] : DeeManaIIIXX был повержен.
+2023/02/07 13:43:40 5812406 88a904ed [DEBUG Client 10368] Got Instance Details from login server
+2023/02/07 13:43:40 5812421 32759a9f [INFO Client 10368] [SHADER] Delay: OFF
+2023/02/07 13:43:40 5812421 ca3a6a7f [INFO Client 10368] Connecting to instance server at 169.51.201.142:6112
+2023/02/07 13:43:40 5812468 ca3a4dbd [DEBUG Client 10368] Connect time to instance server was 32ms
+2023/02/07 13:43:40 5812578 1186a0e3 [DEBUG Client 10368] Generating level 76 area "Delve_Main" with seed 943523610
+2023/02/07 13:43:41 5813625 f22b6987 [INFO Client 10368] Tile hash: 3014027850
+2023/02/07 13:43:41 5813625 f22b6986 [INFO Client 10368] Doodad hash: 2136416334
+2023/02/07 13:43:43 5814703 11870f60 [DEBUG Client 10368] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 13:43:43 5814703 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:43:43 5814703 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:43:43 5814734 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:43:43 5814734 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:43:43 5814734 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:43:43 5814734 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:43:43 5814734 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:43:43 5814734 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:43:43 5814734 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:43:44 5815843 cffb0734 [INFO Client 10368] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Азуритовая шахта.
+2023/02/07 13:43:45 5816859 32759a9f [INFO Client 10368] [SHADER] Delay: ON
+2023/02/07 13:48:07 6079265 88a904ed [DEBUG Client 10368] Got Instance Details from login server
+2023/02/07 13:48:07 6079281 32759a9f [INFO Client 10368] [SHADER] Delay: OFF
+2023/02/07 13:48:07 6079281 ca3a6a7f [INFO Client 10368] Connecting to instance server at 159.122.142.236:6112
+2023/02/07 13:48:07 6079328 ca3a4dbd [DEBUG Client 10368] Connect time to instance server was 31ms
+2023/02/07 13:48:07 6079437 1186a0e3 [DEBUG Client 10368] Generating level 77 area "Delve_Main" with seed 3150436105
+2023/02/07 13:48:09 6080890 f22b6987 [INFO Client 10368] Tile hash: 2342657186
+2023/02/07 13:48:09 6080890 f22b6986 [INFO Client 10368] Doodad hash: 4266252504
+2023/02/07 13:48:10 6082093 11870f60 [DEBUG Client 10368] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 13:48:10 6082093 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:48:10 6082093 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:48:10 6082125 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:48:10 6082125 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:48:10 6082125 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:48:10 6082125 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:48:10 6082140 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:48:10 6082140 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:48:10 6082140 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:48:11 6083093 cffb0734 [INFO Client 10368] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Азуритовая шахта.
+2023/02/07 13:48:12 6084171 32759a9f [INFO Client 10368] [SHADER] Delay: ON
+2023/02/07 13:48:30 6101796 37970260 [WARN Client 10368] Client couldn't execute a triggered action from the server.
+action type id = 55607
+2023/02/07 13:48:30 6101796 3796faa4 [WARN Client 10368] Instant/Triggered actionwas serialized to the client, but the client failed to execute the action.
+skill_instance_id: 41736
+action_id: 49369
+object_id: 16428
+target_id: 16428
+flags: 129
+2023/02/07 13:49:08 6140625 cffb0734 [INFO Client 10368] &<RiPE> ВзрывнаяБабка: Крадущий дыханье, Перчатки из чешуи гидры
+2023/02/07 13:51:12 6264515 cffb0734 [INFO Client 10368] : DeeManaIIIXX был повержен.
+2023/02/07 13:51:48 6300343 88a904ed [DEBUG Client 10368] Got Instance Details from login server
+2023/02/07 13:51:48 6300343 32759a9f [INFO Client 10368] [SHADER] Delay: OFF
+2023/02/07 13:51:48 6300343 ca3a6a7f [INFO Client 10368] Connecting to instance server at 169.51.201.180:6112
+2023/02/07 13:51:48 6300406 ca3a4dbd [DEBUG Client 10368] Connect time to instance server was 47ms
+2023/02/07 13:51:48 6300515 1186a0e3 [DEBUG Client 10368] Generating level 77 area "Delve_Main" with seed 3964053818
+2023/02/07 13:51:49 6301031 f22b6987 [INFO Client 10368] Tile hash: 783084681
+2023/02/07 13:51:49 6301031 f22b6986 [INFO Client 10368] Doodad hash: 2481255340
+2023/02/07 13:51:50 6302187 11870f60 [DEBUG Client 10368] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 13:51:50 6302187 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:51:50 6302187 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:51:50 6302218 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:51:50 6302218 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:51:50 6302218 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:51:50 6302218 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:51:50 6302234 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:51:50 6302234 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:51:50 6302234 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:51:51 6303156 cffb0734 [INFO Client 10368] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Азуритовая шахта.
+2023/02/07 13:51:52 6304125 32759a9f [INFO Client 10368] [SHADER] Delay: ON
+2023/02/07 13:53:21 6393125 37970260 [WARN Client 10368] Client couldn't execute a triggered action from the server.
+action type id = 55607
+2023/02/07 13:53:21 6393125 3796faa4 [WARN Client 10368] Instant/Triggered actionwas serialized to the client, but the client failed to execute the action.
+skill_instance_id: 41736
+action_id: 44352
+object_id: 11023
+target_id: 11023
+flags: 129
+2023/02/07 13:53:31 6403203 cffb0734 [INFO Client 10368] : DeeManaIIIXX был повержен.
+2023/02/07 13:53:41 6412703 88a904ed [DEBUG Client 10368] Got Instance Details from login server
+2023/02/07 13:53:41 6412718 32759a9f [INFO Client 10368] [SHADER] Delay: OFF
+2023/02/07 13:53:41 6412718 ca3a6a7f [INFO Client 10368] Connecting to instance server at 159.122.142.247:6112
+2023/02/07 13:53:41 6412781 ca3a4dbd [DEBUG Client 10368] Connect time to instance server was 32ms
+2023/02/07 13:53:41 6412875 1186a0e3 [DEBUG Client 10368] Generating level 77 area "Delve_Main" with seed 1481683516
+2023/02/07 13:53:41 6413390 f22b6987 [INFO Client 10368] Tile hash: 11801236
+2023/02/07 13:53:41 6413390 f22b6986 [INFO Client 10368] Doodad hash: 3747035314
+2023/02/07 13:53:42 6414453 11870f60 [DEBUG Client 10368] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 13:53:42 6414453 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:53:42 6414453 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:53:42 6414484 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:53:42 6414484 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:53:42 6414484 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:53:42 6414484 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:53:42 6414500 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:53:42 6414500 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:53:42 6414500 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:53:43 6415437 cffb0734 [INFO Client 10368] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Азуритовая шахта.
+2023/02/07 13:53:44 6416437 32759a9f [INFO Client 10368] [SHADER] Delay: ON
+2023/02/07 13:55:07 6499500 cffb0734 [INFO Client 10368] : DeeManaIIIXX был повержен.
+2023/02/07 13:55:19 6511453 88a904ed [DEBUG Client 10368] Got Instance Details from login server
+2023/02/07 13:55:19 6511453 32759a9f [INFO Client 10368] [SHADER] Delay: OFF
+2023/02/07 13:55:19 6511453 ca3a6a7f [INFO Client 10368] Connecting to instance server at 169.51.201.140:6112
+2023/02/07 13:55:19 6511515 ca3a4dbd [DEBUG Client 10368] Connect time to instance server was 47ms
+2023/02/07 13:55:19 6511625 1186a0e3 [DEBUG Client 10368] Generating level 77 area "Delve_Main" with seed 2787444549
+2023/02/07 13:55:20 6512109 f22b6987 [INFO Client 10368] Tile hash: 1221890928
+2023/02/07 13:55:20 6512109 f22b6986 [INFO Client 10368] Doodad hash: 2866755512
+2023/02/07 13:55:21 6513109 11870f60 [DEBUG Client 10368] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 13:55:21 6513109 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:55:21 6513109 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:55:21 6513140 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:55:21 6513140 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:55:21 6513140 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:55:21 6513140 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:55:21 6513140 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:55:21 6513156 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:55:21 6513156 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:55:22 6514203 cffb0734 [INFO Client 10368] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Азуритовая шахта.
+2023/02/07 13:55:23 6515218 32759a9f [INFO Client 10368] [SHADER] Delay: ON
+2023/02/07 13:56:10 6561765 37970260 [WARN Client 10368] Client couldn't execute a triggered action from the server.
+action type id = 55607
+2023/02/07 13:56:10 6561765 3796faa4 [WARN Client 10368] Instant/Triggered actionwas serialized to the client, but the client failed to execute the action.
+skill_instance_id: 41736
+action_id: 45169
+object_id: 12058
+target_id: 12058
+flags: 129
+2023/02/07 13:58:20 6692578 88a904ed [DEBUG Client 10368] Got Instance Details from login server
+2023/02/07 13:58:20 6692578 32759a9f [INFO Client 10368] [SHADER] Delay: OFF
+2023/02/07 13:58:20 6692578 ca3a6a7f [INFO Client 10368] Connecting to instance server at 169.51.201.132:6112
+2023/02/07 13:58:20 6692656 ca3a4dbd [DEBUG Client 10368] Connect time to instance server was 47ms
+2023/02/07 13:58:21 6692750 1186a0e3 [DEBUG Client 10368] Generating level 77 area "Delve_Main" with seed 2093164127
+2023/02/07 13:58:22 6694375 f22b6987 [INFO Client 10368] Tile hash: 3123629499
+2023/02/07 13:58:22 6694375 f22b6986 [INFO Client 10368] Doodad hash: 181585422
+2023/02/07 13:58:23 6695500 11870f60 [DEBUG Client 10368] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 13:58:23 6695500 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:58:23 6695500 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:58:23 6695531 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:58:23 6695531 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:58:23 6695531 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:58:23 6695531 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:58:23 6695531 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:58:23 6695531 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:58:23 6695531 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 13:58:24 6696390 cffb0734 [INFO Client 10368] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Азуритовая шахта.
+2023/02/07 13:58:25 6697375 32759a9f [INFO Client 10368] [SHADER] Delay: ON
+2023/02/07 14:09:45 7377671 cffb0734 [INFO Client 10368] @От кого MorpheusXXII: Здравствуйте, хочу купить у вас Мьёльнир, Камнетёс за 49 chaos в лиге Sanctum (секция "~b/o 49 chaos"; позиция: 7 столбец, 7 ряд)
+2023/02/07 14:09:54 7385765 cffb0734 [INFO Client 10368] &<RiPE> DexDude: Надо сегдня будет кому что помочь убить / закрыть?
+2023/02/07 14:13:57 7629031 cffb0734 [INFO Client 10368] @От кого challengedimmerda: Здравствуйте, хочу купить у вас Самоцвет кровожадного глаза за 1 chaos в лиге Sanctum (секция "~b/o 1 chaos"; позиция: 1 столбец, 1 ряд)
+2023/02/07 14:15:16 7707828 cffb0734 [INFO Client 10368] @Кому MorpheusXXII: ty gl!
+2023/02/07 14:15:16 7707968 cffb0734 [INFO Client 10368] : Цель данной операции не была членом группы
+2023/02/07 14:17:42 7854328 cffb0734 [INFO Client 10368] &<RiPE> DexDude: На экзарха и пожирателя продает кто проходки?
+2023/02/07 14:18:09 7881171 cffb0734 [INFO Client 10368] &<RiPE> БледнаяХудая: воспоминания эйнара жрут заряды на войдстоунах?
+2023/02/07 14:18:19 7891218 cffb0734 [INFO Client 10368] @Кому MorpheusXXII: Мьёльнир, Камнетёс 59c?
+2023/02/07 14:18:45 7917187 cffb0734 [INFO Client 10368] @Кому 성역번개날개: 59
+2023/02/07 14:18:53 7924984 cffb0734 [INFO Client 10368] @Кому Angry__mom: 59
+2023/02/07 14:19:09 7941281 cffb0734 [INFO Client 10368] @Кому 성역번개날개: 59
+2023/02/07 14:19:45 7977203 cffb0734 [INFO Client 10368] @Кому 성역번개날개: and 10 spheres of anything, willbe ok
+2023/02/07 14:20:19 8010718 cffb0734 [INFO Client 10368] : Вы не можете попасть в убежище отсюда.
+2023/02/07 14:20:26 8017875 88a904ed [DEBUG Client 10368] Got Instance Details from login server
+2023/02/07 14:20:26 8017875 32759a9f [INFO Client 10368] [SHADER] Delay: OFF
+2023/02/07 14:20:26 8017875 ca3a6a7f [INFO Client 10368] Connecting to instance server at 159.122.142.236:6112
+2023/02/07 14:20:26 8017937 ca3a4dbd [DEBUG Client 10368] Connect time to instance server was 46ms
+2023/02/07 14:20:26 8018000 1186a0e3 [DEBUG Client 10368] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/07 14:20:26 8018656 f22b6987 [INFO Client 10368] Tile hash: 805187908
+2023/02/07 14:20:26 8018656 f22b6986 [INFO Client 10368] Doodad hash: 0
+2023/02/07 14:20:27 8019265 11870f60 [DEBUG Client 10368] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 14:20:27 8019265 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 14:20:27 8019265 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 14:20:27 8019296 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 14:20:27 8019296 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 14:20:27 8019296 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 14:20:27 8019296 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 14:20:27 8019296 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 14:20:27 8019296 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 14:20:27 8019296 6ad47f15 [DEBUG Client 10368] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 14:20:28 8020593 cffb0734 [INFO Client 10368] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/07 14:20:29 8021656 32759a9f [INFO Client 10368] [SHADER] Delay: ON
+2023/02/07 14:21:00 8052343 cffb0734 [INFO Client 10368] @Кому 성역번개날개: nm gl
+2023/02/07 14:22:39 8151046 cffb0734 [INFO Client 10368] @Кому 성역번개날개: its ok, i do use 2 more powerfull, 12-link )))
+2023/02/07 14:25:24 8316312 cffb0734 [INFO Client 10368] : Сделка отклонена.
+2023/02/07 15:04:02 ***** LOG FILE OPENING *****
+2023/02/07 15:04:02 2107906 f95442e3 [INFO Client 5212] [STARTUP] Job Queues
+2023/02/07 15:04:02 2107953 9e6a0b0a [INFO Client 5212] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/07 15:04:02 2108109 9e6a1d2a [INFO Client 5212] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 15:04:02 2108109 9e6a1363 [INFO Client 5212] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/07 15:04:02 2108109 9e6a0b0a [INFO Client 5212] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/07 15:04:02 2108109 9e6a1d2a [INFO Client 5212] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 15:04:02 2108125 84a7d27d [INFO Client 5212] [ENGINE] Init
+2023/02/07 15:04:02 2108125 55713145 [INFO Client 5212] [JOB] HIGH: 2
+2023/02/07 15:04:02 2108125 55713145 [INFO Client 5212] [JOB] MEDIUM: 2
+2023/02/07 15:04:02 2108125 55713145 [INFO Client 5212] [JOB] LOW: 2
+2023/02/07 15:04:02 2108125 55713145 [INFO Client 5212] [JOB] IDLE: 1
+2023/02/07 15:04:02 2108125 7bb548f [INFO Client 5212] [BUNDLE2] Init
+2023/02/07 15:04:02 2108125 7bb36c4 [INFO Client 5212] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/07 15:04:02 2108609 7bb61e6 [INFO Client 5212] [BUNDLE2] File cache size: 1024
+2023/02/07 15:04:02 2108609 b51d61ab [INFO Client 5212] [RENDER] Async: ON
+2023/02/07 15:04:02 2108609 b51d60c8 [INFO Client 5212] [RENDER] Warmup: ON
+2023/02/07 15:04:02 2108609 b51d60ce [INFO Client 5212] [RENDER] Skip: ON
+2023/02/07 15:04:02 2108609 b51d60eb [INFO Client 5212] [RENDER] Throttling: ON
+2023/02/07 15:04:02 2108625 32759a7a [INFO Client 5212] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/07 15:04:02 2108625 32759a70 [INFO Client 5212] [SHADER] Async: ON
+2023/02/07 15:04:02 2108625 32759a9f [INFO Client 5212] [SHADER] Delay: OFF
+2023/02/07 15:04:02 2108625 32759aba [INFO Client 5212] [SHADER] Limit: ON
+2023/02/07 15:04:02 2108625 32759abc [INFO Client 5212] [SHADER] Warmup: ON
+2023/02/07 15:04:02 2108625 327599d7 [INFO Client 5212] [SHADER] Parallel: OFF
+2023/02/07 15:04:02 2108625 84a7e376 [INFO Client 5212] [ENGINE] Running Engine version 1.7.0
+2023/02/07 15:04:02 2108640 47bbd15b [INFO Client 5212] [SOUND] Buffer size = 64.0 MB
+2023/02/07 15:04:03 2108718 9b0d205 [INFO Client 5212] [VIDEO] Enable: ON
+2023/02/07 15:04:03 2108750 84a7d2d8 [INFO Client 5212] [ENGINE] Ready
+2023/02/07 15:04:03 2108796 951bc0b0 [INFO Client 5212] [STARTUP] Bundle Startup Start
+2023/02/07 15:04:03 2108796 951bc057 [INFO Client 5212] [STARTUP] Bundle Startup in 5e-05 seconds
+2023/02/07 15:04:03 2108796 951bc0b0 [INFO Client 5212] [STARTUP] Game Start
+2023/02/07 15:04:03 2109031 ca86fd3f [DEBUG Client 5212] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/07 15:04:03 2109343 951bc057 [INFO Client 5212] [STARTUP] Game in 0.541858 seconds
+2023/02/07 15:04:03 2109343 951bc0b0 [INFO Client 5212] [STARTUP] Window Start
+2023/02/07 15:04:03 2109343 9e6a0b0a [INFO Client 5212] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/07 15:04:03 2109390 9e6a1d2a [INFO Client 5212] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 15:04:03 2109390 9e6a1363 [INFO Client 5212] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/07 15:04:03 2109390 9e6a0b0a [INFO Client 5212] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/07 15:04:03 2109390 9e6a1d2a [INFO Client 5212] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 15:04:03 2109421 951bc057 [INFO Client 5212] [STARTUP] Window in 0.069743 seconds
+2023/02/07 15:04:03 2109437 413b61ff [DEBUG Client 5212] [GamepadManager] Initialising
+2023/02/07 15:04:03 2109437 951bc0b0 [INFO Client 5212] [STARTUP] Device Start
+2023/02/07 15:04:03 2109437 b51d6589 [INFO Client 5212] [RENDER] StartDevice: DirectX11
+2023/02/07 15:04:03 2109656 71b2ea0 [DEBUG Client 5212] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/07 15:04:04 2109812 fafff8cf [DEBUG Client 5212] CreateSwapChain: SetFullScreenState 0
+2023/02/07 15:04:04 2109812 29d4ce01 [INFO Client 5212] [D3D11] Runtime version = 11.1
+2023/02/07 15:04:04 2109812 29d4ce00 [INFO Client 5212] [D3D11] Feature Level = 11.1
+2023/02/07 15:04:04 2109812 29d4ce03 [INFO Client 5212] [D3D11] Driver Command Lists = NO
+2023/02/07 15:04:04 2109812 29d4ce02 [INFO Client 5212] [D3D11] Driver Concurrent Creates = YES
+2023/02/07 15:04:04 2109812 29d4ce05 [INFO Client 5212] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/07 15:04:04 2109984 9d4eeb40 [DEBUG Client 5212] [WINDOW] TrigggerDeviceCreate
+2023/02/07 15:04:05 2111109 9d4eeba7 [DEBUG Client 5212] [WINDOW] TrigggerDeviceReset
+2023/02/07 15:04:05 2111203 9d4eec8a [DEBUG Client 5212] [WINDOW] TrigggerDeviceLost
+2023/02/07 15:04:05 2111203 9d4eeba7 [DEBUG Client 5212] [WINDOW] TrigggerDeviceReset
+2023/02/07 15:04:05 2111218 951bc057 [INFO Client 5212] [STARTUP] Device in 1.77886 seconds
+2023/02/07 15:04:05 2111218 951bc0b0 [INFO Client 5212] [STARTUP] Tencent Start
+2023/02/07 15:04:05 2111218 951bc057 [INFO Client 5212] [STARTUP] Tencent in 0.000162 seconds
+2023/02/07 15:04:05 2111218 951bc0b0 [INFO Client 5212] [STARTUP] Loading Start
+2023/02/07 15:04:05 2111250 951bc057 [INFO Client 5212] [STARTUP] Loading in 0.032083 seconds
+2023/02/07 15:04:05 2111250 951bc0b0 [INFO Client 5212] [STARTUP] DebugGUI Start
+2023/02/07 15:04:05 2111250 951bc057 [INFO Client 5212] [STARTUP] DebugGUI in 2.9e-05 seconds
+2023/02/07 15:04:05 2111250 951bc0b0 [INFO Client 5212] [STARTUP] Bundle Tiny Start
+2023/02/07 15:04:05 2111250 951bc0b0 [INFO Client 5212] [STARTUP] Bundle Login Start
+2023/02/07 15:04:05 2111250 951bc057 [INFO Client 5212] [STARTUP] Bundle Login in 3.8e-05 seconds
+2023/02/07 15:04:05 2111250 951bc0b0 [INFO Client 5212] [STARTUP] Registration Start
+2023/02/07 15:04:05 2111250 951bc057 [INFO Client 5212] [STARTUP] Bundle Tiny in 0.000105 seconds
+2023/02/07 15:04:05 2111250 951bc0b0 [INFO Client 5212] [STARTUP] Audio Start
+2023/02/07 15:04:05 2111250 47bbee1b [INFO Client 5212] [SOUND] Channel count = 64 (asked for 64)
+2023/02/07 15:04:05 2111250 47bbee18 [INFO Client 5212] [SOUND] Source count = 512
+2023/02/07 15:04:05 2111421 47bbea59 [INFO Client 5212] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/07 15:04:05 2111437 951bc057 [INFO Client 5212] [STARTUP] Audio in 0.184711 seconds
+2023/02/07 15:04:06 2111890 951bc057 [INFO Client 5212] [STARTUP] Registration in 0.644685 seconds
+2023/02/07 15:04:06 2112343 509417f7 [WARN Client 5212] tool_settings.json was not found. Resetting to default settings.
+2023/02/07 15:04:11 2117000 890d9d5f [INFO Client 5212] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/07 15:04:11 2117140 890d9cd8 [INFO Client 5212] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/07 15:04:14 2120687 88a904ed [DEBUG Client 5212] Got Instance Details from login server
+2023/02/07 15:04:15 2121078 32759a9f [INFO Client 5212] [SHADER] Delay: OFF
+2023/02/07 15:04:15 2121078 ca3a6a7f [INFO Client 5212] Connecting to instance server at 169.51.201.146:6112
+2023/02/07 15:04:15 2121125 ca3a4dbd [DEBUG Client 5212] Connect time to instance server was 47ms
+2023/02/07 15:04:15 2121203 1186a0e3 [DEBUG Client 5212] Generating level 69 area "2_11_endgame_town" with seed 1
+2023/02/07 15:04:24 2130593 f22b6987 [INFO Client 5212] Tile hash: 3144825756
+2023/02/07 15:04:24 2130593 f22b6986 [INFO Client 5212] Doodad hash: 2535089436
+2023/02/07 15:04:28 2133765 11870f60 [DEBUG Client 5212] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 15:04:28 2133765 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:04:28 2133765 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:04:28 2133796 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:04:28 2133796 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:04:28 2133796 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:04:30 2135859 cffb0734 [INFO Client 5212] &: ОБЪЯВЛЕНИЕ ГИЛЬДИИ: В гостяк у CARDIFF 
+2023/02/07 15:04:31 2136687 cffb0734 [INFO Client 5212] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Берега Каруи.
+2023/02/07 15:04:31 2136687 cffb0734 [INFO Client 5212] #<=ZERG=> They_Call_me_DYNAMITE: Шахта
+2023/02/07 15:04:31 2136687 cffb0734 [INFO Client 5212] #<z³=9> MunaimHeraldThunder: шахта да
+2023/02/07 15:04:33 2139046 32759a9f [INFO Client 5212] [SHADER] Delay: ON
+2023/02/07 15:04:33 2139656 374e0d22 [INFO Client 5212] [Item Filter] Preparing to download online filter J40EP1CX
+2023/02/07 15:04:33 2139656 374e0cc3 [INFO Client 5212] [Item Filter] Hash for online filter J40EP1CX is: 2973e5610fd1794f55172938e648806e
+2023/02/07 15:04:34 2139984 374e0cc9 [INFO Client 5212] [Item Filter] Online item filter J40EP1CX returned status: 200
+2023/02/07 15:04:34 2139984 374e0ce3 [DEBUG Client 5212] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/07 15:04:34 2139984 374e0e8e [DEBUG Client 5212] [Item Filter] X-HW: 1675775074.dop224.pa1.t,1675775074.cds227.pa1.shn,1675775074.dop224.pa1.t,1675775074.cds204.pa1.c
+2023/02/07 15:04:34 2140000 374df808 [INFO Client 5212] [Item Filter] Successfully saved online filter J40EP1CX. Hash is now: 2973e5610fd1794f55172938e648806e
+2023/02/07 15:04:34 2140046 788474c3 [INFO Client 5212] [Item Filter] Finished reloading online filter J40EP1CX. Result: true. Hash: 2973e5610fd1794f55172938e648806e. Type: Normal. Message: 
+2023/02/07 15:04:34 2140046 2a14910e [INFO Client 5212] PrecalcBaseTypeHashMap
+2023/02/07 15:04:34 2140171 2a149100 [INFO Client 5212] PrecalcModNameHashMap
+2023/02/07 15:04:36 2141984 2a149169 [INFO Client 5212] PrecalcItemClassMap
+2023/02/07 15:04:36 2141984 2a14916b [INFO Client 5212] PrecalcSoundEffects
+2023/02/07 15:04:36 2141984 2a14916d [INFO Client 5212] PrecalcDropEffects
+2023/02/07 15:04:36 2141984 2a14916f [INFO Client 5212] PrecalcNonEnchantModHashes
+2023/02/07 15:04:36 2141984 2a149161 [INFO Client 5212] PrecalcRuleNameToTypeMap
+2023/02/07 15:04:36 2141984 2a148c01 [INFO Client 5212] PrecalcCJESPNIndexMap
+2023/02/07 15:04:36 2142000 2a148c03 [INFO Client 5212] PrecalcGemAlternateQualityMap
+2023/02/07 15:09:18 2424046 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:09:18 2424046 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:14:06 2712453 cffb0734 [INFO Client 5212] : Сделка совершена.
+2023/02/07 15:14:31 2737484 cffb0734 [INFO Client 5212] : Сделка отклонена.
+2023/02/07 15:17:49 2935140 cffb0734 [INFO Client 5212] : Сделка совершена.
+2023/02/07 15:18:30 2976546 cffb0734 [INFO Client 5212] : Сделка совершена.
+2023/02/07 15:18:43 2988750 cffb0734 [INFO Client 5212] : Сделка совершена.
+2023/02/07 15:18:54 3000484 cffb0734 [INFO Client 5212] @От кого ДедМаксим_: Здравствуйте, хочу купить у вас Мьёльнир Камнетёс за 49 chaos в лиге Sanctum (секция "~b/o 49 chaos"; позиция: 7 столбец, 7 ряд)
+2023/02/07 15:20:07 3072843 cffb0734 [INFO Client 5212] @От кого ДедМаксим_: Здравствуйте, хочу купить у вас Мьёльнир Камнетёс за 49 chaos в лиге Sanctum (секция "~b/o 49 chaos"; позиция: 7 столбец, 7 ряд)
+2023/02/07 15:21:20 3146218 cffb0734 [INFO Client 5212] @От кого ДедМаксим_: Здравствуйте, хочу купить у вас Мьёльнир Камнетёс за 49 chaos в лиге Sanctum (секция "~b/o 49 chaos"; позиция: 7 столбец, 7 ряд)
+2023/02/07 15:28:45 3590859 cffb0734 [INFO Client 5212] @От кого ДедМаксим_: Здравствуйте, хочу купить у вас Мьёльнир Камнетёс за 49 chaos в лиге Sanctum (секция "~b/o 49 chaos"; позиция: 7 столбец, 7 ряд)
+2023/02/07 15:34:11 3917562 cffb0734 [INFO Client 5212] @От кого ДедМаксим_: Здравствуйте, хочу купить у вас Мьёльнир Камнетёс за 49 chaos в лиге Sanctum (секция "~b/o 49 chaos"; позиция: 7 столбец, 7 ряд)
+2023/02/07 15:44:25 4530703 cffb0734 [INFO Client 5212] @От кого <H€ñtâÌ> DirtyPunchLine: Здравствуйте, хочу купить у вас Алмазный флакон за 1 chaos в лиге Sanctum (секция "~b/o 1 chaos"; позиция: 2 столбец, 7 ряд)
+2023/02/07 15:45:03 4568953 88a904ed [DEBUG Client 5212] Got Instance Details from login server
+2023/02/07 15:45:03 4568968 32759a9f [INFO Client 5212] [SHADER] Delay: OFF
+2023/02/07 15:45:03 4568984 ca3a6a7f [INFO Client 5212] Connecting to instance server at 159.122.142.237:6112
+2023/02/07 15:45:03 4569031 ca3a4dbd [DEBUG Client 5212] Connect time to instance server was 31ms
+2023/02/07 15:45:03 4569093 1186a0e3 [DEBUG Client 5212] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/07 15:45:03 4569500 f22b6987 [INFO Client 5212] Tile hash: 805187908
+2023/02/07 15:45:03 4569500 f22b6986 [INFO Client 5212] Doodad hash: 0
+2023/02/07 15:45:04 4570078 11870f60 [DEBUG Client 5212] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 15:45:04 4570078 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:45:04 4570078 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:45:04 4570125 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:45:04 4570125 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:45:04 4570125 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:45:04 4570125 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:45:04 4570125 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:45:04 4570125 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:45:04 4570125 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 15:45:05 4571328 cffb0734 [INFO Client 5212] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/07 15:45:06 4572531 32759a9f [INFO Client 5212] [SHADER] Delay: ON
+2023/02/07 15:45:36 4602531 cffb0734 [INFO Client 5212] : ДедМаксим_ присоединился.
+2023/02/07 15:45:59 4625078 cffb0734 [INFO Client 5212] : Сделка совершена.
+2023/02/07 15:46:15 4641500 cffb0734 [INFO Client 5212] : ДедМаксим_ покинул область.
+2023/02/07 15:47:54 4740015 cffb0734 [INFO Client 5212] @От кого Objectified: Здравствуйте, хочу купить у вас Базальтовый флакон за 1 chaos в лиге Sanctum (секция "~b/o 1 chaos"; позиция: 5 столбец, 7 ряд)
+2023/02/07 16:03:56 5701765 cffb0734 [INFO Client 5212] : Режим "отошёл" включён. Авто-ответ "Игрок отошёл.".
+2023/02/07 16:09:40 6046046 cffb0734 [INFO Client 5212] &<RiPE> DexDude: Железная крепость, Доспех поборника
+2023/02/07 16:13:45 6291625 cffb0734 [INFO Client 5212] : Режим "отошёл" выключен.
+2023/02/07 16:15:19 6384781 88a904ed [DEBUG Client 5212] Got Instance Details from login server
+2023/02/07 16:15:19 6384796 32759a9f [INFO Client 5212] [SHADER] Delay: OFF
+2023/02/07 16:15:19 6384796 ca3a6a7f [INFO Client 5212] Connecting to instance server at 169.51.201.132:6112
+2023/02/07 16:15:19 6384843 ca3a4dbd [DEBUG Client 5212] Connect time to instance server was 47ms
+2023/02/07 16:15:19 6384921 1186a0e3 [DEBUG Client 5212] Generating level 81 area "MapWorldsCarcass" with seed 965579300
+2023/02/07 16:15:20 6386562 f22b6987 [INFO Client 5212] Tile hash: 1200300290
+2023/02/07 16:15:20 6386562 f22b6986 [INFO Client 5212] Doodad hash: 4103573058
+2023/02/07 16:15:22 6387796 11870f60 [DEBUG Client 5212] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 16:15:22 6387796 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:22 6387796 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:22 6387828 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:22 6387828 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:22 6387828 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:22 6387828 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:22 6387843 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:22 6387843 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:22 6387843 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:23 6389296 cffb0734 [INFO Client 5212] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Остов.
+2023/02/07 16:15:25 6390765 32759a9f [INFO Client 5212] [SHADER] Delay: ON
+2023/02/07 16:15:33 6399359 88a904ed [DEBUG Client 5212] Got Instance Details from login server
+2023/02/07 16:15:33 6399375 32759a9f [INFO Client 5212] [SHADER] Delay: OFF
+2023/02/07 16:15:33 6399375 ca3a6a7f [INFO Client 5212] Connecting to instance server at 159.122.142.237:6112
+2023/02/07 16:15:33 6399468 ca3a4dbd [DEBUG Client 5212] Connect time to instance server was 31ms
+2023/02/07 16:15:33 6399546 1186a0e3 [DEBUG Client 5212] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/07 16:15:33 6399578 f22b6987 [INFO Client 5212] Tile hash: 805187908
+2023/02/07 16:15:33 6399578 f22b6986 [INFO Client 5212] Doodad hash: 0
+2023/02/07 16:15:34 6400375 11870f60 [DEBUG Client 5212] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 16:15:34 6400375 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:34 6400375 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:34 6400406 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:34 6400406 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:34 6400406 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:34 6400406 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:34 6400406 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:34 6400406 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:34 6400406 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:35 6401250 cffb0734 [INFO Client 5212] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/07 16:15:36 6402109 32759a9f [INFO Client 5212] [SHADER] Delay: ON
+2023/02/07 16:15:43 6409062 88a904ed [DEBUG Client 5212] Got Instance Details from login server
+2023/02/07 16:15:43 6409062 32759a9f [INFO Client 5212] [SHADER] Delay: OFF
+2023/02/07 16:15:43 6409062 ca3a6a7f [INFO Client 5212] Connecting to instance server at 169.51.201.132:6112
+2023/02/07 16:15:43 6409140 ca3a4dbd [DEBUG Client 5212] Connect time to instance server was 31ms
+2023/02/07 16:15:43 6409203 1186a0e3 [DEBUG Client 5212] Generating level 81 area "MapWorldsCarcass" with seed 965579300
+2023/02/07 16:15:43 6409375 f22b6987 [INFO Client 5212] Tile hash: 1200300290
+2023/02/07 16:15:43 6409375 f22b6986 [INFO Client 5212] Doodad hash: 4103573058
+2023/02/07 16:15:44 6410156 11870f60 [DEBUG Client 5212] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 16:15:44 6410156 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:44 6410156 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:44 6410203 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:44 6410203 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:44 6410203 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:44 6410203 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:44 6410203 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:44 6410203 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:44 6410203 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:15:45 6410906 cffb0734 [INFO Client 5212] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Остов.
+2023/02/07 16:15:46 6411765 32759a9f [INFO Client 5212] [SHADER] Delay: ON
+2023/02/07 16:17:20 6506296 37970260 [WARN Client 5212] Client couldn't execute a triggered action from the server.
+action type id = 55607
+2023/02/07 16:17:20 6506296 3796faa4 [WARN Client 5212] Instant/Triggered actionwas serialized to the client, but the client failed to execute the action.
+skill_instance_id: 41736
+action_id: 34863
+object_id: 1187
+target_id: 1187
+flags: 129
+2023/02/07 16:18:38 6584484 88a904ed [DEBUG Client 5212] Got Instance Details from login server
+2023/02/07 16:18:38 6584484 32759a9f [INFO Client 5212] [SHADER] Delay: OFF
+2023/02/07 16:18:38 6584484 ca3a6a7f [INFO Client 5212] Connecting to instance server at 169.51.201.169:6112
+2023/02/07 16:18:38 6584546 ca3a4dbd [DEBUG Client 5212] Connect time to instance server was 31ms
+2023/02/07 16:18:38 6584609 1186a0e3 [DEBUG Client 5212] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/07 16:18:38 6584640 f22b6987 [INFO Client 5212] Tile hash: 805187908
+2023/02/07 16:18:38 6584640 f22b6986 [INFO Client 5212] Doodad hash: 0
+2023/02/07 16:18:39 6585406 11870f60 [DEBUG Client 5212] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 16:18:39 6585406 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:18:39 6585406 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:18:39 6585437 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:18:39 6585437 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:18:39 6585437 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:18:39 6585437 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:18:39 6585453 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:18:39 6585453 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:18:39 6585453 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:18:40 6586203 cffb0734 [INFO Client 5212] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/07 16:18:41 6587093 32759a9f [INFO Client 5212] [SHADER] Delay: ON
+2023/02/07 16:20:00 6666015 cffb0734 [INFO Client 5212] &<RiPE> DexDude: Убью ваших боссов/приглашения за спасибо, могу все кроме намазаных убер экзарха/итера
+2023/02/07 16:20:21 6686890 cffb0734 [INFO Client 5212] &<RiPE> DexDude: А то уже поднадоело шеперов бегать(
+2023/02/07 16:20:25 6691062 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:20:25 6691078 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:20:50 6716203 cffb0734 [INFO Client 5212] <RiPE> DeeManaIIIXX: Здоровый дух, Кобальтовый самоцвет
+2023/02/07 16:23:49 6895640 cffb0734 [INFO Client 5212] : Сделка совершена.
+2023/02/07 16:23:53 6899125 88a904ed [DEBUG Client 5212] Got Instance Details from login server
+2023/02/07 16:23:53 6899125 32759a9f [INFO Client 5212] [SHADER] Delay: OFF
+2023/02/07 16:23:53 6899125 ca3a6a7f [INFO Client 5212] Connecting to instance server at 169.51.201.132:6112
+2023/02/07 16:23:53 6899187 ca3a4dbd [DEBUG Client 5212] Connect time to instance server was 46ms
+2023/02/07 16:23:53 6899265 1186a0e3 [DEBUG Client 5212] Generating level 81 area "MapWorldsCarcass" with seed 965579300
+2023/02/07 16:23:53 6899421 f22b6987 [INFO Client 5212] Tile hash: 1200300290
+2023/02/07 16:23:53 6899421 f22b6986 [INFO Client 5212] Doodad hash: 4103573058
+2023/02/07 16:23:54 6900125 11870f60 [DEBUG Client 5212] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 16:23:54 6900125 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:23:54 6900125 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:23:54 6900156 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:23:54 6900156 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:23:54 6900156 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:23:54 6900156 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:23:54 6900156 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:23:54 6900156 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:23:54 6900156 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:23:55 6901156 cffb0734 [INFO Client 5212] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Остов.
+2023/02/07 16:23:56 6902000 32759a9f [INFO Client 5212] [SHADER] Delay: ON
+2023/02/07 16:26:09 7035125 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:26:09 7035125 6ad47f15 [DEBUG Client 5212] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 16:26:59 7085062 aecea337 [INFO Client 5212] Abnormal disconnect: Произошло неожиданное отключение от сервера.
+2023/02/07 16:27:01 7087546 890d9d5f [INFO Client 5212] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/07 16:27:12 7098625 3c73b2e2 [INFO Client 5212] Ошибка подключения к серверу авторизации.
+2023/02/07 16:27:19 7104984 890d9d5f [INFO Client 5212] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/07 16:27:21 7107015 9df33313 [WARN Client 5212] Failed to parse site settings data, exception: 'Failed to fetch site settings. Http code=0'. Will retry after a period of time
+2023/02/07 16:27:30 7116062 3c73b2e2 [INFO Client 5212] Ошибка подключения к серверу авторизации.
+2023/02/07 16:27:36 7122671 890d9d5f [INFO Client 5212] Async connecting to sng01.login.pathofexile.com:20481
+2023/02/07 16:27:48 7133734 3c73b2e2 [INFO Client 5212] Ошибка подключения к серверу авторизации.
+2023/02/07 16:27:55 ***** LOG FILE OPENING *****
+2023/02/07 16:27:55 7141328 f95442e3 [INFO Client 4268] [STARTUP] Job Queues
+2023/02/07 16:27:55 7141328 9e6a0b0a [INFO Client 4268] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/07 16:27:55 7141375 9e6a1d2a [INFO Client 4268] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 16:27:55 7141375 9e6a1363 [INFO Client 4268] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/07 16:27:55 7141375 9e6a0b0a [INFO Client 4268] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/07 16:27:55 7141375 9e6a1d2a [INFO Client 4268] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 16:27:55 7141375 84a7d27d [INFO Client 4268] [ENGINE] Init
+2023/02/07 16:27:55 7141375 55713145 [INFO Client 4268] [JOB] HIGH: 2
+2023/02/07 16:27:55 7141375 55713145 [INFO Client 4268] [JOB] MEDIUM: 2
+2023/02/07 16:27:55 7141375 55713145 [INFO Client 4268] [JOB] LOW: 2
+2023/02/07 16:27:55 7141375 55713145 [INFO Client 4268] [JOB] IDLE: 1
+2023/02/07 16:27:55 7141375 7bb548f [INFO Client 4268] [BUNDLE2] Init
+2023/02/07 16:27:55 7141375 7bb36c4 [INFO Client 4268] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/07 16:27:55 7141625 7bb61e6 [INFO Client 4268] [BUNDLE2] File cache size: 1024
+2023/02/07 16:27:55 7141625 b51d61ab [INFO Client 4268] [RENDER] Async: ON
+2023/02/07 16:27:55 7141625 b51d60c8 [INFO Client 4268] [RENDER] Warmup: ON
+2023/02/07 16:27:55 7141625 b51d60ce [INFO Client 4268] [RENDER] Skip: ON
+2023/02/07 16:27:55 7141625 b51d60eb [INFO Client 4268] [RENDER] Throttling: ON
+2023/02/07 16:27:55 7141625 32759a7a [INFO Client 4268] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/07 16:27:55 7141625 32759a70 [INFO Client 4268] [SHADER] Async: ON
+2023/02/07 16:27:55 7141625 32759a9f [INFO Client 4268] [SHADER] Delay: OFF
+2023/02/07 16:27:55 7141625 32759aba [INFO Client 4268] [SHADER] Limit: ON
+2023/02/07 16:27:55 7141625 32759abc [INFO Client 4268] [SHADER] Warmup: ON
+2023/02/07 16:27:55 7141625 327599d7 [INFO Client 4268] [SHADER] Parallel: OFF
+2023/02/07 16:27:55 7141625 84a7e376 [INFO Client 4268] [ENGINE] Running Engine version 1.7.0
+2023/02/07 16:27:55 7141625 47bbd15b [INFO Client 4268] [SOUND] Buffer size = 64.0 MB
+2023/02/07 16:27:55 7141656 9b0d205 [INFO Client 4268] [VIDEO] Enable: ON
+2023/02/07 16:27:55 7141671 84a7d2d8 [INFO Client 4268] [ENGINE] Ready
+2023/02/07 16:27:56 7141718 951bc0b0 [INFO Client 4268] [STARTUP] Bundle Startup Start
+2023/02/07 16:27:56 7141718 951bc057 [INFO Client 4268] [STARTUP] Bundle Startup in 7e-05 seconds
+2023/02/07 16:27:56 7141718 951bc0b0 [INFO Client 4268] [STARTUP] Game Start
+2023/02/07 16:27:56 7142015 ca86fd3f [DEBUG Client 4268] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/07 16:27:56 7142359 951bc057 [INFO Client 4268] [STARTUP] Game in 0.643478 seconds
+2023/02/07 16:27:56 7142359 951bc0b0 [INFO Client 4268] [STARTUP] Window Start
+2023/02/07 16:27:56 7142359 9e6a0b0a [INFO Client 4268] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/07 16:27:56 7142406 9e6a1d2a [INFO Client 4268] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 16:27:56 7142406 9e6a1363 [INFO Client 4268] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/07 16:27:56 7142406 9e6a0b0a [INFO Client 4268] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/07 16:27:56 7142406 9e6a1d2a [INFO Client 4268] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 16:27:56 7142437 951bc057 [INFO Client 4268] [STARTUP] Window in 0.074277 seconds
+2023/02/07 16:27:56 7142453 413b61ff [DEBUG Client 4268] [GamepadManager] Initialising
+2023/02/07 16:27:56 7142453 951bc0b0 [INFO Client 4268] [STARTUP] Device Start
+2023/02/07 16:27:56 7142453 b51d6589 [INFO Client 4268] [RENDER] StartDevice: DirectX11
+2023/02/07 16:27:56 7142671 71b2ea0 [DEBUG Client 4268] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/07 16:27:57 7142828 fafff8cf [DEBUG Client 4268] CreateSwapChain: SetFullScreenState 0
+2023/02/07 16:27:57 7142828 29d4ce01 [INFO Client 4268] [D3D11] Runtime version = 11.1
+2023/02/07 16:27:57 7142828 29d4ce00 [INFO Client 4268] [D3D11] Feature Level = 11.1
+2023/02/07 16:27:57 7142828 29d4ce03 [INFO Client 4268] [D3D11] Driver Command Lists = NO
+2023/02/07 16:27:57 7142828 29d4ce02 [INFO Client 4268] [D3D11] Driver Concurrent Creates = YES
+2023/02/07 16:27:57 7142828 29d4ce05 [INFO Client 4268] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/07 16:27:57 7142984 9d4eeb40 [DEBUG Client 4268] [WINDOW] TrigggerDeviceCreate
+2023/02/07 16:27:57 7143421 9d4eeba7 [DEBUG Client 4268] [WINDOW] TrigggerDeviceReset
+2023/02/07 16:27:57 7143453 9d4eec8a [DEBUG Client 4268] [WINDOW] TrigggerDeviceLost
+2023/02/07 16:27:57 7143468 9d4eeba7 [DEBUG Client 4268] [WINDOW] TrigggerDeviceReset
+2023/02/07 16:27:57 7143531 951bc057 [INFO Client 4268] [STARTUP] Device in 1.07022 seconds
+2023/02/07 16:27:57 7143531 951bc0b0 [INFO Client 4268] [STARTUP] Tencent Start
+2023/02/07 16:27:57 7143531 951bc057 [INFO Client 4268] [STARTUP] Tencent in 8.7e-05 seconds
+2023/02/07 16:27:57 7143531 951bc0b0 [INFO Client 4268] [STARTUP] Loading Start
+2023/02/07 16:27:57 7143578 951bc057 [INFO Client 4268] [STARTUP] Loading in 0.048359 seconds
+2023/02/07 16:27:57 7143578 951bc0b0 [INFO Client 4268] [STARTUP] DebugGUI Start
+2023/02/07 16:27:57 7143578 951bc057 [INFO Client 4268] [STARTUP] DebugGUI in 4.2e-05 seconds
+2023/02/07 16:27:57 7143578 951bc0b0 [INFO Client 4268] [STARTUP] Bundle Tiny Start
+2023/02/07 16:27:57 7143578 951bc0b0 [INFO Client 4268] [STARTUP] Bundle Login Start
+2023/02/07 16:27:57 7143578 951bc057 [INFO Client 4268] [STARTUP] Bundle Login in 3.9e-05 seconds
+2023/02/07 16:27:57 7143578 951bc057 [INFO Client 4268] [STARTUP] Bundle Tiny in 0.000102 seconds
+2023/02/07 16:27:57 7143578 951bc0b0 [INFO Client 4268] [STARTUP] Registration Start
+2023/02/07 16:27:57 7143593 951bc0b0 [INFO Client 4268] [STARTUP] Audio Start
+2023/02/07 16:27:57 7143593 47bbee1b [INFO Client 4268] [SOUND] Channel count = 64 (asked for 64)
+2023/02/07 16:27:57 7143593 47bbee18 [INFO Client 4268] [SOUND] Source count = 512
+2023/02/07 16:27:58 7143968 47bbea59 [INFO Client 4268] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/07 16:27:58 7143968 951bc057 [INFO Client 4268] [STARTUP] Audio in 0.379507 seconds
+2023/02/07 16:27:58 7144078 951bc057 [INFO Client 4268] [STARTUP] Registration in 0.502691 seconds
+2023/02/07 16:27:59 7144875 509417f7 [WARN Client 4268] tool_settings.json was not found. Resetting to default settings.
+2023/02/07 16:28:08 7153812 890d9d5f [INFO Client 4268] Async connecting to lon01.login.pathofexile.com:20481
+2023/02/07 16:28:17 7163671 9df33313 [WARN Client 4268] Failed to parse site settings data, exception: 'Failed to fetch site settings. Http code=0'. Will retry after a period of time
+2023/02/07 16:28:19 7164906 3c73b2e2 [INFO Client 4268] Ошибка подключения к серверу авторизации.
+2023/02/07 17:00:53 ***** LOG FILE OPENING *****
+2023/02/07 17:00:53 1927921 f95442e3 [INFO Client 8780] [STARTUP] Job Queues
+2023/02/07 17:00:53 1927953 9e6a0b0a [INFO Client 8780] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/07 17:00:53 1928031 9e6a1d2a [INFO Client 8780] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 17:00:53 1928031 9e6a1363 [INFO Client 8780] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/07 17:00:53 1928031 9e6a0b0a [INFO Client 8780] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/07 17:00:53 1928031 9e6a1d2a [INFO Client 8780] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 17:00:53 1928046 84a7d27d [INFO Client 8780] [ENGINE] Init
+2023/02/07 17:00:53 1928046 55713145 [INFO Client 8780] [JOB] HIGH: 2
+2023/02/07 17:00:53 1928046 55713145 [INFO Client 8780] [JOB] MEDIUM: 2
+2023/02/07 17:00:53 1928046 55713145 [INFO Client 8780] [JOB] LOW: 2
+2023/02/07 17:00:53 1928046 55713145 [INFO Client 8780] [JOB] IDLE: 1
+2023/02/07 17:00:53 1928046 7bb548f [INFO Client 8780] [BUNDLE2] Init
+2023/02/07 17:00:53 1928046 7bb36c4 [INFO Client 8780] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/07 17:00:53 1928343 7bb61e6 [INFO Client 8780] [BUNDLE2] File cache size: 1024
+2023/02/07 17:00:53 1928343 b51d61ab [INFO Client 8780] [RENDER] Async: ON
+2023/02/07 17:00:53 1928343 b51d60c8 [INFO Client 8780] [RENDER] Warmup: ON
+2023/02/07 17:00:53 1928343 b51d60ce [INFO Client 8780] [RENDER] Skip: ON
+2023/02/07 17:00:53 1928343 b51d60eb [INFO Client 8780] [RENDER] Throttling: ON
+2023/02/07 17:00:53 1928343 32759a7a [INFO Client 8780] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/07 17:00:53 1928343 32759a70 [INFO Client 8780] [SHADER] Async: ON
+2023/02/07 17:00:53 1928343 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:00:53 1928343 32759aba [INFO Client 8780] [SHADER] Limit: ON
+2023/02/07 17:00:53 1928343 32759abc [INFO Client 8780] [SHADER] Warmup: ON
+2023/02/07 17:00:53 1928343 327599d7 [INFO Client 8780] [SHADER] Parallel: OFF
+2023/02/07 17:00:53 1928343 84a7e376 [INFO Client 8780] [ENGINE] Running Engine version 1.7.0
+2023/02/07 17:00:53 1928359 47bbd15b [INFO Client 8780] [SOUND] Buffer size = 64.0 MB
+2023/02/07 17:00:53 1928421 9b0d205 [INFO Client 8780] [VIDEO] Enable: ON
+2023/02/07 17:00:53 1928437 84a7d2d8 [INFO Client 8780] [ENGINE] Ready
+2023/02/07 17:00:53 1928500 951bc0b0 [INFO Client 8780] [STARTUP] Bundle Startup Start
+2023/02/07 17:00:53 1928500 951bc057 [INFO Client 8780] [STARTUP] Bundle Startup in 8.1e-05 seconds
+2023/02/07 17:00:53 1928500 951bc0b0 [INFO Client 8780] [STARTUP] Game Start
+2023/02/07 17:00:54 1928734 ca86fd3f [DEBUG Client 8780] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/07 17:00:54 1929046 951bc057 [INFO Client 8780] [STARTUP] Game in 0.553876 seconds
+2023/02/07 17:00:54 1929046 951bc0b0 [INFO Client 8780] [STARTUP] Window Start
+2023/02/07 17:00:54 1929046 9e6a0b0a [INFO Client 8780] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/07 17:00:54 1929093 9e6a1d2a [INFO Client 8780] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 17:00:54 1929093 9e6a1363 [INFO Client 8780] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/07 17:00:54 1929093 9e6a0b0a [INFO Client 8780] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/07 17:00:54 1929093 9e6a1d2a [INFO Client 8780] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/07 17:00:54 1929125 951bc057 [INFO Client 8780] [STARTUP] Window in 0.073488 seconds
+2023/02/07 17:00:54 1929140 413b61ff [DEBUG Client 8780] [GamepadManager] Initialising
+2023/02/07 17:00:54 1929140 951bc0b0 [INFO Client 8780] [STARTUP] Device Start
+2023/02/07 17:00:54 1929140 b51d6589 [INFO Client 8780] [RENDER] StartDevice: DirectX11
+2023/02/07 17:00:54 1929359 71b2ea0 [DEBUG Client 8780] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/07 17:00:54 1929531 fafff8cf [DEBUG Client 8780] CreateSwapChain: SetFullScreenState 0
+2023/02/07 17:00:54 1929531 29d4ce01 [INFO Client 8780] [D3D11] Runtime version = 11.1
+2023/02/07 17:00:54 1929531 29d4ce00 [INFO Client 8780] [D3D11] Feature Level = 11.1
+2023/02/07 17:00:54 1929531 29d4ce03 [INFO Client 8780] [D3D11] Driver Command Lists = NO
+2023/02/07 17:00:54 1929531 29d4ce02 [INFO Client 8780] [D3D11] Driver Concurrent Creates = YES
+2023/02/07 17:00:54 1929531 29d4ce05 [INFO Client 8780] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/07 17:00:55 1929703 9d4eeb40 [DEBUG Client 8780] [WINDOW] TrigggerDeviceCreate
+2023/02/07 17:00:55 1930328 9d4eeba7 [DEBUG Client 8780] [WINDOW] TrigggerDeviceReset
+2023/02/07 17:00:56 1930796 9d4eec8a [DEBUG Client 8780] [WINDOW] TrigggerDeviceLost
+2023/02/07 17:00:56 1930812 9d4eeba7 [DEBUG Client 8780] [WINDOW] TrigggerDeviceReset
+2023/02/07 17:00:56 1930859 951bc057 [INFO Client 8780] [STARTUP] Device in 1.71839 seconds
+2023/02/07 17:00:56 1930859 951bc0b0 [INFO Client 8780] [STARTUP] Tencent Start
+2023/02/07 17:00:56 1930859 951bc057 [INFO Client 8780] [STARTUP] Tencent in 3.7e-05 seconds
+2023/02/07 17:00:56 1930859 951bc0b0 [INFO Client 8780] [STARTUP] Loading Start
+2023/02/07 17:00:56 1930890 951bc057 [INFO Client 8780] [STARTUP] Loading in 0.040989 seconds
+2023/02/07 17:00:56 1930890 951bc0b0 [INFO Client 8780] [STARTUP] DebugGUI Start
+2023/02/07 17:00:56 1930890 951bc057 [INFO Client 8780] [STARTUP] DebugGUI in 7.4e-05 seconds
+2023/02/07 17:00:56 1930890 951bc0b0 [INFO Client 8780] [STARTUP] Bundle Tiny Start
+2023/02/07 17:00:56 1930890 951bc0b0 [INFO Client 8780] [STARTUP] Bundle Login Start
+2023/02/07 17:00:56 1930890 951bc057 [INFO Client 8780] [STARTUP] Bundle Login in 3.8e-05 seconds
+2023/02/07 17:00:56 1930890 951bc0b0 [INFO Client 8780] [STARTUP] Registration Start
+2023/02/07 17:00:56 1930890 951bc057 [INFO Client 8780] [STARTUP] Bundle Tiny in 0.000106 seconds
+2023/02/07 17:00:56 1930906 951bc0b0 [INFO Client 8780] [STARTUP] Audio Start
+2023/02/07 17:00:56 1930906 47bbee1b [INFO Client 8780] [SOUND] Channel count = 64 (asked for 64)
+2023/02/07 17:00:56 1930906 47bbee18 [INFO Client 8780] [SOUND] Source count = 512
+2023/02/07 17:00:56 1931203 47bbea59 [INFO Client 8780] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/07 17:00:56 1931218 951bc057 [INFO Client 8780] [STARTUP] Audio in 0.310154 seconds
+2023/02/07 17:00:57 1931734 951bc057 [INFO Client 8780] [STARTUP] Registration in 0.836058 seconds
+2023/02/07 17:00:57 1932218 509417f7 [WARN Client 8780] tool_settings.json was not found. Resetting to default settings.
+2023/02/07 17:01:02 1937406 890d9d5f [INFO Client 8780] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/07 17:01:02 1937593 890d9cd8 [INFO Client 8780] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/07 17:01:06 1941500 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:01:06 1941578 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:01:06 1941578 ca3a6a7f [INFO Client 8780] Connecting to instance server at 169.51.201.169:6112
+2023/02/07 17:01:06 1941640 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 47ms
+2023/02/07 17:01:07 1941734 1186a0e3 [DEBUG Client 8780] Generating level 69 area "2_11_endgame_town" with seed 1
+2023/02/07 17:01:23 1957828 f22b6987 [INFO Client 8780] Tile hash: 3144825756
+2023/02/07 17:01:23 1957828 f22b6986 [INFO Client 8780] Doodad hash: 2535089436
+2023/02/07 17:01:25 1960421 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:01:25 1960437 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:01:25 1960437 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:01:25 1960453 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:01:25 1960453 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:01:25 1960453 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:01:27 1962546 cffb0734 [INFO Client 8780] &: ОБЪЯВЛЕНИЕ ГИЛЬДИИ: В гостяк у CARDIFF 
+2023/02/07 17:01:28 1963656 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Берега Каруи.
+2023/02/07 17:01:29 1963703 cffb0734 [INFO Client 8780] $AveThyanos: Дьявольское отражение, Цепкая кольчугаwts
+2023/02/07 17:01:29 1963812 cffb0734 [INFO Client 8780] #<µuPk> 长尸丹山__山片口几辷: Only melee and ranged attacks can be evaded; spells automatically hit.
+2023/02/07 17:01:31 1965765 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:01:31 1965953 374e0d22 [INFO Client 8780] [Item Filter] Preparing to download online filter J40EP1CX
+2023/02/07 17:01:31 1965953 374e0cc3 [INFO Client 8780] [Item Filter] Hash for online filter J40EP1CX is: 2973e5610fd1794f55172938e648806e
+2023/02/07 17:01:31 1966265 374e0cc9 [INFO Client 8780] [Item Filter] Online item filter J40EP1CX returned status: 200
+2023/02/07 17:01:31 1966265 374e0ce3 [DEBUG Client 8780] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/07 17:01:31 1966265 374e0e8e [DEBUG Client 8780] [Item Filter] X-HW: 1675782091.dop223.pa1.t,1675782091.cds242.pa1.shn,1675782091.dop223.pa1.t,1675782091.cds204.pa1.c
+2023/02/07 17:01:31 1966281 374df808 [INFO Client 8780] [Item Filter] Successfully saved online filter J40EP1CX. Hash is now: 2973e5610fd1794f55172938e648806e
+2023/02/07 17:01:31 1966375 788474c3 [INFO Client 8780] [Item Filter] Finished reloading online filter J40EP1CX. Result: true. Hash: 2973e5610fd1794f55172938e648806e. Type: Normal. Message: 
+2023/02/07 17:01:31 1966375 2a14910e [INFO Client 8780] PrecalcBaseTypeHashMap
+2023/02/07 17:01:31 1966468 2a149100 [INFO Client 8780] PrecalcModNameHashMap
+2023/02/07 17:01:33 1968359 2a149169 [INFO Client 8780] PrecalcItemClassMap
+2023/02/07 17:01:33 1968359 2a14916b [INFO Client 8780] PrecalcSoundEffects
+2023/02/07 17:01:33 1968359 2a14916d [INFO Client 8780] PrecalcDropEffects
+2023/02/07 17:01:33 1968359 2a14916f [INFO Client 8780] PrecalcNonEnchantModHashes
+2023/02/07 17:01:33 1968359 2a149161 [INFO Client 8780] PrecalcRuleNameToTypeMap
+2023/02/07 17:01:33 1968359 2a148c01 [INFO Client 8780] PrecalcCJESPNIndexMap
+2023/02/07 17:01:33 1968359 2a148c03 [INFO Client 8780] PrecalcGemAlternateQualityMap
+2023/02/07 17:02:11 2006437 cffb0734 [INFO Client 8780] : Сделка совершена.
+2023/02/07 17:03:01 2056062 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:03:01 2056078 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:03:01 2056078 ca3a6a7f [INFO Client 8780] Connecting to instance server at 159.122.142.247:6112
+2023/02/07 17:03:01 2056140 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 47ms
+2023/02/07 17:03:01 2056203 1186a0e3 [DEBUG Client 8780] Generating level 33 area "Labyrinth_Airlock" with seed 418667520
+2023/02/07 17:03:02 2056796 f22b6987 [INFO Client 8780] Tile hash: 3302773126
+2023/02/07 17:03:02 2056796 f22b6986 [INFO Client 8780] Doodad hash: 0
+2023/02/07 17:03:02 2057062 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:03:02 2057062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:02 2057062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:02 2057078 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:02 2057078 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:02 2057078 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:02 2057078 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:02 2057078 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:02 2057078 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:02 2057078 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:03 2058000 cffb0734 [INFO Client 8780] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Площадь претендентов.
+2023/02/07 17:03:04 2059281 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:03:22 2076843 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:03:22 2076859 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:03:22 2076859 ca3a6a7f [INFO Client 8780] Connecting to instance server at 169.51.201.153:6112
+2023/02/07 17:03:22 2076937 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 47ms
+2023/02/07 17:03:22 2077015 1186a0e3 [DEBUG Client 8780] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/07 17:03:22 2077375 f22b6987 [INFO Client 8780] Tile hash: 805187908
+2023/02/07 17:03:22 2077375 f22b6986 [INFO Client 8780] Doodad hash: 0
+2023/02/07 17:03:23 2077890 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:03:23 2077890 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:23 2077890 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:23 2077921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:23 2077921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:23 2077921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:23 2077921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:23 2077921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:23 2077921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:23 2077921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:24 2079046 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/07 17:03:25 2080109 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:03:35 2089781 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:03:35 2089781 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:03:35 2089781 ca3a6a7f [INFO Client 8780] Connecting to instance server at 159.122.142.247:6112
+2023/02/07 17:03:35 2089843 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 31ms
+2023/02/07 17:03:35 2089906 1186a0e3 [DEBUG Client 8780] Generating level 33 area "Labyrinth_Airlock" with seed 418667520
+2023/02/07 17:03:35 2089921 f22b6987 [INFO Client 8780] Tile hash: 3302773126
+2023/02/07 17:03:35 2089921 f22b6986 [INFO Client 8780] Doodad hash: 0
+2023/02/07 17:03:36 2090750 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:03:36 2090750 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:36 2090750 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:36 2090750 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:36 2090750 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:36 2090750 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:36 2090750 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:36 2090750 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:36 2090750 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:36 2090750 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:03:36 2091343 cffb0734 [INFO Client 8780] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Площадь претендентов.
+2023/02/07 17:03:37 2092015 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:03:56 2111578 cffb0734 [INFO Client 8780] Изаро: Поднимись из праха.
+2023/02/07 17:04:03 2118500 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:04:03 2118500 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:04:03 2118500 ca3a6a7f [INFO Client 8780] Connecting to instance server at 169.51.201.169:6112
+2023/02/07 17:04:03 2118578 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 46ms
+2023/02/07 17:04:03 2118656 1186a0e3 [DEBUG Client 8780] Generating level 75 area "EndGame_Labyrinth_OH_straight" with seed 969778281
+2023/02/07 17:04:05 2120437 f22b6987 [INFO Client 8780] Tile hash: 443761183
+2023/02/07 17:04:05 2120437 f22b6986 [INFO Client 8780] Doodad hash: 49060680
+2023/02/07 17:04:06 2121046 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:04:06 2121046 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:04:06 2121062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:04:06 2121062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:04:06 2121062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:04:06 2121062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:04:06 2121062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:04:06 2121062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:04:06 2121062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:04:06 2121062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:04:07 2122234 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Путь к усадьбе.
+2023/02/07 17:04:08 2123578 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:05:25 2200609 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:05:25 2200609 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:05:25 2200609 ca3a6a7f [INFO Client 8780] Connecting to instance server at 159.122.142.244:6112
+2023/02/07 17:05:25 2200671 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 47ms
+2023/02/07 17:05:26 2200750 1186a0e3 [DEBUG Client 8780] Generating level 75 area "EndGame_Labyrinth_C_straight_bottleneck" with seed 1491801704
+2023/02/07 17:05:26 2201500 f22b6987 [INFO Client 8780] Tile hash: 3358337047
+2023/02/07 17:05:26 2201500 f22b6986 [INFO Client 8780] Doodad hash: 300747595
+2023/02/07 17:05:27 2201875 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:05:27 2201875 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:05:27 2201875 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:05:27 2201906 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:05:27 2201906 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:05:27 2201906 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:05:27 2201906 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:05:27 2201921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:05:27 2201921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:05:27 2201921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:05:28 2202734 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коридоры усыпальницы.
+2023/02/07 17:05:29 2203765 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:07:17 2312171 cffb0734 [INFO Client 8780] : Сокрой свой путь войны туманом
+2023/02/07 17:07:23 2318265 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:07:23 2318265 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:07:23 2318265 ca3a6a7f [INFO Client 8780] Connecting to instance server at 169.51.201.179:6112
+2023/02/07 17:07:23 2318328 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 31ms
+2023/02/07 17:07:23 2318390 1186a0e3 [DEBUG Client 8780] Generating level 75 area "EndGame_Labyrinth_EH_branch_door" with seed 3692316836
+2023/02/07 17:07:24 2319171 f22b6987 [INFO Client 8780] Tile hash: 2356309198
+2023/02/07 17:07:24 2319171 f22b6986 [INFO Client 8780] Doodad hash: 1934243418
+2023/02/07 17:07:24 2319640 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:07:24 2319640 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:07:24 2319640 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:07:24 2319671 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:07:24 2319671 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:07:24 2319671 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:07:24 2319671 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:07:25 2319687 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:07:25 2319687 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:07:25 2319687 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:07:25 2320359 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Залы особняка.
+2023/02/07 17:07:26 2321062 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:09:07 2421687 cffb0734 [INFO Client 8780] Изаро: Мой милый Аргус, наслаждайся безделушкой!
+2023/02/07 17:09:11 2426531 cffb0734 [INFO Client 8780] : DeeManaIIIXX был повержен.
+2023/02/07 17:09:12 2427562 cffb0734 [INFO Client 8780] Изаро: Кто быстро бежит наверх, тот больно падает вниз.
+2023/02/07 17:09:13 2428359 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:09:13 2428359 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:09:13 2428359 ca3a6a7f [INFO Client 8780] Connecting to instance server at 169.51.201.158:6112
+2023/02/07 17:09:13 2428421 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 47ms
+2023/02/07 17:09:13 2428500 1186a0e3 [DEBUG Client 8780] Generating level 69 area "2_11_endgame_town" with seed 1
+2023/02/07 17:09:19 2434125 f22b6987 [INFO Client 8780] Tile hash: 3144825756
+2023/02/07 17:09:19 2434125 f22b6986 [INFO Client 8780] Doodad hash: 2535089436
+2023/02/07 17:09:20 2435046 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:09:20 2435046 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:09:20 2435046 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:09:20 2435078 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:09:20 2435078 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:09:20 2435078 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:09:20 2435078 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:09:20 2435078 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:09:20 2435078 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:09:20 2435093 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:09:21 2435968 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Берега Каруи.
+2023/02/07 17:09:22 2437343 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:14:05 2719828 cffb0734 [INFO Client 8780] @Кому SmiteT_SparksofPoyson: Hi, I'd like to buy your 30 Подношение богине for my 10 Chaos Orb in Sanctum
+2023/02/07 17:14:08 2723000 cffb0734 [INFO Client 8780] @Кому БледнаяХудая: Hi, I'd like to buy your 40 Подношение богине for my 15 Chaos Orb in Sanctum
+2023/02/07 17:14:09 2724578 cffb0734 [INFO Client 8780] @Кому GrandDeathAura: Hi, I'd like to buy your 40 Подношение богине for my 15 Chaos Orb in Sanctum
+2023/02/07 17:14:30 2745156 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:14:30 2745156 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:14:30 2745156 ca3a6a7f [INFO Client 8780] Connecting to instance server at 159.122.142.234:6112
+2023/02/07 17:14:30 2745218 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 47ms
+2023/02/07 17:14:30 2745296 1186a0e3 [DEBUG Client 8780] Generating level 60 area "HideoutPrimevalRuins" with seed 1
+2023/02/07 17:14:30 2745546 f22b6987 [INFO Client 8780] Tile hash: 3507625363
+2023/02/07 17:14:30 2745546 f22b6986 [INFO Client 8780] Doodad hash: 0
+2023/02/07 17:14:31 2746312 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:14:31 2746312 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:14:31 2746312 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:14:31 2746343 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:14:31 2746343 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:14:31 2746343 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:14:31 2746343 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:14:31 2746359 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:14:31 2746359 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:14:31 2746359 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:14:32 2747468 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Первобытное убежище.
+2023/02/07 17:14:34 2749046 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:14:45 2760406 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:14:47 2762046 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:14:47 2762578 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:14:48 2763656 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:14:50 2765296 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:14:50 2765531 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:14:51 2765812 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:14:51 2766109 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:14:51 2766359 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:14:51 2766656 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:14:56 2771625 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:14:58 2773640 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:14:59 2773906 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:14:59 2774171 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:14:59 2774484 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:15:03 2777968 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:15:03 2777968 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:15:03 2777968 ca3a6a7f [INFO Client 8780] Connecting to instance server at 91.206.197.34:6112
+2023/02/07 17:15:04 2779062 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 1078ms
+2023/02/07 17:15:04 2779156 1186a0e3 [DEBUG Client 8780] Generating level 60 area "HideoutOasis" with seed 1
+2023/02/07 17:15:04 2779515 f22b6987 [INFO Client 8780] Tile hash: 3903144892
+2023/02/07 17:15:04 2779515 f22b6986 [INFO Client 8780] Doodad hash: 0
+2023/02/07 17:15:05 2779890 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:15:05 2779890 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:05 2779890 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:05 2779921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:05 2779921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:05 2779921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:05 2779921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:05 2779921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:05 2779937 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:05 2779937 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:06 2780750 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пустынное убежище.
+2023/02/07 17:15:07 2781968 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:15:27 2802187 cffb0734 [INFO Client 8780] : Сделка отклонена.
+2023/02/07 17:15:30 2805484 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:15:30 2805484 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:15:30 2805484 ca3a6a7f [INFO Client 8780] Connecting to instance server at 159.122.142.237:6112
+2023/02/07 17:15:30 2805546 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 31ms
+2023/02/07 17:15:30 2805609 1186a0e3 [DEBUG Client 8780] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/07 17:15:31 2806093 f22b6987 [INFO Client 8780] Tile hash: 805187908
+2023/02/07 17:15:31 2806093 f22b6986 [INFO Client 8780] Doodad hash: 0
+2023/02/07 17:15:31 2806500 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:15:31 2806500 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:31 2806500 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:31 2806531 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:31 2806531 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:31 2806546 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:31 2806546 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:31 2806546 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:31 2806546 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:31 2806546 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:32 2807375 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/07 17:15:33 2808140 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:15:38 2813515 cffb0734 [INFO Client 8780] @От кого <RiPE> БледнаяХудая: ?
+2023/02/07 17:15:45 2819953 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:15:45 2819968 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:15:45 2819968 ca3a6a7f [INFO Client 8780] Connecting to instance server at 91.206.197.34:6112
+2023/02/07 17:15:45 2820062 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 63ms
+2023/02/07 17:15:45 2820125 1186a0e3 [DEBUG Client 8780] Generating level 60 area "HideoutOasis" with seed 1
+2023/02/07 17:15:45 2820171 f22b6987 [INFO Client 8780] Tile hash: 3903144892
+2023/02/07 17:15:45 2820171 f22b6986 [INFO Client 8780] Doodad hash: 0
+2023/02/07 17:15:46 2820890 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:15:46 2820890 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:46 2820890 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:46 2820921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:46 2820921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:46 2820921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:46 2820921 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:46 2820937 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:46 2820937 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:46 2820937 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:15:47 2821687 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пустынное убежище.
+2023/02/07 17:15:47 2822375 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:15:54 2828718 cffb0734 [INFO Client 8780] : Сделка отклонена.
+2023/02/07 17:16:00 2834812 cffb0734 [INFO Client 8780] : Сделка отклонена.
+2023/02/07 17:16:11 2846437 cffb0734 [INFO Client 8780] @Кому БледнаяХудая: ty gl!
+2023/02/07 17:16:11 2846437 cffb0734 [INFO Client 8780] : БледнаяХудая покинул область.
+2023/02/07 17:16:11 2846578 cffb0734 [INFO Client 8780] : Цель данной операции не была членом группы
+2023/02/07 17:16:12 2847593 cffb0734 [INFO Client 8780] @Кому SmiteT_SparksofPoyson: ty gl!
+2023/02/07 17:16:13 2847734 cffb0734 [INFO Client 8780] : Цель данной операции не была членом группы
+2023/02/07 17:16:15 2849781 cffb0734 [INFO Client 8780] @Кому GrandDeathAura: ty gl!
+2023/02/07 17:16:15 2849921 cffb0734 [INFO Client 8780] : Цель данной операции не была членом группы
+2023/02/07 17:16:21 2855765 cffb0734 [INFO Client 8780] @Кому SparkToiChettt: Hi, I'd like to buy your 61 Подношение богине for my 24 Chaos Orb in Sanctum
+2023/02/07 17:16:22 2857000 cffb0734 [INFO Client 8780] @Кому enmSanctum: Hi, I'd like to buy your 50 Подношение богине for my 20 Chaos Orb in Sanctum
+2023/02/07 17:16:23 2858234 cffb0734 [INFO Client 8780] @Кому lfajslkfygnlafuljlajflj: Hi, I'd like to buy your 50 Подношение богине for my 20 Chaos Orb in Sanctum
+2023/02/07 17:16:25 2859703 cffb0734 [INFO Client 8780] @Кому AfkPrikol: Hi, I'd like to buy your 5 Подношение богине for my 2 Chaos Orb in Sanctum
+2023/02/07 17:16:25 2860046 cffb0734 [INFO Client 8780] : AfkPrikol не в сети.
+2023/02/07 17:16:25 2860515 cffb0734 [INFO Client 8780] @Кому AfkPrikol: Hi, I'd like to buy your 5 Offering to the Goddess for my 2 Chaos Orb in Sanctum
+2023/02/07 17:16:26 2861218 cffb0734 [INFO Client 8780] : AfkPrikol не в сети.
+2023/02/07 17:16:27 2862093 cffb0734 [INFO Client 8780] @Кому GodBlessDivines: Здравствуйте, хочу купить у вас 50 Подношение богине за 20 Сфера хаоса в лиге Sanctum
+2023/02/07 17:16:29 2863796 cffb0734 [INFO Client 8780] @Кому FASTAMAPA: Hi, I'd like to buy your 50 Подношение богине for my 20 Chaos Orb in Sanctum
+2023/02/07 17:16:50 2885218 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:16:50 2885218 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:16:50 2885218 ca3a6a7f [INFO Client 8780] Connecting to instance server at 92.204.193.25:6112
+2023/02/07 17:16:50 2885312 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 78ms
+2023/02/07 17:16:51 2886015 1186a0e3 [DEBUG Client 8780] Generating level 60 area "HideoutShapersRealm" with seed 1
+2023/02/07 17:16:51 2886671 f22b6987 [INFO Client 8780] Tile hash: 3478684984
+2023/02/07 17:16:51 2886671 f22b6986 [INFO Client 8780] Doodad hash: 0
+2023/02/07 17:16:53 2888031 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:16:53 2888031 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:16:53 2888031 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:16:53 2888062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:16:53 2888062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:16:53 2888062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:16:53 2888062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:16:53 2888062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:16:53 2888062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:16:53 2888062 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:16:54 2889000 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Небесное убежище.
+2023/02/07 17:16:55 2890171 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:17:17 2911953 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:17:18 2913484 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:17:19 2914218 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:17:20 2914734 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:17:20 2915000 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:17:20 2915203 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:17:21 2915718 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:17:21 2915953 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:17:21 2916218 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:17:25 2920656 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:17:26 2920921 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:17:26 2921203 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:17:26 2921468 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:17:27 2921750 cffb0734 [INFO Client 8780] : В этой области игрока нет.
+2023/02/07 17:17:35 2930093 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:17:35 2930109 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:17:35 2930109 ca3a6a7f [INFO Client 8780] Connecting to instance server at 37.61.221.247:6112
+2023/02/07 17:17:35 2930171 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 31ms
+2023/02/07 17:17:35 2930234 1186a0e3 [DEBUG Client 8780] Generating level 60 area "HideoutOasis" with seed 1
+2023/02/07 17:17:35 2930296 f22b6987 [INFO Client 8780] Tile hash: 3903144892
+2023/02/07 17:17:35 2930296 f22b6986 [INFO Client 8780] Doodad hash: 0
+2023/02/07 17:17:36 2931437 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:17:36 2931437 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:17:36 2931437 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:17:36 2931468 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:17:36 2931468 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:17:36 2931468 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:17:36 2931468 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:17:36 2931484 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:17:36 2931484 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:17:36 2931484 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:17:37 2932171 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пустынное убежище.
+2023/02/07 17:17:38 2932875 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:18:05 2960359 cffb0734 [INFO Client 8780] : Сделка совершена.
+2023/02/07 17:18:11 2966343 cffb0734 [INFO Client 8780] @Кому FASTAMAPA: ty gl!
+2023/02/07 17:18:11 2966437 cffb0734 [INFO Client 8780] : Цель данной операции не была членом группы
+2023/02/07 17:18:13 2968515 cffb0734 [INFO Client 8780] @Кому GodBlessDivines: ty gl!
+2023/02/07 17:18:14 2968687 cffb0734 [INFO Client 8780] : Цель данной операции не была членом группы
+2023/02/07 17:18:14 2968796 cffb0734 [INFO Client 8780] @Кому AfkPrikol: ty gl!
+2023/02/07 17:18:14 2968890 cffb0734 [INFO Client 8780] : Цель данной операции не была членом группы
+2023/02/07 17:18:14 2969062 cffb0734 [INFO Client 8780] @Кому AfkPrikol: ty gl!
+2023/02/07 17:18:14 2969312 cffb0734 [INFO Client 8780] : Цель данной операции не была членом группы
+2023/02/07 17:18:14 2969437 cffb0734 [INFO Client 8780] @Кому lfajslkfygnlafuljlajflj: ty gl!
+2023/02/07 17:18:14 2969578 cffb0734 [INFO Client 8780] : Цель данной операции не была членом группы
+2023/02/07 17:18:15 2969718 cffb0734 [INFO Client 8780] @Кому enmSanctum: ty gl!
+2023/02/07 17:18:15 2969859 cffb0734 [INFO Client 8780] : Цель данной операции не была членом группы
+2023/02/07 17:18:15 2970000 cffb0734 [INFO Client 8780] @Кому SparkToiChettt: ty gl!
+2023/02/07 17:18:15 2970140 cffb0734 [INFO Client 8780] : Цель данной операции не была членом группы
+2023/02/07 17:18:20 2975531 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:18:20 2975531 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:18:20 2975531 ca3a6a7f [INFO Client 8780] Connecting to instance server at 169.51.201.180:6112
+2023/02/07 17:18:20 2975593 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 31ms
+2023/02/07 17:18:20 2975656 1186a0e3 [DEBUG Client 8780] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/07 17:18:21 2975984 f22b6987 [INFO Client 8780] Tile hash: 805187908
+2023/02/07 17:18:21 2975984 f22b6986 [INFO Client 8780] Doodad hash: 0
+2023/02/07 17:18:21 2976453 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:18:21 2976453 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:18:21 2976453 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:18:21 2976500 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:18:21 2976500 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:18:21 2976500 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:18:21 2976500 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:18:21 2976500 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:18:21 2976500 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:18:21 2976500 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:18:22 2977281 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/07 17:18:23 2978031 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:20:01 3076593 cffb0734 [INFO Client 8780] @От кого GambledalfTheGey: Здравствуйте, хочу купить у вас Гадкая вспышка, Самоцвет призрачного глаза за 1 chaos в лиге Sanctum (секция "~b/o 1 chaos"; позиция: 3 столбец, 6 ряд)
+2023/02/07 17:20:13 3088656 cffb0734 [INFO Client 8780] : GambledalfTheGey присоединился.
+2023/02/07 17:20:29 3104515 cffb0734 [INFO Client 8780] : Сделка совершена.
+2023/02/07 17:20:31 3106234 cffb0734 [INFO Client 8780] @От кого GambledalfTheGey: ty
+2023/02/07 17:21:13 3148343 cffb0734 [INFO Client 8780] : GambledalfTheGey покинул область.
+2023/02/07 17:29:58 3672843 cffb0734 [INFO Client 8780] &<RiPE> gninommus_noteleks: Вечный Базальтовый флакон броненосца
+2023/02/07 17:35:14 3988906 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:35:14 3988906 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:35:14 3988906 ca3a6a7f [INFO Client 8780] Connecting to instance server at 169.51.201.179:6112
+2023/02/07 17:35:14 3988984 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 47ms
+2023/02/07 17:35:14 3989046 1186a0e3 [DEBUG Client 8780] Generating level 33 area "Labyrinth_Airlock" with seed 212683097
+2023/02/07 17:35:14 3989468 f22b6987 [INFO Client 8780] Tile hash: 1402982333
+2023/02/07 17:35:14 3989468 f22b6986 [INFO Client 8780] Doodad hash: 0
+2023/02/07 17:35:15 3989875 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:35:15 3989875 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:35:15 3989875 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:35:15 3989875 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:35:15 3989875 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:35:15 3989875 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:35:15 3989875 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:35:15 3989875 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:35:15 3989875 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:35:15 3989875 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:35:15 3990593 cffb0734 [INFO Client 8780] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Площадь претендентов.
+2023/02/07 17:35:16 3991328 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:36:10 4045375 cffb0734 [INFO Client 8780] Изаро: Богиня смотрит.
+2023/02/07 17:36:14 4049171 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:36:14 4049187 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:36:14 4049187 ca3a6a7f [INFO Client 8780] Connecting to instance server at 169.51.201.146:6112
+2023/02/07 17:36:14 4049250 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 31ms
+2023/02/07 17:36:14 4049312 1186a0e3 [DEBUG Client 8780] Generating level 75 area "EndGame_Labyrinth_OH_straight" with seed 4001296503
+2023/02/07 17:36:15 4050656 f22b6987 [INFO Client 8780] Tile hash: 109076793
+2023/02/07 17:36:15 4050656 f22b6986 [INFO Client 8780] Doodad hash: 3179022065
+2023/02/07 17:36:16 4051250 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:36:16 4051250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:36:16 4051250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:36:16 4051250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:36:16 4051250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:36:16 4051250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:36:16 4051250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:36:16 4051250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:36:16 4051250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:36:16 4051250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:36:17 4052515 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Путь к усадьбе.
+2023/02/07 17:36:18 4053531 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:39:02 4217031 cffb0734 [INFO Client 8780] : DeeManaIIIXX был повержен.
+2023/02/07 17:39:03 4218046 cffb0734 [INFO Client 8780] Изаро: Кто быстро бежит наверх, тот больно падает вниз.
+2023/02/07 17:39:15 4230484 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:39:15 4230484 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:39:15 4230484 ca3a6a7f [INFO Client 8780] Connecting to instance server at 169.51.201.169:6112
+2023/02/07 17:39:15 4230562 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 47ms
+2023/02/07 17:39:15 4230625 1186a0e3 [DEBUG Client 8780] Generating level 69 area "2_11_endgame_town" with seed 1
+2023/02/07 17:39:22 4236843 f22b6987 [INFO Client 8780] Tile hash: 3144825756
+2023/02/07 17:39:22 4236843 f22b6986 [INFO Client 8780] Doodad hash: 2535089436
+2023/02/07 17:39:22 4237531 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:39:22 4237531 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:39:22 4237531 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:39:22 4237562 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:39:22 4237562 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:39:22 4237562 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:39:22 4237562 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:39:22 4237562 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:39:22 4237562 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:39:22 4237562 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:39:23 4238531 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Берега Каруи.
+2023/02/07 17:39:25 4239734 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:40:17 4292296 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:40:17 4292296 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:40:17 4292296 ca3a6a7f [INFO Client 8780] Connecting to instance server at 169.51.201.140:6112
+2023/02/07 17:40:17 4292359 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 32ms
+2023/02/07 17:40:17 4292421 1186a0e3 [DEBUG Client 8780] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/07 17:40:18 4292765 f22b6987 [INFO Client 8780] Tile hash: 805187908
+2023/02/07 17:40:18 4292765 f22b6986 [INFO Client 8780] Doodad hash: 0
+2023/02/07 17:40:18 4293218 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:40:18 4293218 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:40:18 4293218 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:40:18 4293250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:40:18 4293250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:40:18 4293250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:40:18 4293250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:40:18 4293250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:40:18 4293250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:40:18 4293250 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:40:19 4294312 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/07 17:40:20 4295171 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:56:28 5263015 cffb0734 [INFO Client 8780] @Кому VanityGoesZoomZoom: Hi, I would like to buy your Отвага Дарессо, Вычурный круглый щит listed for 10 chaos in Sanctum (stash tab "Trade 1"; position: left 1, top 10)
+2023/02/07 17:56:54 5288796 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:56:54 5288812 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:56:54 5288812 ca3a6a7f [INFO Client 8780] Connecting to instance server at 64.46.115.246:6112
+2023/02/07 17:56:54 5288875 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 47ms
+2023/02/07 17:56:54 5288937 1186a0e3 [DEBUG Client 8780] Generating level 60 area "HideoutMoonTemple" with seed 1
+2023/02/07 17:56:54 5289218 f22b6987 [INFO Client 8780] Tile hash: 1288356446
+2023/02/07 17:56:54 5289218 f22b6986 [INFO Client 8780] Doodad hash: 2650149896
+2023/02/07 17:56:54 5289640 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:56:54 5289640 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:56:54 5289640 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:56:54 5289671 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:56:54 5289671 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:56:54 5289671 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:56:54 5289671 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:56:54 5289671 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:56:54 5289671 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:56:54 5289671 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:56:55 5290625 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Ночное убежище.
+2023/02/07 17:56:56 5291546 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:57:04 5298812 cffb0734 [INFO Client 8780] : Сделка совершена.
+2023/02/07 17:57:07 5302093 cffb0734 [INFO Client 8780] @Кому VanityGoesZoomZoom: ty gl!
+2023/02/07 17:57:07 5302125 cffb0734 [INFO Client 8780] @От кого <«ARMY»> VanityGoesZoomZoom: gl
+2023/02/07 17:57:09 5303953 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 17:57:09 5303953 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 17:57:09 5303953 ca3a6a7f [INFO Client 8780] Connecting to instance server at 169.51.201.140:6112
+2023/02/07 17:57:09 5304015 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 31ms
+2023/02/07 17:57:09 5304078 1186a0e3 [DEBUG Client 8780] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/07 17:57:09 5304109 f22b6987 [INFO Client 8780] Tile hash: 805187908
+2023/02/07 17:57:09 5304109 f22b6986 [INFO Client 8780] Doodad hash: 0
+2023/02/07 17:57:10 5304968 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 17:57:10 5304968 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:57:10 5304984 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:57:10 5305015 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:57:10 5305015 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:57:10 5305015 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:57:10 5305015 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:57:10 5305015 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:57:10 5305015 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:57:10 5305015 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 17:57:11 5305718 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/07 17:57:11 5306484 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 17:57:46 5341656 cffb0734 [INFO Client 8780] : Не удалось применить предмет: Предмет уже достиг наивысшего качества.
+2023/02/07 17:57:47 5341890 cffb0734 [INFO Client 8780] : Не удалось применить предмет: Предмет уже достиг наивысшего качества.
+2023/02/07 17:57:47 5342156 cffb0734 [INFO Client 8780] : Не удалось применить предмет: Предмет уже достиг наивысшего качества.
+2023/02/07 18:00:52 5527156 cffb0734 [INFO Client 8780] @От кого Eleanorani: Здравствуйте, хочу купить у вас Пойло, Ртутный флакон за 1 chaos в лиге Sanctum (секция "~b/o 1 chaos"; позиция: 12 столбец, 3 ряд)
+2023/02/07 18:03:06 5661218 cffb0734 [INFO Client 8780] @Кому Eleanorani: ty gl!
+2023/02/07 18:03:06 5661328 cffb0734 [INFO Client 8780] : Цель данной операции не была членом группы
+2023/02/07 18:13:03 6258531 cffb0734 [INFO Client 8780] @Кому SanctumDiver: Hi, I would like to buy your Символическое касание, Перчатки капканщика listed for 85 chaos in Sanctum (stash tab "~b/o 85 chaos"; position: left 7, top 20)
+2023/02/07 18:13:47 6302343 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 18:13:47 6302359 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 18:13:47 6302359 ca3a6a7f [INFO Client 8780] Connecting to instance server at 91.206.197.166:6112
+2023/02/07 18:13:48 6303453 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 1078ms
+2023/02/07 18:13:48 6303562 1186a0e3 [DEBUG Client 8780] Generating level 60 area "HideoutBeach" with seed 1
+2023/02/07 18:13:49 6303859 f22b6987 [INFO Client 8780] Tile hash: 3128444817
+2023/02/07 18:13:49 6303859 f22b6986 [INFO Client 8780] Doodad hash: 0
+2023/02/07 18:13:49 6304390 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 18:13:49 6304390 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:13:49 6304390 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:13:49 6304421 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:13:49 6304421 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:13:49 6304421 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:13:49 6304421 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:13:49 6304437 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:13:49 6304437 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:13:49 6304437 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:13:50 6305406 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Прибрежное убежище.
+2023/02/07 18:13:51 6306359 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 18:14:11 6326546 cffb0734 [INFO Client 8780] : Сделка совершена.
+2023/02/07 18:14:18 6333078 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 18:14:18 6333093 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 18:14:18 6333093 ca3a6a7f [INFO Client 8780] Connecting to instance server at 169.51.201.140:6112
+2023/02/07 18:14:18 6333156 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 32ms
+2023/02/07 18:14:18 6333218 1186a0e3 [DEBUG Client 8780] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/07 18:14:18 6333250 f22b6987 [INFO Client 8780] Tile hash: 805187908
+2023/02/07 18:14:18 6333250 f22b6986 [INFO Client 8780] Doodad hash: 0
+2023/02/07 18:14:19 6334328 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 18:14:19 6334328 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:14:19 6334328 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:14:19 6334359 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:14:19 6334359 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:14:19 6334359 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:14:19 6334359 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:14:19 6334359 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:14:19 6334359 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:14:19 6334359 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:14:20 6335046 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/07 18:14:21 6335796 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 18:14:37 6352296 cffb0734 [INFO Client 8780] : Не удалось применить предмет: Это не обычная цель.
+2023/02/07 18:14:38 6353343 cffb0734 [INFO Client 8780] : Не удалось применить предмет: Это не обычная цель.
+2023/02/07 18:23:50 6905375 cffb0734 [INFO Client 8780] : Не удалось применить предмет: Предмет уже достиг наивысшего качества.
+2023/02/07 18:23:50 6905578 cffb0734 [INFO Client 8780] : Не удалось применить предмет: Предмет уже достиг наивысшего качества.
+2023/02/07 18:23:51 6905812 cffb0734 [INFO Client 8780] : Не удалось применить предмет: Предмет уже достиг наивысшего качества.
+2023/02/07 18:24:04 6919125 88a904ed [DEBUG Client 8780] Got Instance Details from login server
+2023/02/07 18:24:04 6919140 32759a9f [INFO Client 8780] [SHADER] Delay: OFF
+2023/02/07 18:24:04 6919140 ca3a6a7f [INFO Client 8780] Connecting to instance server at 169.51.201.153:6112
+2023/02/07 18:24:04 6919203 ca3a4dbd [DEBUG Client 8780] Connect time to instance server was 47ms
+2023/02/07 18:24:04 6919281 1186a0e3 [DEBUG Client 8780] Generating level 81 area "MapWorldsCarcass" with seed 2067128289
+2023/02/07 18:24:07 6921984 f22b6987 [INFO Client 8780] Tile hash: 1959504727
+2023/02/07 18:24:07 6921984 f22b6986 [INFO Client 8780] Doodad hash: 4103573058
+2023/02/07 18:24:08 6923531 11870f60 [DEBUG Client 8780] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/07 18:24:08 6923546 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:24:08 6923546 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:24:08 6923562 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:24:08 6923562 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:24:08 6923562 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:24:08 6923562 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:24:08 6923578 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:24:08 6923578 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:24:08 6923578 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:24:10 6925203 cffb0734 [INFO Client 8780] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Остов.
+2023/02/07 18:24:13 6928015 32759a9f [INFO Client 8780] [SHADER] Delay: ON
+2023/02/07 18:29:46 7261406 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:29:46 7261421 6ad47f15 [DEBUG Client 8780] CalculateShortestPathToRoot, nodes evaluated: 105
+2023/02/07 18:30:12 7287156 cffb0734 [INFO Client 8780] @От кого loli_Rain: Здравствуйте, хочу купить у вас Топазовый флакон за 1 chaos в лиге Sanctum (секция "~b/o 1 chaos"; позиция: 1 столбец, 5 ряд)
