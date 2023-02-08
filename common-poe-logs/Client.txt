@@ -17982,3 +17982,1363 @@ flags: 129
 2023/02/07 22:13:26 12718390 6ad47f15 [DEBUG Client 4748] CalculateShortestPathToRoot, nodes evaluated: 105
 2023/02/07 22:13:27 12719296 cffb0734 [INFO Client 4748] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Берега Каруи.
 2023/02/07 22:13:28 12720593 32759a9f [INFO Client 4748] [SHADER] Delay: ON
+2023/02/08 15:21:11 ***** LOG FILE OPENING *****
+2023/02/08 15:21:12 2696718 f95442e3 [INFO Client 3952] [STARTUP] Job Queues
+2023/02/08 15:21:12 2696734 9e6a0b0a [INFO Client 3952] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/08 15:21:12 2696796 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:21:12 2696796 9e6a1363 [INFO Client 3952] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/08 15:21:12 2696796 9e6a0b0a [INFO Client 3952] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/08 15:21:12 2696812 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:21:12 2696812 84a7d27d [INFO Client 3952] [ENGINE] Init
+2023/02/08 15:21:12 2696812 55713145 [INFO Client 3952] [JOB] HIGH: 2
+2023/02/08 15:21:12 2696812 55713145 [INFO Client 3952] [JOB] MEDIUM: 2
+2023/02/08 15:21:12 2696812 55713145 [INFO Client 3952] [JOB] LOW: 2
+2023/02/08 15:21:12 2696812 55713145 [INFO Client 3952] [JOB] IDLE: 1
+2023/02/08 15:21:12 2696812 7bb548f [INFO Client 3952] [BUNDLE2] Init
+2023/02/08 15:21:12 2696812 7bb36c4 [INFO Client 3952] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/08 15:21:12 2697218 7bb61e6 [INFO Client 3952] [BUNDLE2] File cache size: 1024
+2023/02/08 15:21:12 2697218 b51d61ab [INFO Client 3952] [RENDER] Async: ON
+2023/02/08 15:21:12 2697218 b51d60c8 [INFO Client 3952] [RENDER] Warmup: ON
+2023/02/08 15:21:12 2697218 b51d60ce [INFO Client 3952] [RENDER] Skip: ON
+2023/02/08 15:21:12 2697218 b51d60eb [INFO Client 3952] [RENDER] Throttling: ON
+2023/02/08 15:21:12 2697218 32759a7a [INFO Client 3952] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/08 15:21:12 2697218 32759a70 [INFO Client 3952] [SHADER] Async: ON
+2023/02/08 15:21:12 2697218 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 15:21:12 2697218 32759aba [INFO Client 3952] [SHADER] Limit: ON
+2023/02/08 15:21:12 2697218 32759abc [INFO Client 3952] [SHADER] Warmup: ON
+2023/02/08 15:21:12 2697218 327599d7 [INFO Client 3952] [SHADER] Parallel: OFF
+2023/02/08 15:21:12 2697218 84a7e376 [INFO Client 3952] [ENGINE] Running Engine version 1.7.0
+2023/02/08 15:21:12 2697250 47bbd15b [INFO Client 3952] [SOUND] Buffer size = 64.0 MB
+2023/02/08 15:21:12 2697328 9b0d205 [INFO Client 3952] [VIDEO] Enable: ON
+2023/02/08 15:21:12 2697437 84a7d2d8 [INFO Client 3952] [ENGINE] Ready
+2023/02/08 15:21:12 2697500 951bc0b0 [INFO Client 3952] [STARTUP] Bundle Startup Start
+2023/02/08 15:21:12 2697500 951bc057 [INFO Client 3952] [STARTUP] Bundle Startup in 6.3e-05 seconds
+2023/02/08 15:21:12 2697500 951bc0b0 [INFO Client 3952] [STARTUP] Game Start
+2023/02/08 15:21:13 2697734 ca86fd3f [DEBUG Client 3952] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/08 15:21:13 2698062 951bc057 [INFO Client 3952] [STARTUP] Game in 0.56257 seconds
+2023/02/08 15:21:13 2698062 951bc0b0 [INFO Client 3952] [STARTUP] Window Start
+2023/02/08 15:21:13 2698062 9e6a0b0a [INFO Client 3952] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/08 15:21:13 2698109 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:21:13 2698109 9e6a1363 [INFO Client 3952] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/08 15:21:13 2698109 9e6a0b0a [INFO Client 3952] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/08 15:21:13 2698109 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:21:13 2698125 951bc057 [INFO Client 3952] [STARTUP] Window in 0.073024 seconds
+2023/02/08 15:21:13 2698156 413b61ff [DEBUG Client 3952] [GamepadManager] Initialising
+2023/02/08 15:21:13 2698156 951bc0b0 [INFO Client 3952] [STARTUP] Device Start
+2023/02/08 15:21:13 2698156 b51d6589 [INFO Client 3952] [RENDER] StartDevice: DirectX11
+2023/02/08 15:21:13 2698375 71b2ea0 [DEBUG Client 3952] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/08 15:21:13 2698453 fafff8cf [DEBUG Client 3952] CreateSwapChain: SetFullScreenState 1
+2023/02/08 15:21:13 2698578 29d4ce01 [INFO Client 3952] [D3D11] Runtime version = 11.1
+2023/02/08 15:21:13 2698578 29d4ce00 [INFO Client 3952] [D3D11] Feature Level = 11.1
+2023/02/08 15:21:13 2698578 29d4ce03 [INFO Client 3952] [D3D11] Driver Command Lists = NO
+2023/02/08 15:21:13 2698578 29d4ce02 [INFO Client 3952] [D3D11] Driver Concurrent Creates = YES
+2023/02/08 15:21:13 2698578 29d4ce05 [INFO Client 3952] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/08 15:21:14 2698718 9d4eeb40 [DEBUG Client 3952] [WINDOW] TrigggerDeviceCreate
+2023/02/08 15:21:14 2699109 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:21:14 2699187 951bc057 [INFO Client 3952] [STARTUP] Device in 1.04109 seconds
+2023/02/08 15:21:14 2699187 951bc0b0 [INFO Client 3952] [STARTUP] Tencent Start
+2023/02/08 15:21:14 2699187 951bc057 [INFO Client 3952] [STARTUP] Tencent in 6.3e-05 seconds
+2023/02/08 15:21:14 2699187 951bc0b0 [INFO Client 3952] [STARTUP] Loading Start
+2023/02/08 15:21:14 2699250 951bc057 [INFO Client 3952] [STARTUP] Loading in 0.052802 seconds
+2023/02/08 15:21:14 2699250 951bc0b0 [INFO Client 3952] [STARTUP] DebugGUI Start
+2023/02/08 15:21:14 2699250 951bc057 [INFO Client 3952] [STARTUP] DebugGUI in 4.6e-05 seconds
+2023/02/08 15:21:14 2699250 951bc0b0 [INFO Client 3952] [STARTUP] Bundle Tiny Start
+2023/02/08 15:21:14 2699250 951bc0b0 [INFO Client 3952] [STARTUP] Bundle Login Start
+2023/02/08 15:21:14 2699250 951bc0b0 [INFO Client 3952] [STARTUP] Registration Start
+2023/02/08 15:21:14 2699250 951bc057 [INFO Client 3952] [STARTUP] Bundle Login in 3.7e-05 seconds
+2023/02/08 15:21:14 2699250 951bc057 [INFO Client 3952] [STARTUP] Bundle Tiny in 0.000179 seconds
+2023/02/08 15:21:14 2699250 951bc0b0 [INFO Client 3952] [STARTUP] Audio Start
+2023/02/08 15:21:14 2699250 47bbee1b [INFO Client 3952] [SOUND] Channel count = 64 (asked for 64)
+2023/02/08 15:21:14 2699250 47bbee18 [INFO Client 3952] [SOUND] Source count = 512
+2023/02/08 15:21:14 2699625 47bbea59 [INFO Client 3952] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/08 15:21:14 2699625 951bc057 [INFO Client 3952] [STARTUP] Audio in 0.367293 seconds
+2023/02/08 15:21:15 2699968 951bc057 [INFO Client 3952] [STARTUP] Registration in 0.727974 seconds
+2023/02/08 15:21:15 2700687 509417f7 [WARN Client 3952] tool_settings.json was not found. Resetting to default settings.
+2023/02/08 15:22:40 2784734 890d9d5f [INFO Client 3952] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/08 15:22:40 2784765 890d9cd8 [INFO Client 3952] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/08 15:23:01 2805796 b51d4f61 [DEBUG Client 3952] [RENDER] SetRendererSettings
+2023/02/08 15:23:01 2805796 b51d6447 [DEBUG Client 3952] [RENDER] ResizeWindow
+2023/02/08 15:23:01 2805812 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 15:23:01 2805812 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:23:01 2805921 b51d614c [DEBUG Client 3952] [RENDER] RestartSwapChain
+2023/02/08 15:23:01 2805921 9e6a0b0a [INFO Client 3952] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/08 15:23:01 2805953 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:23:01 2805953 9e6a1363 [INFO Client 3952] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/08 15:23:01 2805953 9e6a0b0a [INFO Client 3952] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/08 15:23:01 2805953 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:23:01 2806046 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 15:23:01 2806046 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:23:01 2806078 fafff8cf [DEBUG Client 3952] CreateSwapChain: SetFullScreenState 0
+2023/02/08 15:23:01 2806078 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 15:23:01 2806093 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:23:01 2806125 3275a75e [INFO Client 3952] [SHADER] Disable Async: 1 frames
+2023/02/08 15:23:01 2806125 b51d610e [INFO Client 3952] [RENDER] Disable Async: 1 frames
+2023/02/08 15:23:01 2806125 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 15:23:01 2806125 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:31:04 3289171 b51d4f61 [DEBUG Client 3952] [RENDER] SetRendererSettings
+2023/02/08 15:31:04 3289171 b51d6447 [DEBUG Client 3952] [RENDER] ResizeWindow
+2023/02/08 15:31:04 3289171 b51d614c [DEBUG Client 3952] [RENDER] RestartSwapChain
+2023/02/08 15:31:04 3289171 9e6a0b0a [INFO Client 3952] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/08 15:31:04 3289218 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:31:04 3289218 9e6a1363 [INFO Client 3952] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/08 15:31:04 3289218 9e6a0b0a [INFO Client 3952] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/08 15:31:04 3289218 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:31:04 3289218 fafff8cf [DEBUG Client 3952] CreateSwapChain: SetFullScreenState 1
+2023/02/08 15:31:04 3289343 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 15:31:04 3289343 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:31:04 3289375 3275a75e [INFO Client 3952] [SHADER] Disable Async: 1 frames
+2023/02/08 15:31:04 3289375 b51d610e [INFO Client 3952] [RENDER] Disable Async: 1 frames
+2023/02/08 15:31:10 3295562 b51d4f61 [DEBUG Client 3952] [RENDER] SetRendererSettings
+2023/02/08 15:31:10 3295562 b51d6447 [DEBUG Client 3952] [RENDER] ResizeWindow
+2023/02/08 15:31:10 3295609 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 15:31:10 3295625 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:31:11 3295734 b51d614c [DEBUG Client 3952] [RENDER] RestartSwapChain
+2023/02/08 15:31:11 3295750 9e6a0b0a [INFO Client 3952] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/08 15:31:11 3295781 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:31:11 3295781 9e6a1363 [INFO Client 3952] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/08 15:31:11 3295781 9e6a0b0a [INFO Client 3952] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/08 15:31:11 3295781 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:31:11 3295906 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 15:31:11 3295906 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:31:11 3295953 fafff8cf [DEBUG Client 3952] CreateSwapChain: SetFullScreenState 0
+2023/02/08 15:31:11 3295953 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 15:31:11 3295953 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:31:11 3295984 3275a75e [INFO Client 3952] [SHADER] Disable Async: 1 frames
+2023/02/08 15:31:11 3295984 b51d610e [INFO Client 3952] [RENDER] Disable Async: 1 frames
+2023/02/08 15:31:11 3295984 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 15:31:11 3296000 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:31:14 3299078 b51d4f61 [DEBUG Client 3952] [RENDER] SetRendererSettings
+2023/02/08 15:31:14 3299078 b51d6447 [DEBUG Client 3952] [RENDER] ResizeWindow
+2023/02/08 15:31:14 3299078 b51d614c [DEBUG Client 3952] [RENDER] RestartSwapChain
+2023/02/08 15:31:14 3299078 9e6a0b0a [INFO Client 3952] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/08 15:31:14 3299140 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:31:14 3299140 9e6a1363 [INFO Client 3952] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/08 15:31:14 3299140 9e6a0b0a [INFO Client 3952] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/08 15:31:14 3299140 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:31:14 3299156 fafff8cf [DEBUG Client 3952] CreateSwapChain: SetFullScreenState 1
+2023/02/08 15:31:14 3299250 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 15:31:14 3299265 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:31:14 3299281 3275a75e [INFO Client 3952] [SHADER] Disable Async: 1 frames
+2023/02/08 15:31:14 3299281 b51d610e [INFO Client 3952] [RENDER] Disable Async: 1 frames
+2023/02/08 15:31:27 3312218 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 15:31:27 3312250 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 15:31:27 3312250 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.179:6112
+2023/02/08 15:31:27 3312281 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 15:31:27 3312359 1186a0e3 [DEBUG Client 3952] Generating level 1 area "1_1_1" with seed 3027007823
+2023/02/08 15:31:28 3313671 f22b6987 [INFO Client 3952] Tile hash: 335748630
+2023/02/08 15:31:28 3313671 f22b6986 [INFO Client 3952] Doodad hash: 819520315
+2023/02/08 15:31:30 3315500 b51d4f61 [DEBUG Client 3952] [RENDER] SetRendererSettings
+2023/02/08 15:31:30 3315500 b51d6447 [DEBUG Client 3952] [RENDER] ResizeWindow
+2023/02/08 15:31:30 3315562 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 15:31:30 3315640 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:31:31 3315953 b51d614c [DEBUG Client 3952] [RENDER] RestartSwapChain
+2023/02/08 15:31:31 3315953 9e6a0b0a [INFO Client 3952] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/08 15:31:31 3316000 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:31:31 3316000 9e6a1363 [INFO Client 3952] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/08 15:31:31 3316000 9e6a0b0a [INFO Client 3952] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/08 15:31:31 3316015 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:31:31 3316109 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 15:31:31 3316156 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:31:31 3316640 fafff8cf [DEBUG Client 3952] CreateSwapChain: SetFullScreenState 0
+2023/02/08 15:31:31 3316640 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 15:31:31 3316671 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:31:32 3317375 3275a75e [INFO Client 3952] [SHADER] Disable Async: 1 frames
+2023/02/08 15:31:32 3317375 b51d610e [INFO Client 3952] [RENDER] Disable Async: 1 frames
+2023/02/08 15:31:32 3317390 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 15:31:32 3317437 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:31:33 3318468 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 15:31:34 3319093 cffb0734 [INFO Client 3952] &: ОБЪЯВЛЕНИЕ ГИЛЬДИИ: В гостяк у CARDIFF 
+2023/02/08 15:31:34 3319218 cffb0734 [INFO Client 3952] : <<set:NS>><<set:N>><<set:S>>Вы вошли в область Сумрачное взморье.
+2023/02/08 15:31:35 3320031 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 15:31:35 3320093 374e0d22 [INFO Client 3952] [Item Filter] Preparing to download online filter J40EP1CX
+2023/02/08 15:31:35 3320093 374e0cc3 [INFO Client 3952] [Item Filter] Hash for online filter J40EP1CX is: 2973e5610fd1794f55172938e648806e
+2023/02/08 15:31:35 3320390 374e0cc9 [INFO Client 3952] [Item Filter] Online item filter J40EP1CX returned status: 200
+2023/02/08 15:31:35 3320390 374e0ce3 [DEBUG Client 3952] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/08 15:31:35 3320390 374e0e8e [DEBUG Client 3952] [Item Filter] X-HW: 1675863096.dop042.pa1.t,1675863096.cds038.pa1.shn,1675863096.dop042.pa1.t,1675863096.cds204.pa1.c
+2023/02/08 15:31:35 3320390 374df808 [INFO Client 3952] [Item Filter] Successfully saved online filter J40EP1CX. Hash is now: 2973e5610fd1794f55172938e648806e
+2023/02/08 15:31:35 3320421 788474c3 [INFO Client 3952] [Item Filter] Finished reloading online filter J40EP1CX. Result: true. Hash: 2973e5610fd1794f55172938e648806e. Type: Normal. Message: 
+2023/02/08 15:31:35 3320421 2a14910e [INFO Client 3952] PrecalcBaseTypeHashMap
+2023/02/08 15:31:35 3320500 2a149100 [INFO Client 3952] PrecalcModNameHashMap
+2023/02/08 15:31:36 3321593 2a149169 [INFO Client 3952] PrecalcItemClassMap
+2023/02/08 15:31:36 3321609 2a14916b [INFO Client 3952] PrecalcSoundEffects
+2023/02/08 15:31:36 3321609 2a14916d [INFO Client 3952] PrecalcDropEffects
+2023/02/08 15:31:36 3321609 2a14916f [INFO Client 3952] PrecalcNonEnchantModHashes
+2023/02/08 15:31:36 3321609 2a149161 [INFO Client 3952] PrecalcRuleNameToTypeMap
+2023/02/08 15:31:36 3321609 2a148c01 [INFO Client 3952] PrecalcCJESPNIndexMap
+2023/02/08 15:31:36 3321609 2a148c03 [INFO Client 3952] PrecalcGemAlternateQualityMap
+2023/02/08 15:33:35 3439718 b51d4f61 [DEBUG Client 3952] [RENDER] SetRendererSettings
+2023/02/08 15:33:35 3439718 b51d6447 [DEBUG Client 3952] [RENDER] ResizeWindow
+2023/02/08 15:33:35 3439718 b51d614c [DEBUG Client 3952] [RENDER] RestartSwapChain
+2023/02/08 15:33:35 3439718 9e6a0b0a [INFO Client 3952] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/08 15:33:35 3439750 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:33:35 3439750 9e6a1363 [INFO Client 3952] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/08 15:33:35 3439750 9e6a0b0a [INFO Client 3952] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/08 15:33:35 3439750 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 15:33:35 3439765 fafff8cf [DEBUG Client 3952] CreateSwapChain: SetFullScreenState 1
+2023/02/08 15:33:35 3439906 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 15:33:35 3439921 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 15:33:35 3440359 3275a75e [INFO Client 3952] [SHADER] Disable Async: 1 frames
+2023/02/08 15:33:35 3440359 b51d610e [INFO Client 3952] [RENDER] Disable Async: 1 frames
+2023/02/08 15:41:33 3918453 cffb0734 [INFO Client 3952] : DeeSoloIIIXX был повержен.
+2023/02/08 15:42:26 3971421 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 2 уровня
+2023/02/08 15:42:40 3985562 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 15:42:40 3985578 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 15:42:40 3985578 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.132:6112
+2023/02/08 15:42:40 3985656 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 15:42:41 3985734 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 15:42:42 3986750 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 15:42:42 3986750 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 15:42:42 3987140 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 15:42:42 3987578 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 15:42:43 3988453 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 15:42:49 3993968 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: life189, name: Здоровье и броня
+2023/02/08 15:43:18 4022843 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 15:44:03 4068046 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 15:44:06 4071500 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 15:44:06 4071500 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 15:44:06 4071500 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.252:6112
+2023/02/08 15:44:06 4071562 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 46ms
+2023/02/08 15:44:06 4071640 1186a0e3 [DEBUG Client 3952] Generating level 2 area "1_1_2" with seed 3784920705
+2023/02/08 15:44:08 4073375 f22b6987 [INFO Client 3952] Tile hash: 2705352112
+2023/02/08 15:44:08 4073375 f22b6986 [INFO Client 3952] Doodad hash: 1855709518
+2023/02/08 15:44:09 4074078 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 15:44:09 4074640 cffb0734 [INFO Client 3952] : <<set:NS>><<set:N>><<set:S>>Вы вошли в область Побережье.
+2023/02/08 15:44:10 4075625 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 15:45:02 4127609 cffb0734 [INFO Client 3952] : DeeSoloIIIXX был повержен.
+2023/02/08 15:45:06 4130906 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 15:45:06 4130906 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 15:45:06 4130906 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.132:6112
+2023/02/08 15:45:06 4130968 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 15:45:06 4131031 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 15:45:06 4131046 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 15:45:06 4131046 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 15:45:07 4131812 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 15:45:07 4132250 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 15:45:08 4132859 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 15:45:16 4141156 cffb0734 [INFO Client 3952] : Сделка отклонена.
+2023/02/08 15:45:27 4152218 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 15:45:54 4179000 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 15:45:54 4179000 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 15:45:54 4179000 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.252:6112
+2023/02/08 15:45:54 4179062 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 15:45:54 4179125 1186a0e3 [DEBUG Client 3952] Generating level 2 area "1_1_2" with seed 3784920705
+2023/02/08 15:45:54 4179203 f22b6987 [INFO Client 3952] Tile hash: 2705352112
+2023/02/08 15:45:54 4179203 f22b6986 [INFO Client 3952] Doodad hash: 1855709518
+2023/02/08 15:45:55 4179921 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 15:45:55 4180421 cffb0734 [INFO Client 3952] : <<set:NS>><<set:N>><<set:S>>Вы вошли в область Побережье.
+2023/02/08 15:45:56 4181140 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 15:48:01 4305765 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 15:48:01 4305765 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 15:48:01 4305765 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.138:6112
+2023/02/08 15:48:01 4305828 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 15:48:01 4305890 1186a0e3 [DEBUG Client 3952] Generating level 4 area "1_1_3" with seed 1474911262
+2023/02/08 15:48:01 4306453 f22b6987 [INFO Client 3952] Tile hash: 412796744
+2023/02/08 15:48:01 4306453 f22b6986 [INFO Client 3952] Doodad hash: 1334431256
+2023/02/08 15:48:02 4306890 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 15:48:02 4307453 cffb0734 [INFO Client 3952] : <<set:FP>><<set:F>><<set:P>>Вы вошли в область Илистые низины.
+2023/02/08 15:48:03 4308171 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 15:50:51 4475718 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 3 уровня
+2023/02/08 15:51:52 4537359 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: life186, name: Здоровье и броня
+2023/02/08 15:52:44 4589250 cffb0734 [INFO Client 3952] : DeeSoloIIIXX был повержен.
+2023/02/08 15:54:55 4720281 cffb0734 [INFO Client 3952] : DeeSoloIIIXX был повержен.
+2023/02/08 15:55:22 4746781 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 4 уровня
+2023/02/08 15:56:05 4790515 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: armour87, name: Здоровье и броня
+2023/02/08 15:57:06 4851296 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 15:57:06 4851296 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 15:57:06 4851296 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.153:6112
+2023/02/08 15:57:06 4851375 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 15:57:06 4851437 1186a0e3 [DEBUG Client 3952] Generating level 5 area "1_1_4_1" with seed 1437305143
+2023/02/08 15:57:07 4852031 f22b6987 [INFO Client 3952] Tile hash: 147475211
+2023/02/08 15:57:07 4852031 f22b6986 [INFO Client 3952] Doodad hash: 426086978
+2023/02/08 15:57:07 4852343 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 15:57:08 4852875 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Сырой проход.
+2023/02/08 15:57:08 4853531 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 15:57:19 4864125 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 15:57:19 4864140 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 15:57:19 4864140 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.132:6112
+2023/02/08 15:57:19 4864203 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 15:57:19 4864265 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 15:57:20 4864953 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 15:57:20 4864953 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 15:57:20 4865203 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 15:57:20 4865640 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 15:57:21 4866296 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 15:57:51 4896687 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 15:58:32 4936781 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 15:58:44 4949437 cffb0734 [INFO Client 3952] &<RiPE> gerlanda: Солнечная опека, Цепкая кольчуга
+2023/02/08 15:58:50 4954734 cffb0734 [INFO Client 3952] &<RiPE> Продукт_натурале: Гора Узазы, Кольцо с сапфиром
+2023/02/08 15:59:23 4988578 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 15:59:23 4988578 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 15:59:23 4988578 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.252:6112
+2023/02/08 15:59:23 4988640 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 15:59:24 4988703 1186a0e3 [DEBUG Client 3952] Generating level 2 area "1_1_2" with seed 3784920705
+2023/02/08 15:59:25 4989828 f22b6987 [INFO Client 3952] Tile hash: 2705352112
+2023/02/08 15:59:25 4989828 f22b6986 [INFO Client 3952] Doodad hash: 1855709518
+2023/02/08 15:59:25 4990265 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 15:59:26 4990765 cffb0734 [INFO Client 3952] : <<set:NS>><<set:N>><<set:S>>Вы вошли в область Побережье.
+2023/02/08 15:59:26 4991515 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 15:59:34 4999593 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 15:59:34 4999593 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 15:59:34 4999593 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.231:6112
+2023/02/08 15:59:34 4999656 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 32ms
+2023/02/08 15:59:35 4999718 1186a0e3 [DEBUG Client 3952] Generating level 3 area "1_1_2a" with seed 3273149701
+2023/02/08 15:59:35 5000093 f22b6987 [INFO Client 3952] Tile hash: 3061648517
+2023/02/08 15:59:35 5000093 f22b6986 [INFO Client 3952] Doodad hash: 2005291971
+2023/02/08 15:59:35 5000640 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 15:59:36 5001140 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Прибрежный остров.
+2023/02/08 15:59:37 5001750 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:00:17 5042546 374e128b [INFO Client 3952] [Item Filter] Downloading online list
+2023/02/08 16:00:18 5043312 374e12ec [INFO Client 3952] [Item Filter] Online list returned status: 200
+2023/02/08 16:00:18 5043312 374e12e6 [DEBUG Client 3952] [Item Filter] Online list request resolved to: 209.197.3.101
+2023/02/08 16:00:18 5043312 374df908 [INFO Client 3952] [Item Filter] List contained online filter J40EP1CX with hash: 2973e5610fd1794f55172938e648806e (local hash is: 2973e5610fd1794f55172938e648806e)
+2023/02/08 16:00:18 5043312 374df908 [INFO Client 3952] [Item Filter] List contained online filter EQQOoxhj with hash: ffe1eb2afb66cfb6740cadbaf6f71edf (local hash is: ffe1eb2afb66cfb6740cadbaf6f71edf)
+2023/02/08 16:00:18 5043312 374df908 [INFO Client 3952] [Item Filter] List contained online filter G4AtJ5 with hash: 0dbc5e1fa328fd99c7db142ca8b77c4d (local hash is: 719900fa742f09ec902aad0857821b29)
+2023/02/08 16:00:18 5043312 374df908 [INFO Client 3952] [Item Filter] List contained online filter GmjoTD with hash: 14e61e3c0b45021c66e2265b754aedf5 (local hash is: 14e61e3c0b45021c66e2265b754aedf5)
+2023/02/08 16:00:18 5043312 374df908 [INFO Client 3952] [Item Filter] List contained online filter 5XMehq with hash: 1779991ff88208345225a3ee4e37f783 (local hash is: f320acf4f1e81178d914a8cebb51a8ea)
+2023/02/08 16:00:18 5043312 374df908 [INFO Client 3952] [Item Filter] List contained online filter GmXoTD with hash: d138e6490b910cbdb1ad628bd2d31441 (local hash is: 87dd7ff41ee125bc616570f1c772fae5)
+2023/02/08 16:00:18 5043312 374df908 [INFO Client 3952] [Item Filter] List contained online filter wvPeTJ with hash: a9e3d9621f774ffeef5ddb14cd8572a7 (local hash is: a9e3d9621f774ffeef5ddb14cd8572a7)
+2023/02/08 16:00:20 5045671 374e0d22 [INFO Client 3952] [Item Filter] Preparing to download online filter EQQOoxhj
+2023/02/08 16:00:20 5045671 374e0cc3 [INFO Client 3952] [Item Filter] Hash for online filter EQQOoxhj is: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 16:00:22 5046796 374e0cc9 [INFO Client 3952] [Item Filter] Online item filter EQQOoxhj returned status: 200
+2023/02/08 16:00:22 5046796 374e0ce3 [DEBUG Client 3952] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/08 16:00:22 5046796 374e0e8e [DEBUG Client 3952] [Item Filter] X-HW: 1675864821.dop029.pa1.t,1675864821.cds236.pa1.shn,1675864821.dop029.pa1.t,1675864821.cds046.pa1.s,1675864821.dop125.da2.r,1675864822.cds049.da2.p,1675864822.cds046.pa1.p
+2023/02/08 16:00:22 5046812 374df808 [INFO Client 3952] [Item Filter] Successfully saved online filter EQQOoxhj. Hash is now: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 16:00:22 5046828 788474c3 [INFO Client 3952] [Item Filter] Finished reloading online filter EQQOoxhj. Result: true. Hash: ffe1eb2afb66cfb6740cadbaf6f71edf. Type: Normal. Message: 
+2023/02/08 16:02:53 5197921 890d9d5f [INFO Client 3952] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/08 16:02:53 5197953 890d9cd8 [INFO Client 3952] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/08 16:03:03 5208406 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:03:03 5208406 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:03:03 5208406 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.132:6112
+2023/02/08 16:03:03 5208468 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 16:03:03 5208531 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 16:03:04 5209593 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 16:03:04 5209593 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 16:03:07 5211937 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:03:07 5212375 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 16:03:08 5213015 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:03:08 5213046 374e0d22 [INFO Client 3952] [Item Filter] Preparing to download online filter EQQOoxhj
+2023/02/08 16:03:08 5213046 374e0cc3 [INFO Client 3952] [Item Filter] Hash for online filter EQQOoxhj is: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 16:03:08 5213296 374e0cc9 [INFO Client 3952] [Item Filter] Online item filter EQQOoxhj returned status: 200
+2023/02/08 16:03:08 5213296 374e0ce3 [DEBUG Client 3952] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/08 16:03:08 5213296 374e0e8e [DEBUG Client 3952] [Item Filter] X-HW: 1675864989.dop210.pa1.t,1675864989.cds217.pa1.shn,1675864989.dop210.pa1.t,1675864989.cds046.pa1.c
+2023/02/08 16:03:08 5213296 374df808 [INFO Client 3952] [Item Filter] Successfully saved online filter EQQOoxhj. Hash is now: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 16:03:08 5213312 788474c3 [INFO Client 3952] [Item Filter] Finished reloading online filter EQQOoxhj. Result: true. Hash: ffe1eb2afb66cfb6740cadbaf6f71edf. Type: Normal. Message: 
+2023/02/08 16:03:37 5241734 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 16:05:54 5379312 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:05:54 5379312 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:05:54 5379312 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.153:6112
+2023/02/08 16:05:54 5379375 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 16:05:54 5379437 1186a0e3 [DEBUG Client 3952] Generating level 5 area "1_1_4_1" with seed 1437305143
+2023/02/08 16:05:55 5380046 f22b6987 [INFO Client 3952] Tile hash: 147475211
+2023/02/08 16:05:55 5380046 f22b6986 [INFO Client 3952] Doodad hash: 426086978
+2023/02/08 16:05:55 5380343 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:05:56 5381015 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Сырой проход.
+2023/02/08 16:05:56 5381656 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:06:23 5407968 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 5 уровня
+2023/02/08 16:07:29 5474359 cffb0734 [INFO Client 3952] : Покрой мир льдами
+2023/02/08 16:08:08 5512921 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:08:08 5512921 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:08:08 5512921 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.247:6112
+2023/02/08 16:08:08 5512984 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 16:08:08 5513062 1186a0e3 [DEBUG Client 3952] Generating level 6 area "1_1_5" with seed 1903092567
+2023/02/08 16:08:09 5513765 f22b6987 [INFO Client 3952] Tile hash: 4226105146
+2023/02/08 16:08:09 5513765 f22b6986 [INFO Client 3952] Doodad hash: 1990074245
+2023/02/08 16:08:09 5514484 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:08:10 5515078 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Утёс.
+2023/02/08 16:08:11 5515906 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:08:14 5519140 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: life185, name: Здоровье и броня
+2023/02/08 16:08:36 5541281 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 6 уровня
+2023/02/08 16:08:55 5560406 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: life204, name: Здоровье и броня
+2023/02/08 16:10:05 5630515 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:10:05 5630515 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:10:05 5630515 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.132:6112
+2023/02/08 16:10:05 5630578 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 16:10:05 5630640 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 16:10:06 5631343 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 16:10:06 5631343 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 16:10:06 5631500 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:10:07 5631921 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 16:10:07 5632625 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:10:27 5652250 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 16:10:37 5662609 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 16:11:38 5722906 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:11:38 5722921 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:11:38 5722921 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.247:6112
+2023/02/08 16:11:38 5722984 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 32ms
+2023/02/08 16:11:38 5723046 1186a0e3 [DEBUG Client 3952] Generating level 6 area "1_1_5" with seed 1903092567
+2023/02/08 16:11:38 5723187 f22b6987 [INFO Client 3952] Tile hash: 4226105146
+2023/02/08 16:11:38 5723187 f22b6986 [INFO Client 3952] Doodad hash: 1990074245
+2023/02/08 16:11:39 5724171 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:11:39 5724656 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Утёс.
+2023/02/08 16:11:40 5725593 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:13:07 5812015 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 7 уровня
+2023/02/08 16:13:42 5847609 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: troll's_blood203, name: Кровь воина
+2023/02/08 16:15:18 5942859 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:15:18 5942875 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:15:18 5942875 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.167:6112
+2023/02/08 16:15:18 5942937 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 16:15:18 5943000 1186a0e3 [DEBUG Client 3952] Generating level 7 area "1_1_6" with seed 2455215173
+2023/02/08 16:15:18 5943625 f22b6987 [INFO Client 3952] Tile hash: 1284960281
+2023/02/08 16:15:18 5943625 f22b6986 [INFO Client 3952] Doodad hash: 647476296
+2023/02/08 16:15:19 5943921 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:15:19 5944484 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Склон.
+2023/02/08 16:15:20 5945078 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:15:43 5968656 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:15:43 5968656 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:15:43 5968656 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.132:6112
+2023/02/08 16:15:44 5968718 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 16:15:44 5968781 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 16:15:44 5969468 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 16:15:44 5969468 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 16:15:44 5969671 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:15:45 5970109 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 16:15:46 5970718 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:15:59 5984640 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 16:16:22 6007593 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 16:17:01 6045859 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 16:18:06 6110703 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:18:06 6110703 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:18:06 6110703 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.167:6112
+2023/02/08 16:18:06 6110765 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 16:18:06 6110828 1186a0e3 [DEBUG Client 3952] Generating level 7 area "1_1_6" with seed 2455215173
+2023/02/08 16:18:06 6110890 f22b6987 [INFO Client 3952] Tile hash: 1284960281
+2023/02/08 16:18:06 6110890 f22b6986 [INFO Client 3952] Doodad hash: 647476296
+2023/02/08 16:18:06 6111531 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:18:07 6112000 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Склон.
+2023/02/08 16:18:08 6112796 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:19:26 6191000 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:19:26 6191000 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:19:26 6191000 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 16:19:26 6191078 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 46ms
+2023/02/08 16:19:26 6191140 1186a0e3 [DEBUG Client 3952] Generating level 8 area "1_1_7_1" with seed 1911160232
+2023/02/08 16:19:27 6191812 f22b6987 [INFO Client 3952] Tile hash: 2104972513
+2023/02/08 16:19:27 6191812 f22b6986 [INFO Client 3952] Doodad hash: 2363912805
+2023/02/08 16:19:27 6192203 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:19:28 6192828 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Тюремное подземелье.
+2023/02/08 16:19:28 6193656 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:19:44 6209218 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:19:44 6209218 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:19:44 6209218 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.132:6112
+2023/02/08 16:19:44 6209281 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 16:19:44 6209359 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 16:19:45 6210046 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 16:19:45 6210046 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 16:19:45 6210250 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:19:46 6210796 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 16:19:46 6211546 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:19:57 6221828 cffb0734 [INFO Client 3952] : Сделка отклонена.
+2023/02/08 16:21:14 6298687 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:21:14 6298687 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:21:14 6298687 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 16:21:14 6298765 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 16:21:14 6298828 1186a0e3 [DEBUG Client 3952] Generating level 8 area "1_1_7_1" with seed 1911160232
+2023/02/08 16:21:14 6298875 f22b6987 [INFO Client 3952] Tile hash: 2104972513
+2023/02/08 16:21:14 6298875 f22b6986 [INFO Client 3952] Doodad hash: 2363912805
+2023/02/08 16:21:15 6299687 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:21:15 6300109 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Тюремное подземелье.
+2023/02/08 16:21:16 6300750 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:21:41 6326437 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 8 уровня
+2023/02/08 16:23:54 6459609 b51d4f61 [DEBUG Client 3952] [RENDER] SetRendererSettings
+2023/02/08 16:23:54 6459609 b51d6447 [DEBUG Client 3952] [RENDER] ResizeWindow
+2023/02/08 16:23:54 6459625 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 16:23:54 6459671 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 16:23:55 6460234 b51d614c [DEBUG Client 3952] [RENDER] RestartSwapChain
+2023/02/08 16:23:55 6460234 9e6a0b0a [INFO Client 3952] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/08 16:23:55 6460281 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 16:23:55 6460281 9e6a1363 [INFO Client 3952] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/08 16:23:55 6460281 9e6a0b0a [INFO Client 3952] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/08 16:23:55 6460281 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 16:23:55 6460375 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 16:23:55 6460406 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 16:23:56 6460906 fafff8cf [DEBUG Client 3952] CreateSwapChain: SetFullScreenState 0
+2023/02/08 16:23:56 6460906 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 16:23:56 6460937 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 16:23:56 6461359 3275a75e [INFO Client 3952] [SHADER] Disable Async: 1 frames
+2023/02/08 16:23:56 6461359 b51d610e [INFO Client 3952] [RENDER] Disable Async: 1 frames
+2023/02/08 16:23:56 6461375 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 16:23:56 6461406 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 16:24:17 6481828 b51d4f61 [DEBUG Client 3952] [RENDER] SetRendererSettings
+2023/02/08 16:24:17 6481828 b51d6447 [DEBUG Client 3952] [RENDER] ResizeWindow
+2023/02/08 16:24:17 6481828 b51d614c [DEBUG Client 3952] [RENDER] RestartSwapChain
+2023/02/08 16:24:17 6481828 9e6a0b0a [INFO Client 3952] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/08 16:24:17 6481859 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 16:24:17 6481859 9e6a1363 [INFO Client 3952] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/08 16:24:17 6481859 9e6a0b0a [INFO Client 3952] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/08 16:24:17 6481875 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 16:24:17 6481875 fafff8cf [DEBUG Client 3952] CreateSwapChain: SetFullScreenState 1
+2023/02/08 16:24:17 6482062 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 16:24:17 6482109 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 16:24:17 6482562 3275a75e [INFO Client 3952] [SHADER] Disable Async: 1 frames
+2023/02/08 16:24:17 6482562 b51d610e [INFO Client 3952] [RENDER] Disable Async: 1 frames
+2023/02/08 16:24:19 6484500 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: life600, name: Здоровье
+2023/02/08 16:24:31 6496375 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:24:31 6496375 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:24:31 6496375 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.176:6112
+2023/02/08 16:24:31 6496437 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 16:24:31 6496515 1186a0e3 [DEBUG Client 3952] Generating level 9 area "1_1_7_2" with seed 767429702
+2023/02/08 16:24:32 6497578 f22b6987 [INFO Client 3952] Tile hash: 687464968
+2023/02/08 16:24:32 6497578 f22b6986 [INFO Client 3952] Doodad hash: 3837956531
+2023/02/08 16:24:33 6498031 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:24:33 6498609 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Тюремные помещения.
+2023/02/08 16:24:34 6499546 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:26:53 6638296 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 9 уровня
+2023/02/08 16:27:59 6704343 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: heart_of_the_gladiator825, name: Сердце воина
+2023/02/08 16:30:43 6867734 890d9d5f [INFO Client 3952] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/08 16:30:43 6867765 890d9cd8 [INFO Client 3952] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/08 16:30:47 6872343 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:30:47 6872359 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:30:47 6872359 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 16:30:47 6872406 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 16:30:47 6872468 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 16:30:48 6872984 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 16:30:48 6872984 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 16:30:50 6875640 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:30:51 6876046 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 16:30:52 6876703 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:30:52 6876734 374e0d22 [INFO Client 3952] [Item Filter] Preparing to download online filter EQQOoxhj
+2023/02/08 16:30:52 6876734 374e0cc3 [INFO Client 3952] [Item Filter] Hash for online filter EQQOoxhj is: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 16:30:52 6877031 374e0cc9 [INFO Client 3952] [Item Filter] Online item filter EQQOoxhj returned status: 200
+2023/02/08 16:30:52 6877031 374e0ce3 [DEBUG Client 3952] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/08 16:30:52 6877031 374e0e8e [DEBUG Client 3952] [Item Filter] X-HW: 1675866652.dop035.pa1.t,1675866652.cds041.pa1.shn,1675866652.dop035.pa1.t,1675866652.cds046.pa1.c
+2023/02/08 16:30:52 6877031 374df808 [INFO Client 3952] [Item Filter] Successfully saved online filter EQQOoxhj. Hash is now: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 16:30:52 6877046 788474c3 [INFO Client 3952] [Item Filter] Finished reloading online filter EQQOoxhj. Result: true. Hash: ffe1eb2afb66cfb6740cadbaf6f71edf. Type: Normal. Message: 
+2023/02/08 16:31:56 6941156 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 16:32:11 6956343 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 16:35:14 7139406 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:35:14 7139406 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:35:14 7139406 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 16:35:14 7139468 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 16:35:14 7139531 1186a0e3 [DEBUG Client 3952] Generating level 8 area "1_1_7_1" with seed 485107168
+2023/02/08 16:35:15 7139765 f22b6987 [INFO Client 3952] Tile hash: 3816190938
+2023/02/08 16:35:15 7139765 f22b6986 [INFO Client 3952] Doodad hash: 1050275773
+2023/02/08 16:35:15 7140515 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:35:16 7140953 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Тюремное подземелье.
+2023/02/08 16:35:16 7141625 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:36:21 7206312 cffb0734 [INFO Client 3952] : Смерть не ждет
+2023/02/08 16:37:27 7271984 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 10 уровня
+2023/02/08 16:38:11 7316609 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: life599, name: Здоровье
+2023/02/08 16:39:02 7367093 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:39:02 7367093 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:39:02 7367093 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.153:6112
+2023/02/08 16:39:02 7367156 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 32ms
+2023/02/08 16:39:02 7367218 1186a0e3 [DEBUG Client 3952] Generating level 9 area "1_1_7_2" with seed 961540675
+2023/02/08 16:39:03 7367828 f22b6987 [INFO Client 3952] Tile hash: 816075234
+2023/02/08 16:39:03 7367828 f22b6986 [INFO Client 3952] Doodad hash: 1335916489
+2023/02/08 16:39:03 7368359 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:39:04 7368875 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Тюремные помещения.
+2023/02/08 16:39:04 7369640 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:42:29 7574000 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 11 уровня
+2023/02/08 16:42:37 7581859 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: strong_arm118, name: Рождённый для битвы
+2023/02/08 16:44:26 7690984 cffb0734 [INFO Client 3952] Вера: Варвар, на всякого силача найдётся тот, кто сильнее. Передавай привет смотрителю.
+2023/02/08 16:45:11 7736312 cffb0734 [INFO Client 3952] Изувер, старший смотритель: Ты считаешь ужасным меня? Я покажу тебе истинный ужас!
+2023/02/08 16:45:24 7749593 cffb0734 [INFO Client 3952] Изувер, старший смотритель: Дай обнять тебя.
+2023/02/08 16:45:31 7756093 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:45:31 7756093 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:45:31 7756093 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 16:45:31 7756156 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 32ms
+2023/02/08 16:45:31 7756218 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 16:45:31 7756640 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 16:45:31 7756640 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 16:45:32 7756968 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:45:32 7757406 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 16:45:33 7758078 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:46:10 7795468 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 16:46:17 7801734 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 16:46:41 7826046 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 16:49:49 8013703 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 16:49:58 8023656 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 16:50:24 8049046 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:50:24 8049062 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:50:24 8049062 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.153:6112
+2023/02/08 16:50:24 8049125 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 16:50:24 8049187 1186a0e3 [DEBUG Client 3952] Generating level 9 area "1_1_7_2" with seed 961540675
+2023/02/08 16:50:24 8049281 f22b6987 [INFO Client 3952] Tile hash: 816075234
+2023/02/08 16:50:24 8049281 f22b6986 [INFO Client 3952] Doodad hash: 1335916489
+2023/02/08 16:50:25 8049937 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:50:25 8050437 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Тюремные помещения.
+2023/02/08 16:50:26 8051140 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:50:29 8054328 cffb0734 [INFO Client 3952] Изувер, старший смотритель: Вход без спроса — преступление. И наказание за него — смерть!
+2023/02/08 16:51:40 8124750 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:51:40 8124750 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:51:40 8124750 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.179:6112
+2023/02/08 16:51:40 8124812 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 16:51:40 8124875 1186a0e3 [DEBUG Client 3952] Generating level 10 area "1_1_8" with seed 3220984962
+2023/02/08 16:51:41 8125781 f22b6987 [INFO Client 3952] Tile hash: 523850415
+2023/02/08 16:51:41 8125781 f22b6986 [INFO Client 3952] Doodad hash: 1509214192
+2023/02/08 16:51:41 8126187 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:51:42 8126703 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Врата заключённых.
+2023/02/08 16:51:42 8127500 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:51:50 8134734 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:51:50 8134734 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:51:50 8134734 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 16:51:50 8134796 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 16:51:50 8134875 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 16:51:50 8135250 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 16:51:50 8135250 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 16:51:50 8135609 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:51:51 8136109 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 16:51:52 8136734 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:52:37 8181859 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 16:53:21 8226687 cffb0734 [INFO Client 3952] : Сделка отклонена.
+2023/02/08 16:54:59 8324203 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 16:54:59 8324203 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 16:54:59 8324203 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.179:6112
+2023/02/08 16:54:59 8324265 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 16:54:59 8324343 1186a0e3 [DEBUG Client 3952] Generating level 10 area "1_1_8" with seed 3220984962
+2023/02/08 16:54:59 8324484 f22b6987 [INFO Client 3952] Tile hash: 523850415
+2023/02/08 16:54:59 8324484 f22b6986 [INFO Client 3952] Doodad hash: 1509214192
+2023/02/08 16:55:00 8325187 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 16:55:01 8325765 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Врата заключённых.
+2023/02/08 16:55:01 8326656 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 16:57:03 8448468 cffb0734 [INFO Client 3952] &<RiPE> ВзрывнаяБабка: Воспоминание Эйнара о Священной роще
+2023/02/08 16:57:39 8484093 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 12 уровня
+2023/02/08 16:58:20 8525000 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: strength809, name: Сила
+2023/02/08 16:58:26 8531515 cffb0734 [INFO Client 3952] Вера: Варвар, одной силой горы не свернуть!
+2023/02/08 17:01:15 8700265 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 17:01:15 8700265 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 17:01:15 8700265 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 17:01:15 8700328 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 17:01:15 8700406 1186a0e3 [DEBUG Client 3952] Generating level 11 area "1_1_9" with seed 2005228328
+2023/02/08 17:01:16 8701375 f22b6987 [INFO Client 3952] Tile hash: 542210850
+2023/02/08 17:01:16 8701375 f22b6986 [INFO Client 3952] Doodad hash: 3570550885
+2023/02/08 17:01:17 8701968 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 17:01:18 8702718 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Кладбище кораблей.
+2023/02/08 17:01:19 8703812 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 17:01:26 8711078 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 17:01:26 8711078 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 17:01:26 8711078 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 17:01:26 8711140 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 17:01:26 8711203 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 17:01:26 8711578 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 17:01:26 8711578 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 17:01:27 8712078 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 17:01:27 8712484 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 17:01:28 8713218 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 17:04:58 8923156 cffb0734 [INFO Client 3952] : Сделка отклонена.
+2023/02/08 17:05:35 8960390 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 17:06:45 9030640 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 17:06:45 9030640 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 17:06:45 9030640 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 17:06:46 9030703 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 17:06:46 9030781 1186a0e3 [DEBUG Client 3952] Generating level 11 area "1_1_9" with seed 2005228328
+2023/02/08 17:06:46 9030875 f22b6987 [INFO Client 3952] Tile hash: 542210850
+2023/02/08 17:06:46 9030875 f22b6986 [INFO Client 3952] Doodad hash: 3570550885
+2023/02/08 17:06:46 9031484 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 17:06:47 9032078 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Кладбище кораблей.
+2023/02/08 17:06:48 9032968 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 17:07:42 9087125 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 13 уровня
+2023/02/08 17:07:51 9096187 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: intelligence945, name: Интеллект
+2023/02/08 17:08:58 9163187 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 17:08:58 9163187 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 17:08:58 9163187 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.140:6112
+2023/02/08 17:08:58 9163250 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 17:08:58 9163328 1186a0e3 [DEBUG Client 3952] Generating level 12 area "1_1_9a" with seed 3240011125
+2023/02/08 17:08:59 9163781 f22b6987 [INFO Client 3952] Tile hash: 3780548247
+2023/02/08 17:08:59 9163781 f22b6986 [INFO Client 3952] Doodad hash: 3865532418
+2023/02/08 17:08:59 9164375 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 17:09:00 9164859 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Грот погибших кораблей.
+2023/02/08 17:09:01 9165937 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 17:11:57 9342187 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 17:11:57 9342187 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 17:11:57 9342187 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 17:11:57 9342250 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 17:11:57 9342312 1186a0e3 [DEBUG Client 3952] Generating level 11 area "1_1_9" with seed 2005228328
+2023/02/08 17:11:57 9342421 f22b6987 [INFO Client 3952] Tile hash: 542210850
+2023/02/08 17:11:57 9342421 f22b6986 [INFO Client 3952] Doodad hash: 3570550885
+2023/02/08 17:11:58 9343046 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 17:11:58 9343531 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Кладбище кораблей.
+2023/02/08 17:11:59 9344281 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 17:12:54 9398843 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 14 уровня
+2023/02/08 17:13:48 9453421 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: warcry_cooldown2707, name: Боевой клич: скорость перезарядки
+2023/02/08 17:14:02 9467328 cffb0734 [INFO Client 3952] Капитан Фейргрейвс: Прошу тебя, войди в мое положение. Как человеку чести, мне сейчас хуже, чем тебе. Мое сердце обливается кровью. И уверен, что в схожих обстоятельствах ты сделаешь то же самое.
+2023/02/08 17:16:21 9606421 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 17:16:21 9606421 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 17:16:21 9606421 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.142:6112
+2023/02/08 17:16:21 9606484 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 32ms
+2023/02/08 17:16:21 9606546 1186a0e3 [DEBUG Client 3952] Generating level 12 area "1_1_11_1" with seed 3274967538
+2023/02/08 17:16:22 9607265 f22b6987 [INFO Client 3952] Tile hash: 4071297323
+2023/02/08 17:16:22 9607265 f22b6986 [INFO Client 3952] Doodad hash: 3075264658
+2023/02/08 17:16:22 9607593 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 17:16:23 9608093 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пещера гнева.
+2023/02/08 17:16:24 9608796 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 17:16:29 9614265 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 17:16:29 9614265 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 17:16:29 9614265 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 17:16:29 9614343 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 17:16:29 9614406 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 17:16:30 9614781 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 17:16:30 9614781 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 17:16:30 9615203 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 17:16:31 9615812 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 17:16:32 9616734 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 17:20:05 9829968 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 17:21:06 9891125 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 17:21:10 9895640 cffb0734 [INFO Client 3952] : Вы получили очко пассивных умений.
+2023/02/08 17:23:46 10051546 cffb0734 [INFO Client 3952] : Сделка отклонена.
+2023/02/08 17:24:10 10075265 cffb0734 [INFO Client 3952] : Не удалось применить предмет: Предмет уже достиг наивысшего качества.
+2023/02/08 17:25:19 10144671 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: warcry_damage2716, name: Боевой клич: скорость перезарядки
+2023/02/08 17:26:18 10202953 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 17:26:18 10202953 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 17:26:18 10202953 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 17:26:18 10203015 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 17:26:18 10203093 1186a0e3 [DEBUG Client 3952] Generating level 5 area "1_1_4_1" with seed 3842548071
+2023/02/08 17:26:18 10203328 f22b6987 [INFO Client 3952] Tile hash: 904753582
+2023/02/08 17:26:18 10203328 f22b6986 [INFO Client 3952] Doodad hash: 3551924055
+2023/02/08 17:26:19 10203984 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 17:26:19 10204421 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Сырой проход.
+2023/02/08 17:26:20 10205093 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 17:27:49 10294000 cffb0734 [INFO Client 3952] : Воздай себе за потери
+2023/02/08 17:30:01 10425859 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 17:30:01 10425859 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 17:30:01 10425859 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.158:6112
+2023/02/08 17:30:01 10425921 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 17:30:01 10425984 1186a0e3 [DEBUG Client 3952] Generating level 6 area "1_1_4_0" with seed 3792109889
+2023/02/08 17:30:01 10426265 f22b6987 [INFO Client 3952] Tile hash: 4155732849
+2023/02/08 17:30:01 10426265 f22b6986 [INFO Client 3952] Doodad hash: 408324389
+2023/02/08 17:30:02 10427078 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 17:30:02 10427515 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Залитый провал.
+2023/02/08 17:30:03 10428171 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 17:33:05 10610312 890d9d5f [INFO Client 3952] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/08 17:33:05 10610343 890d9cd8 [INFO Client 3952] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/08 17:33:09 10613718 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 17:33:09 10613734 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 17:33:09 10613734 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 17:33:09 10613781 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 17:33:09 10613843 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 17:33:09 10614421 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 17:33:09 10614421 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 17:33:12 10616859 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 17:33:12 10617250 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 17:33:13 10617984 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 17:33:13 10618015 374e0d22 [INFO Client 3952] [Item Filter] Preparing to download online filter EQQOoxhj
+2023/02/08 17:33:13 10618015 374e0cc3 [INFO Client 3952] [Item Filter] Hash for online filter EQQOoxhj is: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 17:33:13 10618250 374e0cc9 [INFO Client 3952] [Item Filter] Online item filter EQQOoxhj returned status: 200
+2023/02/08 17:33:13 10618250 374e0ce3 [DEBUG Client 3952] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/08 17:33:13 10618250 374e0e8e [DEBUG Client 3952] [Item Filter] X-HW: 1675870393.dop203.pa1.t,1675870394.cds244.pa1.shn,1675870394.dop203.pa1.t,1675870394.cds046.pa1.c
+2023/02/08 17:33:13 10618265 374df808 [INFO Client 3952] [Item Filter] Successfully saved online filter EQQOoxhj. Hash is now: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 17:33:13 10618281 788474c3 [INFO Client 3952] [Item Filter] Finished reloading online filter EQQOoxhj. Result: true. Hash: ffe1eb2afb66cfb6740cadbaf6f71edf. Type: Normal. Message: 
+2023/02/08 17:33:38 10642843 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 17:33:51 10656234 cffb0734 [INFO Client 3952] : Сделка отклонена.
+2023/02/08 17:34:03 10668265 cffb0734 [INFO Client 3952] : Сделка отклонена.
+2023/02/08 17:34:40 10704984 cffb0734 [INFO Client 3952] : Вы получили очко пассивных умений.
+2023/02/08 17:34:43 10708015 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: warcry_damage2715, name: Боевой клич: скорость перезарядки
+2023/02/08 17:40:28 11052796 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 17:41:10 11095515 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 17:41:10 11095515 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 17:41:10 11095515 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.247:6112
+2023/02/08 17:41:10 11095578 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 17:41:10 11095640 1186a0e3 [DEBUG Client 3952] Generating level 12 area "1_1_11_1" with seed 1387796235
+2023/02/08 17:41:11 11096500 f22b6987 [INFO Client 3952] Tile hash: 510476244
+2023/02/08 17:41:11 11096500 f22b6986 [INFO Client 3952] Doodad hash: 2285014328
+2023/02/08 17:41:12 11096890 b51d4f61 [DEBUG Client 3952] [RENDER] SetRendererSettings
+2023/02/08 17:41:12 11096890 b51d6447 [DEBUG Client 3952] [RENDER] ResizeWindow
+2023/02/08 17:41:12 11096921 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 17:41:12 11096953 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 17:41:12 11097593 b51d614c [DEBUG Client 3952] [RENDER] RestartSwapChain
+2023/02/08 17:41:12 11097593 9e6a0b0a [INFO Client 3952] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/08 17:41:12 11097640 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 17:41:12 11097640 9e6a1363 [INFO Client 3952] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/08 17:41:12 11097640 9e6a0b0a [INFO Client 3952] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/08 17:41:12 11097640 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 17:41:13 11097765 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 17:41:13 11097781 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 17:41:13 11098312 fafff8cf [DEBUG Client 3952] CreateSwapChain: SetFullScreenState 0
+2023/02/08 17:41:13 11098312 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 17:41:13 11098328 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 17:41:14 11098750 3275a75e [INFO Client 3952] [SHADER] Disable Async: 1 frames
+2023/02/08 17:41:14 11098750 b51d610e [INFO Client 3952] [RENDER] Disable Async: 1 frames
+2023/02/08 17:41:14 11098765 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 17:41:14 11098796 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 17:41:14 11099296 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 17:41:15 11099812 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пещера гнева.
+2023/02/08 17:41:15 11100609 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 17:41:48 11132953 b51d4f61 [DEBUG Client 3952] [RENDER] SetRendererSettings
+2023/02/08 17:41:48 11132953 b51d6447 [DEBUG Client 3952] [RENDER] ResizeWindow
+2023/02/08 17:41:48 11132953 b51d614c [DEBUG Client 3952] [RENDER] RestartSwapChain
+2023/02/08 17:41:48 11132953 9e6a0b0a [INFO Client 3952] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/08 17:41:48 11133000 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 17:41:48 11133000 9e6a1363 [INFO Client 3952] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/08 17:41:48 11133000 9e6a0b0a [INFO Client 3952] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/08 17:41:48 11133000 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 17:41:48 11133000 fafff8cf [DEBUG Client 3952] CreateSwapChain: SetFullScreenState 1
+2023/02/08 17:41:48 11133171 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 17:41:48 11133203 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 17:41:48 11133609 3275a75e [INFO Client 3952] [SHADER] Disable Async: 1 frames
+2023/02/08 17:41:48 11133609 b51d610e [INFO Client 3952] [RENDER] Disable Async: 1 frames
+2023/02/08 17:42:01 11146390 cffb0734 [INFO Client 3952] Мервейл: Я отдала своё сердце… поверив его лжи… я отдала свою любовь.
+2023/02/08 17:44:20 11285359 cffb0734 [INFO Client 3952] Мервейл: Мне так холодно и одиноко. Обними меня.
+2023/02/08 17:44:29 11294031 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 17:44:29 11294031 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 17:44:29 11294031 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 17:44:29 11294093 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 17:44:29 11294156 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_11_2" with seed 963078998
+2023/02/08 17:44:29 11294625 f22b6987 [INFO Client 3952] Tile hash: 2823120248
+2023/02/08 17:44:29 11294625 f22b6986 [INFO Client 3952] Doodad hash: 2577129667
+2023/02/08 17:44:30 11295296 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 17:44:31 11295828 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пещера злобы.
+2023/02/08 17:44:31 11296515 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 17:44:32 11297625 cffb0734 [INFO Client 3952] Мервейл: Я жду его… Дарессо. Я жду, как хорошая жена.
+2023/02/08 17:45:08 11333093 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 15 уровня
+2023/02/08 17:46:52 11436968 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: warcry_cooldown_notable2709_, name: Глубокие вдохи
+2023/02/08 17:46:54 11439421 890d9d5f [INFO Client 3952] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/08 17:46:54 11439468 890d9cd8 [INFO Client 3952] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/08 17:50:01 11626125 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 17:50:01 11626140 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 17:50:01 11626140 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 17:50:01 11626187 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 17:50:01 11626250 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 17:50:02 11627203 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 17:50:02 11627203 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 17:50:04 11629468 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 17:50:05 11629875 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 17:50:06 11630718 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 17:50:06 11630750 374e0d22 [INFO Client 3952] [Item Filter] Preparing to download online filter EQQOoxhj
+2023/02/08 17:50:06 11630750 374e0cc3 [INFO Client 3952] [Item Filter] Hash for online filter EQQOoxhj is: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 17:50:06 11631046 374e0cc9 [INFO Client 3952] [Item Filter] Online item filter EQQOoxhj returned status: 200
+2023/02/08 17:50:06 11631046 374e0ce3 [DEBUG Client 3952] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/08 17:50:06 11631046 374e0e8e [DEBUG Client 3952] [Item Filter] X-HW: 1675871406.dop201.pa1.t,1675871406.cds029.pa1.shn,1675871406.dop201.pa1.t,1675871406.cds046.pa1.c
+2023/02/08 17:50:06 11631046 374df808 [INFO Client 3952] [Item Filter] Successfully saved online filter EQQOoxhj. Hash is now: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 17:50:06 11631046 788474c3 [INFO Client 3952] [Item Filter] Finished reloading online filter EQQOoxhj. Result: true. Hash: ffe1eb2afb66cfb6740cadbaf6f71edf. Type: Normal. Message: 
+2023/02/08 17:50:48 11673484 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 17:51:03 11688296 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 17:53:16 11821328 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 17:53:47 11851781 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 17:54:49 11913734 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 17:57:23 12068156 cffb0734 [INFO Client 3952] &<RiPE> SK_DED: Дьявольские подкладки, Перчатки фанатика
+2023/02/08 17:59:28 12193109 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 17:59:28 12193109 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 17:59:28 12193109 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.132:6112
+2023/02/08 17:59:28 12193171 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 17:59:28 12193234 1186a0e3 [DEBUG Client 3952] Generating level 12 area "1_1_11_1" with seed 181354434
+2023/02/08 17:59:28 12193515 f22b6987 [INFO Client 3952] Tile hash: 2738822858
+2023/02/08 17:59:28 12193515 f22b6986 [INFO Client 3952] Doodad hash: 4216370487
+2023/02/08 17:59:29 12193968 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 17:59:29 12194500 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пещера гнева.
+2023/02/08 17:59:30 12195156 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 17:59:59 12223781 cffb0734 [INFO Client 3952] Мервейл: Я отдала своё сердце… поверив его лжи… я отдала свою любовь.
+2023/02/08 18:06:00 12585343 cffb0734 [INFO Client 3952] Мервейл: Мне так холодно и одиноко. Обними меня.
+2023/02/08 18:06:12 12597671 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:06:12 12597687 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:06:12 12597687 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.248:6112
+2023/02/08 18:06:13 12597750 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 18:06:13 12597812 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_11_2" with seed 1027737584
+2023/02/08 18:06:13 12598140 f22b6987 [INFO Client 3952] Tile hash: 363313803
+2023/02/08 18:06:13 12598140 f22b6986 [INFO Client 3952] Doodad hash: 97878213
+2023/02/08 18:06:14 12598890 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:06:14 12599390 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пещера злобы.
+2023/02/08 18:06:15 12600031 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:06:17 12602046 cffb0734 [INFO Client 3952] Мервейл: Я жду его… Дарессо. Я жду, как хорошая жена.
+2023/02/08 18:08:54 12759421 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 16 уровня
+2023/02/08 18:11:05 12890421 fb7ab846 [INFO Client 3952] Successfully allocated mastery effect id: 12916, mastery: mastery_warcry254, name: Мастерство боевых кличей
+2023/02/08 18:11:21 12906671 cffb0734 [INFO Client 3952] Мервейл: Наконец-то. Мне столько нужно тебе рассказать.
+2023/02/08 18:11:30 12914796 cffb0734 [INFO Client 3952] Мервейл: Это истинное лицо любви.
+2023/02/08 18:12:24 12969437 cffb0734 [INFO Client 3952] : DeeSoloIIIXX был повержен.
+2023/02/08 18:12:44 12988890 cffb0734 [INFO Client 3952] &<RiPE> TBAPbIHbIch: Кто нибудь продаст Божественная сфера ?
+2023/02/08 18:12:57 13002640 cffb0734 [INFO Client 3952] &<RiPE> TBAPbIHbIch: штук 6
+2023/02/08 18:13:58 13063468 bce2d691 [INFO Client 3952] Steam stats stored
+2023/02/08 18:16:14 13199640 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:16:14 13199656 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:16:14 13199656 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 18:16:15 13199703 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 18:16:15 13199781 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_2_1" with seed 1639555045
+2023/02/08 18:16:16 13200781 f22b6987 [INFO Client 3952] Tile hash: 3021489032
+2023/02/08 18:16:16 13200781 f22b6986 [INFO Client 3952] Doodad hash: 3044328868
+2023/02/08 18:16:16 13201218 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:16:17 13201765 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Южный лес.
+2023/02/08 18:16:17 13202671 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:19:53 13418468 cffb0734 [INFO Client 3952] &<RiPE> gerlanda: ++++++
+2023/02/08 18:21:00 13485531 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:21:00 13485531 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:21:00 13485531 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 18:21:00 13485593 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 18:21:00 13485656 1186a0e3 [DEBUG Client 3952] Generating level 23 area "1_2_town" with seed 1
+2023/02/08 18:21:01 13486281 f22b6987 [INFO Client 3952] Tile hash: 823583857
+2023/02/08 18:21:01 13486281 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 18:21:01 13486656 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:21:02 13487171 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесной лагерь.
+2023/02/08 18:21:03 13487921 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:21:25 13510265 cffb0734 [INFO Client 3952] &<RiPE> Продукт_натурале: ++++
+2023/02/08 18:21:28 13513312 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 18:23:09 13614421 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:23:09 13614421 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:23:09 13614421 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.158:6112
+2023/02/08 18:23:09 13614484 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 32ms
+2023/02/08 18:23:09 13614546 1186a0e3 [DEBUG Client 3952] Generating level 14 area "1_2_2" with seed 4260962919
+2023/02/08 18:23:10 13615593 f22b6987 [INFO Client 3952] Tile hash: 2405179108
+2023/02/08 18:23:10 13615593 f22b6986 [INFO Client 3952] Doodad hash: 2522752152
+2023/02/08 18:23:11 13616093 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:23:11 13616671 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Старые поля.
+2023/02/08 18:23:13 13617687 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:23:14 13618890 cffb0734 [INFO Client 3952] Эйнар, Мастер зверей: Готов, изгнанник? Настала пора охоты!
+2023/02/08 18:23:51 13656328 cffb0734 [INFO Client 3952] Эйнар, Мастер зверей: Готов, изгнанник? Настала пора охоты!
+2023/02/08 18:24:07 13671828 cffb0734 [INFO Client 3952] Эйнар, Мастер зверей: Животинка, мы будем лучшими друзьями! Пока не принесём тебя в жертву!
+2023/02/08 18:24:25 13689828 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 17 уровня
+2023/02/08 18:24:25 13690109 cffb0734 [INFO Client 3952] Эйнар, Мастер зверей: Топай, животинка! Уходи!
+2023/02/08 18:24:50 13715453 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: strength829, name: Сила
+2023/02/08 18:24:55 13720359 b51d4f61 [DEBUG Client 3952] [RENDER] SetRendererSettings
+2023/02/08 18:24:55 13720359 b51d6447 [DEBUG Client 3952] [RENDER] ResizeWindow
+2023/02/08 18:24:55 13720375 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 18:24:55 13720406 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 18:24:56 13721015 b51d614c [DEBUG Client 3952] [RENDER] RestartSwapChain
+2023/02/08 18:24:56 13721015 9e6a0b0a [INFO Client 3952] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/08 18:24:56 13721046 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 18:24:56 13721046 9e6a1363 [INFO Client 3952] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/08 18:24:56 13721046 9e6a0b0a [INFO Client 3952] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/08 18:24:56 13721062 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 18:24:56 13721187 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 18:24:56 13721218 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 18:24:57 13721906 fafff8cf [DEBUG Client 3952] CreateSwapChain: SetFullScreenState 0
+2023/02/08 18:24:57 13721937 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 18:24:57 13722000 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 18:24:58 13722718 3275a75e [INFO Client 3952] [SHADER] Disable Async: 1 frames
+2023/02/08 18:24:58 13722718 b51d610e [INFO Client 3952] [RENDER] Disable Async: 1 frames
+2023/02/08 18:24:58 13722734 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 18:24:58 13722765 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 18:25:28 13752859 b51d4f61 [DEBUG Client 3952] [RENDER] SetRendererSettings
+2023/02/08 18:25:28 13752859 b51d6447 [DEBUG Client 3952] [RENDER] ResizeWindow
+2023/02/08 18:25:28 13752875 b51d614c [DEBUG Client 3952] [RENDER] RestartSwapChain
+2023/02/08 18:25:28 13752875 9e6a0b0a [INFO Client 3952] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/08 18:25:28 13752921 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 18:25:28 13752921 9e6a1363 [INFO Client 3952] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/08 18:25:28 13752921 9e6a0b0a [INFO Client 3952] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/08 18:25:28 13752921 9e6a1d2a [INFO Client 3952] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/08 18:25:28 13752937 fafff8cf [DEBUG Client 3952] CreateSwapChain: SetFullScreenState 1
+2023/02/08 18:25:28 13753171 9d4eec8a [DEBUG Client 3952] [WINDOW] TrigggerDeviceLost
+2023/02/08 18:25:28 13753218 9d4eeba7 [DEBUG Client 3952] [WINDOW] TrigggerDeviceReset
+2023/02/08 18:25:29 13753687 3275a75e [INFO Client 3952] [SHADER] Disable Async: 1 frames
+2023/02/08 18:25:29 13753687 b51d610e [INFO Client 3952] [RENDER] Disable Async: 1 frames
+2023/02/08 18:26:26 13811281 cffb0734 [INFO Client 3952] Эйнар, Мастер зверей: Первые с гордостью смотрят на эту добычу. Из тебя вышел хороший охотник.
+2023/02/08 18:28:33 13937750 cffb0734 [INFO Client 3952] Эйнар, Мастер зверей: Животинка, мы будем лучшими друзьями! Пока не принесём тебя в жертву!
+2023/02/08 18:28:49 13953765 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:28:49 13953765 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:28:49 13953765 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.233:6112
+2023/02/08 18:28:49 13953828 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 18:28:49 13953906 1186a0e3 [DEBUG Client 3952] Generating level 15 area "1_2_3" with seed 3912392774
+2023/02/08 18:28:50 13954906 f22b6987 [INFO Client 3952] Tile hash: 4140715069
+2023/02/08 18:28:50 13954906 f22b6986 [INFO Client 3952] Doodad hash: 3799194533
+2023/02/08 18:28:50 13955390 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:28:51 13956328 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Перекрёсток.
+2023/02/08 18:28:52 13957406 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:30:21 14046265 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 18 уровня
+2023/02/08 18:31:18 14103484 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:31:18 14103500 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:31:18 14103500 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.169:6112
+2023/02/08 18:31:18 14103562 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 18:31:18 14103640 1186a0e3 [DEBUG Client 3952] Generating level 15 area "1_2_6_1" with seed 1904903045
+2023/02/08 18:31:19 14104390 f22b6987 [INFO Client 3952] Tile hash: 1147087702
+2023/02/08 18:31:19 14104390 f22b6986 [INFO Client 3952] Doodad hash: 3710994967
+2023/02/08 18:31:20 14104781 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:31:20 14105312 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Обитель грехов — уровень 1.
+2023/02/08 18:31:21 14106000 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:31:27 14112312 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: dexterity971, name: Ловкость
+2023/02/08 18:38:30 14535531 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 19 уровня
+2023/02/08 18:40:47 14671921 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: strength774, name: Сила
+2023/02/08 18:40:56 14681593 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:40:56 14681593 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:40:56 14681593 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 18:40:56 14681656 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 32ms
+2023/02/08 18:40:57 14681718 1186a0e3 [DEBUG Client 3952] Generating level 23 area "1_2_town" with seed 1
+2023/02/08 18:40:57 14682359 f22b6987 [INFO Client 3952] Tile hash: 823583857
+2023/02/08 18:40:57 14682359 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 18:40:57 14682640 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:40:58 14683171 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесной лагерь.
+2023/02/08 18:40:59 14683921 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:44:23 14888453 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 18:45:17 14942343 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:45:17 14942343 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:45:17 14942343 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 18:45:17 14942406 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 32ms
+2023/02/08 18:45:17 14942468 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 18:45:18 14943328 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 18:45:18 14943328 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 18:45:18 14943546 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:45:19 14944046 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 18:45:20 14944765 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:46:24 15008843 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 18:46:56 15041031 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:46:56 15041046 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:46:56 15041046 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.238:6112
+2023/02/08 18:46:56 15041093 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 18:46:56 15041171 1186a0e3 [DEBUG Client 3952] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/08 18:46:57 15041796 f22b6987 [INFO Client 3952] Tile hash: 805187908
+2023/02/08 18:46:57 15041796 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 18:46:57 15042546 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:46:58 15043453 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/08 18:47:00 15044859 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:47:08 15053609 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:47:08 15053625 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:47:08 15053625 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 18:47:08 15053687 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 18:47:09 15053750 1186a0e3 [DEBUG Client 3952] Generating level 23 area "1_2_town" with seed 1
+2023/02/08 18:47:09 15054156 f22b6987 [INFO Client 3952] Tile hash: 823583857
+2023/02/08 18:47:09 15054156 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 18:47:09 15054578 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:47:10 15055015 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесной лагерь.
+2023/02/08 18:47:10 15055687 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:47:40 15085078 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:47:40 15085078 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:47:40 15085078 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.169:6112
+2023/02/08 18:47:40 15085140 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 18:47:40 15085218 1186a0e3 [DEBUG Client 3952] Generating level 15 area "1_2_6_1" with seed 1904903045
+2023/02/08 18:47:41 15085984 f22b6987 [INFO Client 3952] Tile hash: 1147087702
+2023/02/08 18:47:41 15085984 f22b6986 [INFO Client 3952] Doodad hash: 3710994967
+2023/02/08 18:47:41 15086406 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:47:42 15087171 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Обитель грехов — уровень 1.
+2023/02/08 18:47:43 15087859 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:48:40 15144828 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:48:40 15144843 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:48:40 15144843 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.231:6112
+2023/02/08 18:48:40 15144906 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 32ms
+2023/02/08 18:48:40 15144984 1186a0e3 [DEBUG Client 3952] Generating level 16 area "1_2_6_2" with seed 3895467257
+2023/02/08 18:48:40 15145625 f22b6987 [INFO Client 3952] Tile hash: 1284174233
+2023/02/08 18:48:40 15145625 f22b6986 [INFO Client 3952] Doodad hash: 486597907
+2023/02/08 18:48:41 15146187 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:48:42 15146921 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Обитель грехов — уровень 2.
+2023/02/08 18:48:42 15147609 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:51:24 15309359 cffb0734 [INFO Client 3952] Вера: Иди, поиграй мускулами перед этим исчадием. Два дурака найдут общий язык.
+2023/02/08 18:51:25 15310218 cffb0734 [INFO Client 3952] Елена: Эта тварь... Она перебила всех. Помогите!
+2023/02/08 18:52:14 15359468 890d9d5f [INFO Client 3952] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/08 18:52:14 15359500 890d9cd8 [INFO Client 3952] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/08 18:52:18 15363218 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:52:18 15363234 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:52:18 15363234 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 18:52:18 15363281 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 18:52:18 15363343 1186a0e3 [DEBUG Client 3952] Generating level 23 area "1_2_town" with seed 1
+2023/02/08 18:52:19 15364093 f22b6987 [INFO Client 3952] Tile hash: 823583857
+2023/02/08 18:52:19 15364093 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 18:52:21 15366625 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:52:22 15367187 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесной лагерь.
+2023/02/08 18:52:22 15367187 cffb0734 [INFO Client 3952] #СвидетельШрайка: Господа, подскажите, видел, что игроки бегают с щитом на мане, у меня в билде такое же есть, но в роликах у людей здоровье не тратилось от ударов, а у меня тратится
+2023/02/08 18:52:22 15367187 cffb0734 [INFO Client 3952] #аккуратно_смерть_аура: угу, ток в той радуге о которой ты думаешь нет одного цвета
+2023/02/08 18:52:23 15367921 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:52:23 15367953 374e0d22 [INFO Client 3952] [Item Filter] Preparing to download online filter EQQOoxhj
+2023/02/08 18:52:23 15367953 374e0cc3 [INFO Client 3952] [Item Filter] Hash for online filter EQQOoxhj is: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 18:52:23 15368250 374e0cc9 [INFO Client 3952] [Item Filter] Online item filter EQQOoxhj returned status: 200
+2023/02/08 18:52:23 15368250 374e0ce3 [DEBUG Client 3952] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/08 18:52:23 15368250 374e0e8e [DEBUG Client 3952] [Item Filter] X-HW: 1675875143.dop206.pa1.t,1675875143.cds042.pa1.shn,1675875143.dop206.pa1.t,1675875143.cds046.pa1.c
+2023/02/08 18:52:23 15368250 374df808 [INFO Client 3952] [Item Filter] Successfully saved online filter EQQOoxhj. Hash is now: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 18:52:23 15368281 788474c3 [INFO Client 3952] [Item Filter] Finished reloading online filter EQQOoxhj. Result: true. Hash: ffe1eb2afb66cfb6740cadbaf6f71edf. Type: Normal. Message: 
+2023/02/08 18:52:47 15392640 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 18:54:01 15466171 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:54:01 15466171 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:54:01 15466171 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.244:6112
+2023/02/08 18:54:01 15466234 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 18:54:01 15466312 1186a0e3 [DEBUG Client 3952] Generating level 15 area "1_2_3" with seed 3464424888
+2023/02/08 18:54:02 15467375 f22b6987 [INFO Client 3952] Tile hash: 2714730563
+2023/02/08 18:54:02 15467375 f22b6986 [INFO Client 3952] Doodad hash: 2540590951
+2023/02/08 18:54:03 15467843 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:54:03 15468515 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Перекрёсток.
+2023/02/08 18:54:04 15469562 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:55:09 15533953 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:55:09 15533953 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:55:09 15533953 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.244:6112
+2023/02/08 18:55:09 15534015 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 18:55:09 15534093 1186a0e3 [DEBUG Client 3952] Generating level 16 area "1_2_4" with seed 3903212645
+2023/02/08 18:55:10 15534921 f22b6987 [INFO Client 3952] Tile hash: 2548449271
+2023/02/08 18:55:10 15534921 f22b6986 [INFO Client 3952] Doodad hash: 835459590
+2023/02/08 18:55:11 15535765 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:55:11 15536406 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Разрушенный мост.
+2023/02/08 18:55:12 15537187 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:55:24 15549031 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 20 уровня
+2023/02/08 18:56:38 15623000 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:56:38 15623000 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:56:38 15623000 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 18:56:38 15623062 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 18:56:38 15623125 1186a0e3 [DEBUG Client 3952] Generating level 23 area "1_2_town" with seed 1
+2023/02/08 18:56:39 15623734 f22b6987 [INFO Client 3952] Tile hash: 823583857
+2023/02/08 18:56:39 15623734 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 18:56:39 15624000 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:56:39 15624656 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесной лагерь.
+2023/02/08 18:56:40 15625281 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:57:00 15645328 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 18:57:09 15654156 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: strength826, name: Сила
+2023/02/08 18:57:26 15671500 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 18:57:26 15671500 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 18:57:26 15671500 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 18:57:26 15671562 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 46ms
+2023/02/08 18:57:26 15671640 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 18:57:27 15672546 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 18:57:27 15672546 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 18:57:28 15672750 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 18:57:28 15673312 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 18:57:29 15674015 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 18:58:24 15728875 cffb0734 [INFO Client 3952] : Указанный предмет уничтожен
+2023/02/08 18:59:32 15797609 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 19:00:14 15839203 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:00:14 15839203 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:00:14 15839203 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 19:00:14 15839265 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 19:00:14 15839328 1186a0e3 [DEBUG Client 3952] Generating level 23 area "1_2_town" with seed 1
+2023/02/08 19:00:14 15839343 f22b6987 [INFO Client 3952] Tile hash: 823583857
+2023/02/08 19:00:14 15839343 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 19:00:15 15840109 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:00:15 15840656 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесной лагерь.
+2023/02/08 19:00:16 15841328 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:00:20 15845062 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:00:20 15845062 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:00:20 15845062 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.244:6112
+2023/02/08 19:00:20 15845125 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 19:00:20 15845203 1186a0e3 [DEBUG Client 3952] Generating level 16 area "1_2_4" with seed 3903212645
+2023/02/08 19:00:21 15846453 f22b6987 [INFO Client 3952] Tile hash: 2548449271
+2023/02/08 19:00:21 15846453 f22b6986 [INFO Client 3952] Doodad hash: 835459590
+2023/02/08 19:00:22 15847421 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:00:23 15848125 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Разрушенный мост.
+2023/02/08 19:00:24 15848953 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:00:41 15865875 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:00:41 15865875 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:00:41 15865875 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 19:00:41 15865921 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 46ms
+2023/02/08 19:00:41 15865984 1186a0e3 [DEBUG Client 3952] Generating level 23 area "1_2_town" with seed 1
+2023/02/08 19:00:41 15866000 f22b6987 [INFO Client 3952] Tile hash: 823583857
+2023/02/08 19:00:41 15866000 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 19:00:42 15866796 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:00:42 15867343 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесной лагерь.
+2023/02/08 19:00:43 15867953 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:00:44 15868890 cffb0734 [INFO Client 3952] &<RiPE> ПриспешницаКоли: +
+2023/02/08 19:01:02 15886765 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:01:02 15886765 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:01:02 15886765 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 19:01:02 15886828 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 19:01:02 15886890 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 19:01:02 15887687 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 19:01:02 15887687 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 19:01:03 15887906 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:01:03 15888484 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 19:01:04 15889140 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:02:01 15945859 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 19:02:11 15956343 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:02:11 15956343 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:02:11 15956343 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 19:02:11 15956406 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 32ms
+2023/02/08 19:02:11 15956468 1186a0e3 [DEBUG Client 3952] Generating level 23 area "1_2_town" with seed 1
+2023/02/08 19:02:11 15956484 f22b6987 [INFO Client 3952] Tile hash: 823583857
+2023/02/08 19:02:11 15956484 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 19:02:12 15957203 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:02:13 15957781 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесной лагерь.
+2023/02/08 19:02:13 15958453 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:02:16 15961625 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:02:16 15961625 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:02:16 15961625 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.244:6112
+2023/02/08 19:02:17 15961687 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 46ms
+2023/02/08 19:02:17 15961765 1186a0e3 [DEBUG Client 3952] Generating level 16 area "1_2_4" with seed 3903212645
+2023/02/08 19:02:18 15963000 f22b6987 [INFO Client 3952] Tile hash: 2548449271
+2023/02/08 19:02:18 15963000 f22b6986 [INFO Client 3952] Doodad hash: 835459590
+2023/02/08 19:02:19 15963843 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:02:19 15964546 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Разрушенный мост.
+2023/02/08 19:02:20 15965375 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:02:59 16004640 890d9d5f [INFO Client 3952] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/08 19:02:59 16004671 890d9cd8 [INFO Client 3952] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/08 19:03:03 16008578 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:03:03 16008578 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:03:03 16008578 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 19:03:03 16008640 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 19:03:04 16008703 1186a0e3 [DEBUG Client 3952] Generating level 23 area "1_2_town" with seed 1
+2023/02/08 19:03:04 16008718 f22b6987 [INFO Client 3952] Tile hash: 823583857
+2023/02/08 19:03:04 16008718 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 19:03:06 16011687 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:03:07 16012203 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесной лагерь.
+2023/02/08 19:03:08 16012859 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:03:08 16012890 374e0d22 [INFO Client 3952] [Item Filter] Preparing to download online filter EQQOoxhj
+2023/02/08 19:03:08 16012890 374e0cc3 [INFO Client 3952] [Item Filter] Hash for online filter EQQOoxhj is: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 19:03:08 16013125 374e0cc9 [INFO Client 3952] [Item Filter] Online item filter EQQOoxhj returned status: 200
+2023/02/08 19:03:08 16013125 374e0ce3 [DEBUG Client 3952] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/08 19:03:08 16013125 374e0e8e [DEBUG Client 3952] [Item Filter] X-HW: 1675875788.dop033.pa1.t,1675875788.cds219.pa1.shn,1675875788.dop033.pa1.t,1675875788.cds046.pa1.c
+2023/02/08 19:03:08 16013125 374df808 [INFO Client 3952] [Item Filter] Successfully saved online filter EQQOoxhj. Hash is now: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 19:03:08 16013156 788474c3 [INFO Client 3952] [Item Filter] Finished reloading online filter EQQOoxhj. Result: true. Hash: ffe1eb2afb66cfb6740cadbaf6f71edf. Type: Normal. Message: 
+2023/02/08 19:03:22 16026984 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:03:22 16027000 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:03:22 16027000 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 19:03:22 16027062 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 19:03:22 16027125 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 19:03:23 16027828 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 19:03:23 16027828 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 19:03:23 16028171 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:03:24 16028828 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 19:03:24 16029546 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:05:25 16150187 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:05:25 16150187 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:05:25 16150187 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.146:6112
+2023/02/08 19:05:25 16150250 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 19:05:25 16150312 1186a0e3 [DEBUG Client 3952] Generating level 12 area "1_1_11_1" with seed 1855387110
+2023/02/08 19:05:26 16151546 f22b6987 [INFO Client 3952] Tile hash: 1354346699
+2023/02/08 19:05:26 16151546 f22b6986 [INFO Client 3952] Doodad hash: 2335619282
+2023/02/08 19:05:27 16151906 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:05:27 16152562 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пещера гнева.
+2023/02/08 19:05:28 16153296 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:05:33 16158109 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:05:33 16158109 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:05:33 16158109 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 19:05:33 16158187 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 19:05:33 16158250 1186a0e3 [DEBUG Client 3952] Generating level 23 area "1_2_town" with seed 1
+2023/02/08 19:05:34 16158828 f22b6987 [INFO Client 3952] Tile hash: 823583857
+2023/02/08 19:05:34 16158828 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 19:05:34 16159125 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:05:35 16159687 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесной лагерь.
+2023/02/08 19:05:35 16160343 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:05:39 16164640 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:05:39 16164640 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:05:39 16164640 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.244:6112
+2023/02/08 19:05:40 16164703 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 19:05:40 16164781 1186a0e3 [DEBUG Client 3952] Generating level 15 area "1_2_3" with seed 3464424888
+2023/02/08 19:05:41 16165921 f22b6987 [INFO Client 3952] Tile hash: 2714730563
+2023/02/08 19:05:41 16165921 f22b6986 [INFO Client 3952] Doodad hash: 2540590951
+2023/02/08 19:05:41 16166546 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:05:42 16167250 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Перекрёсток.
+2023/02/08 19:05:43 16168156 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:06:00 16185093 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:06:00 16185093 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:06:00 16185093 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.244:6112
+2023/02/08 19:06:00 16185171 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 19:06:00 16185234 1186a0e3 [DEBUG Client 3952] Generating level 16 area "1_2_4" with seed 3903212645
+2023/02/08 19:06:01 16185921 f22b6987 [INFO Client 3952] Tile hash: 2548449271
+2023/02/08 19:06:01 16185921 f22b6986 [INFO Client 3952] Doodad hash: 835459590
+2023/02/08 19:06:01 16186562 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:06:02 16187218 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Разрушенный мост.
+2023/02/08 19:06:03 16187968 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:11:15 16499968 890d9d5f [INFO Client 3952] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/08 19:11:15 16500000 890d9cd8 [INFO Client 3952] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/08 19:11:20 16505312 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:11:20 16505312 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:11:20 16505312 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 19:11:20 16505359 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 19:11:20 16505421 1186a0e3 [DEBUG Client 3952] Generating level 23 area "1_2_town" with seed 1
+2023/02/08 19:11:21 16506312 f22b6987 [INFO Client 3952] Tile hash: 823583857
+2023/02/08 19:11:21 16506312 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 19:11:24 16508796 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:11:24 16509296 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесной лагерь.
+2023/02/08 19:11:24 16509296 cffb0734 [INFO Client 3952] #ErmLNLNLN: а, пон
+2023/02/08 19:11:25 16509968 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:11:25 16510000 374e0d22 [INFO Client 3952] [Item Filter] Preparing to download online filter EQQOoxhj
+2023/02/08 19:11:25 16510000 374e0cc3 [INFO Client 3952] [Item Filter] Hash for online filter EQQOoxhj is: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 19:11:25 16510234 374e0cc9 [INFO Client 3952] [Item Filter] Online item filter EQQOoxhj returned status: 200
+2023/02/08 19:11:25 16510234 374e0ce3 [DEBUG Client 3952] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/08 19:11:25 16510234 374e0e8e [DEBUG Client 3952] [Item Filter] X-HW: 1675876285.dop221.pa1.t,1675876285.cds247.pa1.shn,1675876285.dop221.pa1.t,1675876285.cds046.pa1.c
+2023/02/08 19:11:25 16510234 374df808 [INFO Client 3952] [Item Filter] Successfully saved online filter EQQOoxhj. Hash is now: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 19:11:25 16510265 788474c3 [INFO Client 3952] [Item Filter] Finished reloading online filter EQQOoxhj. Result: true. Hash: ffe1eb2afb66cfb6740cadbaf6f71edf. Type: Normal. Message: 
+2023/02/08 19:11:45 16530187 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 19:12:39 16584078 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 19:13:24 16629312 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:13:24 16629312 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:13:24 16629312 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 19:13:24 16629375 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 19:13:24 16629453 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 19:13:25 16630250 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 19:13:25 16630250 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 19:13:25 16630453 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:13:26 16631031 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 19:13:27 16631734 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:18:16 16921171 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:18:16 16921171 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:18:16 16921171 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 19:18:16 16921234 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 32ms
+2023/02/08 19:18:16 16921296 1186a0e3 [DEBUG Client 3952] Generating level 23 area "1_2_town" with seed 1
+2023/02/08 19:18:16 16921312 f22b6987 [INFO Client 3952] Tile hash: 823583857
+2023/02/08 19:18:16 16921312 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 19:18:17 16922093 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:18:18 16922781 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесной лагерь.
+2023/02/08 19:18:18 16923406 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:18:25 16929875 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:18:25 16929875 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:18:25 16929875 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.252:6112
+2023/02/08 19:18:25 16929937 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 19:18:25 16930015 1186a0e3 [DEBUG Client 3952] Generating level 15 area "1_2_7" with seed 1422486256
+2023/02/08 19:18:27 16931859 f22b6987 [INFO Client 3952] Tile hash: 941251351
+2023/02/08 19:18:27 16931859 f22b6986 [INFO Client 3952] Doodad hash: 1102012251
+2023/02/08 19:18:28 16932953 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:18:29 16933718 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пойма реки.
+2023/02/08 19:18:30 16934812 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:18:32 16936937 cffb0734 [INFO Client 3952] Эйнар, Мастер зверей: Готов, изгнанник? Настала пора охоты!
+2023/02/08 19:18:36 16941250 11871005 [DEBUG Client 3952] Guild member updated kros1244
+2023/02/08 19:18:36 16941250 1187104e [DEBUG Client 3952] Guild member removed alpen46
+2023/02/08 19:22:21 17165812 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 21 уровня
+2023/02/08 19:23:08 17213578 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:23:08 17213578 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:23:08 17213578 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.158:6112
+2023/02/08 19:23:08 17213640 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 19:23:09 17213718 1186a0e3 [DEBUG Client 3952] Generating level 17 area "1_2_9" with seed 1651840471
+2023/02/08 19:23:09 17214531 f22b6987 [INFO Client 3952] Tile hash: 2386148463
+2023/02/08 19:23:09 17214531 f22b6986 [INFO Client 3952] Doodad hash: 2083028503
+2023/02/08 19:23:10 17215109 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 181 members 
+2023/02/08 19:23:11 17215921 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Западный лес.
+2023/02/08 19:23:12 17216750 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:23:38 17242953 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: jewel_slot1964, name: Обычное гнездо для самоцвета
+2023/02/08 19:25:03 17328437 890d9d5f [INFO Client 3952] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/08 19:25:03 17328468 890d9cd8 [INFO Client 3952] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/08 19:25:08 17333593 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:25:08 17333625 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:25:08 17333625 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 19:25:09 17333687 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 19:25:09 17333750 1186a0e3 [DEBUG Client 3952] Generating level 23 area "1_2_town" with seed 1
+2023/02/08 19:25:09 17334562 f22b6987 [INFO Client 3952] Tile hash: 823583857
+2023/02/08 19:25:09 17334562 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 19:25:12 17336843 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 181 members 
+2023/02/08 19:25:12 17337359 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесной лагерь.
+2023/02/08 19:25:13 17338046 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:25:13 17338093 374e0d22 [INFO Client 3952] [Item Filter] Preparing to download online filter EQQOoxhj
+2023/02/08 19:25:13 17338093 374e0cc3 [INFO Client 3952] [Item Filter] Hash for online filter EQQOoxhj is: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 19:25:13 17338375 374e0cc9 [INFO Client 3952] [Item Filter] Online item filter EQQOoxhj returned status: 200
+2023/02/08 19:25:13 17338375 374e0ce3 [DEBUG Client 3952] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/08 19:25:13 17338375 374e0e8e [DEBUG Client 3952] [Item Filter] X-HW: 1675877113.dop034.pa1.t,1675877114.cds042.pa1.shn,1675877114.dop034.pa1.t,1675877114.cds046.pa1.c
+2023/02/08 19:25:13 17338375 374df808 [INFO Client 3952] [Item Filter] Successfully saved online filter EQQOoxhj. Hash is now: ffe1eb2afb66cfb6740cadbaf6f71edf
+2023/02/08 19:25:13 17338390 788474c3 [INFO Client 3952] [Item Filter] Finished reloading online filter EQQOoxhj. Result: true. Hash: ffe1eb2afb66cfb6740cadbaf6f71edf. Type: Normal. Message: 
+2023/02/08 19:25:28 17353406 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 19:26:24 17409078 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:26:24 17409078 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:26:24 17409078 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.236:6112
+2023/02/08 19:26:24 17409156 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 47ms
+2023/02/08 19:26:24 17409218 1186a0e3 [DEBUG Client 3952] Generating level 13 area "1_1_town" with seed 1
+2023/02/08 19:26:25 17409968 f22b6987 [INFO Client 3952] Tile hash: 3254420771
+2023/02/08 19:26:25 17409968 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 19:26:25 17410156 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 181 members 
+2023/02/08 19:26:26 17410765 cffb0734 [INFO Client 3952] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/08 19:26:26 17411500 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:26:53 17437781 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 19:27:22 17467390 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:27:22 17467390 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:27:22 17467390 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 19:27:22 17467453 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 19:27:22 17467531 1186a0e3 [DEBUG Client 3952] Generating level 23 area "1_2_town" with seed 1
+2023/02/08 19:27:22 17467531 f22b6987 [INFO Client 3952] Tile hash: 823583857
+2023/02/08 19:27:22 17467531 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 19:27:23 17468218 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 181 members 
+2023/02/08 19:27:24 17468828 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесной лагерь.
+2023/02/08 19:27:24 17469437 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:28:38 17543171 cffb0734 [INFO Client 3952] : Сделка отклонена.
+2023/02/08 19:28:50 17555546 11870fe0 [DEBUG Client 3952] Guild member added alpen46
+2023/02/08 19:28:53 17557812 11871005 [DEBUG Client 3952] Guild member updated alpen46
+2023/02/08 19:29:37 17602046 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:29:37 17602062 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:29:37 17602062 ca3a6a7f [INFO Client 3952] Connecting to instance server at 159.122.142.252:6112
+2023/02/08 19:29:37 17602125 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 19:29:37 17602187 1186a0e3 [DEBUG Client 3952] Generating level 15 area "1_2_7" with seed 1422486256
+2023/02/08 19:29:39 17603906 f22b6987 [INFO Client 3952] Tile hash: 941251351
+2023/02/08 19:29:39 17603906 f22b6986 [INFO Client 3952] Doodad hash: 1102012251
+2023/02/08 19:29:40 17604921 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:29:40 17605640 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пойма реки.
+2023/02/08 19:29:41 17606562 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:30:23 17648187 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:30:23 17648187 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:30:23 17648187 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.158:6112
+2023/02/08 19:30:23 17648250 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 19:30:23 17648328 1186a0e3 [DEBUG Client 3952] Generating level 19 area "1_2_12" with seed 2060479860
+2023/02/08 19:30:24 17649031 f22b6987 [INFO Client 3952] Tile hash: 1622475804
+2023/02/08 19:30:24 17649031 f22b6986 [INFO Client 3952] Doodad hash: 1316347694
+2023/02/08 19:30:24 17649453 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:30:25 17650234 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Топь.
+2023/02/08 19:30:26 17651515 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:31:40 17725484 cffb0734 [INFO Client 3952] &<RiPE> ПриспешницаКоли: Лектер - косякнул)
+2023/02/08 19:31:44 17729203 cffb0734 [INFO Client 3952] &<RiPE> ПриспешницаКоли: спасибо Айвар
+2023/02/08 19:35:20 17945578 cffb0734 [INFO Client 3952] : DeeSoloIIIXX (Дикарь) достигает 22 уровня
+2023/02/08 19:36:46 18031515 fb7abca5 [INFO Client 3952] Successfully allocated passive skill id: intelligence947, name: Интеллект
+2023/02/08 19:37:05 18050515 88a904ed [DEBUG Client 3952] Got Instance Details from login server
+2023/02/08 19:37:05 18050515 32759a9f [INFO Client 3952] [SHADER] Delay: OFF
+2023/02/08 19:37:05 18050531 ca3a6a7f [INFO Client 3952] Connecting to instance server at 169.51.201.180:6112
+2023/02/08 19:37:05 18050593 ca3a4dbd [DEBUG Client 3952] Connect time to instance server was 31ms
+2023/02/08 19:37:05 18050656 1186a0e3 [DEBUG Client 3952] Generating level 23 area "1_2_town" with seed 1
+2023/02/08 19:37:06 18051250 f22b6987 [INFO Client 3952] Tile hash: 823583857
+2023/02/08 19:37:06 18051250 f22b6986 [INFO Client 3952] Doodad hash: 0
+2023/02/08 19:37:06 18051531 11870f60 [DEBUG Client 3952] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 182 members 
+2023/02/08 19:37:07 18052125 cffb0734 [INFO Client 3952] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лесной лагерь.
+2023/02/08 19:37:08 18052828 32759a9f [INFO Client 3952] [SHADER] Delay: ON
+2023/02/08 19:37:51 18096578 cffb0734 [INFO Client 3952] : Сделка совершена.
+2023/02/08 19:38:44 18148984 cffb0734 [INFO Client 3952] : Сделка совершена.
