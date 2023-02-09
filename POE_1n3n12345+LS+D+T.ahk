@@ -101,12 +101,12 @@ $A::
     Send, {D}
 return
 
-;; Go hideout on F5
-;$F5::
-;  Send, {Enter}
-;  Send, /hideout
-;  Send, {Enter}
-;return
+; Go hideout on F5
+$F5::
+  Send, {Enter}
+  Send, /hideout
+  Send, {Enter}
+return
 
 ; Shift + action
 ; Left or right mouse is down when shift pressed
