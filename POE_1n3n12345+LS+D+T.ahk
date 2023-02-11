@@ -86,10 +86,26 @@ $^A::
   Reload ; to refresh variables
 return
 
+; Speed up!
+$Capslock::5
+
+; Jump!
 $Space::
   BreakLoop := 1
   Send, {MButton}
   Send, {Space}
+return
+
+; Jump!!! Shift + action
+; Left or right mouse is down when shift pressed
+$LShift::
+  ; + Clicked
+  ; Blink
+  GetKeyState, Lst, LButton
+  GetKeyState, Rst, RButton
+  if (Lst = "D" or Rst = "D") {
+    Send, {R}
+  }
 return
 
 $A::
@@ -106,18 +122,6 @@ $F5::
   Send, {Enter}
   Send, /hideout
   Send, {Enter}
-return
-
-; Shift + action
-; Left or right mouse is down when shift pressed
-$LShift::
-  ; + Clicked
-  ; Blink
-  GetKeyState, Lst, LButton
-  GetKeyState, Rst, RButton
-  if (Lst = "D" or Rst = "D") {
-    Send, {R}
-  }
 return
 
 ;; Reactivate auras
