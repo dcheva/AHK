@@ -89,11 +89,12 @@ return
 ; Speed up!
 $Capslock::5
 
-; Jump!
+; Jump! Than T
 $Space::
   BreakLoop := 1
   Send, {Space}
   Send, {MButton}
+  Sleep, 200
   Send, {T}
 return
 
