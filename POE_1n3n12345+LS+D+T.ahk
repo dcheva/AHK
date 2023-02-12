@@ -94,7 +94,6 @@ $Space::
   BreakLoop := 1
   Send, {Space}
   Send, {MButton}
-  Sleep, 100
   Send, {T}
 return
 
