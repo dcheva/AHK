@@ -92,8 +92,10 @@ $Capslock::5
 ; Jump!
 $Space::
   BreakLoop := 1
-  Send, {MButton}
   Send, {Space}
+  Send, {MButton}
+  Sleep, 100
+  Send, {T}
 return
 
 ; Jump!!! Shift + action
