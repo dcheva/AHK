@@ -25170,3 +25170,172 @@ flags: 129
 2023/02/15 00:00:01 6450578 b51d610e [INFO Client 2484] [RENDER] Disable Async: 1 frames
 2023/02/15 00:00:01 6450593 9d4eec8a [DEBUG Client 2484] [WINDOW] TrigggerDeviceLost
 2023/02/15 00:00:01 6450640 9d4eeba7 [DEBUG Client 2484] [WINDOW] TrigggerDeviceReset
+2023/02/15 00:01:03 6512375 b51d4f61 [DEBUG Client 2484] [RENDER] SetRendererSettings
+2023/02/15 00:01:03 6512375 b51d6447 [DEBUG Client 2484] [RENDER] ResizeWindow
+2023/02/15 00:01:03 6512421 b51d614c [DEBUG Client 2484] [RENDER] RestartSwapChain
+2023/02/15 00:01:03 6512421 9e6a0b0a [INFO Client 2484] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/15 00:01:03 6512640 9e6a1d2a [INFO Client 2484] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/15 00:01:03 6512640 9e6a1363 [INFO Client 2484] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/15 00:01:03 6512640 9e6a0b0a [INFO Client 2484] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/15 00:01:03 6512656 9e6a1d2a [INFO Client 2484] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/15 00:01:03 6512671 fafff8cf [DEBUG Client 2484] CreateSwapChain: SetFullScreenState 1
+2023/02/15 00:01:03 6512671 9d4eec8a [DEBUG Client 2484] [WINDOW] TrigggerDeviceLost
+2023/02/15 00:01:04 6512687 9d4eeba7 [DEBUG Client 2484] [WINDOW] TrigggerDeviceReset
+2023/02/15 00:01:06 6515406 3275a75e [INFO Client 2484] [SHADER] Disable Async: 1 frames
+2023/02/15 00:01:06 6515406 b51d610e [INFO Client 2484] [RENDER] Disable Async: 1 frames
+2023/02/15 00:01:06 6515453 b51d4f61 [DEBUG Client 2484] [RENDER] SetRendererSettings
+2023/02/15 00:01:06 6515453 b51d6447 [DEBUG Client 2484] [RENDER] ResizeWindow
+2023/02/15 00:01:06 6515468 9d4eec8a [DEBUG Client 2484] [WINDOW] TrigggerDeviceLost
+2023/02/15 00:01:06 6515531 9d4eeba7 [DEBUG Client 2484] [WINDOW] TrigggerDeviceReset
+2023/02/15 00:23:54 ***** LOG FILE OPENING *****
+2023/02/15 00:23:54 1357515 f95442e3 [INFO Client 1136] [STARTUP] Job Queues
+2023/02/15 00:23:54 1357531 9e6a0b0a [INFO Client 1136] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/15 00:23:54 1357656 9e6a1d2a [INFO Client 1136] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/15 00:23:54 1357656 9e6a1363 [INFO Client 1136] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/15 00:23:54 1357656 9e6a0b0a [INFO Client 1136] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/15 00:23:54 1357656 9e6a1d2a [INFO Client 1136] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/15 00:23:54 1357656 84a7d27d [INFO Client 1136] [ENGINE] Init
+2023/02/15 00:23:54 1357656 55713145 [INFO Client 1136] [JOB] HIGH: 2
+2023/02/15 00:23:54 1357656 55713145 [INFO Client 1136] [JOB] MEDIUM: 2
+2023/02/15 00:23:54 1357656 55713145 [INFO Client 1136] [JOB] LOW: 2
+2023/02/15 00:23:54 1357656 55713145 [INFO Client 1136] [JOB] IDLE: 1
+2023/02/15 00:23:54 1357656 7bb548f [INFO Client 1136] [BUNDLE2] Init
+2023/02/15 00:23:54 1357671 7bb36c4 [INFO Client 1136] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/15 00:23:55 1358000 7bb61e6 [INFO Client 1136] [BUNDLE2] File cache size: 1024
+2023/02/15 00:23:55 1358015 b51d61ab [INFO Client 1136] [RENDER] Async: ON
+2023/02/15 00:23:55 1358015 b51d60c8 [INFO Client 1136] [RENDER] Warmup: ON
+2023/02/15 00:23:55 1358015 b51d60ce [INFO Client 1136] [RENDER] Skip: ON
+2023/02/15 00:23:55 1358015 b51d60eb [INFO Client 1136] [RENDER] Throttling: ON
+2023/02/15 00:23:55 1358015 32759a7a [INFO Client 1136] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/15 00:23:55 1358015 32759a70 [INFO Client 1136] [SHADER] Async: ON
+2023/02/15 00:23:55 1358015 32759a9f [INFO Client 1136] [SHADER] Delay: OFF
+2023/02/15 00:23:55 1358015 32759aba [INFO Client 1136] [SHADER] Limit: ON
+2023/02/15 00:23:55 1358015 32759abc [INFO Client 1136] [SHADER] Warmup: ON
+2023/02/15 00:23:55 1358015 327599d7 [INFO Client 1136] [SHADER] Parallel: OFF
+2023/02/15 00:23:55 1358015 84a7e376 [INFO Client 1136] [ENGINE] Running Engine version 1.7.0
+2023/02/15 00:23:55 1358031 47bbd15b [INFO Client 1136] [SOUND] Buffer size = 64.0 MB
+2023/02/15 00:23:55 1358078 9b0d205 [INFO Client 1136] [VIDEO] Enable: ON
+2023/02/15 00:23:55 1358109 84a7d2d8 [INFO Client 1136] [ENGINE] Ready
+2023/02/15 00:23:55 1358171 951bc0b0 [INFO Client 1136] [STARTUP] Bundle Startup Start
+2023/02/15 00:23:55 1358171 951bc057 [INFO Client 1136] [STARTUP] Bundle Startup in 6.4e-05 seconds
+2023/02/15 00:23:55 1358171 951bc0b0 [INFO Client 1136] [STARTUP] Game Start
+2023/02/15 00:23:55 1358531 ca86fd3f [DEBUG Client 1136] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/15 00:23:56 1358843 951bc057 [INFO Client 1136] [STARTUP] Game in 0.676401 seconds
+2023/02/15 00:23:56 1358843 951bc0b0 [INFO Client 1136] [STARTUP] Window Start
+2023/02/15 00:23:56 1358843 9e6a0b0a [INFO Client 1136] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/15 00:23:56 1358890 9e6a1d2a [INFO Client 1136] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/15 00:23:56 1358890 9e6a1363 [INFO Client 1136] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/15 00:23:56 1358890 9e6a0b0a [INFO Client 1136] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/15 00:23:56 1358890 9e6a1d2a [INFO Client 1136] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/15 00:23:56 1358906 951bc057 [INFO Client 1136] [STARTUP] Window in 0.066766 seconds
+2023/02/15 00:23:56 1358921 413b61ff [DEBUG Client 1136] [GamepadManager] Initialising
+2023/02/15 00:23:56 1358921 951bc0b0 [INFO Client 1136] [STARTUP] Device Start
+2023/02/15 00:23:56 1358921 b51d6589 [INFO Client 1136] [RENDER] StartDevice: DirectX11
+2023/02/15 00:23:56 1359078 71b2ea0 [DEBUG Client 1136] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/15 00:23:56 1359156 fafff8cf [DEBUG Client 1136] CreateSwapChain: SetFullScreenState 1
+2023/02/15 00:23:56 1359156 29d4ce01 [INFO Client 1136] [D3D11] Runtime version = 11.1
+2023/02/15 00:23:56 1359156 29d4ce00 [INFO Client 1136] [D3D11] Feature Level = 11.1
+2023/02/15 00:23:56 1359156 29d4ce03 [INFO Client 1136] [D3D11] Driver Command Lists = NO
+2023/02/15 00:23:56 1359156 29d4ce02 [INFO Client 1136] [D3D11] Driver Concurrent Creates = YES
+2023/02/15 00:23:56 1359156 29d4ce05 [INFO Client 1136] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/15 00:23:56 1359281 9d4eeb40 [DEBUG Client 1136] [WINDOW] TrigggerDeviceCreate
+2023/02/15 00:23:56 1359484 9d4eeba7 [DEBUG Client 1136] [WINDOW] TrigggerDeviceReset
+2023/02/15 00:23:56 1359515 951bc057 [INFO Client 1136] [STARTUP] Device in 0.582662 seconds
+2023/02/15 00:23:56 1359515 951bc0b0 [INFO Client 1136] [STARTUP] Tencent Start
+2023/02/15 00:23:56 1359515 951bc057 [INFO Client 1136] [STARTUP] Tencent in 2.4e-05 seconds
+2023/02/15 00:23:56 1359515 951bc0b0 [INFO Client 1136] [STARTUP] Loading Start
+2023/02/15 00:23:56 1359562 951bc057 [INFO Client 1136] [STARTUP] Loading in 0.058059 seconds
+2023/02/15 00:23:56 1359562 951bc0b0 [INFO Client 1136] [STARTUP] DebugGUI Start
+2023/02/15 00:23:56 1359562 951bc057 [INFO Client 1136] [STARTUP] DebugGUI in 2.6e-05 seconds
+2023/02/15 00:23:56 1359562 951bc0b0 [INFO Client 1136] [STARTUP] Bundle Tiny Start
+2023/02/15 00:23:56 1359562 951bc0b0 [INFO Client 1136] [STARTUP] Bundle Login Start
+2023/02/15 00:23:56 1359562 951bc057 [INFO Client 1136] [STARTUP] Bundle Login in 2.7e-05 seconds
+2023/02/15 00:23:56 1359562 951bc0b0 [INFO Client 1136] [STARTUP] Registration Start
+2023/02/15 00:23:56 1359562 951bc057 [INFO Client 1136] [STARTUP] Bundle Tiny in 7.9e-05 seconds
+2023/02/15 00:23:56 1359609 b51d4f61 [DEBUG Client 1136] [RENDER] SetRendererSettings
+2023/02/15 00:23:56 1359609 b51d6447 [DEBUG Client 1136] [RENDER] ResizeWindow
+2023/02/15 00:23:56 1359609 b51d614c [DEBUG Client 1136] [RENDER] RestartSwapChain
+2023/02/15 00:23:56 1359609 9e6a0b0a [INFO Client 1136] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/15 00:23:57 1359781 9e6a1d2a [INFO Client 1136] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/15 00:23:57 1359781 9e6a1363 [INFO Client 1136] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/15 00:23:57 1359781 9e6a0b0a [INFO Client 1136] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/15 00:23:57 1359781 9e6a1d2a [INFO Client 1136] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/15 00:23:57 1359796 fafff8cf [DEBUG Client 1136] CreateSwapChain: SetFullScreenState 0
+2023/02/15 00:23:57 1359796 9d4eec8a [DEBUG Client 1136] [WINDOW] TrigggerDeviceLost
+2023/02/15 00:23:57 1359796 9d4eeba7 [DEBUG Client 1136] [WINDOW] TrigggerDeviceReset
+2023/02/15 00:23:57 1359890 3275a75e [INFO Client 1136] [SHADER] Disable Async: 1 frames
+2023/02/15 00:23:57 1359890 b51d610e [INFO Client 1136] [RENDER] Disable Async: 1 frames
+2023/02/15 00:23:57 1359906 951bc0b0 [INFO Client 1136] [STARTUP] Audio Start
+2023/02/15 00:23:57 1359906 47bbee1b [INFO Client 1136] [SOUND] Channel count = 64 (asked for 64)
+2023/02/15 00:23:57 1359906 47bbee18 [INFO Client 1136] [SOUND] Source count = 512
+2023/02/15 00:23:57 1360140 47bbea59 [INFO Client 1136] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/15 00:23:57 1360140 951bc057 [INFO Client 1136] [STARTUP] Audio in 0.235645 seconds
+2023/02/15 00:23:57 1360328 951bc057 [INFO Client 1136] [STARTUP] Registration in 0.766336 seconds
+2023/02/15 00:23:58 1361046 509417f7 [WARN Client 1136] tool_settings.json was not found. Resetting to default settings.
+2023/02/15 00:24:15 1377812 b51d4f61 [DEBUG Client 1136] [RENDER] SetRendererSettings
+2023/02/15 00:24:15 1377812 b51d6447 [DEBUG Client 1136] [RENDER] ResizeWindow
+2023/02/15 00:24:15 1377812 9d4eec8a [DEBUG Client 1136] [WINDOW] TrigggerDeviceLost
+2023/02/15 00:24:15 1377812 9d4eeba7 [DEBUG Client 1136] [WINDOW] TrigggerDeviceReset
+2023/02/15 00:24:15 1377859 b51d614c [DEBUG Client 1136] [RENDER] RestartSwapChain
+2023/02/15 00:24:15 1377859 9e6a0b0a [INFO Client 1136] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/15 00:24:15 1377890 9e6a1d2a [INFO Client 1136] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/15 00:24:15 1377890 9e6a1363 [INFO Client 1136] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/15 00:24:15 1377890 9e6a0b0a [INFO Client 1136] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/15 00:24:15 1377890 9e6a1d2a [INFO Client 1136] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/15 00:24:15 1377890 fafff8cf [DEBUG Client 1136] CreateSwapChain: SetFullScreenState 0
+2023/02/15 00:24:15 1377890 9d4eec8a [DEBUG Client 1136] [WINDOW] TrigggerDeviceLost
+2023/02/15 00:24:15 1377906 9d4eeba7 [DEBUG Client 1136] [WINDOW] TrigggerDeviceReset
+2023/02/15 00:24:15 1377921 3275a75e [INFO Client 1136] [SHADER] Disable Async: 1 frames
+2023/02/15 00:24:15 1377921 b51d610e [INFO Client 1136] [RENDER] Disable Async: 1 frames
+2023/02/15 00:24:15 1377921 9d4eec8a [DEBUG Client 1136] [WINDOW] TrigggerDeviceLost
+2023/02/15 00:24:15 1377921 9d4eeba7 [DEBUG Client 1136] [WINDOW] TrigggerDeviceReset
+2023/02/15 00:24:21 1384031 890d9d5f [INFO Client 1136] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/15 00:24:21 1384062 890d9cd8 [INFO Client 1136] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/15 00:24:25 1387765 88a904ed [DEBUG Client 1136] Got Instance Details from login server
+2023/02/15 00:24:25 1387796 32759a9f [INFO Client 1136] [SHADER] Delay: OFF
+2023/02/15 00:24:25 1387796 ca3a6a7f [INFO Client 1136] Connecting to instance server at 159.122.142.237:6112
+2023/02/15 00:24:25 1387843 ca3a4dbd [DEBUG Client 1136] Connect time to instance server was 47ms
+2023/02/15 00:24:25 1387937 1186a0e3 [DEBUG Client 1136] Generating level 60 area "2_8_town" with seed 1
+2023/02/15 00:24:29 1391812 f22b6987 [INFO Client 1136] Tile hash: 2525960426
+2023/02/15 00:24:29 1391812 f22b6986 [INFO Client 1136] Doodad hash: 0
+2023/02/15 00:24:31 1394437 11870f60 [DEBUG Client 1136] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 186 members 
+2023/02/15 00:24:32 1395625 cffb0734 [INFO Client 1136] &: ОБЪЯВЛЕНИЕ ГИЛЬДИИ: В гостяк у CARDIFF 
+2023/02/15 00:24:33 1396125 cffb0734 [INFO Client 1136] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Лагерь Сарна.
+2023/02/15 00:24:33 1396125 cffb0734 [INFO Client 1136] #Исчадие_МКАДА: какого?
+2023/02/15 00:24:34 1397000 32759a9f [INFO Client 1136] [SHADER] Delay: ON
+2023/02/15 00:24:34 1397078 374e0d22 [INFO Client 1136] [Item Filter] Preparing to download online filter EQQOoxhj
+2023/02/15 00:24:34 1397078 374e0cc3 [INFO Client 1136] [Item Filter] Hash for online filter EQQOoxhj is: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd
+2023/02/15 00:24:34 1397390 374e0cc9 [INFO Client 1136] [Item Filter] Online item filter EQQOoxhj returned status: 200
+2023/02/15 00:24:34 1397390 374e0ce3 [DEBUG Client 1136] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/15 00:24:34 1397390 374e0e8e [DEBUG Client 1136] [Item Filter] X-HW: 1676413474.dop038.pa1.t,1676413474.cds216.pa1.shn,1676413474.dop038.pa1.t,1676413474.cds212.pa1.c
+2023/02/15 00:24:34 1397406 374df808 [INFO Client 1136] [Item Filter] Successfully saved online filter EQQOoxhj. Hash is now: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd
+2023/02/15 00:24:34 1397437 788474c3 [INFO Client 1136] [Item Filter] Finished reloading online filter EQQOoxhj. Result: true. Hash: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd. Type: Normal. Message: 
+2023/02/15 00:24:34 1397437 2a14910e [INFO Client 1136] PrecalcBaseTypeHashMap
+2023/02/15 00:24:34 1397562 2a149100 [INFO Client 1136] PrecalcModNameHashMap
+2023/02/15 00:24:37 1399765 2a149169 [INFO Client 1136] PrecalcItemClassMap
+2023/02/15 00:24:37 1399765 2a14916b [INFO Client 1136] PrecalcSoundEffects
+2023/02/15 00:24:37 1399765 2a14916d [INFO Client 1136] PrecalcDropEffects
+2023/02/15 00:24:37 1399765 2a14916f [INFO Client 1136] PrecalcNonEnchantModHashes
+2023/02/15 00:24:37 1399765 2a149161 [INFO Client 1136] PrecalcRuleNameToTypeMap
+2023/02/15 00:24:37 1399765 2a148c01 [INFO Client 1136] PrecalcCJESPNIndexMap
+2023/02/15 00:24:37 1399781 2a148c03 [INFO Client 1136] PrecalcGemAlternateQualityMap
+2023/02/15 00:26:36 1519578 88a904ed [DEBUG Client 1136] Got Instance Details from login server
+2023/02/15 00:26:36 1519578 32759a9f [INFO Client 1136] [SHADER] Delay: OFF
+2023/02/15 00:26:36 1519578 ca3a6a7f [INFO Client 1136] Connecting to instance server at 159.122.142.244:6112
+2023/02/15 00:26:36 1519640 ca3a4dbd [DEBUG Client 1136] Connect time to instance server was 47ms
+2023/02/15 00:26:37 1519718 1186a0e3 [DEBUG Client 1136] Generating level 56 area "2_8_2_2" with seed 4083071305
+2023/02/15 00:26:38 1521562 f22b6987 [INFO Client 1136] Tile hash: 172190184
+2023/02/15 00:26:38 1521562 f22b6986 [INFO Client 1136] Doodad hash: 4211154262
+2023/02/15 00:26:39 1522546 11870f60 [DEBUG Client 1136] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 186 members 
+2023/02/15 00:26:40 1523515 cffb0734 [INFO Client 1136] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Сточная яма Доэдре.
+2023/02/15 00:26:42 1524765 32759a9f [INFO Client 1136] [SHADER] Delay: ON
+2023/02/15 00:27:40 1583531 88a904ed [DEBUG Client 1136] Got Instance Details from login server
+2023/02/15 00:27:40 1583531 32759a9f [INFO Client 1136] [SHADER] Delay: OFF
+2023/02/15 00:27:40 1583531 ca3a6a7f [INFO Client 1136] Connecting to instance server at 169.51.201.179:6112
+2023/02/15 00:27:40 1583593 ca3a4dbd [DEBUG Client 1136] Connect time to instance server was 47ms
+2023/02/15 00:27:40 1583671 1186a0e3 [DEBUG Client 1136] Generating level 57 area "2_8_8" with seed 3946495258
+2023/02/15 00:27:43 1586109 f22b6987 [INFO Client 1136] Tile hash: 4184501418
+2023/02/15 00:27:43 1586109 f22b6986 [INFO Client 1136] Doodad hash: 1191443120
+2023/02/15 00:27:44 1587218 11870f60 [DEBUG Client 1136] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 186 members 
+2023/02/15 00:27:45 1588125 cffb0734 [INFO Client 1136] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пристань.
+2023/02/15 00:27:46 1589562 32759a9f [INFO Client 1136] [SHADER] Delay: ON
