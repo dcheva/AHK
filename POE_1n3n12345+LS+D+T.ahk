@@ -28,6 +28,9 @@ $^+W::
 return
 ;-----Let's play!-----
 
+;; Emergency exit
+;$^F1::Process,Close,PathOfExileSteam.exe
+
 ; Functions
 clkToKill()
 {

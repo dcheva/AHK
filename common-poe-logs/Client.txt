@@ -26063,3 +26063,923 @@ flags: 129
 2023/02/16 00:05:01 84791828 11870f60 [DEBUG Client 7476] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
 2023/02/16 00:05:02 84792781 cffb0734 [INFO Client 7476] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Осквернённая обитель.
 2023/02/16 00:05:03 84794031 32759a9f [INFO Client 7476] [SHADER] Delay: ON
+2023/02/16 14:16:40 ***** LOG FILE OPENING *****
+2023/02/16 14:16:40 287046 f95442e3 [INFO Client 9592] [STARTUP] Job Queues
+2023/02/16 14:16:40 287078 9e6a0b0a [INFO Client 9592] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:16:40 287203 9e6a1d2a [INFO Client 9592] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:16:40 287203 9e6a1363 [INFO Client 9592] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:16:40 287203 9e6a0b0a [INFO Client 9592] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:16:40 287218 9e6a1d2a [INFO Client 9592] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:16:40 287218 84a7d27d [INFO Client 9592] [ENGINE] Init
+2023/02/16 14:16:40 287218 55713145 [INFO Client 9592] [JOB] HIGH: 2
+2023/02/16 14:16:40 287218 55713145 [INFO Client 9592] [JOB] MEDIUM: 2
+2023/02/16 14:16:40 287218 55713145 [INFO Client 9592] [JOB] LOW: 2
+2023/02/16 14:16:40 287218 55713145 [INFO Client 9592] [JOB] IDLE: 1
+2023/02/16 14:16:40 287218 7bb548f [INFO Client 9592] [BUNDLE2] Init
+2023/02/16 14:16:40 287218 7bb36c4 [INFO Client 9592] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/16 14:16:40 287515 7bb61e6 [INFO Client 9592] [BUNDLE2] File cache size: 1024
+2023/02/16 14:16:40 287531 b51d61ab [INFO Client 9592] [RENDER] Async: ON
+2023/02/16 14:16:40 287531 b51d60c8 [INFO Client 9592] [RENDER] Warmup: ON
+2023/02/16 14:16:40 287531 b51d60ce [INFO Client 9592] [RENDER] Skip: ON
+2023/02/16 14:16:40 287531 b51d60eb [INFO Client 9592] [RENDER] Throttling: ON
+2023/02/16 14:16:40 287531 32759a7a [INFO Client 9592] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/16 14:16:40 287531 32759a70 [INFO Client 9592] [SHADER] Async: ON
+2023/02/16 14:16:40 287531 32759a9f [INFO Client 9592] [SHADER] Delay: OFF
+2023/02/16 14:16:40 287531 32759aba [INFO Client 9592] [SHADER] Limit: ON
+2023/02/16 14:16:40 287531 32759abc [INFO Client 9592] [SHADER] Warmup: ON
+2023/02/16 14:16:40 287531 327599d7 [INFO Client 9592] [SHADER] Parallel: OFF
+2023/02/16 14:16:40 287531 84a7e376 [INFO Client 9592] [ENGINE] Running Engine version 1.7.0
+2023/02/16 14:16:40 287546 47bbd15b [INFO Client 9592] [SOUND] Buffer size = 64.0 MB
+2023/02/16 14:16:40 287593 9b0d205 [INFO Client 9592] [VIDEO] Enable: ON
+2023/02/16 14:16:40 287625 84a7d2d8 [INFO Client 9592] [ENGINE] Ready
+2023/02/16 14:16:40 287671 951bc0b0 [INFO Client 9592] [STARTUP] Bundle Startup Start
+2023/02/16 14:16:40 287671 951bc057 [INFO Client 9592] [STARTUP] Bundle Startup in 6.2e-05 seconds
+2023/02/16 14:16:40 287671 951bc0b0 [INFO Client 9592] [STARTUP] Game Start
+2023/02/16 14:16:41 287921 ca86fd3f [DEBUG Client 9592] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/16 14:16:41 288265 951bc057 [INFO Client 9592] [STARTUP] Game in 0.580524 seconds
+2023/02/16 14:16:41 288265 951bc0b0 [INFO Client 9592] [STARTUP] Window Start
+2023/02/16 14:16:41 288265 9e6a0b0a [INFO Client 9592] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:16:41 288296 9e6a1d2a [INFO Client 9592] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:16:41 288296 9e6a1363 [INFO Client 9592] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:16:41 288296 9e6a0b0a [INFO Client 9592] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:16:41 288312 9e6a1d2a [INFO Client 9592] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:16:41 288328 951bc057 [INFO Client 9592] [STARTUP] Window in 0.071982 seconds
+2023/02/16 14:16:41 288343 413b61ff [DEBUG Client 9592] [GamepadManager] Initialising
+2023/02/16 14:16:41 288343 951bc0b0 [INFO Client 9592] [STARTUP] Device Start
+2023/02/16 14:16:41 288343 b51d6589 [INFO Client 9592] [RENDER] StartDevice: DirectX11
+2023/02/16 14:16:41 288562 71b2ea0 [DEBUG Client 9592] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/16 14:16:42 288687 fafff8cf [DEBUG Client 9592] CreateSwapChain: SetFullScreenState 0
+2023/02/16 14:16:42 288687 29d4ce01 [INFO Client 9592] [D3D11] Runtime version = 11.1
+2023/02/16 14:16:42 288687 29d4ce00 [INFO Client 9592] [D3D11] Feature Level = 11.1
+2023/02/16 14:16:42 288687 29d4ce03 [INFO Client 9592] [D3D11] Driver Command Lists = NO
+2023/02/16 14:16:42 288687 29d4ce02 [INFO Client 9592] [D3D11] Driver Concurrent Creates = YES
+2023/02/16 14:16:42 288687 29d4ce05 [INFO Client 9592] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/16 14:16:42 288859 9d4eeb40 [DEBUG Client 9592] [WINDOW] TrigggerDeviceCreate
+2023/02/16 14:16:42 289312 9d4eeba7 [DEBUG Client 9592] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:16:42 289437 9d4eec8a [DEBUG Client 9592] [WINDOW] TrigggerDeviceLost
+2023/02/16 14:16:42 289453 9d4eeba7 [DEBUG Client 9592] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:16:42 289546 951bc057 [INFO Client 9592] [STARTUP] Device in 1.19489 seconds
+2023/02/16 14:16:42 289546 951bc0b0 [INFO Client 9592] [STARTUP] Tencent Start
+2023/02/16 14:16:42 289546 951bc057 [INFO Client 9592] [STARTUP] Tencent in 3.7e-05 seconds
+2023/02/16 14:16:42 289546 951bc0b0 [INFO Client 9592] [STARTUP] Loading Start
+2023/02/16 14:16:42 289609 951bc057 [INFO Client 9592] [STARTUP] Loading in 0.066188 seconds
+2023/02/16 14:16:42 289609 951bc0b0 [INFO Client 9592] [STARTUP] DebugGUI Start
+2023/02/16 14:16:42 289609 951bc057 [INFO Client 9592] [STARTUP] DebugGUI in 3.1e-05 seconds
+2023/02/16 14:16:42 289609 951bc0b0 [INFO Client 9592] [STARTUP] Bundle Tiny Start
+2023/02/16 14:16:42 289609 951bc0b0 [INFO Client 9592] [STARTUP] Bundle Login Start
+2023/02/16 14:16:42 289609 951bc057 [INFO Client 9592] [STARTUP] Bundle Login in 4.8e-05 seconds
+2023/02/16 14:16:42 289609 951bc0b0 [INFO Client 9592] [STARTUP] Registration Start
+2023/02/16 14:16:42 289609 951bc057 [INFO Client 9592] [STARTUP] Bundle Tiny in 0.000122 seconds
+2023/02/16 14:16:42 289609 951bc0b0 [INFO Client 9592] [STARTUP] Audio Start
+2023/02/16 14:16:42 289609 47bbee1b [INFO Client 9592] [SOUND] Channel count = 64 (asked for 64)
+2023/02/16 14:16:42 289609 47bbee18 [INFO Client 9592] [SOUND] Source count = 512
+2023/02/16 14:16:43 290062 47bbea59 [INFO Client 9592] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/16 14:16:43 290062 951bc057 [INFO Client 9592] [STARTUP] Audio in 0.444577 seconds
+2023/02/16 14:16:43 290281 951bc057 [INFO Client 9592] [STARTUP] Registration in 0.671937 seconds
+2023/02/16 14:16:44 290968 509417f7 [WARN Client 9592] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:25:28 ***** LOG FILE OPENING *****
+2023/02/16 14:25:28 815453 340884db [DEBUG Client 9572] [RENDER] StopDevice
+2023/02/16 14:25:28 815453 84a7e6f1 [INFO Client 9572] [ENGINE] Clear
+2023/02/16 14:25:28 815453 7bb5422 [INFO Client 9572] [BUNDLE2] Deinit
+2023/02/16 14:25:29 ***** LOG FILE OPENING *****
+2023/02/16 14:25:29 816421 f95442e3 [INFO Client 1236] [STARTUP] Job Queues
+2023/02/16 14:25:29 816421 9e6a0b0a [INFO Client 1236] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:25:29 816437 509417f7 [WARN Client 9572] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:25:29 816437 84a7e691 [INFO Client 9572] [JOB] Clear
+2023/02/16 14:25:29 816437 84a7e7bf [INFO Client 9572] [ANIMATION] Clear
+2023/02/16 14:25:29 816437 84a7e7be [INFO Client 9572] [PHYSICS] Clear
+2023/02/16 14:25:29 816437 84a7e7bd [INFO Client 9572] [SHADER] Clear
+2023/02/16 14:25:29 816437 84a7e7bc [INFO Client 9572] [ENTITY] Clear
+2023/02/16 14:25:29 816437 84a7e7bb [INFO Client 9572] [SOUND] Clear
+2023/02/16 14:25:29 816437 84a7e7ba [INFO Client 9572] [VIDEO] Clear
+2023/02/16 14:25:29 816437 84a7e7b9 [INFO Client 9572] [SCENE] Clear
+2023/02/16 14:25:29 816437 84a7e7b8 [INFO Client 9572] [GRAPH] Clear
+2023/02/16 14:25:29 816437 84a7e7b7 [INFO Client 9572] [TELEMETRY] Clear
+2023/02/16 14:25:29 816437 84a7e7b6 [INFO Client 9572] [RESOURCE] GarbageCollect
+2023/02/16 14:25:29 816437 84a7e75e [INFO Client 9572] [RESOURCE] Clear
+2023/02/16 14:25:29 816437 84a7e75b [INFO Client 9572] [RENDER] Clear
+2023/02/16 14:25:29 816437 84a7e758 [INFO Client 9572] [ENGINE] Done
+2023/02/16 14:25:29 816468 9e6a1d2a [INFO Client 1236] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:25:29 816468 9e6a1363 [INFO Client 1236] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:25:29 816468 9e6a0b0a [INFO Client 1236] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:25:29 816468 9e6a1d2a [INFO Client 1236] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:25:29 816468 84a7d27d [INFO Client 1236] [ENGINE] Init
+2023/02/16 14:25:29 816468 55713145 [INFO Client 1236] [JOB] HIGH: 2
+2023/02/16 14:25:29 816468 55713145 [INFO Client 1236] [JOB] MEDIUM: 2
+2023/02/16 14:25:29 816468 55713145 [INFO Client 1236] [JOB] LOW: 2
+2023/02/16 14:25:29 816468 55713145 [INFO Client 1236] [JOB] IDLE: 1
+2023/02/16 14:25:29 816468 7bb548f [INFO Client 1236] [BUNDLE2] Init
+2023/02/16 14:25:29 816468 7bb36c4 [INFO Client 1236] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/16 14:25:29 816671 7bb61e6 [INFO Client 1236] [BUNDLE2] File cache size: 1024
+2023/02/16 14:25:29 816671 b51d61ab [INFO Client 1236] [RENDER] Async: ON
+2023/02/16 14:25:29 816671 b51d60c8 [INFO Client 1236] [RENDER] Warmup: ON
+2023/02/16 14:25:29 816671 b51d60ce [INFO Client 1236] [RENDER] Skip: ON
+2023/02/16 14:25:29 816671 b51d60eb [INFO Client 1236] [RENDER] Throttling: ON
+2023/02/16 14:25:29 816671 32759a7a [INFO Client 1236] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/16 14:25:29 816671 32759a70 [INFO Client 1236] [SHADER] Async: ON
+2023/02/16 14:25:29 816671 32759a9f [INFO Client 1236] [SHADER] Delay: OFF
+2023/02/16 14:25:29 816671 32759aba [INFO Client 1236] [SHADER] Limit: ON
+2023/02/16 14:25:29 816671 32759abc [INFO Client 1236] [SHADER] Warmup: ON
+2023/02/16 14:25:29 816671 327599d7 [INFO Client 1236] [SHADER] Parallel: OFF
+2023/02/16 14:25:29 816671 84a7e376 [INFO Client 1236] [ENGINE] Running Engine version 1.7.0
+2023/02/16 14:25:29 816671 47bbd15b [INFO Client 1236] [SOUND] Buffer size = 64.0 MB
+2023/02/16 14:25:30 816687 9b0d205 [INFO Client 1236] [VIDEO] Enable: ON
+2023/02/16 14:25:30 816718 84a7d2d8 [INFO Client 1236] [ENGINE] Ready
+2023/02/16 14:25:30 816734 951bc0b0 [INFO Client 1236] [STARTUP] Bundle Startup Start
+2023/02/16 14:25:30 816734 951bc057 [INFO Client 1236] [STARTUP] Bundle Startup in 0.000104 seconds
+2023/02/16 14:25:30 816734 951bc0b0 [INFO Client 1236] [STARTUP] Game Start
+2023/02/16 14:25:30 816921 ca86fd3f [DEBUG Client 1236] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/16 14:25:30 817125 951bc057 [INFO Client 1236] [STARTUP] Game in 0.395117 seconds
+2023/02/16 14:25:30 817125 951bc0b0 [INFO Client 1236] [STARTUP] Window Start
+2023/02/16 14:25:30 817140 9e6a0b0a [INFO Client 1236] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:25:30 817171 9e6a1d2a [INFO Client 1236] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:25:30 817171 9e6a1363 [INFO Client 1236] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:25:30 817171 9e6a0b0a [INFO Client 1236] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:25:30 817171 9e6a1d2a [INFO Client 1236] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:25:30 817203 951bc057 [INFO Client 1236] [STARTUP] Window in 0.071197 seconds
+2023/02/16 14:25:30 817218 413b61ff [DEBUG Client 1236] [GamepadManager] Initialising
+2023/02/16 14:25:30 817218 951bc0b0 [INFO Client 1236] [STARTUP] Device Start
+2023/02/16 14:25:30 817218 b51d6589 [INFO Client 1236] [RENDER] StartDevice: DirectX11
+2023/02/16 14:25:30 817531 71b2ea0 [DEBUG Client 1236] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/16 14:25:30 817625 fafff8cf [DEBUG Client 1236] CreateSwapChain: SetFullScreenState 0
+2023/02/16 14:25:30 817625 29d4ce01 [INFO Client 1236] [D3D11] Runtime version = 11.1
+2023/02/16 14:25:30 817625 29d4ce00 [INFO Client 1236] [D3D11] Feature Level = 11.1
+2023/02/16 14:25:30 817625 29d4ce03 [INFO Client 1236] [D3D11] Driver Command Lists = NO
+2023/02/16 14:25:30 817625 29d4ce02 [INFO Client 1236] [D3D11] Driver Concurrent Creates = YES
+2023/02/16 14:25:30 817625 29d4ce05 [INFO Client 1236] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/16 14:25:31 817718 9d4eeb40 [DEBUG Client 1236] [WINDOW] TrigggerDeviceCreate
+2023/02/16 14:25:31 818093 9d4eeba7 [DEBUG Client 1236] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:25:31 818109 9d4eec8a [DEBUG Client 1236] [WINDOW] TrigggerDeviceLost
+2023/02/16 14:25:31 818109 9d4eeba7 [DEBUG Client 1236] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:25:31 818140 951bc057 [INFO Client 1236] [STARTUP] Device in 0.920208 seconds
+2023/02/16 14:25:31 818140 951bc0b0 [INFO Client 1236] [STARTUP] Tencent Start
+2023/02/16 14:25:31 818140 951bc057 [INFO Client 1236] [STARTUP] Tencent in 0.00017 seconds
+2023/02/16 14:25:31 818140 951bc0b0 [INFO Client 1236] [STARTUP] Loading Start
+2023/02/16 14:25:31 818171 951bc057 [INFO Client 1236] [STARTUP] Loading in 0.028361 seconds
+2023/02/16 14:25:31 818171 951bc0b0 [INFO Client 1236] [STARTUP] DebugGUI Start
+2023/02/16 14:25:31 818171 951bc057 [INFO Client 1236] [STARTUP] DebugGUI in 3.3e-05 seconds
+2023/02/16 14:25:31 818171 951bc0b0 [INFO Client 1236] [STARTUP] Bundle Tiny Start
+2023/02/16 14:25:31 818171 951bc0b0 [INFO Client 1236] [STARTUP] Bundle Login Start
+2023/02/16 14:25:31 818171 951bc057 [INFO Client 1236] [STARTUP] Bundle Login in 3.6e-05 seconds
+2023/02/16 14:25:31 818171 951bc0b0 [INFO Client 1236] [STARTUP] Registration Start
+2023/02/16 14:25:31 818171 951bc057 [INFO Client 1236] [STARTUP] Bundle Tiny in 0.0001 seconds
+2023/02/16 14:25:31 818171 951bc0b0 [INFO Client 1236] [STARTUP] Audio Start
+2023/02/16 14:25:31 818171 47bbee1b [INFO Client 1236] [SOUND] Channel count = 64 (asked for 64)
+2023/02/16 14:25:31 818171 47bbee18 [INFO Client 1236] [SOUND] Source count = 512
+2023/02/16 14:25:31 818375 47bbea59 [INFO Client 1236] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/16 14:25:31 818375 951bc057 [INFO Client 1236] [STARTUP] Audio in 0.206909 seconds
+2023/02/16 14:25:31 818546 951bc057 [INFO Client 1236] [STARTUP] Registration in 0.375711 seconds
+2023/02/16 14:25:32 819281 509417f7 [WARN Client 1236] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:25:48 ***** LOG FILE OPENING *****
+2023/02/16 14:25:48 835500 340884db [DEBUG Client 6908] [RENDER] StopDevice
+2023/02/16 14:25:48 835500 84a7e6f1 [INFO Client 6908] [ENGINE] Clear
+2023/02/16 14:25:48 835500 7bb5422 [INFO Client 6908] [BUNDLE2] Deinit
+2023/02/16 14:25:49 ***** LOG FILE OPENING *****
+2023/02/16 14:25:49 836406 f95442e3 [INFO Client 7708] [STARTUP] Job Queues
+2023/02/16 14:25:49 836406 9e6a0b0a [INFO Client 7708] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:25:49 836453 9e6a1d2a [INFO Client 7708] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:25:49 836453 9e6a1363 [INFO Client 7708] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:25:49 836453 9e6a0b0a [INFO Client 7708] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:25:49 836453 9e6a1d2a [INFO Client 7708] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:25:49 836453 84a7d27d [INFO Client 7708] [ENGINE] Init
+2023/02/16 14:25:49 836453 55713145 [INFO Client 7708] [JOB] HIGH: 2
+2023/02/16 14:25:49 836453 55713145 [INFO Client 7708] [JOB] MEDIUM: 2
+2023/02/16 14:25:49 836453 55713145 [INFO Client 7708] [JOB] LOW: 2
+2023/02/16 14:25:49 836453 55713145 [INFO Client 7708] [JOB] IDLE: 1
+2023/02/16 14:25:49 836453 7bb548f [INFO Client 7708] [BUNDLE2] Init
+2023/02/16 14:25:49 836453 7bb36c4 [INFO Client 7708] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/16 14:25:49 836484 509417f7 [WARN Client 6908] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:25:49 836484 84a7e691 [INFO Client 6908] [JOB] Clear
+2023/02/16 14:25:49 836484 84a7e7bf [INFO Client 6908] [ANIMATION] Clear
+2023/02/16 14:25:49 836484 84a7e7be [INFO Client 6908] [PHYSICS] Clear
+2023/02/16 14:25:49 836484 84a7e7bd [INFO Client 6908] [SHADER] Clear
+2023/02/16 14:25:49 836484 84a7e7bc [INFO Client 6908] [ENTITY] Clear
+2023/02/16 14:25:49 836484 84a7e7bb [INFO Client 6908] [SOUND] Clear
+2023/02/16 14:25:49 836484 84a7e7ba [INFO Client 6908] [VIDEO] Clear
+2023/02/16 14:25:49 836484 84a7e7b9 [INFO Client 6908] [SCENE] Clear
+2023/02/16 14:25:49 836484 84a7e7b8 [INFO Client 6908] [GRAPH] Clear
+2023/02/16 14:25:49 836484 84a7e7b7 [INFO Client 6908] [TELEMETRY] Clear
+2023/02/16 14:25:49 836484 84a7e7b6 [INFO Client 6908] [RESOURCE] GarbageCollect
+2023/02/16 14:25:49 836484 84a7e75e [INFO Client 6908] [RESOURCE] Clear
+2023/02/16 14:25:49 836484 84a7e75b [INFO Client 6908] [RENDER] Clear
+2023/02/16 14:25:49 836484 84a7e758 [INFO Client 6908] [ENGINE] Done
+2023/02/16 14:25:49 836671 7bb61e6 [INFO Client 7708] [BUNDLE2] File cache size: 1024
+2023/02/16 14:25:49 836671 b51d61ab [INFO Client 7708] [RENDER] Async: ON
+2023/02/16 14:25:49 836671 b51d60c8 [INFO Client 7708] [RENDER] Warmup: ON
+2023/02/16 14:25:49 836671 b51d60ce [INFO Client 7708] [RENDER] Skip: ON
+2023/02/16 14:25:49 836671 b51d60eb [INFO Client 7708] [RENDER] Throttling: ON
+2023/02/16 14:25:49 836671 32759a7a [INFO Client 7708] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/16 14:25:49 836671 32759a70 [INFO Client 7708] [SHADER] Async: ON
+2023/02/16 14:25:49 836671 32759a9f [INFO Client 7708] [SHADER] Delay: OFF
+2023/02/16 14:25:49 836671 32759aba [INFO Client 7708] [SHADER] Limit: ON
+2023/02/16 14:25:49 836671 32759abc [INFO Client 7708] [SHADER] Warmup: ON
+2023/02/16 14:25:49 836671 327599d7 [INFO Client 7708] [SHADER] Parallel: OFF
+2023/02/16 14:25:49 836671 84a7e376 [INFO Client 7708] [ENGINE] Running Engine version 1.7.0
+2023/02/16 14:25:49 836687 47bbd15b [INFO Client 7708] [SOUND] Buffer size = 64.0 MB
+2023/02/16 14:25:50 836703 9b0d205 [INFO Client 7708] [VIDEO] Enable: ON
+2023/02/16 14:25:50 836718 84a7d2d8 [INFO Client 7708] [ENGINE] Ready
+2023/02/16 14:25:50 836734 951bc0b0 [INFO Client 7708] [STARTUP] Bundle Startup Start
+2023/02/16 14:25:50 836734 951bc057 [INFO Client 7708] [STARTUP] Bundle Startup in 6.5e-05 seconds
+2023/02/16 14:25:50 836734 951bc0b0 [INFO Client 7708] [STARTUP] Game Start
+2023/02/16 14:25:50 836937 ca86fd3f [DEBUG Client 7708] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/16 14:25:50 837218 951bc057 [INFO Client 7708] [STARTUP] Game in 0.482536 seconds
+2023/02/16 14:25:50 837218 951bc0b0 [INFO Client 7708] [STARTUP] Window Start
+2023/02/16 14:25:50 837234 9e6a0b0a [INFO Client 7708] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:25:50 837296 9e6a1d2a [INFO Client 7708] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:25:50 837296 9e6a1363 [INFO Client 7708] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:25:50 837296 9e6a0b0a [INFO Client 7708] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:25:50 837312 9e6a1d2a [INFO Client 7708] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:25:50 837343 951bc057 [INFO Client 7708] [STARTUP] Window in 0.119172 seconds
+2023/02/16 14:25:50 837359 413b61ff [DEBUG Client 7708] [GamepadManager] Initialising
+2023/02/16 14:25:50 837359 951bc0b0 [INFO Client 7708] [STARTUP] Device Start
+2023/02/16 14:25:50 837359 b51d6589 [INFO Client 7708] [RENDER] StartDevice: DirectX11
+2023/02/16 14:25:50 837609 71b2ea0 [DEBUG Client 7708] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/16 14:25:50 837671 fafff8cf [DEBUG Client 7708] CreateSwapChain: SetFullScreenState 0
+2023/02/16 14:25:50 837671 29d4ce01 [INFO Client 7708] [D3D11] Runtime version = 11.1
+2023/02/16 14:25:50 837671 29d4ce00 [INFO Client 7708] [D3D11] Feature Level = 11.1
+2023/02/16 14:25:50 837671 29d4ce03 [INFO Client 7708] [D3D11] Driver Command Lists = NO
+2023/02/16 14:25:50 837671 29d4ce02 [INFO Client 7708] [D3D11] Driver Concurrent Creates = YES
+2023/02/16 14:25:50 837671 29d4ce05 [INFO Client 7708] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/16 14:25:51 837734 9d4eeb40 [DEBUG Client 7708] [WINDOW] TrigggerDeviceCreate
+2023/02/16 14:25:51 837921 9d4eeba7 [DEBUG Client 7708] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:25:51 837937 9d4eec8a [DEBUG Client 7708] [WINDOW] TrigggerDeviceLost
+2023/02/16 14:25:51 837937 9d4eeba7 [DEBUG Client 7708] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:25:51 837953 951bc057 [INFO Client 7708] [STARTUP] Device in 0.584957 seconds
+2023/02/16 14:25:51 837953 951bc0b0 [INFO Client 7708] [STARTUP] Tencent Start
+2023/02/16 14:25:51 837953 951bc057 [INFO Client 7708] [STARTUP] Tencent in 0.000106 seconds
+2023/02/16 14:25:51 837953 951bc0b0 [INFO Client 7708] [STARTUP] Loading Start
+2023/02/16 14:25:51 837968 951bc057 [INFO Client 7708] [STARTUP] Loading in 0.023489 seconds
+2023/02/16 14:25:51 837968 951bc0b0 [INFO Client 7708] [STARTUP] DebugGUI Start
+2023/02/16 14:25:51 837968 951bc057 [INFO Client 7708] [STARTUP] DebugGUI in 1.9e-05 seconds
+2023/02/16 14:25:51 837968 951bc0b0 [INFO Client 7708] [STARTUP] Bundle Tiny Start
+2023/02/16 14:25:51 837968 951bc0b0 [INFO Client 7708] [STARTUP] Bundle Login Start
+2023/02/16 14:25:51 837968 951bc057 [INFO Client 7708] [STARTUP] Bundle Login in 2.3e-05 seconds
+2023/02/16 14:25:51 837968 951bc0b0 [INFO Client 7708] [STARTUP] Registration Start
+2023/02/16 14:25:51 837968 951bc057 [INFO Client 7708] [STARTUP] Bundle Tiny in 7e-05 seconds
+2023/02/16 14:25:51 837984 951bc0b0 [INFO Client 7708] [STARTUP] Audio Start
+2023/02/16 14:25:51 837984 47bbee1b [INFO Client 7708] [SOUND] Channel count = 64 (asked for 64)
+2023/02/16 14:25:51 837984 47bbee18 [INFO Client 7708] [SOUND] Source count = 512
+2023/02/16 14:25:51 838109 47bbea59 [INFO Client 7708] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/16 14:25:51 838109 951bc057 [INFO Client 7708] [STARTUP] Audio in 0.13737 seconds
+2023/02/16 14:25:51 838312 951bc057 [INFO Client 7708] [STARTUP] Registration in 0.343318 seconds
+2023/02/16 14:25:52 839015 509417f7 [WARN Client 7708] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:26:13 ***** LOG FILE OPENING *****
+2023/02/16 14:26:13 859765 340884db [DEBUG Client 1228] [RENDER] StopDevice
+2023/02/16 14:26:13 859781 84a7e6f1 [INFO Client 1228] [ENGINE] Clear
+2023/02/16 14:26:13 859781 7bb5422 [INFO Client 1228] [BUNDLE2] Deinit
+2023/02/16 14:26:14 860765 509417f7 [WARN Client 1228] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:26:14 860765 84a7e691 [INFO Client 1228] [JOB] Clear
+2023/02/16 14:26:14 860765 84a7e7bf [INFO Client 1228] [ANIMATION] Clear
+2023/02/16 14:26:14 860765 84a7e7be [INFO Client 1228] [PHYSICS] Clear
+2023/02/16 14:26:14 860765 84a7e7bd [INFO Client 1228] [SHADER] Clear
+2023/02/16 14:26:14 860781 84a7e7bc [INFO Client 1228] [ENTITY] Clear
+2023/02/16 14:26:14 860781 84a7e7bb [INFO Client 1228] [SOUND] Clear
+2023/02/16 14:26:14 860781 84a7e7ba [INFO Client 1228] [VIDEO] Clear
+2023/02/16 14:26:14 860781 84a7e7b9 [INFO Client 1228] [SCENE] Clear
+2023/02/16 14:26:14 860781 84a7e7b8 [INFO Client 1228] [GRAPH] Clear
+2023/02/16 14:26:14 860781 84a7e7b7 [INFO Client 1228] [TELEMETRY] Clear
+2023/02/16 14:26:14 860781 84a7e7b6 [INFO Client 1228] [RESOURCE] GarbageCollect
+2023/02/16 14:26:14 860781 84a7e75e [INFO Client 1228] [RESOURCE] Clear
+2023/02/16 14:26:14 860781 84a7e75b [INFO Client 1228] [RENDER] Clear
+2023/02/16 14:26:14 860781 84a7e758 [INFO Client 1228] [ENGINE] Done
+2023/02/16 14:26:21 ***** LOG FILE OPENING *****
+2023/02/16 14:26:21 867984 340884db [DEBUG Client 8696] [RENDER] StopDevice
+2023/02/16 14:26:21 867984 84a7e6f1 [INFO Client 8696] [ENGINE] Clear
+2023/02/16 14:26:21 867984 7bb5422 [INFO Client 8696] [BUNDLE2] Deinit
+2023/02/16 14:26:22 ***** LOG FILE OPENING *****
+2023/02/16 14:26:22 868921 f95442e3 [INFO Client 9776] [STARTUP] Job Queues
+2023/02/16 14:26:22 868921 9e6a0b0a [INFO Client 9776] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:26:22 868984 509417f7 [WARN Client 8696] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:26:22 868984 84a7e691 [INFO Client 8696] [JOB] Clear
+2023/02/16 14:26:22 868984 84a7e7bf [INFO Client 8696] [ANIMATION] Clear
+2023/02/16 14:26:22 868984 84a7e7be [INFO Client 8696] [PHYSICS] Clear
+2023/02/16 14:26:22 868984 84a7e7bd [INFO Client 8696] [SHADER] Clear
+2023/02/16 14:26:22 868984 84a7e7bc [INFO Client 8696] [ENTITY] Clear
+2023/02/16 14:26:22 868984 84a7e7bb [INFO Client 8696] [SOUND] Clear
+2023/02/16 14:26:22 868984 84a7e7ba [INFO Client 8696] [VIDEO] Clear
+2023/02/16 14:26:22 868984 84a7e7b9 [INFO Client 8696] [SCENE] Clear
+2023/02/16 14:26:22 868984 84a7e7b8 [INFO Client 8696] [GRAPH] Clear
+2023/02/16 14:26:22 868984 84a7e7b7 [INFO Client 8696] [TELEMETRY] Clear
+2023/02/16 14:26:22 868984 84a7e7b6 [INFO Client 8696] [RESOURCE] GarbageCollect
+2023/02/16 14:26:22 868984 84a7e75e [INFO Client 8696] [RESOURCE] Clear
+2023/02/16 14:26:22 868984 84a7e75b [INFO Client 8696] [RENDER] Clear
+2023/02/16 14:26:22 868984 84a7e758 [INFO Client 8696] [ENGINE] Done
+2023/02/16 14:26:22 869000 9e6a1d2a [INFO Client 9776] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:26:22 869000 9e6a1363 [INFO Client 9776] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:26:22 869000 9e6a0b0a [INFO Client 9776] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:26:22 869000 9e6a1d2a [INFO Client 9776] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:26:22 869000 84a7d27d [INFO Client 9776] [ENGINE] Init
+2023/02/16 14:26:22 869000 55713145 [INFO Client 9776] [JOB] HIGH: 2
+2023/02/16 14:26:22 869000 55713145 [INFO Client 9776] [JOB] MEDIUM: 2
+2023/02/16 14:26:22 869000 55713145 [INFO Client 9776] [JOB] LOW: 2
+2023/02/16 14:26:22 869000 55713145 [INFO Client 9776] [JOB] IDLE: 1
+2023/02/16 14:26:22 869000 7bb548f [INFO Client 9776] [BUNDLE2] Init
+2023/02/16 14:26:22 869000 7bb36c4 [INFO Client 9776] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/16 14:26:22 869187 7bb61e6 [INFO Client 9776] [BUNDLE2] File cache size: 1024
+2023/02/16 14:26:22 869187 b51d61ab [INFO Client 9776] [RENDER] Async: ON
+2023/02/16 14:26:22 869187 b51d60c8 [INFO Client 9776] [RENDER] Warmup: ON
+2023/02/16 14:26:22 869187 b51d60ce [INFO Client 9776] [RENDER] Skip: ON
+2023/02/16 14:26:22 869187 b51d60eb [INFO Client 9776] [RENDER] Throttling: ON
+2023/02/16 14:26:22 869187 32759a7a [INFO Client 9776] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/16 14:26:22 869187 32759a70 [INFO Client 9776] [SHADER] Async: ON
+2023/02/16 14:26:22 869187 32759a9f [INFO Client 9776] [SHADER] Delay: OFF
+2023/02/16 14:26:22 869187 32759aba [INFO Client 9776] [SHADER] Limit: ON
+2023/02/16 14:26:22 869187 32759abc [INFO Client 9776] [SHADER] Warmup: ON
+2023/02/16 14:26:22 869187 327599d7 [INFO Client 9776] [SHADER] Parallel: OFF
+2023/02/16 14:26:22 869187 84a7e376 [INFO Client 9776] [ENGINE] Running Engine version 1.7.0
+2023/02/16 14:26:22 869203 47bbd15b [INFO Client 9776] [SOUND] Buffer size = 64.0 MB
+2023/02/16 14:26:22 869218 9b0d205 [INFO Client 9776] [VIDEO] Enable: ON
+2023/02/16 14:26:22 869250 84a7d2d8 [INFO Client 9776] [ENGINE] Ready
+2023/02/16 14:26:22 869281 951bc0b0 [INFO Client 9776] [STARTUP] Bundle Startup Start
+2023/02/16 14:26:22 869281 951bc057 [INFO Client 9776] [STARTUP] Bundle Startup in 9.5e-05 seconds
+2023/02/16 14:26:22 869281 951bc0b0 [INFO Client 9776] [STARTUP] Game Start
+2023/02/16 14:26:22 869468 ca86fd3f [DEBUG Client 9776] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/16 14:26:22 869671 951bc057 [INFO Client 9776] [STARTUP] Game in 0.389935 seconds
+2023/02/16 14:26:22 869671 951bc0b0 [INFO Client 9776] [STARTUP] Window Start
+2023/02/16 14:26:22 869671 9e6a0b0a [INFO Client 9776] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:26:23 869718 9e6a1d2a [INFO Client 9776] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:26:23 869718 9e6a1363 [INFO Client 9776] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:26:23 869718 9e6a0b0a [INFO Client 9776] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:26:23 869718 9e6a1d2a [INFO Client 9776] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:26:23 869750 951bc057 [INFO Client 9776] [STARTUP] Window in 0.07339 seconds
+2023/02/16 14:26:23 869765 413b61ff [DEBUG Client 9776] [GamepadManager] Initialising
+2023/02/16 14:26:23 869765 951bc0b0 [INFO Client 9776] [STARTUP] Device Start
+2023/02/16 14:26:23 869765 b51d6589 [INFO Client 9776] [RENDER] StartDevice: DirectX11
+2023/02/16 14:26:23 869968 71b2ea0 [DEBUG Client 9776] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/16 14:26:23 870031 fafff8cf [DEBUG Client 9776] CreateSwapChain: SetFullScreenState 0
+2023/02/16 14:26:23 870031 29d4ce01 [INFO Client 9776] [D3D11] Runtime version = 11.1
+2023/02/16 14:26:23 870031 29d4ce00 [INFO Client 9776] [D3D11] Feature Level = 11.1
+2023/02/16 14:26:23 870031 29d4ce03 [INFO Client 9776] [D3D11] Driver Command Lists = NO
+2023/02/16 14:26:23 870031 29d4ce02 [INFO Client 9776] [D3D11] Driver Concurrent Creates = YES
+2023/02/16 14:26:23 870031 29d4ce05 [INFO Client 9776] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/16 14:26:23 870078 9d4eeb40 [DEBUG Client 9776] [WINDOW] TrigggerDeviceCreate
+2023/02/16 14:26:23 870421 9d4eeba7 [DEBUG Client 9776] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:26:23 870484 9d4eec8a [DEBUG Client 9776] [WINDOW] TrigggerDeviceLost
+2023/02/16 14:26:23 870484 9d4eeba7 [DEBUG Client 9776] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:26:23 870515 951bc057 [INFO Client 9776] [STARTUP] Device in 0.759298 seconds
+2023/02/16 14:26:23 870515 951bc0b0 [INFO Client 9776] [STARTUP] Tencent Start
+2023/02/16 14:26:23 870531 951bc057 [INFO Client 9776] [STARTUP] Tencent in 0.003765 seconds
+2023/02/16 14:26:23 870531 951bc0b0 [INFO Client 9776] [STARTUP] Loading Start
+2023/02/16 14:26:23 870546 951bc057 [INFO Client 9776] [STARTUP] Loading in 0.022137 seconds
+2023/02/16 14:26:23 870546 951bc0b0 [INFO Client 9776] [STARTUP] DebugGUI Start
+2023/02/16 14:26:23 870546 951bc057 [INFO Client 9776] [STARTUP] DebugGUI in 3.4e-05 seconds
+2023/02/16 14:26:23 870546 951bc0b0 [INFO Client 9776] [STARTUP] Bundle Tiny Start
+2023/02/16 14:26:23 870546 951bc0b0 [INFO Client 9776] [STARTUP] Bundle Login Start
+2023/02/16 14:26:23 870546 951bc057 [INFO Client 9776] [STARTUP] Bundle Login in 4.1e-05 seconds
+2023/02/16 14:26:23 870546 951bc057 [INFO Client 9776] [STARTUP] Bundle Tiny in 0.000108 seconds
+2023/02/16 14:26:23 870546 951bc0b0 [INFO Client 9776] [STARTUP] Registration Start
+2023/02/16 14:26:23 870546 951bc0b0 [INFO Client 9776] [STARTUP] Audio Start
+2023/02/16 14:26:23 870546 47bbee1b [INFO Client 9776] [SOUND] Channel count = 64 (asked for 64)
+2023/02/16 14:26:23 870546 47bbee18 [INFO Client 9776] [SOUND] Source count = 512
+2023/02/16 14:26:24 870734 47bbea59 [INFO Client 9776] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/16 14:26:24 870734 951bc057 [INFO Client 9776] [STARTUP] Audio in 0.185325 seconds
+2023/02/16 14:26:24 870906 951bc057 [INFO Client 9776] [STARTUP] Registration in 0.355707 seconds
+2023/02/16 14:26:24 871640 509417f7 [WARN Client 9776] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:31:01 ***** LOG FILE OPENING *****
+2023/02/16 14:31:01 1148328 340884db [DEBUG Client 3428] [RENDER] StopDevice
+2023/02/16 14:31:01 1148328 84a7e6f1 [INFO Client 3428] [ENGINE] Clear
+2023/02/16 14:31:01 1148328 7bb5422 [INFO Client 3428] [BUNDLE2] Deinit
+2023/02/16 14:31:02 ***** LOG FILE OPENING *****
+2023/02/16 14:31:02 1149312 509417f7 [WARN Client 3428] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:31:02 1149312 84a7e691 [INFO Client 3428] [JOB] Clear
+2023/02/16 14:31:02 1149312 84a7e7bf [INFO Client 3428] [ANIMATION] Clear
+2023/02/16 14:31:02 1149312 84a7e7be [INFO Client 3428] [PHYSICS] Clear
+2023/02/16 14:31:02 1149312 84a7e7bd [INFO Client 3428] [SHADER] Clear
+2023/02/16 14:31:02 1149312 84a7e7bc [INFO Client 3428] [ENTITY] Clear
+2023/02/16 14:31:02 1149312 84a7e7bb [INFO Client 3428] [SOUND] Clear
+2023/02/16 14:31:02 1149312 84a7e7ba [INFO Client 3428] [VIDEO] Clear
+2023/02/16 14:31:02 1149312 84a7e7b9 [INFO Client 3428] [SCENE] Clear
+2023/02/16 14:31:02 1149312 84a7e7b8 [INFO Client 3428] [GRAPH] Clear
+2023/02/16 14:31:02 1149312 84a7e7b7 [INFO Client 3428] [TELEMETRY] Clear
+2023/02/16 14:31:02 1149312 84a7e7b6 [INFO Client 3428] [RESOURCE] GarbageCollect
+2023/02/16 14:31:02 1149312 84a7e75e [INFO Client 3428] [RESOURCE] Clear
+2023/02/16 14:31:02 1149312 84a7e75b [INFO Client 3428] [RENDER] Clear
+2023/02/16 14:31:02 1149312 84a7e758 [INFO Client 3428] [ENGINE] Done
+2023/02/16 14:31:02 1149343 f95442e3 [INFO Client 3652] [STARTUP] Job Queues
+2023/02/16 14:31:02 1149343 9e6a0b0a [INFO Client 3652] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:31:02 1149437 9e6a1d2a [INFO Client 3652] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:31:02 1149437 9e6a1363 [INFO Client 3652] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:31:02 1149437 9e6a0b0a [INFO Client 3652] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:31:02 1149437 9e6a1d2a [INFO Client 3652] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:31:02 1149437 84a7d27d [INFO Client 3652] [ENGINE] Init
+2023/02/16 14:31:02 1149437 55713145 [INFO Client 3652] [JOB] HIGH: 2
+2023/02/16 14:31:02 1149437 55713145 [INFO Client 3652] [JOB] MEDIUM: 2
+2023/02/16 14:31:02 1149437 55713145 [INFO Client 3652] [JOB] LOW: 2
+2023/02/16 14:31:02 1149437 55713145 [INFO Client 3652] [JOB] IDLE: 1
+2023/02/16 14:31:02 1149437 7bb548f [INFO Client 3652] [BUNDLE2] Init
+2023/02/16 14:31:02 1149437 7bb36c4 [INFO Client 3652] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/16 14:31:02 1149625 7bb61e6 [INFO Client 3652] [BUNDLE2] File cache size: 1024
+2023/02/16 14:31:02 1149625 b51d61ab [INFO Client 3652] [RENDER] Async: ON
+2023/02/16 14:31:02 1149625 b51d60c8 [INFO Client 3652] [RENDER] Warmup: ON
+2023/02/16 14:31:02 1149625 b51d60ce [INFO Client 3652] [RENDER] Skip: ON
+2023/02/16 14:31:02 1149625 b51d60eb [INFO Client 3652] [RENDER] Throttling: ON
+2023/02/16 14:31:02 1149625 32759a7a [INFO Client 3652] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/16 14:31:02 1149625 32759a70 [INFO Client 3652] [SHADER] Async: ON
+2023/02/16 14:31:02 1149625 32759a9f [INFO Client 3652] [SHADER] Delay: OFF
+2023/02/16 14:31:02 1149625 32759aba [INFO Client 3652] [SHADER] Limit: ON
+2023/02/16 14:31:02 1149625 32759abc [INFO Client 3652] [SHADER] Warmup: ON
+2023/02/16 14:31:02 1149625 327599d7 [INFO Client 3652] [SHADER] Parallel: OFF
+2023/02/16 14:31:02 1149625 84a7e376 [INFO Client 3652] [ENGINE] Running Engine version 1.7.0
+2023/02/16 14:31:02 1149625 47bbd15b [INFO Client 3652] [SOUND] Buffer size = 64.0 MB
+2023/02/16 14:31:02 1149656 9b0d205 [INFO Client 3652] [VIDEO] Enable: ON
+2023/02/16 14:31:02 1149656 84a7d2d8 [INFO Client 3652] [ENGINE] Ready
+2023/02/16 14:31:02 1149671 951bc0b0 [INFO Client 3652] [STARTUP] Bundle Startup Start
+2023/02/16 14:31:02 1149671 951bc057 [INFO Client 3652] [STARTUP] Bundle Startup in 0.000107 seconds
+2023/02/16 14:31:02 1149671 951bc0b0 [INFO Client 3652] [STARTUP] Game Start
+2023/02/16 14:31:03 1150046 ca86fd3f [DEBUG Client 3652] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/16 14:31:03 1150265 951bc057 [INFO Client 3652] [STARTUP] Game in 0.593088 seconds
+2023/02/16 14:31:03 1150265 951bc0b0 [INFO Client 3652] [STARTUP] Window Start
+2023/02/16 14:31:03 1150281 9e6a0b0a [INFO Client 3652] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:31:03 1150312 9e6a1d2a [INFO Client 3652] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:31:03 1150312 9e6a1363 [INFO Client 3652] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:31:03 1150312 9e6a0b0a [INFO Client 3652] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:31:03 1150328 9e6a1d2a [INFO Client 3652] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:31:03 1150343 951bc057 [INFO Client 3652] [STARTUP] Window in 0.075247 seconds
+2023/02/16 14:31:03 1150359 413b61ff [DEBUG Client 3652] [GamepadManager] Initialising
+2023/02/16 14:31:03 1150359 951bc0b0 [INFO Client 3652] [STARTUP] Device Start
+2023/02/16 14:31:03 1150359 b51d6589 [INFO Client 3652] [RENDER] StartDevice: DirectX11
+2023/02/16 14:31:03 1150687 71b2ea0 [DEBUG Client 3652] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/16 14:31:04 1150796 fafff8cf [DEBUG Client 3652] CreateSwapChain: SetFullScreenState 0
+2023/02/16 14:31:04 1150796 29d4ce01 [INFO Client 3652] [D3D11] Runtime version = 11.1
+2023/02/16 14:31:04 1150796 29d4ce00 [INFO Client 3652] [D3D11] Feature Level = 11.1
+2023/02/16 14:31:04 1150796 29d4ce03 [INFO Client 3652] [D3D11] Driver Command Lists = NO
+2023/02/16 14:31:04 1150796 29d4ce02 [INFO Client 3652] [D3D11] Driver Concurrent Creates = YES
+2023/02/16 14:31:04 1150796 29d4ce05 [INFO Client 3652] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/16 14:31:04 1150890 9d4eeb40 [DEBUG Client 3652] [WINDOW] TrigggerDeviceCreate
+2023/02/16 14:31:04 1151234 9d4eeba7 [DEBUG Client 3652] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:31:04 1151250 9d4eec8a [DEBUG Client 3652] [WINDOW] TrigggerDeviceLost
+2023/02/16 14:31:04 1151250 9d4eeba7 [DEBUG Client 3652] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:31:04 1151296 951bc057 [INFO Client 3652] [STARTUP] Device in 0.937419 seconds
+2023/02/16 14:31:04 1151296 951bc0b0 [INFO Client 3652] [STARTUP] Tencent Start
+2023/02/16 14:31:04 1151296 951bc057 [INFO Client 3652] [STARTUP] Tencent in 4e-05 seconds
+2023/02/16 14:31:04 1151296 951bc0b0 [INFO Client 3652] [STARTUP] Loading Start
+2023/02/16 14:31:04 1151328 951bc057 [INFO Client 3652] [STARTUP] Loading in 0.02467 seconds
+2023/02/16 14:31:04 1151328 951bc0b0 [INFO Client 3652] [STARTUP] DebugGUI Start
+2023/02/16 14:31:04 1151328 951bc057 [INFO Client 3652] [STARTUP] DebugGUI in 3.2e-05 seconds
+2023/02/16 14:31:04 1151328 951bc0b0 [INFO Client 3652] [STARTUP] Bundle Tiny Start
+2023/02/16 14:31:04 1151328 951bc0b0 [INFO Client 3652] [STARTUP] Bundle Login Start
+2023/02/16 14:31:04 1151328 951bc057 [INFO Client 3652] [STARTUP] Bundle Login in 3.5e-05 seconds
+2023/02/16 14:31:04 1151328 951bc0b0 [INFO Client 3652] [STARTUP] Registration Start
+2023/02/16 14:31:04 1151328 951bc057 [INFO Client 3652] [STARTUP] Bundle Tiny in 0.0001 seconds
+2023/02/16 14:31:04 1151343 951bc0b0 [INFO Client 3652] [STARTUP] Audio Start
+2023/02/16 14:31:04 1151343 47bbee1b [INFO Client 3652] [SOUND] Channel count = 64 (asked for 64)
+2023/02/16 14:31:04 1151343 47bbee18 [INFO Client 3652] [SOUND] Source count = 512
+2023/02/16 14:31:04 1151484 47bbea59 [INFO Client 3652] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/16 14:31:04 1151484 951bc057 [INFO Client 3652] [STARTUP] Audio in 0.131261 seconds
+2023/02/16 14:31:04 1151687 951bc057 [INFO Client 3652] [STARTUP] Registration in 0.358849 seconds
+2023/02/16 14:31:05 1152390 509417f7 [WARN Client 3652] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:32:29 ***** LOG FILE OPENING *****
+2023/02/16 14:32:29 1236234 340884db [DEBUG Client 8484] [RENDER] StopDevice
+2023/02/16 14:32:29 1236234 84a7e6f1 [INFO Client 8484] [ENGINE] Clear
+2023/02/16 14:32:29 1236234 7bb5422 [INFO Client 8484] [BUNDLE2] Deinit
+2023/02/16 14:32:30 ***** LOG FILE OPENING *****
+2023/02/16 14:32:30 1237218 509417f7 [WARN Client 8484] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:32:30 1237218 84a7e691 [INFO Client 8484] [JOB] Clear
+2023/02/16 14:32:30 1237218 84a7e7bf [INFO Client 8484] [ANIMATION] Clear
+2023/02/16 14:32:30 1237218 84a7e7be [INFO Client 8484] [PHYSICS] Clear
+2023/02/16 14:32:30 1237218 84a7e7bd [INFO Client 8484] [SHADER] Clear
+2023/02/16 14:32:30 1237218 84a7e7bc [INFO Client 8484] [ENTITY] Clear
+2023/02/16 14:32:30 1237218 84a7e7bb [INFO Client 8484] [SOUND] Clear
+2023/02/16 14:32:30 1237218 84a7e7ba [INFO Client 8484] [VIDEO] Clear
+2023/02/16 14:32:30 1237218 84a7e7b9 [INFO Client 8484] [SCENE] Clear
+2023/02/16 14:32:30 1237218 84a7e7b8 [INFO Client 8484] [GRAPH] Clear
+2023/02/16 14:32:30 1237218 84a7e7b7 [INFO Client 8484] [TELEMETRY] Clear
+2023/02/16 14:32:30 1237218 84a7e7b6 [INFO Client 8484] [RESOURCE] GarbageCollect
+2023/02/16 14:32:30 1237218 84a7e75e [INFO Client 8484] [RESOURCE] Clear
+2023/02/16 14:32:30 1237218 84a7e75b [INFO Client 8484] [RENDER] Clear
+2023/02/16 14:32:30 1237218 84a7e758 [INFO Client 8484] [ENGINE] Done
+2023/02/16 14:32:30 1237250 f95442e3 [INFO Client 4964] [STARTUP] Job Queues
+2023/02/16 14:32:30 1237250 9e6a0b0a [INFO Client 4964] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:32:30 1237296 9e6a1d2a [INFO Client 4964] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:32:30 1237296 9e6a1363 [INFO Client 4964] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:32:30 1237296 9e6a0b0a [INFO Client 4964] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:32:30 1237296 9e6a1d2a [INFO Client 4964] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:32:30 1237296 84a7d27d [INFO Client 4964] [ENGINE] Init
+2023/02/16 14:32:30 1237296 55713145 [INFO Client 4964] [JOB] HIGH: 2
+2023/02/16 14:32:30 1237312 55713145 [INFO Client 4964] [JOB] MEDIUM: 2
+2023/02/16 14:32:30 1237312 55713145 [INFO Client 4964] [JOB] LOW: 2
+2023/02/16 14:32:30 1237312 55713145 [INFO Client 4964] [JOB] IDLE: 1
+2023/02/16 14:32:30 1237312 7bb548f [INFO Client 4964] [BUNDLE2] Init
+2023/02/16 14:32:30 1237312 7bb36c4 [INFO Client 4964] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/16 14:32:30 1237640 7bb61e6 [INFO Client 4964] [BUNDLE2] File cache size: 1024
+2023/02/16 14:32:30 1237640 b51d61ab [INFO Client 4964] [RENDER] Async: ON
+2023/02/16 14:32:30 1237640 b51d60c8 [INFO Client 4964] [RENDER] Warmup: ON
+2023/02/16 14:32:30 1237640 b51d60ce [INFO Client 4964] [RENDER] Skip: ON
+2023/02/16 14:32:30 1237640 b51d60eb [INFO Client 4964] [RENDER] Throttling: ON
+2023/02/16 14:32:30 1237640 32759a7a [INFO Client 4964] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/16 14:32:30 1237640 32759a70 [INFO Client 4964] [SHADER] Async: ON
+2023/02/16 14:32:30 1237640 32759a9f [INFO Client 4964] [SHADER] Delay: OFF
+2023/02/16 14:32:30 1237640 32759aba [INFO Client 4964] [SHADER] Limit: ON
+2023/02/16 14:32:30 1237640 32759abc [INFO Client 4964] [SHADER] Warmup: ON
+2023/02/16 14:32:30 1237640 327599d7 [INFO Client 4964] [SHADER] Parallel: OFF
+2023/02/16 14:32:30 1237640 84a7e376 [INFO Client 4964] [ENGINE] Running Engine version 1.7.0
+2023/02/16 14:32:30 1237656 47bbd15b [INFO Client 4964] [SOUND] Buffer size = 64.0 MB
+2023/02/16 14:32:31 1237703 9b0d205 [INFO Client 4964] [VIDEO] Enable: ON
+2023/02/16 14:32:31 1237734 84a7d2d8 [INFO Client 4964] [ENGINE] Ready
+2023/02/16 14:32:31 1237765 951bc0b0 [INFO Client 4964] [STARTUP] Bundle Startup Start
+2023/02/16 14:32:31 1237765 951bc057 [INFO Client 4964] [STARTUP] Bundle Startup in 7.3e-05 seconds
+2023/02/16 14:32:31 1237765 951bc0b0 [INFO Client 4964] [STARTUP] Game Start
+2023/02/16 14:32:31 1238000 ca86fd3f [DEBUG Client 4964] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/16 14:32:31 1238250 951bc057 [INFO Client 4964] [STARTUP] Game in 0.475809 seconds
+2023/02/16 14:32:31 1238250 951bc0b0 [INFO Client 4964] [STARTUP] Window Start
+2023/02/16 14:32:31 1238250 9e6a0b0a [INFO Client 4964] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:32:31 1238296 9e6a1d2a [INFO Client 4964] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:32:31 1238296 9e6a1363 [INFO Client 4964] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:32:31 1238296 9e6a0b0a [INFO Client 4964] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:32:31 1238296 9e6a1d2a [INFO Client 4964] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:32:31 1238328 951bc057 [INFO Client 4964] [STARTUP] Window in 0.075004 seconds
+2023/02/16 14:32:31 1238343 413b61ff [DEBUG Client 4964] [GamepadManager] Initialising
+2023/02/16 14:32:31 1238343 951bc0b0 [INFO Client 4964] [STARTUP] Device Start
+2023/02/16 14:32:31 1238343 b51d6589 [INFO Client 4964] [RENDER] StartDevice: DirectX11
+2023/02/16 14:32:31 1238515 71b2ea0 [DEBUG Client 4964] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/16 14:32:31 1238562 fafff8cf [DEBUG Client 4964] CreateSwapChain: SetFullScreenState 0
+2023/02/16 14:32:31 1238562 29d4ce01 [INFO Client 4964] [D3D11] Runtime version = 11.1
+2023/02/16 14:32:31 1238562 29d4ce00 [INFO Client 4964] [D3D11] Feature Level = 11.1
+2023/02/16 14:32:31 1238562 29d4ce03 [INFO Client 4964] [D3D11] Driver Command Lists = NO
+2023/02/16 14:32:31 1238562 29d4ce02 [INFO Client 4964] [D3D11] Driver Concurrent Creates = YES
+2023/02/16 14:32:31 1238562 29d4ce05 [INFO Client 4964] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/16 14:32:31 1238656 9d4eeb40 [DEBUG Client 4964] [WINDOW] TrigggerDeviceCreate
+2023/02/16 14:32:32 1238843 9d4eeba7 [DEBUG Client 4964] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:32:32 1238859 9d4eec8a [DEBUG Client 4964] [WINDOW] TrigggerDeviceLost
+2023/02/16 14:32:32 1238859 9d4eeba7 [DEBUG Client 4964] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:32:32 1238875 951bc057 [INFO Client 4964] [STARTUP] Device in 0.539948 seconds
+2023/02/16 14:32:32 1238875 951bc0b0 [INFO Client 4964] [STARTUP] Tencent Start
+2023/02/16 14:32:32 1238875 951bc057 [INFO Client 4964] [STARTUP] Tencent in 0.000161 seconds
+2023/02/16 14:32:32 1238875 951bc0b0 [INFO Client 4964] [STARTUP] Loading Start
+2023/02/16 14:32:32 1238906 951bc057 [INFO Client 4964] [STARTUP] Loading in 0.029981 seconds
+2023/02/16 14:32:32 1238906 951bc0b0 [INFO Client 4964] [STARTUP] DebugGUI Start
+2023/02/16 14:32:32 1238906 951bc057 [INFO Client 4964] [STARTUP] DebugGUI in 4.1e-05 seconds
+2023/02/16 14:32:32 1238906 951bc0b0 [INFO Client 4964] [STARTUP] Bundle Tiny Start
+2023/02/16 14:32:32 1238906 951bc0b0 [INFO Client 4964] [STARTUP] Bundle Login Start
+2023/02/16 14:32:32 1238906 951bc057 [INFO Client 4964] [STARTUP] Bundle Login in 3.5e-05 seconds
+2023/02/16 14:32:32 1238906 951bc0b0 [INFO Client 4964] [STARTUP] Registration Start
+2023/02/16 14:32:32 1238906 951bc057 [INFO Client 4964] [STARTUP] Bundle Tiny in 9.3e-05 seconds
+2023/02/16 14:32:32 1238921 951bc0b0 [INFO Client 4964] [STARTUP] Audio Start
+2023/02/16 14:32:32 1238921 47bbee1b [INFO Client 4964] [SOUND] Channel count = 64 (asked for 64)
+2023/02/16 14:32:32 1238921 47bbee18 [INFO Client 4964] [SOUND] Source count = 512
+2023/02/16 14:32:32 1239125 47bbea59 [INFO Client 4964] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/16 14:32:32 1239125 951bc057 [INFO Client 4964] [STARTUP] Audio in 0.203444 seconds
+2023/02/16 14:32:32 1239281 951bc057 [INFO Client 4964] [STARTUP] Registration in 0.369223 seconds
+2023/02/16 14:32:33 1240031 509417f7 [WARN Client 4964] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:32:51 ***** LOG FILE OPENING *****
+2023/02/16 14:32:51 1258234 340884db [DEBUG Client 9948] [RENDER] StopDevice
+2023/02/16 14:32:51 1258234 84a7e6f1 [INFO Client 9948] [ENGINE] Clear
+2023/02/16 14:32:51 1258234 7bb5422 [INFO Client 9948] [BUNDLE2] Deinit
+2023/02/16 14:32:52 ***** LOG FILE OPENING *****
+2023/02/16 14:32:52 1259218 509417f7 [WARN Client 9948] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:32:52 1259218 84a7e691 [INFO Client 9948] [JOB] Clear
+2023/02/16 14:32:52 1259218 84a7e7bf [INFO Client 9948] [ANIMATION] Clear
+2023/02/16 14:32:52 1259218 84a7e7be [INFO Client 9948] [PHYSICS] Clear
+2023/02/16 14:32:52 1259218 84a7e7bd [INFO Client 9948] [SHADER] Clear
+2023/02/16 14:32:52 1259218 84a7e7bc [INFO Client 9948] [ENTITY] Clear
+2023/02/16 14:32:52 1259218 84a7e7bb [INFO Client 9948] [SOUND] Clear
+2023/02/16 14:32:52 1259218 84a7e7ba [INFO Client 9948] [VIDEO] Clear
+2023/02/16 14:32:52 1259218 84a7e7b9 [INFO Client 9948] [SCENE] Clear
+2023/02/16 14:32:52 1259218 84a7e7b8 [INFO Client 9948] [GRAPH] Clear
+2023/02/16 14:32:52 1259218 84a7e7b7 [INFO Client 9948] [TELEMETRY] Clear
+2023/02/16 14:32:52 1259218 84a7e7b6 [INFO Client 9948] [RESOURCE] GarbageCollect
+2023/02/16 14:32:52 1259218 84a7e75e [INFO Client 9948] [RESOURCE] Clear
+2023/02/16 14:32:52 1259218 84a7e75b [INFO Client 9948] [RENDER] Clear
+2023/02/16 14:32:52 1259218 84a7e758 [INFO Client 9948] [ENGINE] Done
+2023/02/16 14:32:52 1259250 f95442e3 [INFO Client 6260] [STARTUP] Job Queues
+2023/02/16 14:32:52 1259250 9e6a0b0a [INFO Client 6260] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:32:52 1259296 9e6a1d2a [INFO Client 6260] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:32:52 1259296 9e6a1363 [INFO Client 6260] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:32:52 1259296 9e6a0b0a [INFO Client 6260] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:32:52 1259296 9e6a1d2a [INFO Client 6260] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:32:52 1259296 84a7d27d [INFO Client 6260] [ENGINE] Init
+2023/02/16 14:32:52 1259296 55713145 [INFO Client 6260] [JOB] HIGH: 2
+2023/02/16 14:32:52 1259296 55713145 [INFO Client 6260] [JOB] MEDIUM: 2
+2023/02/16 14:32:52 1259296 55713145 [INFO Client 6260] [JOB] LOW: 2
+2023/02/16 14:32:52 1259296 55713145 [INFO Client 6260] [JOB] IDLE: 1
+2023/02/16 14:32:52 1259296 7bb548f [INFO Client 6260] [BUNDLE2] Init
+2023/02/16 14:32:52 1259296 7bb36c4 [INFO Client 6260] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/16 14:32:52 1259500 7bb61e6 [INFO Client 6260] [BUNDLE2] File cache size: 1024
+2023/02/16 14:32:52 1259500 b51d61ab [INFO Client 6260] [RENDER] Async: ON
+2023/02/16 14:32:52 1259500 b51d60c8 [INFO Client 6260] [RENDER] Warmup: ON
+2023/02/16 14:32:52 1259500 b51d60ce [INFO Client 6260] [RENDER] Skip: ON
+2023/02/16 14:32:52 1259500 b51d60eb [INFO Client 6260] [RENDER] Throttling: ON
+2023/02/16 14:32:52 1259500 32759a7a [INFO Client 6260] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/16 14:32:52 1259500 32759a70 [INFO Client 6260] [SHADER] Async: ON
+2023/02/16 14:32:52 1259500 32759a9f [INFO Client 6260] [SHADER] Delay: OFF
+2023/02/16 14:32:52 1259500 32759aba [INFO Client 6260] [SHADER] Limit: ON
+2023/02/16 14:32:52 1259500 32759abc [INFO Client 6260] [SHADER] Warmup: ON
+2023/02/16 14:32:52 1259500 327599d7 [INFO Client 6260] [SHADER] Parallel: OFF
+2023/02/16 14:32:52 1259500 84a7e376 [INFO Client 6260] [ENGINE] Running Engine version 1.7.0
+2023/02/16 14:32:52 1259500 47bbd15b [INFO Client 6260] [SOUND] Buffer size = 64.0 MB
+2023/02/16 14:32:52 1259515 9b0d205 [INFO Client 6260] [VIDEO] Enable: ON
+2023/02/16 14:32:52 1259546 84a7d2d8 [INFO Client 6260] [ENGINE] Ready
+2023/02/16 14:32:52 1259562 951bc0b0 [INFO Client 6260] [STARTUP] Bundle Startup Start
+2023/02/16 14:32:52 1259562 951bc057 [INFO Client 6260] [STARTUP] Bundle Startup in 7e-05 seconds
+2023/02/16 14:32:52 1259562 951bc0b0 [INFO Client 6260] [STARTUP] Game Start
+2023/02/16 14:32:53 1259734 ca86fd3f [DEBUG Client 6260] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/16 14:32:53 1259984 951bc057 [INFO Client 6260] [STARTUP] Game in 0.416327 seconds
+2023/02/16 14:32:53 1259984 951bc0b0 [INFO Client 6260] [STARTUP] Window Start
+2023/02/16 14:32:53 1259984 9e6a0b0a [INFO Client 6260] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:32:53 1260015 9e6a1d2a [INFO Client 6260] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:32:53 1260015 9e6a1363 [INFO Client 6260] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:32:53 1260015 9e6a0b0a [INFO Client 6260] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:32:53 1260031 9e6a1d2a [INFO Client 6260] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:32:53 1260046 951bc057 [INFO Client 6260] [STARTUP] Window in 0.063695 seconds
+2023/02/16 14:32:53 1260046 413b61ff [DEBUG Client 6260] [GamepadManager] Initialising
+2023/02/16 14:32:53 1260046 951bc0b0 [INFO Client 6260] [STARTUP] Device Start
+2023/02/16 14:32:53 1260046 b51d6589 [INFO Client 6260] [RENDER] StartDevice: DirectX11
+2023/02/16 14:32:53 1260203 71b2ea0 [DEBUG Client 6260] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/16 14:32:53 1260250 fafff8cf [DEBUG Client 6260] CreateSwapChain: SetFullScreenState 0
+2023/02/16 14:32:53 1260250 29d4ce01 [INFO Client 6260] [D3D11] Runtime version = 11.1
+2023/02/16 14:32:53 1260250 29d4ce00 [INFO Client 6260] [D3D11] Feature Level = 11.1
+2023/02/16 14:32:53 1260250 29d4ce03 [INFO Client 6260] [D3D11] Driver Command Lists = NO
+2023/02/16 14:32:53 1260250 29d4ce02 [INFO Client 6260] [D3D11] Driver Concurrent Creates = YES
+2023/02/16 14:32:53 1260250 29d4ce05 [INFO Client 6260] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/16 14:33:05 ***** LOG FILE OPENING *****
+2023/02/16 14:33:05 1271843 340884db [DEBUG Client 3316] [RENDER] StopDevice
+2023/02/16 14:33:05 1271843 84a7e6f1 [INFO Client 3316] [ENGINE] Clear
+2023/02/16 14:33:05 1271843 7bb5422 [INFO Client 3316] [BUNDLE2] Deinit
+2023/02/16 14:33:06 ***** LOG FILE OPENING *****
+2023/02/16 14:33:06 1272812 f95442e3 [INFO Client 8008] [STARTUP] Job Queues
+2023/02/16 14:33:06 1272812 9e6a0b0a [INFO Client 8008] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:33:06 1272843 509417f7 [WARN Client 3316] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:33:06 1272843 84a7e691 [INFO Client 3316] [JOB] Clear
+2023/02/16 14:33:06 1272843 84a7e7bf [INFO Client 3316] [ANIMATION] Clear
+2023/02/16 14:33:06 1272843 84a7e7be [INFO Client 3316] [PHYSICS] Clear
+2023/02/16 14:33:06 1272843 84a7e7bd [INFO Client 3316] [SHADER] Clear
+2023/02/16 14:33:06 1272843 84a7e7bc [INFO Client 3316] [ENTITY] Clear
+2023/02/16 14:33:06 1272843 84a7e7bb [INFO Client 3316] [SOUND] Clear
+2023/02/16 14:33:06 1272843 84a7e7ba [INFO Client 3316] [VIDEO] Clear
+2023/02/16 14:33:06 1272843 84a7e7b9 [INFO Client 3316] [SCENE] Clear
+2023/02/16 14:33:06 1272843 84a7e7b8 [INFO Client 3316] [GRAPH] Clear
+2023/02/16 14:33:06 1272843 84a7e7b7 [INFO Client 3316] [TELEMETRY] Clear
+2023/02/16 14:33:06 1272843 84a7e7b6 [INFO Client 3316] [RESOURCE] GarbageCollect
+2023/02/16 14:33:06 1272843 84a7e75e [INFO Client 3316] [RESOURCE] Clear
+2023/02/16 14:33:06 1272843 84a7e75b [INFO Client 3316] [RENDER] Clear
+2023/02/16 14:33:06 1272843 84a7e758 [INFO Client 3316] [ENGINE] Done
+2023/02/16 14:33:06 1272859 9e6a1d2a [INFO Client 8008] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:33:06 1272859 9e6a1363 [INFO Client 8008] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:33:06 1272859 9e6a0b0a [INFO Client 8008] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:33:06 1272859 9e6a1d2a [INFO Client 8008] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:33:06 1272859 84a7d27d [INFO Client 8008] [ENGINE] Init
+2023/02/16 14:33:06 1272859 55713145 [INFO Client 8008] [JOB] HIGH: 2
+2023/02/16 14:33:06 1272859 55713145 [INFO Client 8008] [JOB] MEDIUM: 2
+2023/02/16 14:33:06 1272859 55713145 [INFO Client 8008] [JOB] LOW: 2
+2023/02/16 14:33:06 1272859 55713145 [INFO Client 8008] [JOB] IDLE: 1
+2023/02/16 14:33:06 1272859 7bb548f [INFO Client 8008] [BUNDLE2] Init
+2023/02/16 14:33:06 1272859 7bb36c4 [INFO Client 8008] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/16 14:33:06 1273046 7bb61e6 [INFO Client 8008] [BUNDLE2] File cache size: 1024
+2023/02/16 14:33:06 1273046 b51d61ab [INFO Client 8008] [RENDER] Async: ON
+2023/02/16 14:33:06 1273046 b51d60c8 [INFO Client 8008] [RENDER] Warmup: ON
+2023/02/16 14:33:06 1273046 b51d60ce [INFO Client 8008] [RENDER] Skip: ON
+2023/02/16 14:33:06 1273046 b51d60eb [INFO Client 8008] [RENDER] Throttling: ON
+2023/02/16 14:33:06 1273046 32759a7a [INFO Client 8008] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/16 14:33:06 1273046 32759a70 [INFO Client 8008] [SHADER] Async: ON
+2023/02/16 14:33:06 1273046 32759a9f [INFO Client 8008] [SHADER] Delay: OFF
+2023/02/16 14:33:06 1273046 32759aba [INFO Client 8008] [SHADER] Limit: ON
+2023/02/16 14:33:06 1273046 32759abc [INFO Client 8008] [SHADER] Warmup: ON
+2023/02/16 14:33:06 1273046 327599d7 [INFO Client 8008] [SHADER] Parallel: OFF
+2023/02/16 14:33:06 1273046 84a7e376 [INFO Client 8008] [ENGINE] Running Engine version 1.7.0
+2023/02/16 14:33:06 1273062 47bbd15b [INFO Client 8008] [SOUND] Buffer size = 64.0 MB
+2023/02/16 14:33:06 1273078 9b0d205 [INFO Client 8008] [VIDEO] Enable: ON
+2023/02/16 14:33:06 1273093 84a7d2d8 [INFO Client 8008] [ENGINE] Ready
+2023/02/16 14:33:06 1273109 951bc0b0 [INFO Client 8008] [STARTUP] Bundle Startup Start
+2023/02/16 14:33:06 1273109 951bc057 [INFO Client 8008] [STARTUP] Bundle Startup in 6.4e-05 seconds
+2023/02/16 14:33:06 1273125 951bc0b0 [INFO Client 8008] [STARTUP] Game Start
+2023/02/16 14:33:06 1273296 ca86fd3f [DEBUG Client 8008] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/16 14:33:06 1273562 951bc057 [INFO Client 8008] [STARTUP] Game in 0.448534 seconds
+2023/02/16 14:33:06 1273562 951bc0b0 [INFO Client 8008] [STARTUP] Window Start
+2023/02/16 14:33:06 1273562 9e6a0b0a [INFO Client 8008] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:33:06 1273609 9e6a1d2a [INFO Client 8008] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:33:06 1273609 9e6a1363 [INFO Client 8008] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:33:06 1273609 9e6a0b0a [INFO Client 8008] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:33:06 1273609 9e6a1d2a [INFO Client 8008] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:33:06 1273625 951bc057 [INFO Client 8008] [STARTUP] Window in 0.064518 seconds
+2023/02/16 14:33:06 1273640 413b61ff [DEBUG Client 8008] [GamepadManager] Initialising
+2023/02/16 14:33:06 1273640 951bc0b0 [INFO Client 8008] [STARTUP] Device Start
+2023/02/16 14:33:06 1273640 b51d6589 [INFO Client 8008] [RENDER] StartDevice: DirectX11
+2023/02/16 14:33:07 1273843 71b2ea0 [DEBUG Client 8008] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/16 14:33:07 1273890 fafff8cf [DEBUG Client 8008] CreateSwapChain: SetFullScreenState 0
+2023/02/16 14:33:07 1273890 29d4ce01 [INFO Client 8008] [D3D11] Runtime version = 11.1
+2023/02/16 14:33:07 1273890 29d4ce00 [INFO Client 8008] [D3D11] Feature Level = 11.1
+2023/02/16 14:33:07 1273890 29d4ce03 [INFO Client 8008] [D3D11] Driver Command Lists = NO
+2023/02/16 14:33:07 1273890 29d4ce02 [INFO Client 8008] [D3D11] Driver Concurrent Creates = YES
+2023/02/16 14:33:07 1273890 29d4ce05 [INFO Client 8008] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/16 14:33:07 1273937 9d4eeb40 [DEBUG Client 8008] [WINDOW] TrigggerDeviceCreate
+2023/02/16 14:33:07 1274125 9d4eeba7 [DEBUG Client 8008] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:33:07 1274156 9d4eec8a [DEBUG Client 8008] [WINDOW] TrigggerDeviceLost
+2023/02/16 14:33:07 1274156 9d4eeba7 [DEBUG Client 8008] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:33:07 1274171 951bc057 [INFO Client 8008] [STARTUP] Device in 0.524695 seconds
+2023/02/16 14:33:07 1274171 951bc0b0 [INFO Client 8008] [STARTUP] Tencent Start
+2023/02/16 14:33:07 1274171 951bc057 [INFO Client 8008] [STARTUP] Tencent in 3.4e-05 seconds
+2023/02/16 14:33:07 1274171 951bc0b0 [INFO Client 8008] [STARTUP] Loading Start
+2023/02/16 14:33:07 1274203 951bc057 [INFO Client 8008] [STARTUP] Loading in 0.035115 seconds
+2023/02/16 14:33:07 1274203 951bc0b0 [INFO Client 8008] [STARTUP] DebugGUI Start
+2023/02/16 14:33:07 1274203 951bc057 [INFO Client 8008] [STARTUP] DebugGUI in 1.8e-05 seconds
+2023/02/16 14:33:07 1274203 951bc0b0 [INFO Client 8008] [STARTUP] Bundle Tiny Start
+2023/02/16 14:33:07 1274203 951bc0b0 [INFO Client 8008] [STARTUP] Bundle Login Start
+2023/02/16 14:33:07 1274203 951bc057 [INFO Client 8008] [STARTUP] Bundle Login in 2.3e-05 seconds
+2023/02/16 14:33:07 1274203 951bc0b0 [INFO Client 8008] [STARTUP] Registration Start
+2023/02/16 14:33:07 1274203 951bc057 [INFO Client 8008] [STARTUP] Bundle Tiny in 6.9e-05 seconds
+2023/02/16 14:33:07 1274218 951bc0b0 [INFO Client 8008] [STARTUP] Audio Start
+2023/02/16 14:33:07 1274218 47bbee1b [INFO Client 8008] [SOUND] Channel count = 64 (asked for 64)
+2023/02/16 14:33:07 1274218 47bbee18 [INFO Client 8008] [SOUND] Source count = 512
+2023/02/16 14:33:07 1274375 47bbea59 [INFO Client 8008] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/16 14:33:07 1274375 951bc057 [INFO Client 8008] [STARTUP] Audio in 0.148003 seconds
+2023/02/16 14:33:07 1274546 951bc057 [INFO Client 8008] [STARTUP] Registration in 0.338896 seconds
+2023/02/16 14:33:08 1275265 509417f7 [WARN Client 8008] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:33:27 1294625 890d9d5f [INFO Client 8008] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/16 14:33:28 1294703 890d9cd8 [INFO Client 8008] Connected to mil01.login.pathofexile.com in 16ms.
+2023/02/16 14:38:50 ***** LOG FILE OPENING *****
+2023/02/16 14:38:50 1616984 340884db [DEBUG Client 10092] [RENDER] StopDevice
+2023/02/16 14:38:50 1616984 84a7e6f1 [INFO Client 10092] [ENGINE] Clear
+2023/02/16 14:38:50 1616984 7bb5422 [INFO Client 10092] [BUNDLE2] Deinit
+2023/02/16 14:38:51 ***** LOG FILE OPENING *****
+2023/02/16 14:38:51 1617953 f95442e3 [INFO Client 6920] [STARTUP] Job Queues
+2023/02/16 14:38:51 1617953 9e6a0b0a [INFO Client 6920] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:38:51 1617984 509417f7 [WARN Client 10092] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:38:51 1617984 84a7e691 [INFO Client 10092] [JOB] Clear
+2023/02/16 14:38:51 1617984 84a7e7bf [INFO Client 10092] [ANIMATION] Clear
+2023/02/16 14:38:51 1617984 84a7e7be [INFO Client 10092] [PHYSICS] Clear
+2023/02/16 14:38:51 1617984 84a7e7bd [INFO Client 10092] [SHADER] Clear
+2023/02/16 14:38:51 1617984 84a7e7bc [INFO Client 10092] [ENTITY] Clear
+2023/02/16 14:38:51 1617984 84a7e7bb [INFO Client 10092] [SOUND] Clear
+2023/02/16 14:38:51 1617984 84a7e7ba [INFO Client 10092] [VIDEO] Clear
+2023/02/16 14:38:51 1617984 84a7e7b9 [INFO Client 10092] [SCENE] Clear
+2023/02/16 14:38:51 1617984 84a7e7b8 [INFO Client 10092] [GRAPH] Clear
+2023/02/16 14:38:51 1617984 84a7e7b7 [INFO Client 10092] [TELEMETRY] Clear
+2023/02/16 14:38:51 1617984 84a7e7b6 [INFO Client 10092] [RESOURCE] GarbageCollect
+2023/02/16 14:38:51 1617984 84a7e75e [INFO Client 10092] [RESOURCE] Clear
+2023/02/16 14:38:51 1617984 84a7e75b [INFO Client 10092] [RENDER] Clear
+2023/02/16 14:38:51 1617984 84a7e758 [INFO Client 10092] [ENGINE] Done
+2023/02/16 14:38:51 1618015 9e6a1d2a [INFO Client 6920] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:38:51 1618015 9e6a1363 [INFO Client 6920] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:38:51 1618015 9e6a0b0a [INFO Client 6920] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:38:51 1618015 9e6a1d2a [INFO Client 6920] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:38:51 1618015 84a7d27d [INFO Client 6920] [ENGINE] Init
+2023/02/16 14:38:51 1618015 55713145 [INFO Client 6920] [JOB] HIGH: 2
+2023/02/16 14:38:51 1618015 55713145 [INFO Client 6920] [JOB] MEDIUM: 2
+2023/02/16 14:38:51 1618015 55713145 [INFO Client 6920] [JOB] LOW: 2
+2023/02/16 14:38:51 1618015 55713145 [INFO Client 6920] [JOB] IDLE: 1
+2023/02/16 14:38:51 1618015 7bb548f [INFO Client 6920] [BUNDLE2] Init
+2023/02/16 14:38:51 1618015 7bb36c4 [INFO Client 6920] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/16 14:38:51 1618265 7bb61e6 [INFO Client 6920] [BUNDLE2] File cache size: 1024
+2023/02/16 14:38:51 1618265 b51d61ab [INFO Client 6920] [RENDER] Async: ON
+2023/02/16 14:38:51 1618265 b51d60c8 [INFO Client 6920] [RENDER] Warmup: ON
+2023/02/16 14:38:51 1618265 b51d60ce [INFO Client 6920] [RENDER] Skip: ON
+2023/02/16 14:38:51 1618265 b51d60eb [INFO Client 6920] [RENDER] Throttling: ON
+2023/02/16 14:38:51 1618265 32759a7a [INFO Client 6920] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/16 14:38:51 1618265 32759a70 [INFO Client 6920] [SHADER] Async: ON
+2023/02/16 14:38:51 1618265 32759a9f [INFO Client 6920] [SHADER] Delay: OFF
+2023/02/16 14:38:51 1618265 32759aba [INFO Client 6920] [SHADER] Limit: ON
+2023/02/16 14:38:51 1618265 32759abc [INFO Client 6920] [SHADER] Warmup: ON
+2023/02/16 14:38:51 1618265 327599d7 [INFO Client 6920] [SHADER] Parallel: OFF
+2023/02/16 14:38:51 1618265 84a7e376 [INFO Client 6920] [ENGINE] Running Engine version 1.7.0
+2023/02/16 14:38:51 1618265 47bbd15b [INFO Client 6920] [SOUND] Buffer size = 64.0 MB
+2023/02/16 14:38:51 1618296 9b0d205 [INFO Client 6920] [VIDEO] Enable: ON
+2023/02/16 14:38:51 1618312 84a7d2d8 [INFO Client 6920] [ENGINE] Ready
+2023/02/16 14:38:51 1618328 951bc0b0 [INFO Client 6920] [STARTUP] Bundle Startup Start
+2023/02/16 14:38:51 1618328 951bc057 [INFO Client 6920] [STARTUP] Bundle Startup in 7.4e-05 seconds
+2023/02/16 14:38:51 1618328 951bc0b0 [INFO Client 6920] [STARTUP] Game Start
+2023/02/16 14:38:51 1618546 ca86fd3f [DEBUG Client 6920] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/16 14:38:52 1618828 951bc057 [INFO Client 6920] [STARTUP] Game in 0.492062 seconds
+2023/02/16 14:38:52 1618828 951bc0b0 [INFO Client 6920] [STARTUP] Window Start
+2023/02/16 14:38:52 1618828 9e6a0b0a [INFO Client 6920] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:38:52 1618875 9e6a1d2a [INFO Client 6920] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:38:52 1618875 9e6a1363 [INFO Client 6920] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:38:52 1618875 9e6a0b0a [INFO Client 6920] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:38:52 1618875 9e6a1d2a [INFO Client 6920] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:38:52 1618906 951bc057 [INFO Client 6920] [STARTUP] Window in 0.084529 seconds
+2023/02/16 14:38:52 1618921 413b61ff [DEBUG Client 6920] [GamepadManager] Initialising
+2023/02/16 14:38:52 1618921 951bc0b0 [INFO Client 6920] [STARTUP] Device Start
+2023/02/16 14:38:52 1618921 b51d6589 [INFO Client 6920] [RENDER] StartDevice: DirectX11
+2023/02/16 14:38:52 1619421 71b2ea0 [DEBUG Client 6920] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/16 14:38:52 1619656 fafff8cf [DEBUG Client 6920] CreateSwapChain: SetFullScreenState 0
+2023/02/16 14:38:52 1619656 29d4ce01 [INFO Client 6920] [D3D11] Runtime version = 11.1
+2023/02/16 14:38:52 1619656 29d4ce00 [INFO Client 6920] [D3D11] Feature Level = 11.1
+2023/02/16 14:38:52 1619656 29d4ce03 [INFO Client 6920] [D3D11] Driver Command Lists = NO
+2023/02/16 14:38:52 1619656 29d4ce02 [INFO Client 6920] [D3D11] Driver Concurrent Creates = YES
+2023/02/16 14:38:52 1619656 29d4ce05 [INFO Client 6920] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/16 14:38:53 1619843 9d4eeb40 [DEBUG Client 6920] [WINDOW] TrigggerDeviceCreate
+2023/02/16 14:38:53 1620468 9d4eeba7 [DEBUG Client 6920] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:38:53 1620500 9d4eec8a [DEBUG Client 6920] [WINDOW] TrigggerDeviceLost
+2023/02/16 14:38:53 1620500 9d4eeba7 [DEBUG Client 6920] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:38:53 1620515 951bc057 [INFO Client 6920] [STARTUP] Device in 1.59401 seconds
+2023/02/16 14:38:53 1620515 951bc0b0 [INFO Client 6920] [STARTUP] Tencent Start
+2023/02/16 14:38:53 1620515 951bc057 [INFO Client 6920] [STARTUP] Tencent in 0.000129 seconds
+2023/02/16 14:38:53 1620515 951bc0b0 [INFO Client 6920] [STARTUP] Loading Start
+2023/02/16 14:38:53 1620562 951bc057 [INFO Client 6920] [STARTUP] Loading in 0.034275 seconds
+2023/02/16 14:38:53 1620562 951bc0b0 [INFO Client 6920] [STARTUP] DebugGUI Start
+2023/02/16 14:38:53 1620562 951bc057 [INFO Client 6920] [STARTUP] DebugGUI in 3.6e-05 seconds
+2023/02/16 14:38:53 1620562 951bc0b0 [INFO Client 6920] [STARTUP] Bundle Tiny Start
+2023/02/16 14:38:53 1620562 951bc0b0 [INFO Client 6920] [STARTUP] Bundle Login Start
+2023/02/16 14:38:53 1620562 951bc057 [INFO Client 6920] [STARTUP] Bundle Login in 5.9e-05 seconds
+2023/02/16 14:38:53 1620562 951bc057 [INFO Client 6920] [STARTUP] Bundle Tiny in 0.000333 seconds
+2023/02/16 14:38:53 1620562 951bc0b0 [INFO Client 6920] [STARTUP] Registration Start
+2023/02/16 14:38:53 1620562 951bc0b0 [INFO Client 6920] [STARTUP] Audio Start
+2023/02/16 14:38:53 1620562 47bbee1b [INFO Client 6920] [SOUND] Channel count = 64 (asked for 64)
+2023/02/16 14:38:53 1620562 47bbee18 [INFO Client 6920] [SOUND] Source count = 512
+2023/02/16 14:38:54 1620765 47bbea59 [INFO Client 6920] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/16 14:38:54 1620765 951bc057 [INFO Client 6920] [STARTUP] Audio in 0.199972 seconds
+2023/02/16 14:38:54 1621062 951bc057 [INFO Client 6920] [STARTUP] Registration in 0.503569 seconds
+2023/02/16 14:38:54 1621671 509417f7 [WARN Client 6920] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:39:00 1627125 890d9d5f [INFO Client 6920] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/16 14:39:00 1627343 890d9cd8 [INFO Client 6920] Connected to mil01.login.pathofexile.com in 16ms.
+2023/02/16 14:40:13 1700515 890d9d5f [INFO Client 6920] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/16 14:40:13 1700546 890d9cd8 [INFO Client 6920] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/16 14:40:17 1704062 88a904ed [DEBUG Client 6920] Got Instance Details from login server
+2023/02/16 14:40:17 1704093 32759a9f [INFO Client 6920] [SHADER] Delay: OFF
+2023/02/16 14:40:17 1704093 ca3a6a7f [INFO Client 6920] Connecting to instance server at 169.51.201.142:6112
+2023/02/16 14:40:17 1704171 ca3a4dbd [DEBUG Client 6920] Connect time to instance server was 47ms
+2023/02/16 14:40:17 1704265 1186a0e3 [DEBUG Client 6920] Generating level 69 area "2_10_town" with seed 1
+2023/02/16 14:40:20 1707453 f22b6987 [INFO Client 6920] Tile hash: 3862614232
+2023/02/16 14:40:20 1707453 f22b6986 [INFO Client 6920] Doodad hash: 0
+2023/02/16 14:41:42 ***** LOG FILE OPENING *****
+2023/02/16 14:41:42 1789156 340884db [DEBUG Client 6816] [RENDER] StopDevice
+2023/02/16 14:41:42 1789171 84a7e6f1 [INFO Client 6816] [ENGINE] Clear
+2023/02/16 14:41:42 1789171 7bb5422 [INFO Client 6816] [BUNDLE2] Deinit
+2023/02/16 14:41:43 ***** LOG FILE OPENING *****
+2023/02/16 14:41:43 1790187 509417f7 [WARN Client 6816] tool_settings.json was not found. Resetting to default settings.
+2023/02/16 14:41:43 1790187 84a7e691 [INFO Client 6816] [JOB] Clear
+2023/02/16 14:41:43 1790187 84a7e7bf [INFO Client 6816] [ANIMATION] Clear
+2023/02/16 14:41:43 1790187 84a7e7be [INFO Client 6816] [PHYSICS] Clear
+2023/02/16 14:41:43 1790187 84a7e7bd [INFO Client 6816] [SHADER] Clear
+2023/02/16 14:41:43 1790187 84a7e7bc [INFO Client 6816] [ENTITY] Clear
+2023/02/16 14:41:43 1790187 84a7e7bb [INFO Client 6816] [SOUND] Clear
+2023/02/16 14:41:43 1790187 84a7e7ba [INFO Client 6816] [VIDEO] Clear
+2023/02/16 14:41:43 1790187 84a7e7b9 [INFO Client 6816] [SCENE] Clear
+2023/02/16 14:41:43 1790187 84a7e7b8 [INFO Client 6816] [GRAPH] Clear
+2023/02/16 14:41:43 1790187 84a7e7b7 [INFO Client 6816] [TELEMETRY] Clear
+2023/02/16 14:41:43 1790187 84a7e7b6 [INFO Client 6816] [RESOURCE] GarbageCollect
+2023/02/16 14:41:43 1790187 84a7e75e [INFO Client 6816] [RESOURCE] Clear
+2023/02/16 14:41:43 1790187 84a7e75b [INFO Client 6816] [RENDER] Clear
+2023/02/16 14:41:43 1790187 84a7e758 [INFO Client 6816] [ENGINE] Done
+2023/02/16 14:41:43 1790203 f95442e3 [INFO Client 3480] [STARTUP] Job Queues
+2023/02/16 14:41:43 1790218 9e6a0b0a [INFO Client 3480] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:41:43 1790265 9e6a1d2a [INFO Client 3480] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:41:43 1790265 9e6a1363 [INFO Client 3480] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:41:43 1790265 9e6a0b0a [INFO Client 3480] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:41:43 1790265 9e6a1d2a [INFO Client 3480] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:41:43 1790281 84a7d27d [INFO Client 3480] [ENGINE] Init
+2023/02/16 14:41:43 1790281 55713145 [INFO Client 3480] [JOB] HIGH: 2
+2023/02/16 14:41:43 1790281 55713145 [INFO Client 3480] [JOB] MEDIUM: 2
+2023/02/16 14:41:43 1790281 55713145 [INFO Client 3480] [JOB] LOW: 2
+2023/02/16 14:41:43 1790281 55713145 [INFO Client 3480] [JOB] IDLE: 1
+2023/02/16 14:41:43 1790281 7bb548f [INFO Client 3480] [BUNDLE2] Init
+2023/02/16 14:41:43 1790281 7bb36c4 [INFO Client 3480] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/16 14:41:43 1790531 7bb61e6 [INFO Client 3480] [BUNDLE2] File cache size: 1024
+2023/02/16 14:41:43 1790531 b51d61ab [INFO Client 3480] [RENDER] Async: ON
+2023/02/16 14:41:43 1790531 b51d60c8 [INFO Client 3480] [RENDER] Warmup: ON
+2023/02/16 14:41:43 1790531 b51d60ce [INFO Client 3480] [RENDER] Skip: ON
+2023/02/16 14:41:43 1790531 b51d60eb [INFO Client 3480] [RENDER] Throttling: ON
+2023/02/16 14:41:43 1790546 32759a7a [INFO Client 3480] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/16 14:41:43 1790546 32759a70 [INFO Client 3480] [SHADER] Async: ON
+2023/02/16 14:41:43 1790546 32759a9f [INFO Client 3480] [SHADER] Delay: OFF
+2023/02/16 14:41:43 1790546 32759aba [INFO Client 3480] [SHADER] Limit: ON
+2023/02/16 14:41:43 1790546 32759abc [INFO Client 3480] [SHADER] Warmup: ON
+2023/02/16 14:41:43 1790546 327599d7 [INFO Client 3480] [SHADER] Parallel: OFF
+2023/02/16 14:41:43 1790546 84a7e376 [INFO Client 3480] [ENGINE] Running Engine version 1.7.0
+2023/02/16 14:41:43 1790546 47bbd15b [INFO Client 3480] [SOUND] Buffer size = 64.0 MB
+2023/02/16 14:41:43 1790578 9b0d205 [INFO Client 3480] [VIDEO] Enable: ON
+2023/02/16 14:41:43 1790593 84a7d2d8 [INFO Client 3480] [ENGINE] Ready
+2023/02/16 14:41:43 1790625 951bc0b0 [INFO Client 3480] [STARTUP] Bundle Startup Start
+2023/02/16 14:41:43 1790625 951bc057 [INFO Client 3480] [STARTUP] Bundle Startup in 6.8e-05 seconds
+2023/02/16 14:41:43 1790625 951bc0b0 [INFO Client 3480] [STARTUP] Game Start
+2023/02/16 14:41:44 1790843 ca86fd3f [DEBUG Client 3480] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/16 14:41:44 1791109 951bc057 [INFO Client 3480] [STARTUP] Game in 0.49494 seconds
+2023/02/16 14:41:44 1791109 951bc0b0 [INFO Client 3480] [STARTUP] Window Start
+2023/02/16 14:41:44 1791125 9e6a0b0a [INFO Client 3480] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/16 14:41:44 1791171 9e6a1d2a [INFO Client 3480] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:41:44 1791171 9e6a1363 [INFO Client 3480] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/16 14:41:44 1791171 9e6a0b0a [INFO Client 3480] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/16 14:41:44 1791171 9e6a1d2a [INFO Client 3480] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/16 14:41:44 1791203 951bc057 [INFO Client 3480] [STARTUP] Window in 0.085426 seconds
+2023/02/16 14:41:44 1791218 413b61ff [DEBUG Client 3480] [GamepadManager] Initialising
+2023/02/16 14:41:44 1791218 951bc0b0 [INFO Client 3480] [STARTUP] Device Start
+2023/02/16 14:41:44 1791218 b51d6589 [INFO Client 3480] [RENDER] StartDevice: DirectX11
+2023/02/16 14:41:44 1791468 71b2ea0 [DEBUG Client 3480] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/16 14:41:44 1791546 fafff8cf [DEBUG Client 3480] CreateSwapChain: SetFullScreenState 0
+2023/02/16 14:41:44 1791546 29d4ce01 [INFO Client 3480] [D3D11] Runtime version = 11.1
+2023/02/16 14:41:44 1791546 29d4ce00 [INFO Client 3480] [D3D11] Feature Level = 11.1
+2023/02/16 14:41:44 1791546 29d4ce03 [INFO Client 3480] [D3D11] Driver Command Lists = NO
+2023/02/16 14:41:44 1791546 29d4ce02 [INFO Client 3480] [D3D11] Driver Concurrent Creates = YES
+2023/02/16 14:41:44 1791546 29d4ce05 [INFO Client 3480] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/16 14:41:44 1791625 9d4eeb40 [DEBUG Client 3480] [WINDOW] TrigggerDeviceCreate
+2023/02/16 14:41:45 1791859 9d4eeba7 [DEBUG Client 3480] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:41:45 1791875 9d4eec8a [DEBUG Client 3480] [WINDOW] TrigggerDeviceLost
+2023/02/16 14:41:45 1791875 9d4eeba7 [DEBUG Client 3480] [WINDOW] TrigggerDeviceReset
+2023/02/16 14:41:45 1791890 951bc057 [INFO Client 3480] [STARTUP] Device in 0.670077 seconds
+2023/02/16 14:41:45 1791890 951bc0b0 [INFO Client 3480] [STARTUP] Tencent Start
+2023/02/16 14:41:45 1791890 951bc057 [INFO Client 3480] [STARTUP] Tencent in 0.000193 seconds
+2023/02/16 14:41:45 1791890 951bc0b0 [INFO Client 3480] [STARTUP] Loading Start
+2023/02/16 14:41:45 1791921 951bc057 [INFO Client 3480] [STARTUP] Loading in 0.031515 seconds
+2023/02/16 14:41:45 1791921 951bc0b0 [INFO Client 3480] [STARTUP] DebugGUI Start
+2023/02/16 14:41:45 1791921 951bc057 [INFO Client 3480] [STARTUP] DebugGUI in 2.1e-05 seconds
+2023/02/16 14:41:45 1791921 951bc0b0 [INFO Client 3480] [STARTUP] Bundle Tiny Start
+2023/02/16 14:41:45 1791921 951bc0b0 [INFO Client 3480] [STARTUP] Bundle Login Start
+2023/02/16 14:41:45 1791921 951bc057 [INFO Client 3480] [STARTUP] Bundle Login in 2.4e-05 seconds
+2023/02/16 14:41:45 1791921 951bc0b0 [INFO Client 3480] [STARTUP] Registration Start
+2023/02/16 14:41:45 1791921 951bc057 [INFO Client 3480] [STARTUP] Bundle Tiny in 6e-05 seconds
+2023/02/16 14:41:45 1791921 951bc0b0 [INFO Client 3480] [STARTUP] Audio Start
+2023/02/16 14:41:45 1791921 47bbee1b [INFO Client 3480] [SOUND] Channel count = 64 (asked for 64)
+2023/02/16 14:41:45 1791921 47bbee18 [INFO Client 3480] [SOUND] Source count = 512
+2023/02/16 14:41:45 1792078 47bbea59 [INFO Client 3480] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/16 14:41:45 1792078 951bc057 [INFO Client 3480] [STARTUP] Audio in 0.148243 seconds
+2023/02/16 14:41:45 1792484 951bc057 [INFO Client 3480] [STARTUP] Registration in 0.567539 seconds
+2023/02/16 14:41:46 1792984 509417f7 [WARN Client 3480] tool_settings.json was not found. Resetting to default settings.
