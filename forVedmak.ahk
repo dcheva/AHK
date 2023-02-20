@@ -35,7 +35,7 @@ $!W::
   Send, {W Down}
   Send, {LShift Down}
   ; and scan
-  Sleep, 500
+  Sleep, 200
   Send, {RButton Down}
 return
 
@@ -47,7 +47,7 @@ $^W::
   Send, {LShift Up}
   Send, {LShift Down}
   ; and scan
-  Sleep, 500
+  Sleep, 2000
   Send, {RButton Down}
 return
 
