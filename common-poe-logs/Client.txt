@@ -35569,3 +35569,305 @@ flags: 129
 2023/02/22 15:42:03 12056640 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
 2023/02/22 15:42:04 12057515 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Реликварий.
 2023/02/22 15:42:05 12058312 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 15:46:17 12310468 118717e5 [DEBUG Client 5488] Resyncing 1810
+2023/02/22 15:46:17 12310468 118717e5 [DEBUG Client 5488] Resyncing 1812
+2023/02/22 15:50:45 12577875 374e128b [INFO Client 5488] [Item Filter] Downloading online list
+2023/02/22 15:50:47 12580187 374e0d22 [INFO Client 5488] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/22 15:50:47 12580187 374e0cc3 [INFO Client 5488] [Item Filter] Hash for online filter prraV6FQ is: (empty)
+2023/02/22 15:50:53 12586000 374e0cc9 [INFO Client 5488] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/22 15:50:53 12586000 374e0ce3 [DEBUG Client 5488] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/22 15:50:53 12586000 374e0e8e [DEBUG Client 5488] [Item Filter] X-HW: 1677073848.dop208.pa1.t,1677073852.cds207.pa1.shn,1677073852.dop208.pa1.t,1677073852.cds212.pa1.s,1677073852.dop110.da2.r,1677073853.cds036.da2.p,1677073853.cds212.pa1.p
+2023/02/22 15:50:53 12586015 374df808 [INFO Client 5488] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 15:50:53 12586031 788474c3 [INFO Client 5488] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 69577cd6f98cfd915bc8936b89b72e7e. Type: Ruthless. Message: 
+2023/02/22 15:51:09 12601968 aecea337 [INFO Client 5488] Abnormal disconnect: Произошло неожиданное отключение от сервера.
+2023/02/22 15:51:31 12624593 374e12ec [INFO Client 5488] [Item Filter] Online list returned status: 0
+2023/02/22 15:51:45 12638187 890d9d5f [INFO Client 5488] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/22 15:51:45 12638203 890d9cd8 [INFO Client 5488] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/22 15:51:54 12646812 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 15:51:54 12646828 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 15:51:54 12646828 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.138:6112
+2023/02/22 15:51:55 12647890 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 1031ms
+2023/02/22 15:51:55 12647937 1186a0e3 [DEBUG Client 5488] Generating level 69 area "2_10_town" with seed 1
+2023/02/22 15:51:55 12648656 f22b6987 [INFO Client 5488] Tile hash: 3862614232
+2023/02/22 15:51:55 12648656 f22b6986 [INFO Client 5488] Doodad hash: 0
+2023/02/22 15:51:57 12650281 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 15:51:57 12650609 cffb0734 [INFO Client 5488] &: ОБЪЯВЛЕНИЕ ГИЛЬДИИ: В гостяк у CARDIFF 
+2023/02/22 15:51:58 12650921 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Доки Ориата.
+2023/02/22 15:51:58 12651640 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 15:51:58 12651671 374e0d22 [INFO Client 5488] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/22 15:51:58 12651671 374e0cc3 [INFO Client 5488] [Item Filter] Hash for online filter prraV6FQ is: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 15:51:59 12651953 374e0cc9 [INFO Client 5488] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/22 15:51:59 12651953 374e0ce3 [DEBUG Client 5488] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/22 15:51:59 12651953 374e0e8e [DEBUG Client 5488] [Item Filter] X-HW: 1677073920.dop202.pa1.t,1677073920.cds036.pa1.shn,1677073920.dop202.pa1.t,1677073920.cds212.pa1.c
+2023/02/22 15:51:59 12651953 374df808 [INFO Client 5488] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 15:51:59 12651968 788474c3 [INFO Client 5488] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 69577cd6f98cfd915bc8936b89b72e7e. Type: Ruthless. Message: 
+2023/02/22 15:53:03 12716031 cffb0734 [INFO Client 5488] : Сделка совершена.
+2023/02/22 15:53:17 12730234 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 15:53:17 12730234 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 15:53:17 12730234 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.169:6112
+2023/02/22 15:53:17 12730281 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 15:53:17 12730328 1186a0e3 [DEBUG Client 5488] Generating level 67 area "2_10_8" with seed 906950593
+2023/02/22 15:53:17 12730453 f22b6987 [INFO Client 5488] Tile hash: 726606404
+2023/02/22 15:53:17 12730453 f22b6986 [INFO Client 5488] Doodad hash: 927559515
+2023/02/22 15:53:18 12731265 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 15:53:19 12731921 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Реликварий.
+2023/02/22 15:53:19 12732515 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 15:54:17 12790250 cffb0734 [INFO Client 5488] : DeeFirera был повержен.
+2023/02/22 15:54:52 12825031 118717e5 [DEBUG Client 5488] Resyncing 1380
+2023/02/22 15:54:58 12831562 118717e5 [DEBUG Client 5488] Resyncing 1370
+2023/02/22 15:58:27 13040500 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 15:58:27 13040500 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 15:58:27 13040500 ca3a6a7f [INFO Client 5488] Connecting to instance server at 159.122.142.238:6112
+2023/02/22 15:58:27 13040546 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 46ms
+2023/02/22 15:58:27 13040609 1186a0e3 [DEBUG Client 5488] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/22 15:58:28 13041171 f22b6987 [INFO Client 5488] Tile hash: 805187908
+2023/02/22 15:58:28 13041171 f22b6986 [INFO Client 5488] Doodad hash: 0
+2023/02/22 15:58:29 13041703 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 15:58:29 13042625 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/22 15:58:30 13043437 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:01:49 13241718 890d9d5f [INFO Client 5488] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/22 16:01:49 13241750 890d9cd8 [INFO Client 5488] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/22 16:02:36 13288859 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:02:36 13288875 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:02:36 13288875 ca3a6a7f [INFO Client 5488] Connecting to instance server at 159.122.142.231:6112
+2023/02/22 16:02:36 13288921 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 16:02:36 13288984 1186a0e3 [DEBUG Client 5488] Generating level 1 area "1_1_1" with seed 1827776412
+2023/02/22 16:02:37 13289906 f22b6987 [INFO Client 5488] Tile hash: 3133019685
+2023/02/22 16:02:37 13289906 f22b6986 [INFO Client 5488] Doodad hash: 373771955
+2023/02/22 16:02:39 13292468 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:02:40 13292906 cffb0734 [INFO Client 5488] : <<set:NS>><<set:N>><<set:S>>Вы вошли в область Сумрачное взморье.
+2023/02/22 16:02:41 13293765 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:02:41 13293796 374e0d22 [INFO Client 5488] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/22 16:02:41 13293796 374e0cc3 [INFO Client 5488] [Item Filter] Hash for online filter prraV6FQ is: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 16:02:41 13294125 374e0cc9 [INFO Client 5488] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/22 16:02:41 13294125 374e0ce3 [DEBUG Client 5488] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/22 16:02:41 13294125 374e0e8e [DEBUG Client 5488] [Item Filter] X-HW: 1677074562.dop046.pa1.t,1677074562.cds024.pa1.shn,1677074562.dop046.pa1.t,1677074562.cds212.pa1.c
+2023/02/22 16:02:41 13294125 374df808 [INFO Client 5488] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 16:02:41 13294125 788474c3 [INFO Client 5488] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 69577cd6f98cfd915bc8936b89b72e7e. Type: Ruthless. Message: 
+2023/02/22 16:04:20 13393468 cffb0734 [INFO Client 5488] : Dee_RLSSF_mule (Бандит) достигает 2 уровня
+2023/02/22 16:04:39 13412390 fb7abca5 [INFO Client 5488] Successfully allocated passive skill id: damage_and_energy_shield_2204, name: Энергетический щит и урон
+2023/02/22 16:04:44 13417609 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:04:44 13417640 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:04:44 13417640 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.180:6112
+2023/02/22 16:04:44 13417687 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 16:04:45 13417734 1186a0e3 [DEBUG Client 5488] Generating level 13 area "1_1_town" with seed 1
+2023/02/22 16:04:45 13418140 f22b6987 [INFO Client 5488] Tile hash: 3254420771
+2023/02/22 16:04:45 13418140 f22b6986 [INFO Client 5488] Doodad hash: 0
+2023/02/22 16:04:46 13418703 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:04:46 13419125 cffb0734 [INFO Client 5488] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/22 16:04:47 13419687 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:05:22 13455078 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:05:22 13455078 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:05:22 13455093 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.180:6112
+2023/02/22 16:05:22 13455156 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 32ms
+2023/02/22 16:05:22 13455203 1186a0e3 [DEBUG Client 5488] Generating level 2 area "1_1_2" with seed 776164207
+2023/02/22 16:05:24 13456875 f22b6987 [INFO Client 5488] Tile hash: 176930074
+2023/02/22 16:05:24 13456875 f22b6986 [INFO Client 5488] Doodad hash: 1596931085
+2023/02/22 16:05:24 13457437 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:05:25 13458046 cffb0734 [INFO Client 5488] : <<set:NS>><<set:N>><<set:S>>Вы вошли в область Побережье.
+2023/02/22 16:05:26 13458953 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:06:08 13500812 118717e5 [DEBUG Client 5488] Resyncing 569
+2023/02/22 16:07:03 13556531 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:07:03 13556531 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:07:03 13556531 ca3a6a7f [INFO Client 5488] Connecting to instance server at 159.122.142.234:6112
+2023/02/22 16:07:03 13556593 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 16:07:03 13556640 1186a0e3 [DEBUG Client 5488] Generating level 4 area "1_1_3" with seed 2741478025
+2023/02/22 16:07:04 13557218 f22b6987 [INFO Client 5488] Tile hash: 497304368
+2023/02/22 16:07:04 13557218 f22b6986 [INFO Client 5488] Doodad hash: 101142121
+2023/02/22 16:07:04 13557640 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:07:05 13558187 cffb0734 [INFO Client 5488] : <<set:FP>><<set:F>><<set:P>>Вы вошли в область Илистые низины.
+2023/02/22 16:07:06 13558843 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:07:28 13580984 cffb0734 [INFO Client 5488] : Dee_RLSSF_mule (Бандит) достигает 3 уровня
+2023/02/22 16:07:33 13586140 fb7abca5 [INFO Client 5488] Successfully allocated passive skill id: damage_and_energy_shield_2205, name: Энергетический щит и урон
+2023/02/22 16:08:14 13627078 118717e5 [DEBUG Client 5488] Resyncing 579
+2023/02/22 16:08:16 13629390 118717e5 [DEBUG Client 5488] Resyncing 631
+2023/02/22 16:09:03 13676015 cffb0734 [INFO Client 5488] : Dee_RLSSF_mule (Бандит) достигает 4 уровня
+2023/02/22 16:09:30 13702859 fb7abca5 [INFO Client 5488] Successfully allocated passive skill id: trap_mine_damage_2201, name: Урон от стихий
+2023/02/22 16:09:58 13731562 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:09:58 13731562 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:09:58 13731562 ca3a6a7f [INFO Client 5488] Connecting to instance server at 159.122.142.233:6112
+2023/02/22 16:09:58 13731609 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 16:09:58 13731671 1186a0e3 [DEBUG Client 5488] Generating level 5 area "1_1_4_1" with seed 4283504461
+2023/02/22 16:09:59 13732343 f22b6987 [INFO Client 5488] Tile hash: 525659837
+2023/02/22 16:09:59 13732343 f22b6986 [INFO Client 5488] Doodad hash: 3705153287
+2023/02/22 16:09:59 13732593 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:10:00 13733140 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Сырой проход.
+2023/02/22 16:10:01 13733796 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:10:07 13740562 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:10:07 13740562 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:10:07 13740562 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.180:6112
+2023/02/22 16:10:07 13740609 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 16:10:07 13740656 1186a0e3 [DEBUG Client 5488] Generating level 2 area "1_1_2" with seed 776164207
+2023/02/22 16:10:08 13741625 f22b6987 [INFO Client 5488] Tile hash: 176930074
+2023/02/22 16:10:08 13741625 f22b6986 [INFO Client 5488] Doodad hash: 1596931085
+2023/02/22 16:10:09 13742125 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:10:09 13742671 cffb0734 [INFO Client 5488] : <<set:NS>><<set:N>><<set:S>>Вы вошли в область Побережье.
+2023/02/22 16:10:10 13743531 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:10:18 13751265 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:10:18 13751265 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:10:18 13751265 ca3a6a7f [INFO Client 5488] Connecting to instance server at 159.122.142.252:6112
+2023/02/22 16:10:18 13751312 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 16:10:18 13751359 1186a0e3 [DEBUG Client 5488] Generating level 3 area "1_1_2a" with seed 2318819975
+2023/02/22 16:10:19 13751718 f22b6987 [INFO Client 5488] Tile hash: 2738063379
+2023/02/22 16:10:19 13751718 f22b6986 [INFO Client 5488] Doodad hash: 576066710
+2023/02/22 16:10:19 13752359 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:10:20 13752781 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Прибрежный остров.
+2023/02/22 16:10:20 13753328 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:10:33 13765828 118717e5 [DEBUG Client 5488] Resyncing 256
+2023/02/22 16:11:13 13806500 cffb0734 [INFO Client 5488] : Dee_RLSSF_mule был повержен.
+2023/02/22 16:12:41 13893796 890d9d5f [INFO Client 5488] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/22 16:12:41 13893828 890d9cd8 [INFO Client 5488] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/22 16:12:45 13898625 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:12:45 13898640 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:12:45 13898640 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.180:6112
+2023/02/22 16:12:45 13898687 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 16:12:46 13898734 1186a0e3 [DEBUG Client 5488] Generating level 13 area "1_1_town" with seed 1
+2023/02/22 16:12:46 13899125 f22b6987 [INFO Client 5488] Tile hash: 3254420771
+2023/02/22 16:12:46 13899125 f22b6986 [INFO Client 5488] Doodad hash: 0
+2023/02/22 16:12:49 13901796 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:12:49 13902218 cffb0734 [INFO Client 5488] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/22 16:12:50 13902781 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:12:50 13902812 374e0d22 [INFO Client 5488] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/22 16:12:50 13902812 374e0cc3 [INFO Client 5488] [Item Filter] Hash for online filter prraV6FQ is: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 16:12:50 13903046 374e0cc9 [INFO Client 5488] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/22 16:12:50 13903046 374e0ce3 [DEBUG Client 5488] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/22 16:12:50 13903046 374e0e8e [DEBUG Client 5488] [Item Filter] X-HW: 1677075171.dop223.pa1.t,1677075171.cds029.pa1.shn,1677075171.dop223.pa1.t,1677075171.cds212.pa1.c
+2023/02/22 16:12:50 13903062 374df808 [INFO Client 5488] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 16:12:50 13903078 788474c3 [INFO Client 5488] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 69577cd6f98cfd915bc8936b89b72e7e. Type: Ruthless. Message: 
+2023/02/22 16:13:11 13924218 cffb0734 [INFO Client 5488] : Сделка совершена.
+2023/02/22 16:15:09 14041828 cffb0734 [INFO Client 5488] : Сделка совершена.
+2023/02/22 16:15:49 14082593 890d9d5f [INFO Client 5488] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/22 16:15:49 14082625 890d9cd8 [INFO Client 5488] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/22 16:16:30 14123265 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:16:30 14123265 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:16:30 14123265 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.138:6112
+2023/02/22 16:16:30 14123312 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 16:16:30 14123375 1186a0e3 [DEBUG Client 5488] Generating level 1 area "1_1_1" with seed 3065805886
+2023/02/22 16:16:31 14123953 f22b6987 [INFO Client 5488] Tile hash: 705900310
+2023/02/22 16:16:31 14123953 f22b6986 [INFO Client 5488] Doodad hash: 2690703740
+2023/02/22 16:16:33 14126687 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:16:34 14127093 cffb0734 [INFO Client 5488] : <<set:NS>><<set:N>><<set:S>>Вы вошли в область Сумрачное взморье.
+2023/02/22 16:16:35 14127750 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:16:35 14127781 374e0d22 [INFO Client 5488] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/22 16:16:35 14127781 374e0cc3 [INFO Client 5488] [Item Filter] Hash for online filter prraV6FQ is: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 16:16:35 14128000 374e0cc9 [INFO Client 5488] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/22 16:16:35 14128000 374e0ce3 [DEBUG Client 5488] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/22 16:16:35 14128000 374e0e8e [DEBUG Client 5488] [Item Filter] X-HW: 1677075396.dop035.pa1.t,1677075396.cds240.pa1.shn,1677075396.dop035.pa1.t,1677075396.cds212.pa1.c
+2023/02/22 16:16:35 14128015 374df808 [INFO Client 5488] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 16:16:35 14128031 788474c3 [INFO Client 5488] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 69577cd6f98cfd915bc8936b89b72e7e. Type: Ruthless. Message: 
+2023/02/22 16:18:48 14261484 cffb0734 [INFO Client 5488] : Dee_RLSSF_Fiera (Ведьма) достигает 2 уровня
+2023/02/22 16:18:55 14268609 fb7abca5 [INFO Client 5488] Successfully allocated passive skill id: spell_damage721, name: Урон чарами и мана
+2023/02/22 16:19:06 14279640 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:19:06 14279640 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:19:06 14279640 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.180:6112
+2023/02/22 16:19:07 14279687 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 47ms
+2023/02/22 16:19:07 14279734 1186a0e3 [DEBUG Client 5488] Generating level 13 area "1_1_town" with seed 1
+2023/02/22 16:19:07 14279750 f22b6987 [INFO Client 5488] Tile hash: 3254420771
+2023/02/22 16:19:07 14279750 f22b6986 [INFO Client 5488] Doodad hash: 0
+2023/02/22 16:19:07 14280562 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:19:08 14280968 cffb0734 [INFO Client 5488] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/22 16:19:08 14281500 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:20:16 14348781 cffb0734 [INFO Client 5488] : Сделка совершена.
+2023/02/22 16:21:17 14409921 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:21:17 14409921 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:21:17 14409921 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.132:6112
+2023/02/22 16:21:17 14409984 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 47ms
+2023/02/22 16:21:17 14410031 1186a0e3 [DEBUG Client 5488] Generating level 2 area "1_1_2" with seed 3101835778
+2023/02/22 16:21:18 14411234 f22b6987 [INFO Client 5488] Tile hash: 2444865342
+2023/02/22 16:21:18 14411234 f22b6986 [INFO Client 5488] Doodad hash: 1091144638
+2023/02/22 16:21:18 14411609 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:21:19 14412140 cffb0734 [INFO Client 5488] : <<set:NS>><<set:N>><<set:S>>Вы вошли в область Побережье.
+2023/02/22 16:21:20 14413046 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:23:47 14559921 cffb0734 [INFO Client 5488] : Dee_RLSSF_Fiera был повержен.
+2023/02/22 16:24:27 14600515 cffb0734 [INFO Client 5488] : Dee_RLSSF_Fiera (Ведьма) достигает 3 уровня
+2023/02/22 16:24:43 14616375 fb7abca5 [INFO Client 5488] Successfully allocated passive skill id: spell_damage740, name: Урон чарами
+2023/02/22 16:25:21 14654296 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:25:21 14654312 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:25:21 14654312 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.180:6112
+2023/02/22 16:25:21 14654375 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 16:25:21 14654421 1186a0e3 [DEBUG Client 5488] Generating level 4 area "1_1_3" with seed 3391971418
+2023/02/22 16:25:22 14654859 f22b6987 [INFO Client 5488] Tile hash: 3284864093
+2023/02/22 16:25:22 14654859 f22b6986 [INFO Client 5488] Doodad hash: 614429727
+2023/02/22 16:25:22 14655312 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:25:23 14655890 cffb0734 [INFO Client 5488] : <<set:FP>><<set:F>><<set:P>>Вы вошли в область Илистые низины.
+2023/02/22 16:25:23 14656484 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:26:27 14720625 118717e5 [DEBUG Client 5488] Resyncing 596
+2023/02/22 16:26:29 14721750 118717e5 [DEBUG Client 5488] Resyncing 749
+2023/02/22 16:26:29 14721750 cffb0734 [INFO Client 5488] : Dee_RLSSF_Fiera был повержен.
+2023/02/22 16:26:58 14750796 cffb0734 [INFO Client 5488] : Dee_RLSSF_Fiera (Ведьма) достигает 4 уровня
+2023/02/22 16:27:16 14769468 cffb0734 [INFO Client 5488] : Dee_RLSSF_Fiera был повержен.
+2023/02/22 16:27:24 14777062 fb7abca5 [INFO Client 5488] Successfully allocated passive skill id: spell_damage724, name: Урон чарами
+2023/02/22 16:27:46 14798921 118717e5 [DEBUG Client 5488] Resyncing 600
+2023/02/22 16:27:47 14799828 cffb0734 [INFO Client 5488] : Dee_RLSSF_Fiera был повержен.
+2023/02/22 16:28:55 14868453 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:28:55 14868453 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:28:55 14868453 ca3a6a7f [INFO Client 5488] Connecting to instance server at 159.122.142.237:6112
+2023/02/22 16:28:55 14868531 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 47ms
+2023/02/22 16:28:55 14868578 1186a0e3 [DEBUG Client 5488] Generating level 5 area "1_1_4_1" with seed 1313798934
+2023/02/22 16:28:56 14869140 f22b6987 [INFO Client 5488] Tile hash: 2345181995
+2023/02/22 16:28:56 14869140 f22b6986 [INFO Client 5488] Doodad hash: 488265752
+2023/02/22 16:28:56 14869671 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:28:57 14870171 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Сырой проход.
+2023/02/22 16:28:58 14870734 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:29:06 14878781 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:29:06 14878781 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:29:06 14878781 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.132:6112
+2023/02/22 16:29:06 14878843 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 16:29:06 14878890 1186a0e3 [DEBUG Client 5488] Generating level 2 area "1_1_2" with seed 3101835778
+2023/02/22 16:29:07 14879843 f22b6987 [INFO Client 5488] Tile hash: 2444865342
+2023/02/22 16:29:07 14879843 f22b6986 [INFO Client 5488] Doodad hash: 1091144638
+2023/02/22 16:29:07 14880203 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:29:08 14880750 cffb0734 [INFO Client 5488] : <<set:NS>><<set:N>><<set:S>>Вы вошли в область Побережье.
+2023/02/22 16:29:08 14881500 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:29:16 14888875 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:29:16 14888875 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:29:16 14888875 ca3a6a7f [INFO Client 5488] Connecting to instance server at 159.122.142.244:6112
+2023/02/22 16:29:16 14888921 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 46ms
+2023/02/22 16:29:16 14888968 1186a0e3 [DEBUG Client 5488] Generating level 3 area "1_1_2a" with seed 2215398050
+2023/02/22 16:29:16 14889234 f22b6987 [INFO Client 5488] Tile hash: 1172566289
+2023/02/22 16:29:16 14889234 f22b6986 [INFO Client 5488] Doodad hash: 1116769859
+2023/02/22 16:29:17 14889890 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:29:17 14890328 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Прибрежный остров.
+2023/02/22 16:29:18 14890843 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:31:19 15012140 cffb0734 [INFO Client 5488] : Dee_RLSSF_Fiera был повержен.
+2023/02/22 16:31:36 15029062 cffb0734 [INFO Client 5488] : Dee_RLSSF_Fiera (Ведьма) достигает 5 уровня
+2023/02/22 16:31:39 15032093 fb7abca5 [INFO Client 5488] Successfully allocated passive skill id: spell_damage725, name: Урон чарами
+2023/02/22 16:33:51 15164531 890d9d5f [INFO Client 5488] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/22 16:33:51 15164562 890d9cd8 [INFO Client 5488] Connected to mil01.login.pathofexile.com in 15ms.
+2023/02/22 16:33:57 15169906 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:33:57 15169906 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:33:57 15169906 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.132:6112
+2023/02/22 16:33:57 15169953 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 16:33:57 15170000 1186a0e3 [DEBUG Client 5488] Generating level 13 area "1_1_town" with seed 1
+2023/02/22 16:33:57 15170437 f22b6987 [INFO Client 5488] Tile hash: 3254420771
+2023/02/22 16:33:57 15170437 f22b6986 [INFO Client 5488] Doodad hash: 0
+2023/02/22 16:34:00 15173125 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:34:00 15173546 cffb0734 [INFO Client 5488] : <<set:FS>><<set:F>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/22 16:34:01 15174218 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:34:01 15174265 374e0d22 [INFO Client 5488] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/22 16:34:01 15174265 374e0cc3 [INFO Client 5488] [Item Filter] Hash for online filter prraV6FQ is: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 16:34:01 15174484 374e0cc9 [INFO Client 5488] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/22 16:34:01 15174484 374e0ce3 [DEBUG Client 5488] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/22 16:34:01 15174484 374e0e8e [DEBUG Client 5488] [Item Filter] X-HW: 1677076442.dop027.pa1.t,1677076442.cds208.pa1.shn,1677076442.dop027.pa1.t,1677076442.cds212.pa1.c
+2023/02/22 16:34:01 15174500 374df808 [INFO Client 5488] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 16:34:01 15174531 788474c3 [INFO Client 5488] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 69577cd6f98cfd915bc8936b89b72e7e. Type: Ruthless. Message: 
+2023/02/22 16:35:26 15259000 cffb0734 [INFO Client 5488] : Сделка совершена.
+2023/02/22 16:36:46 15339062 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 16:36:46 15339062 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 16:36:46 15339062 ca3a6a7f [INFO Client 5488] Connecting to instance server at 159.122.142.237:6112
+2023/02/22 16:36:46 15339125 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 16:36:46 15339171 1186a0e3 [DEBUG Client 5488] Generating level 5 area "1_1_4_1" with seed 1313798934
+2023/02/22 16:36:47 15339843 f22b6987 [INFO Client 5488] Tile hash: 2345181995
+2023/02/22 16:36:47 15339843 f22b6986 [INFO Client 5488] Doodad hash: 488265752
+2023/02/22 16:36:47 15340093 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 16:36:47 15340640 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Сырой проход.
+2023/02/22 16:36:48 15341218 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 16:38:23 15435812 118717e5 [DEBUG Client 5488] Resyncing 638
+2023/02/22 16:38:23 15436671 118717e5 [DEBUG Client 5488] Resyncing 640
+2023/02/22 16:38:26 15439281 cffb0734 [INFO Client 5488] : Dee_RLSSF_Fiera был повержен.
+2023/02/22 16:39:26 15499609 118717e5 [DEBUG Client 5488] Resyncing 701
+2023/02/22 16:39:26 15499609 cffb0734 [INFO Client 5488] : Dee_RLSSF_Fiera был повержен.
+2023/02/22 16:39:47 15520046 cffb0734 [INFO Client 5488] : Dee_RLSSF_Fiera (Ведьма) достигает 6 уровня
+2023/02/22 16:40:25 15558640 cffb0734 [INFO Client 5488] : Dee_RLSSF_Fiera был повержен.
+2023/02/22 16:40:31 15564031 890d9d5f [INFO Client 5488] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/22 16:40:31 15564062 890d9cd8 [INFO Client 5488] Connected to mil01.login.pathofexile.com in 0ms.
