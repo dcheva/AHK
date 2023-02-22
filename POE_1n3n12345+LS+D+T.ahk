@@ -144,6 +144,13 @@ return
 ;  }
 ;return
 
+; W and ^W
+$W::
+  Send, {W}
+  Sleep, 65 
+  Send, ^{W}
+return
+
 ; run clicker loop
 $^Backspace::
   BreakLoop := 0

@@ -34800,3 +34800,772 @@ flags: 129
 2023/02/22 07:35:07 35407781 11870f60 [DEBUG Client 7664] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
 2023/02/22 07:35:07 35408656 cffb0734 [INFO Client 7664] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пустыня Вастири.
 2023/02/22 07:35:08 35409453 32759a9f [INFO Client 7664] [SHADER] Delay: ON
+2023/02/22 13:34:21 ***** LOG FILE OPENING *****
+2023/02/22 13:34:21 4394484 340884db [DEBUG Client 3920] [RENDER] StopDevice
+2023/02/22 13:34:21 4394484 84a7e6f1 [INFO Client 3920] [ENGINE] Clear
+2023/02/22 13:34:21 4394484 7bb5422 [INFO Client 3920] [BUNDLE2] Deinit
+2023/02/22 13:34:22 4395484 509417f7 [WARN Client 3920] tool_settings.json was not found. Resetting to default settings.
+2023/02/22 13:34:22 4395484 84a7e691 [INFO Client 3920] [JOB] Clear
+2023/02/22 13:34:22 4395484 84a7e7bf [INFO Client 3920] [ANIMATION] Clear
+2023/02/22 13:34:22 4395484 84a7e7be [INFO Client 3920] [PHYSICS] Clear
+2023/02/22 13:34:22 4395484 84a7e7bd [INFO Client 3920] [SHADER] Clear
+2023/02/22 13:34:22 4395484 84a7e7bc [INFO Client 3920] [ENTITY] Clear
+2023/02/22 13:34:22 4395484 84a7e7bb [INFO Client 3920] [SOUND] Clear
+2023/02/22 13:34:22 4395484 84a7e7ba [INFO Client 3920] [VIDEO] Clear
+2023/02/22 13:34:22 4395484 84a7e7b9 [INFO Client 3920] [SCENE] Clear
+2023/02/22 13:34:22 4395484 84a7e7b8 [INFO Client 3920] [GRAPH] Clear
+2023/02/22 13:34:22 4395484 84a7e7b7 [INFO Client 3920] [TELEMETRY] Clear
+2023/02/22 13:34:22 4395500 84a7e7b6 [INFO Client 3920] [RESOURCE] GarbageCollect
+2023/02/22 13:34:22 4395500 84a7e75e [INFO Client 3920] [RESOURCE] Clear
+2023/02/22 13:34:22 4395500 84a7e75b [INFO Client 3920] [RENDER] Clear
+2023/02/22 13:34:22 4395500 84a7e758 [INFO Client 3920] [ENGINE] Done
+2023/02/22 13:34:28 ***** LOG FILE OPENING *****
+2023/02/22 13:34:29 4401828 f95442e3 [INFO Client 7432] [STARTUP] Job Queues
+2023/02/22 13:34:29 4401906 9e6a0b0a [INFO Client 7432] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/22 13:34:29 4402203 9e6a1d2a [INFO Client 7432] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 13:34:29 4402218 9e6a1363 [INFO Client 7432] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/22 13:34:29 4402218 9e6a0b0a [INFO Client 7432] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/22 13:34:29 4402265 9e6a1d2a [INFO Client 7432] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 13:34:29 4402265 84a7d27d [INFO Client 7432] [ENGINE] Init
+2023/02/22 13:34:29 4402265 55713145 [INFO Client 7432] [JOB] HIGH: 2
+2023/02/22 13:34:29 4402265 55713145 [INFO Client 7432] [JOB] MEDIUM: 2
+2023/02/22 13:34:29 4402265 55713145 [INFO Client 7432] [JOB] LOW: 2
+2023/02/22 13:34:29 4402265 55713145 [INFO Client 7432] [JOB] IDLE: 1
+2023/02/22 13:34:29 4402265 7bb548f [INFO Client 7432] [BUNDLE2] Init
+2023/02/22 13:34:29 4402265 7bb36c4 [INFO Client 7432] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/22 13:34:30 4402937 7bb61e6 [INFO Client 7432] [BUNDLE2] File cache size: 1024
+2023/02/22 13:34:30 4402937 b51d61ab [INFO Client 7432] [RENDER] Async: ON
+2023/02/22 13:34:30 4402937 b51d60c8 [INFO Client 7432] [RENDER] Warmup: ON
+2023/02/22 13:34:30 4402937 b51d60ce [INFO Client 7432] [RENDER] Skip: ON
+2023/02/22 13:34:30 4402937 b51d60eb [INFO Client 7432] [RENDER] Throttling: ON
+2023/02/22 13:34:30 4402937 32759a7a [INFO Client 7432] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/22 13:34:30 4402937 32759a70 [INFO Client 7432] [SHADER] Async: ON
+2023/02/22 13:34:30 4402937 32759a9f [INFO Client 7432] [SHADER] Delay: OFF
+2023/02/22 13:34:30 4402937 32759aba [INFO Client 7432] [SHADER] Limit: ON
+2023/02/22 13:34:30 4402937 32759abc [INFO Client 7432] [SHADER] Warmup: ON
+2023/02/22 13:34:30 4402937 327599d7 [INFO Client 7432] [SHADER] Parallel: OFF
+2023/02/22 13:34:30 4402937 84a7e376 [INFO Client 7432] [ENGINE] Running Engine version 1.7.0
+2023/02/22 13:34:30 4403031 47bbd15b [INFO Client 7432] [SOUND] Buffer size = 64.0 MB
+2023/02/22 13:34:30 4403140 9b0d205 [INFO Client 7432] [VIDEO] Enable: ON
+2023/02/22 13:34:30 4403265 84a7d2d8 [INFO Client 7432] [ENGINE] Ready
+2023/02/22 13:34:30 4403343 951bc0b0 [INFO Client 7432] [STARTUP] Bundle Startup Start
+2023/02/22 13:34:30 4403343 951bc057 [INFO Client 7432] [STARTUP] Bundle Startup in 7.4e-05 seconds
+2023/02/22 13:34:30 4403343 951bc0b0 [INFO Client 7432] [STARTUP] Game Start
+2023/02/22 13:34:31 4403890 ca86fd3f [DEBUG Client 7432] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/22 13:34:31 4404546 951bc057 [INFO Client 7432] [STARTUP] Game in 1.20238 seconds
+2023/02/22 13:34:31 4404546 951bc0b0 [INFO Client 7432] [STARTUP] Window Start
+2023/02/22 13:34:31 4404562 9e6a0b0a [INFO Client 7432] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/22 13:34:32 4404906 9e6a1d2a [INFO Client 7432] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 13:34:32 4404906 9e6a1363 [INFO Client 7432] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/22 13:34:32 4404906 9e6a0b0a [INFO Client 7432] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/22 13:34:32 4404921 9e6a1d2a [INFO Client 7432] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 13:34:32 4404953 951bc057 [INFO Client 7432] [STARTUP] Window in 0.405402 seconds
+2023/02/22 13:34:32 4404968 413b61ff [DEBUG Client 7432] [GamepadManager] Initialising
+2023/02/22 13:34:32 4404968 951bc0b0 [INFO Client 7432] [STARTUP] Device Start
+2023/02/22 13:34:32 4404968 b51d6589 [INFO Client 7432] [RENDER] StartDevice: DirectX11
+2023/02/22 13:34:32 4405312 71b2ea0 [DEBUG Client 7432] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/22 13:34:33 4405703 fafff8cf [DEBUG Client 7432] CreateSwapChain: SetFullScreenState 0
+2023/02/22 13:34:33 4405703 29d4ce01 [INFO Client 7432] [D3D11] Runtime version = 11.1
+2023/02/22 13:34:33 4405703 29d4ce00 [INFO Client 7432] [D3D11] Feature Level = 11.1
+2023/02/22 13:34:33 4405703 29d4ce03 [INFO Client 7432] [D3D11] Driver Command Lists = NO
+2023/02/22 13:34:33 4405703 29d4ce02 [INFO Client 7432] [D3D11] Driver Concurrent Creates = YES
+2023/02/22 13:34:33 4405703 29d4ce05 [INFO Client 7432] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/22 13:34:33 4406140 9d4eeb40 [DEBUG Client 7432] [WINDOW] TrigggerDeviceCreate
+2023/02/22 13:34:34 4406953 9d4eeba7 [DEBUG Client 7432] [WINDOW] TrigggerDeviceReset
+2023/02/22 13:34:35 4407718 9d4eec8a [DEBUG Client 7432] [WINDOW] TrigggerDeviceLost
+2023/02/22 13:34:35 4407718 9d4eeba7 [DEBUG Client 7432] [WINDOW] TrigggerDeviceReset
+2023/02/22 13:34:35 4407921 951bc057 [INFO Client 7432] [STARTUP] Device in 2.94733 seconds
+2023/02/22 13:34:35 4407921 951bc0b0 [INFO Client 7432] [STARTUP] Tencent Start
+2023/02/22 13:34:35 4407921 951bc057 [INFO Client 7432] [STARTUP] Tencent in 3.1e-05 seconds
+2023/02/22 13:34:35 4407921 951bc0b0 [INFO Client 7432] [STARTUP] Loading Start
+2023/02/22 13:34:35 4407937 951bc057 [INFO Client 7432] [STARTUP] Loading in 0.02238 seconds
+2023/02/22 13:34:35 4407937 951bc0b0 [INFO Client 7432] [STARTUP] DebugGUI Start
+2023/02/22 13:34:35 4407937 951bc057 [INFO Client 7432] [STARTUP] DebugGUI in 2.7e-05 seconds
+2023/02/22 13:34:35 4407937 951bc0b0 [INFO Client 7432] [STARTUP] Bundle Tiny Start
+2023/02/22 13:34:35 4407937 951bc0b0 [INFO Client 7432] [STARTUP] Bundle Login Start
+2023/02/22 13:34:35 4407937 951bc057 [INFO Client 7432] [STARTUP] Bundle Login in 3.2e-05 seconds
+2023/02/22 13:34:35 4407937 951bc0b0 [INFO Client 7432] [STARTUP] Registration Start
+2023/02/22 13:34:35 4407937 951bc057 [INFO Client 7432] [STARTUP] Bundle Tiny in 8.4e-05 seconds
+2023/02/22 13:34:35 4408000 951bc0b0 [INFO Client 7432] [STARTUP] Audio Start
+2023/02/22 13:34:35 4408000 47bbee1b [INFO Client 7432] [SOUND] Channel count = 64 (asked for 64)
+2023/02/22 13:34:35 4408000 47bbee18 [INFO Client 7432] [SOUND] Source count = 512
+2023/02/22 13:34:37 4409734 47bbea59 [INFO Client 7432] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/22 13:34:37 4409734 951bc057 [INFO Client 7432] [STARTUP] Audio in 1.74077 seconds
+2023/02/22 13:34:37 4410187 951bc057 [INFO Client 7432] [STARTUP] Registration in 2.2436 seconds
+2023/02/22 13:34:38 4410937 509417f7 [WARN Client 7432] tool_settings.json was not found. Resetting to default settings.
+2023/02/22 13:34:39 4412671 b51d4f61 [DEBUG Client 7432] [RENDER] SetRendererSettings
+2023/02/22 13:34:39 4412671 b51d6447 [DEBUG Client 7432] [RENDER] ResizeWindow
+2023/02/22 13:34:39 4412671 9d4eec8a [DEBUG Client 7432] [WINDOW] TrigggerDeviceLost
+2023/02/22 13:34:39 4412671 9d4eeba7 [DEBUG Client 7432] [WINDOW] TrigggerDeviceReset
+2023/02/22 13:34:40 4412953 b51d614c [DEBUG Client 7432] [RENDER] RestartSwapChain
+2023/02/22 13:34:40 4412953 9e6a0b0a [INFO Client 7432] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/22 13:34:40 4413046 9e6a1d2a [INFO Client 7432] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 13:34:40 4413046 9e6a1363 [INFO Client 7432] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/22 13:34:40 4413046 9e6a0b0a [INFO Client 7432] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/22 13:34:40 4413062 9e6a1d2a [INFO Client 7432] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 13:34:40 4413062 fafff8cf [DEBUG Client 7432] CreateSwapChain: SetFullScreenState 0
+2023/02/22 13:34:40 4413062 9d4eec8a [DEBUG Client 7432] [WINDOW] TrigggerDeviceLost
+2023/02/22 13:34:40 4413062 9d4eeba7 [DEBUG Client 7432] [WINDOW] TrigggerDeviceReset
+2023/02/22 13:34:40 4413140 3275a75e [INFO Client 7432] [SHADER] Disable Async: 1 frames
+2023/02/22 13:34:40 4413140 b51d610e [INFO Client 7432] [RENDER] Disable Async: 1 frames
+2023/02/22 13:38:35 ***** LOG FILE OPENING *****
+2023/02/22 13:38:35 4648000 340884db [DEBUG Client 8848] [RENDER] StopDevice
+2023/02/22 13:38:35 4648000 84a7e6f1 [INFO Client 8848] [ENGINE] Clear
+2023/02/22 13:38:35 4648000 7bb5422 [INFO Client 8848] [BUNDLE2] Deinit
+2023/02/22 13:38:36 ***** LOG FILE OPENING *****
+2023/02/22 13:38:36 4648937 f95442e3 [INFO Client 7904] [STARTUP] Job Queues
+2023/02/22 13:38:36 4648953 9e6a0b0a [INFO Client 7904] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/22 13:38:36 4649000 9e6a1d2a [INFO Client 7904] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 13:38:36 4649000 9e6a1363 [INFO Client 7904] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/22 13:38:36 4649000 9e6a0b0a [INFO Client 7904] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/22 13:38:36 4649000 9e6a1d2a [INFO Client 7904] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 13:38:36 4649000 84a7d27d [INFO Client 7904] [ENGINE] Init
+2023/02/22 13:38:36 4649000 55713145 [INFO Client 7904] [JOB] HIGH: 2
+2023/02/22 13:38:36 4649000 55713145 [INFO Client 7904] [JOB] MEDIUM: 2
+2023/02/22 13:38:36 4649000 55713145 [INFO Client 7904] [JOB] LOW: 2
+2023/02/22 13:38:36 4649000 55713145 [INFO Client 7904] [JOB] IDLE: 1
+2023/02/22 13:38:36 4649000 7bb548f [INFO Client 7904] [BUNDLE2] Init
+2023/02/22 13:38:36 4649000 7bb36c4 [INFO Client 7904] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/22 13:38:36 4649000 509417f7 [WARN Client 8848] tool_settings.json was not found. Resetting to default settings.
+2023/02/22 13:38:36 4649000 84a7e691 [INFO Client 8848] [JOB] Clear
+2023/02/22 13:38:36 4649000 84a7e7bf [INFO Client 8848] [ANIMATION] Clear
+2023/02/22 13:38:36 4649000 84a7e7be [INFO Client 8848] [PHYSICS] Clear
+2023/02/22 13:38:36 4649000 84a7e7bd [INFO Client 8848] [SHADER] Clear
+2023/02/22 13:38:36 4649000 84a7e7bc [INFO Client 8848] [ENTITY] Clear
+2023/02/22 13:38:36 4649000 84a7e7bb [INFO Client 8848] [SOUND] Clear
+2023/02/22 13:38:36 4649000 84a7e7ba [INFO Client 8848] [VIDEO] Clear
+2023/02/22 13:38:36 4649000 84a7e7b9 [INFO Client 8848] [SCENE] Clear
+2023/02/22 13:38:36 4649000 84a7e7b8 [INFO Client 8848] [GRAPH] Clear
+2023/02/22 13:38:36 4649000 84a7e7b7 [INFO Client 8848] [TELEMETRY] Clear
+2023/02/22 13:38:36 4649000 84a7e7b6 [INFO Client 8848] [RESOURCE] GarbageCollect
+2023/02/22 13:38:36 4649000 84a7e75e [INFO Client 8848] [RESOURCE] Clear
+2023/02/22 13:38:36 4649000 84a7e75b [INFO Client 8848] [RENDER] Clear
+2023/02/22 13:38:36 4649000 84a7e758 [INFO Client 8848] [ENGINE] Done
+2023/02/22 13:38:36 4649218 7bb61e6 [INFO Client 7904] [BUNDLE2] File cache size: 1024
+2023/02/22 13:38:36 4649218 b51d61ab [INFO Client 7904] [RENDER] Async: ON
+2023/02/22 13:38:36 4649218 b51d60c8 [INFO Client 7904] [RENDER] Warmup: ON
+2023/02/22 13:38:36 4649218 b51d60ce [INFO Client 7904] [RENDER] Skip: ON
+2023/02/22 13:38:36 4649218 b51d60eb [INFO Client 7904] [RENDER] Throttling: ON
+2023/02/22 13:38:36 4649218 32759a7a [INFO Client 7904] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/22 13:38:36 4649218 32759a70 [INFO Client 7904] [SHADER] Async: ON
+2023/02/22 13:38:36 4649218 32759a9f [INFO Client 7904] [SHADER] Delay: OFF
+2023/02/22 13:38:36 4649218 32759aba [INFO Client 7904] [SHADER] Limit: ON
+2023/02/22 13:38:36 4649218 32759abc [INFO Client 7904] [SHADER] Warmup: ON
+2023/02/22 13:38:36 4649218 327599d7 [INFO Client 7904] [SHADER] Parallel: OFF
+2023/02/22 13:38:36 4649218 84a7e376 [INFO Client 7904] [ENGINE] Running Engine version 1.7.0
+2023/02/22 13:38:36 4649218 47bbd15b [INFO Client 7904] [SOUND] Buffer size = 64.0 MB
+2023/02/22 13:38:36 4649250 9b0d205 [INFO Client 7904] [VIDEO] Enable: ON
+2023/02/22 13:38:36 4649265 84a7d2d8 [INFO Client 7904] [ENGINE] Ready
+2023/02/22 13:38:36 4649296 951bc0b0 [INFO Client 7904] [STARTUP] Bundle Startup Start
+2023/02/22 13:38:36 4649296 951bc057 [INFO Client 7904] [STARTUP] Bundle Startup in 0.000179 seconds
+2023/02/22 13:38:36 4649296 951bc0b0 [INFO Client 7904] [STARTUP] Game Start
+2023/02/22 13:38:36 4649531 ca86fd3f [DEBUG Client 7904] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/22 13:38:37 4649781 951bc057 [INFO Client 7904] [STARTUP] Game in 0.482714 seconds
+2023/02/22 13:38:37 4649781 951bc0b0 [INFO Client 7904] [STARTUP] Window Start
+2023/02/22 13:38:37 4649781 9e6a0b0a [INFO Client 7904] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/22 13:38:37 4649812 9e6a1d2a [INFO Client 7904] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 13:38:37 4649812 9e6a1363 [INFO Client 7904] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/22 13:38:37 4649812 9e6a0b0a [INFO Client 7904] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/22 13:38:37 4649812 9e6a1d2a [INFO Client 7904] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 13:38:37 4649843 951bc057 [INFO Client 7904] [STARTUP] Window in 0.069806 seconds
+2023/02/22 13:38:37 4649859 413b61ff [DEBUG Client 7904] [GamepadManager] Initialising
+2023/02/22 13:38:37 4649859 951bc0b0 [INFO Client 7904] [STARTUP] Device Start
+2023/02/22 13:38:37 4649859 b51d6589 [INFO Client 7904] [RENDER] StartDevice: DirectX11
+2023/02/22 13:38:37 4650093 71b2ea0 [DEBUG Client 7904] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/22 13:38:37 4650171 fafff8cf [DEBUG Client 7904] CreateSwapChain: SetFullScreenState 0
+2023/02/22 13:38:37 4650171 29d4ce01 [INFO Client 7904] [D3D11] Runtime version = 11.1
+2023/02/22 13:38:37 4650171 29d4ce00 [INFO Client 7904] [D3D11] Feature Level = 11.1
+2023/02/22 13:38:37 4650171 29d4ce03 [INFO Client 7904] [D3D11] Driver Command Lists = NO
+2023/02/22 13:38:37 4650171 29d4ce02 [INFO Client 7904] [D3D11] Driver Concurrent Creates = YES
+2023/02/22 13:38:37 4650171 29d4ce05 [INFO Client 7904] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/22 13:38:37 4650234 9d4eeb40 [DEBUG Client 7904] [WINDOW] TrigggerDeviceCreate
+2023/02/22 13:38:37 4650406 9d4eeba7 [DEBUG Client 7904] [WINDOW] TrigggerDeviceReset
+2023/02/22 13:38:37 4650421 9d4eec8a [DEBUG Client 7904] [WINDOW] TrigggerDeviceLost
+2023/02/22 13:38:37 4650421 9d4eeba7 [DEBUG Client 7904] [WINDOW] TrigggerDeviceReset
+2023/02/22 13:38:37 4650437 951bc057 [INFO Client 7904] [STARTUP] Device in 0.579527 seconds
+2023/02/22 13:38:37 4650437 951bc0b0 [INFO Client 7904] [STARTUP] Tencent Start
+2023/02/22 13:38:37 4650437 951bc057 [INFO Client 7904] [STARTUP] Tencent in 6.6e-05 seconds
+2023/02/22 13:38:37 4650437 951bc0b0 [INFO Client 7904] [STARTUP] Loading Start
+2023/02/22 13:38:37 4650468 951bc057 [INFO Client 7904] [STARTUP] Loading in 0.021474 seconds
+2023/02/22 13:38:37 4650468 951bc0b0 [INFO Client 7904] [STARTUP] DebugGUI Start
+2023/02/22 13:38:37 4650468 951bc057 [INFO Client 7904] [STARTUP] DebugGUI in 1.8e-05 seconds
+2023/02/22 13:38:37 4650468 951bc0b0 [INFO Client 7904] [STARTUP] Bundle Tiny Start
+2023/02/22 13:38:37 4650468 951bc0b0 [INFO Client 7904] [STARTUP] Bundle Login Start
+2023/02/22 13:38:37 4650468 951bc057 [INFO Client 7904] [STARTUP] Bundle Login in 2.3e-05 seconds
+2023/02/22 13:38:37 4650468 951bc0b0 [INFO Client 7904] [STARTUP] Registration Start
+2023/02/22 13:38:37 4650468 951bc057 [INFO Client 7904] [STARTUP] Bundle Tiny in 7.2e-05 seconds
+2023/02/22 13:38:37 4650468 951bc0b0 [INFO Client 7904] [STARTUP] Audio Start
+2023/02/22 13:38:37 4650468 47bbee1b [INFO Client 7904] [SOUND] Channel count = 64 (asked for 64)
+2023/02/22 13:38:37 4650468 47bbee18 [INFO Client 7904] [SOUND] Source count = 512
+2023/02/22 13:38:37 4650609 47bbea59 [INFO Client 7904] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/22 13:38:37 4650640 951bc057 [INFO Client 7904] [STARTUP] Audio in 0.167207 seconds
+2023/02/22 13:38:38 4650828 951bc057 [INFO Client 7904] [STARTUP] Registration in 0.37075 seconds
+2023/02/22 13:38:38 4651546 509417f7 [WARN Client 7904] tool_settings.json was not found. Resetting to default settings.
+2023/02/22 13:38:38 4651671 b51d4f61 [DEBUG Client 7904] [RENDER] SetRendererSettings
+2023/02/22 13:38:38 4651671 b51d6447 [DEBUG Client 7904] [RENDER] ResizeWindow
+2023/02/22 13:38:38 4651671 9d4eec8a [DEBUG Client 7904] [WINDOW] TrigggerDeviceLost
+2023/02/22 13:38:38 4651671 9d4eeba7 [DEBUG Client 7904] [WINDOW] TrigggerDeviceReset
+2023/02/22 13:38:38 4651687 b51d614c [DEBUG Client 7904] [RENDER] RestartSwapChain
+2023/02/22 13:38:38 4651687 9e6a0b0a [INFO Client 7904] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/22 13:38:39 4651718 9e6a1d2a [INFO Client 7904] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 13:38:39 4651718 9e6a1363 [INFO Client 7904] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/22 13:38:39 4651718 9e6a0b0a [INFO Client 7904] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/22 13:38:39 4651718 9e6a1d2a [INFO Client 7904] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 13:38:39 4651718 fafff8cf [DEBUG Client 7904] CreateSwapChain: SetFullScreenState 0
+2023/02/22 13:38:39 4651718 9d4eec8a [DEBUG Client 7904] [WINDOW] TrigggerDeviceLost
+2023/02/22 13:38:39 4651718 9d4eeba7 [DEBUG Client 7904] [WINDOW] TrigggerDeviceReset
+2023/02/22 13:38:39 4651734 3275a75e [INFO Client 7904] [SHADER] Disable Async: 1 frames
+2023/02/22 13:38:39 4651734 b51d610e [INFO Client 7904] [RENDER] Disable Async: 1 frames
+2023/02/22 13:38:49 4661703 890d9d5f [INFO Client 7904] Async connecting to fra01.login.pathofexile.com:20481
+2023/02/22 13:38:49 4661718 890d9cd8 [INFO Client 7904] Connected to fra01.login.pathofexile.com in 0ms.
+2023/02/22 13:38:52 4665031 88a904ed [DEBUG Client 7904] Got Instance Details from login server
+2023/02/22 13:38:52 4665062 32759a9f [INFO Client 7904] [SHADER] Delay: OFF
+2023/02/22 13:38:52 4665062 ca3a6a7f [INFO Client 7904] Connecting to instance server at 85.195.120.123:6112
+2023/02/22 13:38:52 4665109 ca3a4dbd [DEBUG Client 7904] Connect time to instance server was 31ms
+2023/02/22 13:38:52 4665156 1186a0e3 [DEBUG Client 7904] Generating level 69 area "2_10_town" with seed 1
+2023/02/22 13:38:53 4666000 f22b6987 [INFO Client 7904] Tile hash: 3862614232
+2023/02/22 13:38:53 4666000 f22b6986 [INFO Client 7904] Doodad hash: 0
+2023/02/22 13:38:58 4671281 11870f60 [DEBUG Client 7904] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 13:38:59 4671828 cffb0734 [INFO Client 7904] &: ОБЪЯВЛЕНИЕ ГИЛЬДИИ: В гостяк у CARDIFF 
+2023/02/22 13:38:59 4672187 cffb0734 [INFO Client 7904] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Доки Ориата.
+2023/02/22 13:39:00 4673296 32759a9f [INFO Client 7904] [SHADER] Delay: ON
+2023/02/22 13:39:07 4679984 374e128b [INFO Client 7904] [Item Filter] Downloading online list
+2023/02/22 13:39:08 4680828 374e12ec [INFO Client 7904] [Item Filter] Online list returned status: 200
+2023/02/22 13:39:08 4680828 374e12e6 [DEBUG Client 7904] [Item Filter] Online list request resolved to: 209.197.3.101
+2023/02/22 13:39:08 4680828 374df908 [INFO Client 7904] [Item Filter] List contained online filter J40EP1CX with hash: 02887dd2497dd65178c4e486dda6f1d4 (local hash is: 02887dd2497dd65178c4e486dda6f1d4)
+2023/02/22 13:39:08 4680828 374df908 [INFO Client 7904] [Item Filter] List contained online filter EQQOoxhj with hash: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd (local hash is: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd)
+2023/02/22 13:39:08 4680828 374df908 [INFO Client 7904] [Item Filter] List contained online filter vOOayjsJ with hash: 5f088d212263dae3a0fb682b4ac7f0bc (local hash is: 5f088d212263dae3a0fb682b4ac7f0bc)
+2023/02/22 13:39:08 4680828 374df908 [INFO Client 7904] [Item Filter] List contained online filter prraV6FQ with hash: d85e0200a7824d9d68254ef98f2763bf (local hash is: d85e0200a7824d9d68254ef98f2763bf)
+2023/02/22 13:39:08 4680828 374df908 [INFO Client 7904] [Item Filter] List contained online filter G4AtJ5 with hash: 6a31e90baa6944a04fe8266028e8c3ed (local hash is: 6a31e90baa6944a04fe8266028e8c3ed)
+2023/02/22 13:39:08 4680828 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmjoTD with hash: d0f2483fc7bc3ad96223ff8e89de6fde (local hash is: d0f2483fc7bc3ad96223ff8e89de6fde)
+2023/02/22 13:39:08 4680828 374df908 [INFO Client 7904] [Item Filter] List contained online filter 5XMehq with hash: 355d03c0d6c899f0854547d7fb13ca6a (local hash is: 355d03c0d6c899f0854547d7fb13ca6a)
+2023/02/22 13:39:08 4680828 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmXoTD with hash: d617cac78014b5ff6aa1b99ec4409b1c (local hash is: d617cac78014b5ff6aa1b99ec4409b1c)
+2023/02/22 13:39:08 4680828 374df908 [INFO Client 7904] [Item Filter] List contained online filter wvPeTJ with hash: 2d2c5c00855e6ab5795ff1038ae4ff3d (local hash is: 2d2c5c00855e6ab5795ff1038ae4ff3d)
+2023/02/22 13:39:12 4684921 374e0d22 [INFO Client 7904] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/22 13:39:12 4684921 374e0cc3 [INFO Client 7904] [Item Filter] Hash for online filter prraV6FQ is: (empty)
+2023/02/22 13:39:13 4686093 374e0cc9 [INFO Client 7904] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/22 13:39:13 4686093 374e0ce3 [DEBUG Client 7904] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/22 13:39:13 4686093 374e0e8e [DEBUG Client 7904] [Item Filter] X-HW: 1677065953.dop222.pa1.t,1677065953.cds043.pa1.shn,1677065953.dop222.pa1.t,1677065953.cds212.pa1.s,1677065953.dop001.da2.r,1677065954.cds036.da2.p,1677065953.cds212.pa1.p
+2023/02/22 13:39:13 4686109 374df808 [INFO Client 7904] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: d85e0200a7824d9d68254ef98f2763bf
+2023/02/22 13:39:13 4686109 788474c3 [INFO Client 7904] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: d85e0200a7824d9d68254ef98f2763bf. Type: Ruthless. Message: 
+2023/02/22 13:39:13 4686109 2a14910e [INFO Client 7904] PrecalcBaseTypeHashMap
+2023/02/22 13:39:13 4686171 2a149100 [INFO Client 7904] PrecalcModNameHashMap
+2023/02/22 13:39:14 4687187 2a149169 [INFO Client 7904] PrecalcItemClassMap
+2023/02/22 13:39:14 4687187 2a14916b [INFO Client 7904] PrecalcSoundEffects
+2023/02/22 13:39:14 4687203 2a14916d [INFO Client 7904] PrecalcDropEffects
+2023/02/22 13:39:14 4687203 2a14916f [INFO Client 7904] PrecalcNonEnchantModHashes
+2023/02/22 13:39:14 4687203 2a149161 [INFO Client 7904] PrecalcRuleNameToTypeMap
+2023/02/22 13:39:14 4687203 2a148c01 [INFO Client 7904] PrecalcCJESPNIndexMap
+2023/02/22 13:39:14 4687203 2a148c03 [INFO Client 7904] PrecalcGemAlternateQualityMap
+2023/02/22 13:39:34 4707609 88a904ed [DEBUG Client 7904] Got Instance Details from login server
+2023/02/22 13:39:34 4707609 32759a9f [INFO Client 7904] [SHADER] Delay: OFF
+2023/02/22 13:39:34 4707609 ca3a6a7f [INFO Client 7904] Connecting to instance server at 85.195.114.179:6112
+2023/02/22 13:39:34 4707671 ca3a4dbd [DEBUG Client 7904] Connect time to instance server was 31ms
+2023/02/22 13:39:35 4707718 1186a0e3 [DEBUG Client 7904] Generating level 64 area "2_10_1" with seed 1267142826
+2023/02/22 13:39:37 4709859 f22b6987 [INFO Client 7904] Tile hash: 1031993863
+2023/02/22 13:39:37 4709859 f22b6986 [INFO Client 7904] Doodad hash: 3311569765
+2023/02/22 13:39:39 4711750 11870f60 [DEBUG Client 7904] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 13:39:39 4712546 cffb0734 [INFO Client 7904] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Крыша собора.
+2023/02/22 13:39:40 4713578 32759a9f [INFO Client 7904] [SHADER] Delay: ON
+2023/02/22 13:41:52 4844703 b51d4f61 [DEBUG Client 7904] [RENDER] SetRendererSettings
+2023/02/22 13:41:52 4844703 b51d650d [DEBUG Client 7904] [RENDER] ResizeDevice
+2023/02/22 13:41:52 4844703 9d4eec8a [DEBUG Client 7904] [WINDOW] TrigggerDeviceLost
+2023/02/22 13:41:52 4844750 9d4eeba7 [DEBUG Client 7904] [WINDOW] TrigggerDeviceReset
+2023/02/22 13:41:53 4845687 3275a75e [INFO Client 7904] [SHADER] Disable Async: 1 frames
+2023/02/22 13:41:53 4845687 b51d610e [INFO Client 7904] [RENDER] Disable Async: 1 frames
+2023/02/22 13:41:58 4850890 b51d4f61 [DEBUG Client 7904] [RENDER] SetRendererSettings
+2023/02/22 13:41:58 4850890 3275a75e [INFO Client 7904] [SHADER] Disable Async: 1 frames
+2023/02/22 13:41:58 4850890 b51d610e [INFO Client 7904] [RENDER] Disable Async: 1 frames
+2023/02/22 13:42:03 4856468 b51d4f61 [DEBUG Client 7904] [RENDER] SetRendererSettings
+2023/02/22 13:42:03 4856468 3275a75e [INFO Client 7904] [SHADER] Disable Async: 1 frames
+2023/02/22 13:42:03 4856468 b51d610e [INFO Client 7904] [RENDER] Disable Async: 1 frames
+2023/02/22 13:42:06 4858750 b51d4f61 [DEBUG Client 7904] [RENDER] SetRendererSettings
+2023/02/22 13:42:06 4858750 3275a75e [INFO Client 7904] [SHADER] Disable Async: 1 frames
+2023/02/22 13:42:06 4858750 b51d610e [INFO Client 7904] [RENDER] Disable Async: 1 frames
+2023/02/22 13:42:06 4858781 b51d4f61 [DEBUG Client 7904] [RENDER] SetRendererSettings
+2023/02/22 13:42:06 4858781 3275a75e [INFO Client 7904] [SHADER] Disable Async: 1 frames
+2023/02/22 13:42:06 4858781 b51d610e [INFO Client 7904] [RENDER] Disable Async: 1 frames
+2023/02/22 13:42:06 4858796 b51d4f61 [DEBUG Client 7904] [RENDER] SetRendererSettings
+2023/02/22 13:42:06 4858796 3275a75e [INFO Client 7904] [SHADER] Disable Async: 1 frames
+2023/02/22 13:42:06 4858796 b51d610e [INFO Client 7904] [RENDER] Disable Async: 1 frames
+2023/02/22 13:42:06 4858828 b51d4f61 [DEBUG Client 7904] [RENDER] SetRendererSettings
+2023/02/22 13:42:06 4858828 3275a75e [INFO Client 7904] [SHADER] Disable Async: 1 frames
+2023/02/22 13:42:06 4858828 b51d610e [INFO Client 7904] [RENDER] Disable Async: 1 frames
+2023/02/22 13:42:06 4858843 b51d4f61 [DEBUG Client 7904] [RENDER] SetRendererSettings
+2023/02/22 13:42:06 4858843 3275a75e [INFO Client 7904] [SHADER] Disable Async: 1 frames
+2023/02/22 13:42:06 4858843 b51d610e [INFO Client 7904] [RENDER] Disable Async: 1 frames
+2023/02/22 13:42:06 4858875 b51d4f61 [DEBUG Client 7904] [RENDER] SetRendererSettings
+2023/02/22 13:42:06 4858875 3275a75e [INFO Client 7904] [SHADER] Disable Async: 1 frames
+2023/02/22 13:42:06 4858875 b51d610e [INFO Client 7904] [RENDER] Disable Async: 1 frames
+2023/02/22 13:42:06 4858906 b51d4f61 [DEBUG Client 7904] [RENDER] SetRendererSettings
+2023/02/22 13:42:06 4858906 3275a75e [INFO Client 7904] [SHADER] Disable Async: 1 frames
+2023/02/22 13:42:06 4858906 b51d610e [INFO Client 7904] [RENDER] Disable Async: 1 frames
+2023/02/22 13:42:13 4866359 b51d4f61 [DEBUG Client 7904] [RENDER] SetRendererSettings
+2023/02/22 13:42:13 4866359 3275a75e [INFO Client 7904] [SHADER] Disable Async: 1 frames
+2023/02/22 13:42:13 4866359 b51d610e [INFO Client 7904] [RENDER] Disable Async: 1 frames
+2023/02/22 13:42:15 4868671 b51d4f61 [DEBUG Client 7904] [RENDER] SetRendererSettings
+2023/02/22 13:42:15 4868671 3275a75e [INFO Client 7904] [SHADER] Disable Async: 1 frames
+2023/02/22 13:42:15 4868671 b51d610e [INFO Client 7904] [RENDER] Disable Async: 1 frames
+2023/02/22 13:42:28 4880765 b51d4f61 [DEBUG Client 7904] [RENDER] SetRendererSettings
+2023/02/22 13:42:28 4880765 3275a75e [INFO Client 7904] [SHADER] Disable Async: 1 frames
+2023/02/22 13:42:28 4880765 b51d610e [INFO Client 7904] [RENDER] Disable Async: 1 frames
+2023/02/22 13:45:03 5036015 cffb0734 [INFO Client 7904] #NightCOREwitch: итак ребята 57 лвл 6 акт первая уникальная шмотка выпала Почерк Коралито, Алмазный флакон
+2023/02/22 13:45:15 5048218 cffb0734 [INFO Client 7904] #BabaWithoutPants: гц!
+2023/02/22 13:45:35 5068406 cffb0734 [INFO Client 7904] #NightCOREwitch: )
+2023/02/22 13:45:50 5082984 cffb0734 [INFO Client 7904] #BabaWithoutPants: лучше первая, чем никакой
+2023/02/22 13:45:58 5091000 cffb0734 [INFO Client 7904] #NightCOREwitch: угу
+2023/02/22 13:52:34 5487406 374e128b [INFO Client 7904] [Item Filter] Downloading online list
+2023/02/22 13:52:35 5488156 374e12ec [INFO Client 7904] [Item Filter] Online list returned status: 200
+2023/02/22 13:52:35 5488156 374e12e6 [DEBUG Client 7904] [Item Filter] Online list request resolved to: 209.197.3.101
+2023/02/22 13:52:35 5488156 374df908 [INFO Client 7904] [Item Filter] List contained online filter J40EP1CX with hash: 02887dd2497dd65178c4e486dda6f1d4 (local hash is: 02887dd2497dd65178c4e486dda6f1d4)
+2023/02/22 13:52:35 5488156 374df908 [INFO Client 7904] [Item Filter] List contained online filter EQQOoxhj with hash: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd (local hash is: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd)
+2023/02/22 13:52:35 5488156 374df908 [INFO Client 7904] [Item Filter] List contained online filter vOOayjsJ with hash: 5f088d212263dae3a0fb682b4ac7f0bc (local hash is: 5f088d212263dae3a0fb682b4ac7f0bc)
+2023/02/22 13:52:35 5488156 374df908 [INFO Client 7904] [Item Filter] List contained online filter prraV6FQ with hash: 8ebac6003e828e52fc3bdda0ec693e5b (local hash is: d85e0200a7824d9d68254ef98f2763bf)
+2023/02/22 13:52:35 5488156 374df908 [INFO Client 7904] [Item Filter] List contained online filter G4AtJ5 with hash: 6a31e90baa6944a04fe8266028e8c3ed (local hash is: 6a31e90baa6944a04fe8266028e8c3ed)
+2023/02/22 13:52:35 5488156 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmjoTD with hash: d0f2483fc7bc3ad96223ff8e89de6fde (local hash is: d0f2483fc7bc3ad96223ff8e89de6fde)
+2023/02/22 13:52:35 5488156 374df908 [INFO Client 7904] [Item Filter] List contained online filter 5XMehq with hash: 355d03c0d6c899f0854547d7fb13ca6a (local hash is: 355d03c0d6c899f0854547d7fb13ca6a)
+2023/02/22 13:52:35 5488156 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmXoTD with hash: d617cac78014b5ff6aa1b99ec4409b1c (local hash is: d617cac78014b5ff6aa1b99ec4409b1c)
+2023/02/22 13:52:35 5488156 374df908 [INFO Client 7904] [Item Filter] List contained online filter wvPeTJ with hash: 2d2c5c00855e6ab5795ff1038ae4ff3d (local hash is: 2d2c5c00855e6ab5795ff1038ae4ff3d)
+2023/02/22 13:52:36 5489375 374e0d22 [INFO Client 7904] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/22 13:52:36 5489375 374e0cc3 [INFO Client 7904] [Item Filter] Hash for online filter prraV6FQ is: (empty)
+2023/02/22 13:52:37 5490515 374e0cc9 [INFO Client 7904] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/22 13:52:37 5490515 374e0ce3 [DEBUG Client 7904] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/22 13:52:37 5490515 374e0e8e [DEBUG Client 7904] [Item Filter] X-HW: 1677066757.dop033.pa1.t,1677066757.cds030.pa1.shn,1677066757.dop033.pa1.t,1677066757.cds212.pa1.s,1677066758.dop229.da2.r,1677066758.cds036.da2.p,1677066758.cds212.pa1.p
+2023/02/22 13:52:37 5490531 374df808 [INFO Client 7904] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 8ebac6003e828e52fc3bdda0ec693e5b
+2023/02/22 13:52:37 5490546 788474c3 [INFO Client 7904] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 8ebac6003e828e52fc3bdda0ec693e5b. Type: Ruthless. Message: 
+2023/02/22 13:58:41 5854671 374e128b [INFO Client 7904] [Item Filter] Downloading online list
+2023/02/22 13:58:42 5855453 374e12ec [INFO Client 7904] [Item Filter] Online list returned status: 200
+2023/02/22 13:58:42 5855453 374e12e6 [DEBUG Client 7904] [Item Filter] Online list request resolved to: 209.197.3.101
+2023/02/22 13:58:42 5855453 374df908 [INFO Client 7904] [Item Filter] List contained online filter J40EP1CX with hash: 02887dd2497dd65178c4e486dda6f1d4 (local hash is: 02887dd2497dd65178c4e486dda6f1d4)
+2023/02/22 13:58:42 5855453 374df908 [INFO Client 7904] [Item Filter] List contained online filter EQQOoxhj with hash: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd (local hash is: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd)
+2023/02/22 13:58:42 5855453 374df908 [INFO Client 7904] [Item Filter] List contained online filter vOOayjsJ with hash: 5f088d212263dae3a0fb682b4ac7f0bc (local hash is: 5f088d212263dae3a0fb682b4ac7f0bc)
+2023/02/22 13:58:42 5855453 374df908 [INFO Client 7904] [Item Filter] List contained online filter prraV6FQ with hash: 0c893f4e044881673177c36d96bbdc76 (local hash is: 8ebac6003e828e52fc3bdda0ec693e5b)
+2023/02/22 13:58:42 5855453 374df908 [INFO Client 7904] [Item Filter] List contained online filter G4AtJ5 with hash: 6a31e90baa6944a04fe8266028e8c3ed (local hash is: 6a31e90baa6944a04fe8266028e8c3ed)
+2023/02/22 13:58:42 5855453 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmjoTD with hash: d0f2483fc7bc3ad96223ff8e89de6fde (local hash is: d0f2483fc7bc3ad96223ff8e89de6fde)
+2023/02/22 13:58:42 5855453 374df908 [INFO Client 7904] [Item Filter] List contained online filter 5XMehq with hash: 355d03c0d6c899f0854547d7fb13ca6a (local hash is: 355d03c0d6c899f0854547d7fb13ca6a)
+2023/02/22 13:58:42 5855453 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmXoTD with hash: d617cac78014b5ff6aa1b99ec4409b1c (local hash is: d617cac78014b5ff6aa1b99ec4409b1c)
+2023/02/22 13:58:42 5855453 374df908 [INFO Client 7904] [Item Filter] List contained online filter wvPeTJ with hash: 2d2c5c00855e6ab5795ff1038ae4ff3d (local hash is: 2d2c5c00855e6ab5795ff1038ae4ff3d)
+2023/02/22 13:58:44 5857640 374e128b [INFO Client 7904] [Item Filter] Downloading online list
+2023/02/22 13:58:45 5858437 374e12ec [INFO Client 7904] [Item Filter] Online list returned status: 200
+2023/02/22 13:58:45 5858437 374e12e6 [DEBUG Client 7904] [Item Filter] Online list request resolved to: 209.197.3.101
+2023/02/22 13:58:45 5858437 374df908 [INFO Client 7904] [Item Filter] List contained online filter J40EP1CX with hash: 02887dd2497dd65178c4e486dda6f1d4 (local hash is: 02887dd2497dd65178c4e486dda6f1d4)
+2023/02/22 13:58:45 5858437 374df908 [INFO Client 7904] [Item Filter] List contained online filter EQQOoxhj with hash: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd (local hash is: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd)
+2023/02/22 13:58:45 5858437 374df908 [INFO Client 7904] [Item Filter] List contained online filter vOOayjsJ with hash: 5f088d212263dae3a0fb682b4ac7f0bc (local hash is: 5f088d212263dae3a0fb682b4ac7f0bc)
+2023/02/22 13:58:45 5858437 374df908 [INFO Client 7904] [Item Filter] List contained online filter prraV6FQ with hash: 0c893f4e044881673177c36d96bbdc76 (local hash is: 8ebac6003e828e52fc3bdda0ec693e5b)
+2023/02/22 13:58:45 5858437 374df908 [INFO Client 7904] [Item Filter] List contained online filter G4AtJ5 with hash: 6a31e90baa6944a04fe8266028e8c3ed (local hash is: 6a31e90baa6944a04fe8266028e8c3ed)
+2023/02/22 13:58:45 5858437 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmjoTD with hash: d0f2483fc7bc3ad96223ff8e89de6fde (local hash is: d0f2483fc7bc3ad96223ff8e89de6fde)
+2023/02/22 13:58:45 5858437 374df908 [INFO Client 7904] [Item Filter] List contained online filter 5XMehq with hash: 355d03c0d6c899f0854547d7fb13ca6a (local hash is: 355d03c0d6c899f0854547d7fb13ca6a)
+2023/02/22 13:58:45 5858437 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmXoTD with hash: d617cac78014b5ff6aa1b99ec4409b1c (local hash is: d617cac78014b5ff6aa1b99ec4409b1c)
+2023/02/22 13:58:45 5858437 374df908 [INFO Client 7904] [Item Filter] List contained online filter wvPeTJ with hash: 2d2c5c00855e6ab5795ff1038ae4ff3d (local hash is: 2d2c5c00855e6ab5795ff1038ae4ff3d)
+2023/02/22 13:58:49 5862687 374e0d22 [INFO Client 7904] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/22 13:58:49 5862687 374e0cc3 [INFO Client 7904] [Item Filter] Hash for online filter prraV6FQ is: (empty)
+2023/02/22 13:58:51 5863875 374e0cc9 [INFO Client 7904] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/22 13:58:51 5863875 374e0ce3 [DEBUG Client 7904] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/22 13:58:51 5863875 374e0e8e [DEBUG Client 7904] [Item Filter] X-HW: 1677067131.dop045.pa1.t,1677067131.cds041.pa1.shn,1677067131.dop045.pa1.t,1677067131.cds212.pa1.s,1677067131.dop043.da2.r,1677067131.cds036.da2.p,1677067131.cds212.pa1.p
+2023/02/22 13:58:51 5863875 374df808 [INFO Client 7904] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 0c893f4e044881673177c36d96bbdc76
+2023/02/22 13:58:51 5863890 788474c3 [INFO Client 7904] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 0c893f4e044881673177c36d96bbdc76. Type: Ruthless. Message: 
+2023/02/22 13:59:56 5929140 88a904ed [DEBUG Client 7904] Got Instance Details from login server
+2023/02/22 13:59:56 5929156 32759a9f [INFO Client 7904] [SHADER] Delay: OFF
+2023/02/22 13:59:56 5929156 ca3a6a7f [INFO Client 7904] Connecting to instance server at 149.81.222.169:6112
+2023/02/22 13:59:56 5929203 ca3a4dbd [DEBUG Client 7904] Connect time to instance server was 31ms
+2023/02/22 13:59:56 5929250 1186a0e3 [DEBUG Client 7904] Generating level 64 area "2_10_2" with seed 3047036818
+2023/02/22 13:59:58 5931375 f22b6987 [INFO Client 7904] Tile hash: 1959485464
+2023/02/22 13:59:58 5931375 f22b6986 [INFO Client 7904] Doodad hash: 1313414595
+2023/02/22 14:00:00 5933125 11870f60 [DEBUG Client 7904] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 14:00:01 5934500 cffb0734 [INFO Client 7904] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Разорённая площадь.
+2023/02/22 14:00:03 5935921 32759a9f [INFO Client 7904] [SHADER] Delay: ON
+2023/02/22 14:00:50 5982734 cffb0734 [INFO Client 7904] : DeeFirera (Маг стихий) достигает 72 уровня
+2023/02/22 14:02:58 6111484 fb7abca5 [INFO Client 7904] Successfully allocated passive skill id: mana397, name: Здоровье и регенерация маны
+2023/02/22 14:03:23 6135859 88a904ed [DEBUG Client 7904] Got Instance Details from login server
+2023/02/22 14:03:23 6135875 32759a9f [INFO Client 7904] [SHADER] Delay: OFF
+2023/02/22 14:03:23 6135875 ca3a6a7f [INFO Client 7904] Connecting to instance server at 85.195.124.131:6112
+2023/02/22 14:03:23 6135921 ca3a4dbd [DEBUG Client 7904] Connect time to instance server was 15ms
+2023/02/22 14:03:23 6135953 1186a0e3 [DEBUG Client 7904] Generating level 67 area "2_10_8" with seed 2893054253
+2023/02/22 14:03:24 6136828 f22b6987 [INFO Client 7904] Tile hash: 263252537
+2023/02/22 14:03:24 6136828 f22b6986 [INFO Client 7904] Doodad hash: 2958528306
+2023/02/22 14:03:24 6137296 11870f60 [DEBUG Client 7904] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 14:03:25 6138109 cffb0734 [INFO Client 7904] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Реликварий.
+2023/02/22 14:03:26 6138812 32759a9f [INFO Client 7904] [SHADER] Delay: ON
+2023/02/22 14:08:41 6454640 88a904ed [DEBUG Client 7904] Got Instance Details from login server
+2023/02/22 14:08:41 6454640 32759a9f [INFO Client 7904] [SHADER] Delay: OFF
+2023/02/22 14:08:41 6454640 ca3a6a7f [INFO Client 7904] Connecting to instance server at 85.195.93.243:6112
+2023/02/22 14:08:41 6454687 ca3a4dbd [DEBUG Client 7904] Connect time to instance server was 31ms
+2023/02/22 14:08:42 6454734 1186a0e3 [DEBUG Client 7904] Generating level 69 area "2_10_town" with seed 1
+2023/02/22 14:08:42 6455140 f22b6987 [INFO Client 7904] Tile hash: 3862614232
+2023/02/22 14:08:42 6455140 f22b6986 [INFO Client 7904] Doodad hash: 0
+2023/02/22 14:08:42 6455640 11870f60 [DEBUG Client 7904] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 14:08:43 6456265 cffb0734 [INFO Client 7904] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Доки Ориата.
+2023/02/22 14:08:44 6457015 32759a9f [INFO Client 7904] [SHADER] Delay: ON
+2023/02/22 14:25:44 7477140 cffb0734 [INFO Client 7904] : Режим "отошёл" включён. Авто-ответ "Игрок отошёл.".
+2023/02/22 14:33:05 7918421 cffb0734 [INFO Client 7904] &<RiPE> SK_PAK: Отпущение
+2023/02/22 14:54:23 9196625 cffb0734 [INFO Client 7904] : Режим "отошёл" выключен.
+2023/02/22 14:56:59 9351890 cffb0734 [INFO Client 7904] : Сделка совершена.
+2023/02/22 14:57:29 9382515 88a904ed [DEBUG Client 7904] Got Instance Details from login server
+2023/02/22 14:57:29 9382515 32759a9f [INFO Client 7904] [SHADER] Delay: OFF
+2023/02/22 14:57:29 9382515 ca3a6a7f [INFO Client 7904] Connecting to instance server at 85.195.124.131:6112
+2023/02/22 14:57:29 9382562 ca3a4dbd [DEBUG Client 7904] Connect time to instance server was 31ms
+2023/02/22 14:57:29 9382593 1186a0e3 [DEBUG Client 7904] Generating level 67 area "2_10_8" with seed 1298293608
+2023/02/22 14:57:30 9382734 f22b6987 [INFO Client 7904] Tile hash: 2702222625
+2023/02/22 14:57:30 9382734 f22b6986 [INFO Client 7904] Doodad hash: 1275014514
+2023/02/22 14:57:30 9383562 11870f60 [DEBUG Client 7904] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 14:57:31 9384203 cffb0734 [INFO Client 7904] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Реликварий.
+2023/02/22 14:57:32 9384828 32759a9f [INFO Client 7904] [SHADER] Delay: ON
+2023/02/22 14:57:37 9390562 374e128b [INFO Client 7904] [Item Filter] Downloading online list
+2023/02/22 14:57:38 9391375 374e12ec [INFO Client 7904] [Item Filter] Online list returned status: 200
+2023/02/22 14:57:38 9391375 374e12e6 [DEBUG Client 7904] [Item Filter] Online list request resolved to: 209.197.3.101
+2023/02/22 14:57:38 9391375 374df908 [INFO Client 7904] [Item Filter] List contained online filter J40EP1CX with hash: 02887dd2497dd65178c4e486dda6f1d4 (local hash is: 02887dd2497dd65178c4e486dda6f1d4)
+2023/02/22 14:57:38 9391375 374df908 [INFO Client 7904] [Item Filter] List contained online filter EQQOoxhj with hash: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd (local hash is: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd)
+2023/02/22 14:57:38 9391375 374df908 [INFO Client 7904] [Item Filter] List contained online filter vOOayjsJ with hash: 5f088d212263dae3a0fb682b4ac7f0bc (local hash is: 5f088d212263dae3a0fb682b4ac7f0bc)
+2023/02/22 14:57:38 9391375 374df908 [INFO Client 7904] [Item Filter] List contained online filter prraV6FQ with hash: 0ec9ba490e661ec995c1cea3afcdf7f0 (local hash is: 0c893f4e044881673177c36d96bbdc76)
+2023/02/22 14:57:38 9391375 374df908 [INFO Client 7904] [Item Filter] List contained online filter G4AtJ5 with hash: 6a31e90baa6944a04fe8266028e8c3ed (local hash is: 6a31e90baa6944a04fe8266028e8c3ed)
+2023/02/22 14:57:38 9391375 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmjoTD with hash: d0f2483fc7bc3ad96223ff8e89de6fde (local hash is: d0f2483fc7bc3ad96223ff8e89de6fde)
+2023/02/22 14:57:38 9391375 374df908 [INFO Client 7904] [Item Filter] List contained online filter 5XMehq with hash: 355d03c0d6c899f0854547d7fb13ca6a (local hash is: 355d03c0d6c899f0854547d7fb13ca6a)
+2023/02/22 14:57:38 9391375 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmXoTD with hash: d617cac78014b5ff6aa1b99ec4409b1c (local hash is: d617cac78014b5ff6aa1b99ec4409b1c)
+2023/02/22 14:57:38 9391375 374df908 [INFO Client 7904] [Item Filter] List contained online filter wvPeTJ with hash: 2d2c5c00855e6ab5795ff1038ae4ff3d (local hash is: 2d2c5c00855e6ab5795ff1038ae4ff3d)
+2023/02/22 14:57:58 9410781 374e128b [INFO Client 7904] [Item Filter] Downloading online list
+2023/02/22 14:57:58 9411578 374e12ec [INFO Client 7904] [Item Filter] Online list returned status: 200
+2023/02/22 14:57:58 9411578 374e12e6 [DEBUG Client 7904] [Item Filter] Online list request resolved to: 209.197.3.101
+2023/02/22 14:57:58 9411578 374df908 [INFO Client 7904] [Item Filter] List contained online filter J40EP1CX with hash: 02887dd2497dd65178c4e486dda6f1d4 (local hash is: 02887dd2497dd65178c4e486dda6f1d4)
+2023/02/22 14:57:58 9411578 374df908 [INFO Client 7904] [Item Filter] List contained online filter EQQOoxhj with hash: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd (local hash is: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd)
+2023/02/22 14:57:58 9411578 374df908 [INFO Client 7904] [Item Filter] List contained online filter vOOayjsJ with hash: 5f088d212263dae3a0fb682b4ac7f0bc (local hash is: 5f088d212263dae3a0fb682b4ac7f0bc)
+2023/02/22 14:57:58 9411578 374df908 [INFO Client 7904] [Item Filter] List contained online filter prraV6FQ with hash: 0ec9ba490e661ec995c1cea3afcdf7f0 (local hash is: 0c893f4e044881673177c36d96bbdc76)
+2023/02/22 14:57:58 9411578 374df908 [INFO Client 7904] [Item Filter] List contained online filter G4AtJ5 with hash: 6a31e90baa6944a04fe8266028e8c3ed (local hash is: 6a31e90baa6944a04fe8266028e8c3ed)
+2023/02/22 14:57:58 9411578 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmjoTD with hash: d0f2483fc7bc3ad96223ff8e89de6fde (local hash is: d0f2483fc7bc3ad96223ff8e89de6fde)
+2023/02/22 14:57:58 9411578 374df908 [INFO Client 7904] [Item Filter] List contained online filter 5XMehq with hash: 355d03c0d6c899f0854547d7fb13ca6a (local hash is: 355d03c0d6c899f0854547d7fb13ca6a)
+2023/02/22 14:57:58 9411578 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmXoTD with hash: d617cac78014b5ff6aa1b99ec4409b1c (local hash is: d617cac78014b5ff6aa1b99ec4409b1c)
+2023/02/22 14:57:58 9411578 374df908 [INFO Client 7904] [Item Filter] List contained online filter wvPeTJ with hash: 2d2c5c00855e6ab5795ff1038ae4ff3d (local hash is: 2d2c5c00855e6ab5795ff1038ae4ff3d)
+2023/02/22 14:58:11 9424281 374e0d22 [INFO Client 7904] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/22 14:58:11 9424281 374e0cc3 [INFO Client 7904] [Item Filter] Hash for online filter prraV6FQ is: (empty)
+2023/02/22 14:58:12 9425515 374e0cc9 [INFO Client 7904] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/22 14:58:12 9425515 374e0ce3 [DEBUG Client 7904] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/22 14:58:12 9425515 374e0e8e [DEBUG Client 7904] [Item Filter] X-HW: 1677070692.dop201.pa1.t,1677070692.cds036.pa1.shn,1677070692.dop201.pa1.t,1677070692.cds212.pa1.s,1677070693.dop113.da2.r,1677070693.cds036.da2.p,1677070693.cds212.pa1.p
+2023/02/22 14:58:12 9425531 374df808 [INFO Client 7904] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 0ec9ba490e661ec995c1cea3afcdf7f0
+2023/02/22 14:58:12 9425546 788474c3 [INFO Client 7904] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 0ec9ba490e661ec995c1cea3afcdf7f0. Type: Ruthless. Message: 
+2023/02/22 15:05:20 9853484 374e128b [INFO Client 7904] [Item Filter] Downloading online list
+2023/02/22 15:05:21 9854281 374e12ec [INFO Client 7904] [Item Filter] Online list returned status: 200
+2023/02/22 15:05:21 9854281 374e12e6 [DEBUG Client 7904] [Item Filter] Online list request resolved to: 209.197.3.101
+2023/02/22 15:05:21 9854281 374df908 [INFO Client 7904] [Item Filter] List contained online filter J40EP1CX with hash: 02887dd2497dd65178c4e486dda6f1d4 (local hash is: 02887dd2497dd65178c4e486dda6f1d4)
+2023/02/22 15:05:21 9854281 374df908 [INFO Client 7904] [Item Filter] List contained online filter EQQOoxhj with hash: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd (local hash is: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd)
+2023/02/22 15:05:21 9854281 374df908 [INFO Client 7904] [Item Filter] List contained online filter vOOayjsJ with hash: 5f088d212263dae3a0fb682b4ac7f0bc (local hash is: 5f088d212263dae3a0fb682b4ac7f0bc)
+2023/02/22 15:05:21 9854281 374df908 [INFO Client 7904] [Item Filter] List contained online filter prraV6FQ with hash: 7c3dd2af0af85c45e3dde38ebabf2d03 (local hash is: 0ec9ba490e661ec995c1cea3afcdf7f0)
+2023/02/22 15:05:21 9854281 374df908 [INFO Client 7904] [Item Filter] List contained online filter G4AtJ5 with hash: 6a31e90baa6944a04fe8266028e8c3ed (local hash is: 6a31e90baa6944a04fe8266028e8c3ed)
+2023/02/22 15:05:21 9854281 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmjoTD with hash: d0f2483fc7bc3ad96223ff8e89de6fde (local hash is: d0f2483fc7bc3ad96223ff8e89de6fde)
+2023/02/22 15:05:21 9854281 374df908 [INFO Client 7904] [Item Filter] List contained online filter 5XMehq with hash: 355d03c0d6c899f0854547d7fb13ca6a (local hash is: 355d03c0d6c899f0854547d7fb13ca6a)
+2023/02/22 15:05:21 9854281 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmXoTD with hash: d617cac78014b5ff6aa1b99ec4409b1c (local hash is: d617cac78014b5ff6aa1b99ec4409b1c)
+2023/02/22 15:05:21 9854281 374df908 [INFO Client 7904] [Item Filter] List contained online filter wvPeTJ with hash: 2d2c5c00855e6ab5795ff1038ae4ff3d (local hash is: 2d2c5c00855e6ab5795ff1038ae4ff3d)
+2023/02/22 15:11:27 10219984 374e128b [INFO Client 7904] [Item Filter] Downloading online list
+2023/02/22 15:11:28 10220718 374e12ec [INFO Client 7904] [Item Filter] Online list returned status: 200
+2023/02/22 15:11:28 10220718 374e12e6 [DEBUG Client 7904] [Item Filter] Online list request resolved to: 209.197.3.101
+2023/02/22 15:11:28 10220718 374df908 [INFO Client 7904] [Item Filter] List contained online filter J40EP1CX with hash: 02887dd2497dd65178c4e486dda6f1d4 (local hash is: 02887dd2497dd65178c4e486dda6f1d4)
+2023/02/22 15:11:28 10220718 374df908 [INFO Client 7904] [Item Filter] List contained online filter EQQOoxhj with hash: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd (local hash is: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd)
+2023/02/22 15:11:28 10220718 374df908 [INFO Client 7904] [Item Filter] List contained online filter vOOayjsJ with hash: 5f088d212263dae3a0fb682b4ac7f0bc (local hash is: 5f088d212263dae3a0fb682b4ac7f0bc)
+2023/02/22 15:11:28 10220718 374df908 [INFO Client 7904] [Item Filter] List contained online filter prraV6FQ with hash: 7c3dd2af0af85c45e3dde38ebabf2d03 (local hash is: 0ec9ba490e661ec995c1cea3afcdf7f0)
+2023/02/22 15:11:28 10220718 374df908 [INFO Client 7904] [Item Filter] List contained online filter G4AtJ5 with hash: e9259e47765b889d03a4d487bb73bc70 (local hash is: 6a31e90baa6944a04fe8266028e8c3ed)
+2023/02/22 15:11:28 10220718 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmjoTD with hash: 0b24cc17ce0a14b4e769ecf95ace0950 (local hash is: d0f2483fc7bc3ad96223ff8e89de6fde)
+2023/02/22 15:11:28 10220718 374df908 [INFO Client 7904] [Item Filter] List contained online filter 5XMehq with hash: 5e0f3696a17172d3f9dda852ad07b9ad (local hash is: 355d03c0d6c899f0854547d7fb13ca6a)
+2023/02/22 15:11:28 10220718 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmXoTD with hash: ad16f11d0a3978aed09c18545a56dc12 (local hash is: d617cac78014b5ff6aa1b99ec4409b1c)
+2023/02/22 15:11:28 10220718 374df908 [INFO Client 7904] [Item Filter] List contained online filter wvPeTJ with hash: b64f3c2764601a4973b29d7e3ba6c026 (local hash is: 2d2c5c00855e6ab5795ff1038ae4ff3d)
+2023/02/22 15:11:33 10226109 374e0d22 [INFO Client 7904] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/22 15:11:33 10226109 374e0cc3 [INFO Client 7904] [Item Filter] Hash for online filter prraV6FQ is: (empty)
+2023/02/22 15:11:34 10227234 374e0cc9 [INFO Client 7904] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/22 15:11:34 10227234 374e0ce3 [DEBUG Client 7904] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/22 15:11:34 10227234 374e0e8e [DEBUG Client 7904] [Item Filter] X-HW: 1677071494.dop033.pa1.t,1677071494.cds208.pa1.shn,1677071494.dop033.pa1.t,1677071494.cds212.pa1.s,1677071494.dop048.da2.r,1677071495.cds036.da2.p,1677071495.cds212.pa1.p
+2023/02/22 15:11:34 10227250 374df808 [INFO Client 7904] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 7c3dd2af0af85c45e3dde38ebabf2d03
+2023/02/22 15:11:34 10227250 788474c3 [INFO Client 7904] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 7c3dd2af0af85c45e3dde38ebabf2d03. Type: Ruthless. Message: 
+2023/02/22 15:13:46 10358906 cffb0734 [INFO Client 7904] : Режим "отошёл" включён. Авто-ответ "Игрок отошёл.".
+2023/02/22 15:16:19 10512140 374e128b [INFO Client 7904] [Item Filter] Downloading online list
+2023/02/22 15:16:20 10512984 374e12ec [INFO Client 7904] [Item Filter] Online list returned status: 200
+2023/02/22 15:16:20 10512984 374e12e6 [DEBUG Client 7904] [Item Filter] Online list request resolved to: 209.197.3.101
+2023/02/22 15:16:20 10512984 374df908 [INFO Client 7904] [Item Filter] List contained online filter J40EP1CX with hash: 02887dd2497dd65178c4e486dda6f1d4 (local hash is: 02887dd2497dd65178c4e486dda6f1d4)
+2023/02/22 15:16:20 10512984 374df908 [INFO Client 7904] [Item Filter] List contained online filter EQQOoxhj with hash: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd (local hash is: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd)
+2023/02/22 15:16:20 10512984 374df908 [INFO Client 7904] [Item Filter] List contained online filter vOOayjsJ with hash: 5f088d212263dae3a0fb682b4ac7f0bc (local hash is: 5f088d212263dae3a0fb682b4ac7f0bc)
+2023/02/22 15:16:20 10512984 374df908 [INFO Client 7904] [Item Filter] List contained online filter prraV6FQ with hash: 69577cd6f98cfd915bc8936b89b72e7e (local hash is: 7c3dd2af0af85c45e3dde38ebabf2d03)
+2023/02/22 15:16:20 10512984 374df908 [INFO Client 7904] [Item Filter] List contained online filter G4AtJ5 with hash: e9259e47765b889d03a4d487bb73bc70 (local hash is: 6a31e90baa6944a04fe8266028e8c3ed)
+2023/02/22 15:16:20 10512984 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmjoTD with hash: 0b24cc17ce0a14b4e769ecf95ace0950 (local hash is: d0f2483fc7bc3ad96223ff8e89de6fde)
+2023/02/22 15:16:20 10512984 374df908 [INFO Client 7904] [Item Filter] List contained online filter 5XMehq with hash: 5e0f3696a17172d3f9dda852ad07b9ad (local hash is: 355d03c0d6c899f0854547d7fb13ca6a)
+2023/02/22 15:16:20 10512984 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmXoTD with hash: ad16f11d0a3978aed09c18545a56dc12 (local hash is: d617cac78014b5ff6aa1b99ec4409b1c)
+2023/02/22 15:16:20 10512984 374df908 [INFO Client 7904] [Item Filter] List contained online filter wvPeTJ with hash: b64f3c2764601a4973b29d7e3ba6c026 (local hash is: 2d2c5c00855e6ab5795ff1038ae4ff3d)
+2023/02/22 15:16:33 10525875 374e128b [INFO Client 7904] [Item Filter] Downloading online list
+2023/02/22 15:16:33 10526687 374e12ec [INFO Client 7904] [Item Filter] Online list returned status: 200
+2023/02/22 15:16:33 10526687 374e12e6 [DEBUG Client 7904] [Item Filter] Online list request resolved to: 209.197.3.101
+2023/02/22 15:16:33 10526687 374df908 [INFO Client 7904] [Item Filter] List contained online filter J40EP1CX with hash: 02887dd2497dd65178c4e486dda6f1d4 (local hash is: 02887dd2497dd65178c4e486dda6f1d4)
+2023/02/22 15:16:33 10526687 374df908 [INFO Client 7904] [Item Filter] List contained online filter EQQOoxhj with hash: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd (local hash is: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd)
+2023/02/22 15:16:33 10526687 374df908 [INFO Client 7904] [Item Filter] List contained online filter vOOayjsJ with hash: 5f088d212263dae3a0fb682b4ac7f0bc (local hash is: 5f088d212263dae3a0fb682b4ac7f0bc)
+2023/02/22 15:16:33 10526687 374df908 [INFO Client 7904] [Item Filter] List contained online filter prraV6FQ with hash: 69577cd6f98cfd915bc8936b89b72e7e (local hash is: 7c3dd2af0af85c45e3dde38ebabf2d03)
+2023/02/22 15:16:33 10526687 374df908 [INFO Client 7904] [Item Filter] List contained online filter G4AtJ5 with hash: e9259e47765b889d03a4d487bb73bc70 (local hash is: 6a31e90baa6944a04fe8266028e8c3ed)
+2023/02/22 15:16:33 10526687 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmjoTD with hash: 0b24cc17ce0a14b4e769ecf95ace0950 (local hash is: d0f2483fc7bc3ad96223ff8e89de6fde)
+2023/02/22 15:16:33 10526687 374df908 [INFO Client 7904] [Item Filter] List contained online filter 5XMehq with hash: 5e0f3696a17172d3f9dda852ad07b9ad (local hash is: 355d03c0d6c899f0854547d7fb13ca6a)
+2023/02/22 15:16:33 10526687 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmXoTD with hash: ad16f11d0a3978aed09c18545a56dc12 (local hash is: d617cac78014b5ff6aa1b99ec4409b1c)
+2023/02/22 15:16:33 10526687 374df908 [INFO Client 7904] [Item Filter] List contained online filter wvPeTJ with hash: b64f3c2764601a4973b29d7e3ba6c026 (local hash is: 2d2c5c00855e6ab5795ff1038ae4ff3d)
+2023/02/22 15:16:38 10531078 374e0d22 [INFO Client 7904] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/22 15:16:38 10531078 374e0cc3 [INFO Client 7904] [Item Filter] Hash for online filter prraV6FQ is: (empty)
+2023/02/22 15:16:39 10532234 374e0cc9 [INFO Client 7904] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/22 15:16:39 10532234 374e0ce3 [DEBUG Client 7904] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/22 15:16:39 10532234 374e0e8e [DEBUG Client 7904] [Item Filter] X-HW: 1677071799.dop041.pa1.t,1677071799.cds024.pa1.shn,1677071799.dop041.pa1.t,1677071799.cds212.pa1.s,1677071799.dop031.da2.r,1677071800.cds036.da2.p,1677071800.cds212.pa1.p
+2023/02/22 15:16:39 10532250 374df808 [INFO Client 7904] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 15:16:39 10532250 788474c3 [INFO Client 7904] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 69577cd6f98cfd915bc8936b89b72e7e. Type: Ruthless. Message: 
+2023/02/22 15:16:39 10532531 374e128b [INFO Client 7904] [Item Filter] Downloading online list
+2023/02/22 15:16:40 10533343 374e12ec [INFO Client 7904] [Item Filter] Online list returned status: 200
+2023/02/22 15:16:40 10533343 374e12e6 [DEBUG Client 7904] [Item Filter] Online list request resolved to: 209.197.3.101
+2023/02/22 15:16:40 10533343 374df908 [INFO Client 7904] [Item Filter] List contained online filter J40EP1CX with hash: 02887dd2497dd65178c4e486dda6f1d4 (local hash is: 02887dd2497dd65178c4e486dda6f1d4)
+2023/02/22 15:16:40 10533343 374df908 [INFO Client 7904] [Item Filter] List contained online filter EQQOoxhj with hash: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd (local hash is: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd)
+2023/02/22 15:16:40 10533343 374df908 [INFO Client 7904] [Item Filter] List contained online filter vOOayjsJ with hash: 5f088d212263dae3a0fb682b4ac7f0bc (local hash is: 5f088d212263dae3a0fb682b4ac7f0bc)
+2023/02/22 15:16:40 10533343 374df908 [INFO Client 7904] [Item Filter] List contained online filter prraV6FQ with hash: 69577cd6f98cfd915bc8936b89b72e7e (local hash is: 69577cd6f98cfd915bc8936b89b72e7e)
+2023/02/22 15:16:40 10533343 374df908 [INFO Client 7904] [Item Filter] List contained online filter G4AtJ5 with hash: e9259e47765b889d03a4d487bb73bc70 (local hash is: 6a31e90baa6944a04fe8266028e8c3ed)
+2023/02/22 15:16:40 10533343 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmjoTD with hash: 0b24cc17ce0a14b4e769ecf95ace0950 (local hash is: d0f2483fc7bc3ad96223ff8e89de6fde)
+2023/02/22 15:16:40 10533343 374df908 [INFO Client 7904] [Item Filter] List contained online filter 5XMehq with hash: 5e0f3696a17172d3f9dda852ad07b9ad (local hash is: 355d03c0d6c899f0854547d7fb13ca6a)
+2023/02/22 15:16:40 10533343 374df908 [INFO Client 7904] [Item Filter] List contained online filter GmXoTD with hash: ad16f11d0a3978aed09c18545a56dc12 (local hash is: d617cac78014b5ff6aa1b99ec4409b1c)
+2023/02/22 15:16:40 10533343 374df908 [INFO Client 7904] [Item Filter] List contained online filter wvPeTJ with hash: b64f3c2764601a4973b29d7e3ba6c026 (local hash is: 2d2c5c00855e6ab5795ff1038ae4ff3d)
+2023/02/22 15:16:43 10535703 cffb0734 [INFO Client 7904] : Режим "отошёл" выключен.
+2023/02/22 15:16:55 10548328 374e0d22 [INFO Client 7904] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/22 15:16:55 10548328 374e0cc3 [INFO Client 7904] [Item Filter] Hash for online filter prraV6FQ is: (empty)
+2023/02/22 15:16:55 10548609 374e0cc9 [INFO Client 7904] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/22 15:16:55 10548609 374e0ce3 [DEBUG Client 7904] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/22 15:16:55 10548609 374e0e8e [DEBUG Client 7904] [Item Filter] X-HW: 1677071816.dop045.pa1.t,1677071816.cds232.pa1.shn,1677071816.dop045.pa1.t,1677071816.cds212.pa1.c
+2023/02/22 15:16:55 10548625 374df808 [INFO Client 7904] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 15:16:55 10548640 788474c3 [INFO Client 7904] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 69577cd6f98cfd915bc8936b89b72e7e. Type: Ruthless. Message: 
+2023/02/22 15:21:47 ***** LOG FILE OPENING *****
+2023/02/22 15:21:47 10840546 340884db [DEBUG Client 5224] [RENDER] StopDevice
+2023/02/22 15:21:47 10840546 84a7e6f1 [INFO Client 5224] [ENGINE] Clear
+2023/02/22 15:21:47 10840546 7bb5422 [INFO Client 5224] [BUNDLE2] Deinit
+2023/02/22 15:21:48 ***** LOG FILE OPENING *****
+2023/02/22 15:21:48 10841546 509417f7 [WARN Client 5224] tool_settings.json was not found. Resetting to default settings.
+2023/02/22 15:21:48 10841546 84a7e691 [INFO Client 5224] [JOB] Clear
+2023/02/22 15:21:48 10841546 84a7e7bf [INFO Client 5224] [ANIMATION] Clear
+2023/02/22 15:21:48 10841546 84a7e7be [INFO Client 5224] [PHYSICS] Clear
+2023/02/22 15:21:48 10841546 84a7e7bd [INFO Client 5224] [SHADER] Clear
+2023/02/22 15:21:48 10841546 84a7e7bc [INFO Client 5224] [ENTITY] Clear
+2023/02/22 15:21:48 10841546 84a7e7bb [INFO Client 5224] [SOUND] Clear
+2023/02/22 15:21:48 10841546 84a7e7ba [INFO Client 5224] [VIDEO] Clear
+2023/02/22 15:21:48 10841546 84a7e7b9 [INFO Client 5224] [SCENE] Clear
+2023/02/22 15:21:48 10841546 84a7e7b8 [INFO Client 5224] [GRAPH] Clear
+2023/02/22 15:21:48 10841546 84a7e7b7 [INFO Client 5224] [TELEMETRY] Clear
+2023/02/22 15:21:48 10841546 84a7e7b6 [INFO Client 5224] [RESOURCE] GarbageCollect
+2023/02/22 15:21:48 10841546 84a7e75e [INFO Client 5224] [RESOURCE] Clear
+2023/02/22 15:21:48 10841546 84a7e75b [INFO Client 5224] [RENDER] Clear
+2023/02/22 15:21:48 10841546 84a7e758 [INFO Client 5224] [ENGINE] Done
+2023/02/22 15:21:48 10841578 f95442e3 [INFO Client 5488] [STARTUP] Job Queues
+2023/02/22 15:21:48 10841578 9e6a0b0a [INFO Client 5488] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/22 15:21:48 10841656 9e6a1d2a [INFO Client 5488] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 15:21:48 10841656 9e6a1363 [INFO Client 5488] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/22 15:21:48 10841656 9e6a0b0a [INFO Client 5488] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/22 15:21:48 10841671 9e6a1d2a [INFO Client 5488] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 15:21:48 10841671 84a7d27d [INFO Client 5488] [ENGINE] Init
+2023/02/22 15:21:48 10841671 55713145 [INFO Client 5488] [JOB] HIGH: 2
+2023/02/22 15:21:48 10841671 55713145 [INFO Client 5488] [JOB] MEDIUM: 2
+2023/02/22 15:21:48 10841671 55713145 [INFO Client 5488] [JOB] LOW: 2
+2023/02/22 15:21:48 10841671 55713145 [INFO Client 5488] [JOB] IDLE: 1
+2023/02/22 15:21:48 10841671 7bb548f [INFO Client 5488] [BUNDLE2] Init
+2023/02/22 15:21:48 10841671 7bb36c4 [INFO Client 5488] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/22 15:21:49 10841937 7bb61e6 [INFO Client 5488] [BUNDLE2] File cache size: 1024
+2023/02/22 15:21:49 10841937 b51d61ab [INFO Client 5488] [RENDER] Async: ON
+2023/02/22 15:21:49 10841937 b51d60c8 [INFO Client 5488] [RENDER] Warmup: ON
+2023/02/22 15:21:49 10841937 b51d60ce [INFO Client 5488] [RENDER] Skip: ON
+2023/02/22 15:21:49 10841937 b51d60eb [INFO Client 5488] [RENDER] Throttling: ON
+2023/02/22 15:21:49 10841937 32759a7a [INFO Client 5488] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/22 15:21:49 10841937 32759a70 [INFO Client 5488] [SHADER] Async: ON
+2023/02/22 15:21:49 10841937 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 15:21:49 10841937 32759aba [INFO Client 5488] [SHADER] Limit: ON
+2023/02/22 15:21:49 10841937 32759abc [INFO Client 5488] [SHADER] Warmup: ON
+2023/02/22 15:21:49 10841937 327599d7 [INFO Client 5488] [SHADER] Parallel: OFF
+2023/02/22 15:21:49 10841937 84a7e376 [INFO Client 5488] [ENGINE] Running Engine version 1.7.0
+2023/02/22 15:21:49 10841953 47bbd15b [INFO Client 5488] [SOUND] Buffer size = 64.0 MB
+2023/02/22 15:21:49 10841984 9b0d205 [INFO Client 5488] [VIDEO] Enable: ON
+2023/02/22 15:21:49 10842000 84a7d2d8 [INFO Client 5488] [ENGINE] Ready
+2023/02/22 15:21:49 10842062 951bc0b0 [INFO Client 5488] [STARTUP] Bundle Startup Start
+2023/02/22 15:21:49 10842062 951bc057 [INFO Client 5488] [STARTUP] Bundle Startup in 5.8e-05 seconds
+2023/02/22 15:21:49 10842062 951bc0b0 [INFO Client 5488] [STARTUP] Game Start
+2023/02/22 15:21:49 10842265 ca86fd3f [DEBUG Client 5488] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/22 15:21:49 10842562 951bc057 [INFO Client 5488] [STARTUP] Game in 0.49827 seconds
+2023/02/22 15:21:49 10842562 951bc0b0 [INFO Client 5488] [STARTUP] Window Start
+2023/02/22 15:21:49 10842562 9e6a0b0a [INFO Client 5488] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/22 15:21:49 10842593 9e6a1d2a [INFO Client 5488] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 15:21:49 10842593 9e6a1363 [INFO Client 5488] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/22 15:21:49 10842593 9e6a0b0a [INFO Client 5488] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/22 15:21:49 10842593 9e6a1d2a [INFO Client 5488] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 15:21:49 10842625 951bc057 [INFO Client 5488] [STARTUP] Window in 0.069891 seconds
+2023/02/22 15:21:49 10842640 413b61ff [DEBUG Client 5488] [GamepadManager] Initialising
+2023/02/22 15:21:49 10842640 951bc0b0 [INFO Client 5488] [STARTUP] Device Start
+2023/02/22 15:21:49 10842640 b51d6589 [INFO Client 5488] [RENDER] StartDevice: DirectX11
+2023/02/22 15:21:50 10842937 71b2ea0 [DEBUG Client 5488] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/22 15:21:50 10843109 fafff8cf [DEBUG Client 5488] CreateSwapChain: SetFullScreenState 0
+2023/02/22 15:21:50 10843109 29d4ce01 [INFO Client 5488] [D3D11] Runtime version = 11.1
+2023/02/22 15:21:50 10843109 29d4ce00 [INFO Client 5488] [D3D11] Feature Level = 11.1
+2023/02/22 15:21:50 10843109 29d4ce03 [INFO Client 5488] [D3D11] Driver Command Lists = NO
+2023/02/22 15:21:50 10843109 29d4ce02 [INFO Client 5488] [D3D11] Driver Concurrent Creates = YES
+2023/02/22 15:21:50 10843109 29d4ce05 [INFO Client 5488] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/22 15:21:50 10843296 9d4eeb40 [DEBUG Client 5488] [WINDOW] TrigggerDeviceCreate
+2023/02/22 15:21:51 10843796 9d4eeba7 [DEBUG Client 5488] [WINDOW] TrigggerDeviceReset
+2023/02/22 15:21:51 10844093 9d4eec8a [DEBUG Client 5488] [WINDOW] TrigggerDeviceLost
+2023/02/22 15:21:51 10844093 9d4eeba7 [DEBUG Client 5488] [WINDOW] TrigggerDeviceReset
+2023/02/22 15:21:51 10844484 951bc057 [INFO Client 5488] [STARTUP] Device in 1.8382 seconds
+2023/02/22 15:21:51 10844484 951bc0b0 [INFO Client 5488] [STARTUP] Tencent Start
+2023/02/22 15:21:51 10844484 951bc057 [INFO Client 5488] [STARTUP] Tencent in 3.1e-05 seconds
+2023/02/22 15:21:51 10844484 951bc0b0 [INFO Client 5488] [STARTUP] Loading Start
+2023/02/22 15:21:51 10844515 951bc057 [INFO Client 5488] [STARTUP] Loading in 0.027245 seconds
+2023/02/22 15:21:51 10844515 951bc0b0 [INFO Client 5488] [STARTUP] DebugGUI Start
+2023/02/22 15:21:51 10844515 951bc057 [INFO Client 5488] [STARTUP] DebugGUI in 3.8e-05 seconds
+2023/02/22 15:21:51 10844515 951bc0b0 [INFO Client 5488] [STARTUP] Bundle Tiny Start
+2023/02/22 15:21:51 10844515 951bc0b0 [INFO Client 5488] [STARTUP] Bundle Login Start
+2023/02/22 15:21:51 10844515 951bc057 [INFO Client 5488] [STARTUP] Bundle Login in 3.9e-05 seconds
+2023/02/22 15:21:51 10844515 951bc0b0 [INFO Client 5488] [STARTUP] Registration Start
+2023/02/22 15:21:51 10844515 951bc057 [INFO Client 5488] [STARTUP] Bundle Tiny in 0.000103 seconds
+2023/02/22 15:21:51 10844531 951bc0b0 [INFO Client 5488] [STARTUP] Audio Start
+2023/02/22 15:21:51 10844531 47bbee1b [INFO Client 5488] [SOUND] Channel count = 64 (asked for 64)
+2023/02/22 15:21:51 10844531 47bbee18 [INFO Client 5488] [SOUND] Source count = 512
+2023/02/22 15:21:52 10845015 47bbea59 [INFO Client 5488] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/22 15:21:52 10845015 951bc057 [INFO Client 5488] [STARTUP] Audio in 0.478296 seconds
+2023/02/22 15:21:52 10845203 951bc057 [INFO Client 5488] [STARTUP] Registration in 0.693677 seconds
+2023/02/22 15:21:53 10845953 509417f7 [WARN Client 5488] tool_settings.json was not found. Resetting to default settings.
+2023/02/22 15:21:53 10846218 b51d4f61 [DEBUG Client 5488] [RENDER] SetRendererSettings
+2023/02/22 15:21:53 10846218 b51d6447 [DEBUG Client 5488] [RENDER] ResizeWindow
+2023/02/22 15:21:53 10846218 9d4eec8a [DEBUG Client 5488] [WINDOW] TrigggerDeviceLost
+2023/02/22 15:21:53 10846218 9d4eeba7 [DEBUG Client 5488] [WINDOW] TrigggerDeviceReset
+2023/02/22 15:21:53 10846250 b51d614c [DEBUG Client 5488] [RENDER] RestartSwapChain
+2023/02/22 15:21:53 10846250 9e6a0b0a [INFO Client 5488] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/22 15:21:53 10846296 9e6a1d2a [INFO Client 5488] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 15:21:53 10846296 9e6a1363 [INFO Client 5488] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/22 15:21:53 10846296 9e6a0b0a [INFO Client 5488] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/22 15:21:53 10846296 9e6a1d2a [INFO Client 5488] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/22 15:21:53 10846296 fafff8cf [DEBUG Client 5488] CreateSwapChain: SetFullScreenState 0
+2023/02/22 15:21:53 10846296 9d4eec8a [DEBUG Client 5488] [WINDOW] TrigggerDeviceLost
+2023/02/22 15:21:53 10846296 9d4eeba7 [DEBUG Client 5488] [WINDOW] TrigggerDeviceReset
+2023/02/22 15:21:53 10846328 3275a75e [INFO Client 5488] [SHADER] Disable Async: 1 frames
+2023/02/22 15:21:53 10846328 b51d610e [INFO Client 5488] [RENDER] Disable Async: 1 frames
+2023/02/22 15:24:09 10982156 890d9d5f [INFO Client 5488] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/22 15:24:09 10982187 890d9cd8 [INFO Client 5488] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/22 15:24:13 10986078 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 15:24:13 10986125 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 15:24:13 10986125 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.180:6112
+2023/02/22 15:24:13 10986171 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 15:24:13 10986218 1186a0e3 [DEBUG Client 5488] Generating level 69 area "2_10_town" with seed 1
+2023/02/22 15:24:14 10987078 f22b6987 [INFO Client 5488] Tile hash: 3862614232
+2023/02/22 15:24:14 10987078 f22b6986 [INFO Client 5488] Doodad hash: 0
+2023/02/22 15:24:18 10990750 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 15:24:18 10991328 cffb0734 [INFO Client 5488] &: ОБЪЯВЛЕНИЕ ГИЛЬДИИ: В гостяк у CARDIFF 
+2023/02/22 15:24:19 10991703 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Доки Ориата.
+2023/02/22 15:24:20 10992703 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 15:24:20 10992750 374e0d22 [INFO Client 5488] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/22 15:24:20 10992750 374e0cc3 [INFO Client 5488] [Item Filter] Hash for online filter prraV6FQ is: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 15:24:21 10993828 374e0cc9 [INFO Client 5488] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/22 15:24:21 10993828 374e0ce3 [DEBUG Client 5488] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/22 15:24:21 10993828 374e0e8e [DEBUG Client 5488] [Item Filter] X-HW: 1677072261.dop203.pa1.t,1677072261.cds205.pa1.shn,1677072261.dop203.pa1.t,1677072261.cds212.pa1.s,1677072261.dop110.da2.r,1677072261.cds036.da2.c,1677072261.cds212.pa1.p
+2023/02/22 15:24:21 10993828 374df808 [INFO Client 5488] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 15:24:21 10993843 788474c3 [INFO Client 5488] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 69577cd6f98cfd915bc8936b89b72e7e. Type: Ruthless. Message: 
+2023/02/22 15:24:21 10993843 2a14910e [INFO Client 5488] PrecalcBaseTypeHashMap
+2023/02/22 15:24:21 10993953 2a149100 [INFO Client 5488] PrecalcModNameHashMap
+2023/02/22 15:24:22 10995156 2a149169 [INFO Client 5488] PrecalcItemClassMap
+2023/02/22 15:24:22 10995171 2a14916b [INFO Client 5488] PrecalcSoundEffects
+2023/02/22 15:24:22 10995171 2a14916d [INFO Client 5488] PrecalcDropEffects
+2023/02/22 15:24:22 10995171 2a14916f [INFO Client 5488] PrecalcNonEnchantModHashes
+2023/02/22 15:24:22 10995171 2a149161 [INFO Client 5488] PrecalcRuleNameToTypeMap
+2023/02/22 15:24:22 10995171 2a148c01 [INFO Client 5488] PrecalcCJESPNIndexMap
+2023/02/22 15:24:22 10995171 2a148c03 [INFO Client 5488] PrecalcGemAlternateQualityMap
+2023/02/22 15:24:27 11000281 374e128b [INFO Client 5488] [Item Filter] Downloading online list
+2023/02/22 15:24:28 11001093 374e12ec [INFO Client 5488] [Item Filter] Online list returned status: 200
+2023/02/22 15:24:28 11001093 374e12e6 [DEBUG Client 5488] [Item Filter] Online list request resolved to: 209.197.3.101
+2023/02/22 15:24:28 11001109 374df908 [INFO Client 5488] [Item Filter] List contained online filter J40EP1CX with hash: 02887dd2497dd65178c4e486dda6f1d4 (local hash is: 02887dd2497dd65178c4e486dda6f1d4)
+2023/02/22 15:24:28 11001109 374df908 [INFO Client 5488] [Item Filter] List contained online filter EQQOoxhj with hash: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd (local hash is: 0bffe0faf6ed1b3e3d6b7aec68cb3bbd)
+2023/02/22 15:24:28 11001109 374df908 [INFO Client 5488] [Item Filter] List contained online filter vOOayjsJ with hash: 5f088d212263dae3a0fb682b4ac7f0bc (local hash is: 5f088d212263dae3a0fb682b4ac7f0bc)
+2023/02/22 15:24:28 11001109 374df908 [INFO Client 5488] [Item Filter] List contained online filter prraV6FQ with hash: 69577cd6f98cfd915bc8936b89b72e7e (local hash is: 69577cd6f98cfd915bc8936b89b72e7e)
+2023/02/22 15:24:28 11001109 374df908 [INFO Client 5488] [Item Filter] List contained online filter G4AtJ5 with hash: e9259e47765b889d03a4d487bb73bc70 (local hash is: e9259e47765b889d03a4d487bb73bc70)
+2023/02/22 15:24:28 11001109 374df908 [INFO Client 5488] [Item Filter] List contained online filter GmjoTD with hash: 0b24cc17ce0a14b4e769ecf95ace0950 (local hash is: 0b24cc17ce0a14b4e769ecf95ace0950)
+2023/02/22 15:24:28 11001109 374df908 [INFO Client 5488] [Item Filter] List contained online filter 5XMehq with hash: 5e0f3696a17172d3f9dda852ad07b9ad (local hash is: 5e0f3696a17172d3f9dda852ad07b9ad)
+2023/02/22 15:24:28 11001109 374df908 [INFO Client 5488] [Item Filter] List contained online filter GmXoTD with hash: ad16f11d0a3978aed09c18545a56dc12 (local hash is: ad16f11d0a3978aed09c18545a56dc12)
+2023/02/22 15:24:28 11001109 374df908 [INFO Client 5488] [Item Filter] List contained online filter wvPeTJ with hash: b64f3c2764601a4973b29d7e3ba6c026 (local hash is: b64f3c2764601a4973b29d7e3ba6c026)
+2023/02/22 15:24:28 11001125 374e0d22 [INFO Client 5488] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/22 15:24:28 11001125 374e0cc3 [INFO Client 5488] [Item Filter] Hash for online filter prraV6FQ is: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 15:24:28 11001375 374e0cc9 [INFO Client 5488] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/22 15:24:28 11001375 374e0ce3 [DEBUG Client 5488] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/22 15:24:28 11001375 374e0e8e [DEBUG Client 5488] [Item Filter] X-HW: 1677072269.dop204.pa1.t,1677072269.cds027.pa1.shn,1677072269.dop204.pa1.t,1677072269.cds212.pa1.c
+2023/02/22 15:24:28 11001375 374df808 [INFO Client 5488] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 69577cd6f98cfd915bc8936b89b72e7e
+2023/02/22 15:24:28 11001390 788474c3 [INFO Client 5488] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 69577cd6f98cfd915bc8936b89b72e7e. Type: Ruthless. Message: 
+2023/02/22 15:26:40 11133609 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 15:26:40 11133625 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 15:26:40 11133625 ca3a6a7f [INFO Client 5488] Connecting to instance server at 85.195.124.131:6112
+2023/02/22 15:26:40 11133671 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 15:26:41 11133703 1186a0e3 [DEBUG Client 5488] Generating level 67 area "2_10_8" with seed 1298293608
+2023/02/22 15:26:42 11134953 f22b6987 [INFO Client 5488] Tile hash: 2702222625
+2023/02/22 15:26:42 11134953 f22b6986 [INFO Client 5488] Doodad hash: 1275014514
+2023/02/22 15:26:43 11135718 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 15:26:44 11136734 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Реликварий.
+2023/02/22 15:26:44 11137531 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 15:27:42 11195234 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 15:27:42 11195234 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 15:27:42 11195234 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.180:6112
+2023/02/22 15:27:42 11195281 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 15:27:42 11195328 1186a0e3 [DEBUG Client 5488] Generating level 69 area "2_10_town" with seed 1
+2023/02/22 15:27:42 11195359 f22b6987 [INFO Client 5488] Tile hash: 3862614232
+2023/02/22 15:27:42 11195359 f22b6986 [INFO Client 5488] Doodad hash: 0
+2023/02/22 15:27:43 11195984 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 15:27:43 11196593 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Доки Ориата.
+2023/02/22 15:27:44 11197156 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 15:28:15 11228656 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 15:28:15 11228656 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 15:28:15 11228656 ca3a6a7f [INFO Client 5488] Connecting to instance server at 85.195.124.131:6112
+2023/02/22 15:28:16 11228703 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 15:28:16 11228734 1186a0e3 [DEBUG Client 5488] Generating level 67 area "2_10_8" with seed 1298293608
+2023/02/22 15:28:16 11228843 f22b6987 [INFO Client 5488] Tile hash: 2702222625
+2023/02/22 15:28:16 11228843 f22b6986 [INFO Client 5488] Doodad hash: 1275014514
+2023/02/22 15:28:16 11229484 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 15:28:17 11230171 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Реликварий.
+2023/02/22 15:28:18 11230750 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 15:29:19 11292406 cffb0734 [INFO Client 5488] @От кого Leksani: Здравствуйте, хочу купить у вас уровень 1 0% Призыв трупного голема за 0.5 alch в лиге Ruthless Sanctum (секция "~b/o 0.5 alch"; позиция: 4 столбец, 8 ряд)
+2023/02/22 15:29:34 11307062 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 15:29:34 11307109 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 15:29:34 11307109 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.142:6112
+2023/02/22 15:29:34 11307156 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 15:29:34 11307218 1186a0e3 [DEBUG Client 5488] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/22 15:29:35 11307812 f22b6987 [INFO Client 5488] Tile hash: 805187908
+2023/02/22 15:29:35 11307812 f22b6986 [INFO Client 5488] Doodad hash: 0
+2023/02/22 15:29:36 11309171 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 15:29:37 11310468 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/22 15:29:40 11313656 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 15:29:50 11322890 cffb0734 [INFO Client 5488] : В этой области игрока нет.
+2023/02/22 15:29:53 11325796 cffb0734 [INFO Client 5488] : В этой области игрока нет.
+2023/02/22 15:29:54 11327000 cffb0734 [INFO Client 5488] : В этой области игрока нет.
+2023/02/22 15:29:57 11329968 cffb0734 [INFO Client 5488] : В этой области игрока нет.
+2023/02/22 15:29:58 11330906 cffb0734 [INFO Client 5488] : В этой области игрока нет.
+2023/02/22 15:29:58 11331531 cffb0734 [INFO Client 5488] : В этой области игрока нет.
+2023/02/22 15:29:59 11332515 cffb0734 [INFO Client 5488] : В этой области игрока нет.
+2023/02/22 15:30:00 11332859 cffb0734 [INFO Client 5488] : В этой области игрока нет.
+2023/02/22 15:30:00 11333093 cffb0734 [INFO Client 5488] : В этой области игрока нет.
+2023/02/22 15:30:12 11344796 cffb0734 [INFO Client 5488] @Кому Leksani: still interested in уровень 1 0% Призыв трупного голема for 0.5 alch?
+2023/02/22 15:30:47 11380484 cffb0734 [INFO Client 5488] : Leksani присоединился.
+2023/02/22 15:30:59 11392093 cffb0734 [INFO Client 5488] : Сделка совершена.
+2023/02/22 15:31:03 11395968 cffb0734 [INFO Client 5488] : Leksani покинул область.
+2023/02/22 15:31:03 11396015 cffb0734 [INFO Client 5488] @Кому Leksani: ty gl!
+2023/02/22 15:35:10 11643328 cffb0734 [INFO Client 5488] @Кому Elezra_Sifu: Hi, I would like to buy your level 1 0% Поглощающий тотем listed for 0.5 alch in Ruthless Sanctum (stash tab "~price .5 alch $GEMS$ ACT"; position: left 83, top 1)
+2023/02/22 15:35:27 11660578 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 15:35:27 11660578 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 15:35:27 11660593 ca3a6a7f [INFO Client 5488] Connecting to instance server at 209.192.205.148:6112
+2023/02/22 15:35:28 11660750 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 141ms
+2023/02/22 15:35:28 11660890 1186a0e3 [DEBUG Client 5488] Generating level 60 area "HideoutIceberg" with seed 1
+2023/02/22 15:35:28 11661156 f22b6987 [INFO Client 5488] Tile hash: 2790280494
+2023/02/22 15:35:28 11661156 f22b6986 [INFO Client 5488] Doodad hash: 0
+2023/02/22 15:35:29 11661921 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 15:35:30 11662906 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Ледяное убежище.
+2023/02/22 15:35:31 11664015 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 15:35:42 11675343 cffb0734 [INFO Client 5488] : Сделка совершена.
+2023/02/22 15:35:43 11676500 cffb0734 [INFO Client 5488] %Elezra_Sifu: ty
+2023/02/22 15:35:44 11677140 cffb0734 [INFO Client 5488] @Кому Elezra_Sifu: ty gl!
+2023/02/22 15:35:47 11679796 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 15:35:47 11679796 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 15:35:47 11679796 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.142:6112
+2023/02/22 15:35:47 11679843 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 47ms
+2023/02/22 15:35:47 11679890 1186a0e3 [DEBUG Client 5488] Generating level 20 area "HideoutCoral" with seed 1
+2023/02/22 15:35:47 11679937 f22b6987 [INFO Client 5488] Tile hash: 805187908
+2023/02/22 15:35:47 11679937 f22b6986 [INFO Client 5488] Doodad hash: 0
+2023/02/22 15:35:48 11680718 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 15:35:48 11681437 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Коралловое убежище.
+2023/02/22 15:35:49 11682078 32759a9f [INFO Client 5488] [SHADER] Delay: ON
+2023/02/22 15:42:02 12054718 88a904ed [DEBUG Client 5488] Got Instance Details from login server
+2023/02/22 15:42:02 12054734 32759a9f [INFO Client 5488] [SHADER] Delay: OFF
+2023/02/22 15:42:02 12054734 ca3a6a7f [INFO Client 5488] Connecting to instance server at 169.51.201.169:6112
+2023/02/22 15:42:02 12054781 ca3a4dbd [DEBUG Client 5488] Connect time to instance server was 31ms
+2023/02/22 15:42:02 12054843 1186a0e3 [DEBUG Client 5488] Generating level 67 area "2_10_8" with seed 906950593
+2023/02/22 15:42:03 12056109 f22b6987 [INFO Client 5488] Tile hash: 726606404
+2023/02/22 15:42:03 12056109 f22b6986 [INFO Client 5488] Doodad hash: 927559515
+2023/02/22 15:42:03 12056640 11870f60 [DEBUG Client 5488] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 187 members 
+2023/02/22 15:42:04 12057515 cffb0734 [INFO Client 5488] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Реликварий.
+2023/02/22 15:42:05 12058312 32759a9f [INFO Client 5488] [SHADER] Delay: ON
