@@ -35871,3 +35871,207 @@ flags: 129
 2023/02/22 16:40:25 15558640 cffb0734 [INFO Client 5488] : Dee_RLSSF_Fiera был повержен.
 2023/02/22 16:40:31 15564031 890d9d5f [INFO Client 5488] Async connecting to mil01.login.pathofexile.com:20481
 2023/02/22 16:40:31 15564062 890d9cd8 [INFO Client 5488] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/24 16:41:07 ***** LOG FILE OPENING *****
+2023/02/24 16:41:07 606109 340884db [DEBUG Client 6400] [RENDER] StopDevice
+2023/02/24 16:41:07 606109 84a7e6f1 [INFO Client 6400] [ENGINE] Clear
+2023/02/24 16:41:07 606109 7bb5422 [INFO Client 6400] [BUNDLE2] Deinit
+2023/02/24 16:41:08 607109 509417f7 [WARN Client 6400] tool_settings.json was not found. Resetting to default settings.
+2023/02/24 16:41:08 607125 84a7e691 [INFO Client 6400] [JOB] Clear
+2023/02/24 16:41:08 607125 84a7e7bf [INFO Client 6400] [ANIMATION] Clear
+2023/02/24 16:41:08 607125 84a7e7be [INFO Client 6400] [PHYSICS] Clear
+2023/02/24 16:41:08 607125 84a7e7bd [INFO Client 6400] [SHADER] Clear
+2023/02/24 16:41:08 607125 84a7e7bc [INFO Client 6400] [ENTITY] Clear
+2023/02/24 16:41:08 607125 84a7e7bb [INFO Client 6400] [SOUND] Clear
+2023/02/24 16:41:08 607125 84a7e7ba [INFO Client 6400] [VIDEO] Clear
+2023/02/24 16:41:08 607125 84a7e7b9 [INFO Client 6400] [SCENE] Clear
+2023/02/24 16:41:08 607125 84a7e7b8 [INFO Client 6400] [GRAPH] Clear
+2023/02/24 16:41:08 607125 84a7e7b7 [INFO Client 6400] [TELEMETRY] Clear
+2023/02/24 16:41:08 607125 84a7e7b6 [INFO Client 6400] [RESOURCE] GarbageCollect
+2023/02/24 16:41:08 607125 84a7e75e [INFO Client 6400] [RESOURCE] Clear
+2023/02/24 16:41:08 607140 84a7e75b [INFO Client 6400] [RENDER] Clear
+2023/02/24 16:41:08 607140 84a7e758 [INFO Client 6400] [ENGINE] Done
+2023/02/24 16:41:20 ***** LOG FILE OPENING *****
+2023/02/24 16:41:20 619171 f95442e3 [INFO Client 7440] [STARTUP] Job Queues
+2023/02/24 16:41:20 619203 9e6a0b0a [INFO Client 7440] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/24 16:41:20 619500 9e6a1d2a [INFO Client 7440] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/24 16:41:20 619515 9e6a1363 [INFO Client 7440] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/24 16:41:20 619515 9e6a0b0a [INFO Client 7440] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/24 16:41:20 619515 9e6a1d2a [INFO Client 7440] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/24 16:41:20 619531 84a7d27d [INFO Client 7440] [ENGINE] Init
+2023/02/24 16:41:20 619531 55713145 [INFO Client 7440] [JOB] HIGH: 2
+2023/02/24 16:41:20 619531 55713145 [INFO Client 7440] [JOB] MEDIUM: 2
+2023/02/24 16:41:20 619531 55713145 [INFO Client 7440] [JOB] LOW: 2
+2023/02/24 16:41:20 619531 55713145 [INFO Client 7440] [JOB] IDLE: 1
+2023/02/24 16:41:20 619531 7bb548f [INFO Client 7440] [BUNDLE2] Init
+2023/02/24 16:41:20 619531 7bb36c4 [INFO Client 7440] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/24 16:41:21 620093 7bb61e6 [INFO Client 7440] [BUNDLE2] File cache size: 1024
+2023/02/24 16:41:21 620093 b51d61ab [INFO Client 7440] [RENDER] Async: ON
+2023/02/24 16:41:21 620093 b51d60c8 [INFO Client 7440] [RENDER] Warmup: ON
+2023/02/24 16:41:21 620093 b51d60ce [INFO Client 7440] [RENDER] Skip: ON
+2023/02/24 16:41:21 620093 b51d60eb [INFO Client 7440] [RENDER] Throttling: ON
+2023/02/24 16:41:21 620093 32759a7a [INFO Client 7440] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/24 16:41:21 620093 32759a70 [INFO Client 7440] [SHADER] Async: ON
+2023/02/24 16:41:21 620093 32759a9f [INFO Client 7440] [SHADER] Delay: OFF
+2023/02/24 16:41:21 620093 32759aba [INFO Client 7440] [SHADER] Limit: ON
+2023/02/24 16:41:21 620093 32759abc [INFO Client 7440] [SHADER] Warmup: ON
+2023/02/24 16:41:21 620093 327599d7 [INFO Client 7440] [SHADER] Parallel: OFF
+2023/02/24 16:41:21 620093 84a7e376 [INFO Client 7440] [ENGINE] Running Engine version 1.7.0
+2023/02/24 16:41:21 620218 47bbd15b [INFO Client 7440] [SOUND] Buffer size = 64.0 MB
+2023/02/24 16:41:21 620562 9b0d205 [INFO Client 7440] [VIDEO] Enable: ON
+2023/02/24 16:41:22 620750 84a7d2d8 [INFO Client 7440] [ENGINE] Ready
+2023/02/24 16:41:22 620875 951bc0b0 [INFO Client 7440] [STARTUP] Bundle Startup Start
+2023/02/24 16:41:22 620875 951bc057 [INFO Client 7440] [STARTUP] Bundle Startup in 7.1e-05 seconds
+2023/02/24 16:41:22 620875 951bc0b0 [INFO Client 7440] [STARTUP] Game Start
+2023/02/24 16:41:22 621375 ca86fd3f [DEBUG Client 7440] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/24 16:41:23 622171 951bc057 [INFO Client 7440] [STARTUP] Game in 1.29655 seconds
+2023/02/24 16:41:23 622171 951bc0b0 [INFO Client 7440] [STARTUP] Window Start
+2023/02/24 16:41:23 622171 9e6a0b0a [INFO Client 7440] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/24 16:41:23 622281 9e6a1d2a [INFO Client 7440] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/24 16:41:23 622281 9e6a1363 [INFO Client 7440] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/24 16:41:23 622281 9e6a0b0a [INFO Client 7440] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/24 16:41:23 622281 9e6a1d2a [INFO Client 7440] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/24 16:41:23 622328 951bc057 [INFO Client 7440] [STARTUP] Window in 0.159368 seconds
+2023/02/24 16:41:24 622750 413b61ff [DEBUG Client 7440] [GamepadManager] Initialising
+2023/02/24 16:41:24 622750 951bc0b0 [INFO Client 7440] [STARTUP] Device Start
+2023/02/24 16:41:24 622750 b51d6589 [INFO Client 7440] [RENDER] StartDevice: DirectX11
+2023/02/24 16:41:24 623515 71b2ea0 [DEBUG Client 7440] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/24 16:41:25 623812 fafff8cf [DEBUG Client 7440] CreateSwapChain: SetFullScreenState 0
+2023/02/24 16:41:25 623812 29d4ce01 [INFO Client 7440] [D3D11] Runtime version = 11.1
+2023/02/24 16:41:25 623812 29d4ce00 [INFO Client 7440] [D3D11] Feature Level = 11.1
+2023/02/24 16:41:25 623812 29d4ce03 [INFO Client 7440] [D3D11] Driver Command Lists = NO
+2023/02/24 16:41:25 623812 29d4ce02 [INFO Client 7440] [D3D11] Driver Concurrent Creates = YES
+2023/02/24 16:41:25 623812 29d4ce05 [INFO Client 7440] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/24 16:41:25 624500 9d4eeb40 [DEBUG Client 7440] [WINDOW] TrigggerDeviceCreate
+2023/02/24 16:41:26 625468 9d4eeba7 [DEBUG Client 7440] [WINDOW] TrigggerDeviceReset
+2023/02/24 16:41:27 625968 9d4eec8a [DEBUG Client 7440] [WINDOW] TrigggerDeviceLost
+2023/02/24 16:41:27 625984 9d4eeba7 [DEBUG Client 7440] [WINDOW] TrigggerDeviceReset
+2023/02/24 16:41:27 626203 951bc057 [INFO Client 7440] [STARTUP] Device in 3.46188 seconds
+2023/02/24 16:41:27 626203 951bc0b0 [INFO Client 7440] [STARTUP] Tencent Start
+2023/02/24 16:41:27 626203 951bc057 [INFO Client 7440] [STARTUP] Tencent in 3.2e-05 seconds
+2023/02/24 16:41:27 626203 951bc0b0 [INFO Client 7440] [STARTUP] Loading Start
+2023/02/24 16:41:27 626265 951bc057 [INFO Client 7440] [STARTUP] Loading in 0.054724 seconds
+2023/02/24 16:41:27 626265 951bc0b0 [INFO Client 7440] [STARTUP] DebugGUI Start
+2023/02/24 16:41:27 626265 951bc057 [INFO Client 7440] [STARTUP] DebugGUI in 4.2e-05 seconds
+2023/02/24 16:41:27 626265 951bc0b0 [INFO Client 7440] [STARTUP] Bundle Tiny Start
+2023/02/24 16:41:27 626265 951bc0b0 [INFO Client 7440] [STARTUP] Bundle Login Start
+2023/02/24 16:41:27 626265 951bc057 [INFO Client 7440] [STARTUP] Bundle Login in 4e-05 seconds
+2023/02/24 16:41:27 626265 951bc057 [INFO Client 7440] [STARTUP] Bundle Tiny in 0.000117 seconds
+2023/02/24 16:41:27 626265 951bc0b0 [INFO Client 7440] [STARTUP] Registration Start
+2023/02/24 16:41:27 626281 951bc0b0 [INFO Client 7440] [STARTUP] Audio Start
+2023/02/24 16:41:27 626281 47bbee1b [INFO Client 7440] [SOUND] Channel count = 64 (asked for 64)
+2023/02/24 16:41:27 626281 47bbee18 [INFO Client 7440] [SOUND] Source count = 512
+2023/02/24 16:41:27 626625 47bbea59 [INFO Client 7440] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/24 16:41:27 626640 951bc057 [INFO Client 7440] [STARTUP] Audio in 0.356189 seconds
+2023/02/24 16:41:28 627218 951bc057 [INFO Client 7440] [STARTUP] Registration in 0.951577 seconds
+2023/02/24 16:41:28 627593 509417f7 [WARN Client 7440] tool_settings.json was not found. Resetting to default settings.
+2023/02/24 16:41:29 628078 b51d4f61 [DEBUG Client 7440] [RENDER] SetRendererSettings
+2023/02/24 16:41:29 628078 b51d6447 [DEBUG Client 7440] [RENDER] ResizeWindow
+2023/02/24 16:41:29 628078 9d4eec8a [DEBUG Client 7440] [WINDOW] TrigggerDeviceLost
+2023/02/24 16:41:29 628078 9d4eeba7 [DEBUG Client 7440] [WINDOW] TrigggerDeviceReset
+2023/02/24 16:41:29 628281 b51d614c [DEBUG Client 7440] [RENDER] RestartSwapChain
+2023/02/24 16:41:29 628281 9e6a0b0a [INFO Client 7440] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/24 16:41:29 628328 9e6a1d2a [INFO Client 7440] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/24 16:41:29 628328 9e6a1363 [INFO Client 7440] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/24 16:41:29 628328 9e6a0b0a [INFO Client 7440] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/24 16:41:29 628328 9e6a1d2a [INFO Client 7440] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/24 16:41:29 628328 fafff8cf [DEBUG Client 7440] CreateSwapChain: SetFullScreenState 0
+2023/02/24 16:41:29 628328 9d4eec8a [DEBUG Client 7440] [WINDOW] TrigggerDeviceLost
+2023/02/24 16:41:29 628328 9d4eeba7 [DEBUG Client 7440] [WINDOW] TrigggerDeviceReset
+2023/02/24 16:41:29 628359 3275a75e [INFO Client 7440] [SHADER] Disable Async: 1 frames
+2023/02/24 16:41:29 628359 b51d610e [INFO Client 7440] [RENDER] Disable Async: 1 frames
+2023/02/24 16:41:39 637890 890d9d5f [INFO Client 7440] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/24 16:41:39 638062 890d9cd8 [INFO Client 7440] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/24 16:41:48 647281 88a904ed [DEBUG Client 7440] Got Instance Details from login server
+2023/02/24 16:41:48 647359 32759a9f [INFO Client 7440] [SHADER] Delay: OFF
+2023/02/24 16:41:48 647359 ca3a6a7f [INFO Client 7440] Connecting to instance server at 159.122.142.236:6112
+2023/02/24 16:41:48 647406 ca3a4dbd [DEBUG Client 7440] Connect time to instance server was 31ms
+2023/02/24 16:41:48 647453 1186a0e3 [DEBUG Client 7440] Generating level 45 area "1_5_town" with seed 1
+2023/02/24 16:41:51 649968 f22b6987 [INFO Client 7440] Tile hash: 4281737639
+2023/02/24 16:41:51 649968 f22b6986 [INFO Client 7440] Doodad hash: 0
+2023/02/24 16:42:00 658703 11870f60 [DEBUG Client 7440] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 188 members 
+2023/02/24 16:42:00 659546 cffb0734 [INFO Client 7440] &: ОБЪЯВЛЕНИЕ ГИЛЬДИИ: В гостяк у CARDIFF 
+2023/02/24 16:42:01 660156 cffb0734 [INFO Client 7440] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Башня надзирателя.
+2023/02/24 16:42:02 660890 cffb0734 [INFO Client 7440] : Вы присоединились к Общему каналу чата 9 968.
+2023/02/24 16:42:02 661593 32759a9f [INFO Client 7440] [SHADER] Delay: ON
+2023/02/24 16:42:02 661625 374e0d22 [INFO Client 7440] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/24 16:42:02 661625 374e0cc3 [INFO Client 7440] [Item Filter] Hash for online filter prraV6FQ is: 5403850447a06308c1932431067ce852
+2023/02/24 16:42:03 661859 374e0cc9 [INFO Client 7440] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/24 16:42:03 661859 374e0ce3 [DEBUG Client 7440] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/24 16:42:03 661859 374e0e8e [DEBUG Client 7440] [Item Filter] X-HW: 1677249722.dop038.pa1.t,1677249722.cds044.pa1.shn,1677249722.dop038.pa1.t,1677249723.cds212.pa1.c
+2023/02/24 16:42:03 661875 374df808 [INFO Client 7440] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: ddba63dac02e9bba7818949f8603cdc8
+2023/02/24 16:42:03 661890 788474c3 [INFO Client 7440] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: ddba63dac02e9bba7818949f8603cdc8. Type: Ruthless. Message: 
+2023/02/24 16:42:03 661890 2a14910e [INFO Client 7440] PrecalcBaseTypeHashMap
+2023/02/24 16:42:03 662015 2a149100 [INFO Client 7440] PrecalcModNameHashMap
+2023/02/24 16:42:04 663640 2a149169 [INFO Client 7440] PrecalcItemClassMap
+2023/02/24 16:42:04 663640 2a14916b [INFO Client 7440] PrecalcSoundEffects
+2023/02/24 16:42:04 663640 2a14916d [INFO Client 7440] PrecalcDropEffects
+2023/02/24 16:42:04 663640 2a14916f [INFO Client 7440] PrecalcNonEnchantModHashes
+2023/02/24 16:42:04 663640 2a149161 [INFO Client 7440] PrecalcRuleNameToTypeMap
+2023/02/24 16:42:04 663640 2a148c01 [INFO Client 7440] PrecalcCJESPNIndexMap
+2023/02/24 16:42:04 663640 2a148c03 [INFO Client 7440] PrecalcGemAlternateQualityMap
+2023/02/24 16:42:22 681234 cffb0734 [INFO Client 7440] : Сделка совершена.
+2023/02/24 16:42:24 682734 cffb0734 [INFO Client 7440] #<DKG> КостяШахтёр: Первенство Каома, Рубило каруи продам, предлы в лс/обменяю на мили физ саппорты/решимость
+2023/02/24 16:42:30 688812 cffb0734 [INFO Client 7440] #BarbariskIsSaratova: Драконья скала, Латунный колючий щит продам
+2023/02/24 16:42:31 689859 cffb0734 [INFO Client 7440] #RybyBybyNyaNyaNya: рф бы хоть раз апнули . а не нерфанули
+2023/02/24 16:42:38 696921 cffb0734 [INFO Client 7440] #<DKG> КостяШахтёр: когда уже ЕД апнут?
+2023/02/24 16:42:48 707218 cffb0734 [INFO Client 7440] #CoralineCrush: а что не так с рф?
+2023/02/24 16:42:56 715515 fb7abca5 [INFO Client 7440] Successfully allocated passive skill id: elemental_damage_and_elemental_penetration2287, name: Шанс поджечь, заморозить и наложить шок
+2023/02/24 16:43:01 720000 cffb0734 [INFO Client 7440] #uDAVich: рф норм, не надо его лучше трогать
+2023/02/24 16:43:01 720203 cffb0734 [INFO Client 7440] #RybyBybyNyaNyaNya: с рф всё так . но постоянно ж нерфят .
+2023/02/24 16:43:01 720437 cffb0734 [INFO Client 7440] #<STNS> vot_i_vse: Кулак войны
+2023/02/24 16:43:02 721328 cffb0734 [INFO Client 7440] #<1000~7> moonruthloud: Decay нервно курит в сторонке
+2023/02/24 16:43:04 723250 cffb0734 [INFO Client 7440] #<DKG> КостяШахтёр: рф сильный, если убивать боссов через ловушку огня
+2023/02/24 16:43:20 738984 cffb0734 [INFO Client 7440] #Доломайт:  А как же имба рассечение?
+2023/02/24 16:43:23 741812 cffb0734 [INFO Client 7440] #<Farmer> self_caster: Здоровье за удар 1a
+2023/02/24 16:43:24 743546 cffb0734 [INFO Client 7440] #ахахаха_мужик_горит: у меня ловушка не дамажит
+2023/02/24 16:43:26 745187 cffb0734 [INFO Client 7440] #Njordin: тут скорее всего не РФ нерфанут а подклассы для него
+2023/02/24 16:43:28 747656 cffb0734 [INFO Client 7440] #<DKG> КостяШахтёр: проблема не в том, что всяких рфов нерфят, а втом, что мобов баффают, а скилы не трогают и в итоге многие скилы слабеют
+2023/02/24 16:43:35 754093 cffb0734 [INFO Client 7440] #RybyBybyNyaNyaNya: не ) не рф сильный . рф живучий . а текущая мета ты или шотаешь всё до мейвен или стоишь и тяжко дышишь на босса
+2023/02/24 16:43:39 758203 fb7abd85 [INFO Client 7440] Successfully unallocated passive skill id: elemental_damage1906, name: Урон от стихий
+2023/02/24 16:43:40 759265 cffb0734 [INFO Client 7440] #Greflex_Support: Куплю Жгучая злоба (Anger)
+2023/02/24 16:43:41 760109 cffb0734 [INFO Client 7440] #Tortoise_Ruthless: джаггер
+2023/02/24 16:43:41 760109 cffb0734 [INFO Client 7440] #Главный_Талант: есть у кого колд снап любого уровня ненужный?
+2023/02/24 16:43:42 761109 fb7abd85 [INFO Client 7440] Successfully unallocated passive skill id: elemental_damage1905, name: Урон от стихий
+2023/02/24 16:43:48 767484 cffb0734 [INFO Client 7440] #<RiPE> Огневика: Быстрая сборка Быстрая сборка
+2023/02/24 16:43:54 773093 cffb0734 [INFO Client 7440] #<[FLO™]> Pepeshon: Метка при попадании
+2023/02/24 16:43:58 777671 cffb0734 [INFO Client 7440] #uDAVich: я рф джагой на опаляющем луче 3,5млн дот дпс выдавал, без ловушки, так что норм
+2023/02/24 16:44:03 782437 cffb0734 [INFO Client 7440] #<Farmer> self_caster: понерфят деда, буду играть на марадере, понерфят его, пересяду на гопника
+2023/02/24 16:44:18 797234 cffb0734 [INFO Client 7440] #RybyBybyNyaNyaNya: у моего инвокера в тиме постоянно колд снап ненужный есть
+2023/02/24 16:44:28 806734 cffb0734 [INFO Client 7440] #<FRSQD> RMSAR: АХВХАВХВАХ
+2023/02/24 16:44:28 807296 cffb0734 [INFO Client 7440] #Костюк: Манипуляция пустотой Разложение с перерывом в 5 сек упало
+2023/02/24 16:44:29 808328 cffb0734 [INFO Client 7440] #<Farmer> self_caster: слишком много подклассов для рф подходят
+2023/02/24 16:44:35 814046 cffb0734 [INFO Client 7440] #ахахаха_мужик_горит: деда уже нерфили
+2023/02/24 16:44:36 815609 cffb0734 [INFO Client 7440] #<DKG> КостяШахтёр: про инвокера поржал
+2023/02/24 16:44:37 815984 cffb0734 [INFO Client 7440] #Костюк: игра хочет что бы я пересел на токсик?)
+2023/02/24 16:44:41 819703 fb7abca5 [INFO Client 7440] Successfully allocated passive skill id: intelligence917, name: Интеллект
+2023/02/24 16:44:41 820531 fb7abca5 [INFO Client 7440] Successfully allocated passive skill id: speed_and_minion_speed2231, name: Приспешники: урон, скорость атаки и сотворения чар
+2023/02/24 16:44:43 822593 cffb0734 [INFO Client 7440] #ахахаха_мужик_горит: сейчас 90% на джаге
+2023/02/24 16:44:48 826921 fb7abca5 [INFO Client 7440] Successfully allocated passive skill id: speed_and_minion_speed2230, name: Приспешники: урон, скорость атаки и сотворения чар
+2023/02/24 16:44:48 826921 cffb0734 [INFO Client 7440] #KakoiToPetovod: Пояс обманщика, Широкий ремень первый уник
+2023/02/24 16:44:55 834125 cffb0734 [INFO Client 7440] #<Farmer> self_caster: вы вспомните сильный нерф манагвардов, все думали шо рф помер
+2023/02/24 16:45:02 841250 cffb0734 [INFO Client 7440] #<DKG> КостяШахтёр: Гари недавно выкладывал видос про рфа на алкашке, очень сильный, за +-100д танчит убер сируса
+2023/02/24 16:45:10 848906 cffb0734 [INFO Client 7440] #uDAVich: да, джага крут, ибо универсален
+2023/02/24 16:45:14 853000 cffb0734 [INFO Client 7440] #RybyBybyNyaNyaNya: я с дельва играю ток на рфах . с дельфа каждый патч мини болтик в сраку закручивают
+2023/02/24 16:45:26 864859 cffb0734 [INFO Client 7440] #RybyBybyNyaNyaNya: а так хочется лоулайф рф
+2023/02/24 16:45:27 865937 cffb0734 [INFO Client 7440] #<V13> Kareninana: ‌ Холодная ненависть на anger/жгучая злоба
+2023/02/24 16:45:28 867265 cffb0734 [INFO Client 7440] #BarbariskIsSaratova: Добивание оу май, живём
+2023/02/24 16:45:35 873703 cffb0734 [INFO Client 7440] #Доломайт: за +- 100 диванов что угодно можно собрать
+2023/02/24 16:45:44 883390 cffb0734 [INFO Client 7440] #RybyBybyNyaNyaNya: ну так это клоунада же )
+2023/02/24 16:45:46 884718 cffb0734 [INFO Client 7440] #<O-M-G> фан_сереги_пирата_панк: у гари может и живучий
+2023/02/24 16:45:48 887390 cffb0734 [INFO Client 7440] #uDAVich: ну сделай через окаменелую кровь рф и будет счастье
+2023/02/24 16:45:50 888812 cffb0734 [INFO Client 7440] #Njordin: да даже на гладе можно сделать РФ. БЫло бы желание и убер можно убить им
+2023/02/24 16:45:50 889218 cffb0734 [INFO Client 7440] #<Farmer> self_caster: рф с говна с пола собирается адекватно
+2023/02/24 16:45:50 889218 cffb0734 [INFO Client 7440] #RybyBybyNyaNyaNya: 100 диванов на рф xD
+2023/02/24 16:45:53 892140 cffb0734 [INFO Client 7440] #<O-M-G> фан_сереги_пирата_панк: но ноль рона
+2023/02/24 16:46:13 912578 cffb0734 [INFO Client 7440] #YADYSH_NILA: Ледяное сокрушение
+2023/02/24 16:46:29 928093 cffb0734 [INFO Client 7440] #BarbariskIsSaratova: Смертельный покровитель, Одеяние эрудита нормальная награда заквест аднака
+2023/02/24 16:46:38 937062 cffb0734 [INFO Client 7440] #RybyBybyNyaNyaNya: рф весь атлас закрывает в шмотках с пола . в этом прикол . хочешь бить уберов - вливай валюту . но просто бегать на рфе - бесплатно
+2023/02/24 16:46:41 939921 cffb0734 [INFO Client 7440] #NATREZIMKARUT: за квест не дают рарки
+2023/02/24 16:46:57 955734 cffb0734 [INFO Client 7440] #<•GIRL•> BAx_bbabax: дают
+2023/02/24 16:47:04 962968 cffb0734 [INFO Client 7440] #Vil_FPT: дают
+2023/02/24 16:47:04 963390 cffb0734 [INFO Client 7440] #<RiPE> DeeFiera: обосрали рутлес, ок. просто убили всю идею. продолжайте.
+2023/02/24 16:47:07 965984 cffb0734 [INFO Client 7440] #BarbariskIsSaratova: мне тока что петрус дал за перо
+2023/02/24 16:47:16 974906 cffb0734 [INFO Client 7440] #ГероиняНаГероинее: Возврат клейм надо кому за 1а?
+2023/02/24 16:47:21 980203 cffb0734 [INFO Client 7440] #uDAVich: ох уже этот петарус xD
+2023/02/24 16:47:28 987500 cffb0734 [INFO Client 7440] #<RiPE> KudaYaPopalPamagiti: Кара 
+2023/02/24 16:47:43 1002140 cffb0734 [INFO Client 7440] #<O-M-G> фан_сереги_пирата_панк: Сомневаюсь что есть брендеры на лиге)
