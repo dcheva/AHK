@@ -36186,3 +36186,1125 @@ flags: 129
 2023/02/25 20:52:07 20937015 890d9d5f [INFO Client 6412] Async connecting to mil01.login.pathofexile.com:20481
 2023/02/25 20:52:07 20937062 890d9cd8 [INFO Client 6412] Connected to mil01.login.pathofexile.com in 16ms.
 2023/02/25 20:52:11 20940906 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 20:52:11 20940937 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 20:52:11 20940937 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.158:6112
+2023/02/25 20:52:11 20940984 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 47ms
+2023/02/25 20:52:11 20941046 1186a0e3 [DEBUG Client 6412] Generating level 45 area "1_5_town" with seed 1
+2023/02/25 20:52:12 20942125 f22b6987 [INFO Client 6412] Tile hash: 4281737639
+2023/02/25 20:52:12 20942125 f22b6986 [INFO Client 6412] Doodad hash: 0
+2023/02/25 20:52:17 20947125 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 20:52:18 20947843 cffb0734 [INFO Client 6412] &: ОБЪЯВЛЕНИЕ ГИЛЬДИИ: В гостяк у CARDIFF 
+2023/02/25 20:52:18 20948265 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Башня надзирателя.
+2023/02/25 20:52:19 20948890 cffb0734 [INFO Client 6412] : Вы присоединились к Общему каналу чата 9 968.
+2023/02/25 20:52:20 20950031 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 20:52:20 20950078 374e0d22 [INFO Client 6412] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/25 20:52:20 20950078 374e0cc3 [INFO Client 6412] [Item Filter] Hash for online filter prraV6FQ is: ddba63dac02e9bba7818949f8603cdc8
+2023/02/25 20:52:20 20950515 374e0cc9 [INFO Client 6412] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/25 20:52:20 20950515 374e0ce3 [DEBUG Client 6412] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/25 20:52:20 20950515 374e0e8e [DEBUG Client 6412] [Item Filter] X-HW: 1677351140.dop038.pa1.t,1677351140.cds240.pa1.shn,1677351140.dop038.pa1.t,1677351140.cds212.pa1.c
+2023/02/25 20:52:20 20950515 374df808 [INFO Client 6412] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: ddba63dac02e9bba7818949f8603cdc8
+2023/02/25 20:52:20 20950531 788474c3 [INFO Client 6412] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: ddba63dac02e9bba7818949f8603cdc8. Type: Ruthless. Message: 
+2023/02/25 20:52:20 20950546 2a14910e [INFO Client 6412] PrecalcBaseTypeHashMap
+2023/02/25 20:52:20 20950687 2a149100 [INFO Client 6412] PrecalcModNameHashMap
+2023/02/25 20:52:22 20952687 cffb0734 [INFO Client 6412] #Големчики_Рулят: 3 одного цвета на рандом того же цвета
+2023/02/25 20:52:23 20952734 2a149169 [INFO Client 6412] PrecalcItemClassMap
+2023/02/25 20:52:23 20952734 2a14916b [INFO Client 6412] PrecalcSoundEffects
+2023/02/25 20:52:23 20952734 2a14916d [INFO Client 6412] PrecalcDropEffects
+2023/02/25 20:52:23 20952734 2a14916f [INFO Client 6412] PrecalcNonEnchantModHashes
+2023/02/25 20:52:23 20952734 2a149161 [INFO Client 6412] PrecalcRuleNameToTypeMap
+2023/02/25 20:52:23 20952734 2a148c01 [INFO Client 6412] PrecalcCJESPNIndexMap
+2023/02/25 20:52:23 20952750 2a148c03 [INFO Client 6412] PrecalcGemAlternateQualityMap
+2023/02/25 20:52:25 20954718 cffb0734 [INFO Client 6412] #Големчики_Рулят: саппорт
+2023/02/25 20:52:29 20958921 cffb0734 [INFO Client 6412] #YotzurRuthless: понятно
+2023/02/25 20:52:29 20959593 cffb0734 [INFO Client 6412] #Ячистопосмотреть: получишь рандомнывй такого же цвета
+2023/02/25 20:52:32 20962562 cffb0734 [INFO Client 6412] #YotzurRuthless: спасибо
+2023/02/25 20:52:47 20977453 cffb0734 [INFO Client 6412] #<ÙÏÏÏÏ> подлива_не_всегда_еда: Много дополнительных снарядов 2а
+2023/02/25 20:52:48 20978515 cffb0734 [INFO Client 6412] #UltraDot: сначала найди 3 саппорта одного цвета )))
+2023/02/25 20:52:51 20980750 cffb0734 [INFO Client 6412] #WFRPL: Призма камнереза 2 a
+2023/02/25 20:52:54 20984671 cffb0734 [INFO Client 6412] #Големчики_Рулят: продаешь камни типа отбрасывае ослепление и тд
+2023/02/25 20:52:58 20988125 cffb0734 [INFO Client 6412] #WFRPL: Сфера раскаяния 3a
+2023/02/25 20:53:31 21021500 cffb0734 [INFO Client 6412] #<FRSQD> MalushkaLubitMillera: иди лучше вендору раскайки продай
+2023/02/25 20:53:45 21034734 cffb0734 [INFO Client 6412] #RuthSC: Карта зернохранилища обмен на 5тир мапу
+2023/02/25 20:54:40 21090109 cffb0734 [INFO Client 6412] #KakoiToPetovod: Сильное Кольцо с двумя камнями вулкана
+2023/02/25 20:54:40 21090328 cffb0734 [INFO Client 6412] #<RiPE> xSeJIeNax: Драконья песнь, Щит духа из окаменелостей
+2023/02/25 20:54:53 21103562 cffb0734 [INFO Client 6412] #Костюк: блин, трупоходы забанены в беспощадке, какой облом
+2023/02/25 20:54:56 21106453 cffb0734 [INFO Client 6412] #Костюк: за что
+2023/02/25 20:55:30 21140171 cffb0734 [INFO Client 6412] #ShimbaR:  3ий день ждешь?)
+2023/02/25 20:55:37 21147328 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 20:55:37 21147328 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 20:55:37 21147328 ca3a6a7f [INFO Client 6412] Connecting to instance server at 159.122.142.238:6112
+2023/02/25 20:55:37 21147375 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 20:55:37 21147421 1186a0e3 [DEBUG Client 6412] Generating level 43 area "1_5_5" with seed 3583749595
+2023/02/25 20:55:40 21150000 f22b6987 [INFO Client 6412] Tile hash: 1104971984
+2023/02/25 20:55:40 21150000 f22b6986 [INFO Client 6412] Doodad hash: 2635783770
+2023/02/25 20:55:41 21151171 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 20:55:42 21152171 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Обитель Невинности.
+2023/02/25 20:55:43 21153656 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 20:55:47 21157515 cffb0734 [INFO Client 6412] #Костюк: ага
+2023/02/25 20:55:51 21161046 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 20:55:51 21161046 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 20:55:51 21161046 ca3a6a7f [INFO Client 6412] Connecting to instance server at 159.122.142.252:6112
+2023/02/25 20:55:51 21161093 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 32ms
+2023/02/25 20:55:51 21161140 1186a0e3 [DEBUG Client 6412] Generating level 44 area "1_5_4b" with seed 3637681772
+2023/02/25 20:55:52 21162203 f22b6987 [INFO Client 6412] Tile hash: 2721145662
+2023/02/25 20:55:52 21162203 f22b6986 [INFO Client 6412] Doodad hash: 2093145690
+2023/02/25 20:55:53 21162937 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 20:55:54 21163734 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Подожжённые суды.
+2023/02/25 20:55:54 21164593 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 20:56:23 21193093 cffb0734 [INFO Client 6412] #Расс_Гиена: Сапфировое Золотое кольцо мангуста
+2023/02/25 20:57:42 21272218 cffb0734 [INFO Client 6412] #ghhhtt: Урон от стихий атаками 2a 
+2023/02/25 20:58:07 21297156 cffb0734 [INFO Client 6412] #SotofaHanemer: Воспламенение Дополнительные снаряды Кольцо стрел 2а или обмен на эффективность
+2023/02/25 20:58:13 21302859 cffb0734 [INFO Client 6412] #Metariana: Карта музея высокого качества обмен на плато или усыпалньицу
+2023/02/25 20:58:39 21329343 cffb0734 [INFO Client 6412] #<HELENE> KottoAmatukamiSS:  Есть У кого контракт в тоннели??
+2023/02/25 21:00:26 21436375 cffb0734 [INFO Client 6412] #<V13> Kareninana: Покров духа, Одеяние из паучьего шёлка это чтото стоит?
+2023/02/25 21:00:27 21437562 cffb0734 [INFO Client 6412] #SilvanaWR: Стальные перчатки 4х линк такой нужен кому?
+2023/02/25 21:00:45 21454765 cffb0734 [INFO Client 6412] #quillx: это что то стоит
+2023/02/25 21:01:03 21473343 cffb0734 [INFO Client 6412] #AzanuBleed: Урон холодом
+2023/02/25 21:01:08 21478093 cffb0734 [INFO Client 6412] #<RiPE> Лига_трапов: Талисман смерторукахаха
+2023/02/25 21:01:14 21484328 cffb0734 [INFO Client 6412] #Card_jagg_rf: [stale link]Go Игра Вентора, Золотое кольцоld Ring‌
+2023/02/25 21:01:19 21489468 cffb0734 [INFO Client 6412] #CoralineCrush: гц.
+2023/02/25 21:01:28 21497765 cffb0734 [INFO Client 6412] #CoralineCrush: топовое.))
+2023/02/25 21:01:50 21519859 cffb0734 [INFO Client 6412] #Халк_Крушитб: как раз под стиль режима
+2023/02/25 21:01:53 21523453 cffb0734 [INFO Client 6412] #Ruth_Lodow_Witch: Давай куплю хочу диван потратить в кинуда XD
+2023/02/25 21:01:58 21527781 cffb0734 [INFO Client 6412] #CoralineCrush: таких 2 наждеть и лутфильтр не нужен.))
+2023/02/25 21:02:17 21547640 cffb0734 [INFO Client 6412] #mbx_rthlss_crdff: Пылающий легион
+2023/02/25 21:02:33 21563156 cffb0734 [INFO Client 6412] #mbx_rthlss_crdff: игра меня троллит
+2023/02/25 21:02:52 21581921 cffb0734 [INFO Client 6412] #sylui: Думаешь?
+2023/02/25 21:03:18 21608343 cffb0734 [INFO Client 6412] #<RiPE> Лига_трапов: Большой кластерный самоцвет Большой кластерный самоцвет Малый кластерный самоцвет
+2023/02/25 21:03:20 21610078 cffb0734 [INFO Client 6412] #<RiPE> Лига_трапов: :c
+2023/02/25 21:03:31 21620781 cffb0734 [INFO Client 6412] #Ftoraldegid: через Гладиатора кто-то играет? Как оно?
+2023/02/25 21:03:34 21623718 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 21:03:34 21623718 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 21:03:34 21623718 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.142:6112
+2023/02/25 21:03:34 21623781 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 32ms
+2023/02/25 21:03:34 21623828 1186a0e3 [DEBUG Client 6412] Generating level 44 area "1_5_3b" with seed 4167899518
+2023/02/25 21:03:34 21623890 b5a58dc1 [INFO Client 6412] Spawning discoverable Hideout HideoutCourts
+2023/02/25 21:03:36 21626031 f22b6987 [INFO Client 6412] Tile hash: 4226367440
+2023/02/25 21:03:36 21626031 f22b6986 [INFO Client 6412] Doodad hash: 958740757
+2023/02/25 21:03:37 21627265 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 21:03:38 21628156 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Разрушенная площадь.
+2023/02/25 21:03:39 21628953 cffb0734 [INFO Client 6412] #KiraOoRuthCardLea: Божественная сфера Изаро уронил
+2023/02/25 21:03:40 21630031 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 21:04:17 21667203 cffb0734 [INFO Client 6412] #<HOGWRC> HarryAtomicGuardian: цари супер редкие?
+2023/02/25 21:04:24 21673765 cffb0734 [INFO Client 6412] #Расс_Гиена: У нас в ладаре тип на гладе через бросок щита
+2023/02/25 21:04:32 21682312 cffb0734 [INFO Client 6412] #Доломайт: цари? что это?
+2023/02/25 21:04:38 21688421 cffb0734 [INFO Client 6412] #БеспощадныйСлай: 83 лвл, ни одного царя не видел
+2023/02/25 21:04:41 21691375 cffb0734 [INFO Client 6412] #<LOVE>U> Sharf_ElemOneLove: регалы
+2023/02/25 21:04:43 21693484 cffb0734 [INFO Client 6412] #<HOGWRC> HarryAtomicGuardian: Сфера царей Обжигающий Самоцвет призрачного глаза вампиризма а то хочется кинуть
+2023/02/25 21:04:45 21695203 cffb0734 [INFO Client 6412] #<*BUPÃ*> Токсиик: Клинок во тьме
+2023/02/25 21:04:46 21695906 cffb0734 [INFO Client 6412] #<FRSQD> MalushkaLubitMillera: царь на горе который
+2023/02/25 21:04:55 21705640 cffb0734 [INFO Client 6412] #<LOVE>U> Sharf_ElemOneLove: я одного царя ввидел)
+2023/02/25 21:04:59 21709234 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: кидай
+2023/02/25 21:05:03 21712859 cffb0734 [INFO Client 6412] #Bimba_bumba_R: Урон от стихий атаками 2ал
+2023/02/25 21:05:10 21720046 cffb0734 [INFO Client 6412] #Доломайт: тут только император чистоты
+2023/02/25 21:05:11 21721343 cffb0734 [INFO Client 6412] #Геродан: морского царя видел
+2023/02/25 21:05:14 21724015 cffb0734 [INFO Client 6412] #Халк_Крушитб: Шлем самнита гориллы 10 акт, на минутку
+2023/02/25 21:05:15 21725234 cffb0734 [INFO Client 6412] #sylui: Град ударов обмен на GMP 
+2023/02/25 21:05:18 21728125 cffb0734 [INFO Client 6412] #Геродан: или ты в 5 акте 83 брал?
+2023/02/25 21:05:28 21737812 cffb0734 [INFO Client 6412] #<HOGWRC> HarryAtomicGuardian: Мучительная вспышка, Самоцвет призрачного глаза
+2023/02/25 21:05:32 21742500 cffb0734 [INFO Client 6412] #<HOGWRC> HarryAtomicGuardian: нот бед
+2023/02/25 21:05:34 21744031 cffb0734 [INFO Client 6412] #Mintyclickaton: что за п*риллы любят шлем гориллы
+2023/02/25 21:05:37 21747328 cffb0734 [INFO Client 6412] #quillx: куплю Steelskin
+2023/02/25 21:06:00 21769875 cffb0734 [INFO Client 6412] #___Zillalia___: [устаревшая ссыл Знамя войныка]Знамя войны‌
+2023/02/25 21:06:01 21771484 cffb0734 [INFO Client 6412] #privatshadoy: Золотой флакон
+2023/02/25 21:06:02 21772671 cffb0734 [INFO Client 6412] #RuthDionis: Непроницаемая Карта фантасмагории очернения поменяю на калдеру
+2023/02/25 21:06:11 21781281 cffb0734 [INFO Client 6412] #<CÔR> ArtaEva_Cardiff_Scion: Копия Пера грёз, Меч вечного ну что аурастакер =)
+2023/02/25 21:06:12 21782250 cffb0734 [INFO Client 6412] #AzanuBleed: Урон холодом Едкие токсины Кассетные ловушки продам или обмен на злость , жестокость или беспощадность
+2023/02/25 21:06:14 21783796 cffb0734 [INFO Client 6412] #Расс_Гиена: гц
+2023/02/25 21:06:15 21784875 cffb0734 [INFO Client 6412] #<GTC> BaklashkaSvetlogo: Ветреные вопли, Жезл пророчества о,рф палка
+2023/02/25 21:06:38 21808078 cffb0734 [INFO Client 6412] #iAdis: куплю ботинки уллра 1а
+2023/02/25 21:07:16 21846500 cffb0734 [INFO Client 6412] #mozenthor_toxic_rain: Копия Ливня перьев, Короткий лук5а
+2023/02/25 21:07:46 21876406 cffb0734 [INFO Client 6412] #<NSGC> РокВнучка: копия пера грез нуджна кому-то?
+2023/02/25 21:07:58 21888328 cffb0734 [INFO Client 6412] #uDAVich: звучит как билд
+2023/02/25 21:08:04 21893703 cffb0734 [INFO Client 6412] #RuthlessShieldBash: я бы взял та денег нет
+2023/02/25 21:08:04 21893828 cffb0734 [INFO Client 6412] #JustTimeToRuthless: да не вопрос
+2023/02/25 21:09:02 21952000 cffb0734 [INFO Client 6412] &<RiPE> Warsertmons: Бушующий стражник, Корона претора
+2023/02/25 21:09:17 21967421 cffb0734 [INFO Client 6412] #<V13> Kareninana: куплю любой уник пояс за Сфера хаоса
+2023/02/25 21:09:21 21971375 cffb0734 [INFO Client 6412] #MMM_CAR: какой то брез, карт ваще нет
+2023/02/25 21:09:22 21972625 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 21:09:22 21972625 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 21:09:22 21972625 ca3a6a7f [INFO Client 6412] Connecting to instance server at 159.122.142.237:6112
+2023/02/25 21:09:22 21972687 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 46ms
+2023/02/25 21:09:23 21972734 1186a0e3 [DEBUG Client 6412] Generating level 44 area "1_5_6" with seed 3665005371
+2023/02/25 21:09:23 21973578 f22b6987 [INFO Client 6412] Tile hash: 2080871234
+2023/02/25 21:09:23 21973578 f22b6986 [INFO Client 6412] Doodad hash: 3370055674
+2023/02/25 21:09:24 21973937 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 21:09:25 21974687 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Костница.
+2023/02/25 21:09:25 21975468 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 21:09:54 22004562 cffb0734 [INFO Client 6412] #<ÙÏÏÏÏ> подлива_не_всегда_еда: Суровый командир, Лук смерти 1a
+2023/02/25 21:10:01 22011562 cffb0734 [INFO Client 6412] #<V13> Kareninana: продайте ктото любой уник пояс Карта взморья
+2023/02/25 21:10:44 22054484 cffb0734 [INFO Client 6412] #Ячистопосмотреть: хз 1-2 тир падает нормально
+2023/02/25 21:10:47 22056890 cffb0734 [INFO Client 6412] #SpottyCatR: Рунный обыватель, Могильный доспех что-то стоит? 
+2023/02/25 21:10:47 22056890 cffb0734 [INFO Client 6412] #PanzShatter: Красный клюв, Ржавый меч пхаха, отличный первый уник 
+2023/02/25 21:10:49 22059187 cffb0734 [INFO Client 6412] #<iddQd> muupol: Кольцо без камня повезло получается?)
+2023/02/25 21:11:20 22090500 cffb0734 [INFO Client 6412] #<*BUPÃ*> Токсиик: Грозовой дождь чё кто?)
+2023/02/25 21:12:14 22144640 cffb0734 [INFO Client 6412] #PoroxPrivate: Знамя войны Хищник Здоровье за удар на увядание или множество тотемов
+2023/02/25 21:12:59 22188843 cffb0734 [INFO Client 6412] #bahoruth: Град ударов3a
+2023/02/25 21:13:00 22189812 cffb0734 [INFO Client 6412] #<FRSQD> MalushkaLubitMillera: рф шлем Гневные рога, Полный шлем эзомита
+2023/02/25 21:13:02 22192406 cffb0734 [INFO Client 6412] #<NSGC> РокВнучка: Аномальный: Злость пойдет
+2023/02/25 21:13:06 22196203 cffb0734 [INFO Client 6412] #<RiPE> Лига_трапов: Значимый Большой кластерный самоцвет существенности чего стоит?)
+2023/02/25 21:13:15 22204937 cffb0734 [INFO Client 6412] #<*BUPÃ*> Токсиик: Солнечная защита, Змеиный жезл
+2023/02/25 21:13:50 22239750 cffb0734 [INFO Client 6412] #<V13> Kareninana: куплю любой уникальный пояс за Карта взморья
+2023/02/25 21:13:58 22248296 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: шутка затянулась
+2023/02/25 21:13:59 22248796 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 21:13:59 22248796 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 21:13:59 22248796 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.142:6112
+2023/02/25 21:13:59 22248859 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 21:13:59 22248906 1186a0e3 [DEBUG Client 6412] Generating level 44 area "1_5_3b" with seed 4167899518
+2023/02/25 21:13:59 22248906 b5a58dc1 [INFO Client 6412] Spawning discoverable Hideout HideoutCourts
+2023/02/25 21:13:59 22249281 f22b6987 [INFO Client 6412] Tile hash: 4226367440
+2023/02/25 21:13:59 22249281 f22b6986 [INFO Client 6412] Doodad hash: 958740757
+2023/02/25 21:14:00 22249953 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 21:14:01 22250687 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Разрушенная площадь.
+2023/02/25 21:14:01 22251546 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 21:14:04 22254218 cffb0734 [INFO Client 6412] #privatshadoy: Божественная сфера
+2023/02/25 21:14:17 22266828 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 21:14:17 22266828 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 21:14:17 22266828 ca3a6a7f [INFO Client 6412] Connecting to instance server at 159.122.142.236:6112
+2023/02/25 21:14:17 22266890 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 47ms
+2023/02/25 21:14:17 22266937 1186a0e3 [DEBUG Client 6412] Generating level 45 area "1_5_town" with seed 1
+2023/02/25 21:14:17 22267406 f22b6987 [INFO Client 6412] Tile hash: 4281737639
+2023/02/25 21:14:17 22267406 f22b6986 [INFO Client 6412] Doodad hash: 0
+2023/02/25 21:14:18 22267796 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 21:14:18 22268453 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Башня надзирателя.
+2023/02/25 21:14:19 22268750 cffb0734 [INFO Client 6412] #<FRSQD> MalushkaLubitMillera: да хоть миррор линкуй, алхимка дороже
+2023/02/25 21:14:19 22269046 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 21:15:25 22335031 cffb0734 [INFO Client 6412] #Расс_Гиена: кому ? Тяжёлый порыв, Шёлковые сапоги
+2023/02/25 21:15:58 22368156 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: игра как будто не хочет чтобы я 3 лабу прошел
+2023/02/25 21:16:04 22374437 cffb0734 [INFO Client 6412] #Ruth_Lodow_Witch: Диваны у кого есть могу купить по 3а за шт
+2023/02/25 21:16:09 22379671 cffb0734 [INFO Client 6412] #<*BUPÃ*> Токсиик: Разрушительный спаситель, Звёздные латы чё пацаны на алхимку тянет?
+2023/02/25 21:16:11 22380812 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: азазаза
+2023/02/25 21:16:13 22383015 cffb0734 [INFO Client 6412] #Xytopok: а алхимка с мобов падет вообще?
+2023/02/25 21:16:13 22383593 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: сначало перед 3 боссом умер от моба с электро тотемами
+2023/02/25 21:16:20 22390203 cffb0734 [INFO Client 6412] : Сделка совершена.
+2023/02/25 21:16:27 22397625 cffb0734 [INFO Client 6412] #UltraDot: падают
+2023/02/25 21:16:36 22406015 cffb0734 [INFO Client 6412] #UltraDot: мне одна упала )
+2023/02/25 21:16:42 22412312 cffb0734 [INFO Client 6412] #<*BUPÃ*> Токсиик: Чащобный лук высокого качества Ля бабки
+2023/02/25 21:16:46 22416046 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: а сейчас на 3 раз блид изаро накинул а фласки на анти блид не было(
+2023/02/25 21:16:48 22417703 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 21:16:48 22417718 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 21:16:48 22417718 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.167:6112
+2023/02/25 21:16:48 22417765 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 32ms
+2023/02/25 21:16:48 22417812 1186a0e3 [DEBUG Client 6412] Generating level 44 area "1_5_3b" with seed 1175730108
+2023/02/25 21:16:48 22417843 b5a58dc1 [INFO Client 6412] Spawning discoverable Hideout HideoutCourts
+2023/02/25 21:16:48 22418187 f22b6987 [INFO Client 6412] Tile hash: 4282712927
+2023/02/25 21:16:48 22418187 f22b6986 [INFO Client 6412] Doodad hash: 385246651
+2023/02/25 21:16:49 22418796 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 21:16:49 22419531 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Разрушенная площадь.
+2023/02/25 21:16:50 22420453 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 21:16:57 22426968 cffb0734 [INFO Client 6412] #<8°©> qweqweqweqwewqqwe: Парни, едет кто на мфе? У меня такое чувство что он тут не работает
+2023/02/25 21:17:08 22438078 cffb0734 [INFO Client 6412] #КатВернисьЯВсёПрощу: работает
+2023/02/25 21:17:10 22440593 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: так а зачем ты бегать под блидом начал ?)
+2023/02/25 21:17:12 22442343 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: тут просто млишком сильно урезан дроп
+2023/02/25 21:17:24 22454171 cffb0734 [INFO Client 6412] #mbx_rthlss_crdff: какой тут нафиг мф ))
+2023/02/25 21:17:31 22460875 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: ты атлас глянь там в некоторых местах 600% увелечение редкости дропа
+2023/02/25 21:17:41 22471187 cffb0734 [INFO Client 6412] #<8°©> qweqweqweqwewqqwe: Я про квантити
+2023/02/25 21:17:43 22473625 cffb0734 [INFO Client 6412] #<STNS> XCREWEN_XXX: Карта берегаобмен
+2023/02/25 21:17:44 22474281 cffb0734 [INFO Client 6412] #Tortoise_Ruthless: Осадный лук
+2023/02/25 21:17:54 22484125 cffb0734 [INFO Client 6412] #Tortoise_Ruthless: так близко
+2023/02/25 21:18:01 22491125 cffb0734 [INFO Client 6412] #<8°©> qweqweqweqwewqqwe: Ошейник Биско, Золотой амулет Объятия жадности, Золотые латы Золотые полозы, Нубуковые ботинки а толку 0
+2023/02/25 21:18:20 22510234 cffb0734 [INFO Client 6412] #RuthlessShieldBash: Сфера хаоса сыпеи токо в путь а алхимок нема
+2023/02/25 21:18:48 22538250 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: потратил уже наверно алхимок 15 но ни 1 хаоса не видел
+2023/02/25 21:19:00 22550609 cffb0734 [INFO Client 6412] #Главный_Талант: аномалус миньйон спид норм?
+2023/02/25 21:19:06 22556203 cffb0734 [INFO Client 6412] #IcicleMiner: Линза Малигаро, Латунный колючий щит
+2023/02/25 21:19:14 22563906 cffb0734 [INFO Client 6412] #Главный_Талант: или лучше дивергент кок?
+2023/02/25 21:19:17 22566703 cffb0734 [INFO Client 6412] #Xytopok: я два хаоса выбил, а алхимки ни одной))
+2023/02/25 21:19:23 22572875 cffb0734 [INFO Client 6412] #UltraDot: м
+2023/02/25 21:19:39 22589140 cffb0734 [INFO Client 6412] &<RiPE> xSeJIeNax: Зловещий застрельщик, Чащобный лук
+2023/02/25 21:19:45 22595109 cffb0734 [INFO Client 6412] #KongOldButNoBald: Отражающая Карта дома с привидениями обмен на любую желтую 
+2023/02/25 21:20:42 22651890 cffb0734 [INFO Client 6412] #<*BUPÃ*> Токсиик: Вещее иссушение, Чащобный лук
+2023/02/25 21:21:02 22672656 cffb0734 [INFO Client 6412] #<*BUPÃ*> Токсиик: Пророческая выемка, Чащобный лук
+2023/02/25 21:21:07 22677109 cffb0734 [INFO Client 6412] : DeeFiera (Маг стихий) достигает 52 уровня
+2023/02/25 21:21:34 22704171 fb7abca5 [INFO Client 6412] Successfully allocated passive skill id: player_and_minion_notable2238, name: Искупление
+2023/02/25 21:21:50 22719843 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 21:21:50 22719843 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 21:21:50 22719843 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.180:6112
+2023/02/25 21:21:50 22719890 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 21:21:50 22719953 1186a0e3 [DEBUG Client 6412] Generating level 44 area "1_5_7" with seed 1853476143
+2023/02/25 21:21:51 22720953 f22b6987 [INFO Client 6412] Tile hash: 192780394
+2023/02/25 21:21:51 22720953 f22b6986 [INFO Client 6412] Doodad hash: 329595390
+2023/02/25 21:21:51 22721375 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 21:21:52 22722140 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Реликварий.
+2023/02/25 21:21:53 22722875 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 21:22:00 22730406 890d9d5f [INFO Client 6412] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/25 21:22:00 22730437 890d9cd8 [INFO Client 6412] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/25 21:30:45 23254890 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 21:30:45 23254890 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 21:30:45 23254890 ca3a6a7f [INFO Client 6412] Connecting to instance server at 159.122.142.247:6112
+2023/02/25 21:30:45 23254937 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 21:30:45 23254984 1186a0e3 [DEBUG Client 6412] Generating level 45 area "1_5_town" with seed 1
+2023/02/25 21:30:45 23255484 f22b6987 [INFO Client 6412] Tile hash: 4281737639
+2023/02/25 21:30:45 23255484 f22b6986 [INFO Client 6412] Doodad hash: 0
+2023/02/25 21:30:48 23258062 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 21:30:49 23258765 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Башня надзирателя.
+2023/02/25 21:30:49 23258781 cffb0734 [INFO Client 6412] #Valera_Shtanga: Средоточие Интенсивность Скорость приспешников по 1а
+2023/02/25 21:30:49 23259140 cffb0734 [INFO Client 6412] : Вы присоединились к Общему каналу чата 9 968.
+2023/02/25 21:30:49 23259437 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 21:30:49 23259468 374e0d22 [INFO Client 6412] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/25 21:30:49 23259468 374e0cc3 [INFO Client 6412] [Item Filter] Hash for online filter prraV6FQ is: ddba63dac02e9bba7818949f8603cdc8
+2023/02/25 21:30:50 23259796 374e0cc9 [INFO Client 6412] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/25 21:30:50 23259796 374e0ce3 [DEBUG Client 6412] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/25 21:30:50 23259796 374e0e8e [DEBUG Client 6412] [Item Filter] X-HW: 1677353449.dop218.pa1.t,1677353450.cds042.pa1.shn,1677353450.dop218.pa1.t,1677353450.cds212.pa1.c
+2023/02/25 21:30:50 23259796 374df808 [INFO Client 6412] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: ddba63dac02e9bba7818949f8603cdc8
+2023/02/25 21:30:50 23259812 788474c3 [INFO Client 6412] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: ddba63dac02e9bba7818949f8603cdc8. Type: Ruthless. Message: 
+2023/02/25 21:31:28 23298328 cffb0734 [INFO Client 6412] : Сделка совершена.
+2023/02/25 21:31:49 23319562 cffb0734 [INFO Client 6412] #<NSGC> РокВнучка: Антагонистическая Карта кальдеры резни на плоскогорье, порт, усыпальницу, бухту
+2023/02/25 21:31:52 23321781 cffb0734 [INFO Client 6412] #mbx_rthlss_crdff: куплю вестник агонии
+2023/02/25 21:32:32 23362484 cffb0734 [INFO Client 6412] #Геродан: кто может одолжить рф? хочу посмотреть насколько большой деген
+2023/02/25 21:33:04 23393781 cffb0734 [INFO Client 6412] #WFRPL: в побе вставь
+2023/02/25 21:33:10 23399890 cffb0734 [INFO Client 6412] #<RiPE> Лига_трапов: Неземной спаситель, Великолепные латы оу
+2023/02/25 21:33:14 23404421 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: без 80% фаер реза и хотябы 500 регена хп с ним делать не чего
+2023/02/25 21:33:21 23411218 cffb0734 [INFO Client 6412] #<IBONEH> LoOckingForTheSummer:  выменяю Жизнеотвод
+2023/02/25 21:33:23 23413671 cffb0734 [INFO Client 6412] #BarbariskIsSaratova: кто может одолжить детерминейшен хочу посмотреть скока манны резервит
+2023/02/25 21:34:01 23451125 cffb0734 [INFO Client 6412] #<RiPE> Лига_трапов: а мне шапочку уник с санктупа
+2023/02/25 21:34:04 23453734 cffb0734 [INFO Client 6412] #art_is_really_big_booom: поб чел
+2023/02/25 21:34:06 23456437 cffb0734 [INFO Client 6412] #<GTC> BaklashkaSvetlogo: Эффективность надо кому за 4?
+2023/02/25 21:34:07 23456953 cffb0734 [INFO Client 6412] #<RiPE> Лига_трапов: ждя хексбласта
+2023/02/25 21:34:09 23459281 cffb0734 [INFO Client 6412] #<RiPE> Лига_трапов: )))0
+2023/02/25 21:34:13 23462734 cffb0734 [INFO Client 6412] : Сделка совершена.
+2023/02/25 21:34:17 23467390 cffb0734 [INFO Client 6412] #_бот_:  кто может одолжить миррор в доме зеркала нет
+2023/02/25 21:34:37 23487671 cffb0734 [INFO Client 6412] #sylui: Град ударов обмен на Greater Multiple Projectiles 
+2023/02/25 21:34:44 23494218 cffb0734 [INFO Client 6412] #<RiPE> Лига_трапов: бля, какрывать атлас с температурой 38+
+2023/02/25 21:34:46 23496218 cffb0734 [INFO Client 6412] #<RiPE> Лига_трапов: такое себе
+2023/02/25 21:34:49 23499015 cffb0734 [INFO Client 6412] #<¿vega> shedislamsdljn: Беспамятный осколок, Средний кластерный самоцвет
+2023/02/25 21:34:50 23500656 cffb0734 [INFO Client 6412] #Gelonizzio_besposhadnbI: дайте подержать топор на 700 физ дпс
+2023/02/25 21:34:58 23508390 cffb0734 [INFO Client 6412] #<RiPE> Warsertmons: Слеза чистоты, Амулет с лазуритом 
+2023/02/25 21:34:58 23508656 cffb0734 [INFO Client 6412] #BarbariskIsSaratova: Болезненный блеск, Львиная морда ещё бы хп сюда бы
+2023/02/25 21:35:19 23529031 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: на станке докинь )
+2023/02/25 21:35:24 23534046 cffb0734 [INFO Client 6412] #<GTC> BaklashkaSvetlogo: Вопящая сущность ненависти
+2023/02/25 21:35:25 23535484 cffb0734 [INFO Client 6412] #<RiPE> Лига_трапов: хехех
+2023/02/25 21:35:25 23535640 cffb0734 [INFO Client 6412] #___Zillalia___: Кричащая сущность насмешки
+2023/02/25 21:35:33 23542859 cffb0734 [INFO Client 6412] #<RiPE> Warsertmons: Слеза чистоты, Амулет с лазуритом обмен на грозный гнев
+2023/02/25 21:35:40 23549843 cffb0734 [INFO Client 6412] #BarbariskIsSaratova: бля, парни у нас походу станок спиздили
+2023/02/25 21:35:56 23566390 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: это я был
+2023/02/25 21:36:05 23575062 cffb0734 [INFO Client 6412] #BarbariskIsSaratova: уууууууу сцуко
+2023/02/25 21:36:05 23575437 cffb0734 [INFO Client 6412] #_бот_:  установка на жижу есть?
+2023/02/25 21:36:07 23577625 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: ты только сейчас узнал?)
+2023/02/25 21:36:11 23580937 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 21:36:11 23580937 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 21:36:11 23580937 ca3a6a7f [INFO Client 6412] Connecting to instance server at 159.122.142.247:6112
+2023/02/25 21:36:11 23580984 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 47ms
+2023/02/25 21:36:11 23581031 1186a0e3 [DEBUG Client 6412] Generating level 44 area "1_5_7" with seed 3950355726
+2023/02/25 21:36:11 23581171 f22b6987 [INFO Client 6412] Tile hash: 787773711
+2023/02/25 21:36:11 23581171 f22b6986 [INFO Client 6412] Doodad hash: 329595390
+2023/02/25 21:36:12 23581968 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 21:36:12 23582640 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Реликварий.
+2023/02/25 21:36:13 23583281 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 21:36:19 23589015 cffb0734 [INFO Client 6412] #Дробление_Мизинца: а в убежке машина картоходца не робит?
+2023/02/25 21:36:21 23591578 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: зато на жиже остался станок
+2023/02/25 21:36:28 23597812 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: работает
+2023/02/25 21:36:28 23598109 cffb0734 [INFO Client 6412] #<GTC> BaklashkaSvetlogo: Активный алхимический резонатор 4а/шт
+2023/02/25 21:36:48 23618625 cffb0734 [INFO Client 6412] #Главный_Талант: продайте таких монеток плз) Разбойничий жетон
+2023/02/25 21:36:54 23623875 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: в пое 2 даже кнопка играть будет не рабочая
+2023/02/25 21:37:24 23654421 cffb0734 [INFO Client 6412] #Главный_Талант: 900? алхимка норм будет?
+2023/02/25 21:37:25 23655453 cffb0734 [INFO Client 6412] #<xÙ›> Понапукал: Пронизывающий жар
+2023/02/25 21:37:31 23661593 cffb0734 [INFO Client 6412] #Ячистопосмотреть: станок то на жижу есть, а сама жижа вообще падает ?
+2023/02/25 21:37:42 23671718 cffb0734 [INFO Client 6412] #<CÔR> ArtaEva_Cardiff_Scion: Болезненный удар, Кровавый скипетр 3а
+2023/02/25 21:37:46 23676437 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: лол 900 за 1 алхимку?
+2023/02/25 21:37:50 23680687 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: смешно
+2023/02/25 21:37:57 23686984 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: гц
+2023/02/25 21:38:03 23692703 cffb0734 [INFO Client 6412] #Главный_Талант: гц
+2023/02/25 21:38:09 23699562 cffb0734 [INFO Client 6412] #SKVIRTOOL_TRAP: гц
+2023/02/25 21:38:12 23701875 cffb0734 [INFO Client 6412] #ShimbaR: гц!
+2023/02/25 21:38:14 23703703 cffb0734 [INFO Client 6412] #_бот_:  я знаю как лысый переманит всех в пое 2. он с каждого моба в пое 1 будет падать xx пояс
+2023/02/25 21:38:14 23703968 cffb0734 [INFO Client 6412] #KaJIubPa: гц
+2023/02/25 21:38:17 23707578 cffb0734 [INFO Client 6412] #Дробление_Мизинца: гу
+2023/02/25 21:38:19 23708906 cffb0734 [INFO Client 6412] #UltraDot: Грац )
+2023/02/25 21:38:20 23709843 cffb0734 [INFO Client 6412] #FeebleRhaast: Грац
+2023/02/25 21:38:22 23711796 cffb0734 [INFO Client 6412] #<LOVE>U> Sharf_ElemOneLove: 2 days 9 hours 26 minutes
+2023/02/25 21:38:24 23713734 cffb0734 [INFO Client 6412] #<LOVE>U> Sharf_ElemOneLove: )
+2023/02/25 21:38:35 23725453 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: шарфы, вы вообще спали? или по очереди играли?
+2023/02/25 21:38:58 23748437 cffb0734 [INFO Client 6412] #uDAVich: как китайцы по очереди xD
+2023/02/25 21:39:01 23751484 cffb0734 [INFO Client 6412] #<NSGC> РокВнучка: Антагонистическая Карта кальдеры резни обменяю на плоскогорье, порт, усыпальницу, бухту
+2023/02/25 21:39:02 23752437 cffb0734 [INFO Client 6412] #<HELENE> KottoAmatukamiSS:  1 денб 18 час 10 мин
+2023/02/25 21:39:18 23768171 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: не это корейцы почереди играют
+2023/02/25 21:39:58 23808359 cffb0734 [INFO Client 6412] #<LOVE>U> Sharf_ElemOneLove: ну 2 дня не спал получается
+2023/02/25 21:40:29 23839500 cffb0734 [INFO Client 6412] #UltraDot: а корейцы спали получается? )
+2023/02/25 21:40:39 23848953 cffb0734 [INFO Client 6412] #Доломайт: Сфера алхимии первая! 
+2023/02/25 21:40:41 23851390 cffb0734 [INFO Client 6412] #Дробление_Мизинца: Унылый хват, Кольцо с бриллиантом
+2023/02/25 21:40:44 23854171 cffb0734 [INFO Client 6412] #Доломайт: 78 лвл
+2023/02/25 21:41:10 23880500 cffb0734 [INFO Client 6412] #WFRPL: Пояс обманщика, Широкий ремень продам
+2023/02/25 21:41:30 23899750 cffb0734 [INFO Client 6412] #<*L3> tgfftrdd: deaths
+2023/02/25 21:41:40 23910687 cffb0734 [INFO Client 6412] #Доломайт: 245
+2023/02/25 21:41:54 23924671 cffb0734 [INFO Client 6412] #uDAVich: 245? xD
+2023/02/25 21:42:05 23935375 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: Духовный ореол, Корона правителя 1а
+2023/02/25 21:42:19 23949453 cffb0734 [INFO Client 6412] #Дробление_Мизинца: Унылый хват, Кольцо с бриллиантом продам 2 алх т1 сопра стих и т1 скорость каста
+2023/02/25 21:42:20 23950281 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: 14ч 24м, 95 смертей
+2023/02/25 21:42:40 23970140 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: как там время смотреть?
+2023/02/25 21:42:40 23970687 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: а зачем ты столько умирал ?
+2023/02/25 21:42:50 23980187 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: я боссов зерграшил
+2023/02/25 21:42:52 23981953 cffb0734 [INFO Client 6412] #<STNS> XCREWEN_XXX: Карта храма из слоновой костиобмен
+2023/02/25 21:42:52 23982078 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: deaths
+2023/02/25 21:42:53 23982843 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: ./played
+2023/02/25 21:42:58 23988406 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: абберата убил, но умер на нем раз 50
+2023/02/25 21:43:02 23992484 cffb0734 [INFO Client 6412] #__Трисс__: Вестник чистоты
+2023/02/25 21:43:13 24003218 cffb0734 [INFO Client 6412] #uDAVich: да как так то??? у меня всего 3 смерти к 69му
+2023/02/25 21:43:13 24003671 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: в какой-то момент он устал меня шотать и я его с тотемом вместе запинал до того, как он меня добил
+2023/02/25 21:43:18 24008593 cffb0734 [INFO Client 6412] #Карделянд: я аберата на изи убил с 1 раза
+2023/02/25 21:43:20 24009953 cffb0734 [INFO Client 6412] #SilvanaWR: Благой вихрь, Кольцо с кораллом
+2023/02/25 21:43:27 24017640 cffb0734 [INFO Client 6412] #PoroxPrivate: Знамя войны Хищник Здоровье за ударна увядание или множество тотемов
+2023/02/25 21:43:29 24019375 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: 12 фаер реза)
+2023/02/25 21:43:35 24024828 cffb0734 [INFO Client 6412] #YotzurRuthless: Почётный знак, Колчан тяжёлых стрел
+2023/02/25 21:43:39 24029125 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: у меня за 1 день только 71 лвл и 34 смерти(
+2023/02/25 21:43:40 24029937 cffb0734 [INFO Client 6412] #<HELENE> KottoAmatukamiSS: 79 XD
+2023/02/25 21:43:42 24032453 cffb0734 [INFO Client 6412] #ddedd:  набираете /помощь там все команды
+2023/02/25 21:43:49 24039140 cffb0734 [INFO Client 6412] #<HELENE> KottoAmatukamiSS: 79!!!! охуеть
+2023/02/25 21:43:50 24039703 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: Ходячая крепость, Вспарыватель пог?
+2023/02/25 21:44:03 24052843 cffb0734 [INFO Client 6412] #uDAVich: вы чо совсем армор и резы не качаете?
+2023/02/25 21:44:21 24070765 cffb0734 [INFO Client 6412] #<HELENE> KottoAmatukamiSS: Это боссов актов закидвал трупами)
+2023/02/25 21:44:26 24075812 cffb0734 [INFO Client 6412] #mbx_rthlss_crdff: 21
+2023/02/25 21:44:26 24076234 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: ну армора у меня 9600, но я пока асенданси не взял
+2023/02/25 21:44:32 24081765 cffb0734 [INFO Client 6412] #КуЗоВбезПощады: Спешка продам 15а
+2023/02/25 21:45:44 24153781 cffb0734 [INFO Client 6412] #<{A$$}> gangwowerf: кто-то уже релик годный нашёл?
+2023/02/25 21:45:46 24156296 cffb0734 [INFO Client 6412] #KakoiToPetovod: Поющий Окованный посох узнавания
+2023/02/25 21:45:55 24165468 cffb0734 [INFO Client 6412] #Card_jagg_rf: куплю валки
+2023/02/25 21:46:01 24170859 cffb0734 [INFO Client 6412] #KiraOoRuthCardLea: '
+2023/02/25 21:46:21 24191187 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: Кварцевый флакон vs Сфера превращения
+2023/02/25 21:46:29 24199265 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: Практичный Кварцевый флакон резни gg noobs
+2023/02/25 21:46:47 24216937 cffb0734 [INFO Client 6412] #uDAVich: и чо с ним?
+2023/02/25 21:47:00 24229828 cffb0734 [INFO Client 6412] #SotofaHanemer: Активный алхимический резонатор предложения в лс
+2023/02/25 21:47:06 24235828 cffb0734 [INFO Client 6412] #<IBONEH> LoOckingForTheSummer: Беспамятный покровитель, Кольчуга святого воина
+2023/02/25 21:47:16 24246484 cffb0734 [INFO Client 6412] #<iddQd> muupol: ууууф Кальтенхалт, Железный баклер
+2023/02/25 21:47:27 24256984 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: Малый кластерный самоцвет сколько такой стоит?
+2023/02/25 21:47:32 24262234 cffb0734 [INFO Client 6412] #<iddQd> muupol: желает кто купить?) Кальтенхалт, Железный баклер
+2023/02/25 21:47:48 24277890 cffb0734 [INFO Client 6412] #Banowar: Скорбящий рык, Разбойничий топор 1 трансмут
+2023/02/25 21:47:53 24283250 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 21:47:53 24283250 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 21:47:53 24283250 ca3a6a7f [INFO Client 6412] Connecting to instance server at 159.122.142.247:6112
+2023/02/25 21:47:53 24283328 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 21:47:53 24283375 1186a0e3 [DEBUG Client 6412] Generating level 45 area "1_5_town" with seed 1
+2023/02/25 21:47:53 24283390 f22b6987 [INFO Client 6412] Tile hash: 4281737639
+2023/02/25 21:47:53 24283390 f22b6986 [INFO Client 6412] Doodad hash: 0
+2023/02/25 21:47:54 24284156 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 21:47:55 24284781 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Башня надзирателя.
+2023/02/25 21:47:55 24285343 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 21:47:57 24286734 cffb0734 [INFO Client 6412] #uDAVich: хз даже в какой его билд пихнуть, ледяное сокрушение?
+2023/02/25 21:48:04 24294000 cffb0734 [INFO Client 6412] #RuthDionis: Скорбь Хрима, Сафьяновые перчатки Бездна, Полный шлем эзомита Раскатистый удар продам
+2023/02/25 21:48:18 24308671 cffb0734 [INFO Client 6412] #<•GIRL•> Прыг_скок_снашающегося: Интенсивность
+2023/02/25 21:48:41 24330968 cffb0734 [INFO Client 6412] #<iddQd> muupol: на деда можно кто через холод)
+2023/02/25 21:48:42 24332640 cffb0734 [INFO Client 6412] #Card_jagg_rf: кто нибудь красние карт собирается закривать на комплит?
+2023/02/25 21:48:53 24343375 cffb0734 [INFO Client 6412] : Вы получили очко пассивных умений.
+2023/02/25 21:48:53 24343375 cffb0734 [INFO Client 6412] : Вы получили очков сброса пассивных умений: 2.
+2023/02/25 21:48:57 24347562 cffb0734 [INFO Client 6412] : Сделка совершена.
+2023/02/25 21:49:18 24367734 cffb0734 [INFO Client 6412] #Banowar: Гневный обыватель, Кожанка призвания 1 трансмут
+2023/02/25 21:49:26 24375781 cffb0734 [INFO Client 6412] #<HOGWRC> HarryAtomicGuardian: не закрываешь карты ссф-не мужик
+2023/02/25 21:49:30 24380546 cffb0734 [INFO Client 6412] #___Zillalia___: Беспамятная стража, Каплевидный щит с символом
+2023/02/25 21:49:36 24385953 fb7abca5 [INFO Client 6412] Successfully allocated passive skill id: accuracy_minion_accuracy_and_resists2235, name: Урон приспешников
+2023/02/25 21:49:50 24399906 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 21:49:50 24399906 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 21:49:50 24399906 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.146:6112
+2023/02/25 21:49:50 24399968 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 47ms
+2023/02/25 21:49:50 24400031 1186a0e3 [DEBUG Client 6412] Generating level 44 area "1_5_3b" with seed 3857312782
+2023/02/25 21:49:50 24400187 b5a58dc1 [INFO Client 6412] Spawning discoverable Hideout HideoutCourts
+2023/02/25 21:49:52 24402156 f22b6987 [INFO Client 6412] Tile hash: 4006263430
+2023/02/25 21:49:52 24402156 f22b6986 [INFO Client 6412] Doodad hash: 3758871813
+2023/02/25 21:49:53 24402796 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 21:49:53 24403546 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Разрушенная площадь.
+2023/02/25 21:49:54 24404390 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 21:49:56 24406562 cffb0734 [INFO Client 6412] #Metariana: Гордость Камень и плоть 2a
+2023/02/25 21:49:59 24409093 cffb0734 [INFO Client 6412] #Card_jagg_rf: да в том то и дело что ссф закрваю
+2023/02/25 21:50:06 24416203 cffb0734 [INFO Client 6412] #BarbariskIsSaratova: канешна не мужик, я помидор
+2023/02/25 21:50:12 24422312 cffb0734 [INFO Client 6412] #КуЗоВбезПощады: ггг подлянку солярам подкинули, карты нельзя ролить древними орбами
+2023/02/25 21:50:16 24425812 cffb0734 [INFO Client 6412] #КуЗоВбезПощады: зачем неясно
+2023/02/25 21:50:28 24438062 cffb0734 [INFO Client 6412] #<LEGÄCY> BloodLedyy: Малый кластерный самоцвет 3а
+2023/02/25 21:50:42 24452031 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: Орлиная преграда, Ростовой щит с умбоном 1a
+2023/02/25 21:50:56 24466328 cffb0734 [INFO Client 6412] #BarbariskIsSaratova: зашёл в комнату, а там пачку ёжиков, такой отстрел чудоим выжил
+2023/02/25 21:50:58 24468359 cffb0734 [INFO Client 6412] #<RiPE> Fshudfk: а 3 камня умения могут при продаже дать сапорт камень?
+2023/02/25 21:51:05 24475296 cffb0734 [INFO Client 6412] #Metariana: гор?
+2023/02/25 21:51:29 24499250 cffb0734 [INFO Client 6412] #<*BUPÃ*> Токсиик: Химерический вертел, Меч палача 1 алхимка 466 дпс
+2023/02/25 21:51:33 24502890 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 21:51:33 24502890 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 21:51:33 24502890 ca3a6a7f [INFO Client 6412] Connecting to instance server at 159.122.142.248:6112
+2023/02/25 21:51:33 24502953 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 47ms
+2023/02/25 21:51:33 24503000 1186a0e3 [DEBUG Client 6412] Generating level 45 area "1_5_8" with seed 504482435
+2023/02/25 21:51:35 24505046 f22b6987 [INFO Client 6412] Tile hash: 1077600217
+2023/02/25 21:51:35 24505046 f22b6986 [INFO Client 6412] Doodad hash: 329626440
+2023/02/25 21:51:36 24506218 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 21:51:37 24506968 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Крыша собора.
+2023/02/25 21:51:38 24508046 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 21:52:08 24538390 cffb0734 [INFO Client 6412] #Card_jagg_rf: есть все
+2023/02/25 21:52:23 24553093 cffb0734 [INFO Client 6412] #KakoiToPetovod: Чудовищное мерцание, Средний кластерный самоцвет
+2023/02/25 21:53:05 24595625 cffb0734 [INFO Client 6412] #JenkiRymo_Grandpa: абберат юез смертей О_о
+2023/02/25 21:53:07 24597312 cffb0734 [INFO Client 6412] #Деревенский_Травматолог: только 3 сапорта дают сапорт. обычные дают 1 обрывок свитка мудрости
+2023/02/25 21:53:15 24605078 cffb0734 [INFO Client 6412] #<RiPE> Fshudfk: спасибо
+2023/02/25 21:53:21 24611484 cffb0734 [INFO Client 6412] #quillx: а что с аурами ребят
+2023/02/25 21:53:25 24614750 cffb0734 [INFO Client 6412] #uDAVich: аберат лёгкий все атаки читаемы
+2023/02/25 21:54:33 24683171 cffb0734 [INFO Client 6412] #<NSGC> РокВнучка: Карта берега поменяю на атолл или чащу
+2023/02/25 21:54:42 24692171 118717e5 [DEBUG Client 6412] Resyncing 572
+2023/02/25 21:54:43 24692968 cffb0734 [INFO Client 6412] #<[FLO™]> Pepeshon: Портал Сотворение чар при смерти best link in poe
+2023/02/25 21:54:44 24694296 cffb0734 [INFO Client 6412] #<[FLO™]> Pepeshon: lol
+2023/02/25 21:54:54 24704687 cffb0734 [INFO Client 6412] #Metariana: Карта музея высокого качества обмен на плато или усыпальницу
+2023/02/25 21:55:02 24711843 cffb0734 [INFO Client 6412] #<*BUPÃ*> Токсиик: Победный гребень, Маска цареубийцы алхимка и ваша
+2023/02/25 21:55:05 24714734 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: гц ) топ связочка настоящего мужчины
+2023/02/25 21:55:32 24742421 cffb0734 [INFO Client 6412] #<RiPE> Fshudfk: кто на оглушении играет? Оглушение
+2023/02/25 21:55:40 24749859 cffb0734 [INFO Client 6412] #Metariana: )))
+2023/02/25 21:55:55 24765640 cffb0734 [INFO Client 6412] #uDAVich: все играют, мета жеж!
+2023/02/25 21:56:06 24776296 cffb0734 [INFO Client 6412] #Metariana: надо кардифу предложить)
+2023/02/25 21:56:14 24784593 cffb0734 [INFO Client 6412] #<Ödd> SelNur: Гимн Гримнора, Кувалда
+2023/02/25 21:56:15 24785562 cffb0734 [INFO Client 6412] #<RiPE> Fshudfk: ахахахха)
+2023/02/25 21:56:24 24793843 cffb0734 [INFO Client 6412] #Card_jagg_rf: кто хочет на комплит красной карт, с вас валка или алхимка?
+2023/02/25 21:56:29 24799140 cffb0734 [INFO Client 6412] #bahoruth:  Ужасный напев, Орихалковый щит духа1a
+2023/02/25 21:56:38 24807937 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: ну если еще пару раз мобов апнут и введут очердной рогалик в лиге то все будут на стане )
+2023/02/25 21:57:20 24850625 cffb0734 [INFO Client 6412] : DeeFiera (Маг стихий) достигает 53 уровня
+2023/02/25 21:57:41 24870750 fb7abca5 [INFO Client 6412] Successfully allocated passive skill id: player_and_minion_notable2240, name: Духовная поддержка
+2023/02/25 21:58:18 24908156 cffb0734 [INFO Client 6412] #Metariana: обмен Карта музея высокого качества на плато или усыпалку
+2023/02/25 21:59:31 24981328 cffb0734 [INFO Client 6412] #Халк_Крушитб: изи 3 лаба, можно ставить на поток
+2023/02/25 21:59:43 24993062 cffb0734 [INFO Client 6412] : DeeFiera был повержен.
+2023/02/25 22:00:34 25044343 cffb0734 [INFO Client 6412] #JenkiRymo_Grandpa: Сумрачные болты, Колчан точных стрел обмен предлы
+2023/02/25 22:00:43 25053109 cffb0734 [INFO Client 6412] #ДедВрф: Урон ловушек и мин на переохлаждение
+2023/02/25 22:01:16 25086609 cffb0734 [INFO Client 6412] #БеспощадныйСлай: Перчатки левши облака метатели щитов есть?
+2023/02/25 22:01:41 25110843 cffb0734 [INFO Client 6412] : Под жестоким влиянием Китавы вы навсегда ослабли. Все ваши сопротивления уменьшены на 30%.
+2023/02/25 22:01:41 25111484 cffb0734 [INFO Client 6412] Грех: Огонь надежды может едва тлеть, но погасить его нельзя!
+2023/02/25 22:01:42 25111812 bce2d691 [INFO Client 6412] Steam stats stored
+2023/02/25 22:02:23 25153578 cffb0734 [INFO Client 6412] #SilvanaWR: Болезненные боевые стрелы, Колчан боевых стрел нужен кому?
+2023/02/25 22:02:26 25156031 cffb0734 [INFO Client 6412] #<*BUPÃ*> Токсиик: Залповый Бирюзовый самоцвет атрофии
+2023/02/25 22:02:29 25159296 cffb0734 [INFO Client 6412] #mbx_rthlss_crdff: обожаю, желтый сундук, куча мобов и даже ни одной синей вещи
+2023/02/25 22:02:44 25174453 cffb0734 [INFO Client 6412] #mbx_rthlss_crdff: даже 3хлинка ссаного
+2023/02/25 22:02:48 25178140 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 22:02:48 25178156 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 22:02:48 25178156 ca3a6a7f [INFO Client 6412] Connecting to instance server at 159.122.142.234:6112
+2023/02/25 22:02:48 25178218 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 22:02:48 25178250 1186a0e3 [DEBUG Client 6412] Generating level 50 area "2_6_town" with seed 1
+2023/02/25 22:02:49 25179078 f22b6987 [INFO Client 6412] Tile hash: 1591518971
+2023/02/25 22:02:49 25179078 f22b6986 [INFO Client 6412] Doodad hash: 0
+2023/02/25 22:02:50 25179796 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 22:02:50 25180500 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/25 22:02:51 25181390 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 22:03:12 25202031 cffb0734 [INFO Client 6412] #WFRPL: А крафты огорода меняли?
+2023/02/25 22:03:27 25217406 cffb0734 [INFO Client 6412] #quillx: их там нет почти. свапы и инчанты. Ну и ауги за квартиру
+2023/02/25 22:03:28 25218046 cffb0734 [INFO Client 6412] #RuthSC: Духовный шквал, Лук из рога предложения в лс
+2023/02/25 22:03:43 25232812 cffb0734 [INFO Client 6412] #Bimba_bumba_R: да, ты сильно удивишься
+2023/02/25 22:03:45 25234968 cffb0734 [INFO Client 6412] : Сделка совершена.
+2023/02/25 22:04:00 25250468 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: есть у кого кластеры на булавы?
+2023/02/25 22:04:07 25257343 cffb0734 [INFO Client 6412] &<RiPE> Ухдубинушка: Первенство Каома, Рубило каруи
+2023/02/25 22:04:15 25265531 cffb0734 [INFO Client 6412] #<RiPE> Fshudfk: возьмёт кто за алхимку? Оглушение )
+2023/02/25 22:04:25 25274859 cffb0734 [INFO Client 6412] #PoroxPrivate: Знамя войны Хищник Здоровье за удар по пол алхимки
+2023/02/25 22:04:29 25279609 cffb0734 [INFO Client 6412] #Bimba_bumba_R: Большой кластерный самоцвет такие?
+2023/02/25 22:04:31 25280812 cffb0734 [INFO Client 6412] #PoroxPrivate: Архимаг Заряженные ловушки Скорость приспешниковпо пол алхимки
+2023/02/25 22:04:32 25282421 cffb0734 [INFO Client 6412] &<RiPE> Огневика: Первенство Каома, Рубило каруи ))
+2023/02/25 22:04:35 25285531 cffb0734 [INFO Client 6412] #<NSGC> РокВнучка: Карта паучьего логова Карта пирамиды ваал Карта резиденции одну из махну на чащу
+2023/02/25 22:04:49 25298750 cffb0734 [INFO Client 6412] #КатВернисьЯВсёПрощу: кто там искал мультистрайк за гмп?
+2023/02/25 22:05:30 25340234 cffb0734 [INFO Client 6412] : Сделка совершена.
+2023/02/25 22:06:00 25370640 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 22:06:00 25370640 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 22:06:00 25370640 ca3a6a7f [INFO Client 6412] Connecting to instance server at 159.122.142.231:6112
+2023/02/25 22:06:01 25370703 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 47ms
+2023/02/25 22:06:01 25370765 1186a0e3 [DEBUG Client 6412] Generating level 45 area "2_6_1" with seed 966724829
+2023/02/25 22:06:01 25371500 f22b6987 [INFO Client 6412] Tile hash: 99140607
+2023/02/25 22:06:01 25371500 f22b6986 [INFO Client 6412] Doodad hash: 3702300600
+2023/02/25 22:06:02 25371921 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 22:06:02 25372687 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Сумрачное взморье.
+2023/02/25 22:06:03 25373453 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 22:06:27 25397000 cffb0734 [INFO Client 6412] #Bimba_bumba_R: да, 3 мин
+2023/02/25 22:06:28 25398281 cffb0734 [INFO Client 6412] #<•GIRL•> BAx_bbabax: Контролируемое разрушение 2.5a
+2023/02/25 22:06:33 25403296 cffb0734 [INFO Client 6412] #BleedItHard: Колдующий тотем 1a
+2023/02/25 22:06:37 25407312 cffb0734 [INFO Client 6412] #<•GIRL•> BAx_bbabax: Богохульство 1a
+2023/02/25 22:07:15 25445562 cffb0734 [INFO Client 6412] #SotofaHanemer: Спасение от холода 1a
+2023/02/25 22:07:51 25481265 cffb0734 [INFO Client 6412] #RuthDionis: Аномальный: Много дополнительных снарядов Искривлённый: Много дополнительных снарядов Аномальный: Дополнительные ловушки по 2а
+2023/02/25 22:08:03 25493500 cffb0734 [INFO Client 6412] #Дробление_Мизинца: ++
+2023/02/25 22:08:11 25501234 cffb0734 [INFO Client 6412] #Gelonizzio_besposhadnbI: Карта атолла Карта резиденции Карта чащи на паучье логово
+2023/02/25 22:08:24 25514046 cffb0734 [INFO Client 6412] #<HELENE> KottoAmatukamiSS:  Жизнеотвод2a
+2023/02/25 22:09:04 25554296 cffb0734 [INFO Client 6412] #<[FLO™]> Pepeshon: Вознесение над плотью, Цепочка
+2023/02/25 22:09:04 25554562 cffb0734 [INFO Client 6412] #Кудахтарь: Быстрая сборка
+2023/02/25 22:09:52 25602562 cffb0734 [INFO Client 6412] #Таблетка_Темпалгина: ребят, а по чём щит бури продают?
+2023/02/25 22:10:07 25617234 cffb0734 [INFO Client 6412] #<NSGC> РокВнучка: Карта паучьего логова Карта пирамиды ваал Карта резиденции одну из махну на чащу
+2023/02/25 22:10:10 25619703 cffb0734 [INFO Client 6412] #RuthSC: за почку
+2023/02/25 22:10:13 25623062 cffb0734 [INFO Client 6412] : Осталось монстров: 4.
+2023/02/25 22:10:13 25623187 cffb0734 [INFO Client 6412] : Осталось монстров: 2.
+2023/02/25 22:10:14 25623796 cffb0734 [INFO Client 6412] : Осталось монстров: 0.
+2023/02/25 22:10:26 25635921 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 22:10:26 25635937 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 22:10:26 25635937 ca3a6a7f [INFO Client 6412] Connecting to instance server at 159.122.142.234:6112
+2023/02/25 22:10:26 25636000 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 22:10:26 25636046 1186a0e3 [DEBUG Client 6412] Generating level 50 area "2_6_town" with seed 1
+2023/02/25 22:10:26 25636062 f22b6987 [INFO Client 6412] Tile hash: 1591518971
+2023/02/25 22:10:26 25636062 f22b6986 [INFO Client 6412] Doodad hash: 0
+2023/02/25 22:10:27 25636734 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 22:10:27 25637390 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/25 22:10:28 25637937 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 22:10:30 25640109 cffb0734 [INFO Client 6412] #RuthlessShieldBash: Щит бури моя почка кста
+2023/02/25 22:10:39 25649406 cffb0734 [INFO Client 6412] #RuthDionis: Вестник грома продам
+2023/02/25 22:10:43 25653671 cffb0734 [INFO Client 6412] #RuthSC: красивое
+2023/02/25 22:10:52 25662015 cffb0734 [INFO Client 6412] : Вы получили очков сброса пассивных умений: 2.
+2023/02/25 22:10:57 25667671 cffb0734 [INFO Client 6412] #<8°©> qweqweqweqwewqqwe: покупает кто отчищалки за алхимки?
+2023/02/25 22:11:14 25683703 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: ты поп, что-ли? отчищаешь за алхимки?
+2023/02/25 22:11:25 25695125 cffb0734 [INFO Client 6412] #Ftoraldegid: инквизитор
+2023/02/25 22:11:27 25697484 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 22:11:27 25697484 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 22:11:27 25697484 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.138:6112
+2023/02/25 22:11:27 25697531 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 22:11:27 25697578 1186a0e3 [DEBUG Client 6412] Generating level 45 area "2_6_2" with seed 351314418
+2023/02/25 22:11:29 25698968 f22b6987 [INFO Client 6412] Tile hash: 3576994848
+2023/02/25 22:11:29 25698968 f22b6986 [INFO Client 6412] Doodad hash: 209258748
+2023/02/25 22:11:29 25699593 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 22:11:30 25700406 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Побережье.
+2023/02/25 22:11:31 25701312 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 22:11:39 25709265 cffb0734 [INFO Client 6412] #Ftoraldegid: и очищение будет спицифическим
+2023/02/25 22:12:11 25741031 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: а оно очистит меня после игры на билде мефентуса?
+2023/02/25 22:12:30 25760281 cffb0734 [INFO Client 6412] #Bzka_Priv: Погоня жнеца, Топор тени продам за 1а
+2023/02/25 22:12:33 25762921 cffb0734 [INFO Client 6412] #ДедВрф: малифисентуса?
+2023/02/25 22:12:44 25773703 cffb0734 [INFO Client 6412] #Ftoraldegid: да, но пахнуть будет плохо
+2023/02/25 22:12:51 25781093 cffb0734 [INFO Client 6412] #Xytopok: ш
+2023/02/25 22:14:20 25870000 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 22:14:20 25870000 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 22:14:20 25870000 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.132:6112
+2023/02/25 22:14:20 25870046 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 22:14:20 25870109 1186a0e3 [DEBUG Client 6412] Generating level 45 area "2_6_3" with seed 228320505
+2023/02/25 22:14:21 25870765 f22b6987 [INFO Client 6412] Tile hash: 9219062
+2023/02/25 22:14:21 25870765 f22b6986 [INFO Client 6412] Doodad hash: 461977712
+2023/02/25 22:14:21 25871125 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 22:14:22 25871890 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Прибрежный остров.
+2023/02/25 22:14:22 25872531 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 22:15:01 25911046 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: Драконьи лапы, Перчатки гиганта ПОГ, еще и гибрид хп к обычному т1
+2023/02/25 22:15:04 25914625 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: еще бы диванчик сюда
+2023/02/25 22:15:11 25921468 cffb0734 [INFO Client 6412] Эйнар, Мастер зверей: Изгнанница, вымани животное на меня.
+2023/02/25 22:15:16 25926234 cffb0734 [INFO Client 6412] Эйнар, Мастер зверей: Топай, животинка! Уходи!
+2023/02/25 22:15:37 25947515 cffb0734 [INFO Client 6412] #BleedItHard: Усилитель мда
+2023/02/25 22:15:45 25955343 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: гц )
+2023/02/25 22:15:49 25959390 cffb0734 [INFO Client 6412] #сЛизер: гц
+2023/02/25 22:15:57 25967390 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: прокачаешь на пол уровня к концу как раз
+2023/02/25 22:16:01 25971468 cffb0734 [INFO Client 6412] Эйнар, Мастер зверей: Выживший! Ты достойно встретишь конец дней. Это годная добыча.
+2023/02/25 22:16:04 25974078 cffb0734 [INFO Client 6412] #Gelonizzio_besposhadnbI: гц
+2023/02/25 22:16:05 25975218 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: гц
+2023/02/25 22:16:08 25977921 cffb0734 [INFO Client 6412] #БеспощадныйСлай: Ну за месяц 2 уровень будет)
+2023/02/25 22:16:20 25990640 cffb0734 [INFO Client 6412] #Tortoise_Ruthless:  синдикат
+2023/02/25 22:16:29 25999109 cffb0734 [INFO Client 6412] #uDAVich: да чо гц? чтобы его вкочать до 3х месяца не хватит xD
+2023/02/25 22:17:09 26039437 cffb0734 [INFO Client 6412] #BleedItHard: желающие купить этот прекрасный камень есть?
+2023/02/25 22:17:17 26046968 cffb0734 [INFO Client 6412] #Tortoise_Ruthless: сколько?
+2023/02/25 22:17:17 26047390 cffb0734 [INFO Client 6412] #<RiPE> Fshudfk: такое надо кому Скорбное острие, Блестящий коготь
+2023/02/25 22:17:20 26050625 cffb0734 [INFO Client 6412] Эйнар, Мастер зверей: Животинка, мы будем лучшими друзьями! Пока не принесём тебя в жертву!
+2023/02/25 22:17:29 26059656 cffb0734 [INFO Client 6412] #BleedItHard: да вот хз
+2023/02/25 22:17:38 26068453 cffb0734 [INFO Client 6412] #ShimbaR:  цена?
+2023/02/25 22:17:42 26072390 cffb0734 [INFO Client 6412] Эйнар, Мастер зверей: В округе кончились стоящие звери. Эйнар сходит и покормит тех, что мы изловили.
+2023/02/25 22:17:48 26077953 cffb0734 [INFO Client 6412] #BleedItHard: да не знаю я, предлагайте в пм
+2023/02/25 22:17:56 26086640 cffb0734 [INFO Client 6412] #uDAVich: мильён!
+2023/02/25 22:18:03 26093093 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 22:18:03 26093093 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 22:18:03 26093093 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.138:6112
+2023/02/25 22:18:03 26093156 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 47ms
+2023/02/25 22:18:03 26093203 1186a0e3 [DEBUG Client 6412] Generating level 45 area "2_6_2" with seed 351314418
+2023/02/25 22:18:03 26093296 f22b6987 [INFO Client 6412] Tile hash: 3576994848
+2023/02/25 22:18:03 26093296 f22b6986 [INFO Client 6412] Doodad hash: 209258748
+2023/02/25 22:18:04 26094093 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 22:18:05 26094843 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Побережье.
+2023/02/25 22:18:05 26095531 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 22:18:08 26097718 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: даю 1 хроматик
+2023/02/25 22:18:14 26104140 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 22:18:14 26104140 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 22:18:14 26104140 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.180:6112
+2023/02/25 22:18:14 26104218 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 47ms
+2023/02/25 22:18:14 26104265 1186a0e3 [DEBUG Client 6412] Generating level 46 area "2_6_4" with seed 1779672131
+2023/02/25 22:18:15 26104890 f22b6987 [INFO Client 6412] Tile hash: 1627145745
+2023/02/25 22:18:15 26104890 f22b6986 [INFO Client 6412] Doodad hash: 236354836
+2023/02/25 22:18:15 26105546 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 22:18:16 26106265 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Илистые низины.
+2023/02/25 22:18:17 26106937 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 22:18:23 26113312 cffb0734 [INFO Client 6412] #сЛизер: Куплю 5л тушку инт/сила, инт/ловкость
+2023/02/25 22:18:26 26115828 cffb0734 [INFO Client 6412] #НищийБетонДорн: даю три...нет, четыре виздома..и один портал
+2023/02/25 22:18:48 26138250 cffb0734 [INFO Client 6412] #Card_jagg_rf: ну прост стандарт джаг рф нет конскретного билда
+2023/02/25 22:18:49 26138906 cffb0734 [INFO Client 6412] #<HELENE> KottoAmatukamiSS:  Сфера царей почем бошка?
+2023/02/25 22:18:51 26141609 cffb0734 [INFO Client 6412] #uDAVich: портал??? ну всё нада брать, сделака века!
+2023/02/25 22:18:53 26143296 cffb0734 [INFO Client 6412] #ddedd: у рога шмот синий кек какой то
+2023/02/25 22:19:00 26150531 cffb0734 [INFO Client 6412] #<STNS> MoDPhoenix_card: ребят с бестиария антикровоток не накрафтить?
+2023/02/25 22:19:02 26151765 cffb0734 [INFO Client 6412] #<NSGC> РокВнучка: Карта гробницы изматывания обмен на плоскогорье, усыпальницу
+2023/02/25 22:19:07 26157390 cffb0734 [INFO Client 6412] #Card_jagg_rf: за идеал то что чели в обичном режиме на хк делают
+2023/02/25 22:19:59 26209281 cffb0734 [INFO Client 6412] #БеспощадныйСлай: Почётная метка, Ростовой щит эзомита 2 алхимки
+2023/02/25 22:20:16 26226562 cffb0734 [INFO Client 6412] #ДедВрф: не понял прикола, шеврон и додик на фабрике насиловали, а китава как котенок лег спать
+2023/02/25 22:20:33 26242937 cffb0734 [INFO Client 6412] #Card_jagg_rf: я спекался когда рф перестал сжигать, получилось в конце актов
+2023/02/25 22:20:54 26264265 cffb0734 [INFO Client 6412] #Card_jagg_rf: бегал на колд доте, там вообще респекаться не надо
+2023/02/25 22:21:02 26271937 cffb0734 [INFO Client 6412] #НищийБетонДорн: Имею желание купить Усилитель, но не имею возможности. Имею возможность купить портал, но не имею желания. Так выпьем же...
+2023/02/25 22:21:12 26282281 cffb0734 [INFO Client 6412] #RuthDionis: Карта едких пещер поменяю на другую Т5 карту
+2023/02/25 22:21:16 26286125 cffb0734 [INFO Client 6412] #uDAVich: за ВЛКСМ!
+2023/02/25 22:21:33 26303328 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: СКОЛЬ!
+2023/02/25 22:22:08 26338109 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: эх щас бы бутылку виски и поспать на ножках ошаби, а не вот это вот всё..
+2023/02/25 22:22:08 26338500 cffb0734 [INFO Client 6412] #НищийБетонДорн: Prost!
+2023/02/25 22:22:29 26359625 cffb0734 [INFO Client 6412] #ГорящийЛосось: Заносчивость продам за алхимку
+2023/02/25 22:22:53 26383500 cffb0734 [INFO Client 6412] #<STNS> pumQa_ruthless_TR: Карта порта поменяю на кальдеру
+2023/02/25 22:23:30 26419921 cffb0734 [INFO Client 6412] #Metariana: Чудесный бастион, Облачение убийцы 2а
+2023/02/25 22:23:37 26426890 cffb0734 [INFO Client 6412] #KongOldButNoBald: Отражающая Карта дома с привидениями поменю на другую желтую 
+2023/02/25 22:23:55 26444859 cffb0734 [INFO Client 6412] #<STNS> pumQa_ruthless_TR: Карта пирамиды ваал или Карта резиденции на корал руинс
+2023/02/25 22:24:07 26457468 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: Штурмовой панцирь, Доспех гладиатора сюда бы слемнуть супресс ещё
+2023/02/25 22:24:08 26458296 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 22:24:08 26458296 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 22:24:08 26458296 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.132:6112
+2023/02/25 22:24:08 26458343 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 32ms
+2023/02/25 22:24:08 26458390 1186a0e3 [DEBUG Client 6412] Generating level 46 area "2_6_5" with seed 1374735053
+2023/02/25 22:24:09 26459031 f22b6987 [INFO Client 6412] Tile hash: 4209523382
+2023/02/25 22:24:09 26459031 f22b6986 [INFO Client 6412] Doodad hash: 1187092528
+2023/02/25 22:24:09 26459375 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 22:24:10 26460156 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Крепость каруи.
+2023/02/25 22:24:11 26460984 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 22:24:14 26464609 cffb0734 [INFO Client 6412] #<STNS> pumQa_ruthless_TR: Карта храма на кортиярд
+2023/02/25 22:24:15 26464734 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: а, бля, супресс же преф, да?
+2023/02/25 22:24:24 26473812 cffb0734 [INFO Client 6412] #Pognalicho: Свирепый удар, Шило 1а
+2023/02/25 22:24:29 26479390 cffb0734 [INFO Client 6412] #WFRPL: супресс суф
+2023/02/25 22:24:29 26479640 cffb0734 [INFO Client 6412] #<*BUPÃ*> Токсиик: сапресс только если база с уклонением
+2023/02/25 22:24:32 26482375 cffb0734 [INFO Client 6412] #taknebivaet: Золотой колпак, Кожаный чепец я только начал и с брутуса дроп)
+2023/02/25 22:24:50 26500312 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: а, тогда нахуй супресс
+2023/02/25 22:24:53 26503640 cffb0734 [INFO Client 6412] #Metariana: Драконья корона, Маска богоубийцы 1а
+2023/02/25 22:24:54 26504562 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: спасибо, чат
+2023/02/25 22:25:37 26547281 cffb0734 [INFO Client 6412] #<*BUPÃ*> Токсиик: ++++
+2023/02/25 22:25:48 26558328 cffb0734 [INFO Client 6412] #<ÙÏÏÏÏ> подлива_не_всегда_еда: Слеза чистоты, Амулет с лазуритом 5a
+2023/02/25 22:25:50 26560234 cffb0734 [INFO Client 6412] #Metariana: Благой удар, Палица 244 пдпс, 1а
+2023/02/25 22:26:45 26614718 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: Сапоги крови пог
+2023/02/25 22:27:37 26666718 cffb0734 [INFO Client 6412] : DeeFiera (Маг стихий) достигает 54 уровня
+2023/02/25 22:27:40 26669875 cffb0734 [INFO Client 6412] #WFRPL: лайфтап почем сейчас примерно продают?
+2023/02/25 22:27:46 26676062 cffb0734 [INFO Client 6412] #Metariana: Дьявольская колея, Ботинки из чешуи змея 2а
+2023/02/25 22:27:49 26678812 118717e5 [DEBUG Client 6412] Resyncing 1334
+2023/02/25 22:28:00 26690578 cffb0734 [INFO Client 6412] #BleedItHard: по 2с
+2023/02/25 22:28:09 26699562 fb7abca5 [INFO Client 6412] Successfully allocated passive skill id: accuracy_minion_accuracy_and_resists2234, name: Урон приспешников
+2023/02/25 22:28:36 26726234 cffb0734 [INFO Client 6412] #amoba_asas: Бегство, Калиги убийцы как думайте это стоит что-то ?
+2023/02/25 22:28:59 26749125 cffb0734 [INFO Client 6412] #WFRPL: Жизнеотвод 2c
+2023/02/25 22:29:04 26753921 cffb0734 [INFO Client 6412] #uDAVich: 1 алхмику как всегда
+2023/02/25 22:29:17 26767437 cffb0734 [INFO Client 6412] #BleedItHard: Усилитель 30c rjhjxt z [p
+2023/02/25 22:30:14 26824562 cffb0734 [INFO Client 6412] #quillx: ребят подскажите, стилскин же даёт в актах дуелисту?
+2023/02/25 22:30:58 26868546 cffb0734 [INFO Client 6412] #<<†>> Vortalin: Выход на поклон, Чумная маска
+2023/02/25 22:30:59 26869203 cffb0734 [INFO Client 6412] #uDAVich: наверно, ну панцирь дают точно
+2023/02/25 22:31:06 26876171 cffb0734 [INFO Client 6412] Тукохама: Позволь научить тебя законам войны.
+2023/02/25 22:32:02 26932203 cffb0734 [INFO Client 6412] #ghhhtt: Спасение от огня продам или обмен 
+2023/02/25 22:32:42 26972656 cffb0734 [INFO Client 6412] Грех: Тукохама!
+2023/02/25 22:32:49 26979671 cffb0734 [INFO Client 6412] Грех: Земле больше не нужна твоя кровь.
+2023/02/25 22:33:47 27037500 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 22:33:47 27037500 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 22:33:47 27037500 ca3a6a7f [INFO Client 6412] Connecting to instance server at 159.122.142.248:6112
+2023/02/25 22:33:47 27037562 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 46ms
+2023/02/25 22:33:47 27037609 1186a0e3 [DEBUG Client 6412] Generating level 46 area "2_6_6" with seed 3219783995
+2023/02/25 22:33:48 27038390 f22b6987 [INFO Client 6412] Tile hash: 2095465726
+2023/02/25 22:33:48 27038390 f22b6986 [INFO Client 6412] Doodad hash: 2137255718
+2023/02/25 22:33:49 27039156 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 22:33:50 27040015 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Хребет.
+2023/02/25 22:33:51 27040906 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 22:34:06 27056625 cffb0734 [INFO Client 6412] #Metariana: Карта музея Карта усыпальницы обмен, надо Плато
+2023/02/25 22:34:08 27057703 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: Множество тотемов 1a . кто тут искал недавно ?
+2023/02/25 22:35:05 27115593 cffb0734 [INFO Client 6412] #Metariana: Карта чащи обмен на Арханид нест или Спайдер лейер
+2023/02/25 22:35:22 27132578 cffb0734 [INFO Client 6412] #Pognalicho: Презрение Доэдре, Диадема Лунарис 2а
+2023/02/25 22:36:38 27208343 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: Драконья песнь, Рапира ваал кек . палка ковырялка . с виду красиво но насрано
+2023/02/25 22:36:57 27227312 cffb0734 [INFO Client 6412] #Халк_Крушитб: Захватывающий Бирюзовый самоцвет укрытия
+2023/02/25 22:37:14 27244515 cffb0734 [INFO Client 6412] #НиНадоДядя: убьет кто дуба?
+2023/02/25 22:37:26 27256031 cffb0734 [INFO Client 6412] #<STNS> XCREWEN_XXX: Карта мысаобмен
+2023/02/25 22:37:50 27280500 cffb0734 [INFO Client 6412] #ЛучницаКурица: Победная корона, Клювастый бацинет норм такая голова
+2023/02/25 22:38:14 27303859 cffb0734 [INFO Client 6412] #Metariana: Карта музея Карта усыпальницы обмен на плато
+2023/02/25 22:38:43 27333375 cffb0734 [INFO Client 6412] #Bimba_bumba_R: Сфера царей я богат
+2023/02/25 22:38:43 27333593 cffb0734 [INFO Client 6412] #Horse_Lollipop: Сфера хаоса ого насыпочка 4акт
+2023/02/25 22:38:46 27336265 cffb0734 [INFO Client 6412] #Дробление_Мизинца: Цветная сфера продам 1 к 25
+2023/02/25 22:38:58 27348375 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 22:38:58 27348375 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 22:38:58 27348375 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.138:6112
+2023/02/25 22:38:58 27348437 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 22:38:58 27348484 1186a0e3 [DEBUG Client 6412] Generating level 47 area "2_6_7_1" with seed 3929348121
+2023/02/25 22:38:59 27349250 f22b6987 [INFO Client 6412] Tile hash: 168024668
+2023/02/25 22:38:59 27349250 f22b6986 [INFO Client 6412] Doodad hash: 808225725
+2023/02/25 22:38:59 27349687 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 22:39:00 27350484 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Тюремное подземелье.
+2023/02/25 22:39:01 27351218 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 22:39:56 27406328 cffb0734 [INFO Client 6412] #amoba_asas: Пыл Синвикты, Топор эзомита 5 alh
+2023/02/25 22:39:57 27407234 cffb0734 [INFO Client 6412] #Халк_Крушитб: Касание порчи алхим
+2023/02/25 22:40:01 27411687 cffb0734 [INFO Client 6412] #quillx: Урон приспешников1a
+2023/02/25 22:40:46 27456546 cffb0734 [INFO Client 6412] #NoItemsBuild: Холодная ненависть продам
+2023/02/25 22:41:03 27472750 cffb0734 [INFO Client 6412] #xhix_card: выменяю урон отгорения есть_ обреченность,путы времени, берс,укреп,ускор атак,урон приспешников
+2023/02/25 22:41:16 27486265 cffb0734 [INFO Client 6412] #Геродан: Щит бури о пог
+2023/02/25 22:41:21 27491234 cffb0734 [INFO Client 6412] : DeeFiera был повержен.
+2023/02/25 22:41:30 27500187 cffb0734 [INFO Client 6412] #quillx: выменяю это что означает? тебе это надо или ты хочешь что то взамен
+2023/02/25 22:41:41 27511453 cffb0734 [INFO Client 6412] #RuthDionis: Карта едких пещер поменяю на другую Т5 карту
+2023/02/25 22:41:59 27529359 cffb0734 [INFO Client 6412] #КатВернисьЯВсёПрощу: ищу thiket t5
+2023/02/25 22:42:06 27536421 cffb0734 [INFO Client 6412] #Horse_Lollipop: подскажите цену хоас орба
+2023/02/25 22:42:09 27538984 cffb0734 [INFO Client 6412] #КатВернисьЯВсёПрощу: или т4 она
+2023/02/25 22:42:25 27554765 cffb0734 [INFO Client 6412] #KongOldButNoBald: Отражающая Карта дома с привидениями на другую желтую плз 
+2023/02/25 22:42:53 27582781 cffb0734 [INFO Client 6412] #<NSGC> РокВнучка: Карта гробницы изматывания обмен на плоскогорье, усыпальницу
+2023/02/25 22:43:06 27595750 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 22:43:06 27595750 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 22:43:06 27595750 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.176:6112
+2023/02/25 22:43:06 27595812 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 46ms
+2023/02/25 22:43:06 27595859 1186a0e3 [DEBUG Client 6412] Generating level 47 area "2_6_7_2" with seed 2141596990
+2023/02/25 22:43:07 27597250 f22b6987 [INFO Client 6412] Tile hash: 1635880287
+2023/02/25 22:43:07 27597250 f22b6986 [INFO Client 6412] Doodad hash: 329631270
+2023/02/25 22:43:08 27597875 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 22:43:09 27598703 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Башня Шавронн.
+2023/02/25 22:43:09 27599593 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 22:43:26 27615765 cffb0734 [INFO Client 6412] #Таблетка_Темпалгина: Щит бури продам, в лс
+2023/02/25 22:43:36 27626265 cffb0734 [INFO Client 6412] #Геродан: Неистовый поход, Клёпаные башмаки кому хп надо? жаль без скорости только
+2023/02/25 22:44:03 27653078 cffb0734 [INFO Client 6412] #BarbariskIsSaratova: Анархический бег, Ботинки из чешуи гадюки нам и так хорошо
+2023/02/25 22:44:04 27654015 cffb0734 [INFO Client 6412] #amoba_asas: Пыл Синвикты, Топор эзомита 4 fалхимоса секси топор великолепный отличный хороший 
+2023/02/25 22:44:19 27668906 cffb0734 [INFO Client 6412] #amoba_asas: купите пжпжпжп
+2023/02/25 22:44:32 27681703 cffb0734 [INFO Client 6412] #<GTC> BaklashkaSvetlogo: Крылья энтропии, Топор эзомита этот то топор за 3 алхимы брать не хотят...
+2023/02/25 22:44:54 27703718 cffb0734 [INFO Client 6412] #BarbariskIsSaratova: ну так себе топор
+2023/02/25 22:44:59 27709609 cffb0734 [INFO Client 6412] #BarbariskIsSaratova: 2 трансмутки стоит
+2023/02/25 22:45:00 27710265 cffb0734 [INFO Client 6412] #quillx: около 200 человек прошли акты. Как вы думаете сколько из них играет физ билдами?)
+2023/02/25 22:45:23 27733062 cffb0734 [INFO Client 6412] #WFRPL: Какой курс сейчас алхимка - хаос?
+2023/02/25 22:45:43 27753468 cffb0734 [INFO Client 6412] #Bimba_bumba_R: Дополнительные снаряды надо кому?
+2023/02/25 22:46:03 27773640 cffb0734 [INFO Client 6412] #Metariana: Карта пирамиды ваал обмен на Арахнид нест
+2023/02/25 22:46:14 27783812 cffb0734 [INFO Client 6412] #Дробление_Мизинца: +
+2023/02/25 22:46:47 27817046 cffb0734 [INFO Client 6412] #YotzurRuthless: Гипнотический покровитель, Халат мага Серная звезда, Маска богоубийцы
+2023/02/25 22:46:58 27828578 cffb0734 [INFO Client 6412] #Дробление_Мизинца: +
+2023/02/25 22:48:15 27905000 cffb0734 [INFO Client 6412] : DeeFiera (Маг стихий) достигает 55 уровня
+2023/02/25 22:48:28 27918453 fb7abca5 [INFO Client 6412] Successfully allocated passive skill id: player_and_minion_notable2236, name: Праведная армия
+2023/02/25 22:49:23 27972875 cffb0734 [INFO Client 6412] #ONceedoEsntcount: умрём)
+2023/02/25 22:49:27 27977500 cffb0734 [INFO Client 6412] #JustTimeToRuthless: жа и пох
+2023/02/25 22:51:30 28100046 cffb0734 [INFO Client 6412] #Дробление_Мизинца: +
+2023/02/25 22:52:18 28148390 cffb0734 [INFO Client 6412] #SotofaHanemer: Фанатизм меняю на грацию
+2023/02/25 22:52:22 28152390 cffb0734 [INFO Client 6412] #KiraOoRuthCardLea: Мучимое пристанище, Императорский баклер Жаль ХП нет(
+2023/02/25 22:52:29 28159421 cffb0734 [INFO Client 6412] #NoItemsBuild: Холодная ненависть продам
+2023/02/25 22:52:38 28168109 cffb0734 [INFO Client 6412] : DeeFiera был повержен.
+2023/02/25 22:52:51 28181296 cffb0734 [INFO Client 6412] #ONceedoEsntcount: Ненавистная привязь, Ремень
+2023/02/25 22:53:01 28191437 cffb0734 [INFO Client 6412] #Дробление_Мизинца: продам 50 хроматиков за 2 алх
+2023/02/25 22:53:09 28199312 cffb0734 [INFO Client 6412] #ONceedoEsntcount: ох уж это переключение чатов после релога в группе -_-
+2023/02/25 22:53:16 28206265 cffb0734 [INFO Client 6412] #Ruthless_Shuerick: Благой стражник, Звёздные латы отдам
+2023/02/25 22:53:22 28211843 cffb0734 [INFO Client 6412] #<‡TR‡> Kuk___: Знамя страха предлы
+2023/02/25 22:54:14 28264468 cffb0734 [INFO Client 6412] #<•GIRL•> BAx_bbabax: Контролируемое разрушение 2.5a
+2023/02/25 22:54:20 28270375 cffb0734 [INFO Client 6412] #<NSGC> РокВнучка: Карта лаборатории высокого качества обменяю на трясину, храм, подворье, зернохранилище, храм слоновой кости
+2023/02/25 22:55:27 28337593 cffb0734 [INFO Client 6412] #iAdis: ty
+2023/02/25 22:55:52 28361843 cffb0734 [INFO Client 6412] #БеспощадныйСлай: Касание Садимы, Шерстяные перчатки эй, мферы)
+2023/02/25 22:56:46 28415921 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 22:56:46 28415937 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 22:56:46 28415937 ca3a6a7f [INFO Client 6412] Connecting to instance server at 159.122.142.233:6112
+2023/02/25 22:56:46 28415984 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 22:56:46 28416046 1186a0e3 [DEBUG Client 6412] Generating level 47 area "2_6_8" with seed 444681229
+2023/02/25 22:56:48 28417734 f22b6987 [INFO Client 6412] Tile hash: 333520854
+2023/02/25 22:56:48 28417734 f22b6986 [INFO Client 6412] Doodad hash: 2966637801
+2023/02/25 22:56:48 28418109 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 22:56:49 28418890 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Врата заключённых.
+2023/02/25 22:56:50 28419781 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 22:56:57 28426859 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 22:56:57 28426859 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 22:56:57 28426859 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.176:6112
+2023/02/25 22:56:57 28426937 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 47ms
+2023/02/25 22:56:57 28426984 1186a0e3 [DEBUG Client 6412] Generating level 50 area "2_6_town" with seed 1
+2023/02/25 22:56:58 28427812 f22b6987 [INFO Client 6412] Tile hash: 1591518971
+2023/02/25 22:56:58 28427812 f22b6986 [INFO Client 6412] Doodad hash: 0
+2023/02/25 22:56:58 28427984 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 22:56:58 28428640 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/25 22:56:59 28429343 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 22:57:21 28450828 cffb0734 [INFO Client 6412] #WFRPL: Сильный Средний кластерный самоцвет урон горения (5) продам
+2023/02/25 22:58:41 28530906 cffb0734 [INFO Client 6412] #__Трисс__: Роковой свод, Маска равнодушия это ценится?
+2023/02/25 22:58:59 28549375 cffb0734 [INFO Client 6412] : Сделка совершена.
+2023/02/25 22:59:03 28553406 cffb0734 [INFO Client 6412] #ДедВрф: Колючие перчатки нужны кому? 
+2023/02/25 22:59:21 28571640 cffb0734 [INFO Client 6412] #сЛизер: есть кто дыроколы продаёт???Киньте курс
+2023/02/25 22:59:24 28574671 cffb0734 [INFO Client 6412] #SotofaHanemer: Леденящее охлаждение меняю на эффективность
+2023/02/25 23:00:51 28660703 cffb0734 [INFO Client 6412] #<NSGC> РокВнучка: [устаревшая ссылка]Карта лаборатории высокого качества‌ обменяю на трясину, храм, подворье, зернохранилище, храм слоновой кости
+2023/02/25 23:00:55 28665343 cffb0734 [INFO Client 6412] #quillx: Значимый Средний кластерный самоцвет опа, интересует?
+2023/02/25 23:01:02 28672250 cffb0734 [INFO Client 6412] #WFRPL: Заражённая Карта лавового озера Блайт мапки пошли
+2023/02/25 23:01:10 28680312 cffb0734 [INFO Client 6412] #<V13> Kareninana: куплю 5л армор/ес 12алч
+2023/02/25 23:02:22 28752406 cffb0734 [INFO Client 6412] #<[FLO™]> Ncelau: Искривлённый: Вдохновение 
+2023/02/25 23:02:53 28783281 cffb0734 [INFO Client 6412] #quillx: опа, а вот это пог. Но 200 человек :) из которых играет крит билдами.... ммм человек 10?)
+2023/02/25 23:03:22 28812437 cffb0734 [INFO Client 6412] #Халк_Крушитб: Щедрость Грозовой взрыв
+2023/02/25 23:03:27 28817140 cffb0734 [INFO Client 6412] #<•GIRL•> BAx_bbabax: Оковы убогих, Кольчужные перчатки
+2023/02/25 23:03:46 28836640 cffb0734 [INFO Client 6412] #сЛизер: куплю златокузнецы курс в личку
+2023/02/25 23:04:03 28853312 cffb0734 [INFO Client 6412] #art_is_really_big_booom: Концентрация стихий 4a
+2023/02/25 23:04:22 28872625 cffb0734 [INFO Client 6412] #<STNS> pumQa_ruthless_TR: поменяю любую т3 на кальдеру
+2023/02/25 23:04:27 28876687 cffb0734 [INFO Client 6412] #КатВернисьЯВсёПрощу: парадайз т1 фри
+2023/02/25 23:06:40 29010093 cffb0734 [INFO Client 6412] : Вы получили очко пассивных умений.
+2023/02/25 23:07:00 29030281 cffb0734 [INFO Client 6412] : Сделка совершена.
+2023/02/25 23:07:12 29041734 fb7abca5 [INFO Client 6412] Successfully allocated passive skill id: ignite_chance1651, name: Множитель урона от горения
+2023/02/25 23:07:50 29080156 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 23:07:50 29080156 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 23:07:50 29080156 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.153:6112
+2023/02/25 23:07:50 29080218 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 23:07:50 29080265 1186a0e3 [DEBUG Client 6412] Generating level 47 area "2_6_8" with seed 1391285856
+2023/02/25 23:07:50 29080515 f22b6987 [INFO Client 6412] Tile hash: 3797367785
+2023/02/25 23:07:50 29080515 f22b6986 [INFO Client 6412] Doodad hash: 3903728265
+2023/02/25 23:07:51 29081140 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 23:07:52 29082000 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Врата заключённых.
+2023/02/25 23:07:53 29082765 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 23:08:02 29091921 cffb0734 [INFO Client 6412] #ДедВрф: Сфера раскаяния респекаемся. из кринжа в кринж
+2023/02/25 23:08:10 29100031 cffb0734 [INFO Client 6412] #<HELENE> KottoAmatukamiSS:  жижа? Тысячезубый Тему, Баклер ваал
+2023/02/25 23:08:15 29104796 cffb0734 [INFO Client 6412] #SotofaHanemer: Леденящее охлаждение Фанатизм Воспламенение 2a
+2023/02/25 23:08:31 29121625 cffb0734 [INFO Client 6412] #privatshadoy: Метка алхимика
+2023/02/25 23:09:53 29202718 cffb0734 [INFO Client 6412] #Bzka_Priv: Продам по 1а - Колдовской выброс Обречённость Интенсивность
+2023/02/25 23:10:19 29229609 cffb0734 [INFO Client 6412] #KongOldButNoBald:  еще одна попытачка Жажда душ, Матерчатый пояс + Божественная сфера
+2023/02/25 23:10:25 29235515 cffb0734 [INFO Client 6412] #KongOldButNoBald: Жажда душ, Матерчатый пояс
+2023/02/25 23:10:53 29263156 cffb0734 [INFO Client 6412] #Tortoise_Ruthless: уже лучше
+2023/02/25 23:11:05 29275375 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: что лучше взять первым на бш, генерацию эндуриков или дабл армор?
+2023/02/25 23:11:39 29308937 cffb0734 [INFO Client 6412] #NoItemsBuild: эндюрики
+2023/02/25 23:11:39 29309359 cffb0734 [INFO Client 6412] #<•GIRL•> BAx_bbabax: endurance с дерева берутся
+2023/02/25 23:11:49 29319609 cffb0734 [INFO Client 6412] #<•GIRL•> BAx_bbabax: нафиг их в ассенденси
+2023/02/25 23:12:06 29336406 cffb0734 [INFO Client 6412] #Дробление_Мизинца: бери неустанный
+2023/02/25 23:12:08 29338156 cffb0734 [INFO Client 6412] #<•GIRL•> BAx_bbabax: аккураси, антистан, либо реген
+2023/02/25 23:12:54 29383968 cffb0734 [INFO Client 6412] #BankiHarti: Подношение богине поGнали
+2023/02/25 23:13:04 29393968 cffb0734 [INFO Client 6412] #uDAVich: Вечная ярость Конгора, Чудовищный молот с такой палкой можно акураси не брать
+2023/02/25 23:13:18 29408218 cffb0734 [INFO Client 6412] #uDAVich: взять реген
+2023/02/25 23:13:20 29410015 cffb0734 [INFO Client 6412] : DeeFiera был повержен.
+2023/02/25 23:14:19 29468718 cffb0734 [INFO Client 6412] : DeeFiera был повержен.
+2023/02/25 23:14:55 29505562 cffb0734 [INFO Client 6412] #ДедВрф: пожиратель душ, создает стену льда и сбегает
+2023/02/25 23:15:01 29511046 cffb0734 [INFO Client 6412] #ДедВрф: противная тварь
+2023/02/25 23:15:03 29512984 cffb0734 [INFO Client 6412] #<•GIRL•> Прыг_скок_снашающегося: ретяба
+2023/02/25 23:15:04 29514015 cffb0734 [INFO Client 6412] Грех: Абберат!
+2023/02/25 23:15:05 29515250 cffb0734 [INFO Client 6412] #<•GIRL•> Прыг_скок_снашающегося: смотрите
+2023/02/25 23:15:06 29516375 cffb0734 [INFO Client 6412] #<[FLO™]> Ncelau: Копия Меха Фаррул, Пластинчатый доспех триумфатора
+2023/02/25 23:15:08 29517812 cffb0734 [INFO Client 6412] #<•GIRL•> Прыг_скок_снашающегося: что выбил
+2023/02/25 23:15:10 29519953 cffb0734 [INFO Client 6412] #<•GIRL•> Прыг_скок_снашающегося: мой друг
+2023/02/25 23:15:11 29520796 cffb0734 [INFO Client 6412] #<GTC> BaklashkaSvetlogo: Заражённая Карта заросшей обители Заражённая Карта некрополя ну всё,ща разжируюсь
+2023/02/25 23:15:11 29521031 cffb0734 [INFO Client 6412] Грех: Теперь твоя жажда утолена.
+2023/02/25 23:15:13 29523125 cffb0734 [INFO Client 6412] #<•GIRL•> BAx_bbabax: ахуеть
+2023/02/25 23:15:18 29528093 cffb0734 [INFO Client 6412] #КатВернисьЯВсёПрощу: кек
+2023/02/25 23:15:21 29530937 cffb0734 [INFO Client 6412] #БезжалостныйКусь: whaaaat
+2023/02/25 23:15:23 29532890 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: неплохо )
+2023/02/25 23:15:24 29533906 cffb0734 [INFO Client 6412] #БезжалостныйКусь: gz
+2023/02/25 23:15:25 29535406 cffb0734 [INFO Client 6412] #BleedItHard: граац!
+2023/02/25 23:15:30 29540375 cffb0734 [INFO Client 6412] #ZavStas_Ruthless: гц
+2023/02/25 23:15:40 29550390 cffb0734 [INFO Client 6412] #Perin_gonka: Боевой раж Быстрая сборка Перегрузка продам
+2023/02/25 23:15:45 29555640 cffb0734 [INFO Client 6412] #БеспощадныйСлай: даю 2 алхимки
+2023/02/25 23:15:58 29568187 cffb0734 [INFO Client 6412] #<NSGC> РокВнучка: грац!
+2023/02/25 23:16:11 29580968 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 23:16:11 29580984 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 23:16:11 29580984 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.167:6112
+2023/02/25 23:16:11 29581046 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 47ms
+2023/02/25 23:16:11 29581109 1186a0e3 [DEBUG Client 6412] Generating level 48 area "2_6_9" with seed 2768077527
+2023/02/25 23:16:13 29582796 f22b6987 [INFO Client 6412] Tile hash: 543213852
+2023/02/25 23:16:13 29582796 f22b6986 [INFO Client 6412] Doodad hash: 3951920056
+2023/02/25 23:16:13 29583546 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 23:16:14 29584390 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Западный лес.
+2023/02/25 23:16:15 29585265 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 23:16:36 29605718 cffb0734 [INFO Client 6412] #<NSGC> РокВнучка: Клинок эзомита отдам за 10 кузнецов
+2023/02/25 23:16:50 29620328 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: заберу за 5
+2023/02/25 23:16:52 29621906 cffb0734 [INFO Client 6412] #KongOldButNoBald:  отдай вендору за 7
+2023/02/25 23:16:54 29624640 118717e5 [DEBUG Client 6412] Resyncing 1305
+2023/02/25 23:17:03 29633031 cffb0734 [INFO Client 6412] #<NSGC> РокВнучка: отдать успею
+2023/02/25 23:17:57 29687421 cffb0734 [INFO Client 6412] #Perin_gonka: куплю минен демедж или спид
+2023/02/25 23:18:02 29692328 cffb0734 [INFO Client 6412] #ЛучницаКурица: А тело вообще будет работать то? аспект кота откуда взять
+2023/02/25 23:18:15 29704859 cffb0734 [INFO Client 6412] #<[FLO™]> Pepeshon: поймать зверя
+2023/02/25 23:18:20 29710281 cffb0734 [INFO Client 6412] #uDAVich: нужно делв бегать или зверя хапнуть
+2023/02/25 23:18:35 29725203 cffb0734 [INFO Client 6412] #<•GIRL•> Прыг_скок_снашающегося: с сундуков синдиката как ваирант
+2023/02/25 23:18:46 29736218 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: поймай кота . принеси в зверинец панину
+2023/02/25 23:18:55 29744890 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 23:18:55 29744890 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 23:18:55 29744890 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.169:6112
+2023/02/25 23:18:55 29744937 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 23:18:55 29745000 1186a0e3 [DEBUG Client 6412] Generating level 48 area "2_6_10" with seed 1005336314
+2023/02/25 23:18:56 29746312 f22b6987 [INFO Client 6412] Tile hash: 4185648840
+2023/02/25 23:18:56 29746312 f22b6986 [INFO Client 6412] Doodad hash: 1919569936
+2023/02/25 23:18:57 29747171 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 23:18:58 29748078 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пойма реки.
+2023/02/25 23:18:58 29748562 cffb0734 [INFO Client 6412] #RybyBybyNyaNyaNya: он используя кольцо покажет фокус
+2023/02/25 23:18:59 29749015 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 23:19:04 29753718 cffb0734 [INFO Client 6412] #art_is_really_big_booom: а какой курс фузов к алхимкам?
+2023/02/25 23:19:09 29759328 cffb0734 [INFO Client 6412] #<GTC> BaklashkaSvetlogo: Нежелающая поступь, Поножи великана
+2023/02/25 23:19:09 29759468 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: Топор вельможи каво
+2023/02/25 23:19:25 29775343 cffb0734 [INFO Client 6412] : DeeFiera был повержен.
+2023/02/25 23:20:25 29834703 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: Топор вельможи есть у кого 5линк булава?)
+2023/02/25 23:20:46 29855968 cffb0734 [INFO Client 6412] #iAdis: там 4 линка
+2023/02/25 23:20:49 29858781 cffb0734 [INFO Client 6412] #BleedItHard: Костя, это 4линк
+2023/02/25 23:20:51 29860796 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: а да?
+2023/02/25 23:20:54 29863906 cffb0734 [INFO Client 6412] #<CÔR> ArtaEva_Cardiff_Scion: Узы служения, Широкий ремень =)
+2023/02/25 23:20:58 29868546 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: сек, я за лупой пойду
+2023/02/25 23:21:03 29873640 cffb0734 [INFO Client 6412] #Metariana: заебись, хак теперь зеалотри раздает)
+2023/02/25 23:21:30 29899828 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: бля, реально 4 линк
+2023/02/25 23:21:33 29903500 cffb0734 [INFO Client 6412] #<GTC> BaklashkaSvetlogo: Фиолетовое масло может кто продать?
+2023/02/25 23:21:38 29908125 cffb0734 [INFO Client 6412] #<4GO10®> Yrekotra: _ продам 3 алх
+2023/02/25 23:21:38 29908625 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: соррян, там текстурка топора такая, что похожа на линку
+2023/02/25 23:21:52 29922187 cffb0734 [INFO Client 6412] #<4GO10®> Yrekotra: Вестник чистоты
+2023/02/25 23:22:03 29933531 cffb0734 [INFO Client 6412] #iAdis: на землю швырни там нет текстурки)
+2023/02/25 23:22:24 29954140 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: даа, век живи - век учись
+2023/02/25 23:22:49 29978843 cffb0734 [INFO Client 6412] #laSecond__srs:  чач, сферы соединения - есть у кого? нада
+2023/02/25 23:23:02 29992468 cffb0734 [INFO Client 6412] #art_is_really_big_booom: есть 2
+2023/02/25 23:23:30 30019843 cffb0734 [INFO Client 6412] #NoItemsBuild: Плачущая сущность страха Вопящая сущность страдания по 1 алхимке
+2023/02/25 23:23:37 30027250 cffb0734 [INFO Client 6412] #Ruthless__Morte: Разрушительный убийца, Рукоруб
+2023/02/25 23:23:47 30037078 cffb0734 [INFO Client 6412] #<[FLO™]> Ncelau: Копия Меха Фаррул, Пластинчатый доспех триумфатора поменяю на детерму
+2023/02/25 23:24:21 30071031 cffb0734 [INFO Client 6412] #<<†>> Vortalin: Полный доспех из чешуи дракона
+2023/02/25 23:24:38 30088484 cffb0734 [INFO Client 6412] #eblobildtwo: как скинуть камень в ч ат?
+2023/02/25 23:24:39 30089031 cffb0734 [INFO Client 6412] #wannabeBugatti: Раскатистый удар поменяю
+2023/02/25 23:25:08 30118093 cffb0734 [INFO Client 6412] #<RiPE> КАРГА_ВяЛАЯ: Чин Сол, Лук убийцы
+2023/02/25 23:25:09 30118828 cffb0734 [INFO Client 6412] #WFRPL: Бля, конечно совсем другая игра. Чел с лиги зайдет, и увидит что реплику фарулла меняют на камень обычный)
+2023/02/25 23:25:09 30119265 cffb0734 [INFO Client 6412] #Marlo_CARD: Бушующий скорпион, Железный лук
+2023/02/25 23:26:11 30180937 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: да чего уж там, я бы ахуел, просто увидев, что челы покупают решимость за 20 алхимок, ему говорят, что мало, а он ахуевает, где взять 60 алхимок
+2023/02/25 23:26:24 30194234 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: трихуй
+2023/02/25 23:26:26 30196546 cffb0734 [INFO Client 6412] #art_is_really_big_booom: Обжигающая Карта лавового озера смертности хочет кто рипнуться?)
+2023/02/25 23:26:37 30206890 cffb0734 [INFO Client 6412] #Red_sT: Самоделка Саффелла, Каплевидный щит с символом обмен на решимость/25a
+2023/02/25 23:26:50 30220031 cffb0734 [INFO Client 6412] #uDAVich: бля такие сука жадюги 60 алхимок за решимость?
+2023/02/25 23:26:55 30225296 cffb0734 [INFO Client 6412] #сЛизер: охуеть сафел уже подъехал
+2023/02/25 23:27:04 30233750 cffb0734 [INFO Client 6412] #uDAVich: в рожу с ноги бы прописал казлам
+2023/02/25 23:27:15 30244968 cffb0734 [INFO Client 6412] #wannabeBugatti: Рокочущий Прогнивший скипетр поменяю на +1 к огню
+2023/02/25 23:27:24 30254312 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: решимость сейчас, по сути, самый дорогий камешек
+2023/02/25 23:27:37 30266796 cffb0734 [INFO Client 6412] #JenkiRymo_Grandpa: ,
+2023/02/25 23:27:42 30272015 cffb0734 [INFO Client 6412] #сЛизер: не считая энлайтена
+2023/02/25 23:27:46 30275812 cffb0734 [INFO Client 6412] #uDAVich: как будто они получив 60 алхимок сразу станут арабскими шейхами с млрдами денег
+2023/02/25 23:28:03 30293640 cffb0734 [INFO Client 6412] #wannabeBugatti: скока хаос орб стоит?
+2023/02/25 23:28:10 30300359 cffb0734 [INFO Client 6412] : DeeFiera (Маг стихий) достигает 56 уровня
+2023/02/25 23:28:15 30304828 cffb0734 [INFO Client 6412] #wannabeBugatti: в алхимках?
+2023/02/25 23:28:17 30307562 cffb0734 [INFO Client 6412] #KongOldButNoBald: 0.5а
+2023/02/25 23:28:22 30311921 cffb0734 [INFO Client 6412] #wannabeBugatti: спасибо
+2023/02/25 23:28:34 30324062 cffb0734 [INFO Client 6412] #<VOID°> Solya_Card: Надо больше чатиться, больше страдать в чате, тогда хватит алхимок на решимость :-)
+2023/02/25 23:28:37 30327562 cffb0734 [INFO Client 6412] #Геродан: Воровская мука, Радужное кольцо сколько стоит такое?
+2023/02/25 23:28:44 30333984 cffb0734 [INFO Client 6412] #Metariana: 1с - 2а
+2023/02/25 23:29:08 30358687 cffb0734 [INFO Client 6412] #WFRPL: а не наоборот? хаосы дороже алхимок уже разве?
+2023/02/25 23:29:11 30360812 cffb0734 [INFO Client 6412] #uDAVich: пппф, видимо Соля это тот кто продаёт?
+2023/02/25 23:29:12 30361687 cffb0734 [INFO Client 6412] #Геродан: за 36 ко всем резам и сустейн маны?
+2023/02/25 23:29:19 30369609 cffb0734 [INFO Client 6412] #<ÙÏÏÏÏ> подлива_не_всегда_еда: Карта серного озера высокого качества на другую т6
+2023/02/25 23:29:24 30374234 cffb0734 [INFO Client 6412] #сЛизер: кто на руле играет Штурвал Бурехода, Прогнивший круглый щит
+2023/02/25 23:29:28 30377953 cffb0734 [INFO Client 6412] #<<†>> Vortalin: Заряженные ловушки
+2023/02/25 23:29:43 30392984 cffb0734 [INFO Client 6412] #laSecond__srs:  хаосы в обычной лиге дороже алхимок, а тут хаосы нафиг не сдались
+2023/02/25 23:29:57 30407593 cffb0734 [INFO Client 6412] #zqbq: куплю гидросферу 1а
+2023/02/25 23:30:00 30409796 cffb0734 [INFO Client 6412] #mozenthor_toxic_rain: Искривлённый: Вестник агонии2а
+2023/02/25 23:30:03 30412953 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: увидел руль и прослезился, мы с другом, когда впервые зашли в пое в 3.18, нашим первым уником был руль...
+2023/02/25 23:30:05 30415187 cffb0734 [INFO Client 6412] #iAdis: это пока у тебя не появился 6 линк
+2023/02/25 23:30:21 30431281 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: мы тогда радовались, думали, что дорогой и как делить будем
+2023/02/25 23:30:27 30437343 cffb0734 [INFO Client 6412] #WFRPL: Стремительный недуг - 2 а
+2023/02/25 23:30:53 30462843 fb7abca5 [INFO Client 6412] Successfully allocated passive skill id: fire_damage331, name: Множитель урона от горения
+2023/02/25 23:30:57 30467312 cffb0734 [INFO Client 6412] #Metariana: Беспамятный панцирь, Бригандина командира 2а
+2023/02/25 23:31:37 30507250 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 23:31:37 30507250 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 23:31:37 30507250 ca3a6a7f [INFO Client 6412] Connecting to instance server at 159.122.142.252:6112
+2023/02/25 23:31:37 30507312 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 23:31:37 30507359 1186a0e3 [DEBUG Client 6412] Generating level 48 area "2_6_11" with seed 293683213
+2023/02/25 23:31:39 30508875 f22b6987 [INFO Client 6412] Tile hash: 393593108
+2023/02/25 23:31:39 30508875 f22b6986 [INFO Client 6412] Doodad hash: 1468420502
+2023/02/25 23:31:39 30509296 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 23:31:40 30510093 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Топь.
+2023/02/25 23:31:41 30510921 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 23:32:34 30564578 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: Благодатная сфера хуйня или 1а?
+2023/02/25 23:32:37 30567203 118717e5 [DEBUG Client 6412] Resyncing 1270
+2023/02/25 23:32:44 30573890 cffb0734 [INFO Client 6412] #<GTC> BaklashkaSvetlogo: Возбуждение шишка встала. на 2а
+2023/02/25 23:33:03 30593468 cffb0734 [INFO Client 6412] #Metariana: Ищу плато т3
+2023/02/25 23:34:20 30669921 cffb0734 [INFO Client 6412] #WazzaSoSlow: Сапоги беглеца
+2023/02/25 23:34:45 30695140 cffb0734 [INFO Client 6412] #сЛизер: тупой вопрос а существует сапорт камень физ в колд
+2023/02/25 23:35:03 30712921 cffb0734 [INFO Client 6412] #<VOID°> Solya_Card: хочешь тупой ответ? :-)
+2023/02/25 23:35:08 30717687 cffb0734 [INFO Client 6412] #uDAVich: не, ток со шмота конверт
+2023/02/25 23:35:09 30718890 cffb0734 [INFO Client 6412] #Геродан: существует в молнию а потом кольцами в колд
+2023/02/25 23:35:21 30731156 cffb0734 [INFO Client 6412] #сЛизер: понял спасибо
+2023/02/25 23:35:23 30732687 cffb0734 [INFO Client 6412] #uDAVich: и в дереве ещё помойму
+2023/02/25 23:35:32 30741953 cffb0734 [INFO Client 6412] #БезжалостныйКусь: 2йного конверта нет
+2023/02/25 23:35:59 30769093 cffb0734 [INFO Client 6412] #art_is_really_big_booom: а как работает конверт если ты начинаешь конвертить больше 100%?
+2023/02/25 23:36:12 30782453 cffb0734 [INFO Client 6412] #uDAVich: не конвертит больше 100
+2023/02/25 23:36:12 30782593 cffb0734 [INFO Client 6412] #SpottyCatR: Заражённая Карта паучьего леса кидать алхимку? или не стоит? 
+2023/02/25 23:36:15 30785437 cffb0734 [INFO Client 6412] #YotzurRuthless: Мучимая кожа, Акулий полукафтан
+2023/02/25 23:36:21 30791046 cffb0734 [INFO Client 6412] #eblobildtwo: до 1000 потом обратно
+2023/02/25 23:40:17 31026765 cffb0734 [INFO Client 6412] Грех: Рюслата!
+2023/02/25 23:40:24 31033765 cffb0734 [INFO Client 6412] Грех: Оставь эту землю её истинным детям.
+2023/02/25 23:40:24 31034468 cffb0734 [INFO Client 6412] #<GTC> BaklashkaSvetlogo: Сотворение чар при смерти хД
+2023/02/25 23:40:40 31050546 cffb0734 [INFO Client 6412] #сЛизер: куплю 5л тушку инт/сила, инт/ловкость или дыроколы аkа златокузнецы
+2023/02/25 23:40:46 31056250 cffb0734 [INFO Client 6412] #uDAVich: отлично, портал купи ещё к нему xD
+2023/02/25 23:40:54 31064468 cffb0734 [INFO Client 6412] #БезжалостныйКусь: куплю грейс
+2023/02/25 23:41:11 31081375 cffb0734 [INFO Client 6412] #NoItemsBuild: Черепоголов, Шлем секутора 1alch
+2023/02/25 23:41:37 31106765 cffb0734 [INFO Client 6412] #wannabeBugatti: оффер
+2023/02/25 23:41:52 31121781 118717e5 [DEBUG Client 6412] Resyncing 999
+2023/02/25 23:42:15 31145125 cffb0734 [INFO Client 6412] #YotzurRuthless: Срочные приказы Учащение критических ударов Улучшенные ловушки
+2023/02/25 23:43:06 31196156 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 23:43:06 31196171 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 23:43:06 31196171 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.142:6112
+2023/02/25 23:43:06 31196218 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 32ms
+2023/02/25 23:43:06 31196265 1186a0e3 [DEBUG Client 6412] Generating level 48 area "2_6_10" with seed 1464442267
+2023/02/25 23:43:06 31196640 f22b6987 [INFO Client 6412] Tile hash: 3097491675
+2023/02/25 23:43:06 31196640 f22b6986 [INFO Client 6412] Doodad hash: 3847791306
+2023/02/25 23:43:07 31197312 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 23:43:08 31198140 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пойма реки.
+2023/02/25 23:43:09 31198937 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 23:43:28 31218546 cffb0734 [INFO Client 6412] #PoroxPrivate: Знамя войны Хищник Здоровье за удар на каменьш с шансом крита 3к1
+2023/02/25 23:43:34 31224531 cffb0734 [INFO Client 6412] #PoroxPrivate: Архимаг Заряженные ловушки Скорость приспешниковна каменьш с шансом крита 3к1
+2023/02/25 23:44:05 31254812 cffb0734 [INFO Client 6412] #WFRPL: то есть ты даешь эти три камня, а тебе криты?
+2023/02/25 23:44:23 31273656 cffb0734 [INFO Client 6412] #WFRPL: Представил чела который использует архимага трапы и миньонов?
+2023/02/25 23:44:30 31280109 cffb0734 [INFO Client 6412] #uDAVich: Вражеское плетение, Рог демона палка нагибалка для начинающего РФера!
+2023/02/25 23:44:49 31299203 cffb0734 [INFO Client 6412] #Metariana: Стрелы рока, Царский лук 3a
+2023/02/25 23:45:22 31332000 cffb0734 [INFO Client 6412] #<GTC> BaklashkaSvetlogo: Мордобои, Ременные перчатки
+2023/02/25 23:45:27 31337578 cffb0734 [INFO Client 6412] #CoralineCrush: Резвые Тапочки погони за мечтой ...
+2023/02/25 23:45:31 31341046 cffb0734 [INFO Client 6412] #<TOXIC!> Demigod_of_ruttless: Крутящий свод, Волчья мордапродам
+2023/02/25 23:45:47 31357625 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: Сфера ваал ебать, чуть не пропустил
+2023/02/25 23:45:51 31361171 cffb0734 [INFO Client 6412] #Metariana: Черепная дробь, Колчан зазубренных стрел 5a
+2023/02/25 23:45:56 31365718 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: зашел в северный лес, до чащобы пробежаться, а тут
+2023/02/25 23:46:15 31385312 cffb0734 [INFO Client 6412] #Главный_Талант: куплю монетки хейста
+2023/02/25 23:46:37 31407359 cffb0734 [INFO Client 6412] #ShimbaR: итого T8x17 = T9x6 и прочее
+2023/02/25 23:46:38 31408406 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: за сколько ваалки продают сейчас? 1к1 алхимке?
+2023/02/25 23:46:52 31421984 cffb0734 [INFO Client 6412] #uDAVich: наверно
+2023/02/25 23:47:05 31434843 cffb0734 [INFO Client 6412] #WFRPL: я за 2а продавал ваал
+2023/02/25 23:47:06 31436062 cffb0734 [INFO Client 6412] #Metariana: Карта музея Карта усыпальницы Карта порта Обменяю на Плато
+2023/02/25 23:47:10 31439921 cffb0734 [INFO Client 6412] #YotzurRuthless: Унылая цитадель, Колючий щит эзомита
+2023/02/25 23:47:34 31464046 cffb0734 [INFO Client 6412] #privatshadoy: Сфера очищения покупает кто?
+2023/02/25 23:48:22 31512187 cffb0734 [INFO Client 6412] #Metariana: кирак вообще начнет в этой жизни миссии давать?? уже почти все белые отбегал и 0\
+2023/02/25 23:48:31 31521421 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: эээ, нет
+2023/02/25 23:48:32 31522671 cffb0734 [INFO Client 6412] #сЛизер: куплю 5л тушку инт/сила, инт/ловкость или дыроколы аkа златокузнецы
+2023/02/25 23:48:44 31534343 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 23:48:44 31534343 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 23:48:44 31534343 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.167:6112
+2023/02/25 23:48:44 31534406 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 47ms
+2023/02/25 23:48:44 31534468 1186a0e3 [DEBUG Client 6412] Generating level 49 area "2_6_12" with seed 1419085407
+2023/02/25 23:48:45 31535531 f22b6987 [INFO Client 6412] Tile hash: 3729688644
+2023/02/25 23:48:45 31535531 f22b6986 [INFO Client 6412] Doodad hash: 3436253727
+2023/02/25 23:48:46 31536390 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 23:48:47 31537234 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Южный лес.
+2023/02/25 23:48:48 31537953 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 23:48:57 31547078 cffb0734 [INFO Client 6412] #uDAVich: кирак ушёл в запой
+2023/02/25 23:49:08 31558671 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: от безнадёги
+2023/02/25 23:49:12 31561687 cffb0734 [INFO Client 6412] #<GTC> BaklashkaSvetlogo: Ветреный кастет, Кольцо с сапфиром кто то через манастак играет?)
+2023/02/25 23:49:13 31563687 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: и больше не дает миссии
+2023/02/25 23:49:35 31585062 cffb0734 [INFO Client 6412] #RuthlessShieldBash: Карта атолла меняю на любую кроме гнёзд и берегов
+2023/02/25 23:49:38 31588031 cffb0734 [INFO Client 6412] #Metariana: то он тут стоит огурчиком
+2023/02/25 23:49:39 31589468 cffb0734 [INFO Client 6412] #<<†>> Vortalin: Черепной залп, Лук из рога
+2023/02/25 23:49:39 31589687 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: т6 мана пог манастак
+2023/02/25 23:50:00 31610562 cffb0734 [INFO Client 6412] : DeeFiera (Маг стихий) достигает 57 уровня
+2023/02/25 23:50:06 31615734 fb7abca5 [INFO Client 6412] Successfully allocated passive skill id: ignite_notable1797, name: Дыхание пламени
+2023/02/25 23:50:39 31649000 cffb0734 [INFO Client 6412] #<STNS> pumQa_ruthless_TR: Скорбная пелена, Львиная морда 
+2023/02/25 23:50:42 31652281 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: Сфера златокузнеца Сфера ваал продам по 2а
+2023/02/25 23:50:52 31662593 cffb0734 [INFO Client 6412] #Геродан: Здоровье приспешников у кого приспешники дохнут и не мешало бы их укрепить?
+2023/02/25 23:51:02 31672296 cffb0734 [INFO Client 6412] #сЛизер: каво златокузнецы по 2 а?? за штуку???
+2023/02/25 23:51:19 31688984 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: а сколько их продают? их все равно почти 0 падает
+2023/02/25 23:51:36 31706218 cffb0734 [INFO Client 6412] #RuthlessShieldBash: продам по 1 за штуку)
+2023/02/25 23:51:41 31710703 cffb0734 [INFO Client 6412] #RuthlessShieldBash: Сфера златокузнеца
+2023/02/25 23:51:59 31728921 cffb0734 [INFO Client 6412] #Ruthless_Damlin: по чем такую вещь можно продать? Касание Садимы, Шерстяные перчатки
+2023/02/25 23:52:00 31730484 cffb0734 [INFO Client 6412] #<CÔR> ArtaEva_Cardiff_Scion: Унылый разрушитель, Сехем 1a
+2023/02/25 23:52:03 31732828 cffb0734 [INFO Client 6412] #YotzurRuthless: Демоническая меткость, Сложный лук
+2023/02/25 23:52:10 31740265 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: продал ваалку, сча будет контент
+2023/02/25 23:52:14 31743937 cffb0734 [INFO Client 6412] #Чашечка_чая: Трупная шкура, Кожаный доспех короны ля какой
+2023/02/25 23:52:17 31746718 cffb0734 [INFO Client 6412] #<•GIRL•> Прыг_скок_снашающегося: Сфера златокузнеца было под 250, фига я богат был бы если бы продавал по 1/1
+2023/02/25 23:52:32 31762515 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: Большой кластерный самоцвет мне нужно топливо битвы в идеале, но пойдет любой другой физовый навык
+2023/02/25 23:52:35 31765562 cffb0734 [INFO Client 6412] #zqbq: джевелок дофига падает
+2023/02/25 23:52:37 31767062 cffb0734 [INFO Client 6412] #KongOldButNoBald:  у вендора 16к 1 на очищалку
+2023/02/25 23:52:40 31770531 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: Змеиная сущность, Большой кластерный самоцвет неплохо
+2023/02/25 23:52:42 31771953 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: очень даже
+2023/02/25 23:52:51 31781390 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: тем более я конверчу уклон в армор, так что сойдет
+2023/02/25 23:52:53 31783671 cffb0734 [INFO Client 6412] #<STNS> vot_i_vse: Сфера златокузнеца по чем там?
+2023/02/25 23:52:57 31786890 cffb0734 [INFO Client 6412] #KongOldButNoBald:  а очищалка примерно как алхимка стоит
+2023/02/25 23:53:33 31823343 cffb0734 [INFO Client 6412] #Главный_Талант: Роковой бриз, Лук убийцы 500 еле дпс
+2023/02/25 23:54:02 31852109 cffb0734 [INFO Client 6412] #Ruthless__Morte: neploho
+2023/02/25 23:54:03 31852906 118717e5 [DEBUG Client 6412] Resyncing 1751
+2023/02/25 23:54:09 31858828 cffb0734 [INFO Client 6412] #Ruthless__Morte: no nedostato4no
+2023/02/25 23:55:28 31937953 118717e5 [DEBUG Client 6412] Resyncing 2016
+2023/02/25 23:55:39 31949000 cffb0734 [INFO Client 6412] #сЛизер: Вырыватель душ, Посох эзомита я вот думаю пока остановится)))
+2023/02/25 23:56:00 31970187 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 23:56:00 31970187 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 23:56:00 31970187 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.140:6112
+2023/02/25 23:56:00 31970250 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 47ms
+2023/02/25 23:56:00 31970312 1186a0e3 [DEBUG Client 6412] Generating level 49 area "2_6_13" with seed 1416824805
+2023/02/25 23:56:00 31970406 b5a58dc1 [INFO Client 6412] Spawning discoverable Hideout HideoutCoral
+2023/02/25 23:56:02 31972375 f22b6987 [INFO Client 6412] Tile hash: 1346644782
+2023/02/25 23:56:02 31972375 f22b6986 [INFO Client 6412] Doodad hash: 254046311
+2023/02/25 23:56:03 31973328 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 23:56:04 31974156 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пещера злобы.
+2023/02/25 23:56:04 31974156 cffb0734 [INFO Client 6412] #uDAVich: звучит как билд
+2023/02/25 23:56:05 31975312 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 23:56:07 31977687 cffb0734 [INFO Client 6412] Несса: Морской Царь... Его время почти пришло. Скоро надежды... и меня не станет. Прошу... возьми это. Когда-то он развевался на мачте «Чёрного гребня» — корабля Вейлама Рота. Возьми этот флаг и брось его в пламя маяка. Это твоя единственная возможность добраться до меня и всё изменить. Больше Царю не под силу хранить подобное в тайне. Просто... такова суть вещей. Умоляю, найди нас прежде, чем...
+2023/02/25 23:56:19 31988859 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 23:56:19 31988859 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 23:56:19 31988859 ca3a6a7f [INFO Client 6412] Connecting to instance server at 169.51.201.167:6112
+2023/02/25 23:56:19 31988906 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 23:56:19 31988953 1186a0e3 [DEBUG Client 6412] Generating level 49 area "2_6_12" with seed 1419085407
+2023/02/25 23:56:19 31989109 f22b6987 [INFO Client 6412] Tile hash: 3729688644
+2023/02/25 23:56:19 31989109 f22b6986 [INFO Client 6412] Doodad hash: 3436253727
+2023/02/25 23:56:20 31989906 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 23:56:21 31990765 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Южный лес.
+2023/02/25 23:56:21 31991562 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 23:56:25 31995609 88a904ed [DEBUG Client 6412] Got Instance Details from login server
+2023/02/25 23:56:25 31995609 32759a9f [INFO Client 6412] [SHADER] Delay: OFF
+2023/02/25 23:56:25 31995609 ca3a6a7f [INFO Client 6412] Connecting to instance server at 159.122.142.252:6112
+2023/02/25 23:56:25 31995656 ca3a4dbd [DEBUG Client 6412] Connect time to instance server was 31ms
+2023/02/25 23:56:26 31995703 1186a0e3 [DEBUG Client 6412] Generating level 50 area "2_6_town" with seed 1
+2023/02/25 23:56:26 31996531 f22b6987 [INFO Client 6412] Tile hash: 1591518971
+2023/02/25 23:56:26 31996531 f22b6986 [INFO Client 6412] Doodad hash: 0
+2023/02/25 23:56:27 31996734 11870f60 [DEBUG Client 6412] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/25 23:56:27 31997453 cffb0734 [INFO Client 6412] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Застава Львиного глаза.
+2023/02/25 23:56:28 31998187 32759a9f [INFO Client 6412] [SHADER] Delay: ON
+2023/02/25 23:56:49 32019468 cffb0734 [INFO Client 6412] #<•GIRL•> BAx_bbabax: Герб рода Перандус, Матерчатый пояс 4a
+2023/02/25 23:57:24 32053968 cffb0734 [INFO Client 6412] #uDAVich: чойта 4? там резов хер на нихера, полалхимки ему цена
+2023/02/25 23:57:33 32063390 cffb0734 [INFO Client 6412] : Указанный предмет уничтожен
+2023/02/25 23:57:35 32065484 cffb0734 [INFO Client 6412] : Указанный предмет уничтожен
+2023/02/25 23:57:50 32080125 cffb0734 [INFO Client 6412] : Сделка совершена.
+2023/02/25 23:57:54 32084046 cffb0734 [INFO Client 6412] : Вы получили очко пассивных умений.
+2023/02/25 23:58:16 32106031 cffb0734 [INFO Client 6412] : Вы получили очко пассивных умений.
+2023/02/25 23:58:19 32108718 fb7abca5 [INFO Client 6412] Successfully allocated passive skill id: intelligence895, name: Интеллект
+2023/02/25 23:58:22 32112234 fb7abca5 [INFO Client 6412] Successfully allocated passive skill id: intelligence929, name: Интеллект
+2023/02/25 23:58:38 32128593 cffb0734 [INFO Client 6412] #<DKG> КостяШахтёр: Сфера соединения втс 1а
+2023/02/25 23:58:51 32141312 cffb0734 [INFO Client 6412] #<STNS> pumQa_ruthless_TR: поменяю почти любую т4 на корал руинс
+2023/02/25 23:59:01 32151562 cffb0734 [INFO Client 6412] #<Pyrkin> Aww_gntlt_crdf: Грозный гнев нужна кому?
+2023/02/25 23:59:36 32186546 fb7abd85 [INFO Client 6412] Successfully unallocated passive skill id: intelligence929, name: Интеллект
+2023/02/25 23:59:37 32187593 fb7abd85 [INFO Client 6412] Successfully unallocated passive skill id: intelligence895, name: Интеллект
+2023/02/25 23:59:40 32189703 fb7abca5 [INFO Client 6412] Successfully allocated passive skill id: energy_shield1635, name: Скорость перезарядки энергетического щита
+2023/02/25 23:59:41 32190890 cffb0734 [INFO Client 6412] #Pokemon_RTHL: Сфера ваал по 2а
+2023/02/25 23:59:41 32191062 fb7abca5 [INFO Client 6412] Successfully allocated passive skill id: mana1622, name: Мана и регенерация маны
+2023/02/25 23:59:42 32192531 cffb0734 [INFO Client 6412] #<GTC> BaklashkaSvetlogo: Кирак считается мастером?
