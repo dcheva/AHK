@@ -36185,3 +36185,4 @@ flags: 129
 2023/02/25 20:51:44 20914500 b51d610e [INFO Client 6412] [RENDER] Disable Async: 1 frames
 2023/02/25 20:52:07 20937015 890d9d5f [INFO Client 6412] Async connecting to mil01.login.pathofexile.com:20481
 2023/02/25 20:52:07 20937062 890d9cd8 [INFO Client 6412] Connected to mil01.login.pathofexile.com in 16ms.
+2023/02/25 20:52:11 20940906 88a904ed [DEBUG Client 6412] Got Instance Details from login server
