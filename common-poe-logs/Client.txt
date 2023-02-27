@@ -37620,3 +37620,464 @@ flags: 129
 2023/02/27 05:02:44 5476953 cffb0734 [INFO Client 8356] : (1 от Звезда Кишары)
 2023/02/27 05:02:44 5476953 cffb0734 [INFO Client 8356] : (1 от Любовь мертва)
 2023/02/27 05:02:44 5476953 cffb0734 [INFO Client 8356] : (1 от Легион каменитов)
+2023/02/27 12:47:46 ***** LOG FILE OPENING *****
+2023/02/27 12:47:46 535484 340884db [DEBUG Client 7268] [RENDER] StopDevice
+2023/02/27 12:47:46 535484 84a7e6f1 [INFO Client 7268] [ENGINE] Clear
+2023/02/27 12:47:46 535484 7bb5422 [INFO Client 7268] [BUNDLE2] Deinit
+2023/02/27 12:47:47 536468 509417f7 [WARN Client 7268] tool_settings.json was not found. Resetting to default settings.
+2023/02/27 12:47:47 536468 84a7e691 [INFO Client 7268] [JOB] Clear
+2023/02/27 12:47:47 536468 84a7e7bf [INFO Client 7268] [ANIMATION] Clear
+2023/02/27 12:47:47 536468 84a7e7be [INFO Client 7268] [PHYSICS] Clear
+2023/02/27 12:47:47 536468 84a7e7bd [INFO Client 7268] [SHADER] Clear
+2023/02/27 12:47:47 536468 84a7e7bc [INFO Client 7268] [ENTITY] Clear
+2023/02/27 12:47:47 536468 84a7e7bb [INFO Client 7268] [SOUND] Clear
+2023/02/27 12:47:47 536468 84a7e7ba [INFO Client 7268] [VIDEO] Clear
+2023/02/27 12:47:47 536468 84a7e7b9 [INFO Client 7268] [SCENE] Clear
+2023/02/27 12:47:47 536468 84a7e7b8 [INFO Client 7268] [GRAPH] Clear
+2023/02/27 12:47:47 536468 84a7e7b7 [INFO Client 7268] [TELEMETRY] Clear
+2023/02/27 12:47:47 536468 84a7e7b6 [INFO Client 7268] [RESOURCE] GarbageCollect
+2023/02/27 12:47:47 536468 84a7e75e [INFO Client 7268] [RESOURCE] Clear
+2023/02/27 12:47:47 536468 84a7e75b [INFO Client 7268] [RENDER] Clear
+2023/02/27 12:47:47 536468 84a7e758 [INFO Client 7268] [ENGINE] Done
+2023/02/27 12:47:52 ***** LOG FILE OPENING *****
+2023/02/27 12:47:52 541421 f95442e3 [INFO Client 8452] [STARTUP] Job Queues
+2023/02/27 12:47:52 541437 9e6a0b0a [INFO Client 8452] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/27 12:47:52 541515 9e6a1d2a [INFO Client 8452] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/27 12:47:52 541515 9e6a1363 [INFO Client 8452] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/27 12:47:52 541531 9e6a0b0a [INFO Client 8452] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/27 12:47:52 541531 9e6a1d2a [INFO Client 8452] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/27 12:47:52 541531 84a7d27d [INFO Client 8452] [ENGINE] Init
+2023/02/27 12:47:52 541531 55713145 [INFO Client 8452] [JOB] HIGH: 2
+2023/02/27 12:47:52 541531 55713145 [INFO Client 8452] [JOB] MEDIUM: 2
+2023/02/27 12:47:52 541531 55713145 [INFO Client 8452] [JOB] LOW: 2
+2023/02/27 12:47:52 541531 55713145 [INFO Client 8452] [JOB] IDLE: 1
+2023/02/27 12:47:52 541531 7bb548f [INFO Client 8452] [BUNDLE2] Init
+2023/02/27 12:47:52 541531 7bb36c4 [INFO Client 8452] [BUNDLE2] Index: Bundles2/_.index.bin
+2023/02/27 12:47:53 541875 7bb61e6 [INFO Client 8452] [BUNDLE2] File cache size: 1024
+2023/02/27 12:47:53 541875 b51d61ab [INFO Client 8452] [RENDER] Async: ON
+2023/02/27 12:47:53 541875 b51d60c8 [INFO Client 8452] [RENDER] Warmup: ON
+2023/02/27 12:47:53 541875 b51d60ce [INFO Client 8452] [RENDER] Skip: ON
+2023/02/27 12:47:53 541875 b51d60eb [INFO Client 8452] [RENDER] Throttling: ON
+2023/02/27 12:47:53 541875 32759a7a [INFO Client 8452] [SHADER] Address: http://www.pathofexile.com/tool/shader-db?a=store
+2023/02/27 12:47:53 541875 32759a70 [INFO Client 8452] [SHADER] Async: ON
+2023/02/27 12:47:53 541875 32759a9f [INFO Client 8452] [SHADER] Delay: OFF
+2023/02/27 12:47:53 541875 32759aba [INFO Client 8452] [SHADER] Limit: ON
+2023/02/27 12:47:53 541875 32759abc [INFO Client 8452] [SHADER] Warmup: ON
+2023/02/27 12:47:53 541875 327599d7 [INFO Client 8452] [SHADER] Parallel: OFF
+2023/02/27 12:47:53 541890 84a7e376 [INFO Client 8452] [ENGINE] Running Engine version 1.7.0
+2023/02/27 12:47:53 541890 47bbd15b [INFO Client 8452] [SOUND] Buffer size = 64.0 MB
+2023/02/27 12:47:53 541937 9b0d205 [INFO Client 8452] [VIDEO] Enable: ON
+2023/02/27 12:47:53 541968 84a7d2d8 [INFO Client 8452] [ENGINE] Ready
+2023/02/27 12:47:53 542031 951bc0b0 [INFO Client 8452] [STARTUP] Bundle Startup Start
+2023/02/27 12:47:53 542031 951bc057 [INFO Client 8452] [STARTUP] Bundle Startup in 8.5e-05 seconds
+2023/02/27 12:47:53 542031 951bc0b0 [INFO Client 8452] [STARTUP] Game Start
+2023/02/27 12:47:53 542296 ca86fd3f [DEBUG Client 8452] Rebuilding UI::Core properties. Current input mode = '1'
+2023/02/27 12:47:53 542609 951bc057 [INFO Client 8452] [STARTUP] Game in 0.576647 seconds
+2023/02/27 12:47:53 542609 951bc0b0 [INFO Client 8452] [STARTUP] Window Start
+2023/02/27 12:47:53 542609 9e6a0b0a [INFO Client 8452] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/27 12:47:53 542656 9e6a1d2a [INFO Client 8452] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/27 12:47:53 542656 9e6a1363 [INFO Client 8452] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/27 12:47:53 542656 9e6a0b0a [INFO Client 8452] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/27 12:47:53 542656 9e6a1d2a [INFO Client 8452] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/27 12:47:53 542687 951bc057 [INFO Client 8452] [STARTUP] Window in 0.073406 seconds
+2023/02/27 12:47:54 542703 413b61ff [DEBUG Client 8452] [GamepadManager] Initialising
+2023/02/27 12:47:54 542703 951bc0b0 [INFO Client 8452] [STARTUP] Device Start
+2023/02/27 12:47:54 542703 b51d6589 [INFO Client 8452] [RENDER] StartDevice: DirectX11
+2023/02/27 12:47:54 542921 71b2ea0 [DEBUG Client 8452] [SHADER] Load shader cache: ShaderCacheD3D11
+2023/02/27 12:47:54 543000 fafff8cf [DEBUG Client 8452] CreateSwapChain: SetFullScreenState 0
+2023/02/27 12:47:54 543000 29d4ce01 [INFO Client 8452] [D3D11] Runtime version = 11.1
+2023/02/27 12:47:54 543000 29d4ce00 [INFO Client 8452] [D3D11] Feature Level = 11.1
+2023/02/27 12:47:54 543000 29d4ce03 [INFO Client 8452] [D3D11] Driver Command Lists = NO
+2023/02/27 12:47:54 543000 29d4ce02 [INFO Client 8452] [D3D11] Driver Concurrent Creates = YES
+2023/02/27 12:47:54 543000 29d4ce05 [INFO Client 8452] [D3D11] Driver Constant Buffer Offsetting = YES
+2023/02/27 12:47:54 543187 9d4eeb40 [DEBUG Client 8452] [WINDOW] TrigggerDeviceCreate
+2023/02/27 12:47:55 543687 9d4eeba7 [DEBUG Client 8452] [WINDOW] TrigggerDeviceReset
+2023/02/27 12:47:55 543875 9d4eec8a [DEBUG Client 8452] [WINDOW] TrigggerDeviceLost
+2023/02/27 12:47:55 543875 9d4eeba7 [DEBUG Client 8452] [WINDOW] TrigggerDeviceReset
+2023/02/27 12:47:55 544156 951bc057 [INFO Client 8452] [STARTUP] Device in 1.46103 seconds
+2023/02/27 12:47:55 544156 951bc0b0 [INFO Client 8452] [STARTUP] Tencent Start
+2023/02/27 12:47:55 544156 951bc057 [INFO Client 8452] [STARTUP] Tencent in 0.000996 seconds
+2023/02/27 12:47:55 544156 951bc0b0 [INFO Client 8452] [STARTUP] Loading Start
+2023/02/27 12:47:55 544203 951bc057 [INFO Client 8452] [STARTUP] Loading in 0.04086 seconds
+2023/02/27 12:47:55 544203 951bc0b0 [INFO Client 8452] [STARTUP] DebugGUI Start
+2023/02/27 12:47:55 544203 951bc057 [INFO Client 8452] [STARTUP] DebugGUI in 2.9e-05 seconds
+2023/02/27 12:47:55 544203 951bc0b0 [INFO Client 8452] [STARTUP] Bundle Tiny Start
+2023/02/27 12:47:55 544203 951bc0b0 [INFO Client 8452] [STARTUP] Bundle Login Start
+2023/02/27 12:47:55 544203 951bc057 [INFO Client 8452] [STARTUP] Bundle Login in 3.2e-05 seconds
+2023/02/27 12:47:55 544203 951bc0b0 [INFO Client 8452] [STARTUP] Registration Start
+2023/02/27 12:47:55 544203 951bc057 [INFO Client 8452] [STARTUP] Bundle Tiny in 8.1e-05 seconds
+2023/02/27 12:47:55 544218 951bc0b0 [INFO Client 8452] [STARTUP] Audio Start
+2023/02/27 12:47:55 544218 47bbee1b [INFO Client 8452] [SOUND] Channel count = 64 (asked for 64)
+2023/02/27 12:47:55 544218 47bbee18 [INFO Client 8452] [SOUND] Source count = 512
+2023/02/27 12:47:56 544859 47bbea59 [INFO Client 8452] Changing to device "Динамики (High Definition Audio Device)"
+2023/02/27 12:47:56 544875 951bc057 [INFO Client 8452] [STARTUP] Audio in 0.656166 seconds
+2023/02/27 12:47:56 544937 951bc057 [INFO Client 8452] [STARTUP] Registration in 0.736522 seconds
+2023/02/27 12:47:57 545796 509417f7 [WARN Client 8452] tool_settings.json was not found. Resetting to default settings.
+2023/02/27 12:47:57 545843 b51d4f61 [DEBUG Client 8452] [RENDER] SetRendererSettings
+2023/02/27 12:47:57 545843 b51d6447 [DEBUG Client 8452] [RENDER] ResizeWindow
+2023/02/27 12:47:57 545843 9d4eec8a [DEBUG Client 8452] [WINDOW] TrigggerDeviceLost
+2023/02/27 12:47:57 545843 9d4eeba7 [DEBUG Client 8452] [WINDOW] TrigggerDeviceReset
+2023/02/27 12:47:57 545875 b51d614c [DEBUG Client 8452] [RENDER] RestartSwapChain
+2023/02/27 12:47:57 545875 9e6a0b0a [INFO Client 8452] Enumerated adapter: AMD Radeon R7 200 Series
+2023/02/27 12:47:57 545906 9e6a1d2a [INFO Client 8452] Enumerated device for adapter: AMD Radeon R7 200 Series. Selected feature level: 45312. Max feature level: 45312
+2023/02/27 12:47:57 545906 9e6a1363 [INFO Client 8452] Enumerated output for adapter AMD Radeon R7 200 Series of \\.\DISPLAY1
+2023/02/27 12:47:57 545906 9e6a0b0a [INFO Client 8452] Enumerated adapter: Microsoft Basic Render Driver
+2023/02/27 12:47:57 545906 9e6a1d2a [INFO Client 8452] Enumerated device for adapter: Microsoft Basic Render Driver. Selected feature level: 45312. Max feature level: 45312
+2023/02/27 12:47:57 545906 fafff8cf [DEBUG Client 8452] CreateSwapChain: SetFullScreenState 0
+2023/02/27 12:47:57 545906 9d4eec8a [DEBUG Client 8452] [WINDOW] TrigggerDeviceLost
+2023/02/27 12:47:57 545906 9d4eeba7 [DEBUG Client 8452] [WINDOW] TrigggerDeviceReset
+2023/02/27 12:47:57 545921 3275a75e [INFO Client 8452] [SHADER] Disable Async: 1 frames
+2023/02/27 12:47:57 545921 b51d610e [INFO Client 8452] [RENDER] Disable Async: 1 frames
+2023/02/27 12:48:01 549890 890d9d5f [INFO Client 8452] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/27 12:48:01 549968 890d9cd8 [INFO Client 8452] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/27 12:48:06 554765 88a904ed [DEBUG Client 8452] Got Instance Details from login server
+2023/02/27 12:48:06 554812 32759a9f [INFO Client 8452] [SHADER] Delay: OFF
+2023/02/27 12:48:06 554812 ca3a6a7f [INFO Client 8452] Connecting to instance server at 159.122.142.247:6112
+2023/02/27 12:48:06 554859 ca3a4dbd [DEBUG Client 8452] Connect time to instance server was 47ms
+2023/02/27 12:48:06 554906 1186a0e3 [DEBUG Client 8452] Generating level 67 area "2_9_town" with seed 1
+2023/02/27 12:48:09 557703 f22b6987 [INFO Client 8452] Tile hash: 4237698488
+2023/02/27 12:48:09 557703 f22b6986 [INFO Client 8452] Doodad hash: 0
+2023/02/27 12:48:13 562359 11870f60 [DEBUG Client 8452] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/27 12:48:14 563062 cffb0734 [INFO Client 8452] &: ОБЪЯВЛЕНИЕ ГИЛЬДИИ: В гостяк у CARDIFF 
+2023/02/27 12:48:14 563546 cffb0734 [INFO Client 8452] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Македы.
+2023/02/27 12:48:15 564281 cffb0734 [INFO Client 8452] : Вы присоединились к Общему каналу чата 9 968.
+2023/02/27 12:48:17 566640 32759a9f [INFO Client 8452] [SHADER] Delay: ON
+2023/02/27 12:48:18 566875 374e0d22 [INFO Client 8452] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/27 12:48:18 566875 374e0cc3 [INFO Client 8452] [Item Filter] Hash for online filter prraV6FQ is: 3a3346fc419824b430b836f34a690fdb
+2023/02/27 12:48:19 567953 cffb0734 [INFO Client 8452] #<IBONEH> LoOckingForTheSummer: с боссами настакать надо)
+2023/02/27 12:48:19 568046 374e0cc9 [INFO Client 8452] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/27 12:48:19 568046 374e0ce3 [DEBUG Client 8452] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/27 12:48:19 568046 374e0e8e [DEBUG Client 8452] [Item Filter] X-HW: 1677494898.dop023.pa1.t,1677494898.cds046.pa1.shn,1677494898.dop023.pa1.t,1677494898.cds231.pa1.s,1677494898.dop048.da2.r,1677494899.cds036.da2.c,1677494898.cds231.pa1.p
+2023/02/27 12:48:19 568046 374df808 [INFO Client 8452] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 3a3346fc419824b430b836f34a690fdb
+2023/02/27 12:48:19 568078 788474c3 [INFO Client 8452] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 3a3346fc419824b430b836f34a690fdb. Type: Ruthless. Message: 
+2023/02/27 12:48:19 568078 2a14910e [INFO Client 8452] PrecalcBaseTypeHashMap
+2023/02/27 12:48:19 568203 2a149100 [INFO Client 8452] PrecalcModNameHashMap
+2023/02/27 12:48:21 570390 2a149169 [INFO Client 8452] PrecalcItemClassMap
+2023/02/27 12:48:21 570390 2a14916b [INFO Client 8452] PrecalcSoundEffects
+2023/02/27 12:48:21 570390 2a14916d [INFO Client 8452] PrecalcDropEffects
+2023/02/27 12:48:21 570390 2a14916f [INFO Client 8452] PrecalcNonEnchantModHashes
+2023/02/27 12:48:21 570390 2a149161 [INFO Client 8452] PrecalcRuleNameToTypeMap
+2023/02/27 12:48:21 570390 2a148c01 [INFO Client 8452] PrecalcCJESPNIndexMap
+2023/02/27 12:48:21 570406 2a148c03 [INFO Client 8452] PrecalcGemAlternateQualityMap
+2023/02/27 12:48:25 573765 cffb0734 [INFO Client 8452] #Деревенский_Травматолог: щит главно хороший намутить :)
+2023/02/27 12:48:33 582109 cffb0734 [INFO Client 8452] #<IBONEH> LoOckingForTheSummer: щит желательно 1500-2к
+2023/02/27 12:48:38 587593 cffb0734 [INFO Client 8452] #<[FLO™]> Прягучая_Шмаль: Бригадирный Кабассет утра кому на кач?
+2023/02/27 12:48:39 588640 cffb0734 [INFO Client 8452] #Toxic_and_Caustic: Рудиментарный Нефритовый флакон моллюска 1.5 секунды хд
+2023/02/27 12:48:43 592453 cffb0734 [INFO Client 8452] #Деревенский_Травматолог: мне пока даже ен прокали такие
+2023/02/27 12:48:45 594046 cffb0734 [INFO Client 8452] #<IBONEH> LoOckingForTheSummer: а так кап блока чар и атак + 100% избегаение стихий
+2023/02/27 12:48:49 597812 cffb0734 [INFO Client 8452] #Black_HamsterTotem: понял принял, пошел искать билд дальше
+2023/02/27 12:49:00 609000 cffb0734 [INFO Client 8452] #BleedItHard: соглашусь про сст
+2023/02/27 12:49:00 609171 cffb0734 [INFO Client 8452] #Black_HamsterTotem: спасибо
+2023/02/27 12:49:08 616875 cffb0734 [INFO Client 8452] #Филяш: Ртутный флакон угря 1 сек
+2023/02/27 12:49:30 639671 cffb0734 [INFO Client 8452] #<IBONEH> LoOckingForTheSummer: как буджто пенделя дали)
+2023/02/27 12:49:45 654390 cffb0734 [INFO Client 8452] #HEXpochtiPavuk: мощно
+2023/02/27 12:50:13 682453 cffb0734 [INFO Client 8452] #Toxic_and_Caustic: Ртутный флакон кому нибудь надо? отдам 
+2023/02/27 12:50:37 706046 cffb0734 [INFO Client 8452] #rthght: решимость никто не продаёт?
+2023/02/27 12:50:42 711500 cffb0734 [INFO Client 8452] #uDAVich: Орлиное заклинание, Мелодичный щит духа +1 молния и резы - 1а
+2023/02/27 12:50:43 712046 cffb0734 [INFO Client 8452] #BleedItHard: через кровотоки можно ещё через спли эррооу и панкчер, но это для особых извращенцев
+2023/02/27 12:51:39 767750 cffb0734 [INFO Client 8452] #ChaosSmelterApprentice: теперь уже не для извращенцев, это раньше ускорение блида не работало из за бага)
+2023/02/27 12:52:43 831703 cffb0734 [INFO Client 8452] #Кравяной: чёт свистануло Рискованный Большой кластерный самоцвет
+2023/02/27 12:53:10 859296 cffb0734 [INFO Client 8452] #uDAVich: 8 нодов типа топчек
+2023/02/27 12:53:11 860281 cffb0734 [INFO Client 8452] #BleedItHard: я не представляю что должно произойти чтобы дропнулся медленный лук с большим хитом и хотя бы одним модом на кровтоки
+2023/02/27 12:53:35 884390 cffb0734 [INFO Client 8452] #WFRPL: Куплю Клеймо чудотворца \ Arcanist Brand = 3 алх
+2023/02/27 12:53:39 888312 cffb0734 [INFO Client 8452] #uDAVich: у меня есть посох на кровоток 47множителя постепенки
+2023/02/27 12:54:33 942109 cffb0734 [INFO Client 8452] #Деревенский_Травматолог: клеймо чАРОтворца :)
+2023/02/27 12:54:53 962109 cffb0734 [INFO Client 8452] #WFRPL: да пофиг) как оно у вас там называется)
+2023/02/27 12:55:06 975578 cffb0734 [INFO Client 8452] #<IBONEH> LoOckingForTheSummer: Тяжелый Мясодёр славы норм для маг булавы)
+2023/02/27 12:55:18 987343 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: Великий образ, Бирюзовый самоцвет Великий образ, Кобальтовый самоцвет ВРЕМЯ, СОВЕРШИТЬ ТО ЧТО ДОЛЖНО
+2023/02/27 12:55:24 992718 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: Великий образ, Бирюзовый самоцвет ААААААААААААААААААААААА
+2023/02/27 12:55:25 993843 cffb0734 [INFO Client 8452] #БезжалостнаяВилка:  spellslinger support у нас называется
+2023/02/27 12:55:37 1005781 cffb0734 [INFO Client 8452] #Toxic_and_Caustic: эээ
+2023/02/27 12:55:38 1007359 cffb0734 [INFO Client 8452] #BleedItHard: пацантре, а вот такое за 8а заберете? Почётная опека, Облачение убийцы
+2023/02/27 12:55:46 1015093 cffb0734 [INFO Client 8452] #Toxic_and_Caustic: какого хрена столько образов?
+2023/02/27 12:55:58 1026921 cffb0734 [INFO Client 8452] #<[FLO™]> Прягучая_Шмаль: полирует лысину Криса
+2023/02/27 12:56:03 1032453 cffb0734 [INFO Client 8452] #uDAVich: фига это ты с 3й лабы натаскал?
+2023/02/27 12:56:07 1035796 cffb0734 [INFO Client 8452] #WFRPL: нет. Arcanist Brand назыатся. spellslinger это другое
+2023/02/27 12:56:07 1036578 cffb0734 [INFO Client 8452] #rthght: у него была цель и он ее придерживался)
+2023/02/27 12:56:08 1037500 cffb0734 [INFO Client 8452] #СынМаменойПодруги: народ подскажите лут фильтр можно тут поставить ?
+2023/02/27 12:56:21 1050593 cffb0734 [INFO Client 8452] #dmfgl: куплю доклады разведки по 1 а Сфера алхимии
+2023/02/27 12:56:29 1058046 cffb0734 [INFO Client 8452] #KladsMen: подвёз кокса на яхту крису
+2023/02/27 12:56:30 1058921 cffb0734 [INFO Client 8452] #uDAVich: filterblade ищи в гугле
+2023/02/27 12:56:38 1067609 cffb0734 [INFO Client 8452] #BleedItHard: хорооош!
+2023/02/27 12:56:41 1070390 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: 1 выпал, второй купил, третий отдал согильдиец
+2023/02/27 12:57:24 1113437 cffb0734 [INFO Client 8452] #БезжалостнаяВилка: В какой лабе?
+2023/02/27 12:57:26 1115671 cffb0734 [INFO Client 8452] #БезжалостнаяВилка: 3?
+2023/02/27 12:57:33 1122343 cffb0734 [INFO Client 8452] #<iddQd> muupol: Влияние Виктарио, Лакированное облачение что может стоить?)
+2023/02/27 12:57:43 1131703 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: на поверы выпал во второй лабе
+2023/02/27 12:57:54 1142890 cffb0734 [INFO Client 8452] : Сделка совершена.
+2023/02/27 12:57:57 1146625 cffb0734 [INFO Client 8452] #Toxic_and_Caustic: а ну так не интересно
+2023/02/27 12:57:58 1147078 cffb0734 [INFO Client 8452] : Вы получили очков сброса пассивных умений: 2.
+2023/02/27 12:58:02 1151421 cffb0734 [INFO Client 8452] #ChaosSmelterApprentice: только быстрое клеймение есть))
+2023/02/27 12:58:03 1152562 cffb0734 [INFO Client 8452] #Toxic_and_Caustic: вот если б ты все 3 выфармил
+2023/02/27 12:58:09 1158656 cffb0734 [INFO Client 8452] #Toxic_and_Caustic: тогда почёт и уважение)
+2023/02/27 12:58:12 1160937 88a904ed [DEBUG Client 8452] Got Instance Details from login server
+2023/02/27 12:58:12 1160953 32759a9f [INFO Client 8452] [SHADER] Delay: OFF
+2023/02/27 12:58:12 1160953 ca3a6a7f [INFO Client 8452] Connecting to instance server at 159.122.142.248:6112
+2023/02/27 12:58:12 1161000 ca3a4dbd [DEBUG Client 8452] Connect time to instance server was 31ms
+2023/02/27 12:58:12 1161046 1186a0e3 [DEBUG Client 8452] Generating level 61 area "2_9_3" with seed 2066536656
+2023/02/27 12:58:13 1162546 f22b6987 [INFO Client 8452] Tile hash: 1469530623
+2023/02/27 12:58:13 1162546 f22b6986 [INFO Client 8452] Doodad hash: 2464350468
+2023/02/27 12:58:14 1163500 11870f60 [DEBUG Client 8452] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/27 12:58:15 1164468 cffb0734 [INFO Client 8452] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пустыня Вастири.
+2023/02/27 12:58:16 1165609 32759a9f [INFO Client 8452] [SHADER] Delay: ON
+2023/02/27 12:58:25 1174187 cffb0734 [INFO Client 8452] #БезжалостнаяВилка: На трейде я и сам могу (нет)!
+2023/02/27 12:58:32 1180765 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: мне делать нехрен? тут трейд то зачем?
+2023/02/27 12:58:44 1193203 cffb0734 [INFO Client 8452] #firetotemas: ну конечно же рефлект, как же иначе Умиротворённое захоронение, Заражённая Карта мавзолея
+2023/02/27 12:58:47 1196203 cffb0734 [INFO Client 8452] #БезжалостнаяВилка: Конечно нехрен, ты в руфлесе
+2023/02/27 12:59:19 1228218 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: Сингулярность, Платиновый скипетр Лапа Цербера, Багряный скипетр Благодать Калисы, Атласные перчатки мои "гучи" спарки и так наладом дышат
+2023/02/27 12:59:19 1228609 cffb0734 [INFO Client 8452] #<[FLO™]> Прягучая_Шмаль: ну раз такие умные, линканите и вы в чат спектрумы
+2023/02/27 12:59:52 1261234 cffb0734 [INFO Client 8452] #hxrmxny: Яростная ветка, Резной жезл пиво?
+2023/02/27 13:00:04 1273140 cffb0734 [INFO Client 8452] #<-LGBT-> Hummacuty: +
+2023/02/27 13:00:04 1273640 cffb0734 [INFO Client 8452] #uDAVich: норм для рф
+2023/02/27 13:02:10 1399250 cffb0734 [INFO Client 8452] #hxrmxny: релик слот тут есть кстати?
+2023/02/27 13:02:26 1415437 cffb0734 [INFO Client 8452] #<IBONEH> LoOckingForTheSummer: Чудовищное укрепление, Эбеновый ростовой щит
+2023/02/27 13:02:27 1416109 cffb0734 [INFO Client 8452] #uDAVich: из святилища чоле, есть
+2023/02/27 13:02:28 1416875 cffb0734 [INFO Client 8452] #<IBONEH> LoOckingForTheSummer: Гневный нарост, Жезл торнадо
+2023/02/27 13:04:03 1512140 cffb0734 [INFO Client 8452] #<iddQd> muupol: Влияние Виктарио, Лакированное облачение продам
+2023/02/27 13:05:13 1582093 cffb0734 [INFO Client 8452] #BleedItHard: Рунные рога, Лук из рога ну хрень же? +1 и доп стрела
+2023/02/27 13:05:31 1599875 cffb0734 [INFO Client 8452] #rthght: ебать чё тут у китавы на карте реально происходит,это так задумано?)
+2023/02/27 13:05:55 1624046 cffb0734 [INFO Client 8452] #Metariana: Солнечный скорпион, Лук маракета 441 фдпс продам
+2023/02/27 13:06:01 1630234 cffb0734 [INFO Client 8452] #KladsMen: он пуси но вот его кореша жесть
+2023/02/27 13:06:02 1631375 cffb0734 [INFO Client 8452] #StrongRUTH: хорошие дропы с карты китавы
+2023/02/27 13:06:07 1636109 cffb0734 [INFO Client 8452] #rthght: Дом пустоты, Ужасающий молот
+2023/02/27 13:06:28 1657390 cffb0734 [INFO Client 8452] #BleedItHard: лук интересный
+2023/02/27 13:06:28 1657531 cffb0734 [INFO Client 8452] #uDAVich: уменьшение опыта, так себе идея xD
+2023/02/27 13:06:34 1663421 cffb0734 [INFO Client 8452] #rthght: )))
+2023/02/27 13:06:46 1674906 88a904ed [DEBUG Client 8452] Got Instance Details from login server
+2023/02/27 13:06:46 1674906 32759a9f [INFO Client 8452] [SHADER] Delay: OFF
+2023/02/27 13:06:46 1674906 ca3a6a7f [INFO Client 8452] Connecting to instance server at 159.122.142.252:6112
+2023/02/27 13:06:46 1674968 ca3a4dbd [DEBUG Client 8452] Connect time to instance server was 47ms
+2023/02/27 13:06:46 1675000 1186a0e3 [DEBUG Client 8452] Generating level 67 area "2_9_town" with seed 1
+2023/02/27 13:06:46 1675015 f22b6987 [INFO Client 8452] Tile hash: 4237698488
+2023/02/27 13:06:46 1675015 f22b6986 [INFO Client 8452] Doodad hash: 0
+2023/02/27 13:06:47 1676015 11870f60 [DEBUG Client 8452] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/27 13:06:47 1676640 cffb0734 [INFO Client 8452] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Македы.
+2023/02/27 13:06:48 1677218 32759a9f [INFO Client 8452] [SHADER] Delay: ON
+2023/02/27 13:07:21 1710015 cffb0734 [INFO Client 8452] : Не удалось применить предмет: Цель уже опознана.
+2023/02/27 13:07:33 1722156 cffb0734 [INFO Client 8452] #Black_HamsterArrow: пошел я по второму кругу
+2023/02/27 13:07:50 1739531 cffb0734 [INFO Client 8452] #rthght: главное что бы еще 30 резов не отняли за него,а то хз чё тут напридумывали))
+2023/02/27 13:07:54 1743281 cffb0734 [INFO Client 8452] : Сделка совершена.
+2023/02/27 13:08:00 1749296 cffb0734 [INFO Client 8452] : Не удалось применить предмет: Цель неопознана
+2023/02/27 13:08:07 1756437 cffb0734 [INFO Client 8452] #KiraOoRuthCardLea: Племенной курс, Бронзовые ботинки Жаль без МС
+2023/02/27 13:08:18 1767562 cffb0734 [INFO Client 8452] #BurningDudeRuthless: ты про китаву на мапе?
+2023/02/27 13:08:33 1782656 cffb0734 [INFO Client 8452] #rthght: ага))
+2023/02/27 13:08:43 1792359 cffb0734 [INFO Client 8452] #BurningDudeRuthless: да, было бы смешно
+2023/02/27 13:08:44 1793625 cffb0734 [INFO Client 8452] #KladsMen: -30 каждый раз как ты его убиваешь
+2023/02/27 13:08:46 1794984 cffb0734 [INFO Client 8452] #KladsMen: XD
+2023/02/27 13:08:52 1801328 cffb0734 [INFO Client 8452] #rthght: xD
+2023/02/27 13:08:56 1805562 cffb0734 [INFO Client 8452] #<-LGBT-> Hummacuty: Ненавистная песнь, Скипетр каруи
+2023/02/27 13:09:14 1822812 cffb0734 [INFO Client 8452] : Сделка совершена.
+2023/02/27 13:09:28 1836875 cffb0734 [INFO Client 8452] #Metariana: Пророческое касание, Шагреневые перчатки 2а
+2023/02/27 13:09:28 1837078 cffb0734 [INFO Client 8452] #<-LGBT-> Hummacuty: Благое убежище, Украшенный колючий щит
+2023/02/27 13:10:04 1872859 cffb0734 [INFO Client 8452] #BurningDudeRuthless: Агонические когти, Замшевые перчатки ого
+2023/02/27 13:10:54 1923500 cffb0734 [INFO Client 8452] : Сделка совершена.
+2023/02/27 13:11:08 1937468 cffb0734 [INFO Client 8452] #<CÔR> ArtaEva_Cardiff_Scion: Сфера возвышения богатство =)
+2023/02/27 13:12:06 1995140 cffb0734 [INFO Client 8452] #KakoiToPetovod: Всепоглощающая тьма, Кинжал изверга
+2023/02/27 13:12:06 1995406 88a904ed [DEBUG Client 8452] Got Instance Details from login server
+2023/02/27 13:12:06 1995406 32759a9f [INFO Client 8452] [SHADER] Delay: OFF
+2023/02/27 13:12:06 1995406 ca3a6a7f [INFO Client 8452] Connecting to instance server at 159.122.142.248:6112
+2023/02/27 13:12:06 1995453 ca3a4dbd [DEBUG Client 8452] Connect time to instance server was 47ms
+2023/02/27 13:12:06 1995500 1186a0e3 [DEBUG Client 8452] Generating level 61 area "2_9_3" with seed 2066536656
+2023/02/27 13:12:06 1995578 f22b6987 [INFO Client 8452] Tile hash: 1469530623
+2023/02/27 13:12:06 1995578 f22b6986 [INFO Client 8452] Doodad hash: 2464350468
+2023/02/27 13:12:07 1996187 11870f60 [DEBUG Client 8452] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/27 13:12:08 1996937 cffb0734 [INFO Client 8452] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пустыня Вастири.
+2023/02/27 13:12:08 1997656 32759a9f [INFO Client 8452] [SHADER] Delay: ON
+2023/02/27 13:13:05 2054250 88a904ed [DEBUG Client 8452] Got Instance Details from login server
+2023/02/27 13:13:05 2054250 32759a9f [INFO Client 8452] [SHADER] Delay: OFF
+2023/02/27 13:13:05 2054250 ca3a6a7f [INFO Client 8452] Connecting to instance server at 159.122.142.231:6112
+2023/02/27 13:13:05 2054296 ca3a4dbd [DEBUG Client 8452] Connect time to instance server was 46ms
+2023/02/27 13:13:05 2054359 1186a0e3 [DEBUG Client 8452] Generating level 61 area "2_9_4" with seed 3161296201
+2023/02/27 13:13:05 2054515 b5a58dc1 [INFO Client 8452] Spawning discoverable Hideout HideoutOasis
+2023/02/27 13:13:06 2055437 f22b6987 [INFO Client 8452] Tile hash: 3263812325
+2023/02/27 13:13:06 2055437 f22b6986 [INFO Client 8452] Doodad hash: 2590584285
+2023/02/27 13:13:07 2056000 11870f60 [DEBUG Client 8452] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/27 13:13:08 2056703 cffb0734 [INFO Client 8452] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Оазис.
+2023/02/27 13:13:08 2057578 32759a9f [INFO Client 8452] [SHADER] Delay: ON
+2023/02/27 13:13:32 2081046 cffb0734 [INFO Client 8452] #Филяш: Сотворение чар при критическом ударе хех
+2023/02/27 13:13:39 2088187 cffb0734 [INFO Client 8452] #Филяш: Пора коковать
+2023/02/27 13:14:50 2158906 cffb0734 [INFO Client 8452] #ДедВрф: Проколцена?
+2023/02/27 13:14:53 2162093 cffb0734 [INFO Client 8452] : DeeFiera был повержен.
+2023/02/27 13:15:02 2171421 cffb0734 [INFO Client 8452] #<GREENL> GenusRMode: да
+2023/02/27 13:15:05 2174468 cffb0734 [INFO Client 8452] #uDAVich: полалхимки
+2023/02/27 13:15:10 2179406 cffb0734 [INFO Client 8452] #ДедВрф: стонкс
+2023/02/27 13:15:20 2189578 cffb0734 [INFO Client 8452] #uDAVich: ибо шанс прокола 100% набирается с дерева
+2023/02/27 13:15:21 2189843 cffb0734 [INFO Client 8452] #Black_HamsterArrow: Урон молнией кто-то имеет желания поменятьcя на адд колд?
+2023/02/27 13:15:51 2220359 cffb0734 [INFO Client 8452] #KladsMen: Контролируемое разрушение обменяю на криты 
+2023/02/27 13:18:55 2404187 cffb0734 [INFO Client 8452] #Филяш: Штурмовой марш, Сапоги крови мс подьехал
+2023/02/27 13:18:59 2407937 cffb0734 [INFO Client 8452] : DeeFiera (Маг стихий) достигает 70 уровня
+2023/02/27 13:19:01 2410046 cffb0734 [INFO Client 8452] #<•GIRL•> BAx_bbabax: Узы служения, Широкий ремень
+2023/02/27 13:19:14 2423296 cffb0734 [INFO Client 8452] #<ÙÏÏÏÏ> подлива_не_всегда_еда: Узы служения, Широкий ремень
+2023/02/27 13:19:30 2438953 cffb0734 [INFO Client 8452] #uDAVich: норм затычка xD
+2023/02/27 13:19:50 2459625 cffb0734 [INFO Client 8452] #<ÙÏÏÏÏ> подлива_не_всегда_еда: есть еще такая ) Копия Воя Альфы, Треуголка грешника
+2023/02/27 13:20:16 2485296 cffb0734 [INFO Client 8452] #Филяш: Ну это бан
+2023/02/27 13:20:21 2490468 cffb0734 [INFO Client 8452] #uDAVich: вот это удача, крису отсосал признавайся? xD
+2023/02/27 13:20:29 2498515 cffb0734 [INFO Client 8452] #<iddQd> muupol: жестко))
+2023/02/27 13:20:33 2502484 cffb0734 [INFO Client 8452] #Филяш: В попку дал)
+2023/02/27 13:20:47 2515812 cffb0734 [INFO Client 8452] #<iddQd> muupol: душу продал по ходу)
+2023/02/27 13:20:49 2517812 cffb0734 [INFO Client 8452] #<[FLO™]> Прягучая_Шмаль: а толку от того корапта
+2023/02/27 13:21:00 2529687 cffb0734 [INFO Client 8452] #<ÙÏÏÏÏ> подлива_не_всегда_еда: ну я до этого одну шляпу сломал, так что норм )
+2023/02/27 13:21:17 2545890 cffb0734 [INFO Client 8452] #<LOVE>U> MorePainLol: Карта садов бессилия меняю на Underground river/Necropolis
+2023/02/27 13:21:28 2557046 cffb0734 [INFO Client 8452] #uDAVich: да никакого +2 к аурам херня жеж
+2023/02/27 13:21:38 2566718 fb7abca5 [INFO Client 8452] Successfully allocated passive skill id: fire_damage1243, name: Урон от огня и область действия
+2023/02/27 13:22:08 2597187 cffb0734 [INFO Client 8452] #KakoiToPetovod: Докторский Ртутный флакон рыси
+2023/02/27 13:22:27 2616125 cffb0734 [INFO Client 8452] #<STNS> MoDPhoenix_card: Демонический идол, Амулет с агатом мини астраментис
+2023/02/27 13:22:49 2637906 cffb0734 [INFO Client 8452] #RybyBybyNyaNyaNya: студенческий я б сказал )
+2023/02/27 13:22:49 2638546 cffb0734 [INFO Client 8452] #uDAVich: продаёшь?
+2023/02/27 13:22:50 2639250 cffb0734 [INFO Client 8452] #RybyBybyNyaNyaNya: всем ку
+2023/02/27 13:22:55 2644171 cffb0734 [INFO Client 8452] : DeeFiera был повержен.
+2023/02/27 13:23:04 2653234 cffb0734 [INFO Client 8452] #<STNS> MoDPhoenix_card: да продаю
+2023/02/27 13:24:17 2725875 cffb0734 [INFO Client 8452] #БеспощадныйСлай: Отвратительное касание, Перчатки титана )
+2023/02/27 13:24:57 2766343 cffb0734 [INFO Client 8452] #uDAVich: чот альва раздухарилась
+2023/02/27 13:25:03 2772531 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: Плацдарм, Карта Предвестника сюдааа (я показываю)
+2023/02/27 13:25:13 2782281 cffb0734 [INFO Client 8452] #Филяш: Собирай роту
+2023/02/27 13:25:13 2782468 cffb0734 [INFO Client 8452] #BurningDudeRuthless: воу
+2023/02/27 13:25:59 2827859 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: Оживляющий Бирюзовый самоцвет фанатизма рферам нормана?
+2023/02/27 13:26:08 2837140 cffb0734 [INFO Client 8452] #uDAVich: норм
+2023/02/27 13:26:22 2850734 cffb0734 [INFO Client 8452] #RybyBybyNyaNyaNya: норм ) экзом его еще
+2023/02/27 13:26:50 2879062 cffb0734 [INFO Client 8452] #BurningDudeRuthless: рыгалом
+2023/02/27 13:27:08 2897093 cffb0734 [INFO Client 8452] #RybyBybyNyaNyaNya: ну да ) не так написал
+2023/02/27 13:27:09 2898656 cffb0734 [INFO Client 8452] #BurningDudeRuthless: а тут кстати рыгалки падают?
+2023/02/27 13:27:22 2911187 cffb0734 [INFO Client 8452] : DeeFiera был повержен.
+2023/02/27 13:27:49 2938062 cffb0734 [INFO Client 8452] : DeeFiera был повержен.
+2023/02/27 13:28:02 2951687 cffb0734 [INFO Client 8452] Грех: Дочь!
+2023/02/27 13:28:08 2957562 cffb0734 [INFO Client 8452] : DeeFiera был повержен.
+2023/02/27 13:28:10 2959187 cffb0734 [INFO Client 8452] Грех: Отдохни, дитя моё. Освободись от мук бессмертия.
+2023/02/27 13:28:12 2961562 890d9d5f [INFO Client 8452] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/27 13:28:12 2961593 890d9cd8 [INFO Client 8452] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/27 13:28:17 2965734 88a904ed [DEBUG Client 8452] Got Instance Details from login server
+2023/02/27 13:28:17 2965750 32759a9f [INFO Client 8452] [SHADER] Delay: OFF
+2023/02/27 13:28:17 2965750 ca3a6a7f [INFO Client 8452] Connecting to instance server at 169.51.201.132:6112
+2023/02/27 13:28:17 2965796 ca3a4dbd [DEBUG Client 8452] Connect time to instance server was 31ms
+2023/02/27 13:28:17 2965843 1186a0e3 [DEBUG Client 8452] Generating level 67 area "2_9_town" with seed 1
+2023/02/27 13:28:18 2966703 f22b6987 [INFO Client 8452] Tile hash: 4237698488
+2023/02/27 13:28:18 2966703 f22b6986 [INFO Client 8452] Doodad hash: 0
+2023/02/27 13:28:20 2969031 11870f60 [DEBUG Client 8452] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/27 13:28:20 2969625 cffb0734 [INFO Client 8452] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Македы.
+2023/02/27 13:28:21 2970015 cffb0734 [INFO Client 8452] : Вы присоединились к Общему каналу чата 9 968.
+2023/02/27 13:28:21 2970453 32759a9f [INFO Client 8452] [SHADER] Delay: ON
+2023/02/27 13:28:21 2970484 374e0d22 [INFO Client 8452] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/27 13:28:21 2970484 374e0cc3 [INFO Client 8452] [Item Filter] Hash for online filter prraV6FQ is: 3a3346fc419824b430b836f34a690fdb
+2023/02/27 13:28:22 2970718 374e0cc9 [INFO Client 8452] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/27 13:28:22 2970718 374e0ce3 [DEBUG Client 8452] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/27 13:28:22 2970718 374e0e8e [DEBUG Client 8452] [Item Filter] X-HW: 1677497301.dop203.pa1.t,1677497302.cds247.pa1.shn,1677497302.dop203.pa1.t,1677497302.cds231.pa1.c
+2023/02/27 13:28:22 2970734 374df808 [INFO Client 8452] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 3a3346fc419824b430b836f34a690fdb
+2023/02/27 13:28:22 2970765 788474c3 [INFO Client 8452] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 3a3346fc419824b430b836f34a690fdb. Type: Ruthless. Message: 
+2023/02/27 13:28:24 2973359 cffb0734 [INFO Client 8452] #PatniccoWTF: гц
+2023/02/27 13:28:24 2973531 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: сюдааа
+2023/02/27 13:28:25 2974250 cffb0734 [INFO Client 8452] #PatniccoWTF: топ
+2023/02/27 13:28:28 2977000 cffb0734 [INFO Client 8452] #KladsMen: фига
+2023/02/27 13:28:28 2977250 cffb0734 [INFO Client 8452] : Не удалось применить предмет: Цель уже опознана.
+2023/02/27 13:28:28 2977609 cffb0734 [INFO Client 8452] #dmfgl: ты че
+2023/02/27 13:28:42 2991125 cffb0734 [INFO Client 8452] #KakoiToPetovod: гц
+2023/02/27 13:28:50 2999343 cffb0734 [INFO Client 8452] #RybyBybyNyaNyaNya: блэл . чет приснилось что ггг в честь выхода пое2 сделали ласт лигу где все атласы со всех лиг с ориг контентом . и там в целом 1к+ карт было . ой ой ой
+2023/02/27 13:28:58 3007421 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: теперь
+2023/02/27 13:28:58 3007515 cffb0734 [INFO Client 8452] : Вы получили очко пассивных умений.
+2023/02/27 13:29:00 3008750 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: у меня
+2023/02/27 13:29:04 3013687 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: 4 камня бесконечности
+2023/02/27 13:29:06 3014875 cffb0734 [INFO Client 8452] : Сделка совершена.
+2023/02/27 13:29:07 3015875 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: Великий образ, Бирюзовый самоцвет Великий образ, Кобальтовый самоцвет Великий образ, Бирюзовый самоцвет
+2023/02/27 13:29:08 3017156 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: Искра ваал
+2023/02/27 13:29:14 3022968 fb7abca5 [INFO Client 8452] Successfully allocated passive skill id: life187, name: Здоровье и энергетический щит
+2023/02/27 13:29:17 3025937 cffb0734 [INFO Client 8452] #PatniccoWTF: да ты читер походу)
+2023/02/27 13:29:21 3030171 cffb0734 [INFO Client 8452] #RybyBybyNyaNyaNya: красиво )
+2023/02/27 13:29:21 3030609 cffb0734 [INFO Client 8452] #Black_HamsterArrow: откуда?
+2023/02/27 13:29:41 3050140 cffb0734 [INFO Client 8452] #BurningDudeRuthless: ну чел тупо лабу бегает
+2023/02/27 13:29:44 3053562 cffb0734 [INFO Client 8452] #BurningDudeRuthless: очевидно же
+2023/02/27 13:29:50 3059578 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: нет )
+2023/02/27 13:29:52 3061515 cffb0734 [INFO Client 8452] #KladsMen: не дайте ему заполучить больше иначе лига умрёт
+2023/02/27 13:29:53 3062171 cffb0734 [INFO Client 8452] #<[FLO™]> Прягучая_Шмаль: не бегает)
+2023/02/27 13:29:53 3062640 cffb0734 [INFO Client 8452] #KladsMen: XD
+2023/02/27 13:29:53 3062640 cffb0734 [INFO Client 8452] #Toxic_and_Caustic: он только 1 выбил
+2023/02/27 13:29:58 3066890 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: у чела тупо есть деньги
+2023/02/27 13:30:00 3068953 cffb0734 [INFO Client 8452] #<STNS> MoDPhoenix_card: а бывает сейчас образ на аллрезы?
+2023/02/27 13:30:14 3083578 88a904ed [DEBUG Client 8452] Got Instance Details from login server
+2023/02/27 13:30:14 3083578 32759a9f [INFO Client 8452] [SHADER] Delay: OFF
+2023/02/27 13:30:14 3083578 ca3a6a7f [INFO Client 8452] Connecting to instance server at 159.122.142.234:6112
+2023/02/27 13:30:14 3083625 ca3a4dbd [DEBUG Client 8452] Connect time to instance server was 47ms
+2023/02/27 13:30:14 3083687 1186a0e3 [DEBUG Client 8452] Generating level 61 area "2_9_3" with seed 857758787
+2023/02/27 13:30:15 3084218 f22b6987 [INFO Client 8452] Tile hash: 1156652904
+2023/02/27 13:30:15 3084218 f22b6986 [INFO Client 8452] Doodad hash: 895813397
+2023/02/27 13:30:15 3084562 11870f60 [DEBUG Client 8452] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/27 13:30:16 3085312 cffb0734 [INFO Client 8452] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Пустыня Вастири.
+2023/02/27 13:30:17 3085984 32759a9f [INFO Client 8452] [SHADER] Delay: ON
+2023/02/27 13:30:26 3095437 cffb0734 [INFO Client 8452] #<LOVE>U> MorePainLol: WTT Древний кров, Карта кровавой общины Искажённая колыбель, Карта садовNecropolis/Undeground river 
+2023/02/27 13:30:58 3126781 cffb0734 [INFO Client 8452] #BurningDudeRuthless: Клинок Иннсбери, Меч старейшины
+2023/02/27 13:31:15 3143703 cffb0734 [INFO Client 8452] #Toxic_and_Caustic: Катастрофический пронзатель, Нож потрошителя алхимки 2-3 потянет?
+2023/02/27 13:31:33 3161796 cffb0734 [INFO Client 8452] #<iddQd> muupol: Гневная песнь, Посох падшего надо кому?
+2023/02/27 13:31:35 3164468 cffb0734 [INFO Client 8452] #uDAVich: врядли херня
+2023/02/27 13:31:54 3183187 cffb0734 [INFO Client 8452] #PatniccoWTF: а какую лабу тогда надо бегать чтоб выбить образы?
+2023/02/27 13:32:00 3189609 cffb0734 [INFO Client 8452] #Toxic_and_Caustic: любую
+2023/02/27 13:32:09 3198625 cffb0734 [INFO Client 8452] #uDAVich: думаю шанс есть в каждой
+2023/02/27 13:32:15 3204437 cffb0734 [INFO Client 8452] : DeeFiera был повержен.
+2023/02/27 13:32:21 3210140 cffb0734 [INFO Client 8452] #RybyBybyNyaNyaNya: лаба есть лаба )
+2023/02/27 13:33:56 3305078 cffb0734 [INFO Client 8452] #RhPuffy: Элегантный круглый щит почти
+2023/02/27 13:34:05 3314453 cffb0734 [INFO Client 8452] #<Pyrkin> Aww_gntlt_crdf: я сделял
+2023/02/27 13:34:07 3316093 cffb0734 [INFO Client 8452] #RybyBybyNyaNyaNya: когда там уже заговор о не выкладывании аур на трейд кончится ?
+2023/02/27 13:34:07 3316375 cffb0734 [INFO Client 8452] #<Pyrkin> Aww_gntlt_crdf: Обруч некроманта
+2023/02/27 13:34:12 3321218 cffb0734 [INFO Client 8452] #PatniccoWTF: гц
+2023/02/27 13:34:19 3327921 cffb0734 [INFO Client 8452] #<[FLO™]> Прягучая_Шмаль: заговора нет
+2023/02/27 13:34:26 3334703 cffb0734 [INFO Client 8452] #<[FLO™]> Прягучая_Шмаль: просто их скупают сразу
+2023/02/27 13:34:51 3359765 cffb0734 [INFO Client 8452] #<GREENL> GenusRMode: ну или оставляют себе
+2023/02/27 13:34:58 3366890 cffb0734 [INFO Client 8452] #cicipici: Сфера раскаяния 3a
+2023/02/27 13:35:00 3369390 cffb0734 [INFO Client 8452] #<•GIRL•> BAx_bbabax: Узы служения, Широкий ремень
+2023/02/27 13:35:07 3376109 cffb0734 [INFO Client 8452] #Филяш: Палец Перквила, Золотой амулет ))
+2023/02/27 13:37:32 3521312 cffb0734 [INFO Client 8452] : DeeFiera был повержен.
+2023/02/27 13:40:52 3721531 88a904ed [DEBUG Client 8452] Got Instance Details from login server
+2023/02/27 13:40:52 3721531 32759a9f [INFO Client 8452] [SHADER] Delay: OFF
+2023/02/27 13:40:52 3721531 ca3a6a7f [INFO Client 8452] Connecting to instance server at 169.51.201.142:6112
+2023/02/27 13:40:52 3721578 ca3a4dbd [DEBUG Client 8452] Connect time to instance server was 31ms
+2023/02/27 13:40:52 3721625 1186a0e3 [DEBUG Client 8452] Generating level 62 area "2_9_5" with seed 3950261532
+2023/02/27 13:40:53 3722515 f22b6987 [INFO Client 8452] Tile hash: 2706061875
+2023/02/27 13:40:53 3722515 f22b6986 [INFO Client 8452] Doodad hash: 329609535
+2023/02/27 13:40:54 3722984 11870f60 [DEBUG Client 8452] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/27 13:40:55 3723750 cffb0734 [INFO Client 8452] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Предгорье.
+2023/02/27 13:40:56 3724875 32759a9f [INFO Client 8452] [SHADER] Delay: ON
+2023/02/27 13:42:29 3818250 cffb0734 [INFO Client 8452] #Metariana: Карта дома с привидениями Ужесточённая Карта заросшей обители энергии Живучая Карта серного озера уязвимости к стихиям обмен на айсберг
+2023/02/27 13:43:16 3864781 cffb0734 [INFO Client 8452] #Metariana: Карта минеральных озёр Карта фактории обмен на некрополис
+2023/02/27 13:43:44 3893562 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: Сфера царей Значимый Средний кластерный самоцвет мангуста
+2023/02/27 13:43:48 3897000 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: Моровая призма, Средний кластерный самоцвет
+2023/02/27 13:43:59 3908109 cffb0734 [INFO Client 8452] #RybyBybyNyaNyaNya: и он будет говорить что не читак xD
+2023/02/27 13:44:00 3909453 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: сегодня
+2023/02/27 13:44:02 3910937 cffb0734 [INFO Client 8452] #<•GIRL•> BAx_bbabax: гц
+2023/02/27 13:44:04 3913031 cffb0734 [INFO Client 8452] #<•GIRL•> Прыг_скок_снашающегося: очень хороший день
+2023/02/27 13:44:05 3914468 cffb0734 [INFO Client 8452] #RybyBybyNyaNyaNya: гц
+2023/02/27 13:44:10 3919484 cffb0734 [INFO Client 8452] #KladsMen: красава
+2023/02/27 13:44:34 3942968 cffb0734 [INFO Client 8452] #BurningDudeRuthless: он видимо задонатил Юре на подкрутку
+2023/02/27 13:44:34 3943265 cffb0734 [INFO Client 8452] #JustTimeToRuthless: согласен, день хорош
+2023/02/27 13:44:39 3948046 cffb0734 [INFO Client 8452] #JustTimeToRuthless: Малый кластерный самоцвет
+2023/02/27 13:44:46 3955640 cffb0734 [INFO Client 8452] : DeeFiera был повержен.
+2023/02/27 13:44:55 3964343 cffb0734 [INFO Client 8452] #<[FLO™]> Прягучая_Шмаль: в смысле..это и есть Юра
+2023/02/27 13:45:00 3969015 cffb0734 [INFO Client 8452] #uDAVich: крис сёдня довольный xD
+2023/02/27 13:45:03 3971937 cffb0734 [INFO Client 8452] #<[FLO™]> Прягучая_Шмаль: вы что не знаете о секретном акке?
+2023/02/27 13:45:08 3976718 cffb0734 [INFO Client 8452] #RybyBybyNyaNyaNya: хочется после такого лигу дропать в нормале ) вообще ноль удачи а у других хх и аегисы всякие с белых мобов падают .
+2023/02/27 13:45:10 3979187 890d9d5f [INFO Client 8452] Async connecting to mil01.login.pathofexile.com:20481
+2023/02/27 13:45:10 3979203 890d9cd8 [INFO Client 8452] Connected to mil01.login.pathofexile.com in 0ms.
+2023/02/27 13:45:16 3985171 88a904ed [DEBUG Client 8452] Got Instance Details from login server
+2023/02/27 13:45:16 3985171 32759a9f [INFO Client 8452] [SHADER] Delay: OFF
+2023/02/27 13:45:16 3985171 ca3a6a7f [INFO Client 8452] Connecting to instance server at 169.51.201.179:6112
+2023/02/27 13:45:16 3985218 ca3a4dbd [DEBUG Client 8452] Connect time to instance server was 32ms
+2023/02/27 13:45:16 3985265 1186a0e3 [DEBUG Client 8452] Generating level 67 area "2_9_town" with seed 1
+2023/02/27 13:45:17 3986031 f22b6987 [INFO Client 8452] Tile hash: 4237698488
+2023/02/27 13:45:17 3986031 f22b6986 [INFO Client 8452] Doodad hash: 0
+2023/02/27 13:45:19 3988421 11870f60 [DEBUG Client 8452] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 190 members 
+2023/02/27 13:45:20 3989015 cffb0734 [INFO Client 8452] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Македы.
+2023/02/27 13:45:20 3989390 cffb0734 [INFO Client 8452] : Вы присоединились к Общему каналу чата 9 968.
+2023/02/27 13:45:21 3989765 32759a9f [INFO Client 8452] [SHADER] Delay: ON
+2023/02/27 13:45:21 3989796 374e0d22 [INFO Client 8452] [Item Filter] Preparing to download online filter prraV6FQ
+2023/02/27 13:45:21 3989796 374e0cc3 [INFO Client 8452] [Item Filter] Hash for online filter prraV6FQ is: 3a3346fc419824b430b836f34a690fdb
+2023/02/27 13:45:21 3990078 374e0cc9 [INFO Client 8452] [Item Filter] Online item filter prraV6FQ returned status: 200
+2023/02/27 13:45:21 3990078 374e0ce3 [DEBUG Client 8452] [Item Filter] Online item filter request resolved to: 209.197.3.101
+2023/02/27 13:45:21 3990078 374e0e8e [DEBUG Client 8452] [Item Filter] X-HW: 1677498321.dop037.pa1.t,1677498321.cds027.pa1.shn,1677498321.dop037.pa1.t,1677498321.cds231.pa1.c
+2023/02/27 13:45:21 3990078 374df808 [INFO Client 8452] [Item Filter] Successfully saved online filter prraV6FQ. Hash is now: 3a3346fc419824b430b836f34a690fdb
+2023/02/27 13:45:21 3990093 788474c3 [INFO Client 8452] [Item Filter] Finished reloading online filter prraV6FQ. Result: true. Hash: 3a3346fc419824b430b836f34a690fdb. Type: Ruthless. Message: 
+2023/02/27 13:45:26 3995640 cffb0734 [INFO Client 8452] #RybyBybyNyaNyaNya: у кого скок часов в пое
+2023/02/27 13:45:34 4003640 cffb0734 [INFO Client 8452] #uDAVich: 2к
+2023/02/27 13:45:34 4003640 cffb0734 [INFO Client 8452] #Toxic_and_Caustic: 2900
+2023/02/27 13:45:44 4012921 cffb0734 [INFO Client 8452] #BurningDudeRuthless: ну 5-6к хз
+2023/02/27 13:45:49 4018187 cffb0734 [INFO Client 8452] #<•GIRL•> BAx_bbabax: Просто наиграно 41ч в этой приватке
+2023/02/27 13:45:55 4024156 cffb0734 [INFO Client 8452] : Сделка совершена.
+2023/02/27 13:45:59 4028250 cffb0734 [INFO Client 8452] #Black_HamsterArrow: 1500 и cчитаю cебя чуть лучше нуба
+2023/02/27 13:45:59 4028359 cffb0734 [INFO Client 8452] #<[FLO™]> Прягучая_Шмаль: с гарены...почти все лиги отыграны полностью..только 1.5 года пропустил в армейке
+2023/02/27 13:46:02 4030718 cffb0734 [INFO Client 8452] #<IBONEH> LoOckingForTheSummer:  как узнать ?
+2023/02/27 13:46:05 4034015 cffb0734 [INFO Client 8452] #<IBONEH> LoOckingForTheSummer: какая команда
