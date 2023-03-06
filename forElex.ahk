@@ -29,26 +29,22 @@ return
 
 ;-----Let's play!-----
 
-; Run and scan
+; Run
 $!W::
   ; run
   Send, {W Down}
   Send, {LShift Down}
-  ; and scan
-  Sleep, 200
-  Send, {RButton Down}
 return
 
-; Gallop and scan
-$^W::
-  ; gallop
-  Send, {W Down}
-  Send, {LShift Down}
-  Send, {LShift Up}
-  Send, {LShift Down}
-  ; and scan
-  Sleep, 2000
-  Send, {RButton Down}
+; Combo and flip back
+$E::
+  Send, {LButton}
+  Sleep, 200
+  Send, {E}
+  Sleep, 200
+  Send, {S}
+  Sleep, 200
+  Send, {S}
 return
 
 ; Reset
