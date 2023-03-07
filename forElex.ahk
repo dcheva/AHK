@@ -47,20 +47,16 @@ $E::
   Send, {S}
 return
 
-; Reset
-$Z::
-$+Z::
-$^+Z::
-  BreakLoop := 1
-  Send, {Z}
-  Send, {RButton Up}
-  Send, {LShift Up}
-  Send, {W Up}
-  SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
+; PageDown to skip dialogues
+$PgDn::
+  Send, {PgDn}
+  Send, {RButton}
 return
 
-
-
-
-
+; PageUp to Backspace and Esc
+$PgUp::
+  Send, {PgUp}
+  Send, {Backspace}
+  Send, {Esc}
+return
 
