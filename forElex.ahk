@@ -36,15 +36,10 @@ $!W::
   Send, {LShift Down}
 return
 
-; Combo and flip back
+; Combo
 $E::
   Send, {LButton}
-  Sleep, 200
   Send, {E}
-  Sleep, 200
-  Send, {S}
-  Sleep, 200
-  Send, {S}
 return
 
 ; PageDown to skip dialogues
@@ -59,4 +54,21 @@ $PgUp::
   Send, {Backspace}
   Send, {Esc}
 return
+
+; Reset
+$Z::
+$+Z::
+$^+Z::
+  BreakLoop := 1
+  Send, {Z}
+  Send, {RButton Up}
+  Send, {LShift Up}
+  Send, {W Up}
+  SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
+return
+
+
+
+
+
 
