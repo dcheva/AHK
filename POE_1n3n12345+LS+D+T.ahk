@@ -144,12 +144,12 @@ return
 ;  }
 ;return
 
-; W and ^W
-$W::
-  Send, {W}
-  Sleep, 75 
-  Send, ^{W}
-return
+;; W and ^W
+;$W::
+;  Send, {W}
+;  Sleep, 75 
+;  Send, ^{W}
+;return
 
 ; run clicker loop
 $^Backspace::
