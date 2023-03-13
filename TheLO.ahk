@@ -48,11 +48,11 @@ $^Backspace::
   Loop, 1000 {
     SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
     Send {LShift Down} 
-    Sleep, 50 
+    Sleep, 25 
     Send {RButton} 
-    Sleep, 50 
+    Sleep, 25 
     Send {LShift Up} 
-    Sleep, 100 
+    Sleep, 50
     ; hold Backspace to break loop
     if (BreakLoop == 1 or GetKeyState("Backspace", "P")) {
       BreakLoop := 0
