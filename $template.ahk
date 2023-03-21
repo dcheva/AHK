@@ -1,8 +1,11 @@
+;-----Let's intro-----
+;ver 23.0321.1
 ;for AHK 1.1.34.04
 ;by cheva (c) MIT 2012-2023
 
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 
+;-----Let's define-----
 ;reload
 $^+R::Reload
 
@@ -17,7 +20,7 @@ $^+P::
   Pause,,1 ;Pause Script
   If !(Reload := !Reload)
     Reload ;Reload Script
-return
+Return
 
 ;exit
 $^+W::
@@ -26,10 +29,14 @@ $^+W::
   Sleep, 1000
   ExitApp
 return
-;-----Let's play!-----
 
-;SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
-;SoundPlay %A_WinDir%\Media\Windows Battery Low.wav
-;SoundPlay %A_WinDir%\Media\Windows Balloon.wav
-;SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
-;SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
+;Steam {PrintScreen}
+$PrintScreen::
+  Send, {PrintScreen}
+  Send, {F12}
+return
+
+;-----Let's play!-----
+; Emergency exit
+$^F1::Process,Close,AutoHotkey.exe
+
