@@ -152,11 +152,12 @@ return
 ;return
 
 ; run clicker loop
+#IfWinActive, Path of Exile 
 $^Backspace::
   BreakLoop := 0
   Loop, 1000 { 
     Send ^{Click} 
-    Sleep, 250 
+    Sleep, 50 
     ; hold Backspace to break loop
     if (BreakLoop == 1 or GetKeyState("Backspace", "P")) {
       BreakLoop := 0
@@ -166,11 +167,12 @@ $^Backspace::
 return
 
 ;; run shift-clicker loop
+;#IfWinActive, Path of Exile 
 ;$+Backspace::
 ;  BreakLoop := 0
 ;  Loop, 1000 { 
 ;    Send +{Click} 
-;    Sleep, 100 
+;    Sleep, 50 
 ;    ; hold Backspace to break loop
 ;    if (BreakLoop == 1 or GetKeyState("Backspace", "P")) {
 ;      BreakLoop := 0
@@ -181,11 +183,12 @@ return
 ;return
 
 ; run control+shift clicker loop
+#IfWinActive, Path of Exile 
 $+^Backspace::
   BreakLoop := 0
   Loop, 1000 { 
     Send +^{Click} 
-    Sleep, 250 
+    Sleep, 50 
     ; hold Backspace to break loop
     if (BreakLoop == 1 or GetKeyState("Backspace", "P")) {
       BreakLoop := 0
