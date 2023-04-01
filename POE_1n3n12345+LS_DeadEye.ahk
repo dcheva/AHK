@@ -51,6 +51,8 @@ clkToKill()
   Sleep, 200
   Send, {Q}
   Sleep, 200
+  Send, {Q}
+  Sleep, 200
   SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 }
 
@@ -59,7 +61,7 @@ $^Numpad0::
 	Loop
 	{
 		clkToKill()
-		Sleep, 3000
+		Sleep, 2000
 	}
 return
 
@@ -200,4 +202,11 @@ $+^Backspace::
       break
     }
   }
+return
+
+;Reset XP counter
+$^/::
+  Send, {Enter}
+  Send, /reset_xp
+  Send, {Enter}
 return

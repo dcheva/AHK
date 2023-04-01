@@ -196,3 +196,10 @@ $+^Backspace::
     }
   }
 return
+
+;Reset XP counter
+$^/::
+  Send, {Enter}
+  Send, /reset_xp
+  Send, {Enter}
+return
