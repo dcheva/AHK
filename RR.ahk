@@ -4,7 +4,7 @@
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 
 ;reload
-$^+R::Reload
+^+R::Reload
 
 ;suspend/resume
 $^+S::
