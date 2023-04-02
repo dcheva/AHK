@@ -30,6 +30,7 @@ return
 
 ;Autofisher
 $^Numpad0::
+	SoundPlay %A_WinDir%\Media\Windows Logon.wav
 	Loop
 	{
 		; заброс
