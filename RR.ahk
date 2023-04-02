@@ -1,5 +1,5 @@
 ;for AHK 1.1.34.04
-;by cheva (c) MIT 2012-2022
+;by cheva (c) MIT 2012-2023
 
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 
@@ -10,7 +10,7 @@ $^+R::Reload
 $^+S::
 ;pause/resume
 $^+P::
-;use both to sleep/pause
+  ;use both to sleep/pause
   ;thanks to Rohwedder
   ;https://www.autohotkey.com/boards/viewtopic.php?t=50594
   Suspend ;Suspend Hotkeys
@@ -28,26 +28,7 @@ $^+W::
 return
 ;-----Let's play!-----
 
-SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
-
-;reload
-$^+R::Reload
-
-;suspend/resume
-$^+S::
-  Suspend, toggle
-  SoundPlay %A_WinDir%\Media\Windows Battery Low.wav
-return
-
-;pause/resume
-$^+P::
-  Pause, toggle
-  SoundPlay %A_WinDir%\Media\Windows Balloon.wav
-return
-
-;exit
-$^+W::ExitApp
-
+;Autofisher
 $^Numpad0::
 	Loop
 	{
@@ -113,5 +94,6 @@ return
 
 $Space::
 	Send, {Space}
+	Send, ^+R
 	Send, {Numpad0 Up}
 return
