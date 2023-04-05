@@ -117,6 +117,7 @@ $LShift::
   GetKeyState, Rst, RButton
   if (Lst = "D" or Rst = "D") {
     Send, {R}
+    Send, {5}
   }
 return
 
@@ -151,12 +152,12 @@ return
 ;  }
 ;return
 
-;; W and ^W
-;$W::
-;  Send, {W}
+; W and ^W
+$W::
+  Send, {W}
 ;  Sleep, 75 
-;  Send, ^{W}
-;return
+  Send, ^{W}
+return
 
 ; run clicker loop
 #IfWinActive, Path of Exile 
