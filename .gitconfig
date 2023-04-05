@@ -17,5 +17,9 @@
 	defaultBranch = initial
 [gui]
 	recentrepo = C:/Projects/horizons
+	recentrepo = C:/Projects/dotnet
 [token]
 	dcheva=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
+[safe]
+	directory = C:/Projects
+	directory = C:/Projects/*
