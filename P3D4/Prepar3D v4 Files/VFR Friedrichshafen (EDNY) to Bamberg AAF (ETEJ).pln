@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SimBase.Document Type="AceXML" version="1,0">
+    <Descr>AceXML Document</Descr>
+    <FlightPlan.FlightPlan>
+        <Title>EDNY to ETEJ</Title>
+        <FPType>VFR</FPType>
+        <RouteType>Direct</RouteType>
+        <CruisingAlt>3500</CruisingAlt>
+        <DepartureID>EDNY</DepartureID>
+        <DepartureLLA>N47° 40' 5.91",E9° 30' 46.23",+001367.00</DepartureLLA>
+        <DestinationID>ETEJ</DestinationID>
+        <DestinationLLA>N49° 55' 13.81",E10° 54' 51.00",+000823.00</DestinationLLA>
+        <Descr>EDNY, ETEJ</Descr>
+        <DeparturePosition>PARKING 2</DeparturePosition>
+        <DepartureName>Friedrichshafen</DepartureName>
+        <DestinationName>Bamberg AAF</DestinationName>
+        <AppVersion>
+            <AppVersionMajor>10</AppVersionMajor>
+            <AppVersionBuild>61472</AppVersionBuild>
+        </AppVersion>
+        <ATCWaypoint id="EDNY">
+            <ATCWaypointType>Airport</ATCWaypointType>
+            <WorldPosition>N47° 40' 16.74",E9° 30' 41.36",+001367.00</WorldPosition>
+            <ICAO>
+                <ICAOIdent>EDNY</ICAOIdent>
+            </ICAO>
+        </ATCWaypoint>
+        <ATCWaypoint id="DKB">
+            <ATCWaypointType>VOR</ATCWaypointType>
+            <WorldPosition>N49° 8' 33.91",E10° 14' 17.90",+003500.00</WorldPosition>
+            <ICAO>
+                <ICAORegion>ED</ICAORegion>
+                <ICAOIdent>DKB</ICAOIdent>
+            </ICAO>
+        </ATCWaypoint>
+        <ATCWaypoint id="ETEJ">
+            <ATCWaypointType>Airport</ATCWaypointType>
+            <WorldPosition>N49° 55' 13.79",E10° 54' 51.01",+000823.00</WorldPosition>
+            <ICAO>
+                <ICAOIdent>ETEJ</ICAOIdent>
+            </ICAO>
+        </ATCWaypoint>
+    </FlightPlan.FlightPlan>
+</SimBase.Document>

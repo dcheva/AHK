@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LittleNavmap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.littlenavmap.org/schema/lnmpln.xsd">
+  <Flightplan>
+    <Header>
+      <FlightplanType>VFR</FlightplanType>
+      <CruisingAlt>2000</CruisingAlt>
+      <CreationDate>2023-04-07T11:21:00+03:00</CreationDate>
+      <FileVersion>1.1</FileVersion>
+      <ProgramName>Little Navmap</ProgramName>
+      <ProgramVersion>2.8.9</ProgramVersion>
+      <Documentation>https://www.littlenavmap.org/lnmpln.html</Documentation>
+    </Header>
+    <SimData>P3DV4</SimData>
+    <NavData Cycle="1801">NAVIGRAPH</NavData>
+    <AircraftPerformance>
+      <FilePath>FSE Cessna 207 SkyWagon.lnmperf</FilePath>
+      <Type>C207</Type>
+      <Name>ALABEO C207 Skywagon</Name>
+    </AircraftPerformance>
+    <Departure>
+      <Pos Lon="-1.826883" Lat="50.782665" Alt="38.00"/>
+      <Start>26</Start>
+      <Type>Runway</Type>
+      <Heading>255.3</Heading>
+    </Departure>
+    <Waypoints>
+      <Waypoint>
+        <Name>Bournemouth</Name>
+        <Ident>EGHH</Ident>
+        <Type>AIRPORT</Type>
+        <Pos Lon="-1.842500" Lat="50.779999" Alt="38.00"/>
+      </Waypoint>
+      <Waypoint>
+        <Ident>WP1</Ident>
+        <Type>USER</Type>
+        <Pos Lon="-2.174042" Lat="51.654346" Alt="1941.23"/>
+      </Waypoint>
+      <Waypoint>
+        <Name>Kemble</Name>
+        <Ident>EGBP</Ident>
+        <Type>AIRPORT</Type>
+        <Pos Lon="-2.059608" Lat="51.668411" Alt="433.00"/>
+      </Waypoint>
+    </Waypoints>
+  </Flightplan>
+</LittleNavmap>

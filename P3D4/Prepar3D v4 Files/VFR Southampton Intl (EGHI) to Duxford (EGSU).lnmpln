@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LittleNavmap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.littlenavmap.org/schema/lnmpln.xsd">
+  <Flightplan>
+    <Header>
+      <FlightplanType>VFR</FlightplanType>
+      <CruisingAlt>3000</CruisingAlt>
+      <CreationDate>2023-04-04T18:18:59+03:00</CreationDate>
+      <FileVersion>1.1</FileVersion>
+      <ProgramName>Little Navmap</ProgramName>
+      <ProgramVersion>2.8.9</ProgramVersion>
+      <Documentation>https://www.littlenavmap.org/lnmpln.html</Documentation>
+    </Header>
+    <SimData>P3DV4</SimData>
+    <NavData Cycle="1801">NAVIGRAPH</NavData>
+    <AircraftPerformance>
+      <FilePath>FSE Cessna 207 Stationair 8 (G-TTOD).lnmperf</FilePath>
+      <Type>C207</Type>
+      <Name>Cessna 207 Stationair 8</Name>
+    </AircraftPerformance>
+    <Procedures>
+      <SID>
+        <Name>EGHI02</Name>
+        <Runway>02</Runway>
+        <Type>CUSTOMDEPART</Type>
+        <CustomDistance>3.00</CustomDistance>
+      </SID>
+      <Approach>
+        <Name>EGSU06</Name>
+        <Runway>06</Runway>
+        <Type>CUSTOM</Type>
+        <CustomDistance>3.00</CustomDistance>
+        <CustomAltitude>1000.00</CustomAltitude>
+        <CustomOffsetAngle>0.00</CustomOffsetAngle>
+      </Approach>
+    </Procedures>
+    <Waypoints>
+      <Waypoint>
+        <Name>Southampton Intl</Name>
+        <Ident>EGHI</Ident>
+        <Type>AIRPORT</Type>
+        <Pos Lon="-1.356125" Lat="50.950577" Alt="44.00"/>
+      </Waypoint>
+      <Waypoint>
+        <Name>Bovingdon</Name>
+        <Ident>BNN</Ident>
+        <Region>EG</Region>
+        <Type>VOR</Type>
+        <Pos Lon="-0.549750" Lat="51.726166" Alt="3000.00"/>
+      </Waypoint>
+      <Waypoint>
+        <Name>Duxford</Name>
+        <Ident>EGSU</Ident>
+        <Type>AIRPORT</Type>
+        <Pos Lon="0.131945" Lat="52.090832" Alt="125.00"/>
+      </Waypoint>
+    </Waypoints>
+  </Flightplan>
+</LittleNavmap>

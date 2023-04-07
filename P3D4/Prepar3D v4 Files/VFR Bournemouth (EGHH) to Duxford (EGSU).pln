@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<SimBase.Document Type="AceXML" version="4,5">
+    <Descr>AceXML Document</Descr>
+    <FlightPlan.FlightPlan>
+        <Title>EGHH to EGSU</Title>
+        <FPType>VFR</FPType>
+        <CruisingAlt>3000</CruisingAlt>
+        <DepartureID>EGHH</DepartureID>
+        <DepartureLLA>N50° 46' 38.776830",W1° 50' 7.770000",+000038.00</DepartureLLA>
+        <DestinationID>EGSU</DestinationID>
+        <DestinationLLA>N52° 5' 26.988593",E0° 7' 55.000000",+000125.00</DestinationLLA>
+        <Descr>EGHH, EGSU</Descr>
+        <DeparturePosition>PARKING 6</DeparturePosition>
+        <DepartureName>Bournemouth</DepartureName>
+        <DestinationName>Duxford</DestinationName>
+        <AppVersion>
+            <AppVersionMajor>4</AppVersionMajor>
+            <AppVersionMinor>5</AppVersionMinor>
+            <AppVersionRevision>13</AppVersionRevision>
+            <AppVersionBuild>32097</AppVersionBuild>
+        </AppVersion>
+        <ATCWaypoint id="EGHH">
+            <ATCWaypointType>Airport</ATCWaypointType>
+            <WorldPosition>N50° 46' 47.996596",W1° 50' 33.000000",+000038.00</WorldPosition>
+            <ICAO>
+                <ICAOIdent>EGHH</ICAOIdent>
+            </ICAO>
+        </ATCWaypoint>
+        <ATCWaypoint id="RW08">
+            <ATCWaypointType>User</ATCWaypointType>
+            <WorldPosition>N50° 46' 38.893789",W1° 51' 29.230000",+000038.00</WorldPosition>
+        </ATCWaypoint>
+        <ATCWaypoint id="RW083">
+            <ATCWaypointType>User</ATCWaypointType>
+            <WorldPosition>N50° 47' 24.472613",W1° 46' 53.810000",+001248.27</WorldPosition>
+        </ATCWaypoint>
+        <ATCWaypoint id="BNN">
+            <ATCWaypointType>VOR</ATCWaypointType>
+            <WorldPosition>N51° 43' 34.195712",W0° 32' 59.100000",+003000.00</WorldPosition>
+            <ICAO>
+                <ICAORegion>EG</ICAORegion>
+                <ICAOIdent>BNN</ICAOIdent>
+            </ICAO>
+        </ATCWaypoint>
+        <ATCWaypoint id="RW063">
+            <ATCWaypointType>User</ATCWaypointType>
+            <WorldPosition>N52° 3' 36.608489",E0° 3' 13.580000",+001125.00</WorldPosition>
+        </ATCWaypoint>
+        <ATCWaypoint id="RW06">
+            <ATCWaypointType>User</ATCWaypointType>
+            <WorldPosition>N52° 5' 13.014018",E0° 7' 20.880000",+000125.00</WorldPosition>
+        </ATCWaypoint>
+        <ATCWaypoint id="EGSU">
+            <ATCWaypointType>Airport</ATCWaypointType>
+            <WorldPosition>N52° 5' 26.975975",E0° 7' 55.000000",+000125.00</WorldPosition>
+            <ICAO>
+                <ICAOIdent>EGSU</ICAOIdent>
+            </ICAO>
+        </ATCWaypoint>
+    </FlightPlan.FlightPlan>
+</SimBase.Document>

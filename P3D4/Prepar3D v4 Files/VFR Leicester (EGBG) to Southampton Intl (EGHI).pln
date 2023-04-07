@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<SimBase.Document Type="AceXML" version="4,5">
+    <Descr>AceXML Document</Descr>
+    <FlightPlan.FlightPlan>
+        <Title>VFR Leicester (EGBG) to Southampton Intl (EGHI)</Title>
+        <FPType>VFR</FPType>
+        <CruisingAlt>3000</CruisingAlt>
+        <DepartureID>EGBG</DepartureID>
+        <DepartureLLA>N52° 36' 23.888641",W1° 1' 51.452007",+000469.00</DepartureLLA>
+        <DestinationID>EGHI</DestinationID>
+        <DestinationLLA>N50° 57' 2.068360",W1° 21' 22.050000",+000044.00</DestinationLLA>
+        <Descr>ПВП Лестер (EGBG) в Международный Саутгемптон (EGHI) </Descr>
+        <DeparturePosition>PARKING 1</DeparturePosition>
+        <DepartureName>Leicester</DepartureName>
+        <DestinationName>Southampton Intl</DestinationName>
+        <AppVersion>
+            <AppVersionMajor>4</AppVersionMajor>
+            <AppVersionMinor>5</AppVersionMinor>
+            <AppVersionRevision>13</AppVersionRevision>
+            <AppVersionBuild>32097</AppVersionBuild>
+        </AppVersion>
+        <ATCWaypoint id="EGBG">
+            <ATCWaypointType>Airport</ATCWaypointType>
+            <WorldPosition>N52° 36' 23.890614",W1° 1' 51.452007",+000469.00</WorldPosition>
+            <ATCAirway>PARKING 1 </ATCAirway>
+            <Descr>Leicester</Descr>
+            <ICAO>
+                <ICAOIdent>EGBG</ICAOIdent>
+            </ICAO>
+        </ATCWaypoint>
+        <ATCWaypoint id="DTY">
+            <ATCWaypointType>VOR</ATCWaypointType>
+            <WorldPosition>N52° 10' 48.528902",W1° 6' 49.640000",+004500.00</WorldPosition>
+            <ICAO>
+                <ICAORegion>EG</ICAORegion>
+                <ICAOIdent>DTY</ICAOIdent>
+            </ICAO>
+        </ATCWaypoint>
+        <ATCWaypoint id="CPT">
+            <ATCWaypointType>VOR</ATCWaypointType>
+            <WorldPosition>N51° 29' 29.682300",W1° 13' 10.890000",+004500.00</WorldPosition>
+            <ICAO>
+                <ICAORegion>EG</ICAORegion>
+                <ICAOIdent>CPT</ICAOIdent>
+            </ICAO>
+        </ATCWaypoint>
+        <ATCWaypoint id="PEPIS">
+            <ATCWaypointType>Intersection</ATCWaypointType>
+            <WorldPosition>N51° 11' 48.022891",W1° 14' 37.000000",+004500.00</WorldPosition>
+            <ICAO>
+                <ICAORegion>EG</ICAORegion>
+                <ICAOIdent>PEPIS</ICAOIdent>
+            </ICAO>
+        </ATCWaypoint>
+        <ATCWaypoint id="CI20">
+            <ATCWaypointType>Intersection</ATCWaypointType>
+            <WorldPosition>N51° 4' 12.688174",W1° 17' 23.270000",+002482.91</WorldPosition>
+            <ICAO>
+                <ICAORegion>EG</ICAORegion>
+                <ICAOIdent>CI20</ICAOIdent>
+            </ICAO>
+        </ATCWaypoint>
+        <ATCWaypoint id="EGHI">
+            <ATCWaypointType>Airport</ATCWaypointType>
+            <WorldPosition>N50° 57' 2.070332",W1° 21' 22.050000",+000044.00</WorldPosition>
+            <ICAO>
+                <ICAOIdent>EGHI</ICAOIdent>
+            </ICAO>
+        </ATCWaypoint>
+    </FlightPlan.FlightPlan>
+</SimBase.Document>
