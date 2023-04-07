@@ -75,7 +75,7 @@ $2::
   Send, 2
   Send, 3
   Send, 4
-  Send, 5
+;  Send, 5
 return
 
 ; Auras
@@ -117,8 +117,8 @@ $LShift::
   GetKeyState, Rst, RButton
   if (Lst = "D" or Rst = "D") {
     Send, {R}
-;    Sleep, 75
-;    Send, {5}
+    Sleep, 75
+    Send, {5}
   }
 return
 
