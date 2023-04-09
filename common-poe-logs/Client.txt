@@ -6477,3 +6477,4 @@ flags: 257
 2023/04/08 17:29:55 30187406 11870f49 [DEBUG Client 5556] Joined guild named Голосовой чат discord.com/invite/nXFKHzJ with 193 members 
 2023/04/08 17:29:55 30188031 cffb071e [INFO Client 5556] : <<set:MS>><<set:M>><<set:S>>Вы вошли в область Прибрежный остров.
 2023/04/08 17:29:56 30188562 32759a9f [INFO Client 5556] [SHADER] Delay: ON
+2023/04/08 17:30:33 30226000 cffb071e [INFO Client 5556] #Crucible_fire_sly: \
