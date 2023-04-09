@@ -156,7 +156,7 @@ return
 ; W and ^W
 $W::
   Send, {W}
-  Sleep, 250
+  Sleep, 200
   Send, ^{W}
 return
 
