@@ -1,5 +1,6 @@
 from System import Int16
 from ctypes import windll, Structure, c_ulong, byref
+import winsound, time
 
 
 class POINT(Structure):
@@ -51,9 +52,13 @@ if keyboard.getPressed(vJoy_Key):
 		# vJoy[0].x = 0 # при отключении джойстик встает в 0
    		# vJoy[0].y = 0
    		# vJoy[0].rz = 0
+   		winsound.Beep(300,30)
+   		winsound.Beep(200,50)
 	else:
 		vJoy_Enabled = True
 		vJoy[0].setButton(0,mouse.getButton(0))
+   		winsound.Beep(200,50)
+   		winsound.Beep(300,30)
 		
 		
 if keyboard.getPressed(vJoy_Reset):
@@ -63,7 +68,13 @@ if keyboard.getPressed(vJoy_Reset):
 		# move mouse to vJoy position
 		sx = vJoy[0].x * screen_x / (32768 / 2) * axisx_inversion + screen_x;
 		sy = vJoy[0].y * screen_y / (32768 / 2) * axisy_inversion + screen_y;
-		windll.user32.SetCursorPos(sx, sy) # автоцентрирование курсора мыши при выходе из режима обзора
+		windll.user32.SetCursorPos(sx, sy) # автоцентрирование курсора мыши
+		if Joy_stat:
+   			winsound.Beep(300,30)
+   			winsound.Beep(300,30)
+   		else:
+   			winsound.Beep(200,50)
+   			winsound.Beep(200,50)
 
 
 if vJoy_Enabled:
@@ -96,9 +107,9 @@ if Joy_stat:
 	vJoy[0].rz = vJoy[0].x * scale_Vz / scale_Rz * axisz_inversion 
 	# scroll to throttle
 	if mouse.wheelUp:
-		slider += 32768 / 25;
+		slider += 32768 / 25; # 4%
 	if mouse.wheelDown:
-		slider -= 32768 / 25;
+		slider -= 32768 / 25; # 4%
 	if slider < -32768 / 2:
 		slider = -32768 / 2;	
 	if slider > 32768 / 2:
