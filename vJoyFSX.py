@@ -12,6 +12,7 @@ if starting:
 	vJoy_Enabled = False # данный флаг используется для временного отключения джойстика мышкой
 	vJoy_Key = Key.CapsLock # кнопка на клавиатуре включающая режим управления джойстика мышкой
 	vJoy_Reset = Key.Backspace # Центровка по Backspace
+	vJoy_Alt = Key.LeftAlt # Альтернативное управление - ось Х на руль
 	Freeview = False # флаг временного выключения режима управления джойстика мышкой
 	screen_x = windll.user32.GetSystemMetrics(0) / 2 # размер экрана
 	screen_y = windll.user32.GetSystemMetrics(1) / 2
@@ -51,6 +52,7 @@ if keyboard.getPressed(vJoy_Key):
 		vJoy[0].setButton(0,False)		
 		# vJoy[0].x = 0 # при отключении джойстик встает в 0
    		# vJoy[0].y = 0
+   		# vJoy[0].z = 0
    		# vJoy[0].rz = 0
    		winsound.Beep(300,30)
    		winsound.Beep(200,50)
@@ -64,6 +66,7 @@ if keyboard.getPressed(vJoy_Key):
 if keyboard.getPressed(vJoy_Reset):
 		vJoy[0].x = 0  # Центровка по Backspace - джойстик встает в 0
    		vJoy[0].y = 0
+   		vJoy[0].z = 0
    		vJoy[0].rz = 0
 		# move mouse to vJoy position
 		sx = vJoy[0].x * screen_x / (32768 / 2) * axisx_inversion + screen_x;
@@ -83,6 +86,7 @@ if vJoy_Enabled:
 		vJoy[0].setButton(0,False) 
 		# vJoy[0].x = 0 # при отключении джойстик встает в 0
    		# #vJoy[0].y = 0
+   		# vJoy[0].z = 0
    		# vJoy[0].rz = 0
 	if not Freeview and Joy_stat == False:
 		Joy_stat = True
@@ -101,15 +105,21 @@ if Joy_stat:
 	else: mouse_y = pt.y
 	# положение джойстика определяется как положение мыши на экране - половина ширина экрана умноженная на увеличитель и разделенная на уточнитель
 	# далее идет умножение на масштаб оси к экрану и задание инверсии, если она есть
-	# ось Z - предназначена для крена, но она масштабируется к оси X (рыскание)
-	vJoy[0].x = (mouse_x - screen_x) * multipler_x / preci * scale_Vx / scale_Rx * axisx_inversion
-	vJoy[0].y = (mouse_y - screen_y) * multipler_y / preci * scale_Vy / scale_Ry * axisy_inversion
-	vJoy[0].rz = vJoy[0].x * scale_Vz / scale_Rz * axisz_inversion 
-	# scroll to throttle
+	x = (mouse_x - screen_x) * multipler_x / preci * scale_Vx / scale_Rx * axisx_inversion
+	y = (mouse_y - screen_y) * multipler_y / preci * scale_Vy / scale_Ry * axisy_inversion
+	if keyboard.getKeyDown(vJoy_Alt): # Альтернативное управление - ось Х на руль 
+		vJoy[0].z = x * scale_Vz / scale_Rz * axisz_inversion
+	else:
+		vJoy[0].x = x
+	vJoy[0].y = y
+	vJoy[0].rz = vJoy[0].z
+	
+	
+	# scrol to throttle
 	if mouse.wheelUp:
-		slider += 32768 / 25; # 4%
+		slider += 32768 / 20; # 5%
 	if mouse.wheelDown:
-		slider -= 32768 / 25; # 4%
+		slider -= 32768 / 20; # 5%
 	if slider < -32768 / 2:
 		slider = -32768 / 2;	
 	if slider > 32768 / 2:
@@ -121,5 +131,5 @@ diagnostics.watch(Joy_stat)
 diagnostics.watch(vJoy_Enabled)
 diagnostics.watch(vJoy[0].x)
 diagnostics.watch(vJoy[0].y)
-diagnostics.watch(vJoy[0].rz)
+diagnostics.watch(vJoy[0].z) # vJoy[0].z = vJoy[0].rz
 diagnostics.watch(vJoy[0].slider)
