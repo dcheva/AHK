@@ -39,8 +39,9 @@ if starting:
 		
 		
 ## Let's dance
-Freeview = mouse.middleButton or mouse.getButton(3) # кнопки на мышке для свободного обзора. mouse.middleButton .rightButton .leftButton - средняя, правая или левая кнопка мыши и т.п.
-#Freeview = keyboard.getKeyDown(Key.V) # пример для кнопки на клавиатуре для свободного обзора
+Freeview = mouse.rightButton # MSFS:: правая кнопка на мышке включает свободный обзор. 
+## mouse.middleButton .rightButton .leftButton - средняя, правая или левая кнопка мыши и т.п.
+## Freeview = keyboard.getKeyDown(Key.V) # пример для кнопки на клавиатуре для свободного обзора
 vJoy[0].setButton(0,mouse.getButton(0)) 
 
 
@@ -131,5 +132,7 @@ diagnostics.watch(Joy_stat)
 diagnostics.watch(vJoy_Enabled)
 diagnostics.watch(vJoy[0].x)
 diagnostics.watch(vJoy[0].y)
-diagnostics.watch(vJoy[0].z) # vJoy[0].z = vJoy[0].rz
+diagnostics.watch(vJoy[0].z)
+diagnostics.watch(vJoy[0].rz)
 diagnostics.watch(vJoy[0].slider)
+diagnostics.watch(Freeview)
