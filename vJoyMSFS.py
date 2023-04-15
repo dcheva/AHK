@@ -88,7 +88,7 @@ if keyboard.getPressed(vJoy_Key):
    		winsound.Beep(penta[5],50)
 		
 if keyboard.getPressed(vJoy_Reset):
-	if Joy_stat:
+	# if Joy_stat:
 		## Центровка по Backspace - элероны в 0
 		vJoy[0].x = 0  
    		## Выравнивание руля высоты - только с Контролом
@@ -126,7 +126,7 @@ if Joy_stat:
 	# далее идет умножение на масштаб оси к экрану и задание инверсии, если она есть
 	x = (mouse_x - screen_x) * multipler_x / preci * scale_Vx / scale_Rx * axisx_inversion
 	y = (mouse_y - screen_y) * multipler_y / preci * scale_Vy / scale_Ry * axisy_inversion
-	if vJoy_Alt: # Альтернативное управление - ось Х на руль
+	if vJoy_Alt or vJoy_Control: # Альтернативное управление - ось Х на руль
 		## @TODO Перключать управление по Альт, как по ПКМ, при включении альтернативного - элероны в 0, для руления
 		vJoy[0].z = x * scale_Vz / scale_Rz * axisz_inversion
 	else:
