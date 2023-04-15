@@ -6,13 +6,15 @@ import winsound, time
 class POINT(Structure):
    _fields_ = [("x", c_ulong), ("y", c_ulong)]
    
-   
 if starting:
 	Joy_stat = False # данный флаг используется для включения с клавиатуры, передачи данных на джойстик
 	vJoy_Enabled = False # данный флаг используется для временного отключения джойстика мышкой
 	vJoy_Key = Key.CapsLock # кнопка на клавиатуре включающая режим управления джойстика мышкой
 	vJoy_Reset = Key.Backspace # Центровка по Backspace
+	vJoy_LControl = Key.LeftControl # Проверка по Control
+	vJoy_RControl = Key.RightControl # Проверка по Control
 	vJoy_Alt = Key.LeftAlt # Альтернативное управление - ось Х на руль
+	vJoy_Freeview = False # флаг временного выключения режима управления джойстика мышкой
 	Freeview = False # флаг временного выключения режима управления джойстика мышкой
 	screen_x = windll.user32.GetSystemMetrics(0) / 2 # размер экрана
 	screen_y = windll.user32.GetSystemMetrics(1) / 2
@@ -20,7 +22,6 @@ if starting:
 	sy = screen_y
 	slider = -32768 / 2
 	pt = POINT()
-	
 	
 	# Внимание - не стоит задавать близкие значения Scale_V и Scale_R, так как это приведет к взаимовлиянию настроек. Одно из значений в паре пусть будет 100.
 	scale_Vx = 100 # на какой угол в % отклоняется реальный джойстик, если меньше 100, то джойстик не наклоняется до конца
@@ -36,14 +37,22 @@ if starting:
 	axisx_inversion = 1
 	axisy_inversion = 1
 	axisz_inversion = 1
-		
+	
+def stat(Joy_stat, count=2):
+	for i in range(count):
+		if Joy_stat:
+			winsound.Beep(300,30)
+		else:
+			winsound.Beep(200,50)
 		
 ## Let's dance
 Freeview = mouse.rightButton # MSFS:: правая кнопка на мышке включает свободный обзор. 
 ## mouse.middleButton .rightButton .leftButton - средняя, правая или левая кнопка мыши и т.п.
 ## Freeview = keyboard.getKeyDown(Key.V) # пример для кнопки на клавиатуре для свободного обзора
-vJoy[0].setButton(0,mouse.getButton(0)) 
+vJoy[0].setButton(0,mouse.getButton(0))
 
+if keyboard.getPressed(vJoy_LControl) or keyboard.getPressed(vJoy_RControl):
+	stat(Joy_stat)
 
 # Включение и отключение джойстика
 if keyboard.getPressed(vJoy_Key):
@@ -63,7 +72,6 @@ if keyboard.getPressed(vJoy_Key):
    		winsound.Beep(200,50)
    		winsound.Beep(300,30)
 		
-		
 if keyboard.getPressed(vJoy_Reset):
 		vJoy[0].x = 0  # Центровка по Backspace - джойстик встает в 0
    		vJoy[0].y = 0
@@ -73,16 +81,11 @@ if keyboard.getPressed(vJoy_Reset):
 		sx = vJoy[0].x * screen_x / (32768 / 2) * axisx_inversion + screen_x;
 		sy = vJoy[0].y * screen_y / (32768 / 2) * axisy_inversion + screen_y;
 		windll.user32.SetCursorPos(sx, sy) # автоцентрирование курсора мыши
-		if Joy_stat:
-   			winsound.Beep(300,30)
-   			winsound.Beep(300,30)
-   		else:
-   			winsound.Beep(200,50)
-   			winsound.Beep(200,50)
-
+		stat(Joy_stat)
+   		winsound.Beep(400,30)
 
 if vJoy_Enabled:
-	if Freeview: # деактивация/активация джойстика, если нажата средняя кнопка мыши
+	if Freeview: # деактивация/активация джойстика, если нажата кнопка мыши
 		Joy_stat = False
 		vJoy[0].setButton(0,False) 
 		# vJoy[0].x = 0 # при отключении джойстик встает в 0
@@ -96,7 +99,6 @@ if vJoy_Enabled:
 		sx = vJoy[0].x * screen_x / (32768 / 2) * axisx_inversion + screen_x;
 		sy = vJoy[0].y * screen_y / (32768 / 2) * axisy_inversion + screen_y;
 		windll.user32.SetCursorPos(sx, sy) # автоцентрирование курсора мыши при выходе из режима обзора
-
 
 if Joy_stat:
 	windll.user32.GetCursorPos(byref(pt))
@@ -115,19 +117,21 @@ if Joy_stat:
 	vJoy[0].y = y
 	vJoy[0].rz = vJoy[0].z
 	
-	
 	# scrol to throttle
 	if mouse.wheelUp:
 		slider += 32768 / 20; # 5%
+		winsound.Beep(int(slider/100+400),50)
+		
 	if mouse.wheelDown:
 		slider -= 32768 / 20; # 5%
-	if slider < -32768 / 2:
-		slider = -32768 / 2;	
-	if slider > 32768 / 2:
-		slider = 32768 / 2;	
+		winsound.Beep(int(slider/100+400),50)
+		
+	if slider < -32768 / 2: slider = -32768 / 2;	
+	if slider > 32768 / 2: slider = 32768 / 2;	
+
 	vJoy[0].slider = slider;
 
-
+diagnostics.watch(Freeview)
 diagnostics.watch(Joy_stat)
 diagnostics.watch(vJoy_Enabled)
 diagnostics.watch(vJoy[0].x)
@@ -135,4 +139,3 @@ diagnostics.watch(vJoy[0].y)
 diagnostics.watch(vJoy[0].z)
 diagnostics.watch(vJoy[0].rz)
 diagnostics.watch(vJoy[0].slider)
-diagnostics.watch(Freeview)
