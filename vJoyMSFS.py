@@ -126,9 +126,11 @@ if Joy_stat:
 	# далее идет умножение на масштаб оси к экрану и задание инверсии, если она есть
 	x = (mouse_x - screen_x) * multipler_x / preci * scale_Vx / scale_Rx * axisx_inversion
 	y = (mouse_y - screen_y) * multipler_y / preci * scale_Vy / scale_Ry * axisy_inversion
-	if vJoy_Alt: # Альтернативное управление - ось Х на руль 
+	if vJoy_Alt: # Альтернативное управление - ось Х на руль
+		## @TODO Перключать управление по Альт, как по ПКМ, при включении альтернативного - элероны в 0, для руления
 		vJoy[0].z = x * scale_Vz / scale_Rz * axisz_inversion
 	else:
+		## @TODO Перключать управление по Альт, при отключении альтернативного - все в 0, кроме рулей высоты
 		vJoy[0].x = x
 	vJoy[0].y = y
 	vJoy[0].rz = vJoy[0].z
