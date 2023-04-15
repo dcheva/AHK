@@ -1,9 +1,9 @@
+import time
 from System import Int16
 from ctypes import windll, Structure, c_ulong, byref
-import winsound, time
-
-
+   
 if starting:
+	vJoy_Key = Key.CapsLock # кнопка на клавиатуре включающая режим управления джойстика мышкой
 	steps = [0,4,8,12,16,20,24,28,32,-32,-28,-24,-20,-16,-12,-8,-4]
 	oldJoyX = 0
 	newJoyX = 0
@@ -14,7 +14,6 @@ if starting:
 	oldStep = 0
 	newStep = 0
 	m = ''
-
 
 ################################################################
 ## Map 32 keys
@@ -55,7 +54,6 @@ vJoy[0].setButton(28,int(keyboard.getKeyDown(Key.D4)))
 vJoy[0].setButton(29,int(keyboard.getKeyDown(Key.PrintScreen)))
 vJoy[0].setButton(30,int(keyboard.getKeyDown(Key.ScrollLock)))
 vJoy[0].setButton(31,int(keyboard.getKeyDown(Key.Pause)))
-
 
 ################################################################
 ## Let's dance
