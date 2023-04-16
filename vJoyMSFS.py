@@ -102,7 +102,8 @@ if keyboard.getPressed(vJoy_Reset):
 		sy = vJoy[0].y * screen_y / (32768 / 2) * axisy_inversion + screen_y;
 		windll.user32.SetCursorPos(sx, sy) # автоцентрирование курсора мыши
 		stat(Joy_stat)
-   		winsound.Beep(penta[7],50)
+		if vJoy_Control:
+			winsound.Beep(penta[7],50)
 
 if vJoy_Enabled:
 	if Freeview: # деактивация/активация джойстика, если нажата кнопка мыши
