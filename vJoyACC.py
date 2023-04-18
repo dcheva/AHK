@@ -1,4 +1,4 @@
-# 18.04.23 @dcheva
+#@ dcheva 18.04.23
 # Чтобы запустить скрипт, нажмите Script -> Run Script (F5)
 # Чтобы начать обработку ввода и захватить мышь, нажмите rCTRL+M (сочетание клавиш можно изменить в разделе "НАЗНАЧЕНИЕ КЛАВИШ")
 # Чтобы остановить обработку ввода и освободить мышь, снова нажмите rCTRL+M или ESCAPE
@@ -7,6 +7,9 @@
 from ctypes import windll
 from mmap import mmap
 from struct import unpack
+#@ Add sounds
+import winsound, time
+
 if starting:
 
 # *** ПАРАМЕТРЫ ***
@@ -17,21 +20,21 @@ if starting:
 	cursorHideCorner = 4						# [1..4] угол экрана, в котором прятать курсор мыши: 1 - верхн.лев., 2 - верхн.прав., 3 - нижн.лев., 4 - нижн.прав.
 	vJoyDeviceID = 1							# [1..15] № джойстика в vJoyConf
 	sysOverclock = False						# [True;False] системный таймер: False - 64Гц (стандарт Windows), True - 1кГц  
-	sysExecInterval = 2							# [1..10] делитель для системного таймера 1кГц. Частное двух чисел - частота выполнения скрипта; чем она выше, тем меньше задержка ввода, но выше нагрузка на комп 
+	sysExecInterval = 1							# [1..10] делитель для системного таймера 1кГц. Частное двух чисел - частота выполнения скрипта; чем она выше, тем меньше задержка ввода, но выше нагрузка на комп 
 	diagWatch = True							# [True;False] вывод в Watch
 # Руль
 	steerSensitivity = 50						# [1..100] чувствительность руля в нейтральном положении
 	steerNonlinearity = 25						# [0..900] на сколько % чувствительность руля в крайних положениях выше, чем в нейтральном
 # Педали и ручник
 	mouseThrottleBrake = False					# [True;False] газ и тормоз кнопками мыши
-	throttlePushRate = 10						# [1..100] скорость нажатия газа
-	throttleReleaseRate = 2						# [1..100] скорость отпускания газа
-	brakePushRate = 10							# [1..100] скорость нажатия тормоза
-	brakeReleaseRate = 2						# [1..100] скорость отпускания тормоза
-	clutchPushRate = 10							# [1..100] скорость нажатия сцепления
-	clutchReleaseRate = 2						# [1..100] скорость отпускания сцепления
-	handbrakePushRate = 10						# [1..100] скорость нажатия ручника
-	handbrakeReleaseRate = 10					# [1..100] скорость отпускания ручника
+	throttlePushRate = 100						#@ i3 100 i5 10	# [1..100] скорость нажатия газа
+	throttleReleaseRate = 20					#@ i3 20 i5 2	# [1..100] скорость отпускания газа
+	brakePushRate = 100							# [1..100] скорость нажатия тормоза
+	brakeReleaseRate = 20						# [1..100] скорость отпускания тормоза
+	clutchPushRate = 100						# [1..100] скорость нажатия сцепления
+	clutchReleaseRate = 20						# [1..100] скорость отпускания сцепления
+	handbrakePushRate = 100						# [1..100] скорость нажатия ручника
+	handbrakeReleaseRate = 100					# [1..100] скорость отпускания ручника
 # Автосцепление
 	autoClutch = False							# [True;False] прожимать сцепление и отпускать газ при переключении передач
 	autoThrottleBlip = False					# [True;False] перегазовка при понижении передачи
@@ -95,15 +98,18 @@ if starting:
 	keyTcPowerDown = Key.K						# ПБС: уменьшить силу
 	keyAbsPowerUp = Key.P						# АБС: увеличить силу
 	keyAbsPowerDown = Key.O						# АБС: уменьшить силу
-	## @TODO add engine map keys
+	#@TODO add engine map keys
 
-# *** ДАЛЕЕ НЕ МЕНЯТЬ ***
+	#@ Move global variables here
+	screenWidth, screenHeight = windll.user32.GetSystemMetrics(0), windll.user32.GetSystemMetrics(1)
+	penta = [131,165,196,220,262,330,392,440,524,660,784,880,1047,1319,1568,1760,2093]
+		
+# *** ДАЛЕЕ НЕ МЕНЯТЬ *** #@ Sure?
 	def cursorMove(cursorPos = 0):
 		"""Перемещает курсор в угол экрана.
 		Аргументы:
 		cursorPos: 1 - верхн.лев.угол, 2 - верхн.прав.угол, 3 - нижн.лев.угол, 4 - нижн.прав.угол, другое - центр экрана
 		"""
-		screenWidth, screenHeight = windll.user32.GetSystemMetrics(0), windll.user32.GetSystemMetrics(1)
 		if cursorPos == 1:
 			cursorPosX, cursorPosY = 0, 0
 		elif cursorPos == 2:
@@ -313,6 +319,18 @@ if starting:
 if isKeyDown(keySwitch1st) and isKeyPressed(keySwitch2nd) or keySwitch2nd == None and isKeyPressed(keySwitch1st) \
 or enabled and disableOnEsc and keyboard.getPressed(Key.Escape):
 	enabled = not enabled
+	#@ Center if enabled to prewent crashes after pause
+	#@TODO add beep soundf here
+	if enabled:
+		cursorPosX, cursorPosY = screenWidth / 2, screenHeight / 2
+		windll.user32.SetCursorPos(cursorPosX, cursorPosY)
+   		## Озвучка переключения - вкл
+   		winsound.Beep(penta[3],50)
+   		winsound.Beep(penta[5],50)
+	else:
+   		winsound.Beep(penta[5],50)
+   		winsound.Beep(penta[3],50)
+
 	if cursorHide:
 		cursorMove()
 	steerAxis = 0
@@ -326,7 +344,7 @@ if enabled:
 
 # Руль
 	steerAxis = steerHandler(steerAxis, steerSensitivity, steerNonlinearity, axisMax)
-	## @TODO add center on LMB and view on RMB mouse buttons
+	#@TODO add center on LMB and view on RMB mouse buttons
 
 # Газ
 	if throttleBlocked:
