@@ -25,6 +25,10 @@ if starting:
 # Руль
 	steerSensitivity = 50						# [1..100] чувствительность руля в нейтральном положении
 	steerNonlinearity = 25						# [0..900] на сколько % чувствительность руля в крайних положениях выше, чем в нейтральном
+#@ Center if key pressed
+	steerCenterEnabled = True
+	keySteerCenter = None
+	buttonSteerCenter = mouse.rightButton
 # Педали и ручник
 	mouseThrottleBrake = False					# [True;False] газ и тормоз кнопками мыши
 	throttlePushRate = 100						#@ i3 100 i5 10	# [1..100] скорость нажатия газа
@@ -343,6 +347,11 @@ if enabled:
 		cursorMove(cursorHideCorner)
 
 # Руль
+	#@ Center on key/button pressed
+	if steerCenterEnabled and mouse.rightButton or isKeyPressed(keySteerCenter):
+		cursorPosX, cursorPosY = screenWidth / 2, screenHeight / 2
+		windll.user32.SetCursorPos(cursorPosX, cursorPosY)
+		steerAxis = 0
 	steerAxis = steerHandler(steerAxis, steerSensitivity, steerNonlinearity, axisMax)
 	#@TODO add center on LMB and view on RMB mouse buttons
 
