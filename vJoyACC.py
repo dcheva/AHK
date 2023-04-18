@@ -10,6 +10,9 @@ from struct import unpack
 #@ Add sounds
 import winsound, time
 	
+#@ Move global variables here
+screenWidth, screenHeight = windll.user32.GetSystemMetrics(0), windll.user32.GetSystemMetrics(1)
+penta = [131,165,196,220,262,330,392,440,524,660,784,880,1047,1319,1568,1760,2093]
 reset = False
 
 if starting:
@@ -106,16 +109,10 @@ if starting:
 	keyAbsPowerDown = Key.O						# АБС: уменьшить силу
 	#@TODO add engine map keys
 
-	#@ Move global variables here
-	screenWidth, screenHeight = windll.user32.GetSystemMetrics(0), windll.user32.GetSystemMetrics(1)
-	penta = [131,165,196,220,262,330,392,440,524,660,784,880,1047,1319,1568,1760,2093]
-
+#@ More routines
 	def doReset(reset):
 		cursorPosX, cursorPosY = screenWidth / 2, screenHeight / 2
 		windll.user32.SetCursorPos(cursorPosX, cursorPosY)
-		steerAxis = 0
-		throttleAxis = brakeAxis = clutchAxis = handbrakeAxis = -axisMax
-		vJoyUpdate(vJoyDevice, steerAxis, throttleAxis, brakeAxis, clutchAxis, handbrakeAxis, keyGearUp, keyGearDown)
 		return reset
 
 # *** ДАЛЕЕ НЕ МЕНЯТЬ *** #@ Sure?
@@ -344,6 +341,7 @@ if isKeyDown(keySwitch1st) and isKeyPressed(keySwitch2nd) or keySwitch2nd == Non
    		winsound.Beep(penta[3],50)
    		winsound.Beep(penta[5],50)
 	else:
+		reset = doReset(False)
    		winsound.Beep(penta[5],50)
    		winsound.Beep(penta[3],50)
 
@@ -359,6 +357,9 @@ if enabled:
 #@ Center on key/button pressed
 	if steerCenterEnabled and mouse.rightButton or isKeyPressed(keySteerCenter):
 		reset = doReset(True)
+		steerAxis = 0
+		throttleAxis = brakeAxis = clutchAxis = handbrakeAxis = -axisMax
+		vJoyUpdate(vJoyDevice, steerAxis, throttleAxis, brakeAxis, clutchAxis, handbrakeAxis, keyGearUp, keyGearDown)
 # Руль
 	steerAxis = steerHandler(steerAxis, steerSensitivity, steerNonlinearity, axisMax, reset)
 
