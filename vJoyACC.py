@@ -1,4 +1,4 @@
-# 01.02.23
+#@ dcheva 18.04.23
 # Чтобы запустить скрипт, нажмите Script -> Run Script (F5)
 # Чтобы начать обработку ввода и захватить мышь, нажмите rCTRL+M (сочетание клавиш можно изменить в разделе "НАЗНАЧЕНИЕ КЛАВИШ")
 # Чтобы остановить обработку ввода и освободить мышь, снова нажмите rCTRL+M или ESCAPE
@@ -7,6 +7,14 @@
 from ctypes import windll
 from mmap import mmap
 from struct import unpack
+#@ Add sounds
+import winsound, time
+	
+#@ Move global variables here
+screenWidth, screenHeight = windll.user32.GetSystemMetrics(0), windll.user32.GetSystemMetrics(1)
+penta = [131,165,196,220,262,330,392,440,524,660,784,880,1047,1319,1568,1760,2093]
+reset = False
+
 if starting:
 
 # *** ПАРАМЕТРЫ ***
@@ -17,21 +25,21 @@ if starting:
 	cursorHideCorner = 4						# [1..4] угол экрана, в котором прятать курсор мыши: 1 - верхн.лев., 2 - верхн.прав., 3 - нижн.лев., 4 - нижн.прав.
 	vJoyDeviceID = 1							# [1..15] № джойстика в vJoyConf
 	sysOverclock = False						# [True;False] системный таймер: False - 64Гц (стандарт Windows), True - 1кГц  
-	sysExecInterval = 2							# [1..10] делитель для системного таймера 1кГц. Частное двух чисел - частота выполнения скрипта; чем она выше, тем меньше задержка ввода, но выше нагрузка на комп 
+	sysExecInterval = 1							# [1..10] делитель для системного таймера 1кГц. Частное двух чисел - частота выполнения скрипта; чем она выше, тем меньше задержка ввода, но выше нагрузка на комп 
 	diagWatch = True							# [True;False] вывод в Watch
 # Руль
 	steerSensitivity = 50						# [1..100] чувствительность руля в нейтральном положении
 	steerNonlinearity = 25						# [0..900] на сколько % чувствительность руля в крайних положениях выше, чем в нейтральном
 # Педали и ручник
 	mouseThrottleBrake = False					# [True;False] газ и тормоз кнопками мыши
-	throttlePushRate = 10						# [1..100] скорость нажатия газа
-	throttleReleaseRate = 2						# [1..100] скорость отпускания газа
-	brakePushRate = 10							# [1..100] скорость нажатия тормоза
-	brakeReleaseRate = 2						# [1..100] скорость отпускания тормоза
-	clutchPushRate = 10							# [1..100] скорость нажатия сцепления
-	clutchReleaseRate = 2						# [1..100] скорость отпускания сцепления
-	handbrakePushRate = 10						# [1..100] скорость нажатия ручника
-	handbrakeReleaseRate = 10					# [1..100] скорость отпускания ручника
+	throttlePushRate = 100						#@ i3 100 i5 10	# [1..100] скорость нажатия газа
+	throttleReleaseRate = 20					#@ i3 20 i5 2	# [1..100] скорость отпускания газа
+	brakePushRate = 100							# [1..100] скорость нажатия тормоза
+	brakeReleaseRate = 20						# [1..100] скорость отпускания тормоза
+	clutchPushRate = 100						# [1..100] скорость нажатия сцепления
+	clutchReleaseRate = 20						# [1..100] скорость отпускания сцепления
+	handbrakePushRate = 100						# [1..100] скорость нажатия ручника
+	handbrakeReleaseRate = 100					# [1..100] скорость отпускания ручника
 # Автосцепление
 	autoClutch = False							# [True;False] прожимать сцепление и отпускать газ при переключении передач
 	autoThrottleBlip = False					# [True;False] перегазовка при понижении передачи
@@ -69,16 +77,20 @@ if starting:
 	absSlipMax = 4.0							# [0..10] проскальзывание, при котором АБС максимально отпускает тормоз
 	absPower = 50								# [0..100] сила АБС (макс % сброса тормоза)
 	absPowerStep = 10							# [0..50] шаг регулировки силы АБС
+#@ Center if key/button pressed
+	steerCenterEnabled = True
 
 # *** НАЗНАЧЕНИЕ КЛАВИШ ***
 # Можно менять значения после знака "="
 # "=Key.A" назначает клавишу "A", "=None" не назначает никакую клавишу (заглушка)
+	keySteerCenter = Key.Space						#@ Center if key pressed
+	buttonSteerCenter = mouse.rightButton		#@ Center if button pressed
 	keySwitch1st = Key.F5						# обработка ввода: вкл/выкл (первая из сочетания клавиш)
 	keySwitch2nd = None							# обработка ввода: вкл/выкл (вторая клавиша из сочетания. Чтобы использовать только первую клавишу, поставьте "=None")
 	keyThrottle = Key.A							# газ (ЛКМ, если mouseThrottleBrake = True)
 	keyBrake = Key.Z							# тормоз (ПКМ, если mouseThrottleBrake = True)
 	keyClutch = None							# сцепление
-	keyHandbrake = Key.Space					# ручник
+	keyHandbrake = None							# ручник
 	keyGearUp = Key.S							# повысить передачу
 	keyGearDown = Key.X							# понизить передачу
 	keyThrottleAdjustUp = None					# регулировка газа: увеличить максимальную глубину нажатия педали
@@ -95,15 +107,20 @@ if starting:
 	keyTcPowerDown = Key.K						# ПБС: уменьшить силу
 	keyAbsPowerUp = Key.P						# АБС: увеличить силу
 	keyAbsPowerDown = Key.O						# АБС: уменьшить силу
-	## @TODO add engine map keys
+	#@TODO add engine map keys
 
-# *** ДАЛЕЕ НЕ МЕНЯТЬ ***
+#@ More routines
+	def doReset(reset):
+		cursorPosX, cursorPosY = screenWidth / 2, screenHeight / 2
+		windll.user32.SetCursorPos(cursorPosX, cursorPosY)
+		return reset
+
+# *** ДАЛЕЕ НЕ МЕНЯТЬ *** #@ Sure?
 	def cursorMove(cursorPos = 0):
 		"""Перемещает курсор в угол экрана.
 		Аргументы:
 		cursorPos: 1 - верхн.лев.угол, 2 - верхн.прав.угол, 3 - нижн.лев.угол, 4 - нижн.прав.угол, другое - центр экрана
 		"""
-		screenWidth, screenHeight = windll.user32.GetSystemMetrics(0), windll.user32.GetSystemMetrics(1)
 		if cursorPos == 1:
 			cursorPosX, cursorPosY = 0, 0
 		elif cursorPos == 2:
@@ -157,7 +174,7 @@ if starting:
 		vJoyDevice.setButton(0, isKeyDown(keyGearUp))
 		vJoyDevice.setButton(1, isKeyDown(keyGearDown))
 
-	def steerHandler(axisPos, sensitivity, nonlinearity, axisMax):
+	def steerHandler(axisPos, sensitivity, nonlinearity, axisMax, reset):
 		"""Преобразует ось X мыши в ось руля. Возвращает позицию на оси руля. 
 		Аргументы:
 		axisPos - текущая позиция руля
@@ -167,8 +184,12 @@ if starting:
 		"""
 		if nonlinearity:
 			sensitivity *= 1 + nonlinearity * abs(axisPos) / axisMax / 100.0
-		screenWidthFactor = windll.user32.GetSystemMetrics(0) * 25.0 / axisMax 
-		axisPos += mouse.deltaX * sensitivity / screenWidthFactor
+		screenWidthFactor = windll.user32.GetSystemMetrics(0) * 25.0 / axisMax
+		if(reset):
+			reset = doReset(False)
+		else:
+			axisPos += mouse.deltaX * sensitivity / screenWidthFactor
+			
 		axisPos = repairValue(axisPos, -axisMax, axisMax)
 		return axisPos
 
@@ -311,22 +332,36 @@ if starting:
 			absPowerStep = percentToValue(absPowerStep, 0, 2 * axisMax)
 
 if isKeyDown(keySwitch1st) and isKeyPressed(keySwitch2nd) or keySwitch2nd == None and isKeyPressed(keySwitch1st) \
-or enabled and disableOnEsc and keyboard.getPressed(Key.Escape):
+		or enabled and disableOnEsc and keyboard.getPressed(Key.Escape):
 	enabled = not enabled
+	if enabled:
+		reset = doReset(True)
+		steerAxis = 0
+		throttleAxis = brakeAxis = clutchAxis = handbrakeAxis = -axisMax
+   		winsound.Beep(penta[3],50)
+   		winsound.Beep(penta[5],50)
+	else:
+		reset = doReset(False)
+   		winsound.Beep(penta[5],50)
+   		winsound.Beep(penta[3],50)
+
 	if cursorHide:
 		cursorMove()
-	steerAxis = 0
-	throttleAxis = brakeAxis = clutchAxis = handbrakeAxis = -axisMax
-	vJoyUpdate(vJoyDevice, steerAxis, throttleAxis, brakeAxis, clutchAxis, handbrakeAxis)
+
+vJoyUpdate(vJoyDevice, steerAxis, throttleAxis, brakeAxis, clutchAxis, handbrakeAxis, keyGearUp, keyGearDown)
 
 if enabled:
-	vJoyUpdate(vJoyDevice, steerAxis, throttleAxis, brakeAxis, clutchAxis, handbrakeAxis, keyGearUp, keyGearDown)
 	if cursorHide:
 		cursorMove(cursorHideCorner)
 
+#@ Center on key/button pressed
+	if steerCenterEnabled and mouse.rightButton or isKeyPressed(keySteerCenter):
+		reset = doReset(True)
+		steerAxis = 0
+		throttleAxis = brakeAxis = clutchAxis = handbrakeAxis = -axisMax
+		vJoyUpdate(vJoyDevice, steerAxis, throttleAxis, brakeAxis, clutchAxis, handbrakeAxis, keyGearUp, keyGearDown)
 # Руль
-	steerAxis = steerHandler(steerAxis, steerSensitivity, steerNonlinearity, axisMax)
-	## @TODO add center on LMB and view on RMB mouse buttons
+	steerAxis = steerHandler(steerAxis, steerSensitivity, steerNonlinearity, axisMax, reset)
 
 # Газ
 	if throttleBlocked:
@@ -410,32 +445,34 @@ if diagWatch:
 	diagnostics.watch(handbrakeAxis)
 	diagnostics.watch(throttleMax)
 	diagnostics.watch(brakeMax)
-	if throttleAdjust1Enabled:
-		diagnostics.watch(throttleAdjustMin)
-		diagnostics.watch(throttleAdjustStep)
-	if throttleAdjust2Enabled:
-		diagnostics.watch(throttleLimit1)
-		diagnostics.watch(throttleLimit2)
-		diagnostics.watch(throttleLimit3)
-	if brakeAdjust1Enabled:
-		diagnostics.watch(brakeAdjustMin)
-		diagnostics.watch(brakeAdjustStep)
-	if brakeAdjust2Enabled:
-		diagnostics.watch(brakeLimit1)
-		diagnostics.watch(brakeLimit2)
-		diagnostics.watch(brakeLimit3)
-	if tractionControl or antilockBrakes:
-		diagnostics.watch(wheelSlipFL)
-		diagnostics.watch(wheelSlipFR)
-		diagnostics.watch(wheelSlipRL)
-		diagnostics.watch(wheelSlipRR)
-		if tractionControl:
-			diagnostics.watch(tcSlipMin)
-			diagnostics.watch(tcSlipMax)
-			diagnostics.watch(tcPower)
-			diagnostics.watch(tcPowerStep)
-		if antilockBrakes:
-			diagnostics.watch(absSlipMin)
-			diagnostics.watch(absSlipMax)
-			diagnostics.watch(absPower)
-			diagnostics.watch(absPowerStep)
+	#if throttleAdjust1Enabled:
+	diagnostics.watch(throttleAdjustMin)
+	diagnostics.watch(throttleAdjustStep)
+#if throttleAdjust2Enabled:
+	diagnostics.watch(throttleLimit1)
+	diagnostics.watch(throttleLimit2)
+	diagnostics.watch(throttleLimit3)
+#if brakeAdjust1Enabled:
+	diagnostics.watch(brakeAdjustMin)
+	diagnostics.watch(brakeAdjustStep)
+#if brakeAdjust2Enabled:
+	diagnostics.watch(brakeLimit1)
+	diagnostics.watch(brakeLimit2)
+	diagnostics.watch(brakeLimit3)
+#if tractionControl or antilockBrakes:
+#	diagnostics.watch(wheelSlipFL)
+#	diagnostics.watch(wheelSlipFR)
+#	diagnostics.watch(wheelSlipRL)
+#	diagnostics.watch(wheelSlipRR)
+#if tractionControl:
+#	diagnostics.watch(tcSlipMin)
+#	diagnostics.watch(tcSlipMax)
+#	diagnostics.watch(tcPower)
+#	diagnostics.watch(tcPowerStep)
+#if antilockBrakes:
+#	diagnostics.watch(absSlipMin)
+#	diagnostics.watch(absSlipMax)
+#	diagnostics.watch(absPower)
+#	diagnostics.watch(absPowerStep)
+
+diagnostics.watch(reset)
