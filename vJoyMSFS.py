@@ -8,6 +8,7 @@ class POINT(Structure):
    _fields_ = [("x", c_ulong), ("y", c_ulong)]
    
 if starting:
+	speech.say("started.")
 	Joy_stat = False # данный флаг используется для включения с клавиатуры, передачи данных на джойстик
 	vJoy_Enabled = False # данный флаг используется для временного отключения джойстика мышкой
 	vJoy_Key = Key.CapsLock # кнопка на клавиатуре включающая режим управления джойстика мышкой
@@ -78,14 +79,16 @@ if keyboard.getPressed(vJoy_Key):
    		# vJoy[0].z = 0
    		# vJoy[0].rz = 0
    		## Озвучка переключения - откл
-   		winsound.Beep(penta[5],50)
-   		winsound.Beep(penta[3],50)
+   		# winsound.Beep(penta[5],50)
+   		# winsound.Beep(penta[3],50)
+		speech.say("disengaged.")
 	else:
 		vJoy_Enabled = True
 		vJoy[0].setButton(0, mouse.getButton(0))
    		## Озвучка переключения - вкл
-   		winsound.Beep(penta[3],50)
-   		winsound.Beep(penta[5],50)
+   		# winsound.Beep(penta[3],50)
+   		# winsound.Beep(penta[5],50)
+		speech.say("engaged.")
 		
 if keyboard.getPressed(vJoy_Reset):
 	# if Joy_stat:
