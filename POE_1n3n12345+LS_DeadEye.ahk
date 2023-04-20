@@ -39,20 +39,23 @@ $^F1::
 ; Functions
 clkToKill()
 {
+  # first: area rffect with high mana cost
   Send, {W}
-  Sleep, 1000
-  Send, {RButton}
-  Sleep, 200
+  Sleep, 1000 # value depends on regen time
+  # second: single like frost bomb
   Send, {Q}
   Sleep, 200
-  Send, {Q}
+  # third: drop packs of mines or totems or any
+  Send, {MButton}
   Sleep, 200
-  Send, {Q}
+  Send, {MButton}
   Sleep, 200
-  Send, {Q}
+  Send, {MButton}
   Sleep, 200
-  Send, {Q}
+  Send, {MButton}
   Sleep, 200
+  Send, {MButton}
+  Sleep, 1000 # sleep to regen mana
   SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 }
 
