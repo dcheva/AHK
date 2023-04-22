@@ -159,8 +159,8 @@ return
 ; W and ^W
 $W::
   Send, {W}
-  Sleep, 200
-  Send, ^{W}
+;  Sleep, 200
+;  Send, ^{W}
 return
 
 ; run clicker loop
