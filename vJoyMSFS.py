@@ -79,16 +79,16 @@ if keyboard.getPressed(vJoy_Key):
    		# vJoy[0].z = 0
    		# vJoy[0].rz = 0
    		## Озвучка переключения - откл
-   		# winsound.Beep(penta[5],50)
-   		# winsound.Beep(penta[3],50)
-		speech.say("disengaged.")
+   		winsound.Beep(penta[5],50)
+   		winsound.Beep(penta[3],50)
+		# speech.say("disengaged.")
 	else:
 		vJoy_Enabled = True
 		vJoy[0].setButton(0, mouse.getButton(0))
    		## Озвучка переключения - вкл
-   		# winsound.Beep(penta[3],50)
-   		# winsound.Beep(penta[5],50)
-		speech.say("engaged.")
+   		winsound.Beep(penta[3],50)
+   		winsound.Beep(penta[5],50)
+		# speech.say("engaged.")
 		
 if keyboard.getPressed(vJoy_Reset):
 	# if Joy_stat:
