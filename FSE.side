@@ -1,0 +1,101 @@
+{
+  "id": "fcbef3d0-6bbe-43c5-8964-b3b93bc0ae66",
+  "version": "2.0",
+  "name": "FSE",
+  "url": "https://server.fseconomy.net",
+  "tests": [{
+    "id": "e01ea611-2900-46bb-81e8-27cab3567025",
+    "name": "Login",
+    "commands": [{
+      "id": "814ffc38-790b-42af-89c6-125ab624087a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9c2af42-1a15-4a66-8303-2ee4ac90152a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1332x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ce9b73a-28d1-48aa-9d28-a4e06054f3c6",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=user", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='login-block']/form/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": "cheva"
+    }, {
+      "id": "5af2d92b-1634-4c9d-838a-12d034cdee56",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login-block']/form/ul/li[2]/input", "xpath:idRelative"],
+        ["xpath=//li[2]/input", "xpath:position"]
+      ],
+      "value": "Gfhjkm1976!!!"
+    }, {
+      "id": "8f504e71-79c0-458b-88e9-13e49e5dadd1",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=user", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='login-block']/form/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66660824-6b11-4834-bd41-3f61528a8cef",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul:nth-child(3)",
+      "targets": [
+        ["css=ul:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='login-block']/form/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e3948eb-1e1a-48e8-8c2f-fabbe3f9d475",
+      "comment": "",
+      "command": "click",
+      "target": "name=event",
+      "targets": [
+        ["name=event", "name"],
+        ["css=.form-actions > input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='event']", "xpath:attributes"],
+        ["xpath=//div[@id='login-block']/form/ul/li[3]/input", "xpath:idRelative"],
+        ["xpath=//li[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d711df83-100f-485f-809a-c2e71960e225",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e01ea611-2900-46bb-81e8-27cab3567025"]
+  }],
+  "urls": ["https://server.fseconomy.net/"],
+  "plugins": []
+}
