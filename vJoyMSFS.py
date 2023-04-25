@@ -60,11 +60,13 @@ Freeview = mouse.rightButton # MSFS:: правая кнопка на мышке 
 if Joy_stat: vJoy[0].setButton(0, mouse.getButton(0))
 
 ## Привязка статуса Control
-if keyboard.getKeyDown(vJoy_LControl) or keyboard.getKeyDown(vJoy_RControl): vJoy_Control = True
+# if keyboard.getKeyDown(vJoy_LControl): vJoy_Control = True
+if keyboard.getKeyDown(vJoy_RControl): vJoy_Control = True
 else: vJoy_Control = False
 
 ## Привязка статуса Alt
-if keyboard.getKeyDown(vJoy_LAlt) or keyboard.getKeyDown(vJoy_RAlt): vJoy_Alt = True
+# if keyboard.getKeyDown(vJoy_LAlt): vJoy_Alt = True
+if keyboard.getKeyDown(vJoy_RAlt): vJoy_Alt = True
 else: vJoy_Alt = False
 
 # Включение и отключение джойстика
