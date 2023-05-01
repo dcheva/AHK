@@ -39,8 +39,6 @@ if starting:
 	vJoy_RAlt = Key.RightAlt # Привязка к Alt
 	vJoy_Alt = False # Альтернативное управление - ось Х на руль направления
 	vJoy_Control = False # флаг нажатой клавиши Control
-	vJoy_ZoomIn = Key.Equals # Приближение
-	vJoy_ZoomOut = Key.Minus # Отдаление
 	vJoy_Freeview = False # флаг временного выключения режима управления джойстика мышкой
 	Freeview = False # флаг временного выключения режима управления джойстика мышкой
 	screen_x = int(windll.user32.GetSystemMetrics(0) / 2) # размер экрана
@@ -171,32 +169,6 @@ if Joy_stat:
 	if vJoy[0].slider != slider: winsound.Beep(int((slider+32768)/tetra[0]),50)
 	vJoy[0].slider = slider;
 
-## Для использования зума в режиме свободного обзора - колёсико мышки на оси ry+
-## Работает при нажатой кнопке свободного обзора, не выключается, не сбрасывается при выключении.
-## @TODO использовать vJoy[0].slider2 (не работает корректно в МСФС!!!)
-if Freeview:	
-	if mouse.wheelUp: 
-		# Zoom by mouse scroll: increase axe value
-		slider2 += 32768 / 100; # 1%
-		# Zoom by mouse scroll: press key In
-		# KeyPress(vJoy_ZoomIn) # Use later
-		keyboard.setKeyDown(vJoy_ZoomIn)
-		winsound.Beep(tetra[0],20)
-		keyboard.setKeyUp(vJoy_ZoomIn)
-	if mouse.wheelDown: 
-		# Zoom by mouse scroll: decrease axe value
-		slider2 -= 32768 / 100; # 1%
-		# Zoom by mouse scroll: press key Out
-		# KeyPress(vJoy_ZoomOut) # Use later
-		keyboard.setKeyDown(vJoy_ZoomOut)
-		winsound.Beep(tetra[0],20)
-		keyboard.setKeyUp(vJoy_ZoomOut)
-	if slider2 < -32768 / 2: slider2 = -32768 / 2;	
-	if slider2 > 32768 / 2: slider2 = 32768 / 2;
-	# Zoom by mouse scroll: set axe
-	# But in MSFS now realized as flying brick
-	# thats whi bind vJoy_ZoomIn/Out keys ("-=" on keyboard)
-	vJoy[0].ry = slider2;
 
 # Let's test		
 diagnostics.watch(Freeview)
