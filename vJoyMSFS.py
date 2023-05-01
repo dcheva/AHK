@@ -1,3 +1,9 @@
+#### by cheva (c) MIT 2012-2023 
+#### MSFS MouseJoke FreePie VJoy and Voice Commands
+#### @vesion 0.2305.01
+#### https://github.com/dcheva/AHK/blob/d07dcf1ca39c9cd5de81531d714af30b039ad3b9/vJoyMSFS.py
+#### https://pastebin.com/H3eJHzNB
+
 from System import Int16
 from ctypes import windll, Structure, c_ulong, byref
 import winsound, time
@@ -10,7 +16,7 @@ class POINT(Structure):
    _fields_ = [("x", c_ulong), ("y", c_ulong)]
   
 ## From https://github.com/NoxWings/FreePie-Scripts/blob/master/VoiceToKeyboard.py
-## Uset it to add voice commands as specified in the VoiceCommand class.
+## Use it to add voice commands as specified in the VoiceCommand class.
 class KeyAction:
 	def __init__(self, key):
 		self.keys = []
@@ -204,7 +210,6 @@ if Joy_stat:
 	x = (mouse_x - screen_x) * multipler_x / preci * scale_Vx / scale_Rx * axisx_inversion
 	y = (mouse_y - screen_y) * multipler_y / preci * scale_Vy / scale_Ry * axisy_inversion
 	if vJoy_Alt or vJoy_Control: # Альтернативное управление - ось Х на руль
-		## @TODO Перключать управление по Альт, как по ПКМ, при включении альтернативного - элероны в 0, для руления
 		vJoy[0].z = x * scale_Vz / scale_Rz * axisz_inversion
 	else:
 		vJoy[0].x = x
@@ -223,7 +228,7 @@ if Joy_stat:
 
 ## Для использования зума в режиме свободного обзора - колёсико мышки на оси ry+
 ## Работает при нажатой кнопке свободного обзора, не выключается, не сбрасывается при выключении.
-## @TODO использовать vJoy[0].slider2 (не работает)
+## @TODO использовать vJoy[0].slider2 (не работает корректно в МСФС!!!)
 if Freeview:	
 	if mouse.wheelUp: 
 		# Zoom by mouse scroll: increase axe value
@@ -247,7 +252,8 @@ if Freeview:
 	# But in MSFS now realized as flying brick
 	# thats whi bind vJoy_ZoomIn/Out keys ("-=" on keyboard)
 	vJoy[0].ry = slider2;
-		
+
+# Let's test		
 diagnostics.watch(Freeview)
 diagnostics.watch(Joy_stat)
 diagnostics.watch(vJoy_Enabled)
