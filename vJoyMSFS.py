@@ -1,8 +1,9 @@
 #### by cheva (c) MIT 2012-2023 
 #### MSFS MouseJoke FreePie VJoy and Voice Commands
 #### @vesion 0.2305.01
-#### https://github.com/dcheva/AHK/blob/main/vJoyMSFS.py
-#### https://pastebin.com/H3eJHzNB
+#### @files at https://drive.google.com/drive/folders/1sUrhqyiA2Zfj1OTt9bcohxHUi5pMzQLk
+#### @github https://github.com/dcheva/AHK/blob/main/vJoyMSFS.py
+#### @pastebin https://pastebin.com/H3eJHzNB
 
 from System import Int16
 from ctypes import windll, Structure, c_ulong, byref
