@@ -14,62 +14,6 @@ tetra = [131,165,196,220,262,330,392,440,524,660,784,880,1047,1319,1568,1760,209
 
 class POINT(Structure):
    _fields_ = [("x", c_ulong), ("y", c_ulong)]
-  
-## From https://github.com/NoxWings/FreePie-Scripts/blob/master/VoiceToKeyboard.py
-## Use it to add voice commands as specified in the VoiceCommand class.
-class KeyAction:
-	def __init__(self, key):
-		self.keys = []
-		# append or extend (both are valid)
-		if isinstance(key, list):
-			self.keys.extend(key)
-		else:
-			self.keys.append(key)
-	
-	def setKeyDown(self):
-		for key in self.keys:
-			keyboard.setKeyDown(key)	
-		
-	def setKeyUp(self):
-		for key in self.keys:
-			keyboard.setKeyUp(key)	
-	
-	def setKey(self, down):
-		for key in self.keys:
-			keyboard.setKey(key, down)
-			
-	def setKeyPressed(self):
-		for key in self.keys:
-			#keyboard.setPressed(key)
-			keyboard.setKeyDown(key)
-			keyboard.setKeyUp(key)
-						
-	def execute(self):
-		raise NotImplementedError("Subclass must implement execute method")
-
-	def update(self, curentTime):
-		pass
-   
-class KeyPress(KeyAction):
-	def __init__(self, key, duration = 0.07):
-		KeyAction.__init__(self, key)
-		self.duration = duration
-		self.time = time.time()
-		self.needUpdate = False
-		
-	def execute(self):
-		# set the keys down
-		self.setKeyDown()
-		# start the update timer
-		self.time = time.time()
-		self.needUpdate = True
-			
-	def update(self, currentTime):
-		if self.needUpdate:
-			# determine if we should stop pressing the keys
-			if (currentTime - self.time) >= self.duration:
-				self.setKeyUp()
-				self.needUpdate = False
 
 def stat(Joy_stat, count=2):
 	for i in range(count):
