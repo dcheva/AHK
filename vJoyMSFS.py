@@ -27,7 +27,7 @@ def stat(Joy_stat, count=2):
 if starting:
 	winsound.Beep(tetra[5],50)
 	winsound.Beep(tetra[9],50)
-	# speech.say("started.") ; Для использования, нужно настроить голосовой диктор - https://t.ly/_KeN
+	# speech.say("started.") # Для использования, нужно настроить голосовой диктор - https://t.ly/_KeN
 	Joy_stat = False # данный флаг используется для включения с клавиатуры, передачи данных на джойстик
 	vJoy_Enabled = False # данный флаг используется для временного отключения джойстика мышкой
 	vJoy_Key = Key.CapsLock # кнопка на клавиатуре включающая режим управления джойстика мышкой
