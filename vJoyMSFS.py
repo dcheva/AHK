@@ -68,6 +68,7 @@ if starting:
 			
 ## Let's dance
 Freeview = mouse.rightButton # MSFS:: правая кнопка на мышке включает свободный обзор. 
+Click = mouse.getPressed(0)
 ## Freeview = keyboard.getKeyDown(Key.V) # пример для кнопки на клавиатуре для свободного обзора
 ## mouse.middleButton .rightButton .leftButton - средняя, правая или левая кнопка мыши и т.п.
 
@@ -131,7 +132,10 @@ if keyboard.getPressed(vJoy_Reset):
 			winsound.Beep(tetra[7],50)
 
 if vJoy_Enabled:
-	if Freeview: # деактивация/активация джойстика, если нажата кнопка мыши
+	# Бип если нажата левая кнопка:
+	if Click: winsound.Beep(tetra[7],50)
+	# деактивация/активация джойстика, если нажата правая кнопка мыши
+	if Freeview:
 		Joy_stat = False
 		# vJoy[0].setButton(0, False)
 	if not Freeview and Joy_stat == False:
