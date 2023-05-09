@@ -26,65 +26,155 @@ $^+W::
   Sleep, 1000
   ExitApp
 return
-;-----Let's play!-----
 
-SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
-
-;reload
-$^+R::Reload
-
-;suspend/resume
-$^+S::
-  Suspend, toggle
-  SoundPlay %A_WinDir%\Media\Windows Battery Low.wav
-return
-
-;pause/resume
-$^+P::
-  Pause, toggle
-  SoundPlay %A_WinDir%\Media\Windows Balloon.wav
-return
-
-;exit
-$^+W::ExitApp
-
-global CLK := 0
-
-;functions
-collect()
-{
-	Loop, 100
-	{
-		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
-		Send, e
-		Sleep, 100
-		if(CLK == 0) 
-			break
-	}
-}
-
-;produce v<0.6.0
-;$+LButton::
-;	SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
-;	Send, {LButton Down}
-;Return
-
-;collect v<0.6.0
-;$+e::
-;	CLK:=1
-;	collect()
-;Return
-$^e::
-	Send, {E Down}
+;----- Let's play! -----
+;----- Fly with https://ficsit.app/mod/UtilityMod
+$!~::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}fly
+	Sleep, 25
+	Send, {Enter}
 Return
 
-;fly start/stop
-$+~::
+;----- Save and load TPs for https://ficsit.app/mod/UtilityMod
+$^!1::
 	Send, {Enter}
-	Sleep, 100
-	Send, {!}
-	Sleep, 100
-	Send, fly
-	Sleep, 100
+	Sleep, 25
+	Send, {!}tp save tp1
+	Sleep, 25
+	Send, {Enter}
+Return
+$!1::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp tp1
+	Sleep, 25
+	Send, {Enter}
+Return
+$^!2::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp save tp2
+	Sleep, 25
+	Send, {Enter}
+Return
+$!2::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp tp2
+	Sleep, 25
+	Send, {Enter}
+Return
+$^!3::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp save tp3
+	Sleep, 25
+	Send, {Enter}
+Return
+$!3::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp tp3
+	Sleep, 25
+	Send, {Enter}
+Return
+$^!4::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp save tp4
+	Sleep, 25
+	Send, {Enter}
+Return
+$!4::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp tp4
+	Sleep, 25
+	Send, {Enter}
+Return
+$^!5::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp save tp5
+	Sleep, 25
+	Send, {Enter}
+Return
+$!5::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp tp5
+	Sleep, 25
+	Send, {Enter}
+Return
+$^!6::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp save tp6
+	Sleep, 25
+	Send, {Enter}
+Return
+$!6::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp tp6
+	Sleep, 25
+	Send, {Enter}
+Return
+$^!7::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp save tp7
+	Sleep, 25
+	Send, {Enter}
+Return
+$!7::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp tp7
+	Sleep, 25
+	Send, {Enter}
+Return
+$^!8::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp save tp8
+	Sleep, 25
+	Send, {Enter}
+Return
+$!8::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp tp8
+	Sleep, 25
+	Send, {Enter}
+Return
+$^!9::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp save tp9
+	Sleep, 25
+	Send, {Enter}
+Return
+$!9::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp tp9
+	Sleep, 25
+	Send, {Enter}
+Return
+$^!0::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp save tp0
+	Sleep, 25
+	Send, {Enter}
+Return
+$!0::
+	Send, {Enter}
+	Sleep, 25
+	Send, {!}tp tp0
+	Sleep, 25
 	Send, {Enter}
 Return
