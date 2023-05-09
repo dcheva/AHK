@@ -29,7 +29,7 @@ return
 
 ;----- Let's play! -----
 ;----- Fly with https://ficsit.app/mod/UtilityMod
-$!~::
+$+~::
 	Send, {Enter}
 	Sleep, 25
 	Send, {!}fly
