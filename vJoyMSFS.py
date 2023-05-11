@@ -46,9 +46,11 @@ if starting:
 	sx = screen_x
 	sy = screen_y
 	## Для оси газа
-	slider = int(-32768 / 2)
-	## Для зума при свободном обзоре
-	slider2 = 0
+	maxAxis = 32768;
+	slider = int(-maxAxis / 2)
+	# Шаг оси = 5% 
+	step = maxAxis / 20
+	# Cursor pointer type
 	pt = POINT()
 	
 	# Внимание - не стоит задавать близкие значения Scale_V и Scale_R, так как это приведет к взаимовлиянию настроек. Одно из значений в паре пусть будет 100.
@@ -60,13 +62,31 @@ if starting:
 	scale_Rz = 100
 	preci = 100  # уточнитель задает точность измерений до сотых, используется, для сохранения дробной части в умножителе
 	# умножитель определяет, насколько нужно увеличить значение положения курсора, чтобы джойстик корректно отклонялся от центра экрана
-	multipler_x = preci * 32768 / screen_x / 2
-	multipler_y = preci * 32768 / screen_y / 2
+	multipler_x = preci * maxAxis / screen_x / 2
+	multipler_y = preci * maxAxis / screen_y / 2
 	axisx_inversion = 1
 	axisy_inversion = 1
 	axisz_inversion = 1
-			
-## Let's dance
+
+## Let's fly
+
+##############################################################
+# Throtttle control 0.2305.11
+# F1 -> throttleOff
+# F2 -> throttleDown
+# F3 -> throttleUp
+# F1 -> throttleMax
+# Also mousewheel binded
+# scroll up   -> throtteUp
+# scroll down -> throttleDown
+throttleMin  = keyboard.getPressed(Key.F1)
+throttleMax  = keyboard.getPressed(Key.F4)
+# throttleDown = keyboard.getKeyDown(Key.F2)
+# throttleUp   = keyboard.getKeyDown(Key.F3)
+throttleDown  = keyboard.getPressed(Key.F2)
+throttleUp  = keyboard.getPressed(Key.F3)
+##############################################################
+	
 Freeview = mouse.rightButton # MSFS:: правая кнопка на мышке включает свободный обзор. 
 Click = mouse.getPressed(0)
 ## Freeview = keyboard.getKeyDown(Key.V) # пример для кнопки на клавиатуре для свободного обзора
@@ -124,8 +144,8 @@ if keyboard.getPressed(vJoy_Reset):
    		vJoy[0].z = 0
    		vJoy[0].rz = 0
 		# move mouse to vJoy position
-		sx = vJoy[0].x * screen_x / (32768 / 2) * axisx_inversion + screen_x;
-		sy = vJoy[0].y * screen_y / (32768 / 2) * axisy_inversion + screen_y;
+		sx = vJoy[0].x * screen_x / (maxAxis / 2) * axisx_inversion + screen_x;
+		sy = vJoy[0].y * screen_y / (maxAxis / 2) * axisy_inversion + screen_y;
 		windll.user32.SetCursorPos(sx, sy) # автоцентрирование курсора мыши
 		stat(Joy_stat)
 		if vJoy_Control:
@@ -142,8 +162,8 @@ if vJoy_Enabled:
 		Joy_stat = True
 		vJoy[0].setButton(0 ,mouse.getButton(0)) 
 		# move mouse to vJoy position
-		sx = vJoy[0].x * screen_x / (32768 / 2) * axisx_inversion + screen_x;
-		sy = vJoy[0].y * screen_y / (32768 / 2) * axisy_inversion + screen_y;
+		sx = vJoy[0].x * screen_x / (maxAxis / 2) * axisx_inversion + screen_x;
+		sy = vJoy[0].y * screen_y / (maxAxis / 2) * axisy_inversion + screen_y;
 		windll.user32.SetCursorPos(sx, sy) # автоцентрирование курсора мыши при выходе из режима обзора
 
 if Joy_stat:
@@ -166,13 +186,14 @@ if Joy_stat:
 	## Тяга на колёсике мышки
 	## Шаг 5% (1/20)
 	## Осторожно с фокусом мышки: одновременно крутит тягу и меняет значение ручек в фокусе!!!
-	if mouse.wheelUp: slider += 32768 / 20; # 5%
-	if mouse.wheelDown: slider -= 32768 / 20; # 5%
-	if slider < -32768 / 2: slider = -32768 / 2;	
-	if slider > 32768 / 2: slider = 32768 / 2;
-	if vJoy[0].slider != slider: winsound.Beep(int((slider+32768)/tetra[0]),50)
+	if throttleMin: slider = -maxAxis / 2
+	if throttleMax: slider = maxAxis / 2
+	if throttleUp: slider += step
+	if throttleDown: slider -= step
+	if slider < -maxAxis / 2: slider = -maxAxis / 2;	
+	if slider > maxAxis / 2: slider = maxAxis / 2;
+	if vJoy[0].slider != slider: winsound.Beep(int((slider+maxAxis)/tetra[0]),50)
 	vJoy[0].slider = slider;
-
 
 # Let's test		
 diagnostics.watch(Freeview)
