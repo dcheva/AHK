@@ -69,7 +69,7 @@ if starting:
 	axisz_inversion = 1
 
 ## Let's fly
-##############################################################
+############################################################################################
 # Throtttle control 0.2305.11
 # F1 -> throttleOff
 # F2 -> throttleDown
@@ -82,9 +82,11 @@ throttleMin  = keyboard.getPressed(Key.F1)
 throttleMax  = keyboard.getPressed(Key.F4)
 # throttleDown = keyboard.getKeyDown(Key.F2)
 # throttleUp   = keyboard.getKeyDown(Key.F3)
-throttleDown  = keyboard.getPressed(Key.F2)
-throttleUp  = keyboard.getPressed(Key.F3)
-##############################################################
+# Do not change if leftColtrol pressed due to Propeller binds
+throttleChange = keyboard.getKeyUp(Key.LeftControl) 
+throttleDown  = (throttleChange and keyboard.getPressed(Key.F2)) or mouse.wheelDown 
+throttleUp  = (throttleChange and keyboard.getPressed(Key.F3)) or mouse.wheelUp
+############################################################################################
 	
 Freeview = mouse.rightButton # MSFS:: правая кнопка на мышке включает свободный обзор. 
 Click = mouse.getPressed(0)
