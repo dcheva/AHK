@@ -78,8 +78,11 @@ if starting:
 # Also mousewheel binded on Up and Down
 # scroll up   -> throtteUp
 # scroll down -> throttleDown
-# Do not change if leftColtrol pressed due to Propeller and Mixture binds
-throttleChange = keyboard.getKeyUp(Key.LeftControl) 
+# Do not change if left Coltrol, Alt or Shift pressed due to Propeller and other binds
+throttleChange = (
+	keyboard.getKeyUp(Key.LeftControl) 
+	and keyboard.getKeyUp(Key.LeftShift) 
+	and keyboard.getKeyUp(Key.LeftAlt))	
 throttleMin  = throttleChange and keyboard.getPressed(Key.F1)
 throttleMax  = throttleChange and keyboard.getPressed(Key.F4)
 # throttleDown = keyboard.getKeyDown(Key.F2)
