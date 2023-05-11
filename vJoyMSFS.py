@@ -75,15 +75,15 @@ if starting:
 # F2 -> throttleDown
 # F3 -> throttleUp
 # F1 -> throttleMax
-# Also mousewheel binded
+# Also mousewheel binded on Up and Down
 # scroll up   -> throtteUp
 # scroll down -> throttleDown
-throttleMin  = keyboard.getPressed(Key.F1)
-throttleMax  = keyboard.getPressed(Key.F4)
+# Do not change if leftColtrol pressed due to Propeller and Mixture binds
+throttleChange = keyboard.getKeyUp(Key.LeftControl) 
+throttleMin  = throttleChange and keyboard.getPressed(Key.F1)
+throttleMax  = throttleChange and keyboard.getPressed(Key.F4)
 # throttleDown = keyboard.getKeyDown(Key.F2)
 # throttleUp   = keyboard.getKeyDown(Key.F3)
-# Do not change if leftColtrol pressed due to Propeller binds
-throttleChange = keyboard.getKeyUp(Key.LeftControl) 
 throttleDown  = (throttleChange and keyboard.getPressed(Key.F2)) or mouse.wheelDown 
 throttleUp  = (throttleChange and keyboard.getPressed(Key.F3)) or mouse.wheelUp
 ############################################################################################
