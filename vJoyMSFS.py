@@ -196,7 +196,7 @@ if Joy_stat:
 	if throttleDown: slider -= step
 	if slider < -maxAxis / 2: slider = -maxAxis / 2;	
 	if slider > maxAxis / 2: slider = maxAxis / 2;
-	if vJoy[0].slider != slider: winsound.Beep(int((slider+maxAxis)/tetra[0]),50)
+	if vJoy[0].slider != slider: winsound.Beep(int((slider+maxAxis)*2/tetra[2]),50)
 	vJoy[0].slider = slider;
 
 # Let's test		
