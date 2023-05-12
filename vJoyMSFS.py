@@ -1,9 +1,9 @@
 #### by cheva (c) MIT 2012-2023 
 #### MSFS MouseJoke FreePie VJoy and Voice Commands
-#### @vesion 0.2305.11
-#### @files at https://drive.google.com/drive/folders/1sUrhqyiA2Zfj1OTt9bcohxHUi5pMzQLk
+#### @vesion 0.2305.12a
 #### @github https://github.com/dcheva/AHK/blob/main/vJoyMSFS.py
 #### @pastebin https://pastebin.com/H3eJHzNB
+#### @files at https://drive.google.com/drive/folders/1sUrhqyiA2Zfj1OTt9bcohxHUi5pMzQLk
 
 from System import Int16
 from ctypes import windll, Structure, c_ulong, byref
@@ -25,9 +25,8 @@ def stat(Joy_stat, count=2):
 
 ## Let's train
 if starting:
-	# При запуске должно быть 3 бипа осей газа, пропеллера и смеси
-	# winsound.Beep(tetra[5],50)
-	# winsound.Beep(tetra[9],50)
+	winsound.Beep(tetra[5],50)
+	winsound.Beep(tetra[9],50)
 	# speech.say("started.") # Для использования, нужно настроить голосовой диктор - https://t.ly/_KeN
 
 	vJoy_Key = Key.CapsLock # кнопка на клавиатуре включающая режим управления джойстика мышкой
@@ -111,7 +110,7 @@ Freeview = mouse.rightButton # MSFS:: правая кнопка на мышке 
 ## mouse.middleButton .rightButton .leftButton - средняя, правая или левая кнопка мыши и т.п.
 
 ############################################################################################
-# Throtttle control 0.2305.11
+# Throtttle control 0.2305.12a
 # F1 -> throttleOff
 # F2 -> throttleDown
 # F3 -> throttleUp
@@ -220,35 +219,37 @@ if Joy_stat:
 	## @TODO Зачем продублировал?
 	vJoy[0].rz = vJoy[0].z
 	
-	## Тяга на колёсике мышки
-	## Шаг 5% (1/20)
-	## Осторожно с фокусом мышки: одновременно крутит тягу и меняет значение ручек в фокусе!!!
-	if throttleMin: slider = -maxAxis / 2
-	if throttleMax: slider = maxAxis / 2
-	if throttleUp: slider += step
-	if throttleDown: slider -= step
-	if slider < -maxAxis / 2: slider = -maxAxis / 2;	
-	if slider > maxAxis / 2: slider = maxAxis / 2;
-	if vJoy[0].slider != slider: winsound.Beep(int((slider+maxAxis)*2/tetra[1]),50)
-	vJoy[0].slider = slider;
-	## Added Propeller and Mixture control v0.2305.12a
-	## @TODO test and refactor
-	if propellerMin: slider2 = -maxAxis / 2
-	if propellerMax: slider2 = maxAxis / 2
-	if propellerUp: slider2 += step
-	if propellerDown: slider2 -= step
-	if slider2 < -maxAxis / 2: slider2 = -maxAxis / 2;	
-	if slider2 > maxAxis / 2: slider2 = maxAxis / 2;
-	if vJoy[0].rx != slider2: winsound.Beep(int((slider2+maxAxis)*2/tetra[1]),50)
-	vJoy[0].rx = slider2;
-	if mixtureMin: slider3 = -maxAxis / 2
-	if mixtureMax: slider3 = maxAxis / 2
-	if mixtureUp: slider3 += step
-	if mixtureDown: slider3 -= step
-	if slider3 < -maxAxis / 2: slider3 = -maxAxis / 2;	
-	if slider3 > maxAxis / 2: slider3 = maxAxis / 2;
-	if vJoy[0].ry != slider3: winsound.Beep(int((slider3+maxAxis)*2/tetra[1]),50)
-	vJoy[0].ry = slider3;
+## You can shift this block to the left to use controls when vJoy disabled by Caps
+## Если сдвинуть этот блок вправо, можно контролировать F1-F4 с выключенным VJoy
+## Тяга на колёсике мышки
+## Шаг 5% (1/20)
+## Осторожно с фокусом мышки: одновременно крутит тягу и меняет значение ручек в фокусе!!!
+if throttleMin: slider = -maxAxis / 2
+if throttleMax: slider = maxAxis / 2
+if throttleUp: slider += step
+if throttleDown: slider -= step
+if slider < -maxAxis / 2: slider = -maxAxis / 2;	
+if slider > maxAxis / 2: slider = maxAxis / 2;
+if vJoy[0].slider != slider: winsound.Beep(int((slider+maxAxis)*2/tetra[1]),50)
+vJoy[0].slider = slider;
+## Added Propeller and Mixture control v0.2305.12a
+## @TODO test and refactor
+if propellerMin: slider2 = -maxAxis / 2
+if propellerMax: slider2 = maxAxis / 2
+if propellerUp: slider2 += step
+if propellerDown: slider2 -= step
+if slider2 < -maxAxis / 2: slider2 = -maxAxis / 2;	
+if slider2 > maxAxis / 2: slider2 = maxAxis / 2;
+if vJoy[0].rx != slider2: winsound.Beep(int((slider2+maxAxis)*2/tetra[1]),50)
+vJoy[0].rx = slider2;
+if mixtureMin: slider3 = -maxAxis / 2
+if mixtureMax: slider3 = maxAxis / 2
+if mixtureUp: slider3 += step
+if mixtureDown: slider3 -= step
+if slider3 < -maxAxis / 2: slider3 = -maxAxis / 2;	
+if slider3 > maxAxis / 2: slider3 = maxAxis / 2;
+if vJoy[0].ry != slider3: winsound.Beep(int((slider3+maxAxis)*2/tetra[1]),50)
+vJoy[0].ry = slider3;
 
 # Let's test		
 diagnostics.watch(Freeview)
