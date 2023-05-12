@@ -25,29 +25,40 @@ def stat(Joy_stat, count=2):
 
 ## Let's train
 if starting:
-	winsound.Beep(tetra[5],50)
-	winsound.Beep(tetra[9],50)
+	# При запуске должно быть 3 бипа осей газа, пропеллера и смеси
+	# winsound.Beep(tetra[5],50)
+	# winsound.Beep(tetra[9],50)
 	# speech.say("started.") # Для использования, нужно настроить голосовой диктор - https://t.ly/_KeN
-	Joy_stat = False # данный флаг используется для включения с клавиатуры, передачи данных на джойстик
-	vJoy_Enabled = False # данный флаг используется для временного отключения джойстика мышкой
+
 	vJoy_Key = Key.CapsLock # кнопка на клавиатуре включающая режим управления джойстика мышкой
 	vJoy_Reset = Key.Backspace # Центровка по Backspace
-	vJoy_LControl = Key.LeftControl # Привязка к Control
-	vJoy_RControl = Key.RightControl # Привязка к Control
-	vJoy_Control = False # флаг нажатой клавиши Control
-	vJoy_LAlt = Key.LeftAlt # Привязка к Alt
-	vJoy_RAlt = Key.RightAlt # Привязка к Alt
+
+	Joy_stat = False # данный флаг используется для включения с клавиатуры, передачи данных на джойстик
+	vJoy_Enabled = False # данный флаг используется для временного отключения джойстика зажатой ПКМ
 	vJoy_Alt = False # Альтернативное управление - ось Х на руль направления
 	vJoy_Control = False # флаг нажатой клавиши Control
+	vJoy_Shift = False # флаг нажатой клавиши Shift
+
+	vJoy_LControl = Key.LeftControl # Привязка к Control
+	vJoy_RControl = Key.RightControl # Привязка к Control
+	vJoy_LShift = Key.LeftShift # Привязка к Shift
+	vJoy_RShift = Key.RightShift # Привязка к Shift
+	vJoy_LAlt = Key.LeftAlt # Привязка к Alt
+	vJoy_RAlt = Key.RightAlt # Привязка к Alt
+
 	vJoy_Freeview = False # флаг временного выключения режима управления джойстика мышкой
 	Freeview = False # флаг временного выключения режима управления джойстика мышкой
+
 	screen_x = int(windll.user32.GetSystemMetrics(0) / 2) # размер экрана
 	screen_y = int(windll.user32.GetSystemMetrics(1) / 2)
 	sx = screen_x
 	sy = screen_y
-	## Для оси газа
+	
 	maxAxis = 32768;
-	slider = int(-maxAxis / 2)
+	## Для оси газа, пропеллера и смеси
+	slider  = int(-maxAxis / 2) # Throttle:  slider or rz (F1-F4)
+	slider2 = int(maxAxis / 2)  # Propeller: rx (Control + F1-F4)
+	slider3 = int(maxAxis / 2)  # Mixture:   ry (CtrlShift F1-F4)
 	# Шаг оси = 5% 
 	step = maxAxis / 20
 	# Cursor pointer type
@@ -69,6 +80,36 @@ if starting:
 	axisz_inversion = 1
 
 ## Let's fly
+## ЛКМ на кнопку джоя - кнопку тормоза
+if Joy_stat: vJoy[0].setButton(0, mouse.getButton(0))
+
+## vJoy_Alt: # Альтернативное управление - ось Х на руль
+
+## Привязка статуса Control
+vJoy_Control = False
+if keyboard.getKeyDown(vJoy_LControl): vJoy_Control = True
+if keyboard.getKeyDown(vJoy_RControl): vJoy_Control = True
+
+## Привязка статуса Shift
+vJoy_Shift = False
+if keyboard.getKeyDown(vJoy_LShift): vJoy_Shift = True
+if keyboard.getKeyDown(vJoy_RShift): vJoy_Shift = True
+
+## Привязка статуса Alt
+vJoy_Alt = False
+if keyboard.getKeyDown(vJoy_LAlt): vJoy_Alt = True
+if keyboard.getKeyDown(vJoy_RAlt): vJoy_Alt = True
+
+Click = mouse.getPressed(0)
+F1 = keyboard.getPressed(Key.F1)
+F2 = keyboard.getPressed(Key.F2)
+F3 = keyboard.getPressed(Key.F3)
+F4 = keyboard.getPressed(Key.F4)
+
+Freeview = mouse.rightButton # MSFS:: правая кнопка на мышке включает свободный обзор. 
+## Freeview = keyboard.getKeyDown(Key.V) # пример для кнопки на клавиатуре для свободного обзора
+## mouse.middleButton .rightButton .leftButton - средняя, правая или левая кнопка мыши и т.п.
+
 ############################################################################################
 # Throtttle control 0.2305.11
 # F1 -> throttleOff
@@ -79,35 +120,26 @@ if starting:
 # scroll up   -> throtteUp
 # scroll down -> throttleDown
 # Do not change if left Coltrol, Alt or Shift pressed due to Propeller and other binds
-throttleChange = (
-	keyboard.getKeyUp(Key.LeftControl) 
-	and keyboard.getKeyUp(Key.LeftShift) 
-	and keyboard.getKeyUp(Key.LeftAlt))	
-throttleMin  = throttleChange and keyboard.getPressed(Key.F1)
-throttleMax  = throttleChange and keyboard.getPressed(Key.F4)
-# throttleDown = keyboard.getKeyDown(Key.F2)
-# throttleUp   = keyboard.getKeyDown(Key.F3)
-throttleDown  = (throttleChange and keyboard.getPressed(Key.F2)) or mouse.wheelDown 
-throttleUp  = (throttleChange and keyboard.getPressed(Key.F3)) or mouse.wheelUp
+throttleChange = not vJoy_Control and not vJoy_Shift
+propellerChange = vJoy_Control and not vJoy_Shift
+mixtureChange = vJoy_Control and vJoy_Shift
+
+throttleMin   = throttleChange and F1
+throttleMax   = throttleChange and F4
+throttleDown  = throttleChange and (F2 or mouse.wheelDown) 
+throttleUp    = throttleChange and (F3 or mouse.wheelUp)
+
+## Added Propeller and Mixture control v0.2305.12a
+propellerMin   = propellerChange and F1
+propellerMax   = propellerChange and F4
+propellerDown  = propellerChange and (F2 or mouse.wheelDown) 
+propellerUp    = propellerChange and (F3 or mouse.wheelUp)
+
+mixtureMin   = mixtureChange and F1
+mixtureMax   = mixtureChange and F4
+mixtureDown  = mixtureChange and (F2 or mouse.wheelDown) 
+mixtureUp    = mixtureChange and (F3 or mouse.wheelUp)
 ############################################################################################
-	
-Freeview = mouse.rightButton # MSFS:: правая кнопка на мышке включает свободный обзор. 
-Click = mouse.getPressed(0)
-## Freeview = keyboard.getKeyDown(Key.V) # пример для кнопки на клавиатуре для свободного обзора
-## mouse.middleButton .rightButton .leftButton - средняя, правая или левая кнопка мыши и т.п.
-
-## ЛКМ на кнопку джоя - кнопку тормоза
-if Joy_stat: vJoy[0].setButton(0, mouse.getButton(0))
-
-## Привязка статуса Control
-# if keyboard.getKeyDown(vJoy_LControl): vJoy_Control = True
-if keyboard.getKeyDown(vJoy_RControl): vJoy_Control = True
-else: vJoy_Control = False
-
-## Привязка статуса Alt
-# if keyboard.getKeyDown(vJoy_LAlt): vJoy_Alt = True
-if keyboard.getKeyDown(vJoy_RAlt): vJoy_Alt = True
-else: vJoy_Alt = False
 
 # Включение и отключение джойстика
 if keyboard.getPressed(vJoy_Key):
@@ -180,11 +212,12 @@ if Joy_stat:
 	# далее идет умножение на масштаб оси к экрану и задание инверсии, если она есть
 	x = (mouse_x - screen_x) * multipler_x / preci * scale_Vx / scale_Rx * axisx_inversion
 	y = (mouse_y - screen_y) * multipler_y / preci * scale_Vy / scale_Ry * axisy_inversion
-	if vJoy_Alt or vJoy_Control: # Альтернативное управление - ось Х на руль
+	if vJoy_Alt: # Альтернативное управление - ось Х на руль
 		vJoy[0].z = x * scale_Vz / scale_Rz * axisz_inversion
 	else:
 		vJoy[0].x = x
 	vJoy[0].y = y
+	## @TODO Зачем продублировал?
 	vJoy[0].rz = vJoy[0].z
 	
 	## Тяга на колёсике мышки
@@ -196,8 +229,26 @@ if Joy_stat:
 	if throttleDown: slider -= step
 	if slider < -maxAxis / 2: slider = -maxAxis / 2;	
 	if slider > maxAxis / 2: slider = maxAxis / 2;
-	if vJoy[0].slider != slider: winsound.Beep(int((slider+maxAxis)*2/tetra[2]),50)
+	if vJoy[0].slider != slider: winsound.Beep(int((slider+maxAxis)*2/tetra[1]),50)
 	vJoy[0].slider = slider;
+	## Added Propeller and Mixture control v0.2305.12a
+	## @TODO test and refactor
+	if propellerMin: slider2 = -maxAxis / 2
+	if propellerMax: slider2 = maxAxis / 2
+	if propellerUp: slider2 += step
+	if propellerDown: slider2 -= step
+	if slider2 < -maxAxis / 2: slider2 = -maxAxis / 2;	
+	if slider2 > maxAxis / 2: slider2 = maxAxis / 2;
+	if vJoy[0].rx != slider2: winsound.Beep(int((slider2+maxAxis)*2/tetra[1]),50)
+	vJoy[0].rx = slider2;
+	if mixtureMin: slider3 = -maxAxis / 2
+	if mixtureMax: slider3 = maxAxis / 2
+	if mixtureUp: slider3 += step
+	if mixtureDown: slider3 -= step
+	if slider3 < -maxAxis / 2: slider3 = -maxAxis / 2;	
+	if slider3 > maxAxis / 2: slider3 = maxAxis / 2;
+	if vJoy[0].ry != slider3: winsound.Beep(int((slider3+maxAxis)*2/tetra[1]),50)
+	vJoy[0].ry = slider3;
 
 # Let's test		
 diagnostics.watch(Freeview)
@@ -210,3 +261,6 @@ diagnostics.watch(vJoy[0].rx)
 diagnostics.watch(vJoy[0].ry)
 diagnostics.watch(vJoy[0].rz)
 diagnostics.watch(vJoy[0].slider)
+diagnostics.watch(vJoy_Control)
+diagnostics.watch(vJoy_Alt)
+diagnostics.watch(vJoy_Shift)
