@@ -119,9 +119,9 @@ Freeview = mouse.rightButton # MSFS:: правая кнопка на мышке 
 # scroll up   -> throtteUp
 # scroll down -> throttleDown
 # Do not change if left Coltrol, Alt or Shift pressed due to Propeller and other binds
-throttleChange = not vJoy_Control and not vJoy_Shift
-propellerChange = vJoy_Control and not vJoy_Shift
-mixtureChange = vJoy_Control and vJoy_Shift
+throttleChange = not vJoy_Control and not vJoy_Shift and not vJoy_Alt
+propellerChange = vJoy_Control and not vJoy_Shift and not vJoy_Alt
+mixtureChange = vJoy_Control and vJoy_Shift and not vJoy_Alt
 
 throttleMin   = throttleChange and F1
 throttleMax   = throttleChange and F4
