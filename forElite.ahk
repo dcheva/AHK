@@ -39,4 +39,3 @@ return
 ;-----Let's play!-----
 ; Emergency exit
 $^F1::Process,Close,EliteDangerous64.exe
-
