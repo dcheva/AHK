@@ -1,6 +1,6 @@
 #### by cheva (c) MIT 2012-2023 
 #### MSFS MouseJoke FreePie VJoy and Voice Commands
-#### @vesion 0.2305.12a
+#### @vesion 0.2305.15a
 #### @github https://github.com/dcheva/AHK/blob/main/vJoyMSFS.py
 #### @pastebin https://pastebin.com/H3eJHzNB
 #### @files at https://drive.google.com/drive/folders/1sUrhqyiA2Zfj1OTt9bcohxHUi5pMzQLk
@@ -34,9 +34,10 @@ if starting:
 
 	Joy_stat = False # данный флаг используется для включения с клавиатуры, передачи данных на джойстик
 	vJoy_Enabled = False # данный флаг используется для временного отключения джойстика зажатой ПКМ
-	vJoy_Alt = False # Альтернативное управление - ось Х на руль направления
 	vJoy_Control = False # флаг нажатой клавиши Control
 	vJoy_Shift = False # флаг нажатой клавиши Shift
+	vJoy_LeftAlt = False # флаг нажатой клавиши Alt
+	vJoy_RightAlt = False # Альтернативное управление - ось Х на руль направления
 
 	vJoy_LControl = Key.LeftControl # Привязка к Control
 	vJoy_RControl = Key.RightControl # Привязка к Control
@@ -82,7 +83,7 @@ if starting:
 ## ЛКМ на кнопку джоя - кнопку тормоза
 if Joy_stat: vJoy[0].setButton(0, mouse.getButton(0))
 
-## vJoy_Alt: # Альтернативное управление - ось Х на руль
+## vJoy_RightAlt: # Альтернативное управление - ось Х на руль
 
 ## Привязка статуса Control
 vJoy_Control = False
@@ -95,9 +96,14 @@ if keyboard.getKeyDown(vJoy_LShift): vJoy_Shift = True
 if keyboard.getKeyDown(vJoy_RShift): vJoy_Shift = True
 
 ## Привязка статуса Alt
-vJoy_Alt = False
-if keyboard.getKeyDown(vJoy_LAlt): vJoy_Alt = True
-if keyboard.getKeyDown(vJoy_RAlt): vJoy_Alt = True
+vJoy_LeftAlt = False
+vJoy_RightAlt = False
+## !!!FIX RightAlt + MouseScroll to throttle change on takeoff/landing
+## @TODO test it in @vesion 0.2305.15a
+if keyboard.getKeyDown(vJoy_LAlt): # vJoy_Alt = True
+	vJoy_LeftAlt = True
+if keyboard.getKeyDown(vJoy_RAlt): # vJoy_Alt = True
+	vJoy_RightAlt = True
 
 Click = mouse.getPressed(0)
 F1 = keyboard.getPressed(Key.F1)
@@ -119,9 +125,9 @@ Freeview = mouse.rightButton # MSFS:: правая кнопка на мышке 
 # scroll up   -> throtteUp
 # scroll down -> throttleDown
 # Do not change if left Coltrol, Alt or Shift pressed due to Propeller and other binds
-throttleChange = not vJoy_Control and not vJoy_Shift and not vJoy_Alt
-propellerChange = vJoy_Control and not vJoy_Shift and not vJoy_Alt
-mixtureChange = vJoy_Control and vJoy_Shift and not vJoy_Alt
+throttleChange = not vJoy_Control and not vJoy_Shift and not vJoy_LeftAlt
+propellerChange = vJoy_Control and not vJoy_Shift and not vJoy_LeftAlt
+mixtureChange = vJoy_Control and vJoy_Shift and not vJoy_LeftAlt
 
 throttleMin   = throttleChange and F1
 throttleMax   = throttleChange and F4
@@ -211,12 +217,12 @@ if Joy_stat:
 	# далее идет умножение на масштаб оси к экрану и задание инверсии, если она есть
 	x = (mouse_x - screen_x) * multipler_x / preci * scale_Vx / scale_Rx * axisx_inversion
 	y = (mouse_y - screen_y) * multipler_y / preci * scale_Vy / scale_Ry * axisy_inversion
-	if vJoy_Alt: # Альтернативное управление - ось Х на руль
+	if vJoy_RightAlt: # Альтернативное управление - ось Х на руль
 		vJoy[0].z = x * scale_Vz / scale_Rz * axisz_inversion
 	else:
 		vJoy[0].x = x
 	vJoy[0].y = y
-	## @TODO Зачем продублировал?
+	## @TODO Зачем продублировал ось??
 	vJoy[0].rz = vJoy[0].z
 	
 	## You can shift this block to the left to use controls when vJoy disabled by Caps
@@ -263,5 +269,6 @@ diagnostics.watch(vJoy[0].ry)
 diagnostics.watch(vJoy[0].rz)
 diagnostics.watch(vJoy[0].slider)
 diagnostics.watch(vJoy_Control)
-diagnostics.watch(vJoy_Alt)
 diagnostics.watch(vJoy_Shift)
+diagnostics.watch(vJoy_LeftAlt)
+diagnostics.watch(vJoy_RightAlt)
