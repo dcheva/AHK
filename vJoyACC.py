@@ -28,8 +28,8 @@ if starting:
 	sysExecInterval = 1							# [1..10] делитель для системного таймера 1кГц. Частное двух чисел - частота выполнения скрипта; чем она выше, тем меньше задержка ввода, но выше нагрузка на комп 
 	diagWatch = True							# [True;False] вывод в Watch
 # Руль
-	steerSensitivity = 50						# [1..100] чувствительность руля в нейтральном положении
-	steerNonlinearity = 25						# [0..900] на сколько % чувствительность руля в крайних положениях выше, чем в нейтральном
+	steerSensitivity = 40						# [1..100] чувствительность руля в нейтральном положении
+	steerNonlinearity = 20						# [0..900] на сколько % чувствительность руля в крайних положениях выше, чем в нейтральном
 # Педали и ручник
 	mouseThrottleBrake = False					# [True;False] газ и тормоз кнопками мыши
 	throttlePushRate = 100						#@ i3 100 i5 10	# [1..100] скорость нажатия газа
@@ -64,19 +64,33 @@ if starting:
 	brakeLimit1 = 85							# [0..100] максимальная глубина нажатия тормоза при удержании клавиши keyBrakeLimit1
 	brakeLimit2 = 70							# [0..100] максимальная глубина нажатия тормоза при удержании клавиши keyBrakeLimit2
 	brakeLimit3 = 55							# [0..100] максимальная глубина нажатия тормоза при удержании клавиши keyBrakeLimit3
+	
 # Противобуксовочная система (только Assetto Corsa & AC:Competizione)
-	tractionControl = False						# [True;False] включить ПБС
+
+	tractionControl = True						# [True;False] включить ПБС
+	
 	drivetrain = 1								# [0..2] привод автомобиля: 0 - передний, 1 - задний, 2 - полный
 	tcSlipMin = 0.5								# [0..10] проскальзывание, при котором ПБС начинает отпускать газ
 	tcSlipMax = 1.5								# [0..10] проскальзывание, при котором ПБС максимально отпускает газ
 	tcPower = 50								# [0..100] сила ПБС (макс % сброса газа)
 	tcPowerStep = 10							# [0..50] шаг регулировки силы ПБС
+	
 # Антиблокировочная система (только Assetto Corsa & AC:Competizione)
-	antilockBrakes = False						# [True;False] включить АБС
+
+	antilockBrakes = True						# [True;False] включить АБС
+	
 	absSlipMin = 1.0							# [0..10] проскальзывание, при котором АБС начинает отпускать тормоз
 	absSlipMax = 4.0							# [0..10] проскальзывание, при котором АБС максимально отпускает тормоз
 	absPower = 50								# [0..100] сила АБС (макс % сброса тормоза)
 	absPowerStep = 10							# [0..50] шаг регулировки силы АБС
+	
+	# Антиблокировочная система
+	keyAbsPowerUp = Key.P						# АБС: увеличить силу
+	keyAbsPowerDown = Key.O						# АБС: уменьшить силу
+	# Противобуксовочная система 
+	keyTcPowerUp = Key.L						# ПБС: увеличить силу
+	keyTcPowerDown = Key.K						# ПБС: уменьшить силу
+	
 #@ Center if key/button pressed
 	steerCenterEnabled = True
 
@@ -103,10 +117,7 @@ if starting:
 	keyBrakeLimit3 = None						# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit3 (при удержании)
 	keyBrakeAdjustUp = Key.D					# регулировка тормоза: увеличить глубину нажатия педали
 	keyBrakeAdjustDown = Key.C					# регулировка тормоза: уменьшить глубину нажатия педали
-	keyTcPowerUp = Key.L						# ПБС: увеличить силу
-	keyTcPowerDown = Key.K						# ПБС: уменьшить силу
-	keyAbsPowerUp = Key.P						# АБС: увеличить силу
-	keyAbsPowerDown = Key.O						# АБС: уменьшить силу
+
 	#@TODO add engine map keys
 	winsound.Beep(tetra[7],50)
 	winsound.Beep(tetra[7],50)
