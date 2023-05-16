@@ -1,7 +1,7 @@
-#@ dcheva 18.04.23
+#@ dcheva v0.2305.16a
 # Чтобы запустить скрипт, нажмите Script -> Run Script (F5)
-# Чтобы начать обработку ввода и захватить мышь, нажмите rCTRL+M (сочетание клавиш можно изменить в разделе "НАЗНАЧЕНИЕ КЛАВИШ")
-# Чтобы остановить обработку ввода и освободить мышь, снова нажмите rCTRL+M или ESCAPE
+# Чтобы начать обработку ввода и захватить мышь, нажмите F5 (сочетание клавиш можно изменить в разделе "НАЗНАЧЕНИЕ КЛАВИШ")
+# Чтобы остановить обработку ввода и освободить мышь, снова нажмите F5 или ESCAPE
 ## Read first: https://steamcommunity.com/sharedfiles/filedetails/?l=polish&id=2514840344
 
 from ctypes import windll
@@ -12,7 +12,7 @@ import winsound, time
 	
 #@ Move global variables here
 screenWidth, screenHeight = windll.user32.GetSystemMetrics(0), windll.user32.GetSystemMetrics(1)
-penta = [131,165,196,220,262,330,392,440,524,660,784,880,1047,1319,1568,1760,2093]
+tetra = [131,165,196,220,262,330,392,440,524,660,784,880,1047,1319,1568,1760,2093]
 reset = False
 
 if starting:
@@ -83,7 +83,7 @@ if starting:
 # *** НАЗНАЧЕНИЕ КЛАВИШ ***
 # Можно менять значения после знака "="
 # "=Key.A" назначает клавишу "A", "=None" не назначает никакую клавишу (заглушка)
-	keySteerCenter = Key.Space						#@ Center if key pressed
+	keySteerCenter = Key.Space					#@ Center if key pressed
 	buttonSteerCenter = mouse.rightButton		#@ Center if button pressed
 	keySwitch1st = Key.F5						# обработка ввода: вкл/выкл (первая из сочетания клавиш)
 	keySwitch2nd = None							# обработка ввода: вкл/выкл (вторая клавиша из сочетания. Чтобы использовать только первую клавишу, поставьте "=None")
@@ -108,6 +108,8 @@ if starting:
 	keyAbsPowerUp = Key.P						# АБС: увеличить силу
 	keyAbsPowerDown = Key.O						# АБС: уменьшить силу
 	#@TODO add engine map keys
+	winsound.Beep(tetra[7],50)
+	winsound.Beep(tetra[7],50)
 
 #@ More routines
 	def doReset(reset):
@@ -338,12 +340,12 @@ if isKeyDown(keySwitch1st) and isKeyPressed(keySwitch2nd) or keySwitch2nd == Non
 		reset = doReset(True)
 		steerAxis = 0
 		throttleAxis = brakeAxis = clutchAxis = handbrakeAxis = -axisMax
-   		winsound.Beep(penta[3],50)
-   		winsound.Beep(penta[5],50)
+   		winsound.Beep(tetra[3],50)
+   		winsound.Beep(tetra[5],50)
 	else:
 		reset = doReset(False)
-   		winsound.Beep(penta[5],50)
-   		winsound.Beep(penta[3],50)
+   		winsound.Beep(tetra[5],50)
+   		winsound.Beep(tetra[3],50)
 
 	if cursorHide:
 		cursorMove()
@@ -389,23 +391,31 @@ if enabled:
 
 # Регулировка газа
 	if throttleAdjust1Enabled or throttleAdjust2Enabled:
+		ph = 0
 		if throttleAdjust1Enabled and not throttleAdjust2Enabled:
 			throttleAdjustUpPressed = mouseWheelThrottleAdjust and mouse.wheelUp or isKeyPressed(keyThrottleAdjustUp)
 			throttleAdjustDownPressed = mouseWheelThrottleAdjust and mouse.wheelDown or isKeyPressed(keyThrottleAdjustDown)
 			if throttleAdjustUpPressed or throttleAdjustDownPressed:
-				throttleMax = adjustValueByInput(throttleMax, throttleAdjustMin, axisMax, throttleAdjustStep, throttleAdjustUpPressed, throttleAdjustDownPressed)
+				ph = adjustValueByInput(throttleMax, throttleAdjustMin, axisMax, throttleAdjustStep, throttleAdjustUpPressed, throttleAdjustDownPressed)
 		elif throttleAdjust2Enabled:
-			throttleMax = valueByKeyDown(axisMax, throttleLimit1, throttleLimit2, throttleLimit3, keyThrottleLimit1, keyThrottleLimit2, keyThrottleLimit3)
+			ph = valueByKeyDown(axisMax, throttleLimit1, throttleLimit2, throttleLimit3, keyThrottleLimit1, keyThrottleLimit2, keyThrottleLimit3)
+		if ph!=0: 
+			throttleMax = ph
+			winsound.Beep(tetra[(int)(ph/3280+4)],50)
 
 # Регулировка тормоза
 	if brakeAdjust1Enabled or brakeAdjust2Enabled:
+		ph = 0
 		if brakeAdjust1Enabled and not brakeAdjust2Enabled:
 			brakeAdjustUpPressed = mouseWheelBrakeAdjust and mouse.wheelUp or isKeyPressed(keyBrakeAdjustUp)
 			brakeAdjustDownPressed = mouseWheelBrakeAdjust and mouse.wheelDown or isKeyPressed(keyBrakeAdjustDown)
 			if brakeAdjustUpPressed or brakeAdjustDownPressed:
-				brakeMax = adjustValueByInput(brakeMax, brakeAdjustMin, axisMax, brakeAdjustStep, brakeAdjustUpPressed, brakeAdjustDownPressed)
+				ph = adjustValueByInput(brakeMax, brakeAdjustMin, axisMax, brakeAdjustStep, brakeAdjustUpPressed, brakeAdjustDownPressed)
 		elif brakeAdjust2Enabled:
-			brakeMax = valueByKeyDown(axisMax, brakeLimit1, brakeLimit2, brakeLimit3, keyBrakeLimit1, keyBrakeLimit2, keyBrakeLimit3)
+			ph = valueByKeyDown(axisMax, brakeLimit1, brakeLimit2, brakeLimit3, keyBrakeLimit1, keyBrakeLimit2, keyBrakeLimit3)
+		if ph!=0: 
+			brakeMax = ph
+			winsound.Beep(tetra[(int)(ph/3280)],50)
 
 # Автосцепление
 	if autoClutch:
