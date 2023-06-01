@@ -48,6 +48,7 @@ if starting:
 
 	vJoy_Freeview = False # флаг временного выключения режима управления джойстика мышкой
 	Freeview = False # флаг временного выключения режима управления джойстика мышкой
+	Zooming = False
 
 	screen_x = int(windll.user32.GetSystemMetrics(0) / 2) # размер экрана
 	screen_y = int(windll.user32.GetSystemMetrics(1) / 2)
@@ -195,8 +196,20 @@ if keyboard.getPressed(vJoy_Reset):
 			winsound.Beep(tetra[7],50)
 	
 ## Zoom on scroll in FreeVew mode (when RMB pressed) v0.2306.1a
-if Freeview and ScrollUp: keyboard.setPressed(Key.Equals)
-if Freeview and ScrollDn: keyboard.setPressed(Key.Minus)
+if Freeview:
+	if Zooming:
+		## @TODO через колено работает нажатие кнопки и ось контроллера для зума - что делать?
+		Zooming = False
+		# Бип (для проверки): 
+		winsound.Beep(tetra[0],20)
+		keyboard.setKeyUp(Key.Equals)
+		keyboard.setKeyUp(Key.Minus)
+	if ScrollUp: 
+		Zooming = True
+		keyboard.setKeyDown(Key.Equals)
+	if ScrollDn: 
+		Zooming = True
+		keyboard.setKeyDown(Key.Minus)
 
 ## Switch Joy Stat mode on vJoy Enabled
 if vJoy_Enabled:
