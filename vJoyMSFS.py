@@ -1,6 +1,6 @@
 #### by cheva (c) MIT 2012-2023 
 #### MSFS MouseJoke FreePie VJoy and Voice Commands
-#### @vesion 0.2305.15a
+#### @vesion 0.2306.1a
 #### @github https://github.com/dcheva/AHK/blob/main/vJoyMSFS.py
 #### @pastebin https://pastebin.com/H3eJHzNB
 #### @files at https://drive.google.com/drive/folders/1sUrhqyiA2Zfj1OTt9bcohxHUi5pMzQLk
@@ -114,6 +114,8 @@ F4 = keyboard.getPressed(Key.F4)
 Freeview = mouse.rightButton # MSFS:: правая кнопка на мышке включает свободный обзор. 
 ## Freeview = keyboard.getKeyDown(Key.V) # пример для кнопки на клавиатуре для свободного обзора
 ## mouse.middleButton .rightButton .leftButton - средняя, правая или левая кнопка мыши и т.п.
+ScrollUp = mouse.wheelUp
+ScrollDn = mouse.wheelDown
 
 ############################################################################################
 # Throtttle control 0.2305.12a
@@ -131,19 +133,19 @@ mixtureChange = vJoy_Control and vJoy_Shift and not vJoy_LeftAlt
 
 throttleMin   = throttleChange and F1
 throttleMax   = throttleChange and F4
-throttleDown  = throttleChange and (F2 or mouse.wheelDown) 
-throttleUp    = throttleChange and (F3 or mouse.wheelUp)
+throttleDown  = throttleChange and (F2 or ScrollDn) 
+throttleUp    = throttleChange and (F3 or ScrollUp)
 
 ## Added Propeller and Mixture control v0.2305.12a
 propellerMin   = propellerChange and F1
 propellerMax   = propellerChange and F4
-propellerDown  = propellerChange and (F2 or mouse.wheelDown) 
-propellerUp    = propellerChange and (F3 or mouse.wheelUp)
+propellerDown  = propellerChange and (F2 or ScrollDn) 
+propellerUp    = propellerChange and (F3 or ScrollUp)
 
 mixtureMin   = mixtureChange and F1
 mixtureMax   = mixtureChange and F4
-mixtureDown  = mixtureChange and (F2 or mouse.wheelDown) 
-mixtureUp    = mixtureChange and (F3 or mouse.wheelUp)
+mixtureDown  = mixtureChange and (F2 or ScrollDn) 
+mixtureUp    = mixtureChange and (F3 or ScrollUp)
 ############################################################################################
 
 # Включение и отключение джойстика
@@ -191,14 +193,19 @@ if keyboard.getPressed(vJoy_Reset):
 		stat(Joy_stat)
 		if vJoy_Control:
 			winsound.Beep(tetra[7],50)
+	
+## Zoom on scroll in FreeVew mode (when RMB pressed) v0.2306.1a
+if Freeview and ScrollUp: keyboard.setPressed(Key.Equals)
+if Freeview and ScrollDn: keyboard.setPressed(Key.Minus)
 
+## Switch Joy Stat mode on vJoy Enabled
 if vJoy_Enabled:
-	# Бип если нажата левая кнопка:
+	# Бип если нажата левая кнопка (для проверки):
 	if Click: winsound.Beep(tetra[7],50)
 	# деактивация/активация джойстика, если нажата правая кнопка мыши
 	if Freeview:
 		Joy_stat = False
-		# vJoy[0].setButton(0, False)
+		# vJoy[0].setButton(0, False)	
 	if not Freeview and Joy_stat == False:
 		Joy_stat = True
 		vJoy[0].setButton(0 ,mouse.getButton(0)) 
@@ -207,6 +214,7 @@ if vJoy_Enabled:
 		sy = vJoy[0].y * screen_y / (maxAxis / 2) * axisy_inversion + screen_y;
 		windll.user32.SetCursorPos(sx, sy) # автоцентрирование курсора мыши при выходе из режима обзора
 
+## Main block
 if Joy_stat:
 	windll.user32.GetCursorPos(byref(pt))
 	if pt.x > 65536: mouse_x = 0 # добавлено, так как при выходе значения за пределы int, происходил вылет скрипта
@@ -256,7 +264,7 @@ if Joy_stat:
 	if slider3 > maxAxis / 2: slider3 = maxAxis / 2;
 	if vJoy[0].ry != slider3: winsound.Beep(int((slider3+maxAxis)*2/tetra[1]),50)
 	vJoy[0].ry = slider3;
-
+	
 # Let's test		
 diagnostics.watch(Freeview)
 diagnostics.watch(Joy_stat)
