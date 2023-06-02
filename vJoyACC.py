@@ -67,12 +67,12 @@ if starting:
 	
 # Противобуксовочная система (только Assetto Corsa & AC:Competizione)
 
-	tractionControl = True						# [True;False] включить ПБС
+	tractionControl = True # 					# [True;False] включить ПБС
 	
 	drivetrain = 1								# [0..2] привод автомобиля: 0 - передний, 1 - задний, 2 - полный
 	tcSlipMin = 0.5								# [0..10] проскальзывание, при котором ПБС начинает отпускать газ
 	tcSlipMax = 1.5								# [0..10] проскальзывание, при котором ПБС максимально отпускает газ
-	tcPower = 50								# [0..100] сила ПБС (макс % сброса газа)
+	tcPower = 40								# [0..100] сила ПБС (макс % сброса газа)
 	tcPowerStep = 10							# [0..50] шаг регулировки силы ПБС
 	
 # Антиблокировочная система (только Assetto Corsa & AC:Competizione)
@@ -81,7 +81,7 @@ if starting:
 	
 	absSlipMin = 1.0							# [0..10] проскальзывание, при котором АБС начинает отпускать тормоз
 	absSlipMax = 4.0							# [0..10] проскальзывание, при котором АБС максимально отпускает тормоз
-	absPower = 50								# [0..100] сила АБС (макс % сброса тормоза)
+	absPower = 40								# [0..100] сила АБС (макс % сброса тормоза)
 	absPowerStep = 10							# [0..50] шаг регулировки силы АБС
 	
 	# Антиблокировочная система
@@ -117,6 +117,9 @@ if starting:
 	keyBrakeLimit3 = None						# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit3 (при удержании)
 	keyBrakeAdjustUp = Key.D					# регулировка тормоза: увеличить глубину нажатия педали
 	keyBrakeAdjustDown = Key.C					# регулировка тормоза: уменьшить глубину нажатия педали
+	
+	# Ignore (disable) # Антиблокировочная система # Противобуксовочная система
+	keyIgnoreHelpers = Key.LeftAlt
 
 	#@TODO add engine map keys
 	winsound.Beep(tetra[7],50)
@@ -320,6 +323,7 @@ if starting:
 	steerAxis = 0
 	throttleAxis = brakeAxis = clutchAxis = handbrakeAxis = -axisMax
 	throttleMax = brakeMax = axisMax
+	
 	if throttleAdjust1Enabled:
 		throttleAdjustMin = percentToValue(throttleAdjustMin, -axisMax, axisMax)
 		throttleAdjustStep = percentToValue(throttleAdjustStep, 0, 2 * axisMax)
@@ -327,6 +331,7 @@ if starting:
 		throttleLimit1 = percentToValue(throttleLimit1, -axisMax, axisMax)
 		throttleLimit2 = percentToValue(throttleLimit2, -axisMax, axisMax)
 		throttleLimit3 = percentToValue(throttleLimit3, -axisMax, axisMax)
+		
 	if brakeAdjust1Enabled:
 		brakeAdjustMin = percentToValue(brakeAdjustMin, -axisMax, axisMax)
 		brakeAdjustStep = percentToValue(brakeAdjustStep, 0, 2 * axisMax)
@@ -334,15 +339,17 @@ if starting:
 		brakeLimit1 = percentToValue(brakeLimit1, -axisMax, axisMax)
 		brakeLimit2 = percentToValue(brakeLimit2, -axisMax, axisMax)
 		brakeLimit3 = percentToValue(brakeLimit3, -axisMax, axisMax)
-	if tractionControl or antilockBrakes:
-		acPhysics = mmap(0, 72, tagname='acpmf_physics')
-		wheelSlipFL = wheelSlipFR = wheelSlipRL = wheelSlipRR = 0
-		if tractionControl:
-			tcPower = percentToValue(tcPower, 0, 2 * axisMax)
-			tcPowerStep = percentToValue(tcPowerStep, 0, 2 * axisMax)
-		if antilockBrakes:
-			absPower = percentToValue(absPower, 0, 2 * axisMax)
-			absPowerStep = percentToValue(absPowerStep, 0, 2 * axisMax)
+
+	if not isKeyDown(keyIgnoreHelpers):
+		if tractionControl or antilockBrakes:
+			acPhysics = mmap(0, 72, tagname='acpmf_physics')
+			wheelSlipFL = wheelSlipFR = wheelSlipRL = wheelSlipRR = 0
+			if tractionControl:
+				tcPower = percentToValue(tcPower, 0, 2 * axisMax)
+				tcPowerStep = percentToValue(tcPowerStep, 0, 2 * axisMax)
+			if antilockBrakes:
+				absPower = percentToValue(absPower, 0, 2 * axisMax)
+				absPowerStep = percentToValue(absPowerStep, 0, 2 * axisMax)
 
 if isKeyDown(keySwitch1st) and isKeyPressed(keySwitch2nd) or keySwitch2nd == None and isKeyPressed(keySwitch1st) \
 		or enabled and disableOnEsc and keyboard.getPressed(Key.Escape):
@@ -444,19 +451,20 @@ if enabled:
 				throttlePressed = autoThrottleBlip
 
 # ПБС & АБС
-	if tractionControl or antilockBrakes:
-		wheelSlipFL = float(''.join(map(str, unpack('f', acPhysics[56:60]))))
-		wheelSlipFR = float(''.join(map(str, unpack('f', acPhysics[60:64]))))
-		wheelSlipRL = float(''.join(map(str, unpack('f', acPhysics[64:68]))))
-		wheelSlipRR = float(''.join(map(str, unpack('f', acPhysics[68:72]))))
-		if tractionControl:
-			tcPower = aidPowerAdjust(tcPower, 0, 2 * axisMax, tcPowerStep, keyTcPowerUp, keyTcPowerDown)
-			if throttlePressed and not throttleBlocked:
-				throttleAxis = pedalAid(throttleAxis, axisMax - tcPower, tcSlipMin, tcSlipMax, wheelSlipFL, wheelSlipFR, wheelSlipRL, wheelSlipRR, drivetrain)
-		if antilockBrakes:
-			absPower = aidPowerAdjust(absPower, 0, 2 * axisMax, absPowerStep, keyAbsPowerUp, keyAbsPowerDown)
-			if brakePressed:
-				brakeAxis = pedalAid(brakeAxis, axisMax - absPower, absSlipMin, absSlipMax, wheelSlipFL, wheelSlipFR, wheelSlipRL, wheelSlipRR)
+	if not isKeyDown(keyIgnoreHelpers):
+		if tractionControl or antilockBrakes:
+			wheelSlipFL = float(''.join(map(str, unpack('f', acPhysics[56:60]))))
+			wheelSlipFR = float(''.join(map(str, unpack('f', acPhysics[60:64]))))
+			wheelSlipRL = float(''.join(map(str, unpack('f', acPhysics[64:68]))))
+			wheelSlipRR = float(''.join(map(str, unpack('f', acPhysics[68:72]))))
+			if tractionControl:
+				tcPower = aidPowerAdjust(tcPower, 0, 2 * axisMax, tcPowerStep, keyTcPowerUp, keyTcPowerDown)
+				if throttlePressed and not throttleBlocked:
+					throttleAxis = pedalAid(throttleAxis, axisMax - tcPower, tcSlipMin, tcSlipMax, wheelSlipFL, wheelSlipFR, wheelSlipRL, wheelSlipRR, drivetrain)
+			if antilockBrakes:
+				absPower = aidPowerAdjust(absPower, 0, 2 * axisMax, absPowerStep, keyAbsPowerUp, keyAbsPowerDown)
+				if brakePressed:
+					brakeAxis = pedalAid(brakeAxis, axisMax - absPower, absSlipMin, absSlipMax, wheelSlipFL, wheelSlipFR, wheelSlipRL, wheelSlipRR)
 
 if diagWatch:
 	diagnostics.watch(steerAxis)
@@ -496,4 +504,4 @@ if diagWatch:
 #	diagnostics.watch(absPower)
 #	diagnostics.watch(absPowerStep)
 
-diagnostics.watch(reset)
+diagnostics.watch(isKeyDown(keyIgnoreHelpers))
