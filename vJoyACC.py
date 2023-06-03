@@ -16,6 +16,11 @@ tetra = [131,165,196,220,262,330,392,440,524,660,784,880,1047,1319,1568,1760,209
 reset = False
 
 if starting:
+	winsound.Beep(tetra[3],50)
+	winsound.Beep(tetra[7],50)
+
+	tractionControl = False  					# [True;False] включить ПБС
+	antilockBrakes = False						# [True;False] включить АБС
 
 # *** ПАРАМЕТРЫ ***
 # Можно менять значения после знака "="
@@ -49,16 +54,16 @@ if starting:
 	mouseWheelThrottleAdjust = True				# [True;False] регулировать колесиком мыши
 	throttleAdjustMin = 50						# [0..100] нижняя граница регулировки (% хода педали)
 	throttleAdjustStep = 10						# [0..50] шаг регулировки (% хода педали)
-# Регулировка газа альтернативная (уменьшение максимальной глубины нажатия педали при удержании клавиш-модификаторов)
-	throttleAdjust2Enabled = False				# [True;False] включить альтернативную регулировку газа (выключает обычную)
-	throttleLimit1 = 85							# [0..100] максимальная глубина нажатия газа при удержании клавиши keyThrottleLimit1
-	throttleLimit2 = 70							# [0..100] максимальная глубина нажатия газа при удержании клавиши keyThrottleLimit2
-	throttleLimit3 = 55							# [0..100] максимальная глубина нажатия газа при удержании клавиши keyThrottleLimit3
 # Регулировка тормоза (увеличение/уменьшение максимальной глубины нажатия педали колесиком мыши и/или клавишами клавиатуры)
 	brakeAdjust1Enabled = True					# [True;False] включить регулировку тормоза
 	mouseWheelBrakeAdjust = False				# [True;False] регулировать колесиком мыши
 	brakeAdjustMin = 50							# [0..100] нижняя граница регулировки (% хода педали)
 	brakeAdjustStep = 10						# [0..50] шаг регулировки (% хода педали)
+# Регулировка газа альтернативная (уменьшение максимальной глубины нажатия педали при удержании клавиш-модификаторов)
+	throttleAdjust2Enabled = False				# [True;False] включить альтернативную регулировку газа (выключает обычную)
+	throttleLimit1 = 85							# [0..100] максимальная глубина нажатия газа при удержании клавиши keyThrottleLimit1
+	throttleLimit2 = 70							# [0..100] максимальная глубина нажатия газа при удержании клавиши keyThrottleLimit2
+	throttleLimit3 = 55							# [0..100] максимальная глубина нажатия газа при удержании клавиши keyThrottleLimit3
 # Регулировка тормоза альтернативная (уменьшение максимальной глубины нажатия педали при удержании клавиш-модификаторов)
 	brakeAdjust2Enabled = False					# [True;False] включить альтернативную регулировку тормоза (выключает обычную)
 	brakeLimit1 = 85							# [0..100] максимальная глубина нажатия тормоза при удержании клавиши keyBrakeLimit1
@@ -66,8 +71,6 @@ if starting:
 	brakeLimit3 = 55							# [0..100] максимальная глубина нажатия тормоза при удержании клавиши keyBrakeLimit3
 	
 # Противобуксовочная система (только Assetto Corsa & AC:Competizione)
-
-	tractionControl = True # 					# [True;False] включить ПБС
 	
 	drivetrain = 1								# [0..2] привод автомобиля: 0 - передний, 1 - задний, 2 - полный
 	tcSlipMin = 0.5								# [0..10] проскальзывание, при котором ПБС начинает отпускать газ
@@ -77,8 +80,6 @@ if starting:
 	
 # Антиблокировочная система (только Assetto Corsa & AC:Competizione)
 
-	antilockBrakes = True						# [True;False] включить АБС
-	
 	absSlipMin = 1.0							# [0..10] проскальзывание, при котором АБС начинает отпускать тормоз
 	absSlipMax = 4.0							# [0..10] проскальзывание, при котором АБС максимально отпускает тормоз
 	absPower = 40								# [0..100] сила АБС (макс % сброса тормоза)
@@ -109,21 +110,17 @@ if starting:
 	keyGearDown = Key.X							# понизить передачу
 	keyThrottleAdjustUp = None					# регулировка газа: увеличить максимальную глубину нажатия педали
 	keyThrottleAdjustDown = None				# регулировка газа: уменьшить максимальную глубину нажатия педали
-	keyThrottleLimit1 = None					# регулировка газа альтернативная: уменьшить максимальную глубину нажатия педали до throttleLimit1 (при удержании)
-	keyThrottleLimit2 = None					# регулировка газа альтернативная: уменьшить максимальную глубину нажатия педали до throttleLimit2 (при удержании)
-	keyThrottleLimit3 = None					# регулировка газа альтернативная: уменьшить максимальную глубину нажатия педали до throttleLimit3 (при удержании)
-	keyBrakeLimit1 = None						# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit1 (при удержании)
-	keyBrakeLimit2 = None						# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit2 (при удержании)
-	keyBrakeLimit3 = None						# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit3 (при удержании)
+	keyThrottleLimit1 = Key.LeftAlt				# регулировка газа альтернативная: уменьшить максимальную глубину нажатия педали до throttleLimit1 (при удержании)
+	keyThrottleLimit2 = Key.LeftShift			# регулировка газа альтернативная: уменьшить максимальную глубину нажатия педали до throttleLimit2 (при удержании)
+	keyThrottleLimit3 = Key.LeftControl			# регулировка газа альтернативная: уменьшить максимальную глубину нажатия педали до throttleLimit3 (при удержании)
+	keyBrakeLimit1 = Key.LeftAlt				# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit1 (при удержании)
+	keyBrakeLimit2 = Key.LeftShift				# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit2 (при удержании)
+	keyBrakeLimit3 = Key.LeftControl			# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit3 (при удержании)
 	keyBrakeAdjustUp = Key.D					# регулировка тормоза: увеличить глубину нажатия педали
 	keyBrakeAdjustDown = Key.C					# регулировка тормоза: уменьшить глубину нажатия педали
 	
 	# Ignore (disable) # Антиблокировочная система # Противобуксовочная система
 	keyIgnoreHelpers = Key.LeftAlt
-
-	#@TODO add engine map keys
-	winsound.Beep(tetra[7],50)
-	winsound.Beep(tetra[7],50)
 
 #@ More routines
 	def doReset(reset):
@@ -419,7 +416,7 @@ if enabled:
 			ph = valueByKeyDown(axisMax, throttleLimit1, throttleLimit2, throttleLimit3, keyThrottleLimit1, keyThrottleLimit2, keyThrottleLimit3)
 		if ph!=0: 
 			throttleMax = ph
-			winsound.Beep(tetra[(int)(ph/3280+4)],50)
+			if not throttleAdjust2Enabled: winsound.Beep(tetra[(int)(ph/3280+4)],50)
 
 # Регулировка тормоза
 	if brakeAdjust1Enabled or brakeAdjust2Enabled:
@@ -433,7 +430,7 @@ if enabled:
 			ph = valueByKeyDown(axisMax, brakeLimit1, brakeLimit2, brakeLimit3, keyBrakeLimit1, keyBrakeLimit2, keyBrakeLimit3)
 		if ph!=0: 
 			brakeMax = ph
-			winsound.Beep(tetra[(int)(ph/3280)],50)
+			if not brakeAdjust2Enabled: winsound.Beep(tetra[(int)(ph/3280)],50)
 
 # Автосцепление
 	if autoClutch:
