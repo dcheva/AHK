@@ -82,11 +82,11 @@ $2::
   Send, 2
   Send, 3
   Send, 4
-;  Send, 5
+  Send, 5
 return
 
 ; Auras
-$^A::
+$+^A::
   Send, {T}
   Sleep, 100
   Send, ^T
@@ -129,7 +129,7 @@ $LShift::
   }
 return
 
-$A::
+$+A::
   ; A::chtung Minen!!!
   ; Drop mine or trap, wait, detonate
     Send, {T}
