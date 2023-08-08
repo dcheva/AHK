@@ -31,6 +31,8 @@ return
 ;; Emergency exit
 $^F1::
   Send, {^F1}
+  Process,Close,PathOfExile_x64.exe
+  Process,Close,PathOfExile.exe
   Process,Close,PathOfExileSteam.exe
   SoundPlay %A_WinDir%\Media\Windows Logoff Sound.wav
   Sleep, 1000

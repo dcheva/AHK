@@ -38,4 +38,9 @@ return
 
 ;-----Let's play!-----
 ; Emergency exit
-$^F1::Process,Close,AutoHotkey.exe
+$^F1::
+  Process,Close,AutoHotkey.exe
+  SoundPlay %A_WinDir%\Media\Windows Logoff Sound.wav
+  Sleep, 1000
+  ExitApp
+return
