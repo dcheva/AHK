@@ -44,10 +44,12 @@ clkToKill()
   ; first: area effect with high mana cost
   Send, {W}
   Sleep, 1000 ; value depends on regen time
-  ; second: single shot
-  ; Send, {MButton}
-  Send, {RButton}
+  ; second: single shot/chain
+  Send, {MButton}
   Sleep, 200
+  Send, {RButton Down}
+  Sleep, 2000
+  Send, {RButton Up}
   ; Blink or something more
   Send, {E}
   Sleep, 1000 ; value depends on regen time
@@ -62,6 +64,7 @@ clkToKill()
   Sleep, 200
   Send, {Q}
   Sleep, 1000 ; sleep to regen mana
+  Send, {T}
   SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 }
 
