@@ -44,3 +44,11 @@ $^F1::
   Sleep, 1000
   ExitApp
 return
+
+;Mouse buttons emulator
+$b::LButton
+$n::MButton
+$m::RButton
+$,::WheelDown
+$.::WheelUp
+
