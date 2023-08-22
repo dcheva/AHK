@@ -119,15 +119,6 @@ return
 ; Speed up!
 $Capslock::5
 
-; Jump! Than T
-$Space::
-  BreakLoop := 1
-  Send, {Space}
-  Send, {MButton}
-  Sleep, 200
-  Send, {T}
-return
-
 ; Jump!!! Shift + action
 ; Left or right mouse is down when shift pressed
 $LShift::
@@ -142,14 +133,24 @@ $LShift::
   }
 return
 
-$+A:: ; chang to $A when using mines and $+A otherwise
-  ; A:: ; chtung Minen!!!
-  ; Drop mine or trap, wait, detonate
+; Jump! Than T
+$Space::
+    BreakLoop := 1
+    Send, {Space}
+    Send, {MButton}
+    Sleep, 100
     Send, {T}
-    SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
-    Sleep, 200
-    Send, {D}
 return
+
+;$+A:: ; chang to $A when using mines and $+A otherwise
+;    Drop mine or trap, wait, detonate
+;    Send, {Space}
+;    Send, {MButton}
+;    Sleep, 20
+;    Send, {T}
+;    Sleep, 200
+;    Send, {D}
+;return
 
 ; Go hideout on F5
 $F5::
