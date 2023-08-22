@@ -133,13 +133,20 @@ $LShift::
   }
 return
 
-; Jump! Than T
+; MButton Than Drop mine than Detonate
 $Space::
     BreakLoop := 1
     Send, {Space}
     Send, {MButton}
     Sleep, 100
     Send, {T}
+    SetTimer, Detonate, 1000
+return
+
+Detonate:    
+;    SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
+;    Send, {D}
+;    SetTimer, Detonate, Off
 return
 
 ;$+A:: ; chang to $A when using mines and $+A otherwise
