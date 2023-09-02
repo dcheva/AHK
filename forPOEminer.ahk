@@ -133,8 +133,9 @@ $Space::
     Send, {MButton}
     Sleep, 100
     Send, {T}
+    Sleep, 100
     if (Detonating == 0) {
-        SetTimer, Detonate, 1000
+        SetTimer, Detonate, 300
     }
     Detonating := 1
 return
