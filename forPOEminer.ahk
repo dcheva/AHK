@@ -126,25 +126,23 @@ $LShift::
   }
 return
 
-; MButton Than Drop mine than Detonate
+; Space to Throw and Detonate Mines + Orb of Storm
 $Space::
     BreakLoop := 1
     Send, {Space}
-    Send, {MButton}
+    Send, {MButton} ; Throw mines
     Sleep, 100
-    Send, {T}
-    Sleep, 100
+    Send, {T} ; Orb of Storms
     if (Detonating == 0) {
-        SetTimer, Detonate, 300
+        SetTimer, Detonate, 500 ; Set timer on 1st throw to detonate all mines
     }
     Detonating := 1
 return
 
 Detonate:    
-    SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
-    Send, {D}
+    Send, {D} ; Detonate mines
     SetTimer, Detonate, Off
-    Detonating := False
+    Detonating := 0
 return
 
 ;$+A:: ; chang to $A when using mines and $+A otherwise
