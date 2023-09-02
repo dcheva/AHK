@@ -1,7 +1,8 @@
 ;for AHK 1.1.34.04
 ;by cheva (c) MIT 2012-2023
 
-global BreakLoop = 0
+global BreakLoop := 0
+global Detonating := 0
 
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 
@@ -52,18 +53,10 @@ clkToKill()
   Send, {RButton Down}
   Sleep, 2000
   Send, {RButton Up}
-  ; Blink or something more
-  Send, {E}
+  ; Detonate
+  Send, {D}
   Sleep, 1000 ; value depends on regen time
   ; third: drop packs of mines or totems or any
-  Send, {Q}
-  Sleep, 200
-  Send, {Q}
-  Sleep, 200
-  Send, {Q}
-  Sleep, 200
-  Send, {Q}
-  Sleep, 200
   Send, {Q}
   Sleep, 1000 ; sleep to regen mana
   Send, {T}
@@ -140,13 +133,17 @@ $Space::
     Send, {MButton}
     Sleep, 100
     Send, {T}
-    SetTimer, Detonate, 1000
+    if (Detonating == 0) {
+        SetTimer, Detonate, 1000
+    }
+    Detonating := 1
 return
 
 Detonate:    
-;    SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
-;    Send, {D}
-;    SetTimer, Detonate, Off
+    SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
+    Send, {D}
+    SetTimer, Detonate, Off
+    Detonating := False
 return
 
 ;$+A:: ; chang to $A when using mines and $+A otherwise
