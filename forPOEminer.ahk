@@ -133,8 +133,8 @@ $Space::
     ;Send, {T} ; Orb of Storms
     ;Sleep, 100
     Send, {MButton} ; Throw mines
-    ;Sleep, 100
-    ;Send, {T} ; Orb of Storms
+    Sleep, 100
+    Send, {T} ; Orb of Storms
     if (Detonating == 0) {
         SetTimer, Detonate, 500 ; Set timer on 1st throw to detonate all mines
     }
@@ -142,10 +142,10 @@ $Space::
 return
 
 Detonate:    
-    Send, {T} ; Orb of Storms
-    Sleep, 100
-    Send, {D} ; Detonate mines
-    SetTimer, Detonate, Off
+    ;Send, {T} ; Orb of Storms
+    ;Sleep, 100
+    ;Send, {D} ; Detonate mines
+    ;SetTimer, Detonate, Off
     Detonating := 0
 return
 
