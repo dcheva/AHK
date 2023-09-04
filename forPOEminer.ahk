@@ -144,8 +144,8 @@ return
 Detonate:    
     ;Send, {T} ; Orb of Storms
     ;Sleep, 100
-    ;Send, {D} ; Detonate mines
-    ;SetTimer, Detonate, Off
+    Send, {D} ; Detonate mines
+    SetTimer, Detonate, Off
     Detonating := 0
 return
 
@@ -222,5 +222,14 @@ return
 $^/::
   Send, {Enter}
   Send, /reset_xp
+  Sleep, 100 
+  Send, {Enter}
+return
+
+;Passives
+$^p::
+  Send, {Enter}
+  Send, /passives
+  Sleep, 100 
   Send, {Enter}
 return
