@@ -1,8 +1,7 @@
 ;for AHK 1.1.34.04
 ;by cheva (c) MIT 2012-2023
 
-global BreakLoop := 0
-global Detonating := 0
+global BreakLoop = 0
 
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 
@@ -53,10 +52,18 @@ clkToKill()
   Send, {RButton Down}
   Sleep, 2000
   Send, {RButton Up}
-  ; Detonate
-  Send, {D}
+  ; Blink or something more
+  Send, {E}
   Sleep, 1000 ; value depends on regen time
   ; third: drop packs of mines or totems or any
+  Send, {Q}
+  Sleep, 200
+  Send, {Q}
+  Sleep, 200
+  Send, {Q}
+  Sleep, 200
+  Send, {Q}
+  Sleep, 200
   Send, {Q}
   Sleep, 1000 ; sleep to regen mana
   Send, {T}
@@ -112,6 +119,15 @@ return
 ; Speed up!
 $Capslock::5
 
+; Jump! Than T
+$Space::
+  BreakLoop := 1
+  Send, {Space}
+  Send, {MButton}
+  Sleep, 250
+  Send, {T}
+return
+
 ; Jump!!! Shift + action
 ; Left or right mouse is down when shift pressed
 $LShift::
@@ -126,38 +142,14 @@ $LShift::
   }
 return
 
-; Space to Throw and Detonate Mines + Orb of Storm
-$Space::
-    BreakLoop := 1
-    Send, {Space}
-    ;Send, {T} ; Orb of Storms
-    ;Sleep, 100
-    Send, {MButton} ; Throw mines
-    Sleep, 100
-    Send, {T} ; Orb of Storms
-    if (Detonating == 0){ ; or True) {
-        SetTimer, Detonate, 500 ; Set timer on 1st throw to detonate all mines
-    }
-    Detonating := 1
+$+A:: ; chang to $A when using mines and $+A otherwise
+  ; A:: ; chtung Minen!!!
+  ; Drop mine or trap, wait, detonate
+    Send, {T}
+    SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
+    Sleep, 200
+    Send, {D}
 return
-
-Detonate:    
-    ;Send, {T} ; Orb of Storms
-    ;Sleep, 100
-    Send, {D} ; Detonate mines
-    SetTimer, Detonate, Off
-    Detonating := 0
-return
-
-;$+A:: ; chang to $A when using mines and $+A otherwise
-;    Drop mine or trap, wait, detonate
-;    Send, {Space}
-;    Send, {MButton}
-;    Sleep, 20
-;    Send, {T}
-;    Sleep, 200
-;    Send, {D}
-;return
 
 ; Go hideout on F5
 $F5::
@@ -215,14 +207,5 @@ return
 $^/::
   Send, {Enter}
   Send, /reset_xp
-  Sleep, 100 
-  Send, {Enter}
-return
-
-;Passives
-$^p::
-  Send, {Enter}
-  Send, /passives
-  Sleep, 100 
   Send, {Enter}
 return
