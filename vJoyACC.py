@@ -87,16 +87,16 @@ if starting:
 # *** НАЗНАЧЕНИЕ КЛАВИШ ***
 # Можно менять значения после знака "="
 # "=Key.A" назначает клавишу "A", "=None" не назначает никакую клавишу (заглушка)
-	keySteerCenter = Key.Space					#@ Center if key pressed
-	buttonSteerCenter = mouse.rightButton		#@ Center if button pressed
+	keyGearUp = Key.D							# повысить передачу
+	keyGearDown = Key.C							# понизить передачу
+	keyBrakeAdjustUp = Key.S					# регулировка тормоза: увеличить глубину нажатия педали
+	keyBrakeAdjustDown = Key.X					# регулировка тормоза: уменьшить глубину нажатия педали
 	keySwitch1st = Key.F5						# обработка ввода: вкл/выкл (первая из сочетания клавиш)
 	keySwitch2nd = None							# обработка ввода: вкл/выкл (вторая клавиша из сочетания. Чтобы использовать только первую клавишу, поставьте "=None")
 	keyThrottle = Key.A							# газ (ЛКМ, если mouseThrottleBrake = True)
 	keyBrake = Key.Z							# тормоз (ПКМ, если mouseThrottleBrake = True)
 	keyClutch = None							# сцепление
 	keyHandbrake = None							# ручник
-	keyGearUp = Key.S							# повысить передачу
-	keyGearDown = Key.X							# понизить передачу
 	keyThrottleAdjustUp = None					# регулировка газа: увеличить максимальную глубину нажатия педали
 	keyThrottleAdjustDown = None				# регулировка газа: уменьшить максимальную глубину нажатия педали
 	keyThrottleLimit1 = Key.LeftAlt				# регулировка газа альтернативная: уменьшить максимальную глубину нажатия педали до throttleLimit1 (при удержании)
@@ -105,8 +105,8 @@ if starting:
 	keyBrakeLimit1 = Key.LeftAlt				# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit1 (при удержании)
 	keyBrakeLimit2 = Key.LeftShift				# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit2 (при удержании)
 	keyBrakeLimit3 = Key.LeftControl			# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit3 (при удержании)
-	keyBrakeAdjustUp = Key.D					# регулировка тормоза: увеличить глубину нажатия педали
-	keyBrakeAdjustDown = Key.C					# регулировка тормоза: уменьшить глубину нажатия педали
+	keySteerCenter = Key.Space					#@ Center if key pressed
+	buttonSteerCenter = mouse.rightButton		#@ Center if button pressed
 	
 # Противобуксовочная система 
 	keyTcPowerUp = Key.L						# ПБС: увеличить силу
