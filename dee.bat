@@ -6,4 +6,5 @@ git pull
 git push
 git checkout dee
 pushd C:\Games\Cyberpunk.2077.2.0\bin\x64
-start Cyberpunk2077.exe
+cd C:\Games\Cyberpunk.2077.2.0\bin\x64
+start C:\Games\Cyberpunk.2077.2.0\bin\x64\Cyberpunk2077.exe
