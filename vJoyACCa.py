@@ -40,11 +40,11 @@ if starting:
 	throttlePushRate = 80						# [1..100] скорость нажатия газа
 	throttleReleaseRate = 20					# [1..100] скорость отпускания газа
 	brakePushRate = 80							# [1..100] скорость нажатия тормоза
-	brakeReleaseRate = 20						# [1..100] скорость отпускания тормоза
+	brakeReleaseRate = 10						# [1..100] скорость отпускания тормоза
 	clutchPushRate = 80							# [1..100] скорость нажатия сцепления
-	clutchReleaseRate = 20						# [1..100] скорость отпускания сцепления
+	clutchReleaseRate = 10						# [1..100] скорость отпускания сцепления
 	handbrakePushRate = 80						# [1..100] скорость нажатия ручника
-	handbrakeReleaseRate = 20					# [1..100] скорость отпускания ручника
+	handbrakeReleaseRate = 80					# [1..100] скорость отпускания ручника
 # Автосцепление
 	autoClutch = False							# [True;False] прожимать сцепление и отпускать газ при переключении передач
 	autoThrottleBlip = False					# [True;False] перегазовка при понижении передачи
