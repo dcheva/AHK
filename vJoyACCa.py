@@ -18,6 +18,9 @@ reset = False
 if starting:
 	winsound.Beep(tetra[3],50)
 	winsound.Beep(tetra[7],50)
+	
+	g1 = g2 = g3 = mg1 = mg2 = float(0)
+	mg3 = float(1)
 
 	tractionControl = False  					# [True;False] включить ПБС !!! выключить в игре
 	antilockBrakes = False						# [True;False] включить АБС !!! выключить в игре
@@ -34,7 +37,7 @@ if starting:
 	diagWatch = True							# [True;False] вывод в Watch
 # Руль
 	steerSensitivity = 10						# [1..100] чувствительность руля в нейтральном положении
-	steerNonlinearity = 200						# [0..900] на сколько % чувствительность руля в крайних положениях выше, чем в нейтральном
+	steerNonlinearity = 220						# [0..900] на сколько % чувствительность руля в крайних положениях выше, чем в нейтральном
 # Педали и ручник
 	mouseThrottleBrake = False					# [True;False] газ и тормоз кнопками мыши
 	throttlePushRate = 80						# [1..100] скорость нажатия газа
@@ -212,6 +215,16 @@ if starting:
 		axisMin - нижняя граница оси
 		axisMax - верхняя граница оси
 		"""
+		"""@TODO add корректировка ограничения педали в зависимости от G-force
+		"""
+		global mg1, mg2, mg3
+		#if mg1 < abs(g1): mg1=abs(g1)
+		#if mg2 < abs(g2): mg2=abs(g2)
+		#if abs(mg3-1) < abs(g3): mg3=abs(g3+1)
+		mg1=g1
+		mg2=g2
+		mg3=g3
+		
 		if keyPressed:
 			if axisPos < axisMax:
 				axisPos += rateMult * pushRate
@@ -286,6 +299,7 @@ if starting:
 		wheelSlipRR - проскальзывание заднего правого колеса
 		drivetrain - привод автомобиля: 0 - передний, 1 - задний, другое - полный
 		"""
+		
 		if drivetrain == 0:
 			slip = max(wheelSlipFL, wheelSlipFR)
 		elif drivetrain == 1:
@@ -334,7 +348,6 @@ if starting:
 
 	if not isKeyDown(keyIgnoreHelpers):
 		if tractionControl or antilockBrakes:
-			acPhysics = mmap(0, 72, tagname='acpmf_physics')
 			wheelSlipFL = wheelSlipFR = wheelSlipRL = wheelSlipRR = 0
 			if tractionControl:
 				tcPower = percentToValue(tcPower, 0, 2 * axisMax)
@@ -359,13 +372,21 @@ if isKeyDown(keySwitch1st) and isKeyPressed(keySwitch2nd) or keySwitch2nd == Non
 
 	if cursorHide:
 		cursorMove()
-
+		
 vJoyUpdate(vJoyDevice, steerAxis, throttleAxis, brakeAxis, clutchAxis, handbrakeAxis, keyGearUp, keyGearDown)
 
 if enabled:
 	if cursorHide:
 		cursorMove(cursorHideCorner)
 
+	"""Get acPhysics G-force values from memory map for AC and ACC
+	"""
+	acPhysics = mmap(0, 72, tagname='acpmf_physics')
+	if  acPhysics:
+		g1 = float(''.join(map(str, unpack('f', acPhysics[44:48]))))
+		g2 = float(''.join(map(str, unpack('f', acPhysics[48:52]))))
+		g3 = float(''.join(map(str, unpack('f', acPhysics[52:56]))))
+		
 #@ Center on key/button pressed
 	if steerCenterEnabled and mouse.rightButton or isKeyPressed(keySteerCenter):
 		reset = doReset(True)
@@ -468,57 +489,57 @@ if enabled:
 
 if diagWatch:
 
-	acPhysics = mmap(0, 72, tagname='acpmf_physics')
-	if  acPhysics:
-		g1 = float(''.join(map(str, unpack('f', acPhysics[44:48]))))
-		g2 = float(''.join(map(str, unpack('f', acPhysics[48:52]))))
-		g3 = float(''.join(map(str, unpack('f', acPhysics[52:56]))))
-		diagnostics.watch(g1)
-		diagnostics.watch(g2)
-		diagnostics.watch(g3)
-		diagnostics.watch('----------')
-
+	diagnostics.watch(mg1)
+	diagnostics.watch(mg2)
+	diagnostics.watch(mg3)
+	diagnostics.watch(isKeyDown(keyIgnoreHelpers))	
+	
+	diagnostics.watch('----------')
 	diagnostics.watch(steerAxis)
 	diagnostics.watch(throttleAxis)
 	diagnostics.watch(brakeAxis)
 	diagnostics.watch(clutchAxis)
 	diagnostics.watch(handbrakeAxis)
+	
 	diagnostics.watch('---------')
-
 	diagnostics.watch(throttleMax)
+	
 	#if throttleAdjust1Enabled:
 	diagnostics.watch(throttleAdjustMin)
 	diagnostics.watch(throttleAdjustStep)
-#if throttleAdjust2Enabled:
+	
+	#if throttleAdjust2Enabled:
 	diagnostics.watch(throttleLimit1)
 	diagnostics.watch(throttleLimit2)
 	diagnostics.watch(throttleLimit3)
 	
 	diagnostics.watch('--------')
 	diagnostics.watch(brakeMax)
-#if brakeAdjust1Enabled:
+	
+	#if brakeAdjust1Enabled:
 	diagnostics.watch(brakeAdjustMin)
 	diagnostics.watch(brakeAdjustStep)
-#if brakeAdjust2Enabled:
+	
+	#if brakeAdjust2Enabled:
 	diagnostics.watch(brakeLimit1)
 	diagnostics.watch(brakeLimit2)
 	diagnostics.watch(brakeLimit3)
 	
-	diagnostics.watch('-------')
-#if tractionControl or antilockBrakes:
-#	diagnostics.watch(wheelSlipFL)
-#	diagnostics.watch(wheelSlipFR)
-#	diagnostics.watch(wheelSlipRL)
-#	diagnostics.watch(wheelSlipRR)
-#if tractionControl:
-#	diagnostics.watch(tcSlipMin)
-#	diagnostics.watch(tcSlipMax)
-#	diagnostics.watch(tcPower)
-#	diagnostics.watch(tcPowerStep)
-#if antilockBrakes:
-#	diagnostics.watch(absSlipMin)
-#	diagnostics.watch(absSlipMax)
-#	diagnostics.watch(absPower)
-#	diagnostics.watch(absPowerStep)
+	#if tractionControl or antilockBrakes:
+	#	diagnostics.watch('------')
+	#	diagnostics.watch(wheelSlipFL)
+	#	diagnostics.watch(wheelSlipFR)
+	#	diagnostics.watch(wheelSlipRL)
+	#	diagnostics.watch(wheelSlipRR)
 
-diagnostics.watch(isKeyDown(keyIgnoreHelpers))
+	#if tractionControl:
+	#	diagnostics.watch(tcSlipMin)
+	#	diagnostics.watch(tcSlipMax)
+	#	diagnostics.watch(tcPower)
+	#	diagnostics.watch(tcPowerStep)
+
+	#if antilockBrakes:
+	#	diagnostics.watch(absSlipMin)
+	#	diagnostics.watch(absSlipMax)
+	#	diagnostics.watch(absPower)
+	#	diagnostics.watch(absPowerStep)
