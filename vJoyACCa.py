@@ -176,14 +176,17 @@ if starting:
 		handbrakeAxis - ось ручного тормоза
 		keyGearUp - клавиша повышения передачи
 		keyGearDown - клавиша понижения передачи
+		Mouse leftButton & rightButton set to vJoy 0 & 1
 		"""
 		vJoyDevice.x = steerAxis
 		vJoyDevice.y = throttleAxis
 		vJoyDevice.z = brakeAxis
 		vJoyDevice.rx = clutchAxis
 		vJoyDevice.ry = handbrakeAxis
-		vJoyDevice.setButton(0, isKeyDown(keyGearUp))
-		vJoyDevice.setButton(1, isKeyDown(keyGearDown))
+		#vJoyDevice.setButton(0, isKeyDown(keyGearUp))
+		#vJoyDevice.setButton(1, isKeyDown(keyGearDown))
+		vJoyDevice.setButton(0, mouse.leftButton)
+		vJoyDevice.setButton(1, mouse.rightButton)
 
 	def steerHandler(axisPos, sensitivity, nonlinearity, axisMax, reset):
 		"""Преобразует ось X мыши в ось руля. Возвращает позицию на оси руля. 
