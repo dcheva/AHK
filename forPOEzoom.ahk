@@ -55,7 +55,7 @@ clkToKill()
   ; Blink or something more
   Send, {E}
   Sleep, 1000 ; value depends on regen time
-  ; third: drop packs of mines or totems or any
+  ; third: repeat 5 times
   Send, {Q}
   Sleep, 200
   Send, {Q}
@@ -142,15 +142,6 @@ $LShift::
   }
 return
 
-$+A:: ; chang to $A when using mines and $+A otherwise
-  ; A:: ; chtung Minen!!!
-  ; Drop mine or trap, wait, detonate
-    Send, {T}
-    SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
-    Sleep, 200
-    Send, {D}
-return
-
 ; Go hideout on F5
 $F5::
   Send, {Enter}
@@ -158,8 +149,8 @@ $F5::
   Send, {Enter}
 return
 
-;; Reactivate auras
-;$W::
+;; Swap auras
+;$+W::
 ;  if(disW){
 ;    disW := 0
 ;    Send, ^{W}
@@ -207,5 +198,13 @@ return
 $^/::
   Send, {Enter}
   Send, /reset_xp
+  Sleep, 100 
   Send, {Enter}
 return
+
+;Passives
+$^p::
+  Send, {Enter}
+  Send, /passives
+  Sleep, 100 
+  Send, {Enter}
