@@ -559,7 +559,7 @@ if diagWatch:
 	diagnostics.watch(brakeLimit1)
 	diagnostics.watch(brakeLimit2)
 	diagnostics.watch(brakeLimit3)
-	#diagnostics.watch('-------')
+	diagnostics.watch('-------')
 	#diagnostics.watch(wheelSlipFL)
 	#diagnostics.watch(wheelSlipFR)
 	#diagnostics.watch(wheelSlipRL)
