@@ -2,7 +2,7 @@
 @author dcheva 
 @version 0.2310.16.2
 Pastebin https://pastebin.com/d8zcmVRt
-Github https://github.com/dcheva/AHK/blob/main/vJoyACCa.py
+Github https://github.com/dcheva/AHK/blob/main/vJoyACC.py
 
 Исходный скрипт и инструкции: https://steamcommunity.com/sharedfiles/filedetails/?l=polish&id=2514840344
 !!! ВАЖНО !!! Скорость работы скрипта ЗАВИСИТ от FPS симулятора - здесь все коэфициенты подобраны для I5 9600K @3600MHZ & 1660 GTX @60 FPS
