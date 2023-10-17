@@ -1,11 +1,18 @@
 """
-(до)переделал dcheva v0.2310.14
+@author dcheva 
+@version 0.2310.16.2
+Pastebin https://pastebin.com/d8zcmVRt
+Github https://github.com/dcheva/AHK/blob/main/vJoyACC.py
+
 Исходный скрипт и инструкции: https://steamcommunity.com/sharedfiles/filedetails/?l=polish&id=2514840344
 !!! ВАЖНО !!! Скорость работы скрипта ЗАВИСИТ от FPS симулятора - здесь все коэфициенты подобраны для I5 9600K @3600MHZ & 1660 GTX @60 FPS
 
 Чтобы запустить скрипт, нажмите Script -> Run Script (F5)
 Чтобы начать обработку ввода и захватить мышь, нажмите Caps Lock (сочетание клавиш можно изменить в разделе "НАЗНАЧЕНИЕ КЛАВИШ")
 Чтобы остановить обработку ввода и освободить мышь, снова нажмите Caps Lock или ESCAPE
+
+Changelog:
+v0.2310.16 Газ и Тормоз: Alt/Shift Rate/Limit
 """
 
 from ctypes import windll
@@ -30,78 +37,82 @@ if starting:
 # *** ПАРАМЕТРЫ ***
 # Можно менять значения после знака "="
 # Разное
-	disableOnEsc = True							# [True;False] останавливать обработку ввода при нажатии Escape
-	cursorHide = False							# [True;False] прятать курсор мыши
+	disableOnEsc = True						# [True;False] останавливать обработку ввода при нажатии Escape
+	cursorHide = False						# [True;False] прятать курсор мыши
 	cursorHideCorner = 4						# [1..4] угол экрана, в котором прятать курсор мыши: 1 - верхн.лев., 2 - верхн.прав., 3 - нижн.лев., 4 - нижн.прав.
-	vJoyDeviceID = 1							# [1..15] № джойстика в vJoyConf
-	sysOverclock = True							# [True;False] системный таймер: False - 64Гц (стандарт Windows), True - 1кГц  
+	vJoyDeviceID = 1						# [1..15] № джойстика в vJoyConf
+	sysOverclock = True						# [True;False] системный таймер: False - 64Гц (стандарт Windows), True - 1кГц  
 	sysExecInterval = 10						# [1..10] делитель для системного таймера 1кГц. Частное двух чисел - частота выполнения скрипта; чем она выше, тем меньше задержка ввода, но выше нагрузка на комп 
 	diagWatch = True	
 #@ Center if key/button pressed
 #@ Сброс (центрирование) руля по нажатию кнопки/клавиши (СКМ/пробел)
-	steerCenterEnabled = True						# [True;False] вывод в Watch
+	steerCenterEnabled = True					# [True;False] вывод в Watch
 # Руль
 	steerSensitivity = 10						# [1..100] чувствительность руля в нейтральном положении
 	steerNonlinearity = 220						# [0..900] на сколько % чувствительность руля в крайних положениях выше, чем в нейтральном
 # Педали и ручник
 	# Газ
 	mouseThrottleBrake = False					# [True;False] газ и тормоз кнопками мыши
-	throttlePushRate = 80						# [1..100] скорость нажатия газа
+	throttlePushRate = 40						# [1..100] скорость нажатия газа
 	throttleReleaseRate = 20					# [1..100] скорость отпускания газа
-	# Тормоз
-	brakePushRate = 80							# [1..100] скорость нажатия тормоза
-	brakeReleaseRate = 20						# [1..100] скорость отпускания тормоза
 	# Газ: варианты изменения скорости нажатия
-	throttleRate = throttlePushRate				# [1..100] скорость изменения оси газа
-	throttleShiftRate = 100						# [1..100] Shift скорость изменения оси газа
-	throttleAltRate = 5							# [1..100] Alt скорость изменения оси газа
+	throttleRate = throttlePushRate					# [1..100] скорость изменения оси газа
+	throttleShiftLimit = 60						# [1..100] Shift предел изменения оси газа %
+	throttleShiftRate = 10						# [1..100] Shift скорость изменения оси газа
+	throttleAltLimit = 100						# [1..100] Alt предел изменения оси газа %
+	throttleAltRate = 40						# [1..100] Alt скорость изменения оси газа
+	# Тормоз
+	brakePushRate = 40						# [1..100] скорость нажатия тормоза
+	brakeReleaseRate = 20						# [1..100] скорость отпускания тормоза
 	# Тормоз: варианты изменения скорости нажатия
 	brakeRate = brakePushRate					# [1..100] скорость изменения оси тормоза
-	brakeShiftRate = 100						# [1..100] Shift скорость изменения оси тормоза
-	brakeAltRate = 5							# [1..100] Alt скорость изменения оси тормоза
+	brakeShiftLimit = 60						# [1..100] Shift предел изменения оси тормоза %
+	brakeShiftRate = 10						# [1..100] Shift скорость изменения оси тормоза
+	brakeAltLimit = 100						# [1..100] Alt предел изменения оси тормоза %
+	brakeAltRate = 40						# [1..100] Alt скорость изменения оси тормоза
 	# Сцепление
-	clutchPushRate = 80							# [1..100] скорость нажатия сцепления
+	clutchPushRate = 20						# [1..100] скорость нажатия сцепления
 	clutchReleaseRate = 10						# [1..100] скорость отпускания сцепления
 	# Ручник
 	handbrakePushRate = 80						# [1..100] скорость нажатия ручника
 	handbrakeReleaseRate = 80					# [1..100] скорость отпускания ручника
 # Автосцепление
-	autoClutch = False							# [True;False] прожимать сцепление и отпускать газ при переключении передач
+	autoClutch = False						# [True;False] прожимать сцепление и отпускать газ при переключении передач
 	autoThrottleBlip = False					# [True;False] перегазовка при понижении передачи
 	throttleClutchBlipRate = 50					# [1..100] скорость автоматического нажатия/отпускания газа и сцепления
 # Регулировка газа (увеличение/уменьшение максимальной глубины нажатия педали колесиком мыши и/или клавишами клавиатуры)
-	throttleAdjust1Enabled = True				# [True;False] включить регулировку газа
-	mouseWheelThrottleAdjust = True				# [True;False] включить регулировку газа колесиком мыши
+	throttleAdjust1Enabled = True					# [True;False] включить регулировку газа
+	mouseWheelThrottleAdjust = True					# [True;False] включить регулировку газа колесиком мыши
 	throttleAdjustMin = 0						# [1..100] нижняя граница регулировки (% хода педали)
 	throttleAdjustStep = 10						# [1..50] шаг регулировки (% хода педали)
 # Регулировка тормоза (увеличение/уменьшение максимальной глубины нажатия педали колесиком мыши и/или клавишами клавиатуры)
 	brakeAdjust1Enabled = True					# [True;False] включить регулировку тормоза
-	mouseWheelBrakeAdjust = False				# [True;False] включить регулировку тормоза колесиком мыши
-	brakeAdjustMin = 0							# [1..100] нижняя граница регулировки (% хода педали)
+	mouseWheelBrakeAdjust = False					# [True;False] включить регулировку тормоза колесиком мыши
+	brakeAdjustMin = 0						# [1..100] нижняя граница регулировки (% хода педали)
 	brakeAdjustStep = 10						# [1..50] шаг регулировки (% хода педали)
 # Регулировка газа альтернативная (уменьшение максимальной глубины нажатия педали при удержании клавиш-модификаторов)
 # !!! Работает ТОЛЬКО при throttleAdjust1Enabled=False
-	throttleAdjust2Enabled = False				# [True;False] включить альтернативную регулировку газа (выключает обычную)
+	throttleAdjust2Enabled = False					# [True;False] включить альтернативную регулировку газа (выключает обычную)
 	throttleLimit1 = 100						# [0..100] максимальная глубина нажатия газа при удержании клавиши keyThrottleLimit1
-	throttleLimit2 = 80							# [0..100] максимальная глубина нажатия газа при удержании клавиши keyThrottleLimit2
-	throttleLimit3 = 60							# [0..100] максимальная глубина нажатия газа при удержании клавиши keyThrottleLimit3
+	throttleLimit2 = 80						# [0..100] максимальная глубина нажатия газа при удержании клавиши keyThrottleLimit2
+	throttleLimit3 = 60						# [0..100] максимальная глубина нажатия газа при удержании клавиши keyThrottleLimit3
 # Регулировка тормоза альтернативная (уменьшение максимальной глубины нажатия педали при удержании клавиш-модификаторов)
 # !!! Работает ТОЛЬКО при brakeAdjust1Enabled=False
 	brakeAdjust2Enabled = False					# [True;False] включить альтернативную регулировку тормоза (выключает обычную)
-	brakeLimit1 = 100							# [0..100] максимальная глубина нажатия тормоза при удержании клавиши keyBrakeLimit1
-	brakeLimit2 = 80							# [0..100] максимальная глубина нажатия тормоза при удержании клавиши keyBrakeLimit2
-	brakeLimit3 = 60							# [0..100] максимальная глубина нажатия тормоза при удержании клавиши keyBrakeLimit3	
+	brakeLimit1 = 100						# [0..100] максимальная глубина нажатия тормоза при удержании клавиши keyBrakeLimit1
+	brakeLimit2 = 80						# [0..100] максимальная глубина нажатия тормоза при удержании клавиши keyBrakeLimit2
+	brakeLimit3 = 60						# [0..100] максимальная глубина нажатия тормоза при удержании клавиши keyBrakeLimit3	
 # Противобуксовочная система (только Assetto Corsa & AC:Competizione)
-	drivetrain = 1								# [0..2] привод автомобиля: 0 - передний, 1 - задний, 2 - полный
-	tcSlipMin = 0.5								# [0..10] проскальзывание, при котором ПБС начинает отпускать газ
-	tcSlipMax = 1.5								# [0..10] проскальзывание, при котором ПБС максимально отпускает газ
-	tcPower = 40								# [0..100] сила ПБС (макс % сброса газа)
-	tcPowerStep = 10							# [0..50] шаг регулировки силы ПБС	
+	drivetrain = 1							# [0..2] привод автомобиля: 0 - передний, 1 - задний, 2 - полный
+	tcSlipMin = 0.5							# [0..10] проскальзывание, при котором ПБС начинает отпускать газ
+	tcSlipMax = 1.5							# [0..10] проскальзывание, при котором ПБС максимально отпускает газ
+	tcPower = 40							# [0..100] сила ПБС (макс % Сброса газа)
+	tcPowerStep = 10						# [0..50] шаг регулировки силы ПБС	
 # Антиблокировочная система (только Assetto Corsa & AC:Competizione)
-	absSlipMin = 1.0							# [0..10] проскальзывание, при котором АБС начинает отпускать тормоз
-	absSlipMax = 4.0							# [0..10] проскальзывание, при котором АБС максимально отпускает тормоз
-	absPower = 40								# [0..100] сила АБС (макс % сброса тормоза)
-	absPowerStep = 10							# [0..50] шаг регулировки силы АБС
+	absSlipMin = 1.0						# [0..10] проскальзывание, при котором АБС начинает отпускать тормоз
+	absSlipMax = 4.0						# [0..10] проскальзывание, при котором АБС максимально отпускает тормоз
+	absPower = 40							# [0..100] сила АБС (макс % Сброса тормоза)
+	absPowerStep = 10						# [0..50] шаг регулировки силы АБС
 
 # *** НАЗНАЧЕНИЕ КЛАВИШ ***
 # Можно менять значения после знака "="
@@ -405,51 +416,51 @@ if enabled:
 		vJoyUpdate(vJoyDevice, steerAxis, throttleAxis, brakeAxis, clutchAxis, handbrakeAxis, keyGearUp, keyGearDown)
 	# Руль
 	steerAxis = steerHandler(steerAxis, steerSensitivity, steerNonlinearity, axisMax, reset)
-
-	# Газ
-	if throttleBlocked:
-		throttlePushRateOverride = throttleReleaseRateOverride = throttleClutchBlipRate
-	else:
-		throttlePressed = mouseThrottleBrake and mouse.leftButton or isKeyDown(keyThrottle)
-		throttlePushRateOverride, throttleReleaseRateOverride = throttlePushRate, throttleReleaseRate
+	
+	#@ Газ и Тормоз: v0.2310.16 change to Alt-Shift-Rate and fix dual pedals pressed
+	throttleMaxOverride, brakeMaxOverride = throttleMax, brakeMax
+	throttlePressed = mouseThrottleBrake and mouse.leftButton or isKeyDown(keyThrottle)
+	throttlePushRateOverride, throttleReleaseRateOverride = throttlePushRate, throttleReleaseRate
+	brakePressed = mouseThrottleBrake and mouse.rightButton or isKeyDown(keyBrake)
+	brakePushRateOverride, brakeReleaseRateOverride = brakePushRate, brakeReleaseRate
 		
-	#@ v0.2310.14 change to Alt-Shift-Rate and fix dual pedals pressed
 	if isKeyDown(keyShift): 
 		throttlePushRateOverride = throttleShiftRate
 		throttleReleaseRateOverride = throttleShiftRate
-	if isKeyDown(keyAlt): 
+		throttleMaxOverride = percentToValue(throttleShiftLimit, -axisMax, axisMax)
+		brakePushRateOverride = brakeShiftRate
+		brakeReleaseRateOverride = brakeShiftRate
+		brakeMaxOverride = percentToValue(brakeShiftLimit, -axisMax, axisMax)
+	if isKeyDown(keyAlt):
 		throttlePushRateOverride = throttleAltRate
-		throttleReleaseRateOverride = 0
+		throttleReleaseRateOverride = throttleAltRate
+		throttleMaxOverride = percentToValue(throttleAltLimit, -axisMax, axisMax)
+		brakePushRateOverride = brakeAltRate
+		brakeReleaseRateOverride = brakeAltRate
+		brakeMaxOverride = percentToValue(brakeAltLimit, -axisMax, axisMax)
+	if isKeyDown(keyThrottle): 
+		brakePressed = False
+		brakePushRateOverride = 0
+		brakeReleaseRateOverride = brakeRate
 	if isKeyDown(keyBrake): 
 		throttlePressed = False
 		throttlePushRateOverride = 0
 		throttleReleaseRateOverride = throttleRate
 		
-	diagnostics.watch(throttlePushRateOverride)
-	diagnostics.watch(throttleReleaseRateOverride)
-
-	throttleAxis = pedalHandler(throttleAxis, throttlePressed, throttlePushRateOverride, throttleReleaseRateOverride, keyRateMult, throttleAdjustMin, throttleMax)
+	# Газ
+	if throttleBlocked:
+		throttlePushRateOverride = throttleReleaseRateOverride = throttleClutchBlipRate
+	throttleAxis = pedalHandler(throttleAxis, throttlePressed, throttlePushRateOverride, throttleReleaseRateOverride, keyRateMult, throttleAdjustMin, throttleMaxOverride)
 
 	# Тормоз
-	brakePressed = mouseThrottleBrake and mouse.rightButton or isKeyDown(keyBrake)
-	brakePushRateOverride, brakeReleaseRateOverride = brakePushRate, brakeReleaseRate
+	brakeAxis = pedalHandler(brakeAxis, brakePressed, brakePushRateOverride, brakeReleaseRateOverride, keyRateMult, brakeAdjustMin, brakeMaxOverride)
 	
-	#@ v0.2310.14 change to Alt-Shift-Rate and fix dual pedals pressed
-	if isKeyDown(keyShift): 
-		brakePushRateOverride = brakeShiftRate
-		brakeReleaseRateOverride = brakeShiftRate
-	if isKeyDown(keyAlt): 
-		brakePushRateOverride = brakeAltRate
-		brakeReleaseRateOverride = 0
-	if isKeyDown(keyThrottle): 
-		brakePressed = False
-		brakePushRateOverride = 0
-		brakeReleaseRateOverride = brakeRate
-
+	diagnostics.watch(throttlePushRateOverride)
+	diagnostics.watch(throttleReleaseRateOverride)
+	diagnostics.watch(throttleMaxOverride)
 	diagnostics.watch(brakePushRateOverride)
 	diagnostics.watch(brakeReleaseRateOverride)
-	
-	brakeAxis = pedalHandler(brakeAxis, brakePressed, brakePushRateOverride, brakeReleaseRateOverride, keyRateMult, brakeAdjustMin, brakeMax)
+	diagnostics.watch(brakeMaxOverride)
 
 	# Сцепление
 	if clutchBlocked:
@@ -536,21 +547,21 @@ if diagWatch:
 	diagnostics.watch(brakeAxis)
 	diagnostics.watch(clutchAxis)
 	diagnostics.watch(handbrakeAxis)
-	#diagnostics.watch('---------')
-	#diagnostics.watch(throttleMax)
-	#diagnostics.watch(throttleAdjustMin)
-	#diagnostics.watch(throttleAdjustStep)
-	#diagnostics.watch(throttleLimit1)
-	#diagnostics.watch(throttleLimit2)
-	#diagnostics.watch(throttleLimit3)
-	#diagnostics.watch('--------')
-	#diagnostics.watch(brakeMax)
-	#diagnostics.watch(brakeAdjustMin)
-	#diagnostics.watch(brakeAdjustStep)
-	#diagnostics.watch(brakeLimit1)
-	#diagnostics.watch(brakeLimit2)
-	#diagnostics.watch(brakeLimit3)
-	#diagnostics.watch('-------')
+	diagnostics.watch('---------')
+	diagnostics.watch(throttleMax)
+	diagnostics.watch(throttleAdjustMin)
+	diagnostics.watch(throttleAdjustStep)
+	diagnostics.watch(throttleLimit1)
+	diagnostics.watch(throttleLimit2)
+	diagnostics.watch(throttleLimit3)
+	diagnostics.watch('--------')
+	diagnostics.watch(brakeMax)
+	diagnostics.watch(brakeAdjustMin)
+	diagnostics.watch(brakeAdjustStep)
+	diagnostics.watch(brakeLimit1)
+	diagnostics.watch(brakeLimit2)
+	diagnostics.watch(brakeLimit3)
+	diagnostics.watch('-------')
 	#diagnostics.watch(wheelSlipFL)
 	#diagnostics.watch(wheelSlipFR)
 	#diagnostics.watch(wheelSlipRL)
