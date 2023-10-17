@@ -51,23 +51,23 @@ if starting:
 # Педали и ручник
 	# Газ
 	mouseThrottleBrake = False					# [True;False] газ и тормоз кнопками мыши
-	throttlePushRate = 80						# [1..100] скорость нажатия газа
+	throttlePushRate = 40						# [1..100] скорость нажатия газа
 	throttleReleaseRate = 20					# [1..100] скорость отпускания газа
 	# Газ: варианты изменения скорости нажатия
 	throttleRate = throttlePushRate					# [1..100] скорость изменения оси газа
-	throttleShiftLimit = 80						# [1..100] Shift предел изменения оси газа %
+	throttleShiftLimit = 60						# [1..100] Shift предел изменения оси газа %
 	throttleShiftRate = 10						# [1..100] Shift скорость изменения оси газа
 	throttleAltLimit = 100						# [1..100] Alt предел изменения оси газа %
-	throttleAltRate = 100						# [1..100] Alt скорость изменения оси газа
+	throttleAltRate = 40						# [1..100] Alt скорость изменения оси газа
 	# Тормоз
-	brakePushRate = 80						# [1..100] скорость нажатия тормоза
+	brakePushRate = 40						# [1..100] скорость нажатия тормоза
 	brakeReleaseRate = 20						# [1..100] скорость отпускания тормоза
 	# Тормоз: варианты изменения скорости нажатия
 	brakeRate = brakePushRate					# [1..100] скорость изменения оси тормоза
-	brakeShiftLimit = 80						# [1..100] Shift предел изменения оси тормоза %
+	brakeShiftLimit = 60						# [1..100] Shift предел изменения оси тормоза %
 	brakeShiftRate = 10						# [1..100] Shift скорость изменения оси тормоза
 	brakeAltLimit = 100						# [1..100] Alt предел изменения оси тормоза %
-	brakeAltRate = 100						# [1..100] Alt скорость изменения оси тормоза
+	brakeAltRate = 40						# [1..100] Alt скорость изменения оси тормоза
 	# Сцепление
 	clutchPushRate = 20						# [1..100] скорость нажатия сцепления
 	clutchReleaseRate = 10						# [1..100] скорость отпускания сцепления
