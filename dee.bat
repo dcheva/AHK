@@ -7,4 +7,5 @@ git push
 git checkout dee
 pushd C:\Games\Cyberpunk.2077.2.0\bin\x64
 cd C:\Games\Cyberpunk.2077.2.0\bin\x64
+pause
 start C:\Games\Cyberpunk.2077.2.0\bin\x64\Cyberpunk2077.exe
