@@ -72,15 +72,15 @@ clkLocked(pos:=1)
 	}
 }
 
-showPositions(count:=3)
+showPositions(count:=2)
 {
 	;@Test in game chat
-	Send, l:%LockedLeft%,%LockedTop% v:%ViewLeft%,%ViewTop% 
+	Send, l:%LockedLeft%,%LockedTop% v:%ViewLeft%,%ViewTop%>{Space}
 	;Get current position to return
 	MouseGetPos, OrigX, OrigY
 	Loop, %count% {
-		MouseMove, %ViewLeft%, %ViewTop%, 5 ; %MouseSpeed%
-		MouseMove, %LockedLeft%, %LockedTop%, 5 ; %MouseSpeed%
+		MouseMove, %ViewLeft%, %ViewTop%, 4 ; %MouseSpeed%
+		MouseMove, %LockedLeft%, %LockedTop%, 4 ; %MouseSpeed%
 	}
 	MouseMove, %OrigX%, %OrigY%, %MouseSpeed%
 }
