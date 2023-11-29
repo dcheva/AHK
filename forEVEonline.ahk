@@ -74,6 +74,8 @@ clkLocked(pos:=1)
 
 showPositions(count:=3)
 {
+	;@Test in game chat
+	Send, l:%LockedLeft%,%LockedTop% v:%ViewLeft%,%ViewTop% 
 	MouseGetPos, OrigX, OrigY
 	Loop, %count% {
 		MouseMove, %ViewLeft%, %ViewTop%, %MouseSpeed%
