@@ -30,10 +30,9 @@ global ClickY := 0
 ran(min, max)
 {
 	random, ran, min, max
-	return ran
+	return ran                                                                                                                                                      
 }
 
-;@TEST IT alt+number to orbit + lock target
 clkView(pos:=1)
 {
 	if(StopKeys == 0)
@@ -44,11 +43,7 @@ clkView(pos:=1)
 		;Send, v:%top%, %lft%
 		MouseGetPos, OrigX, OrigY
 		MouseMove, %lft%, %top%, %MouseSpeed%
-		;@TEST IT alt+number to orbit + lock target
 		MouseClick, left, , 
-		Send, {LAlt Up}{Ctrl Down}
-		MouseClick, left, , 
-		Send, {Ctrl Up}{LAlt Down}
 		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 		MouseMove, %OrigX%, %OrigY%, %MouseSpeed%
 	}
@@ -136,7 +131,6 @@ $^!C::
 return
 
 ;enable [1-8] and ^[1-8] key clicker 
-;@TEST IT alt+number to orbit + lock target
 $^!A::
 	Send, {^!A}
 	StopKeys = 0
@@ -205,44 +199,44 @@ $8::
 	clkLocked(8)
 return
 
-;alt+[1-8] alt+click overview to lock
-$!1::
-	Send, ^!{1}
+;control+[1-8] control+click overview to lock
+$^1::
+	Send, ^{1}
 	clkView(1)
 return
 
-$!2::
-	Send, ^!{2}
+$^2::
+	Send, ^{2}
 	clkView(2)
 return
 
-$!3::
-	Send, ^!{3}
+$^3::
+	Send, ^{3}
 	clkView(3)
 return
 
-$!4::
-	Send, ^!{4}
+$^4::
+	Send, ^{4}
 	clkView(4)
 return
 
-$!5::
-	Send, ^!{5}
+$^5::
+	Send, ^{5}
 	clkView(5)
 return
 
-$!6::
-	Send, ^!{6}
+$^6::
+	Send, ^{6}
 	clkView(6)
 return
 
-$!7::
-	Send, ^!{7}
+$^7::
+	Send, ^{7}
 	clkView(7)
 return
 
-$!8::
-	Send, ^!{8}
+$^8::
+	Send, ^{8}
 	clkView(8)
 return
 
