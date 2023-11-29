@@ -1,5 +1,5 @@
 ;-=-\ EVE online mouse clicker \-=-
-;v.1.21.29
+;v.1.21.31b
 ;for AHK 1.1.34.04
 ;by cheva (c) MIT 2012-2023
 
@@ -33,6 +33,7 @@ ran(min, max)
 	return ran
 }
 
+;@TEST IT alt+number to orbit + lock target
 clkView(pos:=1)
 {
 	if(StopKeys == 0)
@@ -43,12 +44,11 @@ clkView(pos:=1)
 		;Send, v:%top%, %lft%
 		MouseGetPos, OrigX, OrigY
 		MouseMove, %lft%, %top%, %MouseSpeed%
-		;Send, {Ctrl Down}
-		;Sleep, 100
-		;MouseClick, left, , 
-		;Sleep, 100
-		;Send, {Ctrl Up}
+		;@TEST IT alt+number to orbit + lock target
 		MouseClick, left, , 
+		Send, {LAlt Up}{Ctrl Down}
+		MouseClick, left, , 
+		Send, {Ctrl Up}{LAlt Down}
 		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 		MouseMove, %OrigX%, %OrigY%, %MouseSpeed%
 	}
@@ -136,6 +136,7 @@ $^!C::
 return
 
 ;enable [1-8] and ^[1-8] key clicker 
+;@TEST IT alt+number to orbit + lock target
 $^!A::
 	Send, {^!A}
 	StopKeys = 0
