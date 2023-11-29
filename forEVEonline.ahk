@@ -76,10 +76,11 @@ showPositions(count:=3)
 {
 	;@Test in game chat
 	Send, l:%LockedLeft%,%LockedTop% v:%ViewLeft%,%ViewTop% 
+	;Get current position to return
 	MouseGetPos, OrigX, OrigY
 	Loop, %count% {
-		MouseMove, %ViewLeft%, %ViewTop%, %MouseSpeed%
-		MouseMove, %LockedLeft%, %LockedTop%, %MouseSpeed%
+		MouseMove, %ViewLeft%, %ViewTop%, 6;%MouseSpeed%
+		MouseMove, %LockedLeft%, %LockedTop%, 6;%MouseSpeed%
 	}
 	MouseMove, %OrigX%, %OrigY%, %MouseSpeed%
 }
