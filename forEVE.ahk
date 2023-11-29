@@ -1,20 +1,22 @@
+;v.1.29
 ;for AHK 1.1.34.04
-;by cheva (c) MIT 2012-2022
+;by cheva (c) MIT 2012-2023
 
 
 ;-=-\ Init \-=-
+global MouseSpeed = 20
 
 ;overview position
 ;fullscreen 210 windowed 240
+;can br redefined by $^+1::
 global ViewTop := 210
-;global ViewTop := 240
 global ViewLeft := 1700
 global ViewStep := 18
 
 ;locked targets position
 ;fullscreen 50 windowed 80
+;can br redefined by $^+2::
 global LockedTop := 50
-global LockedTop := 80
 global LockedLeft := 1500
 global LockedStep := -110
 
@@ -38,14 +40,14 @@ clkView(pos:=1)
 		top := ViewTop + (ViewStep * (pos-1))
 		lft := ViewLeft
 		MouseGetPos, OrigX, OrigY
-		MouseMove, %lft%, %top%
+		MouseMove, %lft%, %top%, %MouseSpeed%
 		;Send, {Ctrl Down}
 		;Sleep, 100
 		;MouseClick, left, , 
 		;Sleep, 100
 		;Send, {Ctrl Up}
 		MouseClick, left, , 
-		MouseMove, %OrigX%, %OrigY%
+		MouseMove, %OrigX%, %OrigY%, %MouseSpeed%
 		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 	}
 }
@@ -57,11 +59,11 @@ clkLocked(pos:=1)
 		top := LockedTop
 		lft := LockedLeft + (LockedStep * (pos-1))
 		MouseGetPos, OrigX, OrigY
-		MouseMove, %lft%, %top%
+		MouseMove, %lft%, %top%, %MouseSpeed%
 		MouseClick, left, , 
 		;Sleep, 100
 		;MouseClick, left, , 
-		MouseMove, %OrigX%, %OrigY%
+		MouseMove, %OrigX%, %OrigY%, %MouseSpeed%
 		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 	}
 }
@@ -121,10 +123,39 @@ $^+C::
 	}
 return
 
-;enable key clicker ([1-8] and control+[1-8])
-$^+1::
-	Send {^+1}
+;enable key clicker 
+$^+a::
 	StopKeys = 0
+	SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
+return
+
+;set overView positions
+;keys: ([1-8] and control+[1-8])
+$^!1::
+	;Set coords
+	;Mouse must be at 1st line of overview
+	MouseGetPos, ThisX, ThisY
+	global ViewTop := %ThisX%
+	global ViewLeft := %ThisY%
+	;show positions
+	MouseMove, %LockedTop%, %LockedLeft%, %MouseSpeed%
+	SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
+	MouseMove, %ViewTop%, %ViewLeft%, %MouseSpeed%
+	SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
+return
+
+;set new targetsLocked positions
+;keys: ([1-8] and control+[1-8])
+$^!2::
+	;Set coords
+	;Mouse must be at 1st locked icon
+	MouseGetPos, ThisX, ThisY
+	global LockedTop := %ThisX%
+	global LockedLeft := %ThisY%
+	;show positions
+	MouseMove, %ViewTop%, %ViewLeft%, %MouseSpeed%
+	SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
+	MouseMove, %LockedTop%, %LockedLeft%, %MouseSpeed%
 	SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
 return
 
@@ -208,16 +239,5 @@ return
 $^8::
 	Send, {^8}
 	clkView(8)
-return
-
-; jump once
-$^+a::
-$!a::
-		MouseGetPos, OrigX, OrigY
-;fullscreen 100 windowed 130
-		MouseClick, Left, 1615, 105, 1, 4, , 
-;		MouseClick, Left, 1615, 135, 1, 4, , 
-		MouseMove, %OrigX%, %OrigY%
-		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 return
 
