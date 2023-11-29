@@ -163,34 +163,42 @@ return
 
 ;[1-8] click locked
 $1::
+	Send, 1
 	clkLocked(1)
 return
 
 $2::
+	Send, 2
 	clkLocked(2)
 return
 
 $3::
+	Send, 3
 	clkLocked(3)
 return
 
 $4::
+	Send, 4
 	clkLocked(4)
 return
 
 $5::
+	Send, 5
 	clkLocked(5)
 return
 
 $6::
+	Send, 6
 	clkLocked(6)
 return
 
 $7::
+	Send, 7
 	clkLocked(7)
 return
 
 $8::
+	Send, 8
 	clkLocked(8)
 return
 
