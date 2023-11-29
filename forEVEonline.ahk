@@ -201,62 +201,33 @@ return
 
 ;control+[1-8] control+click overview to lock
 $^1::
-	Send, ^{1}
 	clkView(1)
 return
 
 $^2::
-	Send, ^{2}
 	clkView(2)
 return
 
 $^3::
-	Send, ^{3}
 	clkView(3)
 return
 
 $^4::
-	Send, ^{4}
 	clkView(4)
 return
 
 $^5::
-	Send, ^{5}
 	clkView(5)
 return
 
 $^6::
-	Send, ^{6}
 	clkView(6)
 return
 
 $^7::
-	Send, ^{7}
 	clkView(7)
 return
 
 $^8::
-	Send, ^{8}
 	clkView(8)
 return
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
