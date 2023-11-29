@@ -79,8 +79,8 @@ showPositions(count:=3)
 	;Get current position to return
 	MouseGetPos, OrigX, OrigY
 	Loop, %count% {
-		MouseMove, %ViewLeft%, %ViewTop%, 6 ; %MouseSpeed%
-		MouseMove, %LockedLeft%, %LockedTop%, 6 ; %MouseSpeed%
+		MouseMove, %ViewLeft%, %ViewTop%, 5 ; %MouseSpeed%
+		MouseMove, %LockedLeft%, %LockedTop%, 5 ; %MouseSpeed%
 	}
 	MouseMove, %OrigX%, %OrigY%, %MouseSpeed%
 }
