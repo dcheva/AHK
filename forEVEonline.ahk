@@ -111,7 +111,7 @@ Return
 
 ;-=-\ Let's play! \-=-
 ;enable mouse clicker (random time 1-10 sec, current mouse position)
-$^!C::
+$^+C::
 	Send, {^!C}
 	MouseGetPos, ClickX, ClickY
 	SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
@@ -131,7 +131,7 @@ $^!C::
 return
 
 ;enable [1-8] and ^[1-8] key clicker 
-$^!A::
+$^+A::
 	Send, {^!A}
 	StopKeys = 0
 	SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
@@ -139,7 +139,7 @@ $^!A::
 return
 
 ;set new ^[1-8] targetsLocked positions
-$^!1::
+$^+1::
 	;Set coords
 	;Mouse must be at 1st locked icon
 	MouseGetPos, LockedLeft, LockedTop
@@ -149,7 +149,7 @@ $^!1::
 return
 
 ;set new [1-8] overView positions
-$^!2::
+$^+2::
 	;Set coords
 	;Mouse must be at 1st line of overview
 	MouseGetPos, ViewLeft, ViewTop
