@@ -48,6 +48,7 @@ $^+C::
 	Send, {^!C}
 	MouseGetPos, ClickX, ClickY
 	SoundPlay %A_WinDir%\Media\Windows Pop-up Blocked.wav
+	Sleep, 1000
 	Loop
 	{
 		if (BreakLoop == 1)
