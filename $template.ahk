@@ -4,7 +4,7 @@
 ;by cheva (c) MIT 2012-2023
 
 ;-=-\ Set globals \-=-
-global MouseSpeed = 1
+;global MouseSpeed = 1
 
 ;-=-\ Functions \-=-
 ran(min, max)
@@ -57,10 +57,10 @@ $^+C::
 			break
 		}
 		MouseGetPos, OrigX, OrigY
-		MouseClick, left, %ClickX%, %ClickY%
+		MouseClick, left, %ClickX%, %ClickY%, % ran(1, 5)
 		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
-		MouseMove, %OrigX%, %OrigY%
-		Sleep, % ran(3000, 9000)
+		MouseMove, %OrigX%, %OrigY%, % ran(1, 5)
+		Sleep, % ran(6000, 9000)
 	}
 return
 
