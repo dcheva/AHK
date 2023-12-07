@@ -2,7 +2,6 @@
 ;by cheva (c) MIT 2012-2023
 
 global BreakLoop = 0
-
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 
 ;reload
