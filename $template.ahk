@@ -57,9 +57,9 @@ $^+C::
 			break
 		}
 		MouseGetPos, OrigX, OrigY
-		MouseClick, left, %ClickX%, %ClickY%, % ran(1, 5)
+		MouseClick, left, %ClickX%, %ClickY%, % ran(1, 10)
 		SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
-		MouseMove, %OrigX%, %OrigY%, % ran(1, 5)
+		MouseMove, %OrigX%, %OrigY%, % ran(1, 10)
 		Sleep, % ran(6000, 9000)
 	}
 return
