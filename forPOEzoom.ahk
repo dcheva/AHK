@@ -46,14 +46,14 @@ clkToKill()
   Send, {W}
   Sleep, 1000 ; value depends on regen time
   ; second: single shot/chain
-  Send, {MButton}
-  Sleep, 200
-  Send, {RButton Down}
-  Sleep, 2000
-  Send, {RButton Up}
-  ; Blink or something more
-  Send, {E}
-  Sleep, 1000 ; value depends on regen time
+  ; Send, {MButton}
+  ; Sleep, 200
+  ; Send, {RButton Down}
+  ; Sleep, 2000
+  ; Send, {RButton Up}
+  ;; Blink or something more
+  ; Send, {E}
+  ; Sleep, 1000 ; value depends on regen time
   ; third: repeat 5 times
   Send, {Q}
   Sleep, 200
@@ -61,10 +61,10 @@ clkToKill()
   Sleep, 200
   Send, {Q}
   Sleep, 200
-  Send, {Q}
-  Sleep, 200
-  Send, {Q}
-  Sleep, 1000 ; sleep to regen mana
+  ; Send, {Q}
+  ; Sleep, 200
+  ; Send, {Q}
+   Sleep, 3000 ; sleep to regen mana
   Send, {T}
   SoundPlay %A_WinDir%\Media\Windows Navigation Start.wav
 }
@@ -93,7 +93,7 @@ $2::
   Send, 1
   Send, 2
   Send, 3
-  Send, 4
+;  Send, 4
 ;  Send, 5
 return
 
@@ -115,8 +115,9 @@ $+^A::
   Reload ; to refresh variables
 return
 
-; Speed up!
-$Capslock::5
+;; Speed up!
+; Swap bows
+$Capslock::X
 
 ; Jump! Than T
 $Space::
