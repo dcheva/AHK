@@ -1,6 +1,6 @@
 """
 @author dcheva 
-@version 0.2310.16.2
+@version 0.2401.16.1
 Pastebin https://pastebin.com/d8zcmVRt
 Github https://github.com/dcheva/AHK/blob/main/vJoyACC.py
 
@@ -12,6 +12,7 @@ Github https://github.com/dcheva/AHK/blob/main/vJoyACC.py
 Чтобы остановить обработку ввода и освободить мышь, снова нажмите Caps Lock или ESCAPE
 
 Changelog:
+v0.2401.16 Газ и Тормоз: Rate/Limit faster
 v0.2310.16 Газ и Тормоз: Alt/Shift Rate/Limit
 """
 
@@ -58,7 +59,7 @@ if starting:
 	# Газ: варианты изменения скорости нажатия
 	throttleRate = throttlePushRate				# [1..100] скорость изменения оси газа
 	throttleShiftLimit = 100					# [1..100] Shift предел изменения оси газа %
-	throttleShiftRate = 40						# [1..100] Shift скорость изменения оси газа
+	throttleShiftRate = 60						# [1..100] Shift скорость изменения оси газа
 	throttleAltLimit = 60						# [1..100] Alt предел изменения оси газа %
 	throttleAltRate = 10						# [1..100] Alt скорость изменения оси газа
 	# Тормоз
@@ -67,12 +68,12 @@ if starting:
 	# Тормоз: варианты изменения скорости нажатия
 	brakeRate = brakePushRate					# [1..100] скорость изменения оси тормоза
 	brakeShiftLimit = 100						# [1..100] Shift предел изменения оси тормоза %
-	brakeShiftRate = 40							# [1..100] Shift скорость изменения оси тормоза
+	brakeShiftRate = 60							# [1..100] Shift скорость изменения оси тормоза
 	brakeAltLimit = 60							# [1..100] Alt предел изменения оси тормоза %
 	brakeAltRate = 10							# [1..100] Alt скорость изменения оси тормоза
 	# Сцепление
-	clutchPushRate = 20						# [1..100] скорость нажатия сцепления
-	clutchReleaseRate = 10						# [1..100] скорость отпускания сцепления
+	clutchPushRate = 40						# [1..100] скорость нажатия сцепления
+	clutchReleaseRate = 20						# [1..100] скорость отпускания сцепления
 	# Ручник
 	handbrakePushRate = 80						# [1..100] скорость нажатия ручника
 	handbrakeReleaseRate = 80					# [1..100] скорость отпускания ручника
