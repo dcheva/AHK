@@ -1,6 +1,6 @@
 """
 @author dcheva 
-@version 0.2401.16.1
+@version v0.2401.24
 Pastebin https://pastebin.com/d8zcmVRt
 Github https://github.com/dcheva/AHK/blob/main/vJoyACC.py
 
@@ -12,6 +12,7 @@ Github https://github.com/dcheva/AHK/blob/main/vJoyACC.py
 Чтобы остановить обработку ввода и освободить мышь, снова нажмите Caps Lock или ESCAPE
 
 Changelog:
+v0.2401.24 Steering and Breaking changes
 v0.2401.16 Газ и Тормоз: Rate/Limit faster
 v0.2310.16 Газ и Тормоз: Alt/Shift Rate/Limit
 """
@@ -48,16 +49,16 @@ if starting:
 #@ Center if key/button pressed
 #@ Сброс (центрирование) руля по нажатию кнопки/клавиши (СКМ/пробел)
 	steerCenterEnabled = True					# [True;False] вывод в Watch
-# Руль
-	steerSensitivity = 10						# [1..100] чувствительность руля в нейтральном положении
-	steerNonlinearity = 220						# [0..900] на сколько % чувствительность руля в крайних положениях выше, чем в нейтральном
+# Руль v0.2401.24
+	steerSensitivity = 20 # 10					# [1..100] чувствительность руля в нейтральном положении
+	steerNonlinearity = 400 # 220					# [0..900] на сколько % чувствительность руля в крайних положениях выше, чем в нейтральном
 # Педали и ручник
 	# Газ
 	mouseThrottleBrake = False					# [True;False] газ и тормоз кнопками мыши
 	throttlePushRate = 40						# [1..100] скорость нажатия газа
 	throttleReleaseRate = 20					# [1..100] скорость отпускания газа
 	# Газ: варианты изменения скорости нажатия
-	throttleRate = throttlePushRate				# [1..100] скорость изменения оси газа
+	throttleRate = throttlePushRate					# [1..100] скорость изменения оси газа
 	throttleShiftLimit = 100					# [1..100] Shift предел изменения оси газа %
 	throttleShiftRate = 60						# [1..100] Shift скорость изменения оси газа
 	throttleAltLimit = 60						# [1..100] Alt предел изменения оси газа %
@@ -68,9 +69,9 @@ if starting:
 	# Тормоз: варианты изменения скорости нажатия
 	brakeRate = brakePushRate					# [1..100] скорость изменения оси тормоза
 	brakeShiftLimit = 100						# [1..100] Shift предел изменения оси тормоза %
-	brakeShiftRate = 60							# [1..100] Shift скорость изменения оси тормоза
-	brakeAltLimit = 60							# [1..100] Alt предел изменения оси тормоза %
-	brakeAltRate = 10							# [1..100] Alt скорость изменения оси тормоза
+	brakeShiftRate = 60						# [1..100] Shift скорость изменения оси тормоза
+	brakeAltLimit = 60						# [1..100] Alt предел изменения оси тормоза %
+	brakeAltRate = 10						# [1..100] Alt скорость изменения оси тормоза
 	# Сцепление
 	clutchPushRate = 40						# [1..100] скорость нажатия сцепления
 	clutchReleaseRate = 20						# [1..100] скорость отпускания сцепления
@@ -123,17 +124,17 @@ if starting:
 	keyAlt = Key.LeftAlt						#@ Alt key
 	keyShift = Key.LeftShift					#@ Shift key
 	keySwitch1st = Key.CapsLock					# обработка ввода: вкл/выкл (первая из сочетания клавиш) !!! Главный выключатель скрипта
-	keyGearUp = Key.D							# повысить передачу
-	keyGearDown = Key.C							# понизить передачу
+	keyGearUp = Key.D						# повысить передачу
+	keyGearDown = Key.C						# понизить передачу
 	keyBrakeAdjustUp = Key.S					# регулировка тормоза: увеличить глубину нажатия педали
 	keyBrakeAdjustDown = Key.X					# регулировка тормоза: уменьшить глубину нажатия педали
-	keySwitch2nd = None							# обработка ввода: вкл/выкл (вторая клавиша из сочетания. Чтобы использовать только первую клавишу, поставьте "=None")
-	keyThrottle = Key.A							# газ (ЛКМ, если mouseThrottleBrake = True)
-	keyBrake = Key.Z							# тормоз (ПКМ, если mouseThrottleBrake = True)
-	keyClutch = None							# сцепление
-	keyHandbrake = None							# ручник
+	keySwitch2nd = None						# обработка ввода: вкл/выкл (вторая клавиша из сочетания. Чтобы использовать только первую клавишу, поставьте "=None")
+	keyThrottle = Key.A						# газ (ЛКМ, если mouseThrottleBrake = True)
+	keyBrake = Key.Z						# тормоз (ПКМ, если mouseThrottleBrake = True)
+	keyClutch = None						# сцепление
+	keyHandbrake = None						# ручник
 	keyThrottleAdjustUp = None					# регулировка газа: увеличить максимальную глубину нажатия педали
-	keyThrottleAdjustDown = None				# регулировка газа: уменьшить максимальную глубину нажатия педали
+	keyThrottleAdjustDown = None					# регулировка газа: уменьшить максимальную глубину нажатия педали
 	keyThrottleLimit1 = None					# регулировка газа альтернативная: уменьшить максимальную глубину нажатия педали до throttleLimit1 (при удержании)
 	keyThrottleLimit2 = None					# регулировка газа альтернативная: уменьшить максимальную глубину нажатия педали до throttleLimit2 (при удержании)
 	keyThrottleLimit3 = None					# регулировка газа альтернативная: уменьшить максимальную глубину нажатия педали до throttleLimit3 (при удержании)
