@@ -295,50 +295,50 @@ if starting:
 		else:
 			return valueDefault
 	
-	def aidPowerAdjust(aidPower, aidPowerMin, aidPowerMax, aidPowerStep, keyPowerUp, keyPowerDown):
-		"""Изменяет силу АБС/ПБС. Возвращает новую силу.
-		Аргументы:
-		aidPower - текущая сила
-		aidPowerMin - минимальная сила
-		aidPowerMax - максимальная сила
-		aidPowerStep - шаг регулировки силы
-		keyPowerUp - клавиша увеличения силы
-		keyPowerDown - клавиша уменьшения силы
-		"""
-		powerUpPressed = isKeyPressed(keyPowerUp)
-		powerDownPressed = isKeyPressed(keyPowerDown)
-		if powerUpPressed or powerDownPressed:
-			aidPower = adjustValueByInput(aidPower, aidPowerMin, aidPowerMax, aidPowerStep, powerUpPressed, powerDownPressed)
-		return aidPower
+	# def aidPowerAdjust(aidPower, aidPowerMin, aidPowerMax, aidPowerStep, keyPowerUp, keyPowerDown):
+	# 	"""Изменяет силу АБС/ПБС. Возвращает новую силу.
+	# 	Аргументы:
+	# 	aidPower - текущая сила
+	# 	aidPowerMin - минимальная сила
+	# 	aidPowerMax - максимальная сила
+	# 	aidPowerStep - шаг регулировки силы
+	# 	keyPowerUp - клавиша увеличения силы
+	# 	keyPowerDown - клавиша уменьшения силы
+	# 	"""
+	# 	powerUpPressed = isKeyPressed(keyPowerUp)
+	# 	powerDownPressed = isKeyPressed(keyPowerDown)
+	# 	if powerUpPressed or powerDownPressed:
+	# 		aidPower = adjustValueByInput(aidPower, aidPowerMin, aidPowerMax, aidPowerStep, powerUpPressed, powerDownPressed)
+	# 	return aidPower
 	
-	def pedalAid(pedalPosCurrent, pedalPosMin, slipMin, slipMax, wheelSlipFL, wheelSlipFR, wheelSlipRl, wheelSlipRR, drivetrain = 2):
-		"""Отпускает нажатую педаль по мере увеличения проскальзывания колес. Возвращает позицию на оси педали.
-		Аргументы:
-		pedalPosCurrent - текущая позиция педали
-		pedalPosMin - позиция педали при максимальном проскальзывании
-		slipMin - проскальзывание, при котором начнется отпускание педали
-		slipMax - проскальзывание, при котором педаль будет отпущена максимально
-		wheelSlipFL - проскальзывание переднего левого колеса
-		wheelSlipFR - проскальзывание переднего правого колеса
-		wheelSlipRL - проскальзывание заднего левого колеса
-		wheelSlipRR - проскальзывание заднего правого колеса
-		drivetrain - привод автомобиля: 0 - передний, 1 - задний, другое - полный
-		"""
+	# def pedalAid(pedalPosCurrent, pedalPosMin, slipMin, slipMax, wheelSlipFL, wheelSlipFR, wheelSlipRl, wheelSlipRR, drivetrain = 2):
+	# 	"""Отпускает нажатую педаль по мере увеличения проскальзывания колес. Возвращает позицию на оси педали.
+	# 	Аргументы:
+	# 	pedalPosCurrent - текущая позиция педали
+	# 	pedalPosMin - позиция педали при максимальном проскальзывании
+	# 	slipMin - проскальзывание, при котором начнется отпускание педали
+	# 	slipMax - проскальзывание, при котором педаль будет отпущена максимально
+	# 	wheelSlipFL - проскальзывание переднего левого колеса
+	# 	wheelSlipFR - проскальзывание переднего правого колеса
+	# 	wheelSlipRL - проскальзывание заднего левого колеса
+	# 	wheelSlipRR - проскальзывание заднего правого колеса
+	# 	drivetrain - привод автомобиля: 0 - передний, 1 - задний, другое - полный
+	# 	"""
 		
-		if drivetrain == 0:
-			slip = max(wheelSlipFL, wheelSlipFR)
-		elif drivetrain == 1:
-			slip = max(wheelSlipRL, wheelSlipRR)
-		else:
-			slip = max(wheelSlipFL, wheelSlipFR, wheelSlipRL, wheelSlipRR)
-		if slip < slipMin:
-			return pedalPosCurrent
-		elif slip > slipMax:
-			return pedalPosMin
-		else:
-			pedalPosNew = (pedalPosMin - max(pedalPosMin, pedalPosCurrent)) / (slipMax - slipMin) * (slip - slipMin) + pedalPosCurrent
-			pedalPosNew = repairValue(pedalPosNew, pedalPosMin, pedalPosCurrent)
-			return pedalPosNew
+	# 	if drivetrain == 0:
+	# 		slip = max(wheelSlipFL, wheelSlipFR)
+	# 	elif drivetrain == 1:
+	# 		slip = max(wheelSlipRL, wheelSlipRR)
+	# 	else:
+	# 		slip = max(wheelSlipFL, wheelSlipFR, wheelSlipRL, wheelSlipRR)
+	# 	if slip < slipMin:
+	# 		return pedalPosCurrent
+	# 	elif slip > slipMax:
+	# 		return pedalPosMin
+	# 	else:
+	# 		pedalPosNew = (pedalPosMin - max(pedalPosMin, pedalPosCurrent)) / (slipMax - slipMin) * (slip - slipMin) + pedalPosCurrent
+	# 		pedalPosNew = repairValue(pedalPosNew, pedalPosMin, pedalPosCurrent)
+	# 		return pedalPosNew
 
 	vJoyDevice = vJoy[vJoyDeviceID - 1]
 	if sysOverclock:
@@ -419,21 +419,14 @@ if enabled:
 		vJoyUpdate(vJoyDevice, steerAxis, throttleAxis, brakeAxis, clutchAxis, handbrakeAxis, keyGearUp, keyGearDown)
 	# Руль
 	steerAxis = steerHandler(steerAxis, steerSensitivity, steerNonlinearity, axisMax, reset)
-	
-	#@ Газ и Тормоз: v0.2310.16 change to Alt-Shift-Rate and fix dual pedals pressed
-	throttleMaxOverride, brakeMaxOverride = throttleMax, brakeMax
+
+	# Газ и Тормоз	
 	throttlePressed = mouseThrottleBrake and mouse.leftButton or isKeyDown(keyThrottle)
-	throttlePushRateOverride, throttleReleaseRateOverride = throttlePushRate, throttleReleaseRate
 	brakePressed = mouseThrottleBrake and mouse.rightButton or isKeyDown(keyBrake)
+	throttleMaxOverride, brakeMaxOverride = throttleMax, brakeMax
+	throttlePushRateOverride, throttleReleaseRateOverride = throttlePushRate, throttleReleaseRate
 	brakePushRateOverride, brakeReleaseRateOverride = brakePushRate, brakeReleaseRate
-		
-	'''
-	@TODO in GT2.2401.26
-	Add mode switch on hotkey (Left Cintrol) (with sounds)
-	- Mode 1 (Default) : Allowed pressing the gas and brake simultaneously when releasing
-	- Mode 2 : pressing interrupts releasing
-	'''
-	mode = 1
+	
 	if isKeyDown(keyShift): 
 		throttlePushRateOverride = throttleShiftRate
 		throttleReleaseRateOverride = throttleShiftRate
@@ -448,14 +441,26 @@ if enabled:
 		brakePushRateOverride = brakeAltRate
 		brakeReleaseRateOverride = brakeAltRate
 		brakeMaxOverride = percentToValue(brakeAltLimit, -axisMax, axisMax)
-	if isKeyDown(keyThrottle): 
-		brakePressed = mode == 2
-		brakePushRateOverride = 0
-		brakeReleaseRateOverride = brakeRate
-	if isKeyDown(keyBrake): 
-		throttlePressed =  mode == 2
-		throttlePushRateOverride = 0
-		throttleReleaseRateOverride = throttleRate
+	
+	'''
+	@TODO in GT2.2401.26
+	Add mode switch on hotkey (Left Cintrol) (with sounds)
+	- Mode 1 (Default) : Allowed pressing the gas and brake simultaneously when releasing
+	- Mode 2 : pressing interrupts releasing
+
+	v0.2310.16 change to Alt-Shift-Rate and fix dual pedals pressed IS NOW 'mode = 2'
+	'''
+	mode = 1
+
+	if mode == 2:
+		if isKeyDown(keyThrottle): 
+			brakePressed = False
+			brakePushRateOverride = 0
+			brakeReleaseRateOverride = brakeRate
+		if isKeyDown(keyBrake): 
+			throttlePressed = False
+			throttlePushRateOverride = 0
+			throttleReleaseRateOverride = throttleRate
 		
 	# Газ
 	# if throttleBlocked:
