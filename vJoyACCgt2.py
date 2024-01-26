@@ -36,6 +36,9 @@ if starting:
 	
 	tractionControl = False  					# [True;False] включить ПБС !!! выключить в игре
 	antilockBrakes = False						# [True;False] включить АБС !!! выключить в игре
+	
+	# Mode switch GT2.2401.26
+	mode = 1
 
 # *** ПАРАМЕТРЫ ***
 # Можно менять значения после знака "="
@@ -46,10 +49,10 @@ if starting:
 	vJoyDeviceID = 1						# [1..15] № джойстика в vJoyConf
 	sysOverclock = True						# [True;False] системный таймер: False - 64Гц (стандарт Windows), True - 1кГц  
 	sysExecInterval = 10						# [1..10] делитель для системного таймера 1кГц. Частное двух чисел - частота выполнения скрипта; чем она выше, тем меньше задержка ввода, но выше нагрузка на комп 
-	diagWatch = True	
+	diagWatch = True						# [True;False] вывод в Watch
 #@ Center if key/button pressed
 #@ Сброс (центрирование) руля по нажатию кнопки/клавиши (СКМ/пробел)
-	steerCenterEnabled = True					# [True;False] вывод в Watch
+	steerCenterEnabled = True	
 # Руль v0.2401.24
 	steerSensitivity = 20 # 10					# [1..100] чувствительность руля в нейтральном положении
 	steerNonlinearity = 400 # 220					# [0..900] на сколько % чувствительность руля в крайних положениях выше, чем в нейтральном
@@ -142,7 +145,10 @@ if starting:
 	keyBrakeLimit1 = None						# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit1 (при удержании)
 	keyBrakeLimit2 = None						# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit2 (при удержании)
 	keyBrakeLimit3 = None						# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit3 (при удержании)
-	
+
+# Mode switch GT2.2401.26
+	keyModeSwitch = Key.LeftControl
+
 # Противобуксовочная система 
 	keyTcPowerUp = None 						# Key.L # ПБС: увеличить силу
 	keyTcPowerDown = None 						# Key.K # ПБС: уменьшить силу
@@ -151,8 +157,17 @@ if starting:
 	keyAbsPowerDown = None				 		# Key.O # АБС: уменьшить силу
 
 # *** ДАЛЕЕ НЕ МЕНЯТЬ *** #@ Sure?
-
 #@ More routines
+# Mode switch GT2.2401.26
+	def modeSwitch(mode):
+		if mode == 2:
+			mode = 1
+			winsound.Beep(tetra[9],50)
+		else:
+			mode = 2
+			winsound.Beep(tetra[7],50)
+		return mode
+		
 #@ Сброс (центрирование) руля
 	def doReset(reset):
 		cursorPosX, cursorPosY = screenWidth / 2, screenHeight / 2
@@ -397,6 +412,10 @@ if isKeyDown(keySwitch1st) and isKeyPressed(keySwitch2nd) or keySwitch2nd == Non
 	if cursorHide:
 		cursorMove()
 		
+# Mode switch GT2.2401.26
+if isKeyPressed(keyModeSwitch):
+	mode = modeSwitch(mode)
+		
 vJoyUpdate(vJoyDevice, steerAxis, throttleAxis, brakeAxis, clutchAxis, handbrakeAxis, keyGearUp, keyGearDown)
 
 if enabled:
@@ -450,7 +469,6 @@ if enabled:
 
 	v0.2310.16 change to Alt-Shift-Rate and fix dual pedals pressed IS NOW 'mode = 2'
 	'''
-	mode = 1
 
 	if mode == 2:
 		if isKeyDown(keyThrottle): 
@@ -579,6 +597,7 @@ if diagWatch:
 	diagnostics.watch(brakeLimit2)
 	diagnostics.watch(brakeLimit3)
 	diagnostics.watch('-------')
+	diagnostics.watch(mode)
 	#diagnostics.watch(wheelSlipFL)
 	#diagnostics.watch(wheelSlipFR)
 	#diagnostics.watch(wheelSlipRL)
