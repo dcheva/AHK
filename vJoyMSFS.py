@@ -135,19 +135,19 @@ mixtureChange = vJoy_Control and vJoy_Shift and not vJoy_LeftAlt
 
 throttleMin   = throttleChange and F1
 throttleMax   = throttleChange and F4
-throttleDown  = throttleChange and (F2 or ScrollDn) 
-throttleUp    = throttleChange and (F3 or ScrollUp)
+throttleDown  = throttleChange and (F2 or ScrollDn) and not vJoy_LeftAlt
+throttleUp    = throttleChange and (F3 or ScrollUp) and not vJoy_LeftAlt
 
 ## Added Propeller and Mixture control v0.2305.12a
 propellerMin   = propellerChange and F1
 propellerMax   = propellerChange and F4
-propellerDown  = propellerChange and (F2 or ScrollDn) 
-propellerUp    = propellerChange and (F3 or ScrollUp)
+propellerDown  = propellerChange and (F2 or ScrollDn) and not vJoy_LeftAlt 
+propellerUp    = propellerChange and (F3 or ScrollUp) and not vJoy_LeftAlt
 
 mixtureMin   = mixtureChange and F1
 mixtureMax   = mixtureChange and F4
-mixtureDown  = mixtureChange and (F2 or ScrollDn) 
-mixtureUp    = mixtureChange and (F3 or ScrollUp)
+mixtureDown  = mixtureChange and (F2 or ScrollDn) and not vJoy_LeftAlt 
+mixtureUp    = mixtureChange and (F3 or ScrollUp) and not vJoy_LeftAlt
 ############################################################################################
 
 # Включение и отключение джойстика
@@ -239,10 +239,24 @@ if Joy_stat:
 	# далее идет умножение на масштаб оси к экрану и задание инверсии, если она есть
 	x = (mouse_x - screen_x) * multipler_x / preci * scale_Vx / scale_Rx * axisx_inversion
 	y = (mouse_y - screen_y) * multipler_y / preci * scale_Vy / scale_Ry * axisy_inversion
+	
+	'''
+	# 23// Ось Х на руль - при зажатой ПРАВОЙ Alt
+	'''
 	if vJoy_RightAlt: # Альтернативное управление - ось Х на руль
 		vJoy[0].z = x * scale_Vz / scale_Rz * axisz_inversion
 	else:
 		vJoy[0].x = x
+		
+	'''
+	# 24/01/29 Управление триммером - скроллером при зажатой ЛЕВОЙ Alt
+	'''
+	if vJoy_LeftAlt:
+		if ScrollUp:
+			winsound.Beep(tetra[5],20)
+		if ScrollDn:
+			winsound.Beep(tetra[3],20)
+		
 	vJoy[0].y = y
 	## @TODO Зачем продублировал ось??
 	vJoy[0].rz = vJoy[0].z
