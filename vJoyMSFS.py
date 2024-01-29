@@ -1,6 +1,6 @@
 #### by cheva (c) MIT 2012-2023 
 #### MSFS MouseJoke FreePie VJoy and Voice Commands
-#### @vesion 0.2306.1a
+#### @vesion 2401.30
 #### @github https://github.com/dcheva/AHK/blob/main/vJoyMSFS.py
 #### @pastebin https://pastebin.com/H3eJHzNB
 #### @files at https://drive.google.com/drive/folders/1sUrhqyiA2Zfj1OTt9bcohxHUi5pMzQLk
@@ -31,6 +31,11 @@ if starting:
 	# speech.say("started.") # Для использования, нужно настроить голосовой диктор - https://t.ly/_KeN
 
 	vJoy_Key = Key.CapsLock # кнопка на клавиатуре включающая режим управления джойстика мышкой
+	vJoy_Key2 = Key.Tab # 2nd
+	'''
+	Центровка по по Backspace - только крен и рысканье (тангаж и триммер руля высоты остаются)
+	Полная центровка (сброс всех осей) по Control+BackSpace
+	'''
 	vJoy_Reset = Key.Backspace # Центровка по Backspace
 
 	Joy_stat = False # данный флаг используется для включения с клавиатуры, передачи данных на джойстик
@@ -61,7 +66,7 @@ if starting:
 	slider  = int(-maxAxis / 2) # Throttle:  slider or rz (F1-F4)
 	slider2 = int(maxAxis / 2)  # Propeller: rx (Control + F1-F4)
 	slider3 = int(maxAxis / 2)  # Mixture:   ry (CtrlShift F1-F4)
-	# Шаг оси = 5% 
+	# Шаг оси = 2.5% 
 	step = maxAxis / 20
 	# Cursor pointer type
 	pt = POINT()
@@ -101,10 +106,10 @@ if keyboard.getKeyDown(vJoy_RShift): vJoy_Shift = True
 vJoy_LeftAlt = False
 vJoy_RightAlt = False
 ## !!!FIX RightAlt + MouseScroll to throttle change on takeoff/landing
-## @TODO test it in @vesion 0.2305.15a
-if keyboard.getKeyDown(vJoy_LAlt): # vJoy_Alt = True
+## TESTED it in @vesion 0.2305.15a
+if keyboard.getKeyDown(vJoy_LAlt): 
 	vJoy_LeftAlt = True
-if keyboard.getKeyDown(vJoy_RAlt): # vJoy_Alt = True
+if keyboard.getKeyDown(vJoy_RAlt):
 	vJoy_RightAlt = True
 
 Click = mouse.getPressed(0)
@@ -151,7 +156,7 @@ mixtureUp    = mixtureChange and (F3 or ScrollUp) and not vJoy_LeftAlt
 ############################################################################################
 
 # Включение и отключение джойстика
-if keyboard.getPressed(vJoy_Key):
+if keyboard.getPressed(vJoy_Key) or keyboard.getPressed(vJoy_Key2):
 	if Joy_stat:
 		Joy_stat = False
 		vJoy_Enabled = False
@@ -172,22 +177,25 @@ if keyboard.getPressed(vJoy_Key):
    		winsound.Beep(tetra[3],50)
    		winsound.Beep(tetra[5],50)
 		# speech.say("engaged.")
-		
-## Сброс значений.
-## Мягкий - центрирование с сохранением положения руля высоты.
-## С контролом - сброс руля высоты.
-## Не сбрасывает слайдер (ось газа).
-## Не сбрасывает ry (зум).
+	
+'''	
+Сброс значений.
+Мягкий (BackSpace) - центрирование с сохранением положения руля высоты и триммера.
+Control+BackSpace - сброс руля высоты и триммера.
+Не сбрасывает слайдер (ось газа).
+Не сбрасывает ry (зум).
+v2401.30 мягкий не сбрасывает rz (триммер руля высоты).
+'''
 if keyboard.getPressed(vJoy_Reset):
 	# if Joy_stat:
 		## Центровка по Backspace - элероны в 0
 		vJoy[0].x = 0  
-   		## Выравнивание руля высоты - только с Control
+   		## Выравнивание руля высоты и и триммера - только с Control
    		if vJoy_Control:
 			vJoy[0].y = 0
+   			vJoy[0].rz = 0
    		## Выравнивание руля направления
    		vJoy[0].z = 0
-   		vJoy[0].rz = 0
 		# move mouse to vJoy position
 		sx = vJoy[0].x * screen_x / (maxAxis / 2) * axisx_inversion + screen_x;
 		sy = vJoy[0].y * screen_y / (maxAxis / 2) * axisy_inversion + screen_y;
@@ -201,8 +209,6 @@ if Freeview:
 	if Zooming:
 		## @TODO через колено работает нажатие кнопки и ось контроллера для зума - что делать?
 		Zooming = False
-		# Бип (для проверки): 
-		winsound.Beep(tetra[0],20)
 		keyboard.setKeyUp(Key.Equals)
 		keyboard.setKeyUp(Key.Minus)
 	if ScrollUp: 
@@ -211,7 +217,7 @@ if Freeview:
 	if ScrollDn: 
 		Zooming = True
 		keyboard.setKeyDown(Key.Minus)
-
+		
 ## Switch Joy Stat mode on vJoy Enabled
 if vJoy_Enabled:
 	# Бип если нажата левая кнопка (для проверки):
@@ -230,36 +236,50 @@ if vJoy_Enabled:
 
 ## Main block
 if Joy_stat:
+
+	'''
+	Changed in v2401.30
+	Крен/рысканье и тангаж
+	'''
+	
 	windll.user32.GetCursorPos(byref(pt))
 	if pt.x > 65536: mouse_x = 0 # добавлено, так как при выходе значения за пределы int, происходил вылет скрипта
 	else: mouse_x = pt.x
 	if pt.y > 65536: mouse_y = 0 # добавлено, так как при выходе значения за пределы int, происходил вылет скрипта
 	else: mouse_y = pt.y
-	# положение джойстика определяется как положение мыши на экране - половина ширина экрана умноженная на увеличитель и разделенная на уточнитель
-	# далее идет умножение на масштаб оси к экрану и задание инверсии, если она есть
+	
+	'''
+	положение джойстика определяется как положение мыши на экране - половина ширина экрана умноженная на увеличитель и разделенная на уточнитель
+	далее идет умножение на масштаб оси к экрану и задание инверсии, если она есть
+	'''
 	x = (mouse_x - screen_x) * multipler_x / preci * scale_Vx / scale_Rx * axisx_inversion
 	y = (mouse_y - screen_y) * multipler_y / preci * scale_Vy / scale_Ry * axisy_inversion
 	
+	# Тангаж - Ось Y
+	vJoy[0].y = y
+	
 	'''
-	# 23// Ось Х на руль - при зажатой ПРАВОЙ Alt
+	23// Ось Х на руль - при зажатой ПРАВОЙ Alt
 	'''
-	if vJoy_RightAlt: # Альтернативное управление - ось Х на руль
+	# Альтернативное управление - ось Х на руль (рысканье) - Ось Z
+	if vJoy_RightAlt: 
 		vJoy[0].z = x * scale_Vz / scale_Rz * axisz_inversion
+	# Крен - Ось X
 	else:
 		vJoy[0].x = x
 		
 	'''
-	# 24/01/29 Управление триммером - скроллером при зажатой ЛЕВОЙ Alt
+	v2401.30 Управление триммером - скроллером при зажатой Alt
+	Настройка "Ось триммера -100% - +100%"
+	Шаг оси = 0.5% (step=2.5%, step/5)
 	'''
-	if vJoy_LeftAlt:
+	if vJoy_LeftAlt or vJoy_RightAlt:
 		if ScrollUp:
-			winsound.Beep(tetra[5],20)
+			winsound.Beep(tetra[1],50)
+			vJoy[0].rz += step/5 
 		if ScrollDn:
-			winsound.Beep(tetra[3],20)
-		
-	vJoy[0].y = y
-	## @TODO Зачем продублировал ось??
-	vJoy[0].rz = vJoy[0].z
+			winsound.Beep(tetra[3],50)
+			vJoy[0].rz -= step/5 
 	
 	## You can shift this block to the left to use controls when vJoy disabled by Caps
 	## Если сдвинуть этот блок вправо, можно контролировать F1-F4 с выключенным VJoy
