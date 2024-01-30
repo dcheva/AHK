@@ -1,9 +1,9 @@
 #### by cheva (c) MIT 2012-2023 
 #### MSFS MouseJoke FreePie VJoy and Voice Commands
 #### @vesion 2401.30
-#### @github https://github.com/dcheva/AHK/blob/main/vJoyMSFS.py
-#### @pastebin https://pastebin.com/H3eJHzNB
-#### @files at https://drive.google.com/drive/folders/1sUrhqyiA2Zfj1OTt9bcohxHUi5pMzQLk
+#### @github ...
+#### @pastebin ...
+#### @files at ...
 #### C:\Projects\AHK\vJoyMSFS.py
 
 from System import Int16
