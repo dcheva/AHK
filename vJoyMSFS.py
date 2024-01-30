@@ -134,23 +134,27 @@ ScrollDn = mouse.wheelDown
 # scroll up   -> throtteUp
 # scroll down -> throttleDown
 # Do not change if left Coltrol, Alt or Shift pressed due to Propeller and other binds
+## v2401.30 Управление триммером - скроллером при зажатой LeftAlt
 throttleChange = not vJoy_Control and not vJoy_Shift and not vJoy_LeftAlt
 propellerChange = vJoy_Control and not vJoy_Shift and not vJoy_LeftAlt
 mixtureChange = vJoy_Control and vJoy_Shift and not vJoy_LeftAlt
 
 throttleMin   = throttleChange and F1
 throttleMax   = throttleChange and F4
+## v2401.30 Управление триммером - скроллером при зажатой LeftAlt
 throttleDown  = throttleChange and (F2 or ScrollDn) and not vJoy_LeftAlt
 throttleUp    = throttleChange and (F3 or ScrollUp) and not vJoy_LeftAlt
 
 ## Added Propeller and Mixture control v0.2305.12a
 propellerMin   = propellerChange and F1
 propellerMax   = propellerChange and F4
+## v2401.30 Управление триммером - скроллером при зажатой LeftAlt
 propellerDown  = propellerChange and (F2 or ScrollDn) and not vJoy_LeftAlt 
 propellerUp    = propellerChange and (F3 or ScrollUp) and not vJoy_LeftAlt
 
 mixtureMin   = mixtureChange and F1
 mixtureMax   = mixtureChange and F4
+## v2401.30 Управление триммером - скроллером при зажатой LeftAlt
 mixtureDown  = mixtureChange and (F2 or ScrollDn) and not vJoy_LeftAlt 
 mixtureUp    = mixtureChange and (F3 or ScrollUp) and not vJoy_LeftAlt
 ############################################################################################
@@ -269,11 +273,11 @@ if Joy_stat:
 		vJoy[0].x = x
 		
 	'''
-	v2401.30 Управление триммером - скроллером при зажатой Alt
+	v2401.30 Управление триммером - скроллером при зажатой LeftAlt
 	Настройка "Ось триммера -100% - +100%"
 	Шаг оси = 0.5% (step=2.5%, step/5)
 	'''
-	if vJoy_LeftAlt or vJoy_RightAlt:
+	if vJoy_LeftAlt:
 		if ScrollUp:
 			winsound.Beep(tetra[1],50)
 			vJoy[0].rz += step/5 
