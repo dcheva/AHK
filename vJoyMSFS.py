@@ -88,7 +88,10 @@ if starting:
 
 ## Let's fly
 ## ЛКМ на кнопку джоя - кнопку тормоза
-if Joy_stat: vJoy[0].setButton(0, mouse.getButton(0))
+if Joy_stat: 
+	vJoy[0].setButton(0, mouse.getButton(0))
+	vJoy[0].setButton(1, mouse.getButton(1))
+	vJoy[0].setButton(2, mouse.getButton(2))
 
 ## vJoy_RightAlt: # Альтернативное управление - ось Х на руль
 
@@ -117,6 +120,7 @@ F1 = keyboard.getPressed(Key.F1)
 F2 = keyboard.getPressed(Key.F2)
 F3 = keyboard.getPressed(Key.F3)
 F4 = keyboard.getPressed(Key.F4)
+flowPressed = keyboard.getPressed(vJoy_Key2)
 
 Freeview = mouse.rightButton # MSFS:: правая кнопка на мышке включает свободный обзор. 
 ## Freeview = keyboard.getKeyDown(Key.V) # пример для кнопки на клавиатуре для свободного обзора
@@ -160,12 +164,14 @@ mixtureUp    = mixtureChange and (F3 or ScrollUp) and not vJoy_LeftAlt
 ############################################################################################
 
 # Включение и отключение джойстика
-if keyboard.getPressed(vJoy_Key) or keyboard.getPressed(vJoy_Key2):
+if keyboard.getPressed(vJoy_Key) or flowPressed:
 	if Joy_stat:
 		Joy_stat = False
 		vJoy_Enabled = False
 		## Обязательно - отключение привязки ЛКМ к кнопке тормоза
 		vJoy[0].setButton(0, False)
+		vJoy[0].setButton(1, False)
+		vJoy[0].setButton(2, False)
 		# vJoy[0].x = 0 # при отключении джойстик встает в 0
    		# vJoy[0].y = 0
    		# vJoy[0].z = 0
@@ -175,12 +181,16 @@ if keyboard.getPressed(vJoy_Key) or keyboard.getPressed(vJoy_Key2):
    		winsound.Beep(tetra[3],50)
 		# speech.say("disengaged.")
 	else:
-		vJoy_Enabled = True
-		vJoy[0].setButton(0, mouse.getButton(0))
-   		## Озвучка переключения - вкл
-   		winsound.Beep(tetra[3],50)
-   		winsound.Beep(tetra[5],50)
-		# speech.say("engaged.")
+		## Включение НЕ по второй (Таб) клавише!
+		if not flowPressed:
+			vJoy_Enabled = True
+			vJoy[0].setButton(0, mouse.getButton(0))
+			vJoy[0].setButton(1, mouse.getButton(1))
+			vJoy[0].setButton(2, mouse.getButton(2))
+	   		## Озвучка переключения - вкл
+	   		winsound.Beep(tetra[3],50)
+	   		winsound.Beep(tetra[5],50)
+			# speech.say("engaged.")
 	
 '''	
 Сброс значений.
@@ -230,9 +240,13 @@ if vJoy_Enabled:
 	if Freeview:
 		Joy_stat = False
 		# vJoy[0].setButton(0, False)	
+		# vJoy[0].setButton(1, False)	
+		# vJoy[0].setButton(2, False)	
 	if not Freeview and Joy_stat == False:
 		Joy_stat = True
-		vJoy[0].setButton(0 ,mouse.getButton(0)) 
+		vJoy[0].setButton(0, mouse.getButton(0))
+		vJoy[0].setButton(1, mouse.getButton(1))
+		vJoy[0].setButton(2, mouse.getButton(2))
 		# move mouse to vJoy position
 		sx = vJoy[0].x * screen_x / (maxAxis / 2) * axisx_inversion + screen_x;
 		sy = vJoy[0].y * screen_y / (maxAxis / 2) * axisy_inversion + screen_y;

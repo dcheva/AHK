@@ -234,6 +234,7 @@ if starting:
 		#vJoyDevice.setButton(1, isKeyDown(keyGearDown))
 		vJoyDevice.setButton(0, mouse.leftButton)
 		vJoyDevice.setButton(1, mouse.rightButton)
+		vJoyDevice.setButton(2, mouse.middleButton)
 
 	def steerHandler(axisPos, sensitivity, nonlinearity, axisMax, reset):
 		"""Преобразует ось X мыши в ось руля. Возвращает позицию на оси руля. 
