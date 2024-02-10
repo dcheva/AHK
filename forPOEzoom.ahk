@@ -93,7 +93,7 @@ $2::
   Send, 1
   Send, 2
   Send, 3
-;  Send, 4
+  Send, 4
 ;  Send, 5
 return
 
@@ -124,10 +124,10 @@ $Space::
   BreakLoop := 1
   Send, {Space}
   Send, {MButton}
-  Sleep, 200
+  ;Sleep, 20
   Send, {T}
-  ;Sleep, 200
-  ;Send, {D}
+  ;Sleep, 20
+  Send, {D}
 return
 
 ; Jump!!! Shift + action
