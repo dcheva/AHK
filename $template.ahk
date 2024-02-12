@@ -1,7 +1,7 @@
 ;-=-\ Let's intro \-=-
 ;ver 23.1129.1
 ;for AHK 1.1.34.04
-;by cheva (c) MIT 2012-2023
+;by cheva (c) MIT 2012-2024
 
 ;-=-\ Set globals \-=-
 global MouseSpeed = % ran(1, 20)
