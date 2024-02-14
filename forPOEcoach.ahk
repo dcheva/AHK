@@ -58,6 +58,8 @@ $Space::
     Send, {Space}
     ; Use 3rd skill
     Send, {MButton} 
+    Sleep, 80
+    Send, {T}
 return
 
 ; Jump!!! Shift + action
