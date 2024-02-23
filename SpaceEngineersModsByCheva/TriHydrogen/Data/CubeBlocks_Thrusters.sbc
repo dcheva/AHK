@@ -99,6 +99,7 @@
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
 			<PCU>15</PCU>
+			<IsAirTight>false</IsAirTight>
 		</Definition>
 		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
 			<Id>
@@ -289,6 +290,7 @@
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
 			<PCU>15</PCU>
+			<IsAirTight>false</IsAirTight>
 		</Definition>
 		<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
 			<Id>
@@ -457,6 +459,7 @@
 			<DestroySound>WepLrgWarheadExpl</DestroySound>
 			<EmissiveColorPreset>Extended</EmissiveColorPreset>
 			<PCU>25</PCU>
+			<IsAirTight>false</IsAirTight>
 			<LeakPercent>0.0025</LeakPercent>
 			<GasExplosionMaxRadius>20</GasExplosionMaxRadius>
 			<GasExplosionNeededVolumeToReachMaxRadius>15000000</GasExplosionNeededVolumeToReachMaxRadius>
@@ -532,6 +535,7 @@
 			<DamagedSound>ParticleWeapExpl</DamagedSound>
 			<EmissiveColorPreset>Extended</EmissiveColorPreset>
 			<PCU>25</PCU>
+			<IsAirTight>false</IsAirTight>
 			<LeakPercent>0.005</LeakPercent>
 			<GasExplosionMaxRadius>10</GasExplosionMaxRadius>
 			<GasExplosionNeededVolumeToReachMaxRadius>1000000</GasExplosionNeededVolumeToReachMaxRadius>
@@ -626,6 +630,7 @@
 			<DestroyEffect>Explosion_Warhead_02</DestroyEffect>
 			<DestroySound>WepSmallWarheadExpl</DestroySound>
 			<PCU>25</PCU>
+			<IsAirTight>false</IsAirTight>
 			<LeakPercent>0.005</LeakPercent>
 			<GasExplosionMaxRadius>5</GasExplosionMaxRadius>
 			<GasExplosionNeededVolumeToReachMaxRadius>500000</GasExplosionNeededVolumeToReachMaxRadius>
@@ -703,6 +708,7 @@
 			<DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
 			<DestroySound>WepLrgWarheadExpl</DestroySound>
 			<PCU>25</PCU>
+			<IsAirTight>false</IsAirTight>
 			<LeakPercent>0.025</LeakPercent>
 			<GasExplosionMaxRadius>3</GasExplosionMaxRadius>
 			<GasExplosionNeededVolumeToReachMaxRadius>15000</GasExplosionNeededVolumeToReachMaxRadius>
