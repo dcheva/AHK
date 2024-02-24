@@ -43,7 +43,16 @@ $^+W::
   ExitApp
 Return
 
-;-=-\ Let's play! \-=-
+;Steam {PrintScreen}
+$PrintScreen::
+  Send, {PrintScreen}
+  Send, {F12}
+return
+
+;-----Let's play!-----
+; Emergency exit
+$^F1::Process,Close,MyGameProcessNameHere.exe
+
 ;enable mouse clicker (random time 1-10 sec, current mouse position)
 $^+C::
 	Send, {^!C}
