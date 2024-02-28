@@ -3,7 +3,7 @@ git commit -am "%1 %2 %3 %4 %5 %6 %7 %8 %9"
 git fetch
 git merge -X theirs
 git commit -am "merged theirs"
-git push origin HEAD
+git push -u origin --all
 @echo off
 @rem ---- command interpretator ----
 IF /I "%1" == "loop" (
