@@ -1,6 +1,6 @@
 ;for AHK 1.1.34.04
 ;by cheva (c) MIT 2012-2024
-
+global BreakLoop = 0
 SoundPlay %A_WinDir%\Media\Windows Message Nudge.wav
 
 ;reload
@@ -87,3 +87,34 @@ $2::
   Send, 4
 ;  Send, 5
 return
+
+; run clicker loop
+#IfWinActive, Path of Exile 
+$^Backspace::
+  BreakLoop := 0
+  Loop, 1000 { 
+    Send ^{Click} 
+    Sleep, 100 
+    ; hold Backspace to break loop
+    if (BreakLoop == 1 or GetKeyState("Backspace", "P")) {
+      BreakLoop := 0
+      break
+    }
+  }
+return
+
+; run control+shift clicker loop
+#IfWinActive, Path of Exile 
+$+^Backspace::
+  BreakLoop := 0
+  Loop, 1000 { 
+    Send +^{Click} 
+    Sleep, 100 
+    ; hold Backspace to break loop
+    if (BreakLoop == 1 or GetKeyState("Backspace", "P")) {
+      BreakLoop := 0
+      break
+    }
+  }
+return
+
