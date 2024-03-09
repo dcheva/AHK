@@ -75,4 +75,3 @@ $^+C::
 		SetDefaultMouseSpeed, MouseSpeed
 	}
 return
-
