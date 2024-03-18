@@ -2,7 +2,8 @@ for %%I in (.) do set project=%%~nxI
 set branch=initial
 
 git init -b %branch%
-git remote add origin https://github.com/dcheva/%project%.git
+rem git remote add origin https://github.com/dcheva/%project%.git
+git remote add origin https://dcheusov@bitbucket.org/dcheusov24/%project%.git
 git pull origin %branch%
 
 echo # %project% GitHub repo >> README.MD
