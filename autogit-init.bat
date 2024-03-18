@@ -7,7 +7,7 @@ git remote add origin https://dcheusov@bitbucket.org/dcheusov24/%project%.git
 git pull origin %branch%
 
 rem echo # %project% GitHub repo >> README.MD
-echo # %project% ~GitHub~ BitBucket repo >> README.MD
+echo # %project% BitBucket repo >> README.MD
 git add -A
 git commit -m "Add README.MD"
 git branch --set-upstream-to=origin/%branch% %branch%
