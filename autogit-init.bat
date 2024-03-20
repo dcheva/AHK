@@ -3,7 +3,7 @@ set branch=initial
 
 git init -b %branch%
 rem git remote add origin https://github.com/dcheva/%project%.git
-git remote add origin https://dcheusov@bitbucket.org/dcheusov24/%project%.git
+git remote add origin https://dcheva@bitbucket.org/dcheva/%project%.git
 git pull origin %branch%
 
 rem echo # %project% GitHub repo >> README.MD
