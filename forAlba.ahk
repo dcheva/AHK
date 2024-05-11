@@ -44,6 +44,7 @@ Return
 $^F1::Process,Close,Albion-Online.exe
 
 ;Fire https://i.imgur.com/wrZrlLu.png
+$R:: ;Resister
 $D:: ;Resister
   Send, {r Down}
   Sleep, 200
@@ -58,16 +59,28 @@ $D:: ;Resister
   Send, {f Up}
 Return
 
-$W:: ;Attack Clicker
+;Attack Clickers
+$W:: 
   Send, {w Down}
-  Sleep, 20
+  Sleep, 200
+  MouseClick, left
+  Sleep, 200
   Send, {w Up}
+  Sleep, 200
   MouseClick, left
-  Sleep, 1000
+  Sleep, 200
+  MouseClick, left
+Return
+
+;Attack Clickers
+$Q:: 
   Send, {q Down}
-  Sleep, 20
-  Send, {q Up}
+  Sleep, 200
   MouseClick, left
-  Sleep, 20
+  Sleep, 200
+  Send, {q Up}
+  Sleep, 200
+  MouseClick, left
+  Sleep, 200
   MouseClick, left
 Return
