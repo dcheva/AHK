@@ -53,7 +53,7 @@ $D:: ;Resister
   Send, {d Down}
   Sleep, 200
   Send, {d Up}
-  Sleep, 200
+  Sleep, 800
   Send, {f Down}
   Sleep, 200
   Send, {f Up}
