@@ -46,17 +46,17 @@ $^F1::Process,Close,Albion-Online.exe
 ;Fire https://i.imgur.com/wrZrlLu.png
 $R:: ;Resister
 ;$D:: ;Resister
-  Send, {r Down}
+  Send, {f Down}
   Sleep, 200
-  Send, {r Up}
-  Sleep, 1300
+  Send, {f Up}
+  Sleep, 800
   Send, {d Down}
   Sleep, 200
   Send, {d Up}
   Sleep, 800
-  Send, {f Down}
+  Send, {r Down}
   Sleep, 200
-  Send, {f Up}
+  Send, {r Up}
 Return
 
 ;Attack Clickers
