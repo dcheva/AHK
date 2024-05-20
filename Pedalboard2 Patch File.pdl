@@ -46,7 +46,7 @@
                 file="C:\Program Files (x86)\VSTPlugins\ReaPlugs\reacomp-standalone.dll"
                 uid="7265636d" isInstrument="0" fileTime="15204a5e900" numInputs="4"
                 numOutputs="2"/>
-        <STATE>288.CMlaKA....fQ3IzZ....AHWYi0F..P.S....A...........................................................................................................................................................................CMlaKA....fQ3MzZ....AHWYi0F..P.S....S.....................................vO0ry6+rFTovCYZcUOibsB7zC8OC....vO.B..................ybPzb9SM67N.....6L50J7C...vO.B..+.H..7Cf..vOIfsm</STATE>
+        <STATE>288.CMlaKA....fQ3IzZ....AHWYi0F..P.S....A...........................................................................................................................................................................CMlaKA....fQ3MzZ....AHWYi0F..P.S....S.....................................vO.zjy+.H..vCYZcUOibsB7zC8OC....vO.B..................ybPzb9Cf........6L50J7C...vO.B..+.H..7Cf..vOIfsm</STATE>
       </FILTER>
       <FILTER uid="7" x="118" y="10" uiLastX="10" uiLastY="10" windowOpen="0"
               program="0" oscMIDIAddress="">
@@ -63,7 +63,7 @@
                 file="C:\Program Files (x86)\VSTPlugins\ReaPlugs\reaxcomp-standalone.dll"
                 uid="72657863" isInstrument="0" fileTime="15204a50670" numInputs="2"
                 numOutputs="2"/>
-        <STATE>412.CMlaKA....fQBMDZ....AHWY3MF..P.S....A...............................................................................................................................................................................7iC....A............oAT7+++++++6+XJgV1xOc.7OA.......YAD........J.8....fk....E....DA...........zi.A........+OJmJ9CqvIv9S.......PV.A.......fBPO....XI...PA....Q...........HNKP........v+Cf5.pSbCCn+D.......jEP........n.zC....VB...T....PD...........bWCD........7+vLgV1xOc.7OA.......YAD........J.8....fk....E....DA...P.....A....v1pnqdemZ9O......</STATE>
+        <STATE>412.CMlaKA....fQBMDZ....AHWY3MF..P.S....A...............................................................................................................................................................................7iC....A............oAD........7+foJP25Tn+6OA.......YAD........N.8....fk....E....DA...........zi.A........+OBVPcRHTCg9S.......PV.A.......fCPO....XI...PA....Q...........HNKP........v+CgTeuBkSfk+D.......jEP........3.zC....VB...T....PD...........bWCD........7+rol6qsqQD7OA.......YAD........N.8....fk....E....DA...P.....A....PjPy7btI.9O......</STATE>
       </FILTER>
       <CONNECTION srcFilter="1" srcChannel="0" dstFilter="7" dstChannel="0"/>
       <CONNECTION srcFilter="1" srcChannel="1" dstFilter="7" dstChannel="1"/>
