@@ -1,8 +1,8 @@
 """
 @author dcheva 
-@version GT2.2401.26
-Pastebin ...
-Github ...
+@version GT2.2405.20.1
+Pastebin https://pastebin.com/raw/d8zcmVRt
+Github https://raw.githubusercontent.com/dcheva/AHK/main/vJoyACCgt2.py
 
 Исходный скрипт и инструкции: https://steamcommunity.com/sharedfiles/filedetails/?l=polish&id=2514840344
 !!! ВАЖНО !!! Скорость работы скрипта ЗАВИСИТ от FPS симулятора - здесь все коэфициенты подобраны для I5 9600K @3600MHZ & 1660 GTX @60 FPS
@@ -12,7 +12,8 @@ Github ...
 Чтобы остановить обработку ввода и освободить мышь, снова нажмите Caps Lock или ESCAPE
 
 Changelog:
-GT2.2401.26 ...
+GT2.2405.20 Alt throttle limit 60>80
+GT2.2401.26 Mode changing (GT2/GT3 double/single pedals) on Left Control key
 v0.2401.24 Steering and Breaking changes
 v0.2401.16 Газ и Тормоз: Rate/Limit faster
 v0.2310.16 Газ и Тормоз: Alt/Shift Rate/Limit
@@ -65,7 +66,7 @@ if starting:
 	throttleRate = throttlePushRate					# [1..100] скорость изменения оси газа
 	throttleShiftLimit = 100					# [1..100] Shift предел изменения оси газа %
 	throttleShiftRate = 60						# [1..100] Shift скорость изменения оси газа
-	throttleAltLimit = 60						# [1..100] Alt предел изменения оси газа %
+	throttleAltLimit = 80						# [1..100] Alt предел изменения оси газа % ### 21.05 60>80
 	throttleAltRate = 10						# [1..100] Alt скорость изменения оси газа
 	# Тормоз
 	brakePushRate = 40							# [1..100] скорость нажатия тормоза

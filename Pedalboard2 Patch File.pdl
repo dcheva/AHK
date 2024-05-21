@@ -63,7 +63,7 @@
                 file="C:\Program Files (x86)\VSTPlugins\ReaPlugs\reaxcomp-standalone.dll"
                 uid="72657863" isInstrument="0" fileTime="15204a50670" numInputs="2"
                 numOutputs="2"/>
-        <STATE>412.CMlaKA....fQBMDZ....AHWY3MF..P.S....A...............................................................................................................................................................................7iC....A............oAD........7+foJP25Tn+6OA.......YAD........N.8....fk....E....DA...........zi.A........+OBVPcRHTCg9S.......PV.A.......fCPO....XI...PA....Q...........HNKP........v+CgTeuBkSfk+D.......jEP........3.zC....VB...T....PD...........bWCD........7+rol6qsqQD7OA.......YAD........N.8....fk....E....DA...P.....A....PjPy7btI.9O......</STATE>
+        <STATE>412.CMlaKA....fQBMDZ....AHWY3MF..P.S....A...............................................................................................................................................................................7iC....A............oAD........7+foJP25Tn+6OA.......YAD........N.8....fk....E....DA...........zi.A........+OBVPcRHTCg9S.......PV.A.......fCPO....XI...PA....Q...........HNKP........v+CgTeuBkSfk+D.......jEP........3.zC....VB...T....PD...........bWCD........7+nhl6qsqQD7OA.......YAD........N.8....fk....E....DA...P.....A.............+O......</STATE>
       </FILTER>
       <CONNECTION srcFilter="1" srcChannel="0" dstFilter="7" dstChannel="0"/>
       <CONNECTION srcFilter="1" srcChannel="1" dstFilter="7" dstChannel="1"/>
