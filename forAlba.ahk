@@ -48,6 +48,8 @@ $^F1::Process,Close,Albion-Online.exe
 ;$D:: ;Resister
 $T:: ;Resister
   Send, {f Down}
+  Sleep, 20
+  MouseClick, left
   Sleep, 200
   Send, {f Up}
   Sleep, 800
