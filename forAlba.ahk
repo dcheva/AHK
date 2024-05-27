@@ -43,7 +43,8 @@ Return
 ; Emergency exit
 $^F1::Process,Close,Albion-Online.exe
 
-;Fire https://i.imgur.com/wrZrlLu.png
+;; Fire https://i.imgur.com/wrZrlLu.png
+;  Axe  https://i.imgur.com/r6U7Znp.png
 ;$R:: ;Resister
 ;$D:: ;Resister
 $T:: ;Resister
@@ -53,13 +54,13 @@ $T:: ;Resister
   Sleep, 200
   Send, {f Up}
   Sleep, 800
-  Send, {d Down}
-  Sleep, 200
-  Send, {d Up}
-  Sleep, 800
   Send, {r Down}
   Sleep, 200
   Send, {r Up}
+  Sleep, 800
+  Send, {d Down}
+  Sleep, 200
+  Send, {d Up}
 Return
 
 ;Attack Clickers
@@ -75,17 +76,25 @@ $Q::
   MouseClick, left
 Return
 
-
 ;Attack Clickers
+$W:: 
+  Send, {w Down}
+  Sleep, 20
+  MouseClick, left
+  Sleep, 200
+  Send, {w Up}
+  Sleep, 200
+  MouseClick, left
+  Sleep, 200
+  MouseClick, left
+Return
+
+;Attack Clickers - Axe
 $E:: 
   Send, {e Down}
   Sleep, 20
   MouseClick, left
-  Sleep, 200
+  Sleep, 20
   Send, {e Up}
-  Sleep, 200
-  MouseClick, left
-  Sleep, 200
-  MouseClick, left
 Return
 
