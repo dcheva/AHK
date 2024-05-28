@@ -1,6 +1,6 @@
 """
 @author dcheva 
-@version GT2.2405.20.1
+@version GT2.2805.29.0
 Pastebin https://pastebin.com/raw/d8zcmVRt
 Github https://raw.githubusercontent.com/dcheva/AHK/main/vJoyACCgt2.py
 
@@ -12,6 +12,7 @@ Github https://raw.githubusercontent.com/dcheva/AHK/main/vJoyACCgt2.py
 Чтобы остановить обработку ввода и освободить мышь, снова нажмите Caps Lock или ESCAPE
 
 Changelog:
+GT2.2805.29.0 Begin total update
 GT2.2405.20 Alt throttle limit 60>80
 GT2.2401.26 Mode changing (GT2/GT3 double/single pedals) on Left Control key
 v0.2401.24 Steering and Breaking changes
