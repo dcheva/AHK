@@ -1,8 +1,8 @@
 """
 @author dcheva 
-@version v0.2401.24
-Pastebin https://pastebin.com/d8zcmVRt
-Github https://github.com/dcheva/AHK/blob/main/vJoyACC.py
+@version GT2.2805.29.0
+Pastebin https://pastebin.com/raw/d8zcmVRt
+Github https://raw.githubusercontent.com/dcheva/AHK/main/vJoyACCgt2.py
 
 Исходный скрипт и инструкции: https://steamcommunity.com/sharedfiles/filedetails/?l=polish&id=2514840344
 !!! ВАЖНО !!! Скорость работы скрипта ЗАВИСИТ от FPS симулятора - здесь все коэфициенты подобраны для I5 9600K @3600MHZ & 1660 GTX @60 FPS
@@ -12,6 +12,13 @@ Github https://github.com/dcheva/AHK/blob/main/vJoyACC.py
 Чтобы остановить обработку ввода и освободить мышь, снова нажмите Caps Lock или ESCAPE
 
 Changelog:
+GT2.2805.29.0 Begin total update
+--- @TODO in 1.06.x (GT2.0106.x) version:
+--- Add Breake Sensivity related on Speed on Speed and Wheel angle
+--- Add BS on/off button
+--- Add BS modifiers change buttons
+GT2.2405.20 Alt throttle limit 60>80
+GT2.2401.26 Mode changing (GT2/GT3 double/single pedals) on Left Control key
 v0.2401.24 Steering and Breaking changes
 v0.2401.16 Газ и Тормоз: Rate/Limit faster
 v0.2310.16 Газ и Тормоз: Alt/Shift Rate/Limit
@@ -30,11 +37,20 @@ tetra = [131,165,196,220,262,330,392,440,524,660,784,880,1047,1319,1568,1760,209
 reset = False
 
 if starting:
+	# @TODO Add and Use function Tetra
 	winsound.Beep(tetra[3],50)
 	winsound.Beep(tetra[7],50)
 	
 	tractionControl = False  					# [True;False] включить ПБС !!! выключить в игре
 	antilockBrakes = False						# [True;False] включить АБС !!! выключить в игре
+	
+	# Mode switch GT2.2401.26
+	mode = 1
+
+	# Breake Sensivity GT2.0106.x
+	BS = 1
+	steerAngle = 0
+	speedKmh = 0
 
 # *** ПАРАМЕТРЫ ***
 # Можно менять значения после знака "="
@@ -45,10 +61,10 @@ if starting:
 	vJoyDeviceID = 1						# [1..15] № джойстика в vJoyConf
 	sysOverclock = True						# [True;False] системный таймер: False - 64Гц (стандарт Windows), True - 1кГц  
 	sysExecInterval = 10						# [1..10] делитель для системного таймера 1кГц. Частное двух чисел - частота выполнения скрипта; чем она выше, тем меньше задержка ввода, но выше нагрузка на комп 
-	diagWatch = True	
+	diagWatch = True						# [True;False] вывод в Watch
 #@ Center if key/button pressed
 #@ Сброс (центрирование) руля по нажатию кнопки/клавиши (СКМ/пробел)
-	steerCenterEnabled = True					# [True;False] вывод в Watch
+	steerCenterEnabled = True	
 # Руль v0.2401.24
 	steerSensitivity = 20 # 10					# [1..100] чувствительность руля в нейтральном положении
 	steerNonlinearity = 400 # 220					# [0..900] на сколько % чувствительность руля в крайних положениях выше, чем в нейтральном
@@ -61,7 +77,7 @@ if starting:
 	throttleRate = throttlePushRate					# [1..100] скорость изменения оси газа
 	throttleShiftLimit = 100					# [1..100] Shift предел изменения оси газа %
 	throttleShiftRate = 60						# [1..100] Shift скорость изменения оси газа
-	throttleAltLimit = 60						# [1..100] Alt предел изменения оси газа %
+	throttleAltLimit = 80						# [1..100] Alt предел изменения оси газа % ### 21.05 60>80
 	throttleAltRate = 10						# [1..100] Alt скорость изменения оси газа
 	# Тормоз
 	brakePushRate = 40							# [1..100] скорость нажатия тормоза
@@ -108,12 +124,12 @@ if starting:
 	drivetrain = 1							# [0..2] привод автомобиля: 0 - передний, 1 - задний, 2 - полный
 	tcSlipMin = 0.5							# [0..10] проскальзывание, при котором ПБС начинает отпускать газ
 	tcSlipMax = 1.5							# [0..10] проскальзывание, при котором ПБС максимально отпускает газ
-	tcPower = 40							# [0..100] сила ПБС (макс % Сброса газа)
+	tcPower = 40							# [0..100] сила ПБС (макс % сброса газа)
 	tcPowerStep = 10						# [0..50] шаг регулировки силы ПБС	
 # Антиблокировочная система (только Assetto Corsa & AC:Competizione)
 	absSlipMin = 1.0						# [0..10] проскальзывание, при котором АБС начинает отпускать тормоз
 	absSlipMax = 4.0						# [0..10] проскальзывание, при котором АБС максимально отпускает тормоз
-	absPower = 40							# [0..100] сила АБС (макс % Сброса тормоза)
+	absPower = 40							# [0..100] сила АБС (макс % сброса тормоза)
 	absPowerStep = 10						# [0..50] шаг регулировки силы АБС
 
 # *** НАЗНАЧЕНИЕ КЛАВИШ ***
@@ -141,7 +157,17 @@ if starting:
 	keyBrakeLimit1 = None						# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit1 (при удержании)
 	keyBrakeLimit2 = None						# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit2 (при удержании)
 	keyBrakeLimit3 = None						# регулировка тормоза альтернативная: уменьшить максимальную глубину нажатия педали до brakeLimit3 (при удержании)
-	
+
+# Mode switch GT2.2401.26
+	keyModeSwitch = Key.LeftControl
+
+# Breake Sensivity GT2.0106.x
+	keyBSEnable = Key.RightControl
+	keyBSMoreSpeed = Key.RightControl
+	keyBSLessSpeed = Key.RightControl
+	keyBSMoreAngle = None
+	keyBSLessAngle = None
+
 # Противобуксовочная система 
 	keyTcPowerUp = None 						# Key.L # ПБС: увеличить силу
 	keyTcPowerDown = None 						# Key.K # ПБС: уменьшить силу
@@ -150,8 +176,30 @@ if starting:
 	keyAbsPowerDown = None				 		# Key.O # АБС: уменьшить силу
 
 # *** ДАЛЕЕ НЕ МЕНЯТЬ *** #@ Sure?
-
 #@ More routines
+
+# Mode switch GT2.2401.26
+	def modeSwitch(mode):
+		if mode == 2:
+			mode = 1
+			winsound.Beep(tetra[9],50)
+		else:
+			mode = 2
+			winsound.Beep(tetra[7],50)
+		return  mode
+
+# Breake Sensivity GT2.0106.x
+	def BSEnable(BS):
+		if BS == 0:
+			BS = 1
+			winsound.Beep(tetra[5],50)
+			winsound.Beep(tetra[9],50)
+		else:
+			BS = 0
+			winsound.Beep(tetra[9],50)
+			winsound.Beep(tetra[5],50)
+		return  BS
+	
 #@ Сброс (центрирование) руля
 	def doReset(reset):
 		cursorPosX, cursorPosY = screenWidth / 2, screenHeight / 2
@@ -218,6 +266,7 @@ if starting:
 		#vJoyDevice.setButton(1, isKeyDown(keyGearDown))
 		vJoyDevice.setButton(0, mouse.leftButton)
 		vJoyDevice.setButton(1, mouse.rightButton)
+		vJoyDevice.setButton(2, mouse.middleButton)
 
 	def steerHandler(axisPos, sensitivity, nonlinearity, axisMax, reset):
 		"""Преобразует ось X мыши в ось руля. Возвращает позицию на оси руля. 
@@ -294,50 +343,50 @@ if starting:
 		else:
 			return valueDefault
 	
-	def aidPowerAdjust(aidPower, aidPowerMin, aidPowerMax, aidPowerStep, keyPowerUp, keyPowerDown):
-		"""Изменяет силу АБС/ПБС. Возвращает новую силу.
-		Аргументы:
-		aidPower - текущая сила
-		aidPowerMin - минимальная сила
-		aidPowerMax - максимальная сила
-		aidPowerStep - шаг регулировки силы
-		keyPowerUp - клавиша увеличения силы
-		keyPowerDown - клавиша уменьшения силы
-		"""
-		powerUpPressed = isKeyPressed(keyPowerUp)
-		powerDownPressed = isKeyPressed(keyPowerDown)
-		if powerUpPressed or powerDownPressed:
-			aidPower = adjustValueByInput(aidPower, aidPowerMin, aidPowerMax, aidPowerStep, powerUpPressed, powerDownPressed)
-		return aidPower
+	# def aidPowerAdjust(aidPower, aidPowerMin, aidPowerMax, aidPowerStep, keyPowerUp, keyPowerDown):
+	# 	"""Изменяет силу АБС/ПБС. Возвращает новую силу.
+	# 	Аргументы:
+	# 	aidPower - текущая сила
+	# 	aidPowerMin - минимальная сила
+	# 	aidPowerMax - максимальная сила
+	# 	aidPowerStep - шаг регулировки силы
+	# 	keyPowerUp - клавиша увеличения силы
+	# 	keyPowerDown - клавиша уменьшения силы
+	# 	"""
+	# 	powerUpPressed = isKeyPressed(keyPowerUp)
+	# 	powerDownPressed = isKeyPressed(keyPowerDown)
+	# 	if powerUpPressed or powerDownPressed:
+	# 		aidPower = adjustValueByInput(aidPower, aidPowerMin, aidPowerMax, aidPowerStep, powerUpPressed, powerDownPressed)
+	# 	return aidPower
 	
-	def pedalAid(pedalPosCurrent, pedalPosMin, slipMin, slipMax, wheelSlipFL, wheelSlipFR, wheelSlipRl, wheelSlipRR, drivetrain = 2):
-		"""Отпускает нажатую педаль по мере увеличения проскальзывания колес. Возвращает позицию на оси педали.
-		Аргументы:
-		pedalPosCurrent - текущая позиция педали
-		pedalPosMin - позиция педали при максимальном проскальзывании
-		slipMin - проскальзывание, при котором начнется отпускание педали
-		slipMax - проскальзывание, при котором педаль будет отпущена максимально
-		wheelSlipFL - проскальзывание переднего левого колеса
-		wheelSlipFR - проскальзывание переднего правого колеса
-		wheelSlipRL - проскальзывание заднего левого колеса
-		wheelSlipRR - проскальзывание заднего правого колеса
-		drivetrain - привод автомобиля: 0 - передний, 1 - задний, другое - полный
-		"""
+	# def pedalAid(pedalPosCurrent, pedalPosMin, slipMin, slipMax, wheelSlipFL, wheelSlipFR, wheelSlipRl, wheelSlipRR, drivetrain = 2):
+	# 	"""Отпускает нажатую педаль по мере увеличения проскальзывания колес. Возвращает позицию на оси педали.
+	# 	Аргументы:
+	# 	pedalPosCurrent - текущая позиция педали
+	# 	pedalPosMin - позиция педали при максимальном проскальзывании
+	# 	slipMin - проскальзывание, при котором начнется отпускание педали
+	# 	slipMax - проскальзывание, при котором педаль будет отпущена максимально
+	# 	wheelSlipFL - проскальзывание переднего левого колеса
+	# 	wheelSlipFR - проскальзывание переднего правого колеса
+	# 	wheelSlipRL - проскальзывание заднего левого колеса
+	# 	wheelSlipRR - проскальзывание заднего правого колеса
+	# 	drivetrain - привод автомобиля: 0 - передний, 1 - задний, другое - полный
+	# 	"""
 		
-		if drivetrain == 0:
-			slip = max(wheelSlipFL, wheelSlipFR)
-		elif drivetrain == 1:
-			slip = max(wheelSlipRL, wheelSlipRR)
-		else:
-			slip = max(wheelSlipFL, wheelSlipFR, wheelSlipRL, wheelSlipRR)
-		if slip < slipMin:
-			return pedalPosCurrent
-		elif slip > slipMax:
-			return pedalPosMin
-		else:
-			pedalPosNew = (pedalPosMin - max(pedalPosMin, pedalPosCurrent)) / (slipMax - slipMin) * (slip - slipMin) + pedalPosCurrent
-			pedalPosNew = repairValue(pedalPosNew, pedalPosMin, pedalPosCurrent)
-			return pedalPosNew
+	# 	if drivetrain == 0:
+	# 		slip = max(wheelSlipFL, wheelSlipFR)
+	# 	elif drivetrain == 1:
+	# 		slip = max(wheelSlipRL, wheelSlipRR)
+	# 	else:
+	# 		slip = max(wheelSlipFL, wheelSlipFR, wheelSlipRL, wheelSlipRR)
+	# 	if slip < slipMin:
+	# 		return pedalPosCurrent
+	# 	elif slip > slipMax:
+	# 		return pedalPosMin
+	# 	else:
+	# 		pedalPosNew = (pedalPosMin - max(pedalPosMin, pedalPosCurrent)) / (slipMax - slipMin) * (slip - slipMin) + pedalPosCurrent
+	# 		pedalPosNew = repairValue(pedalPosNew, pedalPosMin, pedalPosCurrent)
+	# 		return pedalPosNew
 
 	vJoyDevice = vJoy[vJoyDeviceID - 1]
 	if sysOverclock:
@@ -349,7 +398,7 @@ if starting:
 		system.threadExecutionInterval = 1
 		keyRateMult = 100
 	axisMax = vJoyDevice.axisMax + 18
-	enabled = throttleBlocked = clutchBlocked = False
+	enabled = False #  = throttleBlocked = clutchBlocked
 	steerAxis = 0
 	throttleAxis = brakeAxis = clutchAxis = handbrakeAxis = -axisMax
 	throttleMax = brakeMax = axisMax
@@ -386,15 +435,23 @@ if isKeyDown(keySwitch1st) and isKeyPressed(keySwitch2nd) or keySwitch2nd == Non
 		reset = doReset(True)
 		steerAxis = 0
 		throttleAxis = brakeAxis = clutchAxis = handbrakeAxis = -axisMax
-   		winsound.Beep(tetra[3],50)
-   		winsound.Beep(tetra[5],50)
+		winsound.Beep(tetra[3],50)
+		winsound.Beep(tetra[5],50)
 	else:
 		reset = doReset(False)
-   		winsound.Beep(tetra[5],50)
-   		winsound.Beep(tetra[3],50)
+		winsound.Beep(tetra[5],50)
+		winsound.Beep(tetra[3],50)
 
 	if cursorHide:
 		cursorMove()
+		
+# Mode switch GT2.2401.26
+if isKeyPressed(keyModeSwitch):
+	mode = modeSwitch(mode)
+		
+# Breake Sensivity GT2.0106.x
+if isKeyPressed(keyBSEnable):
+	BS = BSEnable(BS)
 		
 vJoyUpdate(vJoyDevice, steerAxis, throttleAxis, brakeAxis, clutchAxis, handbrakeAxis, keyGearUp, keyGearDown)
 
@@ -402,13 +459,27 @@ if enabled:
 	if cursorHide:
 		cursorMove(cursorHideCorner)
 
-	"""Get acPhysics G-force values from memory map for AC and ACC
+	"""
+	Get acPhysics speed from memory map for AC and ACC
+	--- ACCSharedMemoryDocumentationV1.8.12.pdf ---
+	SPageFilePhysics
+	The following members change at each graphic step. They all refer to the player’s car.
+	...
+	float steerAngle Steering input value (from -1.0 to 1.0)
+	float speedKmh Car speed in km/h
+	float velocity[3] Car velocity vector in global coordinates
+	float accG[3] Car acceleration vector in global coordinates
 	"""
 	acPhysics = mmap(0, 72, tagname='acpmf_physics')
 	if  acPhysics:
-		g1 = float(''.join(map(str, unpack('f', acPhysics[44:48]))))
-		g2 = float(''.join(map(str, unpack('f', acPhysics[48:52]))))
-		g3 = float(''.join(map(str, unpack('f', acPhysics[52:56]))))
+		steerAngle = float(''.join(map(str, unpack('f', acPhysics[20:24]))))
+		speedKmh = float(''.join(map(str, unpack('f', acPhysics[24:28]))))
+	 	v1 = float(''.join(map(str, unpack('f', acPhysics[28:32]))))
+	 	v2 = float(''.join(map(str, unpack('f', acPhysics[36:40]))))
+	 	v3 = float(''.join(map(str, unpack('f', acPhysics[40:44]))))
+	 	g1 = float(''.join(map(str, unpack('f', acPhysics[44:48]))))
+	 	g2 = float(''.join(map(str, unpack('f', acPhysics[48:52]))))
+	 	g3 = float(''.join(map(str, unpack('f', acPhysics[52:56]))))
 		
 	#@ Center on key/button pressed
 	if steerCenterEnabled and mouse.rightButton or isKeyPressed(keySteerCenter):
@@ -418,14 +489,14 @@ if enabled:
 		vJoyUpdate(vJoyDevice, steerAxis, throttleAxis, brakeAxis, clutchAxis, handbrakeAxis, keyGearUp, keyGearDown)
 	# Руль
 	steerAxis = steerHandler(steerAxis, steerSensitivity, steerNonlinearity, axisMax, reset)
-	
-	#@ Газ и Тормоз: v0.2310.16 change to Alt-Shift-Rate and fix dual pedals pressed
-	throttleMaxOverride, brakeMaxOverride = throttleMax, brakeMax
+
+	# Газ и Тормоз	
 	throttlePressed = mouseThrottleBrake and mouse.leftButton or isKeyDown(keyThrottle)
-	throttlePushRateOverride, throttleReleaseRateOverride = throttlePushRate, throttleReleaseRate
 	brakePressed = mouseThrottleBrake and mouse.rightButton or isKeyDown(keyBrake)
+	throttleMaxOverride, brakeMaxOverride = throttleMax, brakeMax
+	throttlePushRateOverride, throttleReleaseRateOverride = throttlePushRate, throttleReleaseRate
 	brakePushRateOverride, brakeReleaseRateOverride = brakePushRate, brakeReleaseRate
-		
+	
 	if isKeyDown(keyShift): 
 		throttlePushRateOverride = throttleShiftRate
 		throttleReleaseRateOverride = throttleShiftRate
@@ -440,41 +511,52 @@ if enabled:
 		brakePushRateOverride = brakeAltRate
 		brakeReleaseRateOverride = brakeAltRate
 		brakeMaxOverride = percentToValue(brakeAltLimit, -axisMax, axisMax)
-	if isKeyDown(keyThrottle): 
-		brakePressed = False
-		brakePushRateOverride = 0
-		brakeReleaseRateOverride = brakeRate
-	if isKeyDown(keyBrake): 
-		throttlePressed = False
-		throttlePushRateOverride = 0
-		throttleReleaseRateOverride = throttleRate
+	
+	'''
+	@TODO in GT2.2401.26
+	Add mode switch on hotkey (Left Cintrol) (with sounds)
+	- Mode 1 (Default) : Allowed pressing the gas and brake simultaneously when releasing
+	- Mode 2 : pressing interrupts releasing
+
+	v0.2310.16 change to Alt-Shift-Rate and fix dual pedals pressed IS NOW 'mode = 2'
+	'''
+
+	if mode == 2:
+		if isKeyDown(keyThrottle): 
+			brakePressed = False
+			brakePushRateOverride = 0
+			brakeReleaseRateOverride = brakeRate
+		if isKeyDown(keyBrake): 
+			throttlePressed = False
+			throttlePushRateOverride = 0
+			throttleReleaseRateOverride = throttleRate
 		
 	# Газ
-	if throttleBlocked:
-		throttlePushRateOverride = throttleReleaseRateOverride = throttleClutchBlipRate
+	# if throttleBlocked:
+	# 	throttlePushRateOverride = throttleReleaseRateOverride = throttleClutchBlipRate
 	throttleAxis = pedalHandler(throttleAxis, throttlePressed, throttlePushRateOverride, throttleReleaseRateOverride, keyRateMult, throttleAdjustMin, throttleMaxOverride)
 
 	# Тормоз
 	brakeAxis = pedalHandler(brakeAxis, brakePressed, brakePushRateOverride, brakeReleaseRateOverride, keyRateMult, brakeAdjustMin, brakeMaxOverride)
 	
-	diagnostics.watch(throttlePushRateOverride)
-	diagnostics.watch(throttleReleaseRateOverride)
-	diagnostics.watch(throttleMaxOverride)
-	diagnostics.watch(brakePushRateOverride)
-	diagnostics.watch(brakeReleaseRateOverride)
-	diagnostics.watch(brakeMaxOverride)
+	# diagnostics.watch(throttlePushRateOverride)
+	# diagnostics.watch(throttleReleaseRateOverride)
+	# diagnostics.watch(throttleMaxOverride)
+	# diagnostics.watch(brakePushRateOverride)
+	# diagnostics.watch(brakeReleaseRateOverride)
+	# diagnostics.watch(brakeMaxOverride)
 
-	# Сцепление
-	if clutchBlocked:
-		clutchPushRateOverride = clutchReleaseRateOverride = throttleClutchBlipRate
-	else:
-		clutchPressed = isKeyDown(keyClutch)
-		clutchPushRateOverride, clutchReleaseRateOverride = clutchPushRate, clutchReleaseRate
-	clutchAxis = pedalHandler(clutchAxis, clutchPressed, clutchPushRateOverride, clutchReleaseRateOverride, keyRateMult, -axisMax, axisMax)
+	# # Сцепление
+	# if clutchBlocked:
+	# 	clutchPushRateOverride = clutchReleaseRateOverride = throttleClutchBlipRate
+	# else:
+	# 	clutchPressed = isKeyDown(keyClutch)
+	# 	clutchPushRateOverride, clutchReleaseRateOverride = clutchPushRate, clutchReleaseRate
+	# clutchAxis = pedalHandler(clutchAxis, clutchPressed, clutchPushRateOverride, clutchReleaseRateOverride, keyRateMult, -axisMax, axisMax)
 
-	# Ручник
-	handbrakePressed = isKeyDown(keyHandbrake)
-	handbrakeAxis = pedalHandler(handbrakeAxis, handbrakePressed, handbrakePushRate, handbrakeReleaseRate, keyRateMult, -axisMax, axisMax)
+	# # Ручник
+	# handbrakePressed = isKeyDown(keyHandbrake)
+	# handbrakeAxis = pedalHandler(handbrakeAxis, handbrakePressed, handbrakePushRate, handbrakeReleaseRate, keyRateMult, -axisMax, axisMax)
 
 	# Регулировка газа
 	if throttleAdjust1Enabled or throttleAdjust2Enabled:
@@ -492,6 +574,7 @@ if enabled:
 		# True/False cheat, потому что 0 == False
 		if pc == True: 
 			throttleMax = ph
+			# @TODO Add and Use function Tetra
 			if not throttleAdjust2Enabled: winsound.Beep(tetra[(int)(ph/3280+7)],50)
 
 	# Регулировка тормоза
@@ -510,37 +593,38 @@ if enabled:
 		# True/False cheat, потому что 0 == False
 		if pc == True: 
 			brakeMax = ph
-			if not brakeAdjust2Enabled: winsound.Beep(tetra[(int)(ph/3280+7)],50)
+			# @TODO Add and Use function Tetra
+			if not brakeAdjust2Enabled: winsound.Beep(tetra[(int)(ph/3280+7)],50) 
 
-	# Автосцепление
-	if autoClutch:
-		if clutchBlocked:
-			if clutchAxis == axisMax:
-				clutchPressed = throttlePressed = False
-			elif clutchAxis == -axisMax:
-				clutchBlocked = throttleBlocked = False
-		elif not clutchPressed:
-			if isKeyPressed(keyGearUp):
-				clutchBlocked = throttleBlocked = clutchPressed = True
-				throttlePressed = False
-			if isKeyPressed(keyGearDown):
-				clutchBlocked = throttleBlocked = clutchPressed = True
-				throttlePressed = autoThrottleBlip
+	# # Автосцепление
+	# if autoClutch:
+	# 	if clutchBlocked:
+	# 		if clutchAxis == axisMax:
+	# 			clutchPressed = throttlePressed = False
+	# 		elif clutchAxis == -axisMax:
+	# 			clutchBlocked = throttleBlocked = False
+	# 	elif not clutchPressed:
+	# 		if isKeyPressed(keyGearUp):
+	# 			clutchBlocked = throttleBlocked = clutchPressed = True
+	# 			throttlePressed = False
+	# 		if isKeyPressed(keyGearDown):
+	# 			clutchBlocked = throttleBlocked = clutchPressed = True
+	# 			throttlePressed = autoThrottleBlip
 
-	# ПБС & АБС
-	if tractionControl or antilockBrakes:
-		wheelSlipFL = float(''.join(map(str, unpack('f', acPhysics[56:60]))))
-		wheelSlipFR = float(''.join(map(str, unpack('f', acPhysics[60:64]))))
-		wheelSlipRL = float(''.join(map(str, unpack('f', acPhysics[64:68]))))
-		wheelSlipRR = float(''.join(map(str, unpack('f', acPhysics[68:72]))))
-		if tractionControl:
-			tcPower = aidPowerAdjust(tcPower, 0, 2 * axisMax, tcPowerStep, keyTcPowerUp, keyTcPowerDown)
-			if throttlePressed and not throttleBlocked:
-				throttleAxis = pedalAid(throttleAxis, axisMax - tcPower, tcSlipMin, tcSlipMax, wheelSlipFL, wheelSlipFR, wheelSlipRL, wheelSlipRR, drivetrain)
-		if antilockBrakes:
-			absPower = aidPowerAdjust(absPower, 0, 2 * axisMax, absPowerStep, keyAbsPowerUp, keyAbsPowerDown)
-			if brakePressed:
-				brakeAxis = pedalAid(brakeAxis, axisMax - absPower, absSlipMin, absSlipMax, wheelSlipFL, wheelSlipFR, wheelSlipRL, wheelSlipRR)
+	# # ПБС & АБС
+	# if tractionControl or antilockBrakes:
+	# 	wheelSlipFL = float(''.join(map(str, unpack('f', acPhysics[56:60]))))
+	# 	wheelSlipFR = float(''.join(map(str, unpack('f', acPhysics[60:64]))))
+	# 	wheelSlipRL = float(''.join(map(str, unpack('f', acPhysics[64:68]))))
+	# 	wheelSlipRR = float(''.join(map(str, unpack('f', acPhysics[68:72]))))
+	# 	if tractionControl:
+	# 		tcPower = aidPowerAdjust(tcPower, 0, 2 * axisMax, tcPowerStep, keyTcPowerUp, keyTcPowerDown)
+	# 		if throttlePressed and not throttleBlocked:
+	# 			throttleAxis = pedalAid(throttleAxis, axisMax - tcPower, tcSlipMin, tcSlipMax, wheelSlipFL, wheelSlipFR, wheelSlipRL, wheelSlipRR, drivetrain)
+	# 	if antilockBrakes:
+	# 		absPower = aidPowerAdjust(absPower, 0, 2 * axisMax, absPowerStep, keyAbsPowerUp, keyAbsPowerDown)
+	# 		if brakePressed:
+	# 			brakeAxis = pedalAid(brakeAxis, axisMax - absPower, absSlipMin, absSlipMax, wheelSlipFL, wheelSlipFR, wheelSlipRL, wheelSlipRR)
 
 if diagWatch:
 	diagnostics.watch('----------')
@@ -564,6 +648,15 @@ if diagWatch:
 	diagnostics.watch(brakeLimit2)
 	diagnostics.watch(brakeLimit3)
 	diagnostics.watch('-------')
+	#diagnostics.watch(mode)
+	diagnostics.watch(steerAngle)
+	diagnostics.watch(speedKmh)
+	diagnostics.watch(v1)
+	diagnostics.watch(v2)
+	diagnostics.watch(v3)
+	diagnostics.watch(g1)
+	diagnostics.watch(g2)
+	diagnostics.watch(g3)
 	#diagnostics.watch(wheelSlipFL)
 	#diagnostics.watch(wheelSlipFR)
 	#diagnostics.watch(wheelSlipRL)
