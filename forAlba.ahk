@@ -72,8 +72,6 @@ $Q::
   Send, {q Up}
   Sleep, 200
   MouseClick, left
-  Sleep, 200
-  MouseClick, left
 Return
 
 ;Attack Clickers
@@ -83,8 +81,6 @@ $W::
   MouseClick, left
   Sleep, 200
   Send, {w Up}
-  Sleep, 200
-  MouseClick, left
   Sleep, 200
   MouseClick, left
 Return
