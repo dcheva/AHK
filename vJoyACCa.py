@@ -49,6 +49,8 @@ if starting:
 
 	# Breake Sensivity GT2.0106.x
 	BS = 1
+	BSkey = 0
+	Gkey = 0
 	steerAngle = 0
 	speedKmh = 0
 	v1 = v2 = v3 = g1 = g2 = g3 = 0
@@ -473,14 +475,23 @@ if enabled:
 	"""
 	acPhysics = mmap(0, 72, tagname='acpmf_physics')
 	if  acPhysics:
-		steerAngle = float(''.join(map(str, unpack('f', acPhysics[20:24]))))
-		speedKmh = float(''.join(map(str, unpack('f', acPhysics[24:28]))))
-	 	v1 = float(''.join(map(str, unpack('f', acPhysics[28:32]))))
+		steerAngle = float(''.join(map(str, unpack('f', acPhysics[24:28]))))
+		speedKmh = float(''.join(map(str, unpack('f', acPhysics[28:32]))))
+	 	v1 = float(''.join(map(str, unpack('f', acPhysics[32:36]))))
 	 	v2 = float(''.join(map(str, unpack('f', acPhysics[36:40]))))
 	 	v3 = float(''.join(map(str, unpack('f', acPhysics[40:44]))))
 	 	g1 = float(''.join(map(str, unpack('f', acPhysics[44:48]))))
 	 	g2 = float(''.join(map(str, unpack('f', acPhysics[48:52]))))
 	 	g3 = float(''.join(map(str, unpack('f', acPhysics[52:56]))))
+	 	
+	 	#--- Breake Sensivity multiplier key based on steerAngle
+	 	BSkey = 1 - abs(steerAngle)
+	 	
+	 	#--- Breake Sensivity multiplier key based on side G-force
+	 	Gkey = (3 - abs(g1))/3
+	 	if Gkey < 0:
+	 		Gkey = 0
+	 	
 		
 	#@ Center on key/button pressed
 	if steerCenterEnabled and mouse.rightButton or isKeyPressed(keySteerCenter):
@@ -652,12 +663,14 @@ if diagWatch:
 	#diagnostics.watch(mode)
 	diagnostics.watch(steerAngle)
 	diagnostics.watch(speedKmh)
-	diagnostics.watch(v1)
-	diagnostics.watch(v2)
-	diagnostics.watch(v3)
-	diagnostics.watch(g1)
-	diagnostics.watch(g2)
-	diagnostics.watch(g3)
+	#diagnostics.watch(v1)
+	#diagnostics.watch(v2)
+	#diagnostics.watch(v3)
+	#diagnostics.watch(g1)
+	#diagnostics.watch(g2)
+	#diagnostics.watch(g3)
+	diagnostics.watch(BSkey)
+	diagnostics.watch(Gkey)
 	#diagnostics.watch(wheelSlipFL)
 	#diagnostics.watch(wheelSlipFR)
 	#diagnostics.watch(wheelSlipRL)
