@@ -22,6 +22,24 @@ GT2.2401.26 Mode changing (GT2/GT3 double/single pedals) on Left Control key
 v0.2401.24 Steering and Breaking changes
 v0.2401.16 Газ и Тормоз: Rate/Limit faster
 v0.2310.16 Газ и Тормоз: Alt/Shift Rate/Limit
+
+--- 24.05.29 https://github.com/reiniscimurs/Bezier-Curve/blob/main/Bezier.py
+
+    def calc_curve(self, granuality=100):
+        'Calculate the cubic Bezier curve with the given granuality.'
+        B_x = []
+        B_y = []
+        for t in range(0, granuality):
+            t = t / granuality
+            x = ((1 - t) ** 3) * self.p0.x + 3 * ((1 - t) ** 2) * t * self.p1.x + 3 * (1 - t) * (t ** 2) * self.p2.x\
+                + (t ** 3) * self.p3.x
+            y = ((1 - t) ** 3) * self.p0.y + 3 * ((1 - t) ** 2) * t * self.p1.y + 3 * (1 - t) * (t ** 2) * self.p2.y\
+                + (t ** 3) * self.p3.y
+            B_x.append(x)
+            B_y.append(y)
+        return [B_x, B_y]
+        
+    
 """
 
 from ctypes import windll
@@ -48,12 +66,10 @@ if starting:
 	mode = 1
 
 	# Breake Sensivity GT2.0106.x
-	BS = 1
-	BSkey = 0
-	Gkey = 0
 	steerAngle = 0
 	speedKmh = 0
 	v1 = v2 = v3 = g1 = g2 = g3 = 0
+	Gkey = Gkeys = Gkey1 = Gkey2 = Gkey3 = Gkey4 = 1
 
 # *** ПАРАМЕТРЫ ***
 # Можно менять значения после знака "="
@@ -484,13 +500,24 @@ if enabled:
 	 	g2 = float(''.join(map(str, unpack('f', acPhysics[48:52]))))
 	 	g3 = float(''.join(map(str, unpack('f', acPhysics[52:56]))))
 	 	
-	 	#--- Breake Sensivity multiplier key based on steerAngle
-	 	BSkey = 1 - abs(steerAngle)
-	 	
 	 	#--- Breake Sensivity multiplier key based on side G-force
-	 	Gkey = (3 - abs(g1))/3
-	 	if Gkey < 0:
-	 		Gkey = 0
+	 	Gkey4 = Gkey3
+	 	Gkey3 = Gkey2
+	 	Gkey2 = Gkey1
+	 	Gkey1 = Gkey
+	 	Gkeys = (Gkey4 + Gkey3 + Gkey2 + Gkey4) / 4
+	 	
+	 	Gkey = (2 - (abs(g1) )) / (2 - 0.25) + 0.25
+	 	
+	 	if Gkey < (0.001):
+	 		Gkey = 0.001
+	 	if Gkey > 1:
+	 		Gkey = 1
+	 		
+	 	while Gkey > Gkeys * 1.2:
+	 		Gkey = Gkey / 1.2;
+	 	while Gkey < Gkeys / 1.2:
+	 		Gkey = Gkey * 1.2;
 	 	
 		
 	#@ Center on key/button pressed
@@ -509,7 +536,8 @@ if enabled:
 	throttlePushRateOverride, throttleReleaseRateOverride = throttlePushRate, throttleReleaseRate
 	brakePushRateOverride, brakeReleaseRateOverride = brakePushRate, brakeReleaseRate
 	
-	if isKeyDown(keyShift): 
+	if isKeyDown(keyShift):
+		Gkey = 1
 		throttlePushRateOverride = throttleShiftRate
 		throttleReleaseRateOverride = throttleShiftRate
 		throttleMaxOverride = percentToValue(throttleShiftLimit, -axisMax, axisMax)
@@ -546,10 +574,10 @@ if enabled:
 	# Газ
 	# if throttleBlocked:
 	# 	throttlePushRateOverride = throttleReleaseRateOverride = throttleClutchBlipRate
-	throttleAxis = pedalHandler(throttleAxis, throttlePressed, throttlePushRateOverride, throttleReleaseRateOverride, keyRateMult, throttleAdjustMin, throttleMaxOverride)
+	throttleAxis = pedalHandler(throttleAxis, throttlePressed, throttlePushRateOverride, throttleReleaseRateOverride, keyRateMult, throttleAdjustMin, throttleMaxOverride * Gkey)
 
 	# Тормоз
-	brakeAxis = pedalHandler(brakeAxis, brakePressed, brakePushRateOverride, brakeReleaseRateOverride, keyRateMult, brakeAdjustMin, brakeMaxOverride)
+	brakeAxis = pedalHandler(brakeAxis, brakePressed, brakePushRateOverride, brakeReleaseRateOverride, keyRateMult, brakeAdjustMin, brakeMaxOverride * Gkey)
 	
 	# diagnostics.watch(throttlePushRateOverride)
 	# diagnostics.watch(throttleReleaseRateOverride)
@@ -669,7 +697,6 @@ if diagWatch:
 	#diagnostics.watch(g1)
 	#diagnostics.watch(g2)
 	#diagnostics.watch(g3)
-	diagnostics.watch(BSkey)
 	diagnostics.watch(Gkey)
 	#diagnostics.watch(wheelSlipFL)
 	#diagnostics.watch(wheelSlipFR)

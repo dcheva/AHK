@@ -54,7 +54,7 @@
                 category="Pedalboard Processors" manufacturer="Niall Moody" version="1.00"
                 file="" uid="45eab64" isInstrument="0" fileTime="0" numInputs="2"
                 numOutputs="2"/>
-        <STATE>105.VMjLg7E....OPUFYgwlXuElbjICSkYWYrMUYzQWZtc1bfvVY1UFa8HBLtHCLyfSLxPSN0HBHkQVZz8lbX0iHvHBHkQVZz8lbY0iHvHBHkQVZz8lbW0iHvHBHkQVZz8lbH0iHvHxK9.Pj</STATE>
+        <STATE>97.VMjLgbE....OPUFYgwlXuElbjICSkYWYrMUYzQWZtc1bfvVY1UFa8HBLtTiHfTFYoQ2axgUOh.iHfTFYoQ2axkUOh.iHfTFYoQ2axcUOh.iHfTFYoQ2axgTOh.iHu3C...</STATE>
       </FILTER>
       <FILTER uid="8" x="218" y="10" uiLastX="10" uiLastY="371" windowOpen="1"
               program="0" oscMIDIAddress="">
@@ -63,7 +63,7 @@
                 file="C:\Program Files (x86)\VSTPlugins\ReaPlugs\reaxcomp-standalone.dll"
                 uid="72657863" isInstrument="0" fileTime="15204a50670" numInputs="2"
                 numOutputs="2"/>
-        <STATE>412.CMlaKA....fQBMDZ....AHWY3MF..P.S....A...............................................................................................................................................................................7iC....A............oAD........7+ropVBirbD9OA.......YAD........N.8....fk....E....DA...........zi.A........+Oehx8SitJA+S.......PV.A.......fCPO....XI...PA....Q...........HNKP........v+ivrwIQQUkr+D.......jEP........3.zC....VB...T....PD...........bWCD........7+.J+x1Zag.9OA.......YAD........N.8....fk....E....DA...P.....A.....KrB3zl7Z9O......</STATE>
+        <STATE>412.CMlaKA....fQBMDZ....AHWY3MF..P.S....A...............................................................................................................................................................................7iC....A............oAD........7+ropVBirbD9OA.......YAD........N.8....fk....E....DA...........zi.A........+ONHOwPuoB19S.......PV.A.......fCPO....XI...PA....Q...........HNKP........v+yIiYSEHQTv+D.......jEP........3.zC....VB...T....PD...........bWCD........7+v.fqfj5s37OA.......YAD........N.8....fk....E....DA...P.....A.....KrB3zl7Z9O......</STATE>
       </FILTER>
       <CONNECTION srcFilter="1" srcChannel="0" dstFilter="7" dstChannel="0"/>
       <CONNECTION srcFilter="1" srcChannel="1" dstFilter="7" dstChannel="1"/>
