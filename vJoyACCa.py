@@ -1,6 +1,6 @@
 """
 @author dcheva 
-@version GT2.2805.29.0
+@version GT2.2905.29.1
 Pastebin https://pastebin.com/raw/d8zcmVRt
 Github https://raw.githubusercontent.com/dcheva/AHK/main/vJoyACCgt2.py
 
@@ -12,12 +12,13 @@ Github https://raw.githubusercontent.com/dcheva/AHK/main/vJoyACCgt2.py
 Чтобы остановить обработку ввода и освободить мышь, снова нажмите Caps Lock или ESCAPE
 
 Changelog:
+GT2.2905.29.1 Throttle Alt limit 80->75 Brake Alt Limit 60->25 ### Brake with Alt to do Induce Oversteer
 GT2.2805.29.0 Begin total update
 --- @TODO in 1.06.x (GT2.0106.x) version:
---- Add Breake Sensivity related on Speed on Speed and Wheel angle
---- Add BS on/off button
+-+- Add Breake Sensivity related on side G-force
+-+- Add BS on/off button (OFF using SHIFT modifier)
 --- Add BS modifiers change buttons
-GT2.2405.20 Alt throttle limit 60>80
+GT2.2405.20 Alt throttle limit 60->80
 GT2.2401.26 Mode changing (GT2/GT3 double/single pedals) on Left Control key
 v0.2401.24 Steering and Breaking changes
 v0.2401.16 Газ и Тормоз: Rate/Limit faster
@@ -96,7 +97,7 @@ if starting:
 	throttleRate = throttlePushRate					# [1..100] скорость изменения оси газа
 	throttleShiftLimit = 100					# [1..100] Shift предел изменения оси газа %
 	throttleShiftRate = 60						# [1..100] Shift скорость изменения оси газа
-	throttleAltLimit = 80						# [1..100] Alt предел изменения оси газа % ### 21.05 60>80
+	throttleAltLimit = 75						# [1..100] Alt предел изменения оси газа % ### 21.05 60>80 ### GT2.2905.29.1 Throttle Alt limit 80->75 Brake Alt Limit 60->25
 	throttleAltRate = 10						# [1..100] Alt скорость изменения оси газа
 	# Тормоз
 	brakePushRate = 40							# [1..100] скорость нажатия тормоза
@@ -105,7 +106,7 @@ if starting:
 	brakeRate = brakePushRate					# [1..100] скорость изменения оси тормоза
 	brakeShiftLimit = 100						# [1..100] Shift предел изменения оси тормоза %
 	brakeShiftRate = 60						# [1..100] Shift скорость изменения оси тормоза
-	brakeAltLimit = 60						# [1..100] Alt предел изменения оси тормоза %
+	brakeAltLimit = 25						# [1..100] Alt предел изменения оси тормоза % ### GT2.2905.29.1 Throttle Alt limit 80->75 Brake Alt Limit 60->25
 	brakeAltRate = 10						# [1..100] Alt скорость изменения оси тормоза
 	# Сцепление
 	clutchPushRate = 40						# [1..100] скорость нажатия сцепления
@@ -507,7 +508,7 @@ if enabled:
 	 	Gkey1 = Gkey
 	 	Gkeys = (Gkey4 + Gkey3 + Gkey2 + Gkey4) / 4
 	 	
-	 	Gkey = (2 - (abs(g1) )) / (2 - 0.25) + 0.25
+	 	Gkey = (1.75 - (abs(g1) )) / (1.75 - 0.25) + 0.25
 	 	
 	 	if Gkey < (0.001):
 	 		Gkey = 0.001
