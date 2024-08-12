@@ -6,8 +6,8 @@ git init -b %branch%
 git remote add origin https://github.com/dcheva/%project%.git
 git remote add bucket https://dcheva@bitbucket.org/dcheva/%project%.git
 
-rem git pull origin %branch%
-rem git pull bucket %branch%
+git pull origin %branch%
+git pull bucket %branch%
 
 echo # %project% Git and Bucket repo >> README.MD
 
