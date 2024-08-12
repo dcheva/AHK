@@ -13,5 +13,8 @@ echo # %project% Git and Bucket repo >> README.MD
 
 git add -A
 git commit -m "Add README.MD"
+
 git branch --set-upstream-to=origin/%branch% %branch%
+
 git push origin HEAD
+git push bucket HEAD
