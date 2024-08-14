@@ -6,6 +6,9 @@ git commit -am "merged theirs"
 git push -u origin --all
 @echo off
 @rem ---- command interpretator ----
+IF /I "%1" == "bucket" (
+    git push -u bucket --all
+)
 IF /I "%1" == "loop" (
     @echo on
     :loop
