@@ -3,11 +3,12 @@ git commit -am "%1 %2 %3 %4 %5 %6 %7 %8 %9"
 git fetch
 git merge -X theirs
 git commit -am "merged theirs"
-git push -u origin --all
 @echo off
 @rem ---- command interpretator ----
 IF /I "%1" == "bucket" (
     git push -u bucket --all
+) ELSE (
+    git push -u origin --all
 )
 IF /I "%1" == "loop" (
     @echo on
