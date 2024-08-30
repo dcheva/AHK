@@ -9,7 +9,7 @@ git remote add bucket https://dcheva@bitbucket.org/dcheva/%project%.git
 git pull origin %branch%
 git pull bucket %branch%
 
-echo # %project% Git and Bucket repo >> README.MD
+echo # %project% GitHub and BitBucket repo >> README.MD
 
 git add -A
 git commit -m "Add README.MD"
