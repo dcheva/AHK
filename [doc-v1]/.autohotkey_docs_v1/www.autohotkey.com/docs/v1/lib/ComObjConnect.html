@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ComObjConnect.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:01 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ComObjConnect.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:34 GMT -->
 <head>
-<title>ComObjConnect() - Syntax &amp; Usage | AutoHotkey</title>
+<title>ComObjConnect() - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The ComObjConnect function connects a COM object's event sources to functions with a given prefix." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -28,8 +28,7 @@
 
   <dt>PrefixOrSink</dt>
   <dd>
-      <p>A string to prefix to the event name to determine which function to call when an event occurs, or <span class="ver">[in v1.1.01+]</span> an <a href="#event-sink">event sink object</a> defining a method for each event to be handled.</p>
-      <p>If omitted, the object is "disconnected"; that is, the script will no longer receive notification of its events.</p>
+      <p>If blank or omitted, the object is "disconnected"; that is, the script will no longer receive notification of its events. Otherwise, specify a string to prefix to the event name to determine which function to call when an event occurs, or in <span class="ver">[v1.1.01+]</span> an <a href="#event-sink">event sink object</a> defining a method for each event to be handled.</p>
     </dd>
 
 </dl>
@@ -43,7 +42,7 @@
 }</pre>
 <p><i>Prefix</i> should be the same as the <em>PrefixOrSink</em> parameter if it is a string; otherwise, it should be omitted. <b>EventName</b> should be replaced with the name of whatever event the function should handle.</p>
 <p><i>Params</i> corresponds to whatever parameters the event has. If the event has no parameters, <i>Params</i> should be omitted entirely. <i>ComObject</i> is optional, and can only be used if the correct number of <i>Params</i> are defined; it contains a reference to the original wrapper object which was passed to ComObjConnect. "ComObject" should be replaced with a name more meaningful in the context of your script.</p>
-<p>Note that event handlers may have return values. To return a COM-specific type of value, use <a href="ComObjActive.html#param">ComObject(type, value)</a>. For example, <code>return ComObject(0,0)</code> returns a variant of type VT_EMPTY, which is equivalent to returning <code>undefined</code> (or not returning) from a JavaScript function.</p>
+<p>Note that event handlers may have return values. To return a COM-specific type of value, use <a href="ComObjActive.html#ComObject">ComObject()</a>. For example, <code>return ComObject(0,0)</code> returns a variant of type VT_EMPTY, which is equivalent to returning <code>undefined</code> (or not returning) from a JavaScript function.</p>
 <p>Call <code>ComObjConnect(yourObject, "<i>Prefix</i>")</code> to enable event-handling.</p>
 <p>Call <code>ComObjConnect(yourObject)</code> to disconnect the object (stop handling events).</p>
 <p>If the number of parameters is not known, a <a href="../Functions.html#Variadic">variadic function</a> can be used.</p>
@@ -53,7 +52,7 @@
 <p>As with any call to a method, the method's (normally hidden) <code>this</code> parameter contains a reference to the object through which the method was called; i.e. the event sink object, not the COM object. This can be used to provide context to the event handlers, or share values between them.</p>
 <p>To catch all events without defining a method for each one, define a <a href="../Objects.html#Meta_Functions">__Call meta-function</a>.</p>
 <p><em>ComObject</em> retains a reference to <em>PrefixOrSink</em>, so it cannot be deleted before the object is disconnected.</p>
-<p><span class="ver">[v1.1.36.02+]:</span> <em>ComObject</em> releases its reference to <em>PrefixOrSink</em> automatically if the COM object releases the connection. For example, Internet Explorer does this when it exits. If the script does not retain its own reference to <em>PrefixOrSink</em>, it can use <a href="../Objects.html#Custom_NewDelete">__Delete</a> to detect when this occurs. If the object is hosted by a remote process and the process terminates unexpectedly, it may take several minutes for the system to release the connection.</p>
+<p><span class="ver">[v1.1.36.02+]</span>: <em>ComObject</em> releases its reference to <em>PrefixOrSink</em> automatically if the COM object releases the connection. For example, Internet Explorer does this when it exits. If the script does not retain its own reference to <em>PrefixOrSink</em>, it can use <a href="../Objects.html#Custom_NewDelete">__Delete</a> to detect when this occurs. If the object is hosted by a remote process and the process terminates unexpectedly, it may take several minutes for the system to release the connection.</p>
 
 <h2 id="Remarks">Remarks</h2>
 <p>The script must retain a reference to <em>ComObject</em>, otherwise it would be freed automatically and would disconnect from its COM object, preventing any further events from being detected. There is no standard way to detect when the connection is no longer required, so the script must disconnect manually by calling ComObjConnect.</p>
@@ -61,11 +60,11 @@
 <p>On failure, the function may throw an exception, exit the script or simply return, depending on the current <a href="ComObjError.html">ComObjError()</a> setting and <a href="ComObjError.html#factors">other factors</a>.</p>
 
 <h2 id="Related">Related</h2>
-<p><a href="ComObjCreate.html">ComObjCreate()</a>, <a href="ComObjGet.html">ComObjGet()</a>, <a href="ComObjActive.html">ComObjActive()</a>, <a href="ComObjError.html">ComObjError()</a>, <a href="http://msdn.microsoft.com/en-us/library/ccxe1xe6.aspx">WScript.ConnectObject (MSDN)</a></p>
+<p><a href="ComObjCreate.html">ComObjCreate()</a>, <a href="ComObjGet.html">ComObjGet()</a>, <a href="ComObjActive.html">ComObjActive()</a>, <a href="ComObjError.html">ComObjError()</a>, <a href="https://learn.microsoft.com/previous-versions/ccxe1xe6(v=vs.85)">WScript.ConnectObject (Microsoft Docs)</a></p>
 
 <h2 id="Examples">Examples</h2>
 <div class="ex" id="ExIE">
-<p><a class="ex_number" href="#ExIE"></a> Launches an instance of Internet Explorer and connects events to corresponding script functions with the prefix "IE_". For details about the COM object and DocumentComplete event used below, see <a href="http://msdn.microsoft.com/en-us/library/aa752084.aspx">InternetExplorer object (Microsoft Docs)</a>.</p>
+<p><a class="ex_number" href="#ExIE"></a> Launches an instance of Internet Explorer and connects events to corresponding script functions with the prefix "IE_". For details about the COM object and DocumentComplete event used below, see <a href="https://learn.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)">InternetExplorer object (Microsoft Docs)</a>.</p>
 <pre>ie := ComObjCreate("InternetExplorer.Application")
 
 <em>; Connects events to corresponding script functions with the prefix "IE_".</em>
@@ -81,7 +80,7 @@ IE_DocumentComplete(ieEventParam, url, ieFinalParam) {
         s .= "First parameter is a new wrapper object.`n"
     if (ie == ieFinalParam)
         s .= "Final parameter is the original wrapper object.`n"
-    if ((disp1:=<a href="ComObjActive.html#enwrap">ComObjUnwrap</a>(ieEventParam)) == (disp2:=ComObjUnwrap(ieFinalParam)))
+    if ((disp1:=<a href="ComObjActive.html#ComObjUnwrap">ComObjUnwrap</a>(ieEventParam)) == (disp2:=ComObjUnwrap(ieFinalParam)))
         s .= "Both wrapper objects refer to the same IDispatch instance.`n"
     <a href="ObjAddRef.html">ObjRelease</a>(disp1), ObjRelease(disp2)
     MsgBox % s . "Finished loading " ie.Document.title " @ " url
@@ -91,8 +90,8 @@ IE_DocumentComplete(ieEventParam, url, ieFinalParam) {
 </pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a012870d4177b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdced7ddba61911","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ComObjConnect.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:01 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ComObjConnect.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:34 GMT -->
 </html>

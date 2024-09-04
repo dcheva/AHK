@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/misc/Ahk2ExeDirectives.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:06 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/misc/Ahk2ExeDirectives.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:37 GMT -->
 <head>
-<title>Script Compiler Directives | AutoHotkey</title>
+<title>Script Compiler Directives | AutoHotkey v1</title>
 <meta name="description" content="Script compiler directives allow the user to specify details of how a script is to be compiled via Ahk2Exe." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -143,7 +143,7 @@ MsgBox This message appears in both the compiled and uncompiled script
 <p>Note that each script added with this directive will be fully and separately processed by the compiler, and can include further directives. If there are any competing directives overall, the last encountered by the compiler will be used.</p>
 
 <h3 id="Bin">Bin / Base <span class="ver">[v1.1.33.10+]</span></h3>
-<p>Specifies the base version of AutoHotkey to be used to generate the .exe file. This directive may be overridden by a base file parameter specified in the GUI or CLI. This directive can be specified many times if necessary, but only in the top level script file (i.e. not in an <a href="../lib/_Include.html">#Include</a> file). The compiler will be run at least once for each Bin/Base directive found. (If an actual comment is appended to this directive, it must use the <code>&nbsp;;</code> flag. To truly comment out this directive, insert a space after the first comment flag.)</p>
+<p>Specifies the base version of AutoHotkey to be used to generate the .exe file. This directive may be overridden by a base file parameter specified in the GUI or CLI. This directive can be specified many times if necessary, but only in the top level script file (i.e. not in an <a href="../lib/_Include.html">#Include</a> file). The compiler will be run at least once for each Bin/Base directive found. (If an actual comment is appended to this directive, it must use the <code> ;</code> flag. To truly comment out this directive, insert a space after the first comment flag.)</p>
 
 <pre class="Syntax"><span class="func">;@Ahk2Exe-Bin </span> [Path\]Name <span class="optional">, [Exe_path\][Name], Codepage</span> <em>; Deprecated</em>
 <span class="func">;@Ahk2Exe-Base</span> [Path\]Name <span class="optional">, [Exe_path\][Name], Codepage</span> <em>; <span class="ver">[v1.1.33.10+]</span></em></pre>
@@ -151,9 +151,9 @@ MsgBox This message appears in both the compiled and uncompiled script
   <dt>[Path\]Name</dt>
   <dd>The *.bin file or in <span class="ver">[v1.1.33.10+]</span> the *.exe file to use. If no extension is supplied, <code>.bin</code> is assumed. The file is assumed to be in (or relative to) the compiler's own directory if an absolute path isn't specified. A DOS mask may be specified for <em>Name</em>, e.g. <code>ANSI*</code>, <code>Unicode 32*</code>, <code>Unicode 64*</code>, or <code>*bit</code> for all three. The compiler will be run for each *.bin or *.exe file that matches. Any use of built-in variable replacements must only be from <a href="#group1">group 1</a> above.</dd>
   <dt>[Exe_path\][Name]</dt>
-  <dd><i>(Optional)</i> The file name to be given to the .exe. Any extension supplied will be replaced by <code>.exe</code>. If no path is specified, the .exe will be created in the script folder. If no name is specified, the .exe will have the default name. (This parameter can be overridden by the <a href="#ExeName">ExeName</a> directive.)</dd>
+  <dd><i>(Optional)</i> The file name to be given to the .exe. Any extension supplied will be replaced by <code>.exe</code>. If no path is specified, the .exe will be created in the script folder. If no name is specified, the .exe will have the default name. Any use of built-in variable replacements must only be from <a href="#group1">group 1</a> above. (This parameter can be overridden by the <a href="#ExeName">ExeName</a> directive.)</dd>
   <dt>Codepage</dt>
-  <dd><i>(Optional)</i> Overrides the default <a href="https://learn.microsoft.com/windows/desktop/Intl/code-page-identifiers">codepage</a>
+  <dd><i>(Optional)</i> Overrides the default <a href="https://learn.microsoft.com/windows/win32/intl/code-page-identifiers">codepage</a>
   used to process script files. (Scripts should begin with a Unicode byte-order-mark (BOM), rendering the use of this parameter unnecessary.)</dd>
 </dl>
 
@@ -234,7 +234,8 @@ MsgBox This message appears in both the compiled and uncompiled script
 
 <h3 id="PostExec">PostExec</h3>
 <p>Specifies a program to be executed after a successful compilation, before (or after) any <a href="../Scripts.html#mpress">Compression</a> is applied to the .exe. This directive can be present many times and will be executed in the order encountered by the compiler, in the appropriate queue as specified by the <em>When</em> parameter.</p>
-<pre class="Syntax"><span class="func">;@Ahk2Exe-PostExec</span> Program [parameters] <span class="optional">, When, WorkingDir, Hidden, IgnoreErrors</span></pre>
+<pre class="Syntax">
+<span class="func">;@Ahk2Exe-PostExec</span> Program [parameters] <span class="optional">, When, WorkingDir, Hidden, IgnoreErrors</span></pre>
 <dl>
   <dt>Program [parameters]</dt>
   <dd>The program to execute, plus parameters. To allow access to the processed .exe file, specify the special variable <a href="#WorkFileName">A_WorkFileName</a> as a quoted parameter, such as <code>"%A_WorkFileName%"</code>. If the program changes the .exe, the altered .exe must be moved back to the input file specified by <code>%A_WorkFileName%</code>, by the program. (Note that the .exe will contain binary data.)</dd>
@@ -386,9 +387,9 @@ MsgBox This message appears in both the compiled and uncompiled script
   <dd>The <a href="Languages.html">language code</a>. Please note that hexadecimal numbers must have an <code>0x</code> prefix. The default resource language is US English (0x0409).</dd>
 </dl>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a012fc4b362d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcee2dc9f81911","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/misc/Ahk2ExeDirectives.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:06 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/misc/Ahk2ExeDirectives.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:37 GMT -->
 </html>

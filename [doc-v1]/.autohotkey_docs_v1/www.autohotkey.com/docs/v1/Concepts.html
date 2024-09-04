@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/Concepts.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:15 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/Concepts.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:26 GMT -->
 <head>
-<title>Concepts and Conventions | AutoHotkey</title>
+<title>Concepts and Conventions | AutoHotkey v1</title>
 <meta name="description" content="Learn details about some general concepts and conventions used by AutoHotkey, with focus on explanation rather than code." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="static/theme.css" rel="stylesheet" type="text/css" />
+<link href="static/theme.css" rel="stylesheet" type="text/css" />
 <script src="static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -28,7 +28,7 @@
   </ul></li>
   <li><a href="#variables">Variables</a>
   <ul>
-    <li><a href="#uninitialised-variables">Uninitialised Variables</a></li>
+    <li><a href="#uninitialized-variables">Uninitialized Variables</a></li>
     <li><a href="#built-in-variables">Built-in Variables</a></li>
     <li><a href="#environment-variables">Environment Variables</a></li>
     <li><a href="#caching">Caching</a></li>
@@ -141,16 +141,16 @@ myObj.name[arg2, ..., argN] := value
   <li>The variable itself.</li>
   <li>The variable's <em>value</em>.</li>
 </ul>
-<p>Certain restrictions apply to variable names - see <a href="#names">Names</a> for details. In short, it is safest to stick to names consisting of ASCII letters (which are case insensitive), digits and underscore, and to avoid using names that start with a digit.</p>
+<p>Certain restrictions apply to variable names - see <a href="#names">Names</a> for details. In short, it is safest to stick to names consisting of ASCII letters (which are case-insensitive), digits and underscore, and to avoid using names that start with a digit.</p>
 <p>A variable name has <strong><em>scope</em></strong>, which defines where in the code that name can be used to refer to that particular variable; in other words, where the variable is <em>visible</em>. If a variable is not visible within a given scope, the same name can refer to a different variable. Both variables might exist at the same time, but only one is visible to each part of the script. <a href="Functions.html#Global">Global variables</a> are visible in the "global scope" (that is, outside of functions), but must usually be <a href="Functions.html#Global">declared</a> to make them visible inside a function. <a href="Functions.html#Local">Local variables</a> are visible only inside the function which created them.</p>
 <p>A variable can be thought of as a container or storage location for a value, so you'll often find the documentation refers to a variable's value as <em>the contents of the variable</em>. For a variable <code>x := 42</code>, we can also say that the variable x has the number 42 as its value, or that the value of x is 42.</p>
 <p>It is important to note that a variable and its value are not the same thing. For instance, we might say "<code>myArray</code> is an array", but what we really mean is that myArray is a variable containing a reference to an array. We're taking a shortcut by using the name of the variable to refer to its value, but "myArray" is really just the name of the variable; the array object doesn't know that it has a name, and could be referred to by many different variables (and therefore many names).</p>
 
-<h3 id="uninitialised-variables">Uninitialised Variables</h3>
-<p>To <em>initialise</em> a variable is to assign it a starting value. Although the program automatically initialises all variables (an empty string being the default value), it is good practice for a script to always initialise its variables before use. That way, anyone reading the script can see what variables the script will be using and what starting values they are expected to have.</p>
-<p>It is usually necessary for the script to initialise any variable which is expected to hold a number. For example, <code>x := x + 1</code> will not work if x has never been assigned a value, since the <em>empty string</em> is considered to be non-numeric. The script should have assigned a starting value, such as <code>x := 0</code>. There are some cases where empty values <em>are</em> assumed to be 0, but it is best not to rely on this.</p>
+<h3 id="uninitialized-variables"><span id="uninitialised-variables"></span>Uninitialized Variables</h3>
+<p>To <em>initialize</em> a variable is to assign it a starting value. Although the program automatically initializes all variables (an empty string being the default value), it is good practice for a script to always initialize its variables before use. That way, anyone reading the script can see what variables the script will be using and what starting values they are expected to have.</p>
+<p>It is usually necessary for the script to initialize any variable which is expected to hold a number. For example, <code>x := x + 1</code> will not work if x has never been assigned a value, since the <em>empty string</em> is considered to be non-numeric. The script should have assigned a starting value, such as <code>x := 0</code>. There are some cases where empty values <em>are</em> assumed to be 0, but it is best not to rely on this.</p>
 <p><a href="lib/IsSet.html">IsSet</a> can be used to determine whether a variable has been initialized, such as to initialize a global or static variable on first use.</p>
-<p>Script authors can use the <a href="lib/_Warn.html">#Warn</a> directive to help find instances where a variable is used without having been initialised by the script.</p>
+<p>Script authors can use the <a href="lib/_Warn.html">#Warn</a> directive to help find instances where a variable is used without having been initialized by the script.</p>
 
 <h3 id="built-in-variables">Built-in Variables</h3>
 <p>A number of useful variables are built into the program and can be referenced by any script. With the exception of <a href="misc/Clipboard.html">Clipboard</a>, <a href="misc/ErrorLevel.html">ErrorLevel</a>, and <a href="Scripts.html#cmd">command line parameters</a>, these variables are read-only; that is, their contents cannot be directly altered by the script. By convention, most of these variables start with the prefix <code>A_</code>, so it is best to avoid using this prefix for your own variables.</p>
@@ -193,12 +193,12 @@ myObj.name[arg2, ..., argN] := value
   <dt id="parameters">Parameters</dt>
   <dd><p>Usually a command or function accepts <em>parameters</em> which tell it how to operate or what to operate on. Each parameter is a <a href="#values">value</a>, such as a string or number. For example, <a href="lib/WinMove.html">WinMove</a> moves a window, so its parameters tell it which window to move and where to move it to. Parameters can also be called <em>arguments</em>. Common abbreviations include <em>param</em> and <em>arg</em>.</p></dd>
   <dt id="pass-parameters">Pass parameters</dt>
-  <dd><p>Parameters are <em>passed</em> to a function or command, meaning that a value is specified for each parameter of the function or command when it is called. For example, one can <em>pass</em> the name of a key to <a href="lib/GetKeyState.html#function">GetKeyState()</a> to determine whether that key is being held down.</p></dd>
+  <dd><p>Parameters are <em>passed</em> to a function or command, meaning that a value is specified for each parameter of the function or command when it is called. For example, one can <em>pass</em> the name of a key to <a href="lib/GetKeyState.html">GetKeyState</a> to determine whether that key is being held down.</p></dd>
   <dt id="return-a-value">Return a value</dt>
   <dd><p>Functions <em>return</em> a value, so the result of the function is often called a <em>return value</em>. For example, <a href="lib/StrLen.html">StrLen()</a> returns the number of characters in a string. Commands do not return a result directly; instead, they store the result in a <a href="#variables">variable</a>. Functions may also do this, such as when there is more than one result.</p></dd>
 </dl>
 <p>Functions and commands usually expect parameters to be written in a specific order, so the meaning of each parameter value depends on its position in the comma-delimited list of parameters. Some parameters can be omitted, in which case the parameter can be left blank, but the comma following it can only be omitted if all remaining parameters are also omitted. For example, the syntax for <a href="lib/ControlSend.html">ControlSend</a> is:</p>
-<pre class="Syntax"><span class="func">ControlSend</span> <span class="optional">, Control, Keys, WinTitle, WinText, ExcludeTitle, ExcludeText</span></pre>
+<pre class="Syntax"><span class="func">ControlSend</span>, Control, Keys <span class="optional">, WinTitle, WinText, ExcludeTitle, ExcludeText</span></pre>
 <p>Square brackets signify that the enclosed parameters are optional (the brackets themselves should not appear in the actual code). However, ControlSend isn't useful unless <em>Keys</em> are specified, and usually one must also specify the target window. For example:</p>
 <pre>ControlSend, Edit1, ^{Home}, A  <em>; Correct. Control is specified.</em>
 ControlSend, ^{Home}, A         <em>; Incorrect: Parameters are mismatched.</em>
@@ -317,7 +317,7 @@ MsgBox % 0.1 + 0.2 = 0.3   <em>; 0 (not equal)</em>
 <p>Due to style conventions, it is generally better to name your variables using only letters, numbers, and the underscore character (for example: <em>CursorPosition</em>, <em>Total_Items</em>, and <em>entry_is_valid</em>). This style allows people familiar with other computer languages to understand your scripts more easily.</p>
 <p>Although a <a href="#variables">variable</a> name may consist entirely of digits, this is generally used only for <a href="Scripts.html#cmd_args_old">incoming command line parameters</a>. Such numeric names cannot be used in expressions because they would be seen as numbers rather than variables. It is best to avoid starting a name with a digit, as such names are confusing and will be considered invalid in AutoHotkey v2.</p>
 <p>As the following characters may be reserved for other purposes in AutoHotkey v2, it is recommended to avoid using them: # @ $</p>
-<p>Property names in classes have the same rules and restrictions as variable names, except that the three characters listed above (# @ $) are not allowed. Although they can be used in a method definition, calling such a method requires using square brackets. For example, <code><a href="https://www.autohotkey.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="593420163b333c3a2d77193136343c">[email&#160;protected]</a>()</code> is not valid, but <code>myObject["@home"]()</code> is acceptable.</p>
+<p>Property names in classes have the same rules and restrictions as variable names, except that the three characters listed above (# @ $) are not allowed. Although they can be used in a method definition, calling such a method requires using square brackets. For example, <code>myObject.@home()</code> is not valid, but <code>myObject["@home"]()</code> is acceptable.</p>
 
 <h3 id="variable-references">Variable References vs Values</h3>
 <p>Variables have certain attributes that blur the line between a variable and its value, but it is important to make the distinction. In particular, consider <a href="#objects">objects</a> and ByRef parameters.</p>
@@ -334,8 +334,8 @@ ref2 := ""        <em>; Release the second reference; object is deleted</em>
 </pre>
 <p>If that's difficult to understand, try thinking of an object as a rental unit. When you rent a unit, you're given a key which you can use to access the unit. You can get more keys and use them to access the same unit, but when you're finished with the unit, you must hand all keys back to the rental agent. Usually a unit wouldn't be <em>deleted</em>, but maybe the agent will have any junk you left behind removed; just as any values you stored in an object are freed when the object is deleted.</p>
 
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a012557f742d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdced61ead92bdc","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/Concepts.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:18 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/Concepts.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:27 GMT -->
 </html>

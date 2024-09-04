@@ -1,25 +1,27 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Catch.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:05 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Catch.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:19 GMT -->
 <head>
-<title>Catch - Syntax &amp; Usage | AutoHotkey</title>
-<meta name="description" content="The Catch statement specifies the code to execute if an exception is raised during execution of a Try statement." />
+<title>Catch - Syntax &amp; Usage | AutoHotkey v1</title>
+<meta name="description" content="The Catch statement specifies one or more statements to execute if an exception is raised during execution of a Try statement." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
 
 <h1>Catch <span class="ver">[v1.1.04+]</span></h1>
 
-<p>Specifies the code to execute if an exception is raised during execution of a <a href="Try.html">try</a> statement.</p>
+<p>Specifies one or more <a href="../Concepts.html#statement">statements</a> to execute if an exception is raised during execution of a <a href="Try.html">Try</a> statement.</p>
 
-<pre class="Syntax" style="line-height: 120%"><span class="func">Catch</span> <span class="optional">, OutputVar</span>
+<pre class="Syntax" style="line-height: 120%">
+<span class="func">Catch</span> <span class="optional">, OutputVar</span>
     <i>Statement</i>
 </pre>
-<pre class="Syntax" style="line-height: 100%"><span class="func">Catch</span> <span class="optional">, OutputVar</span>
+<pre class="Syntax" style="line-height: 100%">
+<span class="func">Catch</span> <span class="optional">, OutputVar</span>
 {
     <i>Statements</i>
 }
@@ -36,7 +38,7 @@
 </dl>
 
 <h2 id="Remarks">Remarks</h2>
-<p>Every use of <em>catch</em> must belong to (be associated with) a <a href="Try.html">try</a> statement above it. A <em>catch</em> always belongs to the nearest unclaimed <em>try</em> statement above it unless a <a href="Block.html">block</a> is used to change that behavior.</p>
+<p>Every use of <em>Catch</em> must belong to (be associated with) a <a href="Try.html">Try</a> statement above it. A <em>Catch</em> always belongs to the nearest unclaimed <em>Try</em> statement above it unless a <a href="Block.html">block</a> is used to change that behavior.</p>
 <p>The <a href="Block.html#otb">One True Brace (OTB) style</a> may optionally be used. For example:</p>
 <pre>try {
     ...
@@ -45,7 +47,7 @@
 }</pre>
 
 <h2 id="RuntimeErrors">Runtime Errors</h2>
-<p>A <em>try-catch</em> statement can also be used to handle runtime errors. There are two kinds of runtime errors: those which normally set <a href="../misc/ErrorLevel.html">ErrorLevel</a>, and those which normally cause the current thread to exit after displaying an error message. Loadtime errors cannot be handled, since they occur before the <em>try</em> statement is executed. For backward-compatibility (and in some cases convenience), runtime errors only throw exceptions while a <em>try</em> block is executing. Most commands support the use of <em>try-catch</em>; however, <a href="../misc/ErrorLevel.html">ErrorLevel</a> is still set to 0 if the command succeeds.</p>
+<p>A <em>Try-Catch</em> statement can also be used to handle runtime errors. There are two kinds of runtime errors: those which normally set <a href="../misc/ErrorLevel.html">ErrorLevel</a>, and those which normally cause the current thread to exit after displaying an error message. Loadtime errors cannot be handled, since they occur before the <em>Try</em> statement is executed. For backward-compatibility (and in some cases convenience), runtime errors only throw exceptions while a <em>Try</em> block is executing. Most commands support the use of <em>Try-Catch</em>; however, <a href="../misc/ErrorLevel.html">ErrorLevel</a> is still set to 0 if the command succeeds.</p>
 <p>The value that is stored in <em>OutputVar</em> (if present) is an <a href="Throw.html#Exception">exception object</a>.</p>
 
 <h2 id="Related">Related</h2>
@@ -54,8 +56,8 @@
 <h2 id="Examples">Examples</h2>
 <p>See <a href="Try.html#Examples">Try</a>.</p>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a012ccfd8077b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcedfc18f52bdc","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Catch.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:05 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Catch.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:19 GMT -->
 </html>

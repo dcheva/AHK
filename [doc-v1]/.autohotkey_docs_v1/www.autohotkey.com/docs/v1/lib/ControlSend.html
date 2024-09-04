@@ -1,46 +1,42 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ControlSend.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:13 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ControlSend.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:26:32 GMT -->
 <head>
-<title>ControlSend[Raw] - Syntax &amp; Usage | AutoHotkey</title>
+<title>ControlSend / ControlSendRaw - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The ControlSend and ControlSendRaw commands send simulated keystrokes to a window or control." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
 
-<h1>ControlSend[Raw]</h1>
+<h1>ControlSend / ControlSendRaw</h1>
 
 <p>Sends simulated keystrokes to a window or control.</p>
 
-<pre class="Syntax"><span class="func">ControlSend</span> <span class="optional">, Control, Keys, WinTitle, WinText, ExcludeTitle, ExcludeText</span>
-ControlSendRaw: Same parameters as above.
+<pre class="Syntax">
+<span class="func">ControlSend</span>, Control, Keys <span class="optional">, WinTitle, WinText, ExcludeTitle, ExcludeText</span>
+<span class="func">ControlSendRaw</span>, Control, Keys <span class="optional">, WinTitle, WinText, ExcludeTitle, ExcludeText</span>
 </pre>
 <h2 id="Parameters">Parameters</h2>
 <dl>
 
   <dt>Control</dt>
-  <dd><p>Can be either ClassNN (the classname and instance number of the control) or the control's text, both of which can be determined via Window Spy. When using text, the matching behavior is determined by <a href="SetTitleMatchMode.html">SetTitleMatchMode</a>. If this parameter is blank or omitted, the target window's topmost control will be used. If this parameter is <code>ahk_parent</code>, the keystrokes will be sent directly to the target window instead of one of its controls (see <a href="../misc/Winamp.html">Automating Winamp</a> for an example).</p>
+  <dd><p>If blank or omitted, the target window's topmost control will be used. Otherwise, specify either ClassNN (the classname and instance number of the control) or the control's text, both of which can be determined via Window Spy. When using text, the matching behavior is determined by <a href="SetTitleMatchMode.html">SetTitleMatchMode</a>. If this parameter is <code>ahk_parent</code>, the keystrokes will be sent directly to the target window instead of one of its controls (see <a href="../misc/Winamp.html">Automating Winamp</a> for an example).</p>
     <p>To operate upon a control's HWND (window handle), leave the <em>Control</em> parameter blank and specify <code>ahk_id %ControlHwnd%</code> for the <em>WinTitle</em> parameter (this also works on hidden controls even when <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> is Off). The HWND of a control is typically retrieved via <a href="ControlGet.html#Hwnd">ControlGet Hwnd</a>, <a href="MouseGetPos.html">MouseGetPos</a>, or <a href="DllCall.html">DllCall()</a>.</p></dd>
 
   <dt>Keys</dt>
-  <dd><p>The sequence of keys to send (see the <a href="Send.html">Send</a> command for details). To send a literal comma, <a href="../misc/EscapeChar.html">escape</a> it (`,). The rate at which characters are sent is determined by <a href="SetKeyDelay.html">SetKeyDelay</a>.</p>
+  <dd><p>The sequence of keys to send (see the <a href="Send.html">Send</a> command for details). To send a literal comma, <a href="../misc/EscapeChar.html">escape</a> it (<code>`,</code>). The rate at which characters are sent is determined by <a href="SetKeyDelay.html">SetKeyDelay</a>.</p>
     <p>Unlike the <a href="Send.html">Send</a> command, mouse clicks cannot be sent by ControlSend. Use <a href="ControlClick.html">ControlClick</a> for that.</p></dd>
 
-  <dt>WinTitle</dt>
-  <dd><p>A window title or other criteria identifying the target window. See <a href="../misc/WinTitle.html">WinTitle</a>.</p></dd>
-
-  <dt>WinText</dt>
-  <dd><p>If present, this parameter must be a substring from a single text element of the target window (as revealed by the included Window Spy utility). Hidden text elements are detected if <a href="DetectHiddenText.html">DetectHiddenText</a> is ON.</p></dd>
-
-  <dt>ExcludeTitle</dt>
-  <dd><p>Windows whose titles include this value will not be considered.</p></dd>
-
-  <dt>ExcludeText</dt>
-  <dd><p>Windows whose text include this value will not be considered.</p></dd>
+  <dt>WinTitle, WinText, ExcludeTitle, ExcludeText</dt>
+  <dd>
+    <p>If each of these is blank or omitted, the <a href="../misc/WinTitle.html#LastFoundWindow">Last Found Window</a> will be used. Otherwise, specify for <em>WinTitle</em> a <a href="../misc/WinTitle.html">window title or other criteria</a> to identify the target window and/or for <em>WinText</em> a substring from a single text element of the target window (as revealed by the included Window Spy utility).</p>
+    <p><em>ExcludeTitle</em> and <em>ExcludeText</em> can be used to exclude one or more windows by their title or text. Their specification is similar to <em>WinTitle</em> and <em>WinText</em>, except that <em>ExcludeTitle</em> does not recognize any criteria other than the window title.</p>
+    <p>Window titles and text are case-sensitive. By default, hidden windows are not detected and hidden text elements are detected, unless changed with <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> and <a href="DetectHiddenText.html">DetectHiddenText</a>. By default, a window title must start with the specified <em>WinTitle</em> or <em>ExcludeTitle</em> to be a match, unless changed with <a href="SetTitleMatchMode.html">SetTitleMatchMode</a>.</p>
+  </dd>
 
 </dl>
 
@@ -48,7 +44,7 @@ ControlSendRaw: Same parameters as above.
 <p><span class="ver">[v1.1.04+]</span>: This command is able to throw an exception on failure. For more information, see <a href="Catch.html#RuntimeErrors">Runtime Errors</a>.</p>
 <p><a href="../misc/ErrorLevel.html">ErrorLevel</a> is set to 1 if there was a problem or 0 otherwise.</p>
 <h2 id="Remarks">Remarks</h2>
-<p>ControlSendRaw sends the keystrokes in the <em>Keys</em> parameter without translating <code>{Enter}</code> to <kbd>Enter</kbd>, <code>^c</code> to <kbd>Ctrl</kbd>+<kbd>C</kbd>, etc. For details, see <a href="Send.html#SendRaw">Raw mode</a>. It is also valid to use <a href="Send.html#Raw">{Raw}</a> or <a href="Send.html#Text">{Text}</a> with ControlSend. <span class="ver">[v1.1.27+]:</span> <a href="Send.html#SendText">Text mode</a> may be more reliable for sending text.</p>
+<p>ControlSendRaw sends the keystrokes in the <em>Keys</em> parameter without translating <code>{Enter}</code> to <kbd>Enter</kbd>, <code>^c</code> to <kbd>Ctrl</kbd>+<kbd>C</kbd>, etc. For details, see <a href="Send.html#SendRaw">Raw mode</a>. It is also valid to use <a href="Send.html#Raw">{Raw}</a> or <a href="Send.html#Text">{Text}</a> with ControlSend. <span class="ver">[v1.1.27+]</span>: <a href="Send.html#SendText">Text mode</a> may be more reliable for sending text.</p>
 <p>If the <em>Control</em> parameter is omitted, this command will attempt to send directly to the target window by sending to its topmost control (which is often the correct one) or the window itself if there are no controls. This is useful if a window does not appear to have any controls at all, or just for the convenience of not having to worry about which control to send to.</p>
 <p>By default, modifier keystrokes (Ctrl, Alt, Shift, and Win) are sent as they normally would be by the Send command. This allows command prompt and other console windows to properly detect uppercase letters, control characters, etc. It may also improve reliability in other ways.</p>
 <p>However, in some cases these modifier events may interfere with the active window, especially if the user is actively typing during a ControlSend or if <kbd>Alt</kbd> is being sent (since <kbd>Alt</kbd> activates the active window's menu bar). This can be avoided by explicitly sending modifier up and down events as in this example:</p>
@@ -63,7 +59,7 @@ SetKeyDelay, -1, 0</pre>
 <pre><a href="Control.html">Control</a>, EditPaste, This text will be inserted at the caret position., ControlName, WinTitle</pre>
 <pre><a href="ControlSetText.html">ControlSetText</a>, ControlName, This text will entirely replace any current text., WinTitle</pre>
 <p>ControlSend is generally not capable of manipulating a window's menu bar. To work around this, use <a href="WinMenuSelectItem.html">WinMenuSelectItem</a>. If that is not possible due to the nature of the menu bar, you could try to discover the message that corresponds to the desired menu item by following the <a href="../misc/SendMessage.html">SendMessage Tutorial</a>.</p>
-<p>Window titles and text are case sensitive. Hidden windows are not detected unless <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> has been turned on.</p>
+
 <h2 id="Related">Related</h2>
 <p><a href="SetKeyDelay.html">SetKeyDelay</a>, <a href="../misc/EscapeChar.html">Escape sequences (e.g. `%)</a>, <a href="Control.html">Control</a>, <a href="ControlGet.html">ControlGet</a>, <a href="ControlGetText.html">ControlGetText</a>, <a href="ControlMove.html">ControlMove</a>, <a href="ControlGetPos.html">ControlGetPos</a>, <a href="ControlClick.html">ControlClick</a>, <a href="ControlSetText.html">ControlSetText</a>, <a href="ControlFocus.html">ControlFocus</a>, <a href="Send.html">Send</a>, <a href="../misc/Winamp.html">Automating Winamp</a></p>
 <h2 id="Examples">Examples</h2>
@@ -99,8 +95,8 @@ ControlSendRaw, Edit1, Notice that {Enter} is not sent as an Enter keystroke wit
 </pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a01323fb482d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcee5e3e3a1911","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ControlSend.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:13 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ControlSend.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:26:33 GMT -->
 </html>

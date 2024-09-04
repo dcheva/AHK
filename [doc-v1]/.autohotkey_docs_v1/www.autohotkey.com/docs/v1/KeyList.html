@@ -1,18 +1,18 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/KeyList.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:54 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/KeyList.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:29 GMT -->
 <head>
-<title>List of Keys (Keyboard, Mouse and Joystick) | AutoHotkey</title>
-<meta name="description" content="This page lists all mouse buttons, keyboard keys and joystick buttons which can be used for hotkeys and key-specific commands/functions." />
-<meta name="keywords" content="keyboard,keys,key,mouse,buttons,button,joystick,create,hotkeys,hotkey,macros">
+<title>List of Keys (Keyboard, Mouse and Controller) | AutoHotkey v1</title>
+<meta name="description" content="This page lists all mouse buttons, keyboard keys and controller buttons which can be used for hotkeys and key-specific commands/functions." />
+<meta name="keywords" content="keyboard,keys,key,mouse,buttons,button,controller,gamepad,joystick,create,hotkeys,hotkey,macros">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="static/theme.css" rel="stylesheet" type="text/css" />
+<link href="static/theme.css" rel="stylesheet" type="text/css" />
 <script src="static/content.js" type="text/javascript"></script>
 </head>
 <body>
-<h1>List of Keys <span class="headnote">(Keyboard, Mouse and Joystick)</span></h1>
+<h1>List of Keys <span class="headnote">(Keyboard, Mouse and Controller)</span></h1>
 <h2 id="toc">Table of Contents</h2>
 <ul>
   <li><a href="#mouse">Mouse</a>
@@ -33,7 +33,7 @@
       <li><a href="#other">Other Keys</a></li>
     </ul>
   </li>
-  <li><a href="#Joystick">Joystick</a></li>
+  <li><a href="#Controller">Game Controller (Gamepad, Joystick, etc.)</a></li>
   <li><a href="#remote">Hand-held Remote Controls</a></li>
   <li><a href="#SpecialKeys">Special Keys</a></li>
   <li><a href="#IME">CapsLock and IME</a></li>
@@ -90,13 +90,13 @@
   </tr>
   <tr>
     <td>WheelLeft<br>WheelRight</td>
-    <td><p><span class="ver">[v1.0.48+]:</span> Scroll to the left or right.</p>
+    <td><p><span class="ver">[v1.0.48+]</span>: Scroll to the left or right.</p>
     <p>Requires Windows Vista or later. These can be <a href="Hotkeys.html#HWheel">used as hotkeys</a> with some (but not all) mice which have a second wheel or support tilting the wheel to either side. In some cases, software bundled with the mouse must instead be used to control this feature. Regardless of the particular mouse, <a href="lib/Send.html">Send</a> and <a href="lib/Click.html">Click</a> can be used to scroll horizontally in programs which support it.</p></td>
   </tr>
 </table>
 <h2 id="keyboard">Keyboard</h2>
-<p class="note"><strong>Note</strong>: The names of the letter and number keys are the same as that single letter or digit. For example: b is <kbd>B</kbd> and 5 is <kbd>5</kbd>.</p>
-<p>Although any single character can be used as a key name, its meaning (scan code or virtual keycode) depends on the current keyboard layout. Additionally, some special characters may need to be escaped or enclosed in braces, depending on the context. <span class="ver">[v1.1.27+]:</span> The letters a-z or A-Z can be used to refer to the corresponding virtual keycodes (usually vk41-vk5A) even if they are not included in the current keyboard layout.</p>
+<p class="note"><strong>Note:</strong> The names of the letter and number keys are the same as that single letter or digit. For example: b is <kbd>B</kbd> and 5 is <kbd>5</kbd>.</p>
+<p>Although any single character can be used as a key name, its meaning (scan code or virtual keycode) depends on the current keyboard layout. Additionally, some special characters may need to be escaped or enclosed in braces, depending on the context. <span class="ver">[v1.1.27+]</span>: The letters a-z or A-Z can be used to refer to the corresponding virtual keycodes (usually vk41-vk5A) even if they are not included in the current keyboard layout.</p>
 <h3 id="general">General Keys</h3>
 <table class="info">
   <tr>
@@ -227,7 +227,7 @@
   </tr>
   <tr>
     <td>NumLock</td>
-    <td><kbd>NumLock</kbd> (number lock key). While <kbd>Ctrl</kbd> is held down, <kbd>NumLock</kbd> produces the key code of <code>Pause</code>, so use <code>^Pause</code> in hotkeys instead of <code>^NumLock</code>.</td>
+    <td><kbd>NumLock</kbd> (number lock key). While <kbd>Ctrl</kbd> is held down, <kbd>NumLock</kbd> produces the key code of <code class="no-highlight">Pause</code>, so use <code class="no-highlight">^Pause</code> in hotkeys instead of <code>^NumLock</code>.</td>
   </tr>
   <tr>
     <td>NumpadDiv</td>
@@ -275,7 +275,7 @@
     <td>RWin</td>
     <td>
       <p>Right <kbd>Win</kbd>. Corresponds to the <code>&gt;#</code> hotkey prefix.</p>
-      <p class="note"><strong>Note</strong>: Unlike <kbd>Ctrl</kbd>/<kbd>Alt</kbd>/<kbd>Shift</kbd>, there is no generic/neutral "Win" key because the OS does not support it. However, hotkeys with the <code>#</code> modifier can be triggered by either <kbd>Win</kbd>.</p>
+      <p class="note"><strong>Note:</strong> Unlike <kbd>Ctrl</kbd>/<kbd>Alt</kbd>/<kbd>Shift</kbd>, there is no generic/neutral "Win" key because the OS does not support it. However, hotkeys with the <code>#</code> modifier can be triggered by either <kbd>Win</kbd>.</p>
     </td>
   </tr>
   <tr>
@@ -314,7 +314,7 @@
     <td>RAlt</td>
     <td>
       <p>Right <kbd>Alt</kbd>. Corresponds to the <code>&gt;!</code> hotkey prefix.</p>
-      <p class="note"><strong>Note</strong>: If your keyboard layout has AltGr instead of RAlt, you can probably use it as a hotkey prefix via <code>&lt;^&gt;!</code> as described <a href="Hotkeys.html#AltGr">here</a>. In addition, <code>LControl &amp; RAlt::</code> would make AltGr itself into a hotkey.</p>
+      <p class="note"><strong>Note:</strong> If your keyboard layout has AltGr instead of RAlt, you can probably use it as a hotkey prefix via <code>&lt;^&gt;!</code> as described <a href="Hotkeys.html#AltGr">here</a>. In addition, <code>LControl &amp; RAlt::</code> would make AltGr itself into a hotkey.</p>
     </td>
   </tr>
 </table>
@@ -391,7 +391,7 @@
   </tr>
   <tr>
     <td>Launch_App1</td>
-    <td>Launch My Computer</td>
+    <td>Launch This PC (formerly My Computer or Computer)</td>
   </tr>
   <tr>
     <td>Launch_App2</td>
@@ -418,11 +418,11 @@
   </tr>
   <tr>
     <td>Pause</td>
-    <td><kbd>Pause</kbd> or <kbd>Ctrl</kbd>+<kbd>NumLock</kbd>. While <kbd>Ctrl</kbd> is held down, <kbd>Pause</kbd> produces the key code of <code>CtrlBreak</code> and <kbd>NumLock</kbd> produces <code>Pause</code>, so use <code>^CtrlBreak</code> in hotkeys instead of <code>^Pause</code>.</td>
+    <td><kbd>Pause</kbd> or <kbd>Ctrl</kbd>+<kbd>NumLock</kbd>. While <kbd>Ctrl</kbd> is held down, <kbd>Pause</kbd> produces the key code of <code>CtrlBreak</code> and <kbd>NumLock</kbd> produces <code class="no-highlight">Pause</code>, so use <code>^CtrlBreak</code> in hotkeys instead of <code class="no-highlight">^Pause</code>.</td>
   </tr>
   <tr>
     <td>Break</td>
-    <td><strong>Deprecated:</strong> Use the synonym <code>Pause</code> instead.</td>
+    <td><strong>Deprecated:</strong> Use the synonym <code class="no-highlight">Pause</code> instead.</td>
   </tr>
   <tr>
     <td>Help</td>
@@ -442,29 +442,32 @@
       <pre>^VK24::MsgBox You pressed Home or NumpadHome while holding down Control.
 </pre>
       <p><strong>Known limitation:</strong> VK hotkeys that are forced to use the <a href="lib/_InstallKeybdHook.html">keyboard hook</a>, such as <code>*VK24</code> or <code>~VK24</code>, will fire for only one of the keys, not both (e.g. NumpadHome but not <kbd>Home</kbd>). For more information about the VKnn method, see <a href="#SpecialKeys">Special Keys</a>.</p>
-      <p class="warning"><strong>Warning:</strong> Only <a href="lib/Send.html">Send</a>, <a href="lib/GetKey.html">GetKeyName()</a>, <a href="lib/GetKey.html">GetKeyVK()</a>, <a href="lib/GetKey.html">GetKeySC()</a> and <a href="lib/_MenuMaskKey.html">#MenuMaskKey</a> support combining VKnn and SCnnn. <span class="ver">[v1.1.27+]:</span> The presence of an invalid suffix prevents VKnn from being recognized. For example, <code>vk1Bsc001::</code> raises an error in v1.1.27+, but <code>sc001</code> was ignored (had no effect) in previous versions.</p>
+      <p class="warning"><strong>Warning:</strong> Only <a href="lib/Send.html">Send</a>, <a href="lib/GetKey.html">GetKeyName()</a>, <a href="lib/GetKey.html">GetKeyVK()</a>, <a href="lib/GetKey.html">GetKeySC()</a> and <a href="lib/_MenuMaskKey.html">#MenuMaskKey</a> support combining VKnn and SCnnn. <span class="ver">[v1.1.27+]</span>: The presence of an invalid suffix prevents VKnn from being recognized. For example, <code>vk1Bsc001::</code> raises an error in v1.1.27+, but <code>sc001</code> was ignored (had no effect) in previous versions.</p>
       </td>
   </tr>
 </table>
-<h2 id="Joystick">Joystick</h2>
-<p><strong>Joy1 through Joy32</strong>: The buttons of the joystick. To help determine the button numbers for your joystick, use this <a href="scripts/index.html#JoystickTest">test script</a>. Note that <a href="Hotkeys.html">hotkey prefix symbols</a> such as ^ (control) and + (shift) are not supported (though <a href="lib/GetKeyState.html#function">GetKeyState()</a> can be used as a substitute). Also note that the pressing of joystick buttons always "passes through" to the active window if that window is designed to detect the pressing of joystick buttons.</p>
-<p>Although the following Joystick control names cannot be used as hotkeys, they can be used with <a href="lib/GetKeyState.html#function">GetKeyState()</a>:</p>
+<a id="Joystick"></a>
+<h2 id="Controller">Game Controller (Gamepad, Joystick, etc.)</h2>
+<p class="note"><strong>Note:</strong> For historical reasons, the following button and control names begin with <code>Joy</code>, which stands for joystick. However, they usually also work for other game controllers such as gamepads or steering wheels.</p>
+<p><strong>Joy1 through Joy32:</strong> The buttons of the controller. To help determine the button numbers for your controller, use this <a href="scripts/index.html#ControllerTest">test script</a>. Note that <a href="Hotkeys.html">hotkey prefix symbols</a> such as ^ (control) and + (shift) are not supported (though <a href="lib/GetKeyState.html">GetKeyState</a> can be used as a substitute). Also note that the pressing of controller buttons always "passes through" to the active window if that window is designed to detect the pressing of controller buttons.</p>
+<p>Although the following control names cannot be used as hotkeys, they can be used with <a href="lib/GetKeyState.html">GetKeyState</a>:</p>
 <ul>
-  <li><strong>JoyX, JoyY, and JoyZ</strong>: The X (horizontal), Y (vertical), and Z (altitude/depth) axes of the joystick.</li>
-  <li><strong>JoyR</strong>: The rudder or 4th axis of the joystick.</li>
-  <li><strong>JoyU and JoyV</strong>: The 5th and 6th axes of the joystick.</li>
-  <li><strong>JoyPOV</strong>: The point-of-view (hat) control.</li>
-  <li><strong>JoyName</strong>: The name of the joystick or its driver.</li>
-  <li><strong>JoyButtons</strong>: The number of buttons supported by the joystick (not always accurate).</li>
-  <li><strong>JoyAxes</strong>: The number of axes supported by the joystick.</li>
-  <li><strong>JoyInfo</strong>: Provides a string consisting of zero or more of the following letters to indicate the joystick's capabilities: <strong>Z</strong> (has Z axis), <strong>R</strong> (has R axis), <strong>U</strong> (has U axis), <strong>V</strong> (has V axis), <strong>P</strong> (has POV control), <strong>D</strong> (the POV control has a limited number of discrete/distinct settings), <strong>C</strong> (the POV control is continuous/fine). Example string: ZRUVPD</li>
+  <li><strong>JoyX, JoyY, and JoyZ:</strong> The X (horizontal), Y (vertical), and Z (altitude/depth) axes of the stick.</li>
+  <li><strong>JoyR:</strong> The rudder or 4th axis of the stick.</li>
+  <li><strong>JoyU and JoyV:</strong> The 5th and 6th axes of the stick.</li>
+  <li><strong>JoyPOV:</strong> The point-of-view (hat) control.</li>
+  <li><strong>JoyName:</strong> The name of the controller or its driver.</li>
+  <li><strong>JoyButtons:</strong> The number of buttons supported by the controller (not always accurate).</li>
+  <li><strong>JoyAxes:</strong> The number of axes supported by the controller.</li>
+  <li><strong>JoyInfo:</strong> Provides a string consisting of zero or more of the following letters to indicate the controller's capabilities: <strong>Z</strong> (has Z axis), <strong>R</strong> (has R axis), <strong>U</strong> (has U axis), <strong>V</strong> (has V axis), <strong>P</strong> (has POV control), <strong>D</strong> (the POV control has a limited number of discrete/distinct settings), <strong>C</strong> (the POV control is continuous/fine). Example string: ZRUVPD</li>
 </ul>
-<p><strong>Multiple Joysticks</strong>: If the computer has more than one joystick and you want to use one beyond the first, include the joystick number (max 16) in front of the control name. For example, 2joy1 is the second joystick's first button.</p>
-<p class="note"><strong>Note</strong>: If you have trouble getting a script to recognize your joystick, one person reported needing to specify a joystick number other than 1 even though  only a single joystick was present. It is unclear how this situation arises or whether it is normal, but experimenting with the joystick number in the <a href="scripts/index.html#JoystickTest">joystick test script</a> can help determine if this applies to your system.</p>
-<p><strong>See Also</strong>:</p>
+<p>For example, when using Xbox Wireless/360 controllers, JoyX/JoyY is the left stick, JoyR/JoyU the right stick, JoyZ the left and right triggers, and JoyPOV the directional pad (D-pad).</p>
+<p><strong>Multiple controllers:</strong> If the computer has more than one controller and you want to use one beyond the first, include the controller number (max 16) in front of the control name. For example, 2joy1 is the second controller's first button.</p>
+<p class="note"><strong>Note:</strong> If you have trouble getting a script to recognize your controller, specify a controller number other than 1 even though only a single controller is present. It is unclear how this situation arises or whether it is normal, but experimenting with the controller number in the <a href="scripts/index.html#ControllerTest">controller test script</a> can help determine if this applies to your system.</p>
+<p><strong>See Also:</strong></p>
 <ul>
-  <li><a href="misc/RemapJoystick.html">Joystick remapping:</a> Methods of sending keystrokes and mouse clicks with a joystick.</li>
-  <li><a href="scripts/index.html#JoystickMouse">Joystick-To-Mouse script</a>: Using a joystick as a mouse.</li>
+  <li><a href="misc/RemapController.html">Controller remapping</a>: Methods of sending keystrokes and mouse clicks with a controller.</li>
+  <li><a href="scripts/index.html#ControllerMouse">Controller-To-Mouse script</a>: Using a controller as a mouse.</li>
 </ul>
 
 <h2 id="remote">Hand-held Remote Controls</h2>
@@ -472,8 +475,8 @@
 <h2 id="SpecialKeys">Special Keys</h2>
 <p>If your keyboard or mouse has a key not listed above, you might still be able to make it a hotkey by using the following steps:</p>
 <ol>
-  <li>Ensure that at least one script is running that is using the <a href="lib/_InstallKeybdHook.html">keyboard hook</a>. You can tell if a script has the keyboard hook by opening its main window and selecting "View-&gt;<a href="lib/KeyHistory.html">Key history</a>" from the menu bar.</li>
-  <li>Double-click that script's tray icon to open its main window.</li>
+  <li>Ensure that at least one script is running that is using the <a href="lib/_InstallKeybdHook.html">keyboard hook</a>. You can tell if a script has the keyboard hook by opening its <a href="Program.html#main-window">main window</a> and selecting "View-&gt;<a href="lib/KeyHistory.html">Key history</a>" from the menu bar.</li>
+  <li>Double-click that script's <a href="Program.html#tray-icon">tray icon</a> to open its <a href="Program.html#main-window">main window</a>.</li>
   <li>Press one of the "mystery keys" on your keyboard.</li>
   <li>Select the menu item "View-&gt;<a href="lib/KeyHistory.html">Key history</a>"</li>
   <li>Scroll down to the bottom of the page. Somewhere near the bottom are the key-down and key-up events for your key. NOTE: Some keys do not generate events and thus will not be visible here. If this is the case, you cannot directly make that particular key a hotkey because your keyboard driver or hardware handles it at a level too low for AutoHotkey to access. For possible solutions, see further below.</li>
@@ -483,11 +486,11 @@
 MsgBox, %A_ThisHotkey% was pressed.
 return</pre></li>
 </ol>
-<p><strong>Reverse direction</strong>: To remap some other key to <em>become</em> a "mystery key", follow this example:</p>
+<p><strong>Reverse direction:</strong> To remap some other key to <em>become</em> a "mystery key", follow this example:</p>
 <pre><em>; Replace 159 with the value discovered above. Replace FF (if needed) with the
 ; key's virtual key, which can be discovered in the first column of the Key History screen.</em>
 #c::Send {vkFFsc159} <em>; See <a href="lib/Send.html#vk">Send {vkXXscYYY}</a> for more details.</em></pre>
-<p><strong>Alternate solutions</strong>: If your key or mouse button is not detectable by the <a href="lib/KeyHistory.html">Key History</a> screen, one of the following might help:</p>
+<p><strong>Alternate solutions:</strong> If your key or mouse button is not detectable by the <a href="lib/KeyHistory.html">Key History</a> screen, one of the following might help:</p>
 <ol>
   <li>
     <p>Reconfigure the software that came with your mouse or keyboard (sometimes accessible in the Control Panel or Start Menu) to have the "mystery key" send some other keystroke. Such a keystroke can then be defined as a hotkey in a script. For example, if you configure a mystery key to send <kbd>Ctrl</kbd>+<kbd>F1</kbd>, you can then indirectly make that key as a hotkey by using <code>^F1::</code> in a script.</p>
@@ -503,7 +506,8 @@ return</pre></li>
 
 <h2 id="IME">CapsLock and IME</h2>
 <p>Some configurations of Windows IME (such as Japanese input with English keyboard) use CapsLock to toggle between modes. In such cases, CapsLock is suppressed by the IME and cannot be detected by AutoHotkey. However, the <kbd>Alt</kbd>+<kbd>CapsLock</kbd>, <kbd>Ctrl</kbd>+<kbd>CapsLock</kbd> and <kbd>Shift</kbd>+<kbd>CapsLock</kbd> shortcuts can be disabled with a workaround. Specifically, send a key-up to modify the state of the IME, but prevent any other effects by signalling the keyboard hook to suppress the event. The following function can be used for this purpose:</p>
-<pre filename="SendSuppressedKeyUp.ahk"><em>; Requires AutoHotkey v1.1.26+, and the keyboard hook must be installed.</em>
+<pre filename="SendSuppressedKeyUp.ahk">
+<em>; Requires AutoHotkey v1.1.26+, and the keyboard hook must be installed.</em>
 #InstallKeybdHook
 SendSuppressedKeyUp(key) {
     DllCall("keybd_event"
@@ -514,7 +518,8 @@ SendSuppressedKeyUp(key) {
 }
 </pre>
 <p>After copying the function into a script or saving it as <em>SendSuppressedKeyUp.ahk</em> in a <a href="Functions.html#lib">function library</a>, it can be used as follows:</p>
-<pre><em>; Disable Alt+key shortcuts for the IME.</em>
+<pre>
+<em>; Disable Alt+key shortcuts for the IME.</em>
 ~LAlt::SendSuppressedKeyUp("LAlt")
 
 <em>; Test hotkey:</em>
@@ -530,8 +535,8 @@ SendSuppressedKeyUp(key) {
     return
 </pre>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a01262fcdd77b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdced765bd02bdc","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/KeyList.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:54 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/KeyList.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:29 GMT -->
 </html>

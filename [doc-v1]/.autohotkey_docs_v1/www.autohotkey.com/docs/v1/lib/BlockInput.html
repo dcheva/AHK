@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/BlockInput.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:13 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/BlockInput.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:53 GMT -->
 <head>
-<title>BlockInput - Syntax &amp; Usage | AutoHotkey</title>
+<title>BlockInput - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The BlockInput command disables or enables the user's ability to interact with the computer via keyboard and mouse." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -25,23 +25,23 @@
   <dt>OnOff</dt>
   <dd>
     <p>This mode blocks all user inputs unconditionally. Specify one of the following words:</p>
-    <p><strong>On</strong>: The user is prevented from interacting with the computer (mouse and keyboard input has no effect).</p>
-    <p><strong>Off</strong>: Input is re-enabled.</p>
-    <p><span class="ver">[v1.1.30+]:</span> The decimal values 1 and 0 may be used in place of On and Off, respectively.</p>
+    <p><strong>On:</strong> The user is prevented from interacting with the computer (mouse and keyboard input has no effect).</p>
+    <p><strong>Off:</strong> Input is re-enabled.</p>
+    <p><span class="ver">[v1.1.30+]</span>: The decimal values 1 and 0 may be used in place of On and Off, respectively.</p>
   </dd>
   <dt>SendMouse</dt>
   <dd>
     <p>This mode only blocks user inputs while specific send and/or mouse commands are in progress. Specify one of the following words:</p>
-    <p><strong>Send</strong>: The user's keyboard and mouse input is ignored while a <a href="Send.html">Send</a> or <a href="Send.html">SendRaw</a> is in progress (the traditional <a href="SendMode.html">SendEvent mode</a> only). This prevents the user's keystrokes from disrupting the flow of simulated keystrokes. When the Send finishes, input is re-enabled (unless still blocked by a previous use of <code>BlockInput On</code>).</p>
-    <p><strong>Mouse</strong>: The user's keyboard and mouse input is ignored while a <a href="Click.html">Click</a>, <a href="MouseMove.html">MouseMove</a>, <a href="MouseClick.html">MouseClick</a>, or <a href="MouseClickDrag.html">MouseClickDrag</a> is in progress (the traditional <a href="SendMode.html">SendEvent mode</a> only). This prevents the user's mouse movements and clicks from disrupting the simulated mouse events. When the mouse command finishes, input is re-enabled (unless still blocked by a previous use of <code>BlockInput On</code>).</p>
-    <p><strong>SendAndMouse</strong>: A combination of the above two modes.</p>
-    <p><strong>Default</strong>: Turns off both the <em>Send</em> and the <em>Mouse</em> modes, but does not change the current state of input blocking. For example, if <code>BlockInput On</code> is currently in effect, using <code>BlockInput Default</code> will not turn it off.</p>
+    <p><strong>Send:</strong> The user's keyboard and mouse input is ignored while a <a href="Send.html">Send</a> or <a href="Send.html">SendRaw</a> is in progress (the traditional <a href="SendMode.html">SendEvent mode</a> only). This prevents the user's keystrokes from disrupting the flow of simulated keystrokes. When the Send finishes, input is re-enabled (unless still blocked by a previous use of <code>BlockInput On</code>).</p>
+    <p><strong>Mouse:</strong> The user's keyboard and mouse input is ignored while a <a href="Click.html">Click</a>, <a href="MouseMove.html">MouseMove</a>, <a href="MouseClick.html">MouseClick</a>, or <a href="MouseClickDrag.html">MouseClickDrag</a> is in progress (the traditional <a href="SendMode.html">SendEvent mode</a> only). This prevents the user's mouse movements and clicks from disrupting the simulated mouse events. When the mouse command finishes, input is re-enabled (unless still blocked by a previous use of <code>BlockInput On</code>).</p>
+    <p><strong>SendAndMouse:</strong> A combination of the above two modes.</p>
+    <p><strong>Default:</strong> Turns off both the <em>Send</em> and the <em>Mouse</em> modes, but does not change the current state of input blocking. For example, if <code>BlockInput On</code> is currently in effect, using <code>BlockInput Default</code> will not turn it off.</p>
   </dd>
   <dt id="MouseMove">MouseMove <span class="ver">[v1.0.43.11+]</span></dt>
   <dd>
     <p>This mode only blocks the mouse cursor movement. Specify one of the following words:</p>
-    <p><strong>MouseMove</strong>: The mouse cursor will not move in response to the user's physical movement of the mouse (DirectInput applications are a possible exception). When a script first uses this command, the <a href="_InstallMouseHook.html">mouse hook</a> is installed (if it is not already). In addition, the script becomes <a href="_Persistent.html">persistent</a>, meaning that <a href="ExitApp.html">ExitApp</a> should be used to terminate it. The mouse hook will stay installed until the next use of the <a href="Suspend.html">Suspend</a> or <a href="Hotkey.html">Hotkey</a> command, at which time it is removed if not required by any hotkeys or hotstrings (see <a href="_Hotstring.html">#Hotstring NoMouse</a>).</p>
-    <p><strong>MouseMoveOff</strong>: Allows the user to move the mouse cursor.</p>
+    <p><strong>MouseMove:</strong> The mouse cursor will not move in response to the user's physical movement of the mouse (DirectInput applications are a possible exception). When a script first uses this command, the <a href="_InstallMouseHook.html">mouse hook</a> is installed (if it is not already). In addition, the script becomes <a href="_Persistent.html">persistent</a>, meaning that <a href="ExitApp.html">ExitApp</a> rather than <a href="Exit.html">Exit</a> should be used to terminate it. The mouse hook will stay installed until the next use of the <a href="Suspend.html">Suspend</a> or <a href="Hotkey.html">Hotkey</a> command, at which time it is removed if not required by any hotkeys or hotstrings (see <a href="_Hotstring.html">#Hotstring NoMouse</a>).</p>
+    <p><strong>MouseMoveOff:</strong> Allows the user to move the mouse cursor.</p>
   </dd>
 
 </dl>
@@ -74,8 +74,8 @@ Send, {F5} <em>; pastes time and date</em>
 BlockInput, Off</pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013192a9677b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcee4aebce2bdc","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/BlockInput.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:13 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/BlockInput.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:53 GMT -->
 </html>

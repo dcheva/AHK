@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/index.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:29 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/index.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:27 GMT -->
 <head>
-<title>Alphabetical Command and Function Index | AutoHotkey</title>
+<title>Alphabetical Command and Function Index | AutoHotkey v1</title>
 <meta name="description" content="A tabular list of all language elements (commands, functions, control flow statements, etc.) available in AutoHotkey, including their description." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 <style type="text/css">
 .larger {font-size:130%;font-weight:normal}
@@ -42,7 +42,7 @@
   </tr>
   <tr>
     <td><a href="AutoTrim.html">AutoTrim</a></td>
-    <td>Determines whether <a href="SetEnv.html">traditional assignments</a> like <code>Var1 = %Var2%</code> omit spaces and tabs from the beginning and end of Var2.</td>
+    <td>Determines whether <a href="SetEnv.html">legacy assignments</a> like <code>Var1 = %Var2%</code> omit spaces and tabs from the beginning and end of Var2.</td>
   </tr>
   <tr>
     <td><a href="Asc.html">Asc()</a></td>
@@ -70,7 +70,7 @@
   </tr>
   <tr>
     <td class="larger"><a href="Catch.html">Catch</a></td>
-    <td>Specifies the code to execute if an exception is raised during execution of a <a href="Try.html">try</a> statement.</td>
+    <td>Specifies one or more <a href="../Concepts.html#statement">statements</a> to execute if an exception is raised during execution of a <a href="Try.html">Try</a> statement.</td>
   </tr>
   <tr>
     <td><a href="Math.html#Ceil">Ceil()</a></td>
@@ -105,11 +105,11 @@
     <td>Creates a COM object.</td>
   </tr>
   <tr>
-    <td><a href="ComObjActive.html">ComObject()</a></td>
+    <td><a href="ComObjActive.html#ComObject">ComObject()</a></td>
     <td>Creates an object representing a typed value to be passed as a parameter or return value.</td>
   </tr>
   <tr>
-    <td><a href="ComObjActive.html">ComObjEnwrap() / ComObjUnwrap()</a></td>
+    <td><a href="ComObjActive.html#ComObjEnwrapUnwrap">ComObjEnwrap() / ComObjUnwrap()</a></td>
     <td>Wraps/unwraps a COM object.</td>
   </tr>
   <tr>
@@ -125,11 +125,11 @@
     <td>Returns a reference to an object provided by a COM component.</td>
   </tr>
   <tr>
-    <td><a href="ComObjActive.html">ComObjMissing()</a></td>
+    <td><a href="ComObjActive.html#ComObjMissing">ComObjMissing()</a></td>
     <td>Creates a "missing parameter" object to pass to a COM method.</td>
   </tr>
   <tr>
-    <td><a href="ComObjActive.html">ComObjParameter()</a></td>
+    <td><a href="ComObjActive.html#ComObjParameter">ComObjParameter()</a></td>
     <td>Wraps a value and type to pass as a parameter to a COM method.</td>
   </tr>
   <tr>
@@ -202,7 +202,7 @@
   </tr>
   <tr>
     <td><a href="DetectHiddenText.html">DetectHiddenText</a></td>
-    <td>Determines whether invisible text in a window is "seen"  for the purpose of finding the window. This affects commands, built-in functions and control flow statements such as WinExist() and WinActivate.</td>
+    <td>Determines whether invisible text in a window is "seen"  for the purpose of finding the window. This affects windowing commands such as <a href="WinExist.html">WinExist()</a> and <a href="WinActivate.html">WinActivate</a>.</td>
   </tr>
   <tr>
     <td><a href="DetectHiddenWindows.html">DetectHiddenWindows</a></td>
@@ -226,7 +226,7 @@
   </tr>
   <tr id="E">
     <td><a href="Edit.html">Edit</a></td>
-    <td>Opens the current script for editing in the associated editor.</td>
+    <td>Opens the current script for editing in the default editor.</td>
   </tr>
   <tr>
     <td class="larger"><a href="Else.html">Else</a></td>
@@ -242,7 +242,7 @@
   </tr>
   <tr>
     <td><a href="EnvGet.html">EnvGet</a></td>
-    <td>Retrieves an environment variable.</td>
+    <td>Retrieves the value of the specified <a href="../Concepts.html#environment-variables">environment variable</a>.</td>
   </tr>
   <tr>
     <td><a href="EnvMult.html">EnvMult</a></td>
@@ -250,7 +250,7 @@
   </tr>
   <tr>
     <td><a href="EnvSet.html">EnvSet</a></td>
-    <td>Writes a value to a <a href="../Variables.html">variable</a> contained in the environment.</td>
+    <td>Writes a value to the specified <a href="../Concepts.html#environment-variables">environment variable</a>.</td>
   </tr>
   <tr>
     <td class="larger"><a href="EnvSub.html">EnvSub</a></td>
@@ -258,7 +258,7 @@
   </tr>
   <tr>
     <td><a href="EnvUpdate.html">EnvUpdate</a></td>
-    <td>Notifies the OS and all running applications that <a href="../Variables.html">environment variable(s)</a> have changed.</td>
+    <td>Notifies the OS and all running applications that <a href="../Concepts.html#environment-variables">environment variable(s)</a> have changed.</td>
   </tr>
   <tr>
     <td><a href="Throw.html#Exception">Exception()</a></td>
@@ -274,7 +274,7 @@
   </tr>
   <tr>
     <td><a href="Math.html#Exp">Exp()</a></td>
-    <td>Returns <em>e</em> (which is approximately 2.71828182845905) raised to the <em>N</em>th power.</td>
+    <td>Returns the result of raising e (which is approximately 2.71828182845905) to the <em>N</em>th power.</td>
   </tr>
   <tr>
     <td class="larger"><a href="FileAppend.html">FileAppend</a></td>
@@ -286,7 +286,7 @@
   </tr>
   <tr>
     <td><a href="FileCopyDir.html">FileCopyDir</a></td>
-    <td>Copies a folder along with all its sub-folders and files (similar to xcopy).</td>
+    <td>Copies a folder along with all its sub-folders and files (similar to xcopy) or the entire contents of an archive file such as ZIP.</td>
   </tr>
   <tr>
     <td><a href="FileCreateDir.html">FileCreateDir</a></td>
@@ -298,7 +298,7 @@
   </tr>
   <tr>
     <td class="larger"><a href="FileDelete.html">FileDelete</a></td>
-    <td>Deletes one or more files.</td>
+    <td>Deletes one or more files permanently.</td>
   </tr>
   <tr>
     <td><a href="FileEncoding.html">FileEncoding</a></td>
@@ -382,7 +382,7 @@
   </tr>
   <tr>
     <td class="larger"><a href="Finally.html">Finally</a></td>
-    <td>Ensures that one or more statements are always executed after a <a href="Try.html">Try</a> statement finishes.</td>
+    <td>Ensures that one or more <a href="../Concepts.html#statement">statements</a> are always executed after a <a href="Try.html">Try</a> statement finishes.</td>
   </tr>
   <tr>
     <td><a href="Math.html#Floor">Floor()</a></td>
@@ -390,7 +390,7 @@
   </tr>
   <tr>
     <td class="larger"><a href="For.html">For</a></td>
-    <td>Repeats a series of commands once for each key-value pair in an object.</td>
+    <td>Repeats one or more <a href="../Concepts.html#statement">statements</a> once for each key-value pair in an object.</td>
   </tr>
   <tr>
     <td><a href="Format.html">Format()</a></td>
@@ -406,7 +406,7 @@
   </tr>
   <tr>
     <td><a href="GetKey.html">GetKeyName()</a></td>
-    <td>Retrieves the name or text of a key.</td>
+    <td>Retrieves the name/text of a key.</td>
   </tr>
   <tr>
     <td><a href="GetKey.html">GetKeyVK()</a></td>
@@ -418,11 +418,11 @@
   </tr>
   <tr>
     <td><a href="GetKeyState.html#command">GetKeyState</a></td>
-    <td>Checks if a keyboard key or mouse/joystick button is down or up. Also retrieves joystick status.</td>
+    <td>Stores the letter D or U in a variable depending on whether the specified keyboard key or mouse/controller button is down or up. Also retrieves controller status.</td>
   </tr>
   <tr>
     <td><a href="GetKeyState.html#function">GetKeyState()</a></td>
-    <td>Checks if a keyboard key or mouse/joystick button is down or up. Also retrieves joystick status.</td>
+    <td>Returns 1 (true) or 0 (false) depending on whether the specified keyboard key or mouse/controller button is down or up. Also retrieves controller status.</td>
   </tr>
   <tr>
     <td class="larger"><a href="Gosub.html">Gosub</a></td>
@@ -446,7 +446,7 @@
   </tr>
   <tr>
     <td><a href="GroupDeactivate.html">GroupDeactivate</a></td>
-    <td>Similar to <a href="GroupActivate.html">GroupActivate</a> except activates the next window <strong>not</strong> in the group.</td>
+    <td>Similar to <a href="GroupActivate.html">GroupActivate</a> except activates the next window <u>not</u> in the group.</td>
   </tr>
   <tr>
     <td class="larger"><a href="Gui.html">Gui</a></td>
@@ -477,15 +477,15 @@
     <td>Specifies one or more <a href="../Concepts.html#statement">statements</a> to execute if the comparison of a <a href="../Variables.html">variable</a> to a value evaluates to true.</td>
   </tr>
   <tr>
-    <td><a href="IfBetween.html">If var [not] between</a></td>
+    <td><a href="IfBetween.html">If Var [not] between Low and High</a></td>
     <td>Checks whether a <a href="../Variables.html">variable's</a> contents are numerically or alphabetically between two values (inclusive).</td>
   </tr>
   <tr>
-    <td><a href="IfIn.html">If var [not] in/contains MatchList</a></td>
+    <td><a href="IfIn.html">If Var [not] in/contains MatchList</a></td>
     <td>Checks whether a <a href="../Variables.html">variable's</a> contents match one of the items in a list.</td>
   </tr>
   <tr>
-    <td><a href="IfIs.html">If var is [not] type</a></td>
+    <td><a href="IfIs.html">If Var is [not] Type</a></td>
     <td>Checks whether a <a href="../Variables.html">variable's</a> contents are numeric, uppercase, etc.</td>
   </tr>
   <tr>
@@ -584,7 +584,7 @@
   </tr>
   <tr>
     <td><a href="KeyWait.html">KeyWait</a></td>
-    <td>Waits for a key or mouse/joystick button to be released or pressed down.</td>
+    <td>Waits for a key or mouse/controller button to be released or pressed down.</td>
   </tr>
   <tr>
     <td><a href="ListHotkeys.html">ListHotkeys</a></td>
@@ -612,7 +612,7 @@
   </tr>
   <tr>
     <td class="larger"><a href="Loop.html">Loop (normal)</a></td>
-    <td>Performs a series of commands repeatedly: either the specified number of times or until <a href="Break.html">break</a> is encountered.</td>
+    <td>Performs one or more <a href="../Concepts.html#statement">statements</a> repeatedly: either the specified number of times or until <a href="Break.html">Break</a> is encountered.</td>
   </tr>
   <tr>
     <td><a href="LoopFile.html">Loop (files &amp; folders)</a></td>
@@ -646,11 +646,11 @@
   </tr>
   <tr id="M">
     <td><a href="Math.html#Max">Max()</a></td>
-    <td>Returns the highest value of one or more numbers.</td>
+    <td>Returns the highest number from a set of numbers.</td>
   </tr>
   <tr>
     <td><a href="Menu.html">Menu</a></td>
-    <td>Creates, deletes, modifies and displays menus and menu items. Changes the tray icon and its tooltip. Controls whether the main window of a <a href="../Scripts.html#ahk2exe">compiled script</a> can be opened.</td>
+    <td>Creates, deletes, modifies and displays menus and menu items. Changes the <a href="../Program.html#tray-icon">tray icon</a> and its tooltip. Controls whether the <a href="../Program.html#main-window">main window</a> of a <a href="../Scripts.html#ahk2exe">compiled script</a> can be opened.</td>
   </tr>
   <tr>
     <td><a href="MenuGetHandle.html">MenuGetHandle()</a></td>
@@ -662,15 +662,15 @@
   </tr>
   <tr>
     <td><a href="Math.html#Min">Min()</a></td>
-    <td>Returns the lowest value of one or more numbers.</td>
+    <td>Returns the lowest number from a set of numbers.</td>
   </tr>
   <tr>
     <td><a href="Math.html#Mod">Mod()</a></td>
-    <td>Modulo. Returns the remainder of the specified dividend divided by the specified divisor.</td>
+    <td>Modulo. Returns the remainder of a number (dividend) divided by another number (divisor).</td>
   </tr>
   <tr>
     <td><a href="MouseClick.html">MouseClick</a></td>
-    <td>Clicks or holds down a mouse button, or turns the mouse wheel. NOTE: The <a href="Click.html">Click command</a> is generally more flexible and easier to use.</td>
+    <td>Clicks or holds down a mouse button, or turns the mouse wheel. Note: The <a href="Click.html">Click</a> command is generally more flexible and easier to use.</td>
   </tr>
   <tr>
     <td><a href="MouseClickDrag.html">MouseClickDrag</a></td>
@@ -744,23 +744,23 @@
   </tr>
   <tr>
     <td><a href="OnClipboardChange.html#function">OnClipboardChange()</a></td>
-    <td>Registers a <a href="../Functions.html">function</a> or <a href="../misc/Functor.html">function object</a> to run whenever the clipboard's content changes.</td>
+    <td>Registers a <a href="../Functions.html">function</a> to be called automatically whenever the clipboard's content changes.</td>
   </tr>
   <tr>
     <td><a href="OnError.html">OnError()</a></td>
-    <td>Specifies a <a href="../Functions.html">function</a> to run automatically when an unhandled error occurs.</td>
+    <td>Registers a <a href="../Functions.html">function</a> to be called automatically whenever an unhandled error occurs.</td>
   </tr>
   <tr>
     <td><a href="OnExit.html#command">OnExit</a></td>
-    <td>Specifies a <a href="Gosub.html">subroutine</a> to run automatically when the script exits.</td>
+    <td>Registers a <a href="../Language.html#subroutines">subroutine</a> to be called automatically whenever the script exits.</td>
   </tr>
   <tr>
     <td><a href="OnExit.html#function">OnExit()</a></td>
-    <td>Specifies a <a href="../Functions.html">callback function</a> to run automatically when the script exits.</td>
+    <td>Registers a <a href="../Functions.html">function</a> to be called automatically whenever the script exits.</td>
   </tr>
   <tr>
     <td><a href="OnMessage.html">OnMessage()</a></td>
-    <td>Specifies a <a href="../Functions.html">function</a> or <a href="../misc/Functor.html">function object</a> to call automatically when the script receives the specified message.</td>
+    <td>Registers a <a href="../Functions.html">function</a> to be called automatically whenever the script receives the specified message.</td>
   </tr>
   <tr>
     <td><a href="Ord.html">Ord()</a></td>
@@ -776,7 +776,7 @@
   </tr>
   <tr>
     <td><a href="PixelGetColor.html">PixelGetColor</a></td>
-    <td>Retrieves  the color of the pixel at the specified x,y coordinates.</td>
+    <td>Retrieves the color of the pixel at the specified X and Y coordinates.</td>
   </tr>
   <tr>
     <td><a href="PixelSearch.html">PixelSearch</a></td>
@@ -828,7 +828,7 @@
   </tr>
   <tr>
     <td class="larger"><a href="Return.html">Return</a></td>
-    <td>Returns from a subroutine to which execution had previously jumped via <a href="../Functions.html">function-call</a>, <a href="Gosub.html">Gosub</a>, <a href="../Hotkeys.html">Hotkey</a> activation, <a href="GroupActivate.html">GroupActivate</a>, or other means.</td>
+    <td>Returns from a function or subroutine to which execution had previously jumped via <a href="../Functions.html">function-call</a>, <a href="Gosub.html">Gosub</a>, <a href="../Hotkeys.html">Hotkey</a> activation, <a href="GroupActivate.html">GroupActivate</a>, or other means.</td>
   </tr>
   <tr>
     <td><a href="Math.html#Round">Round()</a></td>
@@ -840,7 +840,7 @@
   </tr>
   <tr>
     <td><a href="RunAs.html">RunAs</a></td>
-    <td>Specifies a set of user credentials to use for all subsequent uses of <a href="Run.html">Run</a> and <a href="Run.html">RunWait</a>.</td>
+    <td>Specifies a set of user credentials to use for all subsequent <a href="Run.html">Run</a> and <a href="Run.html">RunWait</a> commands.</td>
   </tr>
   <tr>
     <td class="larger"><a href="Run.html">RunWait</a></td>
@@ -882,7 +882,7 @@
   </tr>
   <tr>
     <td><a href="SetDefaultMouseSpeed.html">SetDefaultMouseSpeed</a></td>
-    <td>Sets the mouse speed that will be used if unspecified in <a href="Click.html">Click</a> and <a href="MouseMove.html">MouseMove</a>/<a href="MouseClick.html">Click</a>/<a href="MouseClickDrag.html">Drag</a>.</td>
+    <td>Sets the mouse speed that will be used if unspecified in <a href="Click.html">Click</a>, <a href="MouseMove.html">MouseMove</a>, <a href="MouseClick.html">MouseClick</a>, and <a href="MouseClickDrag.html">MouseClickDrag</a>.</td>
   </tr>
   <tr>
     <td><a href="SetEnv.html">SetEnv (Var = Value)</a></td>
@@ -913,7 +913,7 @@
     <td>Sets the registry view used by <a href="RegRead.html">RegRead</a>, <a href="RegWrite.html">RegWrite</a>, <a href="RegDelete.html">RegDelete</a> and <a href="LoopReg.html">registry loops</a>, allowing them in a 32-bit script to access the 64-bit registry view and vice versa.</td>
   </tr>
   <tr>
-    <td><a href="SetStoreCapslockMode.html">SetStoreCapsLockMode</a></td>
+    <td><a href="SetStoreCapsLockMode.html">SetStoreCapsLockMode</a></td>
     <td>Whether to restore the state of <kbd>CapsLock</kbd> after a <a href="Send.html">Send</a>.</td>
   </tr>
   <tr>
@@ -922,7 +922,7 @@
   </tr>
   <tr>
     <td class="larger"><a href="SetTitleMatchMode.html">SetTitleMatchMode</a></td>
-    <td>Sets the matching behavior of the WinTitle parameter in commands such as <a href="WinWait.html">WinWait</a>.</td>
+    <td>Sets the matching behavior of the <a href="../misc/WinTitle.html"><em>WinTitle</em> parameter</a> in commands such as <a href="WinWait.html">WinWait</a>.</td>
   </tr>
   <tr>
     <td class="larger"><a href="SetWinDelay.html">SetWinDelay</a></td>
@@ -1002,7 +1002,7 @@
   </tr>
   <tr>
     <td><a href="StringCaseSense.html">StringCaseSense</a></td>
-    <td>Determines whether string comparisons are case sensitive (default is "not case sensitive").</td>
+    <td>Determines whether string comparisons are case-sensitive.</td>
   </tr>
   <tr>
     <td><a href="StringGetPos.html">StringGetPos</a></td>
@@ -1018,7 +1018,7 @@
   </tr>
   <tr>
     <td><a href="StringLower.html">StringLower</a></td>
-    <td>Converts a string to lowercase.</td>
+    <td>Converts a string to lowercase or title case.</td>
   </tr>
   <tr>
     <td><a href="StringMid.html">StringMid</a></td>
@@ -1034,7 +1034,7 @@
   </tr>
   <tr>
     <td><a href="StringSplit.html">StringSplit</a></td>
-    <td>Separates a string into an array of substrings using the specified delimiters.</td>
+    <td>Separates a string into an array of substrings using the specified delimiter characters.</td>
   </tr>
   <tr>
     <td><a href="StringTrimLeft.html">StringTrimLeft</a></td>
@@ -1046,7 +1046,7 @@
   </tr>
   <tr>
     <td><a href="StringLower.html">StringUpper</a></td>
-    <td>Converts a string to uppercase.</td>
+    <td>Converts a string to uppercase or title case.</td>
   </tr>
   <tr>
     <td class="larger"><a href="StrLen.html">StrLen()</a></td>
@@ -1074,7 +1074,7 @@
   </tr>
   <tr>
     <td><a href="Switch.html">Switch</a></td>
-    <td>Executes one case from a list of mutually exclusive candidates.</td>
+    <td>Compares a value with multiple cases and executes the <a href="../Concepts.html#statement">statements</a> of the first match.</td>
   </tr>
   <tr>
     <td><a href="SysGet.html">SysGet</a></td>
@@ -1090,11 +1090,11 @@
   </tr>
   <tr>
     <td class="larger"><a href="Throw.html">Throw</a></td>
-    <td>Signals the occurrence of an error. This signal can be caught by a <a href="Try.html">try</a>-<a href="Catch.html">catch</a> statement.</td>
+    <td>Signals the occurrence of an error. This signal can be caught by a <a href="Try.html">Try</a>-<a href="Catch.html">Catch</a> statement.</td>
   </tr>
   <tr>
     <td><a href="ToolTip.html">ToolTip</a></td>
-    <td>Creates an always-on-top window anywhere on the screen.</td>
+    <td>Shows an always-on-top window anywhere on the screen.</td>
   </tr>
   <tr>
     <td><a href="Transform.html">Transform</a></td>
@@ -1102,7 +1102,7 @@
   </tr>
   <tr>
     <td><a href="TrayTip.html">TrayTip</a></td>
-    <td>Creates a balloon message window near the tray icon. On Windows 10, a toast notification may be shown instead.</td>
+    <td>Shows a balloon message window or, on Windows 10 and later, a toast notification near the <a href="../Program.html#tray-icon">tray icon</a>.</td>
   </tr>
   <tr>
     <td><a href="Trim.html">Trim() / LTrim() / RTrim()</a></td>
@@ -1110,7 +1110,7 @@
   </tr>
   <tr>
     <td class="larger"><a href="Try.html">Try</a></td>
-    <td>Guards one or more statements (commands or expressions) against runtime errors and exceptions thrown by the <a href="Throw.html">throw</a> command.</td>
+    <td>Guards one or more <a href="../Concepts.html#statement">statements</a> against runtime errors and exceptions thrown by the <a href="Throw.html">Throw</a> statement.</td>
   </tr>
   <tr>
     <td><a href="TreeView.html#TV_Add">TV_Add()</a><br />
@@ -1153,7 +1153,7 @@
   </tr>
   <tr id="W">
     <td class="larger"><a href="While.html">While-loop</a></td>
-    <td>Performs a series of commands repeatedly until the specified <a href="../Variables.html#Expressions">expression</a> evaluates to false.</td>
+    <td>Performs one or more <a href="../Concepts.html#statement">statements</a> repeatedly until the specified <a href="../Variables.html#Expressions">expression</a> evaluates to false.</td>
   </tr>
   <tr>
     <td class="larger"><a href="WinActivate.html">WinActivate</a></td>
@@ -1357,11 +1357,11 @@
   </tr>
   <tr>
     <td class="larger"><a href="_NoEnv.html">#NoEnv</a></td>
-    <td>Avoids checking empty variables to see if they are environment variables (recommended for all new scripts).</td>
+    <td>Avoids checking empty variables to see if they are <a href="../Concepts.html#environment-variables">environment variables</a> (recommended for all new scripts).</td>
   </tr>
   <tr>
     <td class="larger"><a href="_NoTrayIcon.html">#NoTrayIcon</a></td>
-    <td>Disables the showing of a tray icon.</td>
+    <td>Disables the showing of a <a href="../Program.html#tray-icon">tray icon</a>.</td>
   </tr>
   <tr>
     <td><a href="_Persistent.html">#Persistent</a></td>
@@ -1388,8 +1388,8 @@
     <td>Skips the gentle method of activating a window and goes straight to the forceful method.</td>
   </tr>
 </table>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a01259b94c77b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdced675d2ed22b","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/index.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:52 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/index.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:27 GMT -->
 </html>

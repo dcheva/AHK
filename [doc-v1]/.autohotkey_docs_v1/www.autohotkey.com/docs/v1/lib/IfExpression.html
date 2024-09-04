@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/IfExpression.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:07 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/IfExpression.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:42 GMT -->
 <head>
-<title>If (Expression) - Syntax &amp; Usage | AutoHotkey</title>
+<title>If (Expression) - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The &quot;if (expression)&quot; statement specifies one or more statements to execute if an expression evaluates to true." />
 <meta name="ahk:equiv-v2" content="lib/If.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -21,7 +21,7 @@
 }</pre>
 
 <h2 id="Remarks">Remarks</h2>
-<p>An <em>If</em> statement that contains an expression is usually differentiated from a <a href="IfEqual.html">traditional If statement</a> such as <code>if FoundColor != Blue</code> by enclosing the expression in parentheses, as in <code>if (FoundColor != "Blue")</code>. However, this is not strictly required, as any <em>If</em> statement which does not match any of the <a href="../Language.html#legacy-if">legacy if patterns</a> is assumed to contain an expression. In particular, the following are also common ways of writing an <em>If (expression)</em>:</p>
+<p>An <em>If</em> statement that contains an expression is usually differentiated from a <a href="IfEqual.html">legacy If statement</a> such as <code>if FoundColor != Blue</code> by enclosing the expression in parentheses, as in <code>if (FoundColor != "Blue")</code>. However, this is not strictly required, as any <em>If</em> statement which does not match any of the <a href="../Language.html#legacy-if">legacy if patterns</a> is assumed to contain an expression. In particular, the following are also common ways of writing an <em>If (expression)</em>:</p>
 <ul>
   <li>Starting with an open parenthesis but not fully enclosing the expression: <code>if (x &gt; 0) and (y &gt; 0)</code></li>
   <li>Starting with a <a href="../Functions.html">function call</a>: <code>if InStr(a, b)</code></li>
@@ -31,7 +31,7 @@
 <p>If the <em>If</em> statement's expression evaluates to true (which is any result other than an empty string or the number 0), the line or <a href="Block.html">block</a> underneath it is executed. Otherwise, if there is a corresponding <a href="Else.html">Else</a> statement, execution jumps to the line or block underneath it.</p>
 <p>If an <em>If</em> owns more than one line, those lines must be enclosed in braces (to create a <a href="Block.html">block</a>). However, if only one line belongs to an <em>If</em>, the braces are optional. See the examples at the bottom of this page.</p>
 <p>The space after <code>if</code> is optional if the expression starts with an open-parenthesis, as in <code>if(expression)</code>.</p>
-<p id="otb">The One True Brace (OTB) style may optionally be used with <em>If</em> statements that are expressions (but not <a href="IfEqual.html">traditional If statements</a>). For example:</p>
+<p id="otb">The One True Brace (OTB) style may optionally be used with <em>If</em> statements that are expressions (but not <a href="IfEqual.html">legacy If statements</a>). For example:</p>
 <pre>if (x &lt; y) {
     <em>; ...</em>
 }
@@ -44,10 +44,10 @@ if IsDone {
     <em>; ...</em>
 }</pre>
 <p>Unlike an <em>If</em> statement, an <a href="Else.html">Else</a> statement supports any type of statement immediately to its right.</p>
-<p>On a related note, the statement <code><a href="IfBetween.html">if Var between LowerBound and UpperBound</a></code> checks whether a variable is between two values, and <code><a href="IfIn.html">if Var in MatchList</a></code> can be used to check whether a variable's contents exist within a list of values.</p>
+<p>On a related note, <a href="IfBetween.html">If Var [not] between Low and High</a> checks whether a variable is between two values, and <a href="IfIn.html">If Var [not] in/contains MatchList</a> can be used to check whether a variable's contents exist within a list of values.</p>
 
 <h2 id="Related">Related</h2>
-<p><a href="../Variables.html#Expressions">Expressions</a>, <a href="SetExpression.html">Assign expression (:=)</a>, <a href="IfIn.html">if var in/contains</a>, <a href="IfBetween.html">if var between</a>, <a href="IfInString.html">IfInString</a>, <a href="Block.html">Blocks</a>, <a href="Else.html">Else</a>, <a href="While.html">While-loop</a></p>
+<p><a href="../Variables.html#Expressions">Expressions</a>, <a href="SetExpression.html">Assign expression (:=)</a>, <a href="IfIn.html">If Var [not] in/contains MatchList</a>, <a href="IfBetween.html">If Var [not] between Low and High</a>, <a href="IfInString.html">IfInString</a>, <a href="Block.html">Blocks</a>, <a href="Else.html">Else</a>, <a href="While.html">While-loop</a></p>
 
 <h2 id="Examples">Examples</h2>
 <div class="ex" id="ExOne">
@@ -113,8 +113,8 @@ MsgBox % MyVar  <em>; Reports "0 test".</em>
 </pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a01306af0e2d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcee338d1bd22b","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/IfExpression.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:07 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/IfExpression.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:42 GMT -->
 </html>

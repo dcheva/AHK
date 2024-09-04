@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Math.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:55 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Math.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:46 GMT -->
 <head>
-<title>Math Functions - Syntax &amp; Usage | AutoHotkey</title>
+<title>Math Functions - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="Functions for performing various mathematical operations such as rounding, exponentiation, squaring, etc." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -21,13 +21,13 @@
     <ul>
       <li><a href="#Abs">Abs</a>: Returns the absolute value of a number.</li>
       <li><a href="#Ceil">Ceil</a>: Returns a number rounded up to the nearest integer.</li>
-      <li><a href="#Exp">Exp</a>: Returns e raised to the <em>N</em>th power.</li>
+      <li><a href="#Exp">Exp</a>: Returns the result of raising e to the <em>N</em>th power.</li>
       <li><a href="#Floor">Floor</a>: Returns a number rounded down to the nearest integer.</li>
       <li><a href="#Log">Log</a>: Returns the logarithm (base 10) of a number.</li>
       <li><a href="#Ln">Ln</a>: Returns the natural logarithm (base e) of a number.</li>
-      <li><a href="#Max">Max</a> <span class="ver">[v1.1.27+]</span>: Returns the highest value of one or more numbers.</li>
-      <li><a href="#Min">Min</a> <span class="ver">[v1.1.27+]</span>: Returns the lowest value of one or more numbers.</li>
-      <li><a href="#Mod">Mod</a>: Returns the remainder of a division.</li>
+      <li><a href="#Max">Max</a> <span class="ver">[v1.1.27+]</span>: Returns the highest number from a set of numbers.</li>
+      <li><a href="#Min">Min</a> <span class="ver">[v1.1.27+]</span>: Returns the lowest number from a set of numbers.</li>
+      <li><a href="#Mod">Mod</a>: Modulo. Returns the remainder of a division.</li>
       <li><a href="#Round">Round</a>: Returns a number rounded to <em>N</em> decimal places.</li>
       <li><a href="#Sqrt">Sqrt</a>: Returns the square root of a number.</li>
     </ul>
@@ -37,9 +37,9 @@
       <li><a href="#Sin">Sin</a>: Returns the trigonometric sine of a number.</li>
       <li><a href="#Cos">Cos</a>: Returns the trigonometric cosine of a number.</li>
       <li><a href="#Tan">Tan</a>: Returns the trigonometric tangent of a number.</li>
-      <li><a href="#ASin">ASin</a>: Returns the arcsine (the number whose sine is the specified number) in radians.</li>
-      <li><a href="#ACos">ACos</a>: Returns the arccosine (the number whose cosine is the specified number) in radians.</li>
-      <li><a href="#ATan">ATan</a>: Returns the arctangent (the number whose tangent is the specified number) in radians.</li>
+      <li><a href="#ASin">ASin</a>: Returns the arcsine of a number in radians.</li>
+      <li><a href="#ACos">ACos</a>: Returns the arccosine of a number in radians.</li>
+      <li><a href="#ATan">ATan</a>: Returns the arctangent of a number in radians.</li>
     </ul>
   </li>
   <li><a href="#Errors">Error-handling</a></li>
@@ -60,7 +60,7 @@
 MsgBox, % Ceil(-1.2) <em>; Returns -1</em></pre>
 
 <h3 id="Exp">Exp</h3>
-<p>Returns e (which is approximately 2.71828182845905) raised to the <em>N</em>th power.</p>
+<p>Returns the result of raising e (which is approximately 2.71828182845905) to the <em>N</em>th power.</p>
 <pre class="Syntax">Value := <span class="func">Exp</span>(N)</pre>
 <p><em>N</em> may be negative and may contain a decimal point. To raise  numbers other than e to a power, use the <a href="../Variables.html#pow">** operator</a>.</p>
 <pre class="NoIndent">MsgBox, % Exp(1.2) <em>; Returns 3.320117</em></pre>
@@ -84,26 +84,26 @@ MsgBox, % Floor(-1.2) <em>; Returns -2</em></pre>
 <pre class="NoIndent">MsgBox, % Ln(1.2) <em>; Returns 0.182322</em></pre>
 
 <h3 id="Max">Max <span class="ver">[v1.1.27+]</span></h3>
-<p>Returns the highest value of one or more numbers.</p>
-<pre class="Syntax">Value := <span class="func">Max</span>(Number1 <span class="optional">, Number2, ...</span>)</pre>
+<p>Returns the highest number from a set of numbers.</p>
+<pre class="Syntax">Number := <span class="func">Max</span>(Number1 <span class="optional">, Number2, ...</span>)</pre>
 <p>If one of the input values is non-numeric, an empty string is returned.</p>
 <pre class="NoIndent">MsgBox, % Max(2.11, -2, 0) <em>; Returns 2.11</em></pre>
-<p>You can also specify a <a href="../Functions.html#Variadic">variadic parameter</a> to compare multiple values within an array. For example:</p>
+<p>You can also specify a <a href="../Functions.html#Variadic">variadic parameter</a> to pass an <a href="../misc/Arrays.html#object-based">array</a> of numbers. For example:</p>
 <pre class="NoIndent">array := [1, 2, 3, 4]
 MsgBox, % Max(array*) <em>; Returns 4</em>
 </pre>
 
 <h3 id="Min">Min <span class="ver">[v1.1.27+]</span></h3>
-<p>Returns the lowest value of one or more numbers.</p>
-<pre class="Syntax">Value := <span class="func">Min</span>(Number1 <span class="optional">, Number2, ...</span>)</pre>
+<p>Returns the lowest number from a set of numbers.</p>
+<pre class="Syntax">Number := <span class="func">Min</span>(Number1 <span class="optional">, Number2, ...</span>)</pre>
 <p>If one of the input values is non-numeric, an empty string is returned.</p>
 <pre class="NoIndent">MsgBox, % Min(2.11, -2, 0) <em>; Returns -2</em></pre>
-<p>You can also specify a <a href="../Functions.html#Variadic">variadic parameter</a> to compare multiple values within an array. For example:</p>
+<p>You can also specify a <a href="../Functions.html#Variadic">variadic parameter</a> to pass an <a href="../misc/Arrays.html#object-based">array</a> of numbers. For example:</p>
 <pre class="NoIndent">array := [1, 2, 3, 4]
 MsgBox, % Min(array*) <em>; Returns 1</em></pre>
 
 <h3 id="Mod">Mod</h3>
-<p>Modulo. Returns the remainder of the specified dividend divided by the specified divisor.</p>
+<p>Modulo. Returns the remainder of a number (dividend) divided by another number (divisor).</p>
 <pre class="Syntax">Value := <span class="func">Mod</span>(Dividend, Divisor)</pre>
 <p>The sign of the result is always the same as the sign of the first parameter. If either input is a floating point number, the result is also a floating point number. If the second parameter is zero, the function yields a blank result (empty string).</p>
 <pre class="NoIndent">MsgBox, % Mod(7.5, 2) <em>; Returns 1.5 (2 x 3 + 1.5)</em></pre>
@@ -113,12 +113,12 @@ MsgBox, % Min(array*) <em>; Returns 1</em></pre>
 <pre class="Syntax">Value := <span class="func">Round</span>(Number <span class="optional">, N</span>)</pre>
 <p>If <em>N</em> is omitted or 0, <em>Number</em> is rounded to the nearest integer:</p>
 <pre class="NoIndent">MsgBox, % Round(3.14)    <em>; Returns 3</em></pre>
-<p>If <em>N</em> is positive number, <em>Number</em> is rounded to <em>N</em> decimal places:</p>
+<p>If <em>N</em> is positive, <em>Number</em> is rounded to <em>N</em> decimal places:</p>
 <pre class="NoIndent">MsgBox, % Round(3.14, 1) <em>; Returns 3.1</em></pre>
 <p>If <em>N</em> is negative, <em>Number</em> is rounded by <em>N</em> digits to the left of the decimal point:</p>
 <pre class="NoIndent">MsgBox, % Round(345, -1) <em>; Returns 350</em>
 MsgBox, % Round(345, -2) <em>; Returns 300</em></pre>
-<p>Unlike <a href="Transform.html">Transform Round</a>, the result has no .000 suffix whenever <em>N</em> is omitted or less than 1. <span class="ver">[v1.0.44.01+]</span>: A value of <em>N</em> greater than zero displays exactly <em>N</em> decimal places rather than obeying <a href="SetFormat.html">SetFormat</a>. To avoid this, perform another math operation on Round()'s return value; for example: <code>Round(3.333, 1)<strong>+0</strong></code>.</p>
+<p>Unlike <a href="Transform.html">Transform Round</a>, the result has no .000 suffix whenever <em>N</em> is omitted or less than 1. <span class="ver">[v1.0.44.01+]</span>: A value of <em>N</em> greater than zero displays exactly <em>N</em> decimal places rather than obeying <a href="SetFormat.html">SetFormat</a>. To avoid this, perform another math operation on Round()'s return value; for example: <code>Round(3.333, 1)+0</code>.</p>
 
 <h3 id="Sqrt">Sqrt</h3>
 <p>Returns the square root of the specified number.</p>
@@ -127,7 +127,7 @@ MsgBox, % Round(345, -2) <em>; Returns 300</em></pre>
 <pre class="NoIndent">MsgBox, % Sqrt(16) <em>; Returns 4</em></pre>
 
 <h2 id="Trigonometry">Trigonometry</h2>
-<p class="note"><strong>Note</strong>: To convert a radians value to degrees, multiply it by 180/pi (approximately 57.29578). To convert a degrees value to radians, multiply it by pi/180 (approximately 0.01745329252). The value of pi (approximately 3.141592653589793) is 4 times the arctangent of 1.</p>
+<p class="note"><strong>Note:</strong> To convert a radians value to degrees, multiply it by 180/pi (approximately 57.29578). To convert a degrees value to radians, multiply it by pi/180 (approximately 0.01745329252). The value of pi (approximately 3.141592653589793) is 4 times the arctangent of 1.</p>
 
 <h3 id="Sin">Sin</h3>
 <p>Returns the trigonometric sine of the specified number.</p>
@@ -168,8 +168,8 @@ MsgBox, % Round(345, -2) <em>; Returns 300</em></pre>
 <p>Invalid operations such as divide by zero generally yield a blank result (empty string).</p>
 <p><a href="#Abs">Abs</a>, <a href="#Max">Max</a>, <a href="#Min">Min</a> and <a href="#Mod">Mod</a> return an empty string if any of their incoming parameters are non-numeric. Most math functions do not perform strict type-checking, so may treat non-numeric values as zero or another number. For example, <code>Round("1.0foo")</code> produces 1. However, this is expected to change in <a href="https://www.autohotkey.com/v2/">AutoHotkey v2</a>. </p>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a0128198792d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdced9199c7d22b","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Math.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:55 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Math.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:46 GMT -->
 </html>

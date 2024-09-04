@@ -1,28 +1,28 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/SetExpression.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:12 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/SetExpression.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:50 GMT -->
 <head>
-<title>Var := Expression - Syntax &amp; Usage | AutoHotkey</title>
+<title>Var := Expression - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The &quot;Var := Expression&quot; statement evaluates an expression and stores the result in a variable." />
 <meta name="ahk:equiv-v2" content="../Variables.html#AssignOp" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
 
-<h1>Var := expression</h1>
+<h1>Var := Expression</h1>
 
 <p>Evaluates an expression and stores the result in a <a href="../Variables.html">variable</a>.</p>
 
-<pre class="Syntax">Var := expression</pre>
+<pre class="Syntax">Var := Expression</pre>
 <h2 id="Parameters">Parameters</h2>
 <dl>
 
   <dt>Var</dt>
-  <dd><p>The name of the <a href="../Variables.html">variable</a> in which to store the result of <em>expression</em>.</p></dd>
+  <dd><p>The name of the output <a href="../Variables.html">variable</a> in which to store the result of <em>Expression</em>.</p></dd>
 
   <dt>Expression</dt>
   <dd><p>See <a href="../Variables.html#Expressions">expressions</a> and the examples below for details.</p></dd>
@@ -30,14 +30,14 @@
 </dl>
 
 <h2 id="Remarks">Remarks</h2>
-<p>The := operator is optimized so that it performs just as quickly as the = operator for simple cases such as the following:</p>
+<p>The colon-equal operator (:=) is optimized so that it performs just as quickly as the equal operator (=) for simple cases such as the following:</p>
 <pre>x := y  <em>; Same performance as x = %y%</em>
-x := 5  <em>; Same performance as x = 5.</em>
-x := "literal string"  <em>; Same performance as x = literal string.</em></pre>
-<p>The words <code>true</code> and <code>false</code> are built-in constants containing 1 and 0. They can be used to make a script more readable as in these examples:</p>
+x := 5  <em>; Same performance as x = 5</em>
+x := "literal string"  <em>; Same performance as x = literal string</em></pre>
+<p>The words <strong>True</strong> and <strong>False</strong> are built-in variables containing 1 and 0. They can be used to make a script more readable as in these examples:</p>
 <pre>CaseSensitive := false
 ContinueSearch := true</pre>
-<p>It is possible to create a <a href="../misc/Arrays.html#pseudo">pseudo-array</a> with this command and any others that accept an <em>OutputVar</em>. This is done by making <em>OutputVar</em> contain a reference to another variable, e.g. <code>Array%i% := Var/100 + 5</code>. See <a href="../misc/Arrays.html">Arrays</a> for more information.</p>
+<p>It is possible to create a <a href="../misc/Arrays.html#pseudo">pseudo-array</a> with this statement and any others that accept an output variable. This is done by appending a variable reference to the output variable name, e.g. <code>Array%i% := Var/100 + 5</code>. See <a href="../misc/Arrays.html">Arrays</a> for more details.</p>
 <h2 id="Related">Related</h2>
 <p><a href="../Variables.html#Expressions">Expressions</a>, <a href="IfExpression.html">If (expression)</a>, <a href="../Functions.html">Functions</a>, <a href="SetEnv.html">SetEnv</a>, <a href="EnvSet.html">EnvSet</a>, <a href="EnvAdd.html">EnvAdd</a>, <a href="EnvSub.html">EnvSub</a>, <a href="EnvMult.html">EnvMult</a>, <a href="EnvDiv.html">EnvDiv</a>, <a href="IfEqual.html">If (legacy)</a>, <a href="../misc/Arrays.html">Arrays</a></p>
 <h2 id="Examples">Examples</h2>
@@ -68,8 +68,8 @@ else
     ExitApp</pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013111ade77b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcee42f8301911","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/SetExpression.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:12 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/SetExpression.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:51 GMT -->
 </html>

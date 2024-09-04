@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/ChangeLogHelp.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:54 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/ChangeLogHelp.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:33 GMT -->
 <head>
-<title>Archived Changes | AutoHotkey</title>
+<title>Archived Changes | AutoHotkey v1</title>
 <meta name="description" content="This page contains a history of changes made within the original branch of AutoHotkey development, by Chris Mallett." />
 <meta name="ahk:equiv-v2" content="AHKL_ChangeLog.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="static/theme.css" rel="stylesheet" type="text/css" />
+<link href="static/theme.css" rel="stylesheet" type="text/css" />
 <script src="static/content.js" type="text/javascript"></script>
 </head>
 
@@ -92,7 +92,7 @@
 <p>Fixed <code><a href="lib/Math.html#Round">Round(Var, NegativeNumber)</a></code>, which in rare cases was off by 1. [thanks Icarus]</p>
 <p>Fixed crash of scripts that end in a syntax error consisting of an orphaned IF-statement (broken by 1.0.47.00). [thanks msgbox of the German forum]</p>
 <p>Eliminated the "GetClipboardData" error dialog. Instead, an empty string is retrieved when the data cannot be accessed within the <a href="lib/_ClipboardTimeout.html">#ClipboardTimeout</a> period. [thanks ManaUser &amp; Sean]</p>
-<p>Changed GUI <a href="lib/GuiControls.html#Checkbox">checkboxes</a> and <a href="lib/GuiControls.html#Radio">radio buttons</a> to default to <a href="lib/Gui.html#Wrap">"no word-wrap"</a> when no width, height, or CR/LF characters are specified. This solves display issues under certain unusual DPI settings. [thanks Boskoop]</p>
+<p>Changed GUI <a href="lib/GuiControls.html#CheckBox">checkboxes</a> and <a href="lib/GuiControls.html#Radio">radio buttons</a> to default to <a href="lib/Gui.html#Wrap">"no word-wrap"</a> when no width, height, or CR/LF characters are specified. This solves display issues under certain unusual DPI settings. [thanks Boskoop]</p>
 <h2 id="v1.0.47.03">1.0.47.03 - August 1, 2007</h2>
 <p>Fixed <a href="Variables.html#Expressions">expressions</a> to allow literal negative hexadecimal numbers that end in "E"; e.g. fn(-0xe). [thanks Laszlo]</p>
 <p>Fixed <a href="lib/Block.html">block syntax</a> to allow a <a href="Functions.html">function-call</a> immediately to the right of a '}'. [thanks Roland]</p>
@@ -119,7 +119,7 @@
 <p>Fixed <a href="Variables.html#UserName">A_UserName</a> (broken by 1.0.46.16).</p>
 <h2 id="v1.0.46.16">1.0.46.16 - May 30, 2007</h2>
 <p>Fixed <code><a href="lib/GuiControls.html#Tab">Gui, Tab, TabName</a></code> when used after a previous <code>Gui Tab</code>. [thanks Toralf]</p>
-<p>Improved SetTimer to treat <a href="lib/SetTimer.html#once">negative periods</a> as "run only once". [thanks Majkinetor]</p>
+<p>Improved SetTimer to treat <a href="lib/SetTimer.html#Period">negative periods</a> as "run only once". [thanks Majkinetor]</p>
 <p>Added <code><a href="lib/GuiControlGet.html#Hwnd">GuiControlGet Hwnd</a></code>, which is a more modular/dynamic way to retrieve a control's HWND. [thanks Majkinetor]</p>
 <p>Added built-in variables <a href="Variables.html#ThisLabel">A_ThisLabel</a> and <a href="Variables.html#ThisFunc">A_ThisFunc</a>, which contain the names of the currently-executing label/function. [thanks Titan &amp; Majkinetor]</p>
 <h2 id="v1.0.46.15">1.0.46.15 - May 9, 2007</h2>
@@ -147,7 +147,7 @@
 <p>Fixed inability to pass certain <a href="Variables.html#ternary">ternary expressions</a> to <a href="Functions.html#ByRef">ByRef parameters</a>. [thanks Titan]</p>
 <p>Fixed <code><a href="lib/GuiControlGet.html">GuiControlGet</a>, OutputVar, Pos</code> so that it doesn't make the OutputVar blank. [thanks PhiLho]</p>
 <p>Changed and fixed continuation sections so that the <a href="Scripts.html#CommentOption">"Comment" option</a> doesn't force the <a href="Scripts.html#LTrim">LTrim option</a> into effect. [thanks Titan]</p>
-<p>Changed the <a href="https://docs.microsoft.com/cpp/build/reference/tsaware-create-terminal-server-aware-application">Terminal Server Awareness flag</a> back to "disabled" on AutoHotkey.exe and compiled scripts. This improves flexibility and backward compatibility (see <a href="https://www.autohotkey.com/forum/topic16041.html">discussion</a> at forum).</p>
+<p>Changed the <a href="https://learn.microsoft.com/cpp/build/reference/tsaware-create-terminal-server-aware-application">Terminal Server Awareness flag</a> back to "disabled" on AutoHotkey.exe and compiled scripts. This improves flexibility and backward compatibility (see <a href="https://www.autohotkey.com/board/topic/14700-">discussion</a> at forum).</p>
 <h2 id="v1.0.46.08">1.0.46.08 - February 7, 2007</h2>
 <p>Fixed unreliability of <a href="Variables.html#ComSpec">ComSpec</a> and <a href="Concepts.html#environment-variables">environment variables</a> on Windows 9x (broken by v1.0.46.07). [thanks Loriss]</p>
 <p>Changed: When AutoHotkey.exe is launched without a script specified, it will now run (or prompt you to create) the file AutoHotkey.ahk in the <a href="Variables.html#MyDocuments">My Documents</a> folder. The only exception is when AutoHotkey.ini exists in the working directory, in which case it uses the old behavior of executing that file.</p>
@@ -161,7 +161,7 @@
 <p>Applied minor fixes and improvements to <a href="misc/RegEx-QuickRef.html">regular expressions</a> by upgrading from PCRE 6.7 to 7.0. One of the most notable improvements is the `a option, which recognizes any type of newline (namely `r, `n, or `r`n). Similarly, the \R escape sequence means "any single newline of any type". See also: <a href="http://www.pcre.org/changelog.txt">Full PCRE changelog</a></p>
 <p>Changed and fixed all <a href="lib/Control.html">Control commands</a> and <a href="lib/StatusBarWait.html">StatusBarWait</a> to obey <a href="lib/SetTitleMatchMode.html#RegEx">SetTitleMatchMode RegEx</a> as documented.</p>
 <p>Changed <a href="lib/RegExReplace.html">RegExReplace()</a> to return the original/unaltered string rather than "" when an error occurs.</p>
-<p>Changed: Enabled the <a href="https://docs.microsoft.com/cpp/build/reference/tsaware-create-terminal-server-aware-application">Terminal Server Awareness flag</a> on AutoHotkey.exe and <a href="Scripts.html#ahk2exe">compiled scripts</a>.</p>
+<p>Changed: Enabled the <a href="https://learn.microsoft.com/cpp/build/reference/tsaware-create-terminal-server-aware-application">Terminal Server Awareness flag</a> on AutoHotkey.exe and <a href="Scripts.html#ahk2exe">compiled scripts</a>.</p>
 <p>Improved performance when <a href="Variables.html#AssignOp">assigning</a> large strings returned from <a href="Functions.html">user-defined functions</a>. [thanks Laszlo]</p>
 <h2 id="v1.0.46.05">1.0.46.05 - January 4, 2007</h2>
 <p>Fixed the <a href="lib/Input.html">Input command</a> to allow named end keys like {F9} to work even when the shift key is being held down (broken by v1.0.45). [thanks Halweg]</p>
@@ -180,7 +180,7 @@
 <p>Changed and fixed <a href="Functions.html">function-calls</a> so that any changes they make to <a href="Variables.html#ref">dynamic variable names</a>, <a href="Concepts.html#environment-variables">environment variables</a>, and <a href="Variables.html#BuiltIn">built-in variables</a> (such as <a href="misc/Clipboard.html">Clipboard</a>) are always visible to subsequent parts of the expression that called them.</p>
 <p>Changed: When a <a href="Variables.html#comma">multi-statement comma</a> is followed immediately by a variable and an equal sign, that equal sign is automatically treated as a <a href="lib/SetExpression.html">:= assignment</a>. For example, all of the following are assignments: <code>x:=1, y=2, a=b=c</code>.</p>
 <p>Changed <a href="Variables.html#comma">comma-separated expressions</a> to produce the following effects: 1) the leftmost <strong>/=</strong> operator becomes <a href="Variables.html#divide">true divide</a> rather than <a href="lib/EnvDiv.html">EnvDiv</a>; 2) blank values are not treated as zero in math expressions (thus they yield blank results).</p>
-<p>Improved the performance of <a href="Variables.html#Expressions">expressions</a> by 5 to 20% (depending on type).</p>
+<p>Improved the performance of <a href="Variables.html#Expressions">expressions</a> by 5 to 20&nbsp;% (depending on type).</p>
 <p>Improved the <a href="Variables.html#AssignOp">new assignment operators such as <strong>.=</strong></a> to support the <a href="misc/Clipboard.html">Clipboard variable</a> (even in <a href="Variables.html#comma">comma-separated expressions</a>).</p>
 <p>Improved the <a href="Variables.html#AssignOp"><strong>.=</strong> operator</a> so that it doesn't require a space to its left.</p>
 <p>Improved GUI controls to accept <a href="Functions.html#static">static variables</a> as their <a href="lib/Gui.html#var">associated variables</a> (formerly only globals were allowed).</p>
@@ -196,7 +196,7 @@
 <p>Improved <a href="Scripts.html#continuation">line continuation</a> to support all expression operators. For example, a line that starts with "?" or "+" is automatically appended to the line above it.</p>
 <p>Improved performance of operators <a href="Variables.html#concat">"<strong>.</strong>"</a> and <a href="Variables.html#concat">"<strong>.=</strong>"</a> to be as fast as the percent-sign method of appending a string.</p>
 <p>Improved expressions to allow more types of <a href="Variables.html#unary">consecutive unary operators</a> such as <strong>!!</strong>Var. [thanks Laszlo]</p>
-<p>Changed <a href="lib/Critical.html">Critical</a> to check messages less often (20 vs. 10ms), which improves the reliability of frequently-called <a href="lib/OnMessage.html">OnMessage functions</a>. [thanks Majkinetor]</p>
+<p>Changed <a href="lib/Critical.html">Critical</a> to check messages less often (20 vs. 10&nbsp;ms), which improves the reliability of frequently-called <a href="lib/OnMessage.html">OnMessage functions</a>. [thanks Majkinetor]</p>
 <p>Changed: A variable named simply "?" is no longer valid in expressions due to the new <a href="Variables.html#ternary">ternary operator</a>.</p>
 <p>Fixed <a href="Hotkeys.html">hotkeys</a> to support <code>:::</code> (colon as a hotkey) and <code>: &amp; x</code> (colon as a <a href="Hotkeys.html#combo">hotkey prefix</a>).</p>
 <p>Fixed the installer to remove psapi.dll from the AutoHotkey folder (except on Windows NT4). This avoids a conflict with Internet Explorer 7. [thanks to all who reported it]</p>
@@ -208,7 +208,7 @@
 <p>Fixed <a href="lib/LoopFile.html">file-pattern loops</a> not to crash when recursing into paths longer than 259 characters. In addition, such paths and files are now ignored (skipped over) by file-pattern loops, <a href="lib/FileSetAttrib.html">FileSetAttrib</a>, and <a href="lib/FileSetTime.html">FileSetTime</a>. [thanks PhilR]</p>
 <p>Fixed <a href="Functions.html">functions</a> that call themselves and assign the result to one of their own <a href="Functions.html#Local">locals</a> (broken by v1.0.45). [thanks bjennings]</p>
 <p>Fixed crash of scripts containing <a href="misc/RegEx-QuickRef.html">regular expressions</a> that have compile errors. [thanks PhiLho]</p>
-<p>Fixed <a href="lib/GuiControl.html">GuiControl</a> not to convert <a href="lib/GuiControls.html#Checkbox">checkboxes</a> into 3-state unless requested. [thanks JBensimon]</p>
+<p>Fixed <a href="lib/GuiControl.html">GuiControl</a> not to convert <a href="lib/GuiControls.html#CheckBox">checkboxes</a> into 3-state unless requested. [thanks JBensimon]</p>
 <p>Changed <a href="lib/URLDownloadToFile.html">UrlDownloadToFile</a> to announce a user-agent of "AutoHotkey" to the server rather than a blank string. [thanks jaco0646]</p>
 <p>Improved <a href="Scripts.html#continuation">continuation sections</a> to support semicolon comments inside the section via the option-word <em>Comments</em>.</p>
 <h2 id="v1.0.45.02">1.0.45.02 - November 8, 2006</h2>
@@ -225,18 +225,18 @@ Background: Without the tilde, Alt/Control/Shift fire upon release to avoid taki
 <p class="note"><strong>NOTE:</strong> Although this release has been extensively tested and is not expected to break any existing scripts, several low-level performance enhancements were made. If you have any mission-critical scripts, it is recommended that you retest them and/or wait a few weeks for any bugs to get fixed.</p>
 <p>Added support for <a href="misc/RegEx-QuickRef.html">regular expressions</a> via <a href="lib/RegExMatch.html">RegExMatch()</a>, <a href="lib/RegExReplace.html">RegExReplace()</a>, and <a href="lib/SetTitleMatchMode.html#RegEx">SetTitleMatchMode RegEx</a>. [thanks Philip Hazel &amp; PhiLho]</p>
 <p>Improved performance and memory utilization of <a href="lib/StringReplace.html">StringReplace</a>.</p>
-<p>Improved performance of the <a href="lib/SetExpression.html">:= operator</a> for expressions and functions involving long strings.</p>
+<p>Improved performance of the <a href="lib/SetExpression.html">colon-equal operator (:=)</a> for expressions and functions involving long strings.</p>
 <p>Improved <a href="lib/ControlClick.html">ControlClick</a> with a new option "NA" that avoids activating the target window (this mode also improves reliability in some cases). In addition, it's been documented that <a href="lib/SetControlDelay.html">SetControlDelay -1</a> can improve the reliability of ControlClick in some cases. [thanks nnesori]</p>
 <p>Changed <a href="lib/GuiControls.html#Button">GUI buttons</a> to default to <a href="lib/Gui.html#Wrap">"no word-wrap"</a> when no width, height, or CR/LF characters were specified. This may solve button display issues under some desktop themes.</p>
 <p>Fixed "<a href="lib/Transform.html#HTML">Transform HTML</a>" for the following characters: &amp;`n&gt;&lt;</p>
 <p>Fixed misinterpretation of lines starting with "if not is" such as "if not <strong>Is</strong>Done".</p>
 <p>Fixed inability of "<a href="lib/Gui.html#Show">Gui Show</a>" to move a window vertically downward to where its bottommost row of pixels is now.</p>
 <p>Fixed inability to use <a href="lib/GroupActivate.html">GroupActivate</a> as the only line beneath an IF or ELSE.</p>
-<p>Fixed inability of the <a href="lib/Input.html">Input command</a> to differentiate between end-keys enclosed in braces and their (un)shifted counterparts; e.g. '{' vs. '['. [thanks Laszlo]</p>
+<p>Fixed inability of the <a href="lib/Input.html">Input command</a> to differentiate between end keys enclosed in braces and their (un)shifted counterparts; e.g. '{' vs. '['. [thanks Laszlo]</p>
 <h2 id="Older_Changes">Older Changes</h2>
 <p>Visit <a href="https://web.archive.org/web/20130620190653/http://www.autohotkey.com/changelog/">www.autohotkey.com/changelog/</a> for even older changes.</p>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a0126ddf3e2d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdced7ddb03d22b","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/ChangeLogHelp.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:55 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/ChangeLogHelp.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:34 GMT -->
 </html>

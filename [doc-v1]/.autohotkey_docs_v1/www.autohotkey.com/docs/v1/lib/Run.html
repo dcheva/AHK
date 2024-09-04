@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Run.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:03 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Run.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:04 GMT -->
 <head>
-<title>Run / RunWait - Syntax &amp; Usage | AutoHotkey</title>
+<title>Run / RunWait - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The Run and RunWait commands run an external program. RunWait will wait until the program finishes before continuing." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 <style type="text/css">
 .style3 {color: #000; background: rgba(255, 255, 0, 0.4);}
@@ -19,31 +19,34 @@
 
 <p>Runs an external program. Unlike Run, RunWait will wait until the program finishes before continuing.</p>
 
-<pre class="Syntax"><span class="func">Run</span>, Target <span class="optional">, WorkingDir, Options, OutputVarPID</span>
+<pre class="Syntax">
+<span class="func">Run</span>, Target <span class="optional">, WorkingDir, Options, OutputVarPID</span>
 <span class="func">RunWait</span>, Target <span class="optional">, WorkingDir, Options, OutputVarPID</span>
 </pre>
 <h2 id="Parameters">Parameters</h2>
 <dl>
 
   <dt>Target</dt>
-  <dd><p>A document, URL, executable file (.exe, .com, .bat, etc.), shortcut (.lnk), or <a href="#verbs">system verb</a> to launch (see remarks). If <em>Target</em> is a local file and no path was specified with it, <a href="../Variables.html#WorkingDir">A_WorkingDir</a> will be searched first. If no matching file is found there, the system will search for and launch the file if it is integrated ("known"), e.g. by being contained in one of the PATH folders.</p>
-      <p>To pass parameters, add them immediately after the program or document name. For example, <code>Run, MyProgram.exe Param1 Param2</code>.</p>
-      <p>If the program/document name or a parameter contains spaces, it is safest to enclose it in double quotes (even though it may work without them in some cases). For example, <code>Run, "My Program.exe" "param with spaces"</code>.</p></dd>
+  <dd><p>A document, URL, executable file (.exe, .com, .bat, etc.), shortcut (.lnk), <a href="#CLSID">CLSID</a>, or <a href="#verbs">system verb</a> to launch (see remarks). If <em>Target</em> is a local file and no path was specified with it, how the file is located typically depends on the type of file and other conditions. See <a href="#Interpretation_of_Target">Interpretation of Target</a> for details.</p>
+      <p>To pass parameters, add them immediately after the program or document name as follows:</p>
+      <pre>Run, MyProgram.exe Param1 Param2</pre>
+      <p>If the program/document name or a parameter contains spaces, it is safest to enclose it in double quotes as follows (even though it may work without them in some cases):</p>
+      <pre>Run, "My Program.exe" "param with spaces"</pre></dd>
 
   <dt>WorkingDir</dt>
-  <dd><p>The working directory for the launched item. Do not enclose the name in double quotes even if it contains spaces. If omitted, the script's own working directory (<a href="../Variables.html#WorkingDir">A_WorkingDir</a>) will be used.</p></dd>
+  <dd><p>If blank or omitted, the script's own working directory (<a href="../Variables.html#WorkingDir">A_WorkingDir</a>) will be used. Otherwise, specify the initial working directory to be used by the new process. This typically also affects relative paths in <em>Target</em>, but interpretation of command-line parameters depends on the target program. Do not enclose the name in double quotes even if it contains spaces.</p></dd>
 
   <dt>Options</dt>
-  <dd><p>If omitted, the command launches <em>Target</em> normally and shows a warning dialog whenever <em>Target</em> could not be launched. To change this behavior, specify one or more of the following words:</p>
-      <p><strong>Max</strong>: launch maximized</p>
-      <p><strong>Min</strong>: launch minimized</p>
-      <p><strong>Hide</strong>: launch hidden (cannot be used in combination with either of the above)</p>
-      <p class="note"><strong>Note</strong>: Some applications (e.g. Calc.exe) do not obey the requested startup state and thus Max/Min/Hide will have no effect.</p>
-      <p id="UseErrorLevel"><strong>UseErrorLevel</strong>: UseErrorLevel can be specified alone or in addition to one of the above words (by separating it from the other word with a space). If the launch fails, this option skips the warning dialog, sets <a href="../misc/ErrorLevel.html">ErrorLevel</a> to the word ERROR, and allows the <a href="../misc/Threads.html">current thread</a> to continue. If the launch succeeds, RunWait sets <a href="../misc/ErrorLevel.html">ErrorLevel</a> to the program's exit code, and  Run sets it to 0.</p>
-      <p id="LastError">When UseErrorLevel is specified, the variable <strong>A_LastError</strong> is set to the result of the operating system's GetLastError() function. A_LastError is a number between 0 and 4294967295 (always formatted as decimal, not hexadecimal). Zero (0) means success, but any other number means the launch failed. Each number corresponds to a specific error condition (to get a list, search <a href="https://www.microsoft.com/">www.microsoft.com</a> for "system error codes"). Like <a href="../misc/ErrorLevel.html">ErrorLevel</a>, A_LastError is a per-thread setting; that is, interruptions by other <a href="../misc/Threads.html">threads</a> cannot change it. However, A_LastError is also set by <a href="DllCall.html#LastError">DllCall()</a>.</p></dd>
+  <dd><p>If blank or omitted, <em>Target</em> will be launched normally and a warning dialog will be shown whenever <em>Target</em> could not be launched. Otherwise, specify one or more of the following options:</p>
+      <p><strong>Max:</strong> launch maximized</p>
+      <p><strong>Min:</strong> launch minimized</p>
+      <p><strong>Hide:</strong> launch hidden (cannot be used in combination with either of the above)</p>
+      <p class="note"><strong>Note:</strong> Some applications (e.g. Calc.exe) do not obey the requested startup state and thus Max/Min/Hide will have no effect.</p>
+      <p id="UseErrorLevel"><strong>UseErrorLevel:</strong> UseErrorLevel can be specified alone or in addition to one of the above words (by separating it from the other word with a space). If the launch fails, this option skips the warning dialog, sets <a href="../misc/ErrorLevel.html">ErrorLevel</a> to the word ERROR, and allows the <a href="../misc/Threads.html">current thread</a> to continue. If the launch succeeds, RunWait sets <a href="../misc/ErrorLevel.html">ErrorLevel</a> to the program's exit code, and  Run sets it to 0.</p>
+      <p id="LastError">When UseErrorLevel is specified, the built-in variable <strong>A_LastError</strong> is set to the result of the operating system's GetLastError() function. A_LastError is a number between 0 and 4294967295 (always formatted as decimal, not hexadecimal). Zero (0) means success, but any other number means the launch failed. Each number corresponds to a specific error condition (to get a list, search <a href="https://www.microsoft.com/">www.microsoft.com</a> for "system error codes"). Like <a href="../misc/ErrorLevel.html">ErrorLevel</a>, A_LastError is a per-thread setting; that is, interruptions by other <a href="../misc/Threads.html">threads</a> cannot change it. However, A_LastError is also set by <a href="DllCall.html#LastError">DllCall()</a>.</p></dd>
 
   <dt>OutputVarPID</dt>
-  <dd><p>The name of the output variable in which to store the newly launched program's unique <a href="Process.html">Process ID (PID)</a>. The variable will be made blank if the PID could not be determined, which usually happens if a system verb, document, or shortcut is launched rather than a direct executable file. RunWait also supports this parameter, though its <em>OutputVarPID</em> must be checked in <a href="../misc/Threads.html">another thread</a> (otherwise, the PID will be invalid because the process will have terminated by the time the line following RunWait executes).</p>
+  <dd><p>If omitted, the corresponding value will not be stored. Otherwise, specify the name of the output variable in which to store the newly launched program's unique <a href="Process.html">Process ID (PID)</a>. The variable will be made blank if the PID could not be determined, which usually happens if a system verb, document, or shortcut is launched rather than a direct executable file. RunWait also supports this parameter, though its <em>OutputVarPID</em> must be checked in <a href="../misc/Threads.html">another thread</a> (otherwise, the PID will be invalid because the process will have terminated by the time the line following RunWait executes).</p>
       <p>After the Run command retrieves a PID, any windows to be created by the process might not exist yet. To wait for at least one window to be created, use <code><a href="WinWait.html">WinWait</a> ahk_pid %OutputVarPID%</code>.</p></dd>
 
 </dl>
@@ -51,17 +54,32 @@
 <p><span class="ver">[v1.1.04+]</span>: This command is able to throw an exception on failure. For more information, see <a href="Catch.html#RuntimeErrors">Runtime Errors</a>.</p>
 <p>Run: Does not set <a href="../misc/ErrorLevel.html">ErrorLevel</a> unless UseErrorLevel (above) is in effect, in which case ErrorLevel is set to the word ERROR upon failure or 0 upon success.</p>
 <p>RunWait: Sets ErrorLevel to the program's exit code (a signed 32-bit integer). If UseErrorLevel is in effect and the launch failed, the word ERROR is stored.</p>
+<h2 id="Interpretation_of_Target">Interpretation of Target</h2>
+<p>Run/RunWait itself does not interpret command-line parameters or search for the target file. Instead, it attempts to execute the target as follows:</p>
+<ul>
+  <li>If no verb is specified, <em>Target</em> is passed as-is to the <em>lpCommandLine</em> parameter of <a href="https://learn.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessw">CreateProcess</a>.</li>
+  <li>If a verb is specified or CreateProcess fails, and <a href="RunAs.html">RunAs</a> is not in effect, <a href="https://learn.microsoft.com/windows/win32/api/shellapi/nf-shellapi-shellexecuteexw">ShellExecuteEx</a> is attempted.</li>
+</ul>
+<p>If <em>Target</em> specifies a name but not a directory, the system will search for and launch the file if it is integrated ("known"), e.g. by being contained in one of the PATH folders. The exact search order depends on whether CreateProcess and/or ShellExecuteEx is called. If CreateProcess is called, the application directory (which contains the AutoHotkey interpreter or compiled script) takes precedence over the working directory specified by <em>WorkingDir</em>. To avoid this, specify the directory; e.g. <code>.\program.exe</code>.</p>
+<p>When ShellExecuteEx is being attempted, <em>Target</em> is interpreted as follows:</p>
+<ul>
+  <li>The substring of <em>Target</em> ending at the first space or tab may be either a <a href="#verbs">predefined verb name</a> or an asterisk followed by a verb name. If present, the optional asterisk, verb name and a single delimiting space or tab are excluded from further consideration. Verb names containing spaces or tabs are not supported, but symbols such as hyphen are permitted.</li>
+  <li>If a leading double-quote mark is present, the substring between that and the next double-quote mark is considered to be the target file or action.</li>
+  <li>Otherwise, the first substring which ends at a space and is either an existing file (specified by absolute path or relative to <em>WorkingDir</em>) or ends in .exe, .bat, .com, .cmd or .hta is considered the action. This allows file types such as .ahk, .vbs or .lnk to accept parameters while still allowing "known" executables such as wordpad.exe to be launched without an absolute path.</li>
+  <li>A single delimiting space is ignored, if present, and the remainder of <em>Target</em> is passed as-is to CreateProcess or ShellExecuteEx as command-line parameters.</li>
+</ul>
 <h2 id="Remarks">Remarks</h2>
 <p>Unlike Run, RunWait will wait until <em>Target</em> is closed or exits, at which time <a href="../misc/ErrorLevel.html">ErrorLevel</a> will be set to the program's exit code (as a signed 32-bit integer). Some programs will appear to return immediately even though they are still running; these programs spawn another process.</p>
 <p>If <em>Target</em> contains any commas, they must be <a href="../misc/EscapeChar.html">escaped</a> as highlighted three times in the following example:</p>
 <pre>Run rundll32.exe shell32.dll<span class="style3">`,</span>Control_RunDLL desk.cpl<span class="style3">`,`,</span> 3  <em>; Opens Control Panel &gt; Display Properties &gt; Settings</em></pre>
 <p>When running a program via <a href="../Variables.html#ComSpec">ComSpec</a> (cmd.exe) -- perhaps because you need to redirect the program's input or output -- if the path or name of the executable contains spaces, the entire string should be enclosed in an outer pair of quotes. In the following example, the outer quotes are highlighted in yellow:</p>
 <pre>Run %ComSpec% /c <span class="style3">"</span>"C:\My Utility.exe" "param 1" "second param" &gt;"C:\My File.txt"<span class="style3">"</span></pre>
-<p>If <em>Target</em> cannot be launched, an error window is displayed and the current thread is exited, unless the string <strong>UseErrorLevel</strong> is included in the third parameter or the error is caught by a <a href="Try.html">Try</a>/<a href="Catch.html">Catch</a> statement.</p>
+<p>If <em>Target</em> cannot be launched, an error window is displayed and the current thread is exited, unless the string UseErrorLevel is included in the third parameter or the error is caught by a <a href="Try.html">Try</a>/<a href="Catch.html">Catch</a> statement.</p>
 <p>Performance may be slightly improved if <em>Target</em> is an exact path, e.g. <code>Run, C:\Windows\Notepad.exe "C:\My Documents\Test.txt"</code> rather than <code>Run, C:\My Documents\Test.txt</code>.</p>
-<p>Special <a href="../misc/CLSID-List.html">CLSID folders</a> may be opened via Run. For example:</p>
-<pre>Run ::{20d04fe0-3aea-1069-a2d8-08002b30309d}  <em>; Opens the "My Computer" folder.</em>
-Run ::{645ff040-5081-101b-9f08-00aa002f954e}  <em>; Opens the Recycle Bin.</em></pre>
+<p id="CLSID">Special <a href="../misc/CLSID-List.html">CLSIDs</a> may be opened via Run. Most of them can be opened by using the shell: prefix. Some can be opened without it. For example:</p>
+<pre>Run shell:::{D20EA4E1-3957-11D2-A40B-0C5020524153}  <em>; Windows Tools.</em>
+Run ::{20D04FE0-3AEA-1069-A2D8-08002B30309D}  <em>; This PC (formerly My Computer or Computer).</em>
+Run ::{645FF040-5081-101B-9F08-00AA002F954E}  <em>; Recycle Bin.</em></pre>
 <p id="verbs">System verbs correspond to actions available in a file's right-click menu in the Explorer. If a file is launched without a verb, the default verb (usually "open") for that particular file type will be used. If specified, the verb should be followed by the name of the target file. The following verbs are currently supported:</p>
 <table class="info">
   <tr>
@@ -70,13 +88,13 @@ Run ::{645ff040-5081-101b-9f08-00aa002f954e}  <em>; Opens the Recycle Bin.</em><
   </tr>
   <tr>
     <td>*<i>verb</i></td>
-    <td><span class="ver">[AHK_L 57+]:</span> Any system-defined or custom verb. For example: <code>Run *Compile %A_ScriptFullPath%</code>. On Windows Vista and later, the <a href="#RunAs">*RunAs</a> verb may be used in place of the <i>Run as administrator</i> right-click menu item.</td>
+    <td><span class="ver">[AHK_L 57+]</span>: Any system-defined or custom verb. For example: <code>Run *Compile %A_ScriptFullPath%</code>. On Windows Vista and later, the <a href="#RunAs">*RunAs</a> verb may be used in place of the <i>Run as administrator</i> right-click menu item.</td>
   </tr>
   <tr>
     <td>properties</td>
     <td>
       <p>Displays the Explorer's properties window for the indicated file. For example: <code>Run, properties "C:\My File.txt"</code></p>
-      <p class="note"><strong>Note</strong>: The properties window will automatically close when the script terminates. To prevent this, use <a href="WinWait.html">WinWait</a> to wait for the window to appear, then use <a href="WinWaitClose.html">WinWaitClose</a> to wait for the user to close it.</p>
+      <p class="note"><strong>Note:</strong> The properties window will automatically close when the script terminates. To prevent this, use <a href="WinWait.html">WinWait</a> to wait for the window to appear, then use <a href="WinWaitClose.html">WinWaitClose</a> to wait for the user to close it.</p>
     </td>
   </tr>
   <tr>
@@ -119,16 +137,16 @@ if not (A_IsAdmin or RegExMatch(full_command_line, " /restart(?!\S)"))
 }
 
 MsgBox A_IsAdmin: %A_IsAdmin%`nCommand line: %full_command_line%</pre>
-<p>If the user cancels the UAC dialog or Run fails for some other reason, the script will simply exit.</p>
+<p>If the user cancels the <a href="https://en.wikipedia.org/wiki/User_Account_Control">User Account Control (UAC)</a> dialog or Run fails for some other reason, the script will simply exit.</p>
 <p>Using <a href="../Scripts.html#SlashR">/restart</a> ensures that a <a href="_SingleInstance.html">single instance</a> prompt is not shown if the new instance of the script starts before ExitApp is called.</p>
 <p>If UAC is disabled, <em>*RunAs</em> will launch the process without elevating it. Checking for <code>/restart</code> in the command line ensures that the script does not enter a runaway loop in that case. Note that <code>/restart</code> is a built-in switch, so is not included in the <a href="../Scripts.html#cmd_args">array of command-line parameters</a>.</p>
 <p>The example can be modified to fit the script's needs:</p>
 <ul>
-  <li>If the script absolutely requires admin rights, check A_IsAdmin a second time in case <em>*RunAs</em> failed to elevate the script (i.e. because UAC is disabled).</li>
-  <li>To keep the script running even if the user cancels the UAC prompt, move ExitApp into the try block.</li>
+  <li>If the script absolutely requires admin rights, check <a href="../Variables.html#IsAdmin">A_IsAdmin</a> a second time in case <em>*RunAs</em> failed to elevate the script (i.e. because UAC is disabled).</li>
+  <li>To keep the script running even if the user cancels the UAC prompt, move <a href="ExitApp.html">ExitApp</a> into the try block.</li>
   <li>To keep the script running even if it failed to restart (i.e. because the script file has been changed or deleted), remove ExitApp and use RunWait instead of Run. On success, <code>/restart</code> causes the new instance to terminate the old one. On failure, the new instance exits and RunWait returns.</li>
 </ul>
-<p><span class="ver">[v1.0.92.01+]:</span> If UAC is enabled, the AutoHotkey installer registers the <em>RunAs</em> verb for <em>.ahk</em> files, which allows <code>Run *RunAs script.ahk</code> to launch a script as admin with the default executable.</p>
+<p><span class="ver">[v1.0.92.01+]</span>: If UAC is enabled, the AutoHotkey installer registers the <em>RunAs</em> verb for <em>.ahk</em> files, which allows <code>Run *RunAs script.ahk</code> to launch a script as admin with the default executable.</p>
 
 <h2 id="Related">Related</h2>
 <p><a href="RunAs.html">RunAs</a>, <a href="Process.html">Process</a>, <a href="Exit.html">Exit</a>, <a href="../misc/CLSID-List.html">CLSID List</a>, <a href="DllCall.html">DllCall()</a></p>
@@ -144,9 +162,9 @@ MsgBox A_IsAdmin: %A_IsAdmin%`nCommand line: %full_command_line%</pre>
 <p>The following opens an internet address in the user's default web browser.</p>
 <pre>Run, https://www.google.com</pre>
 <p>The following opens the default e-mail application with the recipient filled in.</p>
-<pre>Run, mailto:<a href="https://www.autohotkey.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="05766a68606a6b6045766a6860616a68646c6b2b666a68">[email&#160;protected]</a></pre>
+<pre>Run, mailto:someone@somedomain.com</pre>
 <p>The following does the same as above, plus the subject and body.</p>
-<pre>Run, mailto:<a href="https://www.autohotkey.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="592a36343c36373c192a36343c3d3634383037773a3634">[email&#160;protected]</a>?subject=This is the subject line&amp;body=This is the message body's text.</pre>
+<pre>Run, mailto:someone@somedomain.com?subject=This is the subject line&amp;body=This is the message body's text.</pre>
 </div>
 
 <div class="ex" id="ExErrorLevel">
@@ -166,10 +184,10 @@ Run, properties C:\DirTest.txt</pre>
 
 <div class="ex" id="ExCLSID">
 <p><a class="ex_number" href="#ExCLSID"></a> Run is able to launch <a href="../misc/CLSID-List.html">CLSIDs</a>:</p>
-<p>The following opens the recycle bin.</p>
-<pre>Run, ::{645ff040-5081-101b-9f08-00aa002f954e}</pre>
-<p>The following opens the "My Computer" directory.</p>
-<pre>Run, ::{20d04fe0-3aea-1069-a2d8-08002b30309d}</pre>
+<p>The following opens the Recycle Bin.</p>
+<pre>Run, ::{645FF040-5081-101B-9F08-00AA002F954E}</pre>
+<p>The following opens This PC (formerly My Computer or Computer).</p>
+<pre>Run, ::{20D04FE0-3AEA-1069-A2D8-08002B30309D}</pre>
 </div>
 
 <div class="ex" id="ExMultipleCmds">
@@ -178,7 +196,7 @@ Run, properties C:\DirTest.txt</pre>
 </div>
 
 <div class="ex" id="StdOut">
-<p><a class="ex_number" href="#StdOut"></a> The following functions can be used to run a command and retrieve its output or to run multiple commands in one go and retrieve their output.</p>
+<p><a class="ex_number" href="#StdOut"></a> The following functions can be used to run a command and retrieve its output or to run multiple commands in one go and retrieve their output. For the WshShell object, see <a href="https://learn.microsoft.com/previous-versions/aew9yb99(v=vs.85)">Microsoft Docs</a>.</p>
 <pre>MsgBox % RunWaitOne("dir " A_ScriptDir)
 
 MsgBox % RunWaitMany("
@@ -189,7 +207,6 @@ echo and you'll get the output.
 )")
 
 RunWaitOne(command) {
-    <em>; WshShell object: <a href="http://msdn.microsoft.com/en-us/library/aew9yb99">http://msdn.microsoft.com/en-us/library/aew9yb99</a></em>
     shell := ComObjCreate("WScript.Shell")
     <em>; Execute a single command via cmd.exe</em>
     exec := shell.Exec(ComSpec " /C " command)
@@ -215,7 +232,7 @@ RunWaitMany(commands) {
 {
     shell := ComObjCreate("WScript.Shell")
     exec := shell.Exec("AutoHotkey.exe /ErrorStdOut *")
-    exec.StdIn.Write(script)
+    exec.StdIn.Write(Script)
     exec.StdIn.Close()
     if Wait
         return exec.StdOut.ReadAll()
@@ -228,8 +245,8 @@ MsgBox % "Result: " result
 </pre>
 </div>
 
-<script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a012a9ef5a2d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcedca3954d22b","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Run.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:03 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Run.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:05 GMT -->
 </html>

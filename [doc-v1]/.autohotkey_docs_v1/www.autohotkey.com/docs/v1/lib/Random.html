@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Random.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:27 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Random.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:35 GMT -->
 <head>
-<title>Random - Syntax &amp; Usage | AutoHotkey</title>
+<title>Random - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The Random command generates a pseudo-random number." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -16,7 +16,8 @@
 
 <p>Generates a pseudo-random number.</p>
 
-<pre class="Syntax"><span class="func">Random</span>, OutputVar <span class="optional">, Min, Max</span>
+<pre class="Syntax">
+<span class="func">Random</span>, OutputVar <span class="optional">, Min, Max</span>
 <span class="func">Random</span>, , NewSeed
 </pre>
 <h2 id="Parameters">Parameters</h2>
@@ -26,10 +27,10 @@
   <dd><p>The name of the output variable in which to store the result. The format of stored floating point numbers is determined by <a href="SetFormat.html">SetFormat</a> if its <a href="SetFormat.html#Fast">slow mode</a> is used; otherwise SetFormat only affects formatting when the number is converted to a string.</p></dd>
 
   <dt>Min</dt>
-  <dd>The smallest number that can be generated, which can be negative, floating point, or an <a href="../Variables.html#Expressions">expression</a>. If omitted, the smallest number will be 0. The lowest allowed value is -2147483648 for integers, but floating point numbers  have no restrictions.</dd>
+  <dd>If blank or omitted, it defaults to 0. Otherwise, specify the smallest number that can be generated, which can be negative, floating point, or an <a href="../Variables.html#Expressions">expression</a>. The lowest allowed value is -2147483648 for integers, but floating point numbers have no restrictions.</dd>
 
   <dt>Max</dt>
-  <dd><p>The largest number that can be generated, which can be negative, floating point, or an <a href="../Variables.html#Expressions">expression</a>. If omitted, the largest number will be 2147483647 (which is also the largest allowed integer value -- but floating point numbers have no restrictions).</p></dd>
+  <dd><p>If blank or omitted, it defaults to 2147483647. Otherwise, specify the largest number that can be generated, which can be negative, floating point, or an <a href="../Variables.html#Expressions">expression</a>. The largest allowed value is 2147483647 for integers, but floating point numbers have no restrictions.</p></dd>
 
   <dt>NewSeed</dt>
   <dd><p>This mode reseeds the random number generator with <em>NewSeed</em> (which can be an <a href="../Variables.html#Expressions">expression</a>). This affects all subsequently generated random numbers. <em>NewSeed</em> should be an integer between 0 and 4294967295 (0xFFFFFFFF). Reseeding can improve the quality/security of generated random numbers, especially when <em>NewSeed</em> is a genuine random number rather than one of lesser quality such as a pseudo-random number. Generally, reseeding does not need to be done more than once.</p>
@@ -67,11 +68,11 @@
 </ol>
 <p class="J">THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
 <p>Do NOT use for CRYPTOGRAPHY without securely hashing several returned values together, otherwise the generator state can be learned after reading 624 consecutive values.</p>
-<p>When you use this, send an email to: <a href="https://www.autohotkey.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c0adedada1b480ada1b4a8eeb3a3a9eea8a9b2afb3a8a9ada1edb5eea1a3eeaab0">[email&#160;protected]</a> with an appropriate reference to your work.</p>
+<p>When you use this, send an email to: m-mat@math.sci.hiroshima-u.ac.jp with an appropriate reference to your work.</p>
 <p><i>This above has been already been done for AutoHotkey, but if you use the Random command in a publicly distributed application, consider sending an e-mail to the above person to thank him.</i></p>
 
-<script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013deffed77b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcef52184bd385","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Random.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:27 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Random.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:35 GMT -->
 </html>

@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/FAQ.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:09 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/FAQ.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:25 GMT -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Frequently Asked Questions (FAQ) | AutoHotkey</title>
+<title>Frequently Asked Questions (FAQ) | AutoHotkey v1</title>
 <meta name="description" content="This page lists questions and answers about language syntax, general troubleshooting, common tasks, hotkeys, hotstrings and remapping." />
-<script src="../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="static/theme.css" rel="stylesheet" type="text/css" />
+<link href="static/theme.css" rel="stylesheet" type="text/css" />
 <script src="static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -28,13 +28,13 @@
   <li><a href="#autoexec">Why do some lines in my script never execute?</a></li>
   <li><a href="#vista">Why doesn't my script work on Windows <em>xxx</em> even though it worked on a previous version?</a></li>
   <li><a href="#uac">How do I work around problems caused by User Account Control (UAC)?</a></li>
-  <li><a href="#DefaultScript">I can't edit my script via tray icon because it won't start due to an error. Can I find my script somewhere else?</a></li>
+  <li><a href="#DefaultScript">I can't edit my script via tray icon because it won't start due to an error. What should I do?</a></li>
   <li><a href="#Debug">How can I find and fix errors in my code?</a></li>
   <li><a href="#run">Why is the Run command unable to launch my game or program?</a></li>
   <li><a href="#nonascii">Why are the non-ASCII characters in my script displaying or sending incorrectly?</a></li>
-  <li><a href="#games">Why don't Hotstrings, Send, and MouseClick work in certain games?</a></li>
+  <li><a href="#games">Why don't Hotstrings, Send, and Click work in certain games?</a></li>
   <li><a href="#perf">How can performance be improved for games or at other times when the CPU is under heavy load?</a></li>
-  <li><a href="#Virus">My antivirus program flagged AHK as malware. Does it really contain a virus?</a></li>
+  <li><a href="#Virus">My antivirus program flagged AutoHotkey or a compiled script as malware. Is it really a virus?</a></li>
 </ul>
 <p><strong><a href="#common-tasks">Common Tasks</a></strong></p>
 <ul>
@@ -59,7 +59,7 @@
 <ul>
   <li><a href="#Startup">How do I put my hotkeys and hotstrings into effect automatically every time I start my PC?</a></li>
   <li><a href="#HotMouse">I'm having trouble getting my mouse buttons working as hotkeys. Any advice?</a></li>
-  <li><a href="#HotSymb">How can tab and space be defined as hotkeys?</a></li>
+  <li><a href="#HotSymb">How can Tab and Space be defined as hotkeys?</a></li>
   <li><a href="#Remap">How can keys or mouse buttons be remapped so that they become different keys?</a></li>
   <li><a href="#DoublePress">How do I detect the double press of a key or button?</a></li>
   <li><a href="#HotContext">How can a hotkey or hotstring be made exclusive to certain program(s)? In other words, I want a certain key to act as it normally does except when a specific window is active.</a></li>
@@ -78,7 +78,7 @@
 <ul>
   <li>In parameters that are input or output variables: <code><a href="lib/StringLen.html">StringLen</a>, <strong>OutputVar</strong>, <strong>InputVar</strong></code></li>
   <li>On the left side of an assignment: <code><strong>Var</strong> = 123abc</code></li>
-  <li>On the left side of <a href="lib/IfEqual.html">traditional (non-expression) if-statements</a>: <code>If <strong>Var1</strong> &lt; %Var2%</code></li>
+  <li>On the left side of <a href="lib/IfEqual.html">legacy (non-expression) if-statements</a>: <code>If <strong>Var1</strong> &lt; %Var2%</code></li>
   <li>Everywhere in <a href="Variables.html#Expressions">expressions</a>. For example:
   <pre>If (<strong>Var1</strong> &lt;&gt; <strong>Var2</strong>)
       <strong>Var1 <a href="lib/SetExpression.html">:=</a> Var2</strong> + 100</pre></li>
@@ -146,8 +146,8 @@ return</pre>
   <li>Disable UAC completely. This is not recommended, and is not feasible on Windows 8 or later.</li>
 </ul>
 
-<h3 id="DefaultScript">I can't edit my script via tray icon because it won't start due to an error. What do I do?</h3>
-<p>You need to fix the error in your script before you can get your tray icon back. But first, you need to find the script file.</p>
+<h3 id="DefaultScript">I can't edit my script via tray icon because it won't start due to an error. What should I do?</h3>
+<p>You need to fix the error in your script before you can get your <a href="Program.html#tray-icon">tray icon</a> back. But first, you need to find the script file.</p>
 <p>Look for AutoHotkey.ahk in the following directories:</p>
 <ul>
   <li>Your <em>Documents</em> (or <em>My Documents</em>) folder.</li>
@@ -162,17 +162,17 @@ return</pre>
 <h3 id="run">Why is the <a href="lib/Run.html">Run</a> command unable to launch my game or program?</h3>
 <p>Some programs need to be started in their own directories (when in doubt, it is usually best to do so). For example:</p>
 <pre>Run, %A_ProgramFiles%\Some Application\App.exe, %A_ProgramFiles%\Some Application</pre>
-<p>If the program you are trying to start is in <code>%A_WinDir%\System32</code> and you are using AutoHotkey 32-bit on a 64-bit system, the <a href="https://msdn.microsoft.com/en-us/library/aa384187">File System Redirector</a> may be interfering. To work around this, use <code>%A_WinDir%\SysNative</code> instead; this is a virtual directory only visible to 32-bit programs running on 64-bit systems.</p>
+<p>If the program you are trying to start is in <code>%A_WinDir%\System32</code> and you are using AutoHotkey 32-bit on a 64-bit system, the <a href="https://learn.microsoft.com/windows/win32/winprog64/file-system-redirector">File System Redirector</a> may be interfering. To work around this, use <code>%A_WinDir%\SysNative</code> instead; this is a virtual directory only visible to 32-bit programs running on 64-bit systems.</p>
 
 <h3 id="nonascii">Why are the non-ASCII characters in my script displaying or sending incorrectly?</h3>
 <p>Short answer: Save the script as UTF-8 with BOM.</p>
-<p>Although AutoHotkey supports Unicode text, it is optimized for backward-compatibility, which means defaulting to the ANSI encoding rather than the more internationally recommended UTF-8.  AutoHotkey will not automatically recognize a UTF-8 file unless it begins with a byte order mark.</p>
-<p>In other words, UTF-8 files which lack a byte order mark are misinterpreted, causing non-ASCII characters to be decoded incorrectly. To resolve this, save the file as UTF-8 with BOM or <a href="Scripts.html#cp">add the /CP65001 command line switch</a>.</p>
-<p>To save as UTF-8 with BOM in Notepad, select <em>UTF-8</em> from the <em>Encoding</em> drop-down in the Save As dialog.</p>
-<p>To read other UTF-8 files which lack a byte order mark, use <code><a href="lib/FileEncoding.html">FileEncoding</a> UTF-8-RAW</code>, the <code>*P65001</code> option with <a href="lib/FileRead.html">FileRead</a>, or <code>"UTF-8-RAW"</code> for the third parameter of <a href="lib/FileOpen.html">FileOpen()</a>. The <code>-RAW</code> suffix can be omitted, but in that case any newly created files will have a byte order mark.</p>
+<p>Although AutoHotkey supports Unicode text, it is optimized for backward-compatibility, which means defaulting to the ANSI encoding rather than the more internationally recommended UTF-8.  AutoHotkey will not automatically recognize a UTF-8 file unless it begins with a byte order mark (BOM).</p>
+<p>In other words, UTF-8 files which lack a BOM are misinterpreted, causing non-ASCII characters to be decoded incorrectly. To resolve this, save the file as UTF-8 with BOM or <a href="Scripts.html#cp">add the /CP65001 command line switch</a>.</p>
+<p>To save as UTF-8 with BOM in Notepad, select <em>UTF-8 with BOM</em> (or <em>UTF-8</em> on systems older than Windows 10 v1903) from the <em>Encoding</em> drop-down in the Save As dialog. Note that Notepad in Windows 10 v1903 and later defaults to <em>UTF-8</em> (without BOM).</p>
+<p>To read other UTF-8 files which lack a BOM, use <code><a href="lib/FileEncoding.html">FileEncoding</a> UTF-8-RAW</code>, the <code>*P65001</code> option with <a href="lib/FileRead.html">FileRead</a>, or <code>"UTF-8-RAW"</code> for the third parameter of <a href="lib/FileOpen.html">FileOpen()</a>. The <code>-RAW</code> suffix can be omitted, but in that case any newly created files will have a BOM.</p>
 <p>Note that INI files accessed with the standard INI commands do not support UTF-8; they must be saved as ANSI or UTF-16.</p>
 
-<h3 id="games">Why do <a href="Hotstrings.html">Hotstrings</a>, <a href="lib/Send.html">Send</a>, and <a href="lib/Click.html">Click</a> have no effect in certain games?</h3>
+<h3 id="games">Why don't <a href="Hotstrings.html">Hotstrings</a>, <a href="lib/Send.html">Send</a>, and <a href="lib/Click.html">Click</a> work in certain games?</h3>
 <p>Not all games allow AHK to send keys and clicks or receive pixel colors.</p>
 <p>But there are some alternatives, try all the solutions mentioned below. If all these fail, it may not be possible for AHK to work with your game. Sometimes games have a hack and cheat prevention measure, such as GameGuard and Hackshield. If they do, there is a high chance that AutoHotkey will not work with that game.</p>
 <ul>
@@ -187,7 +187,7 @@ Send, abc</pre>
 
 #Hotstring SP
 ::btw::by the way</pre>
-  <p class="note"><strong>Note</strong>: SendPlay may have no effect at all on Windows Vista or later if User Account Control is enabled, even if the script is running as an administrator.</p>
+  <p class="note"><strong>Note:</strong> SendPlay may have no effect at all on Windows Vista or later if User Account Control is enabled, even if the script is running as an administrator.</p>
   </li>
   <li>
   <p>Increase <a href="lib/SetKeyDelay.html">SetKeyDelay</a>. For example:</p>
@@ -203,7 +203,7 @@ SetKeyDelay, 0, 50, Play</pre>
   <pre>Send {KEY down}{KEY up}</pre>
   </li>
   <li>
-  <p>Try the down and up event of a key with a <a href="lib/ControlSend.html">Sleep</a> between them:</p>
+  <p>Try the down and up event of a key with a <a href="lib/Sleep.html">Sleep</a> between them:</p>
   <pre>Send {KEY down}
 Sleep 10 <em>; try various milliseconds</em>
 Send {KEY up}</pre>
@@ -233,7 +233,7 @@ FileDelete, C:\My Temp File.txt</pre>
 <p>First, here is an example that closes another script:</p>
 <pre>DetectHiddenWindows On  <em>; Allows a script's hidden main window to be detected.</em>
 SetTitleMatchMode 2  <em>; Avoids the need to specify the full path of the file below.</em>
-WinClose ScriptFileName.ahk - AutoHotkey  <em>; Update this to reflect the script's name (case sensitive).</em></pre>
+WinClose ScriptFileName.ahk - AutoHotkey  <em>; Update this to reflect the script's name (case-sensitive).</em></pre>
 <p>To <a href="lib/Suspend.html">suspend</a>, <a href="lib/Pause.html">pause</a> or <a href="lib/Reload.html">reload</a> another script, replace the last line above with one of these:</p>
 <pre>PostMessage, 0x0111, 65305,,, ScriptFileName.ahk - AutoHotkey  <em>; Suspend.</em>
 PostMessage, 0x0111, 65306,,, ScriptFileName.ahk - AutoHotkey  <em>; Pause.</em>
@@ -241,7 +241,7 @@ PostMessage, 0x0111, 65303,,, ScriptFileName.ahk - AutoHotkey  <em>; Reload.</em
 <h3 id="repeat">How can a repeating action be stopped without exiting the script?</h3>
 <p>To pause or resume the entire script at the press of a key, assign a hotkey to the <a href="lib/Pause.html">Pause</a> command as in this example:</p>
 <pre>^!p::Pause  <em>; Press Ctrl+Alt+P to pause. Press it again to resume.</em></pre>
-<p>To stop an action that is repeating inside a <a href="lib/Loop.html">Loop</a>, consider the following working example, which is a hotkey that both starts and stops its own repeating action. In other words, pressing the hotkey once will start the Loop. Pressing the same hotkey again will stop it.</p>
+<p>To stop an action that is repeating inside a <a href="lib/Loop.html">Loop</a>, consider the following working example, which is a hotkey that both starts and stops its own repeating action. In other words, pressing the hotkey once will start the loop. Pressing the same hotkey again will stop it.</p>
 <pre>#MaxThreadsPerHotkey 3
 #z::  <em><strong>; Win+Z hotkey (change this hotkey to suit your preferences).</strong></em>
 #MaxThreadsPerHotkey 1
@@ -268,7 +268,7 @@ return</pre>
 <h3 id="help">How can context sensitive help for AutoHotkey commands be used in any editor?</h3>
 <p>Rajat created <a href="scripts/index.html#ContextSensitiveHelp">this script</a>.</p>
 <h3 id="load">How to detect when a web page is finished loading?</h3>
-<p>With Internet Explorer, perhaps the most reliable method is to use DllCall() and COM as demonstrated at <a href="https://www.autohotkey.com/forum/topic19256.html">www.autohotkey.com/forum/topic19256.html</a>. On a related note, the contents of the address bar and status bar can be retrieved as demonstrated at <a href="https://www.autohotkey.com/forum/topic19255.html">www.autohotkey.com/forum/topic19255.html</a>.</p>
+<p>With Internet Explorer, perhaps the most reliable method is to use DllCall() and COM as demonstrated at <a href="https://www.autohotkey.com/board/topic/17715-">www.autohotkey.com/board/topic/17715-</a>. On a related note, the contents of the address bar and status bar can be retrieved as demonstrated at <a href="https://www.autohotkey.com/board/topic/17714-">www.autohotkey.com/board/topic/17714-</a>.</p>
 <p><strong>Older, less reliable method:</strong> The technique in the following example will work with MS Internet Explorer for most pages. A similar technique might work in other browsers:</p>
 <pre>Run, www.yahoo.com
 MouseMove, 0, 0  <em>; Prevents the status bar from showing a mouse-hover link instead of "Done".</em>
@@ -305,7 +305,7 @@ Gui, Submit, NoHide
 MsgBox, Content of the edit control: %AssociatedVar%
 Return</pre>
 <h3 id="GDIPlus">Can I draw something with AHK?</h3>
-<p>See <a href="https://www.autohotkey.com/forum/topic32238.html">GDI+ standard library</a> by tic. It's also possible with some rudimentary methods using Gui, but in a limited way.</p>
+<p>See <a href="https://www.autohotkey.com/board/topic/29449-">GDI+ standard library</a> by tic. It's also possible with some rudimentary methods using Gui, but in a limited way.</p>
 <h3 id="WinWaitAction">How can I start an action when a window appears, closes or becomes [in]active?</h3>
 <p>Use <a href="lib/WinWait.html">WinWait</a>, <a href="lib/WinWaitClose.html">WinWaitClose</a> or <a href="lib/WinWaitActive.html">WinWait[Not]Active</a>.</p>
 <p>There are also user-created solutions such as <a href="https://www.autohotkey.com/boards/viewtopic.php?f=6&amp;t=6463">OnWin.ahk</a> and <a href="https://www.autohotkey.com/board/topic/80644-how-to-hook-on-to-shell-to-receive-its-messages/">[How to] Hook on to Shell to receive its messages</a>.</p>
@@ -350,8 +350,8 @@ return</pre>
 <p>See <a href="KeyList.html#SpecialKeys">Special Keys</a>.</p>
 <h3 id="HotZero">My keypad has a special 000 key. Is it possible to turn it into a hotkey?</h3>
 <p>Yes. This  <a href="scripts/index.html#Numpad000">example script</a> makes <kbd>000</kbd> into an equals key. You can change the action by replacing the <code>Send, =</code> line with line(s) of your choice.</p>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a012543b842d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdced5d8fb2c3f4","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/FAQ.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:15 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/FAQ.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:25 GMT -->
 </html>

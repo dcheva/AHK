@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Object.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:01 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Object.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:53 GMT -->
 <head>
-<title>Basic Object - Methods &amp; Properties | AutoHotkey</title>
+<title>Basic Object - Methods &amp; Properties | AutoHotkey v1</title>
 <meta name="description" content="The basic object provides an interface to perform actions such as inserting or removing a key, getting the number of keys, cloning the object, etc." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -31,7 +31,7 @@
       <li><a href="#GetCapacity">GetCapacity</a>: Returns the current capacity of an object or one of its fields.</li>
       <li><a href="#GetAddress">GetAddress</a>: Returns the current address of a field's string buffer, if it has one.</li>
       <li><a href="#NewEnum">_NewEnum</a>: Returns a new enumerator to enumerate an object's key-value pairs.</li>
-      <li><a href="#HasKey">HasKey</a>: Returns true if the specified key is associated with a value within an object.</li>
+      <li><a href="#HasKey">HasKey</a>: Returns 1 (true) if the specified key is associated with a value within an object.</li>
       <li><a href="#Clone">Clone</a>: Returns a shallow copy of an object.</li>
       <li><a class="deprecated" href="#Insert" title="Deprecated. Use InsertAt, Push, ObjRawSet or a simple assignment instead.">Insert</a> (deprecated): Inserts key-value pairs into an object.</li>
       <li><a class="deprecated" href="#Remove" title="Deprecated. Use RemoveAt, Delete or Pop instead.">Remove</a> (deprecated): Removes key-value pairs from an object.</li>
@@ -57,12 +57,14 @@
 <div class="methodShort" id="InsertAt"><h3>InsertAt <span class="ver">[v1.1.21+]</span></h3>
 <p>Inserts one or more values at a given position within a linear array.</p>
 <pre class="Syntax">Object.<span class="func">InsertAt</span>(Pos, Value1 <span class="optional">, Value2, ... Value<i>N</i></span>)</pre>
+<h4 id="InsertAt_Parameters">Parameters</h4>
 <dl>
   <dt>Pos</dt>
   <dd><p>The position to insert <em>Value1</em> at. Subsequent values are inserted at Pos+1, Pos+2, etc.</p></dd>
   <dt>Value1 ...</dt>
   <dd><p>One or more values to insert. To insert an array of values, pass <code><a href="../Functions.html#VariadicCall">theArray*</a></code> as the last parameter.</p></dd>
 </dl>
+<h4 id="InsertAt_Remarks">Remarks</h4>
 <p>InsertAt is the counterpart of <a href="#RemoveAt">RemoveAt</a>.</p>
 <p>As Objects are associative arrays, <em>Pos</em> is also the integer key which will be associated with <em>Value1</em>. Any items previously at or to the right of <em>Pos</em> are shifted to the right by the exact number of value parameters, even if some values are missing (i.e. the object is a sparse array). For example:</p>
 <pre>x := []
@@ -87,15 +89,19 @@ MsgBox % x[handleX+1]  <em>; This is the new "position" of "A"</em></pre>
 
 <div class="methodShort" id="RemoveAt"><h3>RemoveAt <span class="ver">[v1.1.21+]</span></h3>
 <p>Removes items from the given position in a linear array.</p>
-<pre class="Syntax">Object.<span class="func">RemoveAt</span>(Pos <span class="optional">, Length</span>)</pre>
+<pre class="Syntax">RemovedValue := Object.<span class="func">RemoveAt</span>(Pos)
+RemovedItemsCount := Object.<span class="func">RemoveAt</span>(Pos, Length)</pre>
+<h4 id="RemoveAt_Parameters">Parameters</h4>
 <dl>
   <dt>Pos</dt>
   <dd><p>The position of the value or values to remove.</p></dd>
   
   <dt>Length</dt>
-  <dd><p>The length of the range of values to remove. Items from <code>Pos</code> to <code>Pos+Length-1</code> are removed. If omitted, one item is removed.</p></dd>
+  <dd><p>If omitted, one item is removed. Otherwise, specify the length of the range of values to remove. Items from <code>Pos</code> to <code>Pos+Length-1</code> are removed.</p></dd>
 </dl>
+<h4 id="RemoveAt_Return_Value">Return Value</h4>
 <p>If <em>Length</em> is omitted, the value removed from <em>Pos</em> is returned (blank if none). Otherwise the return value is the number of removed items which had values, which can differ from <em>Length</em> in a sparse array, but is always between 0 and <em>Length</em> (inclusive).</p>
+<h4 id="RemoveAt_Remarks">Remarks</h4>
 <p>RemoveAt is the counterpart of <a href="#InsertAt">InsertAt</a>.</p>
 <p>The remaining items to the right of <em>Pos</em> are shifted to the left by <em>Length</em> (or 1 if omitted), even if some items in the removed range did not have values. For example:</p>
 <pre>x := ["A", "B"]
@@ -115,35 +121,40 @@ MsgBox % x[0x4321-1]        <em>; A</em></pre>
 
 <div class="methodShort" id="Push"><h3>Push <span class="ver">[v1.1.21+]</span></h3>
 <p>Appends values to the end of an array.</p>
-<pre class="Syntax">Object.<span class="func">Push</span>(<span class="optional"> Value, Value2, ..., Value<i>N</i> </span>)</pre>
+<pre class="Syntax">Index := Object.<span class="func">Push</span>(<span class="optional">Value, Value2, ..., Value<i>N</i></span>)</pre>
+<h4 id="Push_Parameters">Parameters</h4>
 <dl>
   <dt>Value ...</dt>
   <dd><p>One or more values to insert. To insert an array of values, pass <code><a href="../Functions.html#VariadicCall">theArray*</a></code> as the last parameter.</p></dd>
 </dl>
-<p>Returns the position of the last inserted value. Can be negative if the array only contained elements at negative indices.</p>
+<h4 id="Push_Return_Value">Return Value</h4>
+<p>This method returns the position number of the last inserted value. This number can be negative if the array only contained elements at negative indices.</p>
+<h4 id="Push_Remarks">Remarks</h4>
 <p>The first value is inserted at position 1 if the array is empty or contains only string or object keys.</p>
 <p>Otherwise, the first value is inserted at <code>Object.MaxIndex() + 1</code>, even if that position is negative or zero. If this is undesired and the object can contain negative keys, <code>Object.InsertAt(Object.Length() + 1, ...)</code> can be used instead.</p>
 </div>
 
 <div class="methodShort" id="Pop"><h3>Pop <span class="ver">[v1.1.21+]</span></h3>
 <p>Removes and returns the last array element.</p>
-<pre class="Syntax">Value := Object.<span class="func">Pop</span>()</pre>
+<pre class="Syntax">RemovedValue := Object.<span class="func">Pop</span>()</pre>
 <p>If there are no array elements, the return value is an empty string. Otherwise, it is equivalent to the following:</p>
-<pre>Value := Object.RemoveAt(Object.Length())</pre>
+<pre>RemovedValue := Object.RemoveAt(Object.Length())</pre>
 </div>
 
 <div class="methodShort" id="Delete"><h3>Delete <span class="ver">[v1.1.21+]</span></h3>
 <p>Removes key-value pairs from an object.</p>
-<pre class="Syntax">Object.<span class="func">Delete</span>(Key)
-Object.<span class="func">Delete</span>(FirstKey, LastKey)
-</pre>
+<pre class="Syntax">RemovedValue := Object.<span class="func">Delete</span>(Key)
+RemovedItemsCount := Object.<span class="func">Delete</span>(FirstKey, LastKey)</pre>
+<h4 id="Delete_Parameters">Parameters</h4>
 <dl>
   <dt>Key</dt>
   <dd><p>Any single key.</p></dd>
   <dt>FirstKey, LastKey</dt>
   <dd><p>Any valid range of integer or string keys, where <em>FirstKey</em> &lt;= <em>LastKey</em>. Both keys must be the same type.</p></dd>
 </dl>
+<h4 id="Delete_Return_Value">Return Value</h4>
 <p>If there is exactly one parameter, the removed value is returned (blank if none). Otherwise the return value is the number of matching keys which were found and removed.</p>
+<h4 id="Delete_Remarks">Remarks</h4>
 <p>Unlike <a href="#RemoveAt">RemoveAt</a>, Delete does not affect any of the key-value pairs that it does not remove. For example:</p>
 <pre>x := ["A", "B"]
 MsgBox % x.RemoveAt(1)  <em>; A</em>
@@ -156,7 +167,8 @@ MsgBox % x[1]           <em>; Empty</em></pre>
 
 <div class="methodShort" id="MinMaxIndex"><h3>MinIndex / MaxIndex <span class="ver">[AHK_L 31+]</span></h3>
 <p>Returns the lowest or highest integer key, if present.</p>
-<pre class="Syntax">MinIndex := Object.<span class="func">MinIndex</span>()
+<pre class="Syntax">
+MinIndex := Object.<span class="func">MinIndex</span>()
 MaxIndex := Object.<span class="func">MaxIndex</span>()
 </pre>
 <p>If no integer keys are present, an empty string is returned.</p></div>
@@ -165,7 +177,8 @@ MaxIndex := Object.<span class="func">MaxIndex</span>()
 <p>Returns the length of a linear array.</p>
 <pre class="Syntax">Length := Object.<span class="func">Length</span>()</pre>
 <p>This method returns the length of a linear array beginning at position 1; that is, the highest positive integer key contained by the object, or 0 if there aren't any.</p>
-<pre>MsgBox % ["A", "B", "C"].Length()  <em>;  3</em>
+<pre>
+MsgBox % ["A", "B", "C"].Length()  <em>;  3</em>
 MsgBox % ["A",    , "C"].Length()  <em>;  3</em>
 MsgBox % {-10: 0, 10: 0}.Length()  <em>; 10</em>
 MsgBox % {-10: 0, -1: 0}.Length()  <em>;  0</em>
@@ -175,7 +188,8 @@ MsgBox % {-10: 0, -1: 0}.Length()  <em>;  0</em>
 <p>Returns the number of key-value pairs present in an object.</p>
 <pre class="Syntax">Count := Object.<span class="func">Count</span>()</pre>
 <p>Examples:</p>
-<pre>MsgBox % {A: 1, Z: 26}.Count()    <em>;  2</em>
+<pre>
+MsgBox % {A: 1, Z: 26}.Count()    <em>;  2</em>
 MsgBox % ["A", "B", "C"].Count()  <em>;  3</em>
 MsgBox % ["A",    , "C"].Count()  <em>;  2</em>
 </pre>
@@ -183,9 +197,9 @@ MsgBox % ["A",    , "C"].Count()  <em>;  2</em>
 
 <div class="methodShort" id="SetCapacity"><h3>SetCapacity <span class="ver">[AHK_L 31+]</span></h3>
 <p>Adjusts the capacity of an object or one of its fields.</p>
-<pre class="Syntax">Object.<span class="func">SetCapacity</span>(MaxItems)
-Object.<span class="func">SetCapacity</span>(Key, ByteSize)
-</pre>
+<pre class="Syntax">MaxItems := Object.<span class="func">SetCapacity</span>(MaxItems)
+ByteSize := Object.<span class="func">SetCapacity</span>(Key, ByteSize)</pre>
+<h4 id="SetCapacity_Parameters">Parameters</h4>
 <dl>
 	<dt>MaxItems</dt>
 	<dd><p>The maximum number of key-value pairs the object should be able to contain before it must be automatically expanded.  If less than the current number of key-value pairs, that number is used instead, and any unused space is freed.</p></dd>
@@ -194,12 +208,14 @@ Object.<span class="func">SetCapacity</span>(Key, ByteSize)
 	<dt>ByteSize</dt>
 	<dd><p>The new size in bytes of the field's string buffer, excluding the null-terminator.  If the field does not exist, it is created.  If <i>ByteSize</i> is zero, the buffer is freed but the empty field is not removed.  If <i>ByteSize</i> is less than the current size, excess data is truncated; otherwise all existing data is preserved.</p></dd>
 </dl>
-<p>Returns the new capacity if successful, otherwise an empty string.</p>
+<h4 id="SetCapacity_Return_Value">Return Value</h4>
+<p>This method returns the new capacity if successful, otherwise an empty string.</p>
 </div>
 
 <div class="methodShort" id="GetCapacity"><h3>GetCapacity <span class="ver">[AHK_L 31+]</span></h3>
 <p>Returns the current capacity of an object or one of its fields.</p>
-<pre class="Syntax">MaxItems := Object.<span class="func">GetCapacity</span>()
+<pre class="Syntax">
+MaxItems := Object.<span class="func">GetCapacity</span>()
 ByteSize := Object.<span class="func">GetCapacity</span>(Key)
 </pre>
 <p>If the field does not exist or does not contain a string, an empty string is returned.</p></div>
@@ -214,8 +230,8 @@ ByteSize := Object.<span class="func">GetCapacity</span>(Key)
 <p>This method is usually not called directly, but by the <a href="For.html">for-loop</a>.</p></div>
 
 <div class="methodShort" id="HasKey"><h3>HasKey <span class="ver">[AHK_L 53+]</span></h3>
-<p>Returns true if the specified key is associated with a value (even "") within an object, otherwise false.</p>
-<pre class="Syntax">Object.<span class="func">HasKey</span>(Key)</pre></div>
+<p>Returns 1 (true) if the specified key is associated with a value (even "") within an object, otherwise 0 (false).</p>
+<pre class="Syntax">HasKey := Object.<span class="func">HasKey</span>(Key)</pre></div>
 
 <div class="methodShort" id="Clone"><h3>Clone <span class="ver">[AHK_L 60+]</span></h3>
 <p>Returns a shallow copy of an object.</p>
@@ -224,7 +240,8 @@ ByteSize := Object.<span class="func">GetCapacity</span>(Key)
 <div class="methodShort" id="Insert"><h3>Insert <span class="ver">[AHK_L 31+]</span></h3>
 <div class="warning"><strong>Deprecated:</strong> Insert is not recommended for use in new scripts. Use <a href="#InsertAt">InsertAt</a>, <a href="#Push">Push</a>, <a href="#RawSet">ObjRawSet</a> or a simple assignment instead.</div>
 <p>Inserts key-value pairs into the object, automatically adjusting existing keys if given an integer key.</p>
-<pre class="Syntax">Object.<span class="func">Insert</span>(Pos, Value1 <span class="optional">, Value2, ... Value<i>N</i> </span>)
+<pre class="Syntax">
+Object.<span class="func">Insert</span>(Pos, Value1 <span class="optional">, Value2, ... Value<i>N</i> </span>)
 Object.<span class="func">Insert</span>(Value)
 Object.<span class="func">Insert</span>(StringOrObjectKey, Value)
 </pre>
@@ -234,14 +251,14 @@ Object.<span class="func">Insert</span>(StringOrObjectKey, Value)
   <li>If there are multiple parameters and the first parameter is not an integer, Insert behaves like <a href="#RawSet">ObjRawSet</a>.</li>
   <li>If there is only one parameter, Insert behaves like <a href="#Push">Push</a>.</li>
 </ul>
-<p>Insert returns <i>true</i>. In <span class="ver">[v1.1.21]</span> and later, an exception is thrown if a memory allocation fails. Earlier versions returned an empty string in that case.</p>
+<p>Insert returns 1 (true). In <span class="ver">[v1.1.21+]</span>, an exception is thrown if a memory allocation fails. Earlier versions returned an empty string in that case.</p>
 </div>
 
 <div class="methodShort" id="Remove"><h3>Remove <span class="ver">[AHK_L 31+]</span></h3>
 <div class="warning"><strong>Deprecated:</strong> Remove is not recommended for use in new scripts. Use <a href="#RemoveAt">RemoveAt</a>, <a href="#Delete">Delete</a> or <a href="#Pop">Pop</a> instead.</div>
 <p>Removes key-value pairs from an object.</p>
 <pre class="Syntax">Object.<span class="func">Remove</span>(FirstKey, LastKey)</pre>
-<p>The behaviour of Remove depends on the number and type of parameters:</p>
+<p>The behaviour of Remove depends on the number and type of its parameters:</p>
 <ul>
   <li><code>Object.Remove(Integer)</code> behaves like <code>Object.<a href="#RemoveAt">RemoveAt</a>(Integer)</code>.</li>
   <li><code>Object.Remove(Integer, "")</code> behaves like <code>Object.<a href="#Delete">Delete</a>(Integer)</code>.</li>
@@ -254,8 +271,8 @@ Object.<span class="func">Insert</span>(StringOrObjectKey, Value)
 <h2 id="Properties">Properties</h2>
 <div class="methodShort" id="Base"><h3>Base</h3>
 <p>Retrieves or sets an object's <a href="../Objects.html#Custom_Objects">base object</a>.</p>
-<pre class="Syntax">BaseObject := Object.Base</pre>
-<pre class="Syntax">Object.Base := BaseObject</pre>
+<pre class="Syntax">BaseObject := Object.<span class="func">Base</span></pre>
+<pre class="Syntax">Object.<span class="func">Base</span> := BaseObject</pre>
 <p><em>BaseObject</em> must be an object or an empty string.</p>
 <p>Properties and methods defined by a base object are accessible only while that base object is in use. Therefore, changing <em>Object</em>'s base also changes the set of available properties and methods.</p>
 <p>See also: <a href="#GetBase">ObjGetBase()</a>, <a href="#SetBase">ObjSetBase()</a></p>
@@ -295,8 +312,8 @@ Object.<span class="func">Insert</span>(StringOrObjectKey, Value)
 MsgBox % ObjMaxIndex(array) " = " array.MaxIndex()</pre>
 <p>If an Obj method-function is called with an object or value of the wrong type, it returns an empty string. Standalone functions such as ObjRawSet throw an exception.</p>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a0129218e72d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdceda5fbd0c3f4","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Object.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:02 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Object.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:54 GMT -->
 </html>

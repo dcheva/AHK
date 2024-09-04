@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Menu.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:01 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Menu.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:49 GMT -->
 <head>
-<title>Menu - Syntax &amp; Usage | AutoHotkey</title>
+<title>Menu - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The Menu command creates, deletes, modifies and displays menus and menu items, changes the tray icon and its tooltip, or controls whether the main window of a compiled script can be opened." />
 <meta name="ahk:equiv-v2" content="lib/Menu.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
 
 <h1>Menu</h1>
 
-<p>Creates, deletes, modifies and displays menus and menu items. Changes the tray icon and its tooltip. Controls whether the main window of a <a href="../Scripts.html#ahk2exe">compiled script</a> can be opened.</p>
+<p>Creates, deletes, modifies and displays menus and menu items. Changes the <a href="../Program.html#tray-icon">tray icon</a> and its tooltip. Controls whether the <a href="../Program.html#main-window">main window</a> of a <a href="../Scripts.html#ahk2exe">compiled script</a> can be opened.</p>
 <pre class="Syntax"><span class="func">Menu</span>, MenuName, <a href="#SubCommands">SubCommand</a> <span class="optional">, Value1, Value2, Value3, Value4</span></pre>
 <p>The <em>MenuName</em> parameter can be <code>Tray</code> or the name of any custom menu. A custom menu is automatically created the first time its name is used with the <a href="#Add">Add</a> sub-command. For example: <code>Menu, MyMenu, Add, Item1</code>. Once created, a custom menu can be displayed with the <a href="#Show">Show</a> sub-command. It can also be attached as a submenu to one or more other menus via the <a href="#Add">Add</a> sub-command.</p>
 <p>The <em>SubCommand</em>, <em>Value1</em>, <em>Value2</em>, <em>Value3</em> and <em>Value4</em> parameters are dependent on each other their usage is described below.</p>
@@ -48,12 +48,12 @@
     <li><a href="#NoDefault">NoDefault</a>: Reverses setting a user-defined default menu item.</li>
     <li><a href="#Standard">Standard</a>: Inserts the standard menu items at the bottom of the menu.</li>
     <li><a href="#NoStandard">NoStandard</a>: Removes all standard menu items from the menu.</li>
-    <li><a href="#Icon">Icon</a>: Changes the script's tray icon or <span class="ver">[in AHK_L 17+]</span> sets a icon for the specified menu item.</li>
-    <li><a href="#NoIcon">NoIcon</a>: Removes the tray icon or <span class="ver">[in AHK_L 17+]</span> removes the icon from the specified menu item.</li>
+    <li><a href="#Icon">Icon</a>: Changes the script's tray icon or in <span class="ver">[AHK_L 17+]</span> sets a icon for the specified menu item.</li>
+    <li><a href="#NoIcon">NoIcon</a>: Removes the tray icon or in <span class="ver">[AHK_L 17+]</span> removes the icon from the specified menu item.</li>
     <li><a href="#Tip">Tip</a>: Changes the tray icon's tooltip.</li>
     <li><a href="#Show">Show</a>: Displays the specified menu.</li>
     <li><a href="#Color">Color</a>: Changes the background color of the menu.</li>
-    <li><a href="#Click">Click</a>: Sets the number of clicks to activate the tray menu's default menu item.</li>
+    <li><a href="#Click">Click</a>: Sets how many times the tray icon must be clicked to select its default menu item.</li>
     <li><a href="#MainWindow">MainWindow</a>: Allows the main window of a script to be opened via the tray icon.</li>
     <li><a href="#NoMainWindow">NoMainWindow</a>: Prevents the main window from being opened via the tray icon.</li>
     <li><a href="#UseErrorLevel">UseErrorLevel</a>: Skips any warning dialogs and thread terminations whenever the Menu command generates an error.</li>
@@ -65,7 +65,7 @@
 <p>This is a multipurpose sub-command. <em>MenuItemName</em> is the name or position of a menu item (see <a href="#MenuItemName">MenuItemName</a> for details). If <em>MenuItemName</em> does not yet exist, it will be added to the menu. Otherwise, <em>MenuItemName</em> is updated with the newly specified <em>LabelOrSubmenu</em>.</p>
 <p>To add a menu separator line, omit all three parameters.</p>
 <p>The label subroutine is run as a new <a href="../misc/Threads.html">thread</a> when the user selects the menu item (similar to <a href="Gosub.html">Gosub</a> and <a href="../Hotkeys.html">hotkey subroutines</a>). If <em>LabelOrSubmenu</em> is omitted, <em>MenuItemName</em> will be used as both the label and the menu item's name.</p>
-<p id="Functor"><span class="ver">[v1.1.20+]:</span> If it is not the name of an existing label, <em>LabelOrSubmenu</em> can be the name of a function, or a single variable reference containing a <a href="../misc/Functor.html">function object</a>. For example, <code>%FuncObj%</code> or <code>% FuncObj</code>. See <a href="#ExBoundFunc">example #5</a> for a fully functional demonstration. Other expressions which return objects are currently unsupported. The function can optionally define parameters as shown below:</p>
+<p id="Functor"><span class="ver">[v1.1.20+]</span>: If it is not the name of an existing label, <em>LabelOrSubmenu</em> can be the name of a function, or a single variable reference containing a <a href="../misc/Functor.html">function object</a>. For example, <code>%FuncObj%</code> or <code>% FuncObj</code>. See <a href="#ExBoundFunc">example #5</a> for a fully functional demonstration. Other expressions which return objects are currently unsupported. The function can optionally define parameters as shown below:</p>
 <pre><i>FunctionName</i>(ItemName, ItemPos, MenuName)</pre>
 <p>To have <em>MenuItemName</em> become a submenu -- which is a menu item that opens a new menu when selected -- specify for <em>LabelOrSubmenu</em> a colon followed by the <em>MenuName</em> of an existing custom menu. For example:</p>
 <pre>Menu, MySubmenu, Add, Item1
@@ -78,26 +78,26 @@ Menu, Tray, Add, This menu item is a submenu, :MySubmenu</pre>
     </tr>
     <tr>
         <td>P<em>n</em></td>
-        <td>Replace <em>n</em> with the menu item's <a href="../misc/Threads.html">thread priority</a>, e.g. <code>P1</code>. If this option is omitted when adding a menu item, the priority will be 0, which is the standard default. If omitted when updating a menu item, the item's priority will not be changed. Use a decimal (not hexadecimal) number as the priority.</td>
+        <td>Specify for <em>n</em> the menu item's <a href="../misc/Threads.html">thread priority</a>, e.g. <code>P1</code>. If this option is omitted when adding a menu item, the priority will be 0, which is the standard default. If omitted when updating a menu item, the item's priority will not be changed. Use a decimal (not hexadecimal) number as the priority.</td>
     </tr>
     <tr>
         <td>+Radio</td>
-        <td><span class="ver">[v1.1.23+]:</span> If the item is checked, a bullet point is used instead of a check mark.</td>
+        <td><span class="ver">[v1.1.23+]</span>: If the item is checked, a bullet point is used instead of a check mark.</td>
     </tr>
     <tr>
         <td>+Right</td>
-        <td><span class="ver">[v1.1.23+]:</span> The item is right-justified within the menu bar. This only applies to <a href="Gui.html#Menu">menu bars</a>, not popup menus or submenus.</td>
+        <td><span class="ver">[v1.1.23+]</span>: The item is right-justified within the menu bar. This only applies to <a href="Gui.html#Menu">menu bars</a>, not popup menus or submenus.</td>
     </tr>
     <tr>
         <td>+Break</td>
-        <td><span class="ver">[v1.1.23+]:</span> The item begins a new column in a popup menu.</td>
+        <td><span class="ver">[v1.1.23+]</span>: The item begins a new column in a popup menu.</td>
     </tr>
     <tr>
         <td>+BarBreak</td>
-        <td><span class="ver">[v1.1.23+]:</span> As above, but with a dividing line between columns.</td>
+        <td><span class="ver">[v1.1.23+]</span>: As above, but with a dividing line between columns.</td>
     </tr>
 </table>
-<p>The plus sign (+) is optional and can be replaced with minus (-) to remove the option, as in <code>-Radio</code>. Options are not case sensitive.</p>
+<p>The plus sign (+) is optional and can be replaced with minus (-) to remove the option, as in <code>-Radio</code>. Options are not case-sensitive.</p>
 <p>To change an existing item's options without affecting its label or submenu, simply omit the <em>LabelOrSubmenu</em> parameter.</p>
 
 <h3 id="Insert">Insert <span class="ver">[v1.1.23+]</span></h3>
@@ -119,7 +119,7 @@ Menu, Tray, Add, This menu item is a submenu, :MySubmenu</pre>
 <h3 id="Rename">Rename</h3>
 <p>Renames the specified menu item to <em>NewName</em>.</p>
 <pre class="Syntax"><span class="func">Menu</span>, MenuName, Rename, MenuItemName <span class="optional">, NewName</span></pre>
-<p>If <em>NewName</em> is blank, the specified menu item will be converted into a separator line. <em>MenuItemName</em> is the name or position of a menu item (see <a href="#MenuItemName">MenuItemName</a> for details). The menu item's current target label or submenu is unchanged. <span class="ver">[v1.1.23+]:</span> A separator line can be converted to a normal menu item by specifying the position&amp; of the separator and a non-blank <em>NewName</em>, and then using the <a href="#Add">Add</a> sub-command to give the menu item a label or submenu.</p>
+<p>If <em>NewName</em> is blank, the specified menu item will be converted into a separator line. <em>MenuItemName</em> is the name or position of a menu item (see <a href="#MenuItemName">MenuItemName</a> for details). The menu item's current target label or submenu is unchanged. <span class="ver">[v1.1.23+]</span>: A separator line can be converted to a normal menu item by specifying the position of the separator such as <code>1&</code> for <em>MenuItemName</em> and a non-blank name for <em>NewName</em>, and then using the <a href="#Add">Add</a> sub-command to give the menu item a label or submenu.</p>
 
 <h3 id="Check">Check</h3>
 <p>Adds a visible checkmark in the menu next to the specified menu item (if there isn't one already).</p>
@@ -154,12 +154,12 @@ Menu, Tray, Add, This menu item is a submenu, :MySubmenu</pre>
 <h3 id="Default">Default</h3>
 <p>Changes the menu's default item to be the specified menu item and makes its font bold.</p>
 <pre class="Syntax"><span class="func">Menu</span>, MenuName, Default <span class="optional">, MenuItemName</span></pre>
-<p>Setting a default item in menus other than TRAY is currently purely cosmetic. <em>MenuItemName</em> is the name or position of a menu item (see <a href="#MenuItemName">MenuItemName</a> for details). When the user double-clicks the tray icon, its default menu item is launched. If there is no default, double-clicking has no effect. If <em>MenuItemName</em> is omitted, the effect is the same as having used the <a href="#NoDefault">NoDefault</a> sub-command below.</p>
+<p>Setting a default item in menus other than TRAY is currently purely cosmetic. <em>MenuItemName</em> is the name or position of a menu item (see <a href="#MenuItemName">MenuItemName</a> for details). When the user double-clicks the <a href="../Program.html#tray-icon">tray icon</a>, its default menu item is selected. If there is no default, double-clicking has no effect. If <em>MenuItemName</em> is omitted, the effect is the same as having used the <a href="#NoDefault">NoDefault</a> sub-command below.</p>
 
 <h3 id="NoDefault">NoDefault</h3>
 <p>Reverses setting a user-defined default menu item.</p>
 <pre class="Syntax"><span class="func">Menu</span>, MenuName, NoDefault</pre>
-<p>For the tray menu: Changes the menu back to having its standard default menu item, which is OPEN for non-compiled scripts and none for <a href="../Scripts.html#ahk2exe">compiled scripts</a> (except when the <a href="#MainWindow">MainWindow</a> sub-command is in effect). If the OPEN menu item does not exist due to a previous use of the <a href="#NoStandard">NoStandard</a> sub-command below, there will be no default and thus double-clicking the tray icon will have no effect. For menus other than TRAY: Any existing default item is returned to a non-bold font.</p>
+<p>For the tray menu: Changes the menu back to having its standard default menu item, which is "Open" for non-compiled scripts and none for <a href="../Scripts.html#ahk2exe">compiled scripts</a> (except when the <a href="#MainWindow">MainWindow</a> sub-command is in effect). If the "Open" menu item does not exist due to a previous use of the <a href="#NoStandard">NoStandard</a> sub-command below, there will be no default and thus double-clicking the <a href="../Program.html#tray-icon">tray icon</a> will have no effect. For menus other than TRAY: Any existing default item is returned to a non-bold font.</p>
 
 <h3 id="Standard">Standard</h3>
 <p>Inserts the standard menu items at the bottom of the menu (if they are not already present).</p>
@@ -172,36 +172,36 @@ Menu, Tray, Add, This menu item is a submenu, :MySubmenu</pre>
 <p>This sub-command can be used with the tray menu or any other menu.</p>
 
 <h3 id="Icon">Icon</h3>
-<p>Affects the <a href="#TrayIcon">tray icon</a> or <span class="ver">[in AHK_L 17+]</span> the <a href="#MenuIcon">menu item's icon</a> depending on syntax usage below.</p>
+<p>Affects the <a href="#TrayIcon">tray icon</a> or in <span class="ver">[AHK_L 17+]</span> the <a href="#MenuIcon">menu item's icon</a> depending on syntax usage below.</p>
 
 <h4 id="TrayIcon">Setting the tray icon</h4>
 <p>Changes the script's <a href="../Program.html#tray-icon">tray icon</a> to one of the ones from <em>FileName</em>.</p>
-<pre class="Syntax"><span class="func">Menu</span>, Tray, Icon <span class="optional">, FileName, IconNumber, 1</span></pre>
-<p>The following types of files are supported: ICO, CUR, ANI, EXE, DLL, CPL, SCR, and other types that contain icon resources. To use an icon group other than the first one in the file, specify its number for <em>IconNumber</em> (if omitted, it defaults to 1). For example, <strong>2</strong> would load the default icon from the second icon group. If <em>IconNumber</em> is negative, its absolute value is assumed to be the resource ID of an icon within an executable file. Specify an asterisk (*) for <em>FileName</em> to restore the script to its default icon.</p>
-<p>The last parameter: Specify 1 for the last parameter to freeze the icon, or 0 to unfreeze it (or leave it blank to keep the frozen/unfrozen state unchanged). When the icon has been frozen, <a href="Pause.html">Pause</a> and <a href="Suspend.html">Suspend</a> will not change it. Note: To freeze or unfreeze the <em>current</em> icon, use 1 or 0 as in the following example: <code>Menu, Tray, Icon,,, 1</code>.</p>
+<pre class="Syntax"><span class="func">Menu</span>, Tray, Icon <span class="optional">, FileName, IconNumber, Freeze</span></pre>
+<p>The following types of files are supported: ICO, CUR, ANI, EXE, DLL, CPL, SCR, and other types that contain icon resources. To use an icon group other than the first one in the file, specify its number for <em>IconNumber</em> (if omitted, it defaults to 1). For example, 2 would load the default icon from the second icon group. If <em>IconNumber</em> is negative, its absolute value is assumed to be the resource ID of an icon within an executable file. Specify an asterisk (*) for <em>FileName</em> to restore the script to its default icon.</p>
+<p>Specify 1 for <em>Freeze</em> to freeze the icon, or 0 to unfreeze it (or leave it blank to keep the frozen/unfrozen state unchanged). When the icon has been frozen, <a href="Pause.html">Pause</a> and <a href="Suspend.html">Suspend</a> will not change it. Note: To freeze or unfreeze the <em>current</em> icon, use the <em>Freeze</em> parameter as follows: <code>Menu, Tray, Icon,,, 1</code>.</p>
 <p>Changing the tray icon also changes the icon displayed by <a href="InputBox.html">InputBox</a>, <a href="Progress.html">Progress</a>, and subsequently-created <a href="Gui.html">GUI</a> windows. <a href="../Scripts.html#ahk2exe">Compiled scripts</a> are also affected even if a custom icon was specified at the time of compiling.</p>
 <p class="note"><strong>Note:</strong> Changing the icon will not unhide the tray icon if it was previously hidden by means such as <a href="_NoTrayIcon.html">#NoTrayIcon</a>; to do that, use <code>Menu, Tray, Icon</code> (with no parameters).</p>
 <p id="distort">Slight distortion may occur when loading tray icons from file types other than .ICO. This is especially true for 16x16 icons. To prevent this, store the desired tray icon inside a .ICO file.</p>
 <p>There are some icons built into the operating system's DLLs and CPLs that might be useful. For example: <code>Menu, Tray, Icon, Shell32.dll, 174</code>.</p>
 <p>The built-in variables <strong>A_IconNumber</strong> and <strong>A_IconFile</strong> contain the number and name (with full path) of the current icon (both are blank if the icon is the default).</p>
-<p><span class="ver">[v1.1.23+]:</span> An <a href="../misc/ImageHandles.html">icon handle</a> can be used instead of a filename. For example, <code>Menu Tray, Icon, HICON:*%handle%</code>. The asterisk is required as the icon must be "loaded" twice: once for the small icon and again for the large icon.</p>
-<p><span class="ver">[v1.1.27+]:</span> Non-icon image files and <a href="../misc/ImageHandles.html">bitmap handles</a> are supported for <em>Filename</em>. For example, <code>Menu Tray, Icon, HBITMAP:*%handle%</code>.</p>
+<p><span class="ver">[v1.1.23+]</span>: An <a href="../misc/ImageHandles.html">icon handle</a> can be used instead of a filename. For example, <code>Menu Tray, Icon, HICON:*%handle%</code>. The asterisk is required as the icon must be "loaded" twice: once for the small icon and again for the large icon.</p>
+<p><span class="ver">[v1.1.27+]</span>: Non-icon image files and <a href="../misc/ImageHandles.html">bitmap handles</a> are supported for <em>FileName</em>. For example, <code>Menu Tray, Icon, HBITMAP:*%handle%</code>.</p>
 
 <h4 id="MenuIcon">Setting the menu item's icon <span class="ver">[AHK_L 17+]</span></h4>
 <p>Sets a icon for the specified menu item.</p>
 <pre class="Syntax"><span class="func">Menu</span>, MenuName, Icon, MenuItemName, FileName <span class="optional">, IconNumber, IconWidth</span></pre>
 <p><em>MenuItemName</em> is the name or position of a menu item (see <a href="#MenuItemName">MenuItemName</a> for details). <em>FileName</em> can either be an icon file or any image in a format supported by AutoHotkey. To use an icon group other than the first one in the file, specify its number for <em>IconNumber</em> (if omitted, it defaults to 1). If <em>IconNumber</em> is negative, its absolute value is assumed to be the resource ID of an icon within an executable file. Specify the desired width of the icon in <em>IconWidth</em>. If the icon group indicated by <em>IconNumber</em> contains multiple icon sizes, the closest match is used and the icon is scaled to the specified size. See <a href="#ExIcon">example #4</a> for usage examples.</p>
-<p>Currently it is necessary to specify "actual size" when setting the icon to preserve transparency on Windows Vista and later. For example:</p>
-<pre>Menu, <i>MenuName</i>, Icon, <i>MenuItemName</i>, Filename.png,, 0</pre>
+<p>Currently it is necessary to specify "actual size" when setting the icon to preserve transparency on Windows Vista and later, e.g. <code>Menu, MyMenu, Icon, Item1, Filename.png,, 0</code>.</p>
+
 <p>Known limitation: Icons on Gui menu bars are positioned incorrectly on Windows XP and older.</p>
-<p><span class="ver">[v1.1.23+]:</span> A <a href="../misc/ImageHandles.html">bitmap or icon handle</a> can be used instead of a filename. For example, <code>HBITMAP:%handle%</code>.</p>
+<p><span class="ver">[v1.1.23+]</span>: A <a href="../misc/ImageHandles.html">bitmap or icon handle</a> can be used instead of a filename. For example, <code>HBITMAP:%handle%</code>.</p>
 
 
 <h3 id="NoIcon">NoIcon</h3>
-<p>Affects the <a href="#RemoveTrayIcon">tray icon</a> or <span class="ver">[in AHK_L 17+]</span> the <a href="#RemoveMenuIcon">menu item's icon</a> depending on syntax usage below.</p>
+<p>Affects the <a href="#RemoveTrayIcon">tray icon</a> or in <span class="ver">[AHK_L 17+]</span> the <a href="#RemoveMenuIcon">menu item's icon</a> depending on syntax usage below.</p>
 
 <h4 id="RemoveTrayIcon">Removing the tray icon</h4>
-<p>Removes the tray icon if it exists.</p>
+<p>Removes the <a href="../Program.html#tray-icon">tray icon</a> if it exists.</p>
 <pre class="Syntax"><span class="func">Menu</span>, Tray, NoIcon</pre>
 <p>If this sub-command is used at the very top of the script, the tray icon might be briefly visible when the script is launched. To prevent that, use <a href="_NoTrayIcon.html">#NoTrayIcon</a> instead. The built-in variable <strong>A_IconHidden</strong> contains 1 if the tray icon is currently hidden or 0 otherwise.</p>
 
@@ -211,9 +211,10 @@ Menu, Tray, Add, This menu item is a submenu, :MySubmenu</pre>
 <p><em>MenuItemName</em> is the name or position of a menu item (see <a href="#MenuItemName">MenuItemName</a> for details).</p>
 
 <h3 id="Tip">Tip</h3>
-<p>Changes the tray icon's tooltip.</p>
+<p>Changes the <a href="../Program.html#tray-icon">tray icon</a>'s tooltip.</p>
 <pre class="Syntax"><span class="func">Menu</span>, Tray, Tip <span class="optional">, Text</span></pre>
-<p>The tray icon's tooltip is displayed when the mouse hovers over it. To create a multi-line tooltip, use the linefeed character (`n) in between each line, e.g. Line1`nLine2. Only the first 127 characters of <em>Text</em> are displayed, and <em>Text</em> is truncated at the first tab character, if present. If <em>Text</em> is omitted, the tooltip is restored to its default text. The built-in variable <strong>A_IconTip</strong> contains the current text of the tooltip (blank if the text is at its default).</p>
+<p>The tray icon's tooltip is displayed when the mouse hovers over it. To create a multi-line tooltip, use the linefeed character (`n) in between each line, e.g. <code>Line1`nLine2</code>. Only the first 127 characters of <em>Text</em> are displayed, and <em>Text</em> is truncated at the first tab character, if present. If <em>Text</em> is omitted, the tooltip is restored to its default text. The built-in variable <strong>A_IconTip</strong> contains the current text of the tooltip (blank if the text is at its default).</p>
+<p>On Windows 10 and earlier, to display tooltip text containing ampersands (&amp;), escape each ampersand with two additional ampersands. For example, specifying <code>A &amp;&amp;&amp; B</code> would display "A &amp; B" in the tooltip.</p>
 
 <h3 id="Show">Show</h3>
 <p>Displays <em>MenuName</em>.</p>
@@ -226,40 +227,40 @@ Menu, Tray, Add, This menu item is a submenu, :MySubmenu</pre>
 <p><em>ColorValue</em> is one of the 16 primary HTML color names or a 6-digit RGB color value (see <a href="Progress.html#colors">color chart</a>). Leave <em>ColorValue</em> blank (or specify the word Default) to restore the menu to its default color. If the word Single is not present as the next parameter, any submenus attached to this menu will also be changed in color.</p>
 
 <h3 id="Click">Click</h3>
-<p>Sets the number of clicks to activate the tray menu's default menu item.</p>
+<p>Sets how many times the <a href="../Program.html#tray-icon">tray icon</a> must be clicked to select its default menu item.</p>
 <pre class="Syntax"><span class="func">Menu</span>, Tray, Click, ClickCount</pre>
-<p>Specify 1 for <em>ClickCount</em> to allow a single-click to activate the tray menu's default menu item. Specify 2 for <em>ClickCount</em> to return to the default behavior (double-click). For example: <code>Menu, Tray, Click, 1</code>.</p>
+<p>Specify 1 for <em>ClickCount</em> to allow a single-click to select the tray menu's default menu item. Specify 2 for <em>ClickCount</em> to return to the default behavior (double-click). For example: <code>Menu, Tray, Click, 1</code>. <em>ClickCount</em> greater than 2 is considered to be 2 and <em>ClickCount</em> less than 1 is considered to be 1.</p>
 
 <h3 id="MainWindow">MainWindow</h3>
-<p>Allows the <a href="../Program.html#main-window">main window</a> of a script to be opened via the tray icon, which is impossible by default for <a href="../Scripts.html#ahk2exe">compiled</a> or <a href="../Program.html#embedded-scripts">embedded</a> scripts.</p>
+<p>Allows the <a href="../Program.html#main-window">main window</a> of a script to be opened via the <a href="../Program.html#tray-icon">tray icon</a>, which is impossible by default for <a href="../Scripts.html#ahk2exe">compiled</a> or <a href="../Program.html#embedded-scripts">embedded</a> scripts.</p>
 <pre class="Syntax"><span class="func">Menu</span>, Tray, MainWindow</pre>
-<p>This sub-command restores the "Open" option to the tray menu, unless the <a href="#NoStandard">NoStandard</a> sub-command was used. It also enables the items in the main window's View menu such as "Lines most recently executed", which allows viewing of the script's source code and other info.</p>
+<p>This sub-command restores the "Open" menu item to the tray menu, unless the <a href="#NoStandard">NoStandard</a> sub-command was used. It also enables the items in the main window's View menu such as "Lines most recently executed", which allows viewing of the script's source code and other info.</p>
 <p>This mode is the default for scripts which are neither <a href="../Scripts.html#ahk2exe">compiled</a> nor <a href="../Program.html#embedded-scripts">embedded</a>.</p>
 
 <h3 id="NoMainWindow">NoMainWindow</h3>
-<p>Prevents the <a href="../Program.html#main-window">main window</a> from being opened via the tray icon.</p>
+<p>Prevents the <a href="../Program.html#main-window">main window</a> from being opened via the <a href="../Program.html#tray-icon">tray icon</a>.</p>
 <pre class="Syntax"><span class="func">Menu</span>, Tray, NoMainWindow</pre>
-<p>This sub-command removes the standard "Open" option from the tray menu. It also disables the items in the main window's View menu such as "Lines most recently executed". However, the following commands are still able to show the main window and activate the corresponding View options when they are encountered in the script at runtime: <a href="ListLines.html">ListLines</a>, <a href="ListVars.html">ListVars</a>, <a href="ListHotkeys.html">ListHotkeys</a>, and <a href="KeyHistory.html">KeyHistory</a>.</p>
+<p>This sub-command removes the standard "Open" menu item from the tray menu. It also disables the items in the main window's View menu such as "Lines most recently executed". However, the following commands are still able to show the main window and select the corresponding View options when they are encountered in the script at runtime: <a href="ListLines.html">ListLines</a>, <a href="ListVars.html">ListVars</a>, <a href="ListHotkeys.html">ListHotkeys</a>, and <a href="KeyHistory.html">KeyHistory</a>.</p>
 <p>This sub-command does not prevent the main window from being shown by <a href="WinShow.html">WinShow</a> or inspected by <a href="ControlGetText.html">ControlGetText</a> or similar methods, but it does prevent the script's source code and other info from being exposed via the main window, except when one of the commands listed above is called by the script.</p>
 <p>This mode is the default for scripts which are <a href="../Scripts.html#ahk2exe">compiled</a> or <a href="../Program.html#embedded-scripts">embedded</a>.</p>
-<p><span class="ver">[v1.1.34+]:</span> This sub-command can be used even in a non-compiled script.</p>
+<p><span class="ver">[v1.1.34+]</span>: This sub-command can be used even in a non-compiled script.</p>
 
 <h3 id="UseErrorLevel">UseErrorLevel</h3>
 <p>Skips any warning dialogs and thread terminations whenever the Menu command generates an error.</p>
 <pre class="Syntax"><span class="func">Menu</span>, MenuName, UseErrorLevel <span class="optional">, Off</span></pre>
-<p>If this option is never used in the script, it defaults to OFF. The OFF setting displays a dialog and terminates the <a href="../misc/Threads.html">current thread</a> whenever the Menu command generates an error. Specify <code>Menu, Tray, UseErrorLevel</code> to prevent the dialog and thread termination; instead, <a href="../misc/ErrorLevel.html">ErrorLevel</a> will be set to 1 if there was a problem or 0 otherwise. To turn this option back off, specify OFF (or in <span class="ver">[v1.1.30+]</span>, 0) for the next parameter. This setting is global, meaning it affects all menus, not just <em>MenuName</em>.</p>
+<p>If this sub-command is never used in the script, it defaults to OFF. The OFF setting displays a dialog and terminates the <a href="../misc/Threads.html">current thread</a> whenever the Menu command generates an error. Specify <code>Menu, Tray, UseErrorLevel</code> to prevent the dialog and thread termination; instead, <a href="../misc/ErrorLevel.html">ErrorLevel</a> will be set to 1 if there was a problem or 0 otherwise. To turn this sub-command back off, specify OFF (or in <span class="ver">[v1.1.30+]</span>, 0) for the next parameter. This setting is global, meaning it affects all menus, not just <em>MenuName</em>.</p>
 
 
 <h2 id="MenuItemName">The <em>MenuItemName</em> Parameter</h2>
 <p>The name or position of a menu item. Some common rules apply to this parameter across all sub-commands which use it:</p>
 <ul>
     <li>To underline one of the letters in a menu item's name, precede that letter with an ampersand (&amp;). When the menu is displayed, such an item can be selected by pressing the corresponding key on the keyboard. To display a literal ampersand, specify two consecutive ampersands as in this example: <code class="no-highlight">Save &amp;&amp; Exit</code></li>
-    <li>When referring to an existing menu or menu item, the name is not case sensitive but any ampersands must be included. For example: <code class="no-highlight">&amp;Open</code></li>
-    <li><span class="ver">[v1.1.23+]:</span> To identify an existing item by its position in the menu, write the item's position followed by an ampersand. For example, <code class="no-highlight">1&amp;</code> indicates the first item.</li>
+    <li>When referring to an existing menu or menu item, the name is not case-sensitive but any ampersands must be included. For example: <code class="no-highlight">&amp;Open</code></li>
+    <li><span class="ver">[v1.1.23+]</span>: To identify an existing item by its position in the menu, write the item's position followed by an ampersand. For example, <code class="no-highlight">1&amp;</code> indicates the first item.</li>
 </ul>
 
 <h2 id="Win32_Menus">Win32 Menus</h2>
-<p>As items are added to a menu or modified, the name and other properties of each item are recorded by the Menu command, but the actual <a href="https://msdn.microsoft.com/en-us/library/ms646977">Win32 menu</a> is not constructed immediately. This occurs when the menu or its parent menu is attached to a GUI or shown, either  for the first time or if the menu has been "destroyed" since it was last shown. Any of the following can cause this Win32 menu to be destroyed:</p>
+<p>As items are added to a menu or modified, the name and other properties of each item are recorded by the Menu command, but the actual <a href="https://learn.microsoft.com/windows/win32/menurc/menus">Win32 menu</a> is not constructed immediately. This occurs when the menu or its parent menu is attached to a GUI or shown, either  for the first time or if the menu has been "destroyed" since it was last shown. Any of the following can cause this Win32 menu to be destroyed:</p>
 <ul>
   <li>Deleting a menu.</li>
   <li>Replacing an item's submenu with a label or a different menu.</li>
@@ -268,19 +269,19 @@ Menu, Tray, Add, This menu item is a submenu, :MySubmenu</pre>
 <p>When the Win32 menu is destroyed, the Win32 menu of each submenu and parent menu may also be destroyed.</p>
 <p>When a menu which contains the standard items has its Win32 menu recreated, the standard items are placed at the top.</p>
 <p>Any modifications which are made to the menu directly by Win32 API calls only apply to the current "instance" of the menu, and are lost when the menu is destroyed.</p>
-<p>Each menu item is assigned an ID when it is first added to the menu. Scripts cannot rely on an item receiving a particular ID, but can retrieve the ID of an item by using GetMenuItemID as shown in the <a href="MenuGetHandle.html#Examples">MenuGetHandle example</a>. This ID cannot be used with the Menu command, but can be used with various <a href="https://msdn.microsoft.com/en-us/library/ms646977">Win32 functions</a>.</p>
+<p>Each menu item is assigned an ID when it is first added to the menu. Scripts cannot rely on an item receiving a particular ID, but can retrieve the ID of an item by using GetMenuItemID as shown in the <a href="MenuGetHandle.html#Examples">MenuGetHandle example</a>. This ID cannot be used with the Menu command, but can be used with various <a href="https://learn.microsoft.com/windows/win32/menurc/menus">Win32 functions</a>.</p>
 
 <h2 id="Remarks">Remarks</h2>
 <p>A menu usually looks like this:</p>
 <img src="../static/ctrl_menu.png" alt="Menu" style="border: 1px solid silver;" />
 <p>The names of menus and menu items can be up to 260 characters long.</p>
-<p>Separator lines can be added to the menu by using <code>Menu, <i>MenuName</i>, Add</code> (i.e. omit all other parameters). <span class="ver">[v1.1.23+]</span>: To delete separator lines individually, identify them by their position in the menu. For example, use <code>Menu, <i>MenuName</i>, Delete, 3&amp;</code> if there are two items preceding the separator. Alternatively, use <code>Menu, <i>MenuName</i>, DeleteAll</code> and then re-add your custom menu items.</p>
+<p>Separator lines can be added to the menu by using <code>Menu, MyMenu, Add</code> (i.e. omit all other parameters). <span class="ver">[v1.1.23+]</span>: To delete separator lines individually, identify them by their position in the menu. For example, use <code>Menu, MyMenu, Delete, 3&amp;</code> if there are two items preceding the separator. Alternatively, use <code>Menu, MyMenu, DeleteAll</code> and then re-add your custom menu items.</p>
 <p>New menu items are always added at the bottom of the menu. For the tray menu: To put your menu items on top of the standard menu items (after adding your own menu items) run <code>Menu, Tray, NoStandard</code> followed by <code>Menu, Tray, Standard</code>.</p>
 <p>The standard menu items such as "Pause Script" and "Suspend Hotkeys" cannot be individually operated upon by any menu sub-command.</p>
-<p>If a menu ever becomes completely empty -- such as by using <code>Menu, MyMenu, DeleteAll</code> -- it cannot be shown. If the tray menu becomes empty, right-clicking and double-clicking the tray icon will have no effect (in such cases it is usually better to use <a href="_NoTrayIcon.html">#NoTrayIcon</a>).</p>
+<p>If a menu ever becomes completely empty -- such as by using <code>Menu, MyMenu, DeleteAll</code> -- it cannot be shown. If the tray menu becomes empty, right-clicking and double-clicking the <a href="../Program.html#tray-icon">tray icon</a> will have no effect (in such cases it is usually better to use <a href="_NoTrayIcon.html">#NoTrayIcon</a>).</p>
 <p>If a menu item's subroutine is already running and the user selects the same menu item again, a new <a href="../misc/Threads.html">thread</a> will be created to run that same subroutine, interrupting the previous thread. To instead buffer such events until later, use <a href="Critical.html">Critical</a> as the subroutine's first line  (however, this will also buffer/defer other threads such as the press of a hotkey).</p>
 <p>Whenever a  subroutine is launched via a menu item, it starts off fresh with the default values for settings such as <a href="SendMode.html">SendMode</a>. These defaults can be changed in the <a href="../Scripts.html#auto">auto-execute section</a>.</p>
-<p>The built-in variables <strong>A_ThisMenuItem</strong> and <strong>A_ThisMenuItemPos</strong> contain the name and position of the custom menu item most recently selected by the user (blank if none). Similarly, <strong>A_ThisMenu</strong> is the name of the menu from which <strong>A_ThisMenuItem</strong> was selected. These variables are useful when building a menu whose contents are not always the same. In such a case, it is usually best to point all such menu items to the same label and have that label refer to the above variables to determine what action to take.</p>
+<p>The built-in variables <strong>A_ThisMenuItem</strong> and <strong>A_ThisMenuItemPos</strong> contain the name and position of the custom menu item most recently selected by the user (blank if none). Similarly, <strong>A_ThisMenu</strong> is the name of the menu from which A_ThisMenuItem was selected. These variables are useful when building a menu whose contents are not always the same. In such a case, it is usually best to point all such menu items to the same label and have that label refer to the above variables to determine what action to take.</p>
 <p>To keep a non-hotkey, non-<a href="Gui.html">GUI</a> script running -- such as one that contains only custom menus or menu items -- use <a href="_Persistent.html">#Persistent</a>.</p>
 
 <h2 id="Related">Related</h2>
@@ -289,7 +290,7 @@ Menu, Tray, Add, This menu item is a submenu, :MySubmenu</pre>
 <h2 id="Examples">Examples</h2>
 
 <div class="ex" id="ExBasic">
-<p><a class="ex_number" href="#ExBasic"></a> Adds a new menu item to the bottom of the tray icon menu.</p>
+<p><a class="ex_number" href="#ExBasic"></a> Adds a new menu item to the bottom of the <a href="../Program.html#tray-icon">tray icon</a> menu.</p>
 <pre>#Persistent  <em>; Keep the script running until the user exits it.</em>
 Menu, Tray, Add  <em>; Creates a separator line.</em>
 Menu, Tray, Add, Item1, MenuHandler  <em>; Creates a new menu item.</em>
@@ -448,8 +449,8 @@ GivePar(a, b, ItemName, ItemPos, MenuName)
            . "MenuName:`t" MenuName
 }</pre>
 </div>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a012899da377b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdced9cae031911","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Menu.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:01 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Menu.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:49 GMT -->
 </html>

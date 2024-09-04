@@ -1,27 +1,28 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Throw.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:05 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Throw.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:16 GMT -->
 <head>
-<title>Throw - Syntax &amp; Usage | AutoHotkey</title>
-<meta name="description" content="The Throw statement signals the occurrence of an error. This signal can be caught by a try-catch statement." />
+<title>Throw - Syntax &amp; Usage | AutoHotkey v1</title>
+<meta name="description" content="The Throw statement signals the occurrence of an error. This signal can be caught by a Try-Catch statement." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
 
 <h1>Throw <span class="ver">[v1.1.04+]</span></h1>
 
-<p>Signals the occurrence of an error. This signal can be caught by a <a href="Try.html">try</a>-<a href="Catch.html">catch</a> statement.</p>
+<p>Signals the occurrence of an error. This signal can be caught by a <a href="Try.html">Try</a>-<a href="Catch.html">Catch</a> statement.</p>
 
 <pre class="Syntax"><span class="func">Throw</span> <span class="optional">, Expression</span></pre>
 <h2 id="Parameters">Parameters</h2>
 <dl>
 
   <dt>Expression</dt>
-  <dd><p>A value to store in <a href="Catch.html">catch</a>'s OutputVar.</p>
+  <dd><p><span class="ver">[v1.1.05+]</span>: If omitted, an <a href="#Exception">exception object</a> is thrown with a default message.</p>
+      <p>Otherwise, specify a value to store in <a href="Catch.html">Catch</a>'s OutputVar.</p>
       <p>Since this parameter is an <a href="../Variables.html#Expressions">expression</a>, all of the following are valid examples:</p>
 <pre>throw 3
 throw "literal string"
@@ -29,7 +30,7 @@ throw MyVar
 throw i + 1
 throw { what: "Custom error", file: A_LineFile, line: A_LineNumber } <em>; Throws an <a href="Object.html">object</a></em></pre>
 <p>This parameter is always an expression, so variable references should not be enclosed in <a href="../FAQ.html#percent">percent signs</a> except to perform a <a href="../Variables.html#ref">double-deref</a>.</p>
-<p><span class="ver">[v1.1.05+]:</span> If omitted, an <a href="#Exception">exception object</a> is thrown with a default message.</p></dd>
+  </dd>
 
 </dl>
 
@@ -44,7 +45,7 @@ throw { what: "Custom error", file: A_LineFile, line: A_LineNumber } <em>; Throw
   <li><strong>File:</strong> Set automatically to the full path of the script file which contains the line at which the error occurred.</li>
   <li><strong>Line:</strong> Set automatically to the line number at which the error occurred.</li>
 </ul>
-<p>If <em>What</em> is omitted, it defaults to the name of the current function or subroutine. Otherwise it can be a string or a negative offset from the top of the call stack. For example, a value of -1 sets <code>Exception.What</code> to the current function or subroutine, and <code>Exception.Line</code> and <code>Exception.File</code> to the line and file which called it. However, if the script is <a href="../Scripts.html#ahk2exe">compiled</a> or the offset is invalid, <em>What</em> is simply converted to a string.</p>
+<p>If <em>What</em> is omitted, it defaults to the name of the current function or subroutine. Otherwise, specify a string or a negative offset from the top of the call stack. For example, a value of -1 sets <code>Exception.What</code> to the current function or subroutine, and <code>Exception.Line</code> and <code>Exception.File</code> to the line and file which called it. However, if the script is <a href="../Scripts.html#ahk2exe">compiled</a> or the offset is invalid, <em>What</em> is simply converted to a string.</p>
 <p><em>Message</em> and <em>Extra</em> are converted to strings. These are displayed by an error dialog if the exception is thrown and not caught.</p>
 <pre>try
     SomeFunction()
@@ -61,8 +62,8 @@ SomeFunction() {
 <h2 id="Examples">Examples</h2>
 <p>See <a href="Try.html#Examples">Try</a>.</p>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a012ca6d6277b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcedf49c09d22b","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Throw.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:05 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Throw.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:16 GMT -->
 </html>

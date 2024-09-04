@@ -1,20 +1,20 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Edit.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:09 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Edit.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:25 GMT -->
 <head>
-<title>Edit - Syntax &amp; Usage | AutoHotkey</title>
-<meta name="description" content="The Edit command opens the current script for editing in the associated editor." />
+<title>Edit - Syntax &amp; Usage | AutoHotkey v1</title>
+<meta name="description" content="The Edit command opens the current script for editing in the default editor." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
 
 <h1>Edit</h1>
 
-<p>Opens the current script for editing in the associated editor.</p>
+<p>Opens the current script for editing in the default editor.</p>
 
 <pre class="Syntax"><span class="func">Edit</span></pre>
 <p>The Edit command opens the current script for editing using the associated "edit" verb in the registry (or Notepad if no verb). However, if an editor window appears to have the script already open (based on its window title), that window is activated instead of opening a new instance of the editor.</p>
@@ -54,16 +54,17 @@ RegWrite REG_SZ, HKCR, AutoHotkeyScript\Shell\Edit\Command,, "%Editor%" "`%1"</p
 <p><b>AutoGUI</b> is an integrated development environment for AutoHotkey which combines a GUI designer with a script editor. It can be found here: <a href="https://www.autohotkey.com/boards/viewtopic.php?f=6&amp;t=10157">AutoGUI - GUI Designer and Script Editor</a></p>
 <p><b>Other editors</b> for which AutoHotkey syntax highlighting can be enabled:</p>
 <ul>
-  <li><a href="https://www.autohotkey.com/forum/topic23586.html">AkelPad</a></li>
-  <li><a href="https://www.autohotkey.com/forum/topic5506.html">Crimson Editor</a></li>
-  <li><a href="https://www.autohotkey.com/forum/topic10378.html">Eclipse, FAR manager, and any other editors which use Colorer take5</a></li>
+  <li><a href="https://www.autohotkey.com/board/topic/21785-">AkelPad</a></li>
+  <li><a href="https://www.autohotkey.com/board/topic/5200-">Crimson Editor</a></li>
+  <li><a href="https://www.autohotkey.com/board/topic/9449-">Eclipse, FAR manager, and any other editors which use Colorer take5</a></li>
   <li><a href="https://github.com/tinku99/ahk-org-mode">Emacs</a></li>
-  <li><a href="https://www.autohotkey.com/forum/topic58792.html">Notepad++</a></li>
+  <li><a href="https://kate-editor.org/syntax/data/syntax/ahk.xml">Kate</a></li>
+  <li><a href="https://www.autohotkey.com/board/topic/54403-">Notepad++</a></li>
   <li><a href="https://www.autohotkey.com/board/index.php?showtopic=34495">Notepad2</a></li>
-  <li><a href="https://www.autohotkey.com/forum/topic9294.html">PSPad</a></li>
-  <li><a href="https://www.autohotkey.com/forum/topic9656.html">SciTE and possibly other Scintilla based editors</a></li>
+  <li><a href="https://www.autohotkey.com/board/topic/8489-">PSPad</a></li>
+  <li><a href="https://www.autohotkey.com/board/topic/8813-">SciTE and possibly other Scintilla based editors</a></li>
   <li><a href="https://www.autohotkey.com/board/index.php?showtopic=46447#entry349495">Sublime Text Editor</a></li>
-  <li><a href="https://www.autohotkey.com/forum/topic7278.html">Total Commander with Synplus plugin</a></li>
+  <li><a href="https://www.autohotkey.com/board/topic/6707-">Total Commander with Synplus plugin</a></li>
   <li><a href="https://github.com/mark-wiemer/vscode-autohotkey-plus-plus">Visual Studio Code with AutoHotkey Extension by Mark Wiemer</a></li>
 </ul>
 <p>Additionally, the zip download of AutoHotkey Basic (<a href="https://www.autohotkey.com/download/1.0/">https://www.autohotkey.com/download/1.0/</a>) includes files for enabling syntax highlighting in the following editors. However, some of these files are badly out of date and may or may not work:</p>
@@ -80,8 +81,8 @@ RegWrite REG_SZ, HKCR, AutoHotkeyScript\Shell\Edit\Command,, "%Editor%" "`%1"</p
 <p>If your favourite editor isn't listed here, try your luck by searching the <a href="https://www.autohotkey.com/boards/">forums</a>.</p>
 <p>To get an editor added to this page, contact Lexikos <a href="https://www.autohotkey.com/boards/ucp.php?i=pm&amp;mode=compose&amp;u=77">via the forums</a> or <a href="https://github.com/Lexikos/AutoHotkey_L-Docs/">GitHub</a>.</p>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a01252894277b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdced5759d02bdc","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Edit.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:09 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Edit.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:25 GMT -->
 </html>

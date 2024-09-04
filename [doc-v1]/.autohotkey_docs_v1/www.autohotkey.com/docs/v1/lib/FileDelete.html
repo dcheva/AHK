@@ -1,20 +1,20 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileDelete.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:23 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileDelete.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:32 GMT -->
 <head>
-<title>FileDelete - Syntax &amp; Usage | AutoHotkey</title>
-<meta name="description" content="The FileDelete command deletes one or more files." />
+<title>FileDelete - Syntax &amp; Usage | AutoHotkey v1</title>
+<meta name="description" content="The FileDelete command deletes one or more files permanently." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
 
 <h1>FileDelete</h1>
 
-<p>Deletes one or more files.</p>
+<p>Deletes one or more files permanently.</p>
 
 <pre class="Syntax"><span class="func">FileDelete</span>, FilePattern</pre>
 <h2 id="Parameters">Parameters</h2>
@@ -32,6 +32,7 @@
 <p>If files were found, <a href="../Variables.html#LastError">A_LastError</a> is set to 0 (zero) or the result of the operating system's GetLastError() function immediately after the last failure. Otherwise A_LastError contains an error code that might indicate why no files were found.</p>
 
 <h2 id="Remarks">Remarks</h2>
+<p>To send a file to the recycle bin, use the <a href="FileRecycle.html">FileRecycle</a> command.</p>
 <p>To delete a read-only file, first remove the read-only attribute. For example: <code><a href="FileSetAttrib.html">FileSetAttrib</a>, -R, C:\My File.txt</code>.</p>
 <h2 id="Related">Related</h2>
 <p><a href="FileRecycle.html">FileRecycle</a>, <a href="FileRemoveDir.html">FileRemoveDir</a>, <a href="FileCopy.html">FileCopy</a>, <a href="FileMove.html">FileMove</a></p>
@@ -41,8 +42,8 @@
 <pre>FileDelete, C:\temp files\*.tmp</pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013acfe142d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcef13a8db2bdc","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileDelete.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:23 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileDelete.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:32 GMT -->
 </html>

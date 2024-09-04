@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/WinKill.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:29 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/WinKill.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:37 GMT -->
 <head>
-<title>WinKill - Syntax &amp; Usage | AutoHotkey</title>
+<title>WinKill - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The WinKill command forces the specified window to close." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -20,28 +20,26 @@
 <h2 id="Parameters">Parameters</h2>
 <dl>
 
-  <dt>WinTitle</dt>
-  <dd><p>A window title or other criteria identifying the target window. See <a href="../misc/WinTitle.html">WinTitle</a>.</p></dd>
-
-  <dt>WinText</dt>
-  <dd><p>If present, this parameter must be a substring from a single text element of the target window (as revealed by the included Window Spy utility). Hidden text elements are detected if <a href="DetectHiddenText.html">DetectHiddenText</a> is ON.</p></dd>
+  <dt>WinTitle, WinText, ExcludeTitle, ExcludeText</dt>
+  <dd>
+    <p>If each of these is blank or omitted, the <a href="../misc/WinTitle.html#LastFoundWindow">Last Found Window</a> will be used. Otherwise, specify for <em>WinTitle</em> a <a href="../misc/WinTitle.html">window title or other criteria</a> to identify the target window and/or for <em>WinText</em> a substring from a single text element of the target window (as revealed by the included Window Spy utility).</p>
+    <p><em>ExcludeTitle</em> and <em>ExcludeText</em> can be used to exclude one or more windows by their title or text. Their specification is similar to <em>WinTitle</em> and <em>WinText</em>, except that <em>ExcludeTitle</em> does not recognize any criteria other than the window title.</p>
+    <p>Window titles and text are case-sensitive. By default, hidden windows are not detected and hidden text elements are detected, unless changed with <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> and <a href="DetectHiddenText.html">DetectHiddenText</a>. By default, a window title must start with the specified <em>WinTitle</em> or <em>ExcludeTitle</em> to be a match, unless changed with <a href="SetTitleMatchMode.html">SetTitleMatchMode</a>.</p>
+  </dd>
 
   <dt>SecondsToWait</dt>
-  <dd><p>If omitted or blank, the command will not wait at all. If 0, it will wait 500ms. Otherwise, it will wait the indicated number of seconds (can contain a decimal point or be an <a href="../Variables.html#Expressions">expression</a>) for the window to close. If the window does not close within that period, the script will continue. ErrorLevel is <strong>not</strong> set by this command, so use <a href="WinExist.html">WinExist()</a>, <a href="IfWinExist.html">IfWinExist</a> or <a href="WinWaitClose.html">WinWaitClose</a> if you need to determine for certain that a window is closed.</p></dd>
-
-  <dt>ExcludeTitle</dt>
-  <dd><p>Windows whose titles include this value will not be considered.</p></dd>
-
-  <dt>ExcludeText</dt>
-  <dd><p>Windows whose text include this value will not be considered.</p></dd>
+  <dd>
+    <p>If blank or omitted, the command will not wait at all. If 0, it will wait 500&nbsp;ms. Otherwise, specify the number of seconds (can contain a decimal point or be an <a href="../Variables.html#Expressions">expression</a>) to wait for the window to close. If the window does not close within that period, the script will continue.</p>
+  </dd>
 
 </dl>
 
 <h2 id="Remarks">Remarks</h2>
-<p>This command  first makes a brief attempt to close the window normally. If that fails, it will attempt to force the window closed by terminating its process.</p>
+<p>This command first makes a brief attempt to close the window normally. If that fails, the command will attempt to force the window closed by terminating its process.</p>
 <p>If a matching window is active, that window will be closed in preference to any other matching window. In general, if more than one window matches, the topmost (most recently used) will be closed.</p>
 <p>This command operates only upon a single window except when <em>WinTitle</em> is <a href="GroupAdd.html">ahk_group GroupName</a>, in which case all windows in the group are affected.</p>
-<p>Window titles and text are case sensitive. Hidden windows are not detected unless <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> has been turned on.</p>
+<p><a href="../misc/ErrorLevel.html">ErrorLevel</a> is <u>not</u> set by this command, so use <a href="WinExist.html">WinExist()</a>, <a href="IfWinExist.html">IfWinExist</a> or <a href="WinWaitClose.html">WinWaitClose</a> if you need to determine for certain that a window is closed.</p>
+<p>While the command is in a waiting state, new <a href="../misc/Threads.html">threads</a> can be launched via <a href="../Hotkeys.html">hotkey</a>, <a href="Menu.html">custom menu item</a>, or <a href="SetTimer.html">timer</a>.</p>
 
 <h2 id="Related">Related</h2>
 <p><a href="WinClose.html">WinClose</a>, <a href="WinWaitClose.html">WinWaitClose</a>, <a href="Process.html">Process</a>, <a href="WinActivate.html">WinActivate</a>, <a href="SetTitleMatchMode.html">SetTitleMatchMode</a>, <a href="DetectHiddenWindows.html">DetectHiddenWindows</a>, <a href="../misc/WinTitle.html#LastFoundWindow">Last Found Window</a>, <a href="WinExist.html">WinExist()</a>, <a href="WinActive.html">WinActive()</a>, <a href="WinWaitActive.html">WinWaitActive</a>, <a href="WinWait.html">WinWait</a>, <a href="GroupActivate.html">GroupActivate</a></p>
@@ -54,8 +52,8 @@ else
     WinKill, Calculator</pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013ffbb882d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcef7d89ae2bdc","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/WinKill.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:29 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/WinKill.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:37 GMT -->
 </html>

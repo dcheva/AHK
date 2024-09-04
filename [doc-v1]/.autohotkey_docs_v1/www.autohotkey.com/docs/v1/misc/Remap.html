@@ -1,19 +1,19 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/misc/Remap.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:53 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/misc/Remap.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:29 GMT -->
 <head>
-<title>Remapping Keys (Keyboard, Mouse and Joystick) | AutoHotkey</title>
-<meta name="description" content="Free keyboard remapper that can also remap mouse and joystick buttons. It can also automate repetitive tasks by sending keystrokes &amp; mouse clicks.">
-<meta name="keywords" content="keyboard,remapper,remap,remapping,keys,key,keystrokes,clicks,mouse,buttons,button,joystick,hotkeys,hotkey">
+<title>Remapping Keys (Keyboard, Mouse and Controller) | AutoHotkey v1</title>
+<meta name="description" content="Free keyboard remapper that can also remap mouse and controller buttons. It can also automate repetitive tasks by sending keystrokes &amp; mouse clicks.">
+<meta name="keywords" content="keyboard,remapper,remap,remapping,keys,key,keystrokes,clicks,mouse,buttons,button,controller,gamepad,joystick,hotkeys,hotkey">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
 
-<h1>Remapping Keys <span class="headnote">(Keyboard, Mouse and Joystick)</span></h1>
+<h1>Remapping Keys <span class="headnote">(Keyboard, Mouse and Controller)</span></h1>
 
 <h2 id="toc">Table of Contents</h2>
 <ul>
@@ -26,7 +26,7 @@
 </ul>
 
 <h2 id="intro">Introduction</h2>
-<p><strong>Limitation</strong>: AutoHotkey's remapping feature described below is generally not as pure and effective as remapping directly via the Windows registry. For the advantages and disadvantages of each approach, see <a href="#registry">registry remapping</a>.</p>
+<p><strong>Limitation:</strong> AutoHotkey's remapping feature described below is generally not as pure and effective as remapping directly via the Windows registry. For the advantages and disadvantages of each approach, see <a href="#registry">registry remapping</a>.</p>
 <h2 id="Remap">Remapping the Keyboard and Mouse</h2>
 <p>The syntax for the built-in remapping feature is <code>OriginKey::DestinationKey</code>. For example, a <a href="../Scripts.html">script</a> consisting only of the following line would make <kbd>A</kbd> behave like <kbd>B</kbd>:</p>
 <pre>a::b</pre>
@@ -113,7 +113,7 @@ a::b  <em>; Makes the 'a' key send a 'b' key, but only in Notepad.</em>
 ^!b::
 ToolTip You pressed %A_ThisHotkey%.
 return</pre>
-<p>Alternatively, in <span class="ver">[v1.1.06]</span> and later, <a href="../lib/_InputLevel.html">#InputLevel</a> can be used to override the default behaviour. For example:</p>
+<p>Alternatively, in <span class="ver">[v1.1.06+]</span>, <a href="../lib/_InputLevel.html">#InputLevel</a> can be used to override the default behaviour. For example:</p>
 <pre>#InputLevel 1
 a::b
 
@@ -121,16 +121,16 @@ a::b
 ^!b::
 ToolTip You pressed %A_ThisHotkey%.
 return</pre>
-<p id="SendPlay">If <a href="../lib/SendMode.html">SendMode</a> is used in the auto-execute section (top part of the script), it affects all remappings. However, since remapping uses <a href="../lib/Send.html#blind">Send {Blind}</a> and since the <a href="../lib/SendMode.html">SendPlay mode</a> does not fully support  {Blind}, some remappings might not function properly in SendPlay mode (especially <kbd>Ctrl</kbd>, <kbd>Shift</kbd>, <kbd>Alt</kbd>, and <kbd>Win</kbd>). To work around this, avoid SendPlay in auto-execute section when you have remappings; then use the command <a href="../lib/Send.html#SendPlay">SendPlay</a> vs. Send in other places throughout the script. Alternatively, you could translate your remappings into hotkeys (as described below) that explicitly call SendEvent vs. Send.</p>
+<p id="SendPlay">If <a href="../lib/SendMode.html">SendMode</a> is used in the <a href="../Scripts.html#auto">auto-execute section</a> (top part of the script), it affects all remappings. However, since remapping uses <a href="../lib/Send.html#blind">Send {Blind}</a> and since the <a href="../lib/SendMode.html">SendPlay mode</a> does not fully support  {Blind}, some remappings might not function properly in SendPlay mode (especially <kbd>Ctrl</kbd>, <kbd>Shift</kbd>, <kbd>Alt</kbd>, and <kbd>Win</kbd>). To work around this, avoid SendPlay in auto-execute section when you have remappings; then use the command <a href="../lib/Send.html#SendPlay">SendPlay</a> vs. Send in other places throughout the script. Alternatively, you could translate your remappings into hotkeys (as described below) that explicitly call SendEvent vs. Send.</p>
 <p id="actually">When a script is launched, each remapping is translated into a pair of <a href="../Hotkeys.html">hotkeys</a>. For example, a script containing <code>a::b</code> actually contains the following two hotkeys instead:</p>
-<pre>*<strong>a</strong>::
+<pre>*a::
 SetKeyDelay -1   <em>; If the destination key is a mouse button, SetMouseDelay is used instead.</em>
-Send <a href="../lib/Send.html#blind">{Blind}</a>{<strong>b</strong> DownR}  <em>; <a href="../lib/Send.html#DownR">DownR</a> is like Down except that other Send commands in the script won't assume "b" should stay down during their Send.</em>
+Send <a href="../lib/Send.html#blind">{Blind}</a>{b DownR}  <em>; <a href="../lib/Send.html#DownR">DownR</a> is like Down except that other Send commands in the script won't assume "b" should stay down during their Send.</em>
 return
 
-*<strong>a up</strong>::
+*a up::
 SetKeyDelay -1  <em>; See note below for why press-duration is not specified with either of these SetKeyDelays.</em>
-Send {Blind}{<strong>b</strong> up}
+Send {Blind}{b up}
 return</pre>
 <p>However, the above hotkeys vary under the following circumstances:</p>
 <ol>
@@ -150,12 +150,12 @@ return</pre>
 <pre>Hotkey, *a, Off
 Hotkey, *a up, Off</pre>
 <p id="AltTab">Alt-tab issues: If you remap a key or mouse button to become <kbd>Alt</kbd>, that key will probably not be able to alt-tab properly. A possible work-around is to add the hotkey <code>*Tab::Send {Blind}{Tab}</code> -- but be aware that it will likely interfere with using the real <kbd>Alt</kbd> to alt-tab. Therefore, it should be used only when you alt-tab solely by means of remapped keys and/or <a href="../Hotkeys.html#alttab">alt-tab hotkeys</a>.</p>
-<p>In addition to the keys and mouse buttons on the <a href="../KeyList.html">Key List</a> page, the source key may also be a virtual key (VKnn) or scan code (SCnnn) as described on the <a href="../KeyList.html#SpecialKeys">special keys</a> page. The same is true for the destination key except that it may optionally specify a scan code after the virtual key. For example, <code>sc01e::vk42sc030</code> is equivalent to <code>a::b</code> on most keyboard layouts.</p>
+<p>In addition to the keys and mouse buttons on the <a href="../KeyList.html">Key List</a> page, the source key may also be a virtual key (VKnn) or scan code (SCnnn) as described in the <a href="../KeyList.html#SpecialKeys">Special Keys</a> section. The same is true for the destination key except that it may optionally specify a scan code after the virtual key. For example, <code>sc01e::vk42sc030</code> is equivalent to <code>a::b</code> on most keyboard layouts.</p>
 <p>To disable a key rather than remapping it, make it a hotkey that simply <a href="../lib/Return.html">returns</a>. For example, <code>F1::return</code> would disable <kbd>F1</kbd>.</p>
 <p>The following keys are not supported by the built-in remapping method:</p>
 <ul>
   <li>The mouse wheel (WheelUp/Down/Left/Right).</li>
-  <li>Pause and Break as destination key names (since they match the names of commands). <span class="ver">[v1.1.32+]:</span> <code>vk13</code> or the corresponding scan code can be used instead.</li>
+  <li>Pause and Break as destination key names (since they match the names of commands). <span class="ver">[v1.1.32+]</span>: <code>vk13</code> or the corresponding scan code can be used instead.</li>
   <li>Curly braces {} as destination keys. Instead use the <a href="../lib/Send.html#vk">VK/SC method</a>; e.g. <code>x::+sc01A</code> and <code>y::+sc01B</code>.</li>
   <li>A percent sign (%) as a destination key. Instead use the <a href="../lib/Send.html#vk">VK/SC method</a>.</li>
   <li>"Return" as a destination key. Instead use "Enter".</li>
@@ -189,7 +189,7 @@ return</pre>
   <li>Registry remapping is relatively permanent: a reboot is required to undo the changes or put new ones into effect.</li>
   <li>Its effect is global: it cannot create remappings specific to a particular user, application, or locale.</li>
   <li>It cannot send keystrokes that are modified by <kbd>Shift</kbd>, <kbd>Ctrl</kbd>, <kbd>Alt</kbd>, or <kbd>AltGr</kbd>. For example, it cannot remap a lowercase character to an uppercase one.</li>
-  <li>It supports only the keyboard (AutoHotkey has <a href="#RemapMouse">mouse remapping</a> and some <a href="RemapJoystick.html">limited joystick remapping</a>).</li>
+  <li>It supports only the keyboard (AutoHotkey has <a href="#RemapMouse">mouse remapping</a> and some <a href="RemapController.html">limited controller remapping</a>).</li>
 </ul>
 <p><strong>How to Apply Changes to the Registry:</strong> There are at least two methods to remap keys via the registry:</p>
 <ol>
@@ -198,12 +198,12 @@ return</pre>
 </ol>
 <h2 id="related">Related Topics</h2>
 <ul>
-  <li><a href="../KeyList.html#Joystick">List of keys and mouse buttons</a></li>
-  <li><a href="../lib/GetKeyState.html#function">GetKeyState()</a></li>
-  <li><a href="RemapJoystick.html">Remapping a joystick</a></li>
+  <li><a href="../KeyList.html">List of keys, mouse buttons and controller controls</a></li>
+  <li><a href="../lib/GetKeyState.html">GetKeyState</a></li>
+  <li><a href="RemapController.html">Remapping a controller</a></li>
 </ul>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a01261c90577b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdced751ad42bdc","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/misc/Remap.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:54 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/misc/Remap.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:29 GMT -->
 </html>

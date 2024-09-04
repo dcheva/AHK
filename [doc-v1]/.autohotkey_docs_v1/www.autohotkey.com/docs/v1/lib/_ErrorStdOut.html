@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/_ErrorStdOut.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:55 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/_ErrorStdOut.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:36 GMT -->
 <head>
-<title>#ErrorStdOut - Syntax &amp; Usage | AutoHotkey</title>
+<title>#ErrorStdOut - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The #ErrorStdOut directive sends any syntax error that prevents a script from launching to the standard error stream (stderr) rather than displaying a dialog." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -21,11 +21,12 @@
 <h2 id="Parameters">Parameters</h2>
 <dl>
   <dt>Encoding <span class="ver">[v1.1.33+]</span></dt>
-  <dd>An <a href="FileEncoding.html">encoding string</a> specifying how to encode the output. For example, <code>#ErrorStdOut UTF-8</code> encodes error messages as UTF-8 before sending them to stderr. Whatever program is capturing the output must support UTF-8, and in some cases may need to be configured to expect it. If omitted, it defaults to CP0.</dd>
+  <dd>If omitted, it defaults to CP0 (the system default ANSI code page). Otherwise, specify an <a href="FileEncoding.html">encoding string</a> indicating how to encode the output. For example, <code>#ErrorStdOut UTF-8</code> encodes error messages as UTF-8 before sending them to stderr. Whatever program is capturing the output must support UTF-8, and in some cases may need to be configured to expect it.</dd>
 </dl>
 
 <h2 id="Remarks">Remarks</h2>
-<p><span class="ver">[AHK_L 42+]:</span> Errors are written to stderr instead of stdout. The command prompt and fancy editors usually display both. This change was undocumented until after <span class="ver">[v1.1.19.01]</span>.</p>
+<p>If this directive is unspecified in the script, any syntax error is displayed in a dialog.</p>
+<p><span class="ver">[AHK_L 42+]</span>: Errors are written to stderr instead of stdout. The command prompt and fancy editors usually display both. This change was undocumented until after <span class="ver">[v1.1.19.01]</span>.</p>
 <p>This allows fancy editors such as TextPad, SciTE, Crimson, and EditPlus to jump to the offending line when a syntax error occurs. Since the #ErrorStdOut directive would have to be added to every script, it is usually better to set up your editor to use the <a href="../Scripts.html#cmd">command line switch</a> <strong>/ErrorStdOut</strong> when launching any AutoHotkey script (see further below for setup instructions).</p>
 <p>Because AutoHotkey is not a console program, errors will not appear at the command prompt directly. This can be worked around by 1) <span class="ver">[v1.1.33+]</span> compiling the script with the <a href="../misc/Ahk2ExeDirectives.html#ConsoleApp">Ahk2Exe ConsoleApp directive</a>, or 2) capturing the script's output via piping or redirection. For example:</p>
 <pre class="no-highlight">"C:\Program Files\AutoHotkey\AutoHotkey.exe" /ErrorStdOut "My Script.ahk" <strong>2&gt;&amp;1 |more</strong>
@@ -36,7 +37,7 @@
 <p>Like other directives, #ErrorStdOut cannot be executed conditionally.</p>
 
 <h2 id="Instructions_for_specific_editors">Instructions for specific editors</h2>
-<p><strong>EditPlus</strong>:</p>
+<p><strong>EditPlus:</strong></p>
 <ol>
   <li>From the menu bar, select Tools &gt; Configure User Tools.</li>
   <li>Press button: Add Tool &gt; Program</li>
@@ -46,7 +47,7 @@
   <li>Initial directory: <code>$(FileDir)</code></li>
   <li>Capture output: Yes</li>
 </ol>
-<p><strong>TextPad</strong>:</p>
+<p><strong>TextPad:</strong></p>
 <ol>
   <li>From the menu bar, select Configure &gt; Preferences.</li>
   <li>Expand the Tools entry.</li>
@@ -70,8 +71,8 @@
 <pre>#ErrorStdOut</pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a0127419e977b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdced84dbb71911","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/_ErrorStdOut.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:55 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/_ErrorStdOut.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:36 GMT -->
 </html>

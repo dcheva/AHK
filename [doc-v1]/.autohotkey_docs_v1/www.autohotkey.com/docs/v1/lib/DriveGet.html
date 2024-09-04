@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/DriveGet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:21 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/DriveGet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:30 GMT -->
 <head>
-<title>DriveGet - Syntax &amp; Usage | AutoHotkey</title>
+<title>DriveGet - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The DriveGet command retrieves various types of information about the computer's drive(s)." />
 <meta name="ahk:equiv-v2" content="lib/Drive.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -38,25 +38,25 @@
 <p>Result example: ACDEZ. If <em>Type</em> is omitted, all drive types are retrieved. Otherwise, <em>Type</em> should be one of the following words to retrieve only a specific type of drive: CDROM, REMOVABLE, FIXED, NETWORK, RAMDISK, UNKNOWN.</p>
 
 <h3 id="Capacity">Capacity (or Cap)</h3>
-<p>Retrieves the total capacity of a drive which contains the specified path, in megabytes.</p>
+<p>Retrieves the total capacity of the drive which contains the specified path, in megabytes.</p>
 <pre class="Syntax"><span class="func">DriveGet</span>, OutputVar, Capacity, Path</pre>
 <p><var>Path</var> is any path contained by the drive (might also work on UNC paths and mapped drives). The result is rounded down to the nearest whole number. Use <a href="DriveSpaceFree.html">DriveSpaceFree</a> to determine the free space.</p>
 
 <h3 id="FileSystem">FileSystem (or FS)</h3>
 <p>Retrieves the type of the specified drive's file system.</p>
 <pre class="Syntax"><span class="func">DriveGet</span>, OutputVar, FileSystem, Drive</pre>
-<p><em>Drive</em> is the drive letter followed by a colon and an optional backslash, or a UNC name such <code>\\server1\share1</code>. The possible values for <em>OutputVar</em> are defined by the system; they include (but are not limited to) the following: NTFS, FAT32, FAT, CDFS (typically indicates a CD), or UDF (typically indicates a DVD). <em>OutputVar</em> will be made blank and <a href="../misc/ErrorLevel.html">ErrorLevel</a> set to 1 if the drive does not contain formatted media.</p>
+<p><em>Drive</em> is the drive letter followed by a colon and an optional backslash, or a UNC name such as <code>\\server1\share1</code>. The possible values for <em>OutputVar</em> are defined by the system; they include (but are not limited to) the following: NTFS, FAT32, FAT, CDFS (typically indicates a CD), or UDF (typically indicates a DVD). <em>OutputVar</em> will be made blank and <a href="../misc/ErrorLevel.html">ErrorLevel</a> set to 1 if the drive does not contain formatted media.</p>
 
 <h3 id="Label">Label</h3>
 <p>Retrieves the volume label of the specified drive.</p>
 <pre class="Syntax"><span class="func">DriveGet</span>, OutputVar, Label, Drive</pre>
-<p><em>Drive</em> is the drive letter followed by a colon and an optional backslash, or a UNC name such <code>\\server1\share1</code>.</p>
+<p><em>Drive</em> is the drive letter followed by a colon and an optional backslash, or a UNC name such as <code>\\server1\share1</code>.</p>
 <p>To change the label, use the <a href="Drive.html#Label">Drive's Label sub-command</a>, such as <code>Drive, Label, C:, MyLabel</code>.</p>
 
 <h3 id="Serial">Serial</h3>
 <p>Retrieves the volume serial number of the specified drive.</p>
 <pre class="Syntax"><span class="func">DriveGet</span>, OutputVar, Serial, Drive</pre>
-<p><em>Drive</em> is the drive letter followed by a colon and an optional backslash, or a UNC name such <code>\\server1\share1</code>. See <a href="Format.html">Format()</a> or <a href="SetFormat.html">SetFormat</a> for how to convert the result to hexadecimal.</p>
+<p><em>Drive</em> is the drive letter followed by a colon and an optional backslash, or a UNC name such as <code>\\server1\share1</code>. See <a href="Format.html">Format()</a> or <a href="SetFormat.html">SetFormat</a> for how to convert the result to hexadecimal.</p>
 
 <h3 id="Type">Type</h3>
 <p>Retrieves the type of the drive which contains the specified path.</p>
@@ -124,7 +124,7 @@
         <td>The drive contains a CD but is not currently accessing it.</td>
     </tr>
 </table>
-<p>This sub-command will probably not work on a network drive or non-CD/DVD drive; if it fails in such cases or for any other reason, <em>OutputVar</em> is made blank and <a href="../misc/ErrorLevel.html">ErrorLevel</a> is set to 1.</p>
+<p>This sub-command will probably not work on a network drive or non-CD/DVD drive. If it fails in such cases or for any other reason, <em>OutputVar</em> is made blank and <a href="../misc/ErrorLevel.html">ErrorLevel</a> is set to 1.</p>
 <p>If the tray was recently closed, there may be a delay before the sub-command completes.</p>
 <p>To eject or retract the tray, see the <a href="Drive.html#Eject">Drive's Eject sub-command</a>.</p>
 
@@ -156,8 +156,8 @@ DriveGet, status, Status, %folder%
 MsgBox All Drives: %list%`nSelected Drive: %folder%`nDrive Type: %type%`nStatus: %status%`nCapacity: %cap% M`nFree Space: %free% M`nFilesystem: %fs%`nVolume Label: %label%`nSerial Number: %serial%</pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013a0bace77b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcef040b8d1911","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/DriveGet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:22 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/DriveGet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:30 GMT -->
 </html>

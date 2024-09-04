@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/misc/Labels.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:02 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/misc/Labels.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:57 GMT -->
 <head>
-<title>Labels - Syntax &amp; Usage | AutoHotkey</title>
+<title>Labels - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="Labels identify a line of code, and can be used as Goto targets or to form subroutines." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -27,29 +27,25 @@
 
 <h2 id="syntax-and-usage">Syntax and Usage</h2>
 <p>A label identifies a line of code, and can be used as a <a href="../lib/Goto.html">Goto</a> target or to form a <a href="#subroutines">subroutine</a>. There are three kinds of label: normal named labels, <a href="../Hotkeys.html">hotkey</a> labels and <a href="../Hotstrings.html">hotstring</a> labels.</p>
-<p>Normal labels consist of a name followed by a colon.</p>
-<pre>this_is_a_label:
-</pre>
-<p>Hotkey labels consist of a hotkey followed by double-colon.</p>
-<pre>^a::
-</pre>
-<p>Hotstring labels consist of a colon, zero or more <a href="../Hotstrings.html#Options">options</a>, another colon, an abbreviation and double-colon.</p>
-<pre>:*:btw::
-</pre>
+<p>Normal labels consist of a name followed by a colon:</p>
+<pre>this_is_a_label:</pre>
+<p>Hotkey labels consist of a hotkey followed by double-colon:</p>
+<pre>^a::</pre>
+<p>Hotstring labels consist of a colon, zero or more <a href="../Hotstrings.html#Options">options</a>, another colon, an abbreviation and double-colon:</p>
+<pre>:*:btw::</pre>
 <p>Generally, aside from whitespace and comments, no other code can be written on the same line as a label. However:</p>
 <ul>
   <li>A hotkey label can be directly followed by a command or other statement to create a <em>one-line</em> hotkey. In other words, if a command, assignment or expression is present on the same line as a hotkey label, it acts as though followed by <code>return</code>.</li>
   <li>A hotkey with a <a href="../KeyList.html">key name</a> written to the right of the double-colon is actually a <a href="Remap.html"><em>remapping</em></a>, which is shorthand for <a href="Remap.html#actually">a pair of hotkeys</a>. For example, <code>a::b</code> creates hotkeys and labels for <code>*a</code> and <code>*a Up</code>, and does not create a label named <code>a</code>.</li>
   <li>A hotstring with text written to the right of the final double-colon is an <em>auto-replace</em> hotstring. Auto-replace hotstrings do not act as labels.</li>
 </ul>
-<p><strong>Names:</strong> Label names are not case sensitive, and may consist of any characters other than space, tab, comma and the <a href="EscapeChar.html">escape character</a> (`). However, due to style conventions, it is generally better to use only letters, numbers, and the underscore character (for example: <em>MyListView</em>, <em>Menu_File_Open</em>, and <em>outer_loop</em>). Label names must be unique throughout the whole script.</p>
+<p><strong>Names:</strong> Label names are not case-sensitive, and may consist of any characters other than space, tab, comma and the <a href="EscapeChar.html">escape character</a> (`). However, due to style conventions, it is generally better to use only letters, numbers, and the underscore character (for example: <em>MyListView</em>, <em>Menu_File_Open</em>, and <em>outer_loop</em>). Label names must be unique throughout the whole script.</p>
 <p>Although there are no reserved names, it is strongly recommended that the following names not be used: On, Off, Toggle, AltTab, ShiftAltTab, AltTabAndMenu and AltTabMenuDismiss. These values have special meaning to the <a href="../lib/Hotkey.html">Hotkey command</a>.</p>
 <p><strong>Target:</strong> The target of a label is the next line of executable code. Executable code includes commands, assignments, <a href="../Variables.html#Expressions">expressions</a> and <a href="../lib/Block.html">blocks</a>, but not directives, labels, hotkeys or hotstrings. In the following example, <code>run_notepad</code> and <code>#n</code> both point at the <code>Run</code> line:</p>
 <pre>run_notepad:
 #n::
     Run Notepad
-    return
-</pre>
+    return</pre>
 <p><strong>Execution:</strong> Like directives, labels have no effect when reached during normal execution. In the following example, a message box is shown twice - once during execution of the subroutine by <a href="../lib/Gosub.html">Gosub</a>, and again after the subroutine returns:</p>
 <pre>gosub Label1
 
@@ -94,14 +90,13 @@ Esc::MsgBox Esc hotkey.</pre>
   <li><a href="../lib/Menu.html#Functor">Menu</a></li>
   <li><a href="../lib/SetTimer.html#Functor">SetTimer</a></li>
 </ul>
-<p></p>
 <p>The benefits of functions are that they can use local variables, and in some cases (such as Gui control events) they also accept parameters containing useful information.</p>
 
 <h2 id="related">Related</h2>
 <p><a href="../lib/IsLabel.html">IsLabel()</a>, <a href="../Variables.html#ThisLabel">A_ThisLabel</a>, <a href="../lib/Gosub.html">Gosub</a>, <a href="../lib/Goto.html">Goto</a>, <a href="../lib/OnExit.html#command">OnExit</a>, <a href="../lib/SetTimer.html">SetTimer</a>, <a href="../lib/Hotkey.html">Hotkey</a>, <a href="../lib/Gui.html#Labels">Gui Events</a>, <a href="../lib/Gui.html#label">g-label</a>, <a href="../lib/OnClipboardChange.html#label">OnClipboardChange Label</a></p>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a01299fe3f77b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcedb0ec1d2bdc","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/misc/Labels.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:02 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/misc/Labels.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:57 GMT -->
 </html>

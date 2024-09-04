@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Pause.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:06 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Pause.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:31 GMT -->
 <head>
-<title>Pause - Syntax &amp; Usage | AutoHotkey</title>
+<title>Pause - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The Pause command pauses the script's current thread." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -21,19 +21,19 @@
 <dl>
 
   <dt>OnOffToggle</dt>
-  <dd><p>If blank or omitted, it defaults to Toggle. Otherwise, specify one of the following words:</p>
-      <p><strong>Toggle</strong>: Pauses the <a href="../misc/Threads.html">current thread</a> unless the thread beneath it is paused, in which case the underlying thread is unpaused.</p>
-      <p><strong>On</strong>: Pauses the current thread.</p>
-      <p><strong>Off</strong>: If the thread beneath the current thread is paused, it will be in an unpaused state when resumed. Otherwise, the command has no effect.</p>
-      <p><span class="ver">[v1.1.30+]:</span> The decimal values 1, 0 and -1 may be used in place of On, Off and Toggle, respectively.</p>
+  <dd><p>If blank or omitted, it defaults to <em>Toggle</em>. Otherwise, specify one of the following words:</p>
+      <p><strong>On:</strong> Pauses the <a href="../misc/Threads.html">current thread</a>.</p>
+      <p><strong>Off:</strong> If the thread beneath the current thread is paused, it will be in an unpaused state when resumed. Otherwise, the command has no effect.</p>
+      <p><strong>Toggle:</strong> Pauses the current thread unless the thread beneath it is paused, in which case the underlying thread is unpaused.</p>
+      <p><span class="ver">[v1.1.30+]</span>: The decimal values 1, 0 and -1 may be used in place of On, Off and Toggle, respectively.</p>
       </dd>
 
   <dt>OperateOnUnderlyingThread</dt>
   <dd><p>This parameter is ignored for <code>Pause Off</code> because that always operates on the underlying thread. For the others, it is ignored unless Pause is being turned on (including via Toggle).</p>
-      <p>Specify one of the following numbers:</p>
-      <p><strong>0</strong> (or omitted): The command pauses the current thread; that is, the one now running the Pause command.</p>
-    <p><strong>1</strong>: The command marks the thread beneath the current thread as paused so that when it resumes, it will finish the command it was running (if any) and then enter a paused state. If there is no thread beneath the current thread, the script itself is paused, which prevents <a href="SetTimer.html">timers</a> from running (this effect is the same as having used the menu item "Pause Script" while the script has no threads).</p>
-    <p class="note"><strong>Note</strong>: <a href="../Variables.html#IsPaused">A_IsPaused</a> contains the pause state of the underlying thread.</p></dd>
+      <p>If blank or omitted, it defaults to 0. Otherwise, specify one of the following numbers:</p>
+      <p><strong>0:</strong> The command pauses the current thread; that is, the one now running the Pause command.</p>
+    <p><strong>1:</strong> The command marks the thread beneath the current thread as paused so that when it resumes, it will finish the command it was running (if any) and then enter a paused state. If there is no thread beneath the current thread, the script itself is paused, which prevents <a href="SetTimer.html">timers</a> from running (this effect is the same as having used the menu item "Pause Script" while the script has no threads).</p>
+  </dd>
 
 </dl>
 
@@ -41,10 +41,11 @@
 <p>By default, the script can also be paused via its <a href="../Program.html#tray-icon">tray icon</a> or <a href="../Program.html#main-window">main window</a>.</p>
 <p>Unlike <a href="Suspend.html">Suspend</a> -- which disables <a href="../Hotkeys.html">hotkeys</a> and <a href="../Hotstrings.html">hotstrings</a> -- turning on pause will freeze the <a href="../misc/Threads.html"> current thread</a>. As a side-effect, any interrupted threads beneath it will lie dormant.</p>
 <p>Whenever any thread is paused, <a href="SetTimer.html">timers</a> will not run. By contrast, explicitly launched threads such as <a href="../Hotkeys.html">hotkeys</a> and <a href="Menu.html">menu items</a> can still be launched; but when their <a href="../misc/Threads.html">threads</a> finish, the underlying thread will still be paused. In other words, each thread can be paused independently of the others.</p>
-<p>The color of the tray icon changes from green to red whenever the script's <a href="../misc/Threads.html">current thread</a> is in a paused state. This color change can be avoided by freezing the icon, which is achieved by specifying 1 for the last parameter of the Menu command. For example:</p>
-  <pre><a href="Menu.html">Menu</a>, Tray, Icon, C:\My Icon.ico, , 1</pre>
-<p>To disable <a href="SetTimer.html">timers</a> without pausing the script, use <a href="Thread.html">Thread, NoTimers</a>.</p>
+<p>The <a href="../Program.html#tray-icon">tray icon</a> changes to <img src="../static/ahk16_pause.png" alt="a red H icon" style="vertical-align:-.2em;"> (or to <img src="../static/ahk16_pause_suspend.png" alt="a red S icon" style="vertical-align:-.2em;"> if the script is also <a href="Suspend.html">suspended</a>), whenever the script's <a href="../misc/Threads.html">current thread</a> is in a paused state. This icon change can be avoided by freezing the icon, which is achieved by specifying 1 for the <em>Freeze</em> parameter of the <a href="Menu.html#Icon">Menu's Icon sub-command</a>. For example:</p>
+  <pre>Menu, Tray, Icon, C:\My Icon.ico, , 1</pre>
+<p>To disable <a href="SetTimer.html">timers</a> without pausing the script, use <a href="Thread.html#NoTimers">Thread NoTimers</a>.</p>
 <p>A script is always halted (though not officially paused) while it is displaying any kind of <a href="Menu.html">menu</a> (tray menu, menu bar, GUI context menu, etc.)</p>
+<p>The built-in variable <strong>A_IsPaused</strong> contains 1 if the thread immediately underneath the current thread is paused and 0 otherwise.</p>
 
 <h2 id="Related">Related</h2>
 <p><a href="Suspend.html">Suspend</a>, <a href="Menu.html">Menu</a>, <a href="ExitApp.html">ExitApp</a>, <a href="../misc/Threads.html">Threads</a>, <a href="SetTimer.html">SetTimer</a></p>
@@ -63,8 +64,8 @@ ID_FILE_PAUSE := 65403
 <a href="PostMessage.html">PostMessage</a>, WM_COMMAND, ID_FILE_PAUSE,,, C:\YourScript.ahk ahk_class AutoHotkey</pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a012eb6b5d77b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcee1a3d9bd22b","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Pause.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:06 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Pause.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:31 GMT -->
 </html>

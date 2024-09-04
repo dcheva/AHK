@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ControlClick.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:21 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ControlClick.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:30 GMT -->
 <head>
-<title>ControlClick - Syntax &amp; Usage | AutoHotkey</title>
+<title>ControlClick - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The ControlClick command sends a mouse button or mouse wheel event to a control." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -21,44 +21,39 @@
 <dl>
 
   <dt>Control-or-Pos</dt>
-  <dd><p>If this parameter is blank, the target window's topmost control will be clicked (or the target window itself if it has no controls). Otherwise, one of the two modes below will be used.</p>
-      <p>Mode 1 (Position): Specify the X and Y coordinates relative to the target window's upper left corner. The X coordinate must precede the Y coordinate and there must be at least one space or tab between them. For example: <code>X55 Y33</code>. If there is a control at the specified coordinates, it will be sent the click-event at those exact coordinates. If there is no control, the target window itself will be sent the event (which might have no effect depending on the nature of the window).</p>
-    <p class="note"><strong>Note</strong>: In mode 1, the X and Y option letters of the <em>Options</em> parameter are ignored.</p>
-      <p>Mode 2 (ClassNN or Text): Specify either ClassNN (the classname and instance number of the control) or the name/text of the control, both of which can be determined via Window Spy. When using name/text, the matching behavior is determined by <a href="SetTitleMatchMode.html">SetTitleMatchMode</a>.</p>
-      <p>By default, mode 2 takes precedence over mode 1. For example, in the unlikely event that there is a control whose text or ClassNN has the format "Xnnn Ynnn", it would be acted upon by Mode 2. To override this and use mode 1 unconditionally, specify the word Pos in <em>Options</em> as in the following example: <code>ControlClick, x255 y152, WinTitle,,,, Pos</code>.</p>
+  <dd><p>If blank or omitted, the target window's topmost control will be clicked (or the target window itself if it has no controls). Otherwise, use one of the following modes.</p>
+      <p><strong>Mode 1 (Position):</strong> Specify the X and Y coordinates relative to the target window's upper left corner. The X coordinate must precede the Y coordinate and there must be at least one space or tab between them. For example: <code>X55 Y33</code>. If there is a control at the specified coordinates, it will be sent the click-event at those exact coordinates. If there is no control, the target window itself will be sent the event (which might have no effect depending on the nature of the window).</p>
+    <p class="note"><strong>Note:</strong> In mode 1, the X and Y option letters of the <em>Options</em> parameter are ignored.</p>
+      <p><strong>Mode 2 (ClassNN or Text):</strong> Specify either ClassNN (the classname and instance number of the control) or the name/text of the control, both of which can be determined via Window Spy. When using name/text, the matching behavior is determined by <a href="SetTitleMatchMode.html">SetTitleMatchMode</a>.</p>
+      <p>By default, mode 2 takes precedence over mode 1. For example, in the unlikely event that there is a control whose text or ClassNN has the format "Xnnn Ynnn", it would be acted upon by mode 2. To override this and use mode 1 unconditionally, specify the word Pos in <em>Options</em> as in the following example: <code>ControlClick, x255 y152, WinTitle,,,, Pos</code>.</p>
       <p>To operate upon a control's HWND (window handle), leave this parameter blank and specify <code>ahk_id %ControlHwnd%</code> for the <em>WinTitle</em> parameter (this also works on hidden controls even when <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> is Off). The HWND of a control is typically retrieved via <a href="ControlGet.html#Hwnd">ControlGet Hwnd</a>, <a href="MouseGetPos.html">MouseGetPos</a>, or <a href="DllCall.html">DllCall()</a>.</p></dd>
 
-  <dt>WinTitle</dt>
-  <dd><p>A window title or other criteria identifying the target window. See <a href="../misc/WinTitle.html">WinTitle</a>.</p></dd>
-
-  <dt>WinText</dt>
-  <dd><p>If present, this parameter must be a substring from a single text element of the target window (as revealed by the included Window Spy utility). Hidden text elements are detected if <a href="DetectHiddenText.html">DetectHiddenText</a> is ON.</p></dd>
+  <dt>WinTitle, WinText, ExcludeTitle, ExcludeText</dt>
+  <dd>
+    <p>If each of these is blank or omitted, the <a href="../misc/WinTitle.html#LastFoundWindow">Last Found Window</a> will be used. Otherwise, specify for <em>WinTitle</em> a <a href="../misc/WinTitle.html">window title or other criteria</a> to identify the target window and/or for <em>WinText</em> a substring from a single text element of the target window (as revealed by the included Window Spy utility).</p>
+    <p><em>ExcludeTitle</em> and <em>ExcludeText</em> can be used to exclude one or more windows by their title or text. Their specification is similar to <em>WinTitle</em> and <em>WinText</em>, except that <em>ExcludeTitle</em> does not recognize any criteria other than the window title.</p>
+    <p>Window titles and text are case-sensitive. By default, hidden windows are not detected and hidden text elements are detected, unless changed with <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> and <a href="DetectHiddenText.html">DetectHiddenText</a>. By default, a window title must start with the specified <em>WinTitle</em> or <em>ExcludeTitle</em> to be a match, unless changed with <a href="SetTitleMatchMode.html">SetTitleMatchMode</a>.</p>
+  </dd>
 
   <dt>WhichButton</dt>
-  <dd><p>The button to click: LEFT, RIGHT, MIDDLE (or just the first letter of each of these). If omitted or blank, the LEFT button will be used.</p>
-      <p>X1 (XButton1, the 4th mouse button) and X2 (XButton2, the 5th mouse button) are also supported.</p>
-      <p>WheelUp (or WU) and WheelDown (or WD) are also supported. In this case, <em>ClickCount</em> is the number of notches to turn the wheel.</p>
-      <p>Windows Vista or later <span class="ver">[v1.0.48+]:</span> WheelLeft (or WL) and WheelRight (or WR) are also supported (they have no effect on older operating systems). In this case, <em>ClickCount</em> is the number of notches to turn the wheel.</p>
-    </dd>
+  <dd>
+    <p>If blank or omitted, it defaults to Left (the left mouse button). Otherwise, specify the button to click or the rotate/push direction of the mouse wheel.</p>
+    <p><strong>Button:</strong> Left, Right, Middle (or just the first letter of each of these); or X1 (fourth button) or X2 (fifth button).</p>
+    <p><strong>Mouse wheel:</strong> Specify WheelUp or WU to turn the wheel upward (away from you); specify WheelDown or WD to turn the wheel downward (toward you). <span class="ver">[v1.0.48+]</span>: Specify WheelLeft (or WL) or WheelRight (or WR) to push the wheel left or right, respectively (but these have no effect on operating systems older than Windows Vista). <em>ClickCount</em> is the number of notches to turn the wheel.</p>
+  </dd>
 
   <dt>ClickCount</dt>
-  <dd><p>The number of clicks to send, which can be an <a href="../Variables.html#Expressions">expression</a>. If omitted or blank, 1 click is sent.</p></dd>
+  <dd><p>If blank or omitted, it defaults to 1. Otherwise, specify the number of times to click the mouse button or turn the mouse wheel, which can be an <a href="../Variables.html#Expressions">expression</a>.</p></dd>
 
   <dt>Options</dt>
-  <dd><p>A series of zero or more of the following option letters. For example: <code>d x50 y25</code>.</p>
-      <p><strong>NA</strong> <span class="ver">[v1.0.45+]:</span> May improve reliability. See <a href="#Reliability">reliability</a> below.</p>
-      <p><strong>D</strong>: Press the mouse button down but do not release it (i.e. generate a down-event). If both the <strong>D</strong> and <strong>U</strong> options are absent, a complete click (down and up) will be sent.</p>
-      <p><strong>U</strong>: Release the mouse button (i.e. generate an up-event). This option should not be present if the <strong>D</strong> option is already present (and vice versa).</p>
-      <p><strong>Pos</strong>: Specify the word Pos anywhere in <em>Options</em> to unconditionally use the X/Y positioning mode as described in the <em>Control-or-Pos</em> parameter above.</p>
-      <p><strong>Xn</strong>: Specify for <strong>n</strong> the X position to click at, relative to the control's upper left corner. If unspecified, the click will occur at the horizontal-center of the control.</p>
-      <p><strong>Yn</strong>: Specify for <strong>n</strong> the Y position to click at, relative to the control's upper left corner. If unspecified, the click will occur at the vertical-center of the control.</p>
-      <p>Use decimal (not hexadecimal) numbers for the <strong>X</strong> and <strong>Y</strong> options.</p></dd>
-
-  <dt>ExcludeTitle</dt>
-  <dd><p>Windows whose titles include this value will not be considered.</p></dd>
-
-  <dt>ExcludeText</dt>
-  <dd><p>Windows whose text include this value will not be considered.</p></dd>
+  <dd><p>If blank or omitted, each click consists of a down-event followed by an up-event, and occurs at the center of the control when mode 2 is in effect. Otherwise, specify a series of one or more of the following options. For example: <code>d x50 y25</code>.</p>
+      <p><strong>NA</strong> <span class="ver">[v1.0.45+]</span>: May improve reliability. See <a href="#Reliability">reliability</a> below.</p>
+      <p><strong>D:</strong> Press the mouse button down but do not release it (i.e. generate a down-event). If both the D and U options are absent, a complete click (down and up) will be sent.</p>
+      <p><strong>U:</strong> Release the mouse button (i.e. generate an up-event). This option should not be present if the D option is already present (and vice versa).</p>
+      <p><strong>Pos:</strong> Specify the word Pos anywhere in <em>Options</em> to unconditionally use the X/Y positioning mode as described in the <em>Control-or-Pos</em> parameter above.</p>
+      <p><strong>X</strong><em>n</em>: Specify for <em>n</em> the X position to click at, relative to the control's upper left corner. If unspecified, the click will occur at the horizontal-center of the control.</p>
+      <p><strong>Y</strong><em>n</em>: Specify for <em>n</em> the Y position to click at, relative to the control's upper left corner. If unspecified, the click will occur at the vertical-center of the control.</p>
+      <p>Use decimal (not hexadecimal) numbers for the X and Y options.</p></dd>
 
 </dl>
 
@@ -71,12 +66,11 @@
 <p>2) Specify the string NA anywhere in the sixth parameter (<em>Options</em>) as shown below:</p>
 <pre>SetControlDelay -1
 ControlClick, Toolbar321, WinTitle,,,, NA</pre>
-<p><code>NA</code> avoids marking the target window as active and avoids merging its input processing with that of the script, which may prevent physical movement of the mouse from interfering (but usually only when the target window is not active). However, this method might not work for all types of windows and controls.</p>
+<p>The NA option avoids marking the target window as active and avoids merging its input processing with that of the script, which may prevent physical movement of the mouse from interfering (but usually only when the target window is not active). However, this method might not work for all types of windows and controls.</p>
 <h2 id="Remarks">Remarks</h2>
-<p>Not all applications obey a <em>ClickCount</em> higher than 1 for turning the mouse wheel. For those applications, use a Loop to turn the wheel more than one notch as in this example, which turns it 5 notches:</p>
+<p>Not all applications obey a <em>ClickCount</em> higher than 1 for turning the mouse wheel. For those applications, use a loop to turn the wheel more than one notch as in this example, which turns it 5 notches:</p>
 <pre>Loop, 5
     ControlClick, <i>Control</i>, <i>WinTitle</i>, <i>WinText</i>, WheelUp</pre>
-<p>Window titles and text are case sensitive. Hidden windows are not detected unless <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> has been turned on.</p>
 
 <h2 id="Related">Related</h2>
 <p><a href="SetControlDelay.html">SetControlDelay</a>, <a href="Control.html">Control</a>, <a href="ControlGet.html">ControlGet</a>, <a href="ControlGetText.html">ControlGetText</a>, <a href="ControlMove.html">ControlMove</a>, <a href="ControlGetPos.html">ControlGetPos</a>, <a href="ControlFocus.html">ControlFocus</a>, <a href="ControlSetText.html">ControlSetText</a>, <a href="ControlSend.html">ControlSend</a>, <a href="Click.html">Click</a></p>
@@ -97,8 +91,8 @@ ControlClick, Toolbar321, WinTitle,,,, NA</pre>
 ControlClick, Toolbar321, Some Window Title,,,, NA x192 y10</pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013970b8677b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdceef388501911","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ControlClick.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:21 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ControlClick.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:30 GMT -->
 </html>

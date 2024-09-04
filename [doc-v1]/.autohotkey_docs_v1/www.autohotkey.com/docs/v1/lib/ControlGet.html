@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ControlGet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:04 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ControlGet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:08 GMT -->
 <head>
-<title>ControlGet - Syntax &amp; Usage | AutoHotkey</title>
+<title>ControlGet - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The ControlGet command retrieves various types of information about a control." />
 <meta name="ahk:equiv-v2" content="lib/Control.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -28,21 +28,16 @@
 
   <dt>Control</dt>
   <dd>
-    <p>Can be either ClassNN (the classname and instance number of the control) or the control's text, both of which can be determined via Window Spy. When using text, the matching behavior is determined by <a href="SetTitleMatchMode.html">SetTitleMatchMode</a>. If this parameter is blank, the target window's topmost control will be used.</p>
+    <p>If blank or omitted, the target window's topmost control will be used. Otherwise, specify either ClassNN (the classname and instance number of the control) or the control's text, both of which can be determined via Window Spy. When using text, the matching behavior is determined by <a href="SetTitleMatchMode.html">SetTitleMatchMode</a>.</p>
     <p>To operate upon a control's HWND (window handle), leave the <em>Control</em> parameter blank and specify <code>ahk_id %ControlHwnd%</code> for the <em>WinTitle</em> parameter (this also works on hidden controls even when <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> is Off). The HWND of a control is typically retrieved via <a href="#Hwnd">ControlGet Hwnd</a>, <a href="MouseGetPos.html">MouseGetPos</a>, or <a href="DllCall.html">DllCall()</a>.</p>
   </dd>
 
-  <dt>WinTitle</dt>
-  <dd>A window title or other criteria identifying the target window. See <a href="../misc/WinTitle.html">WinTitle</a>.</dd>
-
-  <dt>WinText</dt>
-  <dd>If present, this parameter must be a substring from a single text element of the target window (as revealed by the included Window Spy utility). Hidden text elements are detected if <a href="DetectHiddenText.html">DetectHiddenText</a> is ON.</dd>
-
-  <dt>ExcludeTitle</dt>
-  <dd>Windows whose titles include this value will not be considered.</dd>
-
-  <dt>ExcludeText</dt>
-  <dd>Windows whose text include this value will not be considered.</dd>
+  <dt>WinTitle, WinText, ExcludeTitle, ExcludeText</dt>
+  <dd>
+    <p>If each of these is blank or omitted, the <a href="../misc/WinTitle.html#LastFoundWindow">Last Found Window</a> will be used. Otherwise, specify for <em>WinTitle</em> a <a href="../misc/WinTitle.html">window title or other criteria</a> to identify the target window and/or for <em>WinText</em> a substring from a single text element of the target window (as revealed by the included Window Spy utility).</p>
+    <p><em>ExcludeTitle</em> and <em>ExcludeText</em> can be used to exclude one or more windows by their title or text. Their specification is similar to <em>WinTitle</em> and <em>WinText</em>, except that <em>ExcludeTitle</em> does not recognize any criteria other than the window title.</p>
+    <p>Window titles and text are case-sensitive. By default, hidden windows are not detected and hidden text elements are detected, unless changed with <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> and <a href="DetectHiddenText.html">DetectHiddenText</a>. By default, a window title must start with the specified <em>WinTitle</em> or <em>ExcludeTitle</em> to be a match, unless changed with <a href="SetTitleMatchMode.html">SetTitleMatchMode</a>.</p>
+  </dd>
 </dl>
 
 <h2 id="SubCommands">Sub-commands</h2>
@@ -86,8 +81,8 @@
     <td>Retrieves only the focused row. If none, <em>OutputVar</em> is made blank.</td>
   </tr>
   <tr id="ColN">
-    <td>Col4</td>
-    <td>Retrieves only the fourth column (field) rather than all columns (replace 4 with a number of your choice).</td>
+    <td>Col<em>N</em></td>
+    <td>Retrieves only the <em>N</em>th column (field) rather than all columns. Replace <em>N</em> with a number of your choice. For example, Col4 retrieves the fourth column.</td>
   </tr>
   <tr>
     <td>Count</td>
@@ -107,7 +102,7 @@
   </tr>
 
 </table>
-<p class="note"><strong>Note</strong>: Some applications store their ListView text privately, which prevents their text from being retrieved. In these cases, ErrorLevel will usually be set to 0 (indicating success) but all the retrieved fields will be empty. Also note that ListView text retrieval is not restricted by <a href="_MaxMem.html">#MaxMem</a>.</p>
+<p class="note"><strong>Note:</strong> Some applications store their ListView text privately, which prevents their text from being retrieved. In these cases, ErrorLevel will usually be set to 0 (indicating success) but all the retrieved fields will be empty. Also note that ListView text retrieval is not restricted by <a href="_MaxMem.html">#MaxMem</a>.</p>
 <p>Upon success, ErrorLevel is set to 0. Upon failure, it is set to 1 and <em>OutputVar</em> is made blank. Failure occurs when: 1) the target window or control does not exist; 2) the target control is not of type SysListView32; 3) the process owning the ListView could not be opened, perhaps due to a lack of user permissions or because it is locked; 4) the <a href="#ColN">Col<em>N</em> option</a> specifies a nonexistent column.</p>
 <p>To extract the individual rows and fields out of a ListView, use a <a href="LoopParse.html">parsing loop</a> as in this example:</p>
 <pre>ControlGet, SelectedItems, List, Selected, SysListView321, <i>WinTitle</i>
@@ -207,7 +202,6 @@ ChoicePos += 1  <em>; Convert from 0-based to 1-based, i.e. so that the first it
 <h2 id="Remarks">Remarks</h2>
 <p>Unlike commands that change a control, ControlGet does not have an automatic delay; that is, <a href="SetControlDelay.html">SetControlDelay</a> does not affect it.</p>
 <p>To discover the ClassNN or HWND of the control that the mouse is currently hovering over, use <a href="MouseGetPos.html">MouseGetPos</a>. To retrieve a list of all controls in a window, use <a href="WinGet.html#ControlList">WinGet ControlList</a>.</p>
-<p>Window titles and text are case sensitive. Hidden windows are not detected unless <a href="DetectHiddenWindows.html">DetectHiddenWindows</a> has been turned on.</p>
 
 <h2 id="Related">Related</h2>
 <p><a href="Control.html">Control</a>, <a href="GuiControlGet.html">GuiControlGet</a>, <a href="ControlMove.html">ControlMove</a>, <a href="ControlGetText.html">ControlGetText</a>, <a href="ControlSetText.html">ControlSetText</a>, <a href="ControlGetPos.html">ControlGetPos</a>, <a href="ControlClick.html">ControlClick</a>, <a href="ControlFocus.html">ControlFocus</a>, <a href="ControlSend.html">ControlSend</a>, <a href="WinGet.html">WinGet</a></p>
@@ -228,8 +222,8 @@ else
     MsgBox Tab #%WhichTab% is active.</pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a012b559bf77b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcede0ba721911","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ControlGet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:04 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/ControlGet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:09 GMT -->
 </html>

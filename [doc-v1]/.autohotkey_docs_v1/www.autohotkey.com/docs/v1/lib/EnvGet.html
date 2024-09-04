@@ -1,40 +1,40 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/EnvGet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:15 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/EnvGet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:24 GMT -->
 <head>
-<title>EnvGet - Syntax &amp; Usage | AutoHotkey</title>
-<meta name="description" content="The EnvGet command retrieves an environment variable." />
+<title>EnvGet - Syntax &amp; Usage | AutoHotkey v1</title>
+<meta name="description" content="The EnvGet command retrieves the value of the specified environment variable." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
 
 <h1>EnvGet <span class="ver">[v1.0.43.08+]</span></h1>
 
-<p>Retrieves an environment variable.</p>
+<p>Retrieves the value of the specified <a href="../Concepts.html#environment-variables">environment variable</a>.</p>
 
-<pre class="Syntax"><span class="func">EnvGet</span>, OutputVar, EnvVarName</pre>
+<pre class="Syntax"><span class="func">EnvGet</span>, OutputVar, EnvVar</pre>
 <h2 id="Parameters">Parameters</h2>
 <dl>
 
   <dt>OutputVar</dt>
-  <dd><p>The name of the output variable in which to store the string.</p></dd>
+  <dd><p>The name of the output variable in which to store the retrieved value.</p></dd>
 
-  <dt>EnvVarName</dt>
-  <dd><p>The name of the <a href="../Concepts.html#environment-variables">environment variable</a> to retrieve. For example: <code>EnvGet, OutputVar, Path</code>.</p></dd>
+  <dt>EnvVar</dt>
+  <dd><p>The name of the environment variable, e.g. <code>Path</code>.</p></dd>
 
 </dl>
 <h2 id="Remarks">Remarks</h2>
-<p>If the specified environment variable is empty or does not exist, <em>OutputVar</em> is made blank.</p>
+<p>If <em>EnvVar</em> has an empty value or does not exist, <em>OutputVar</em> is made blank.</p>
 <p>The operating system limits each environment variable to 32 KB of text.</p>
 <h2 id="Related">Related</h2>
-<p><a href="EnvSet.html">EnvSet</a>, <a href="_NoEnv.html">#NoEnv</a>, <a href="../Concepts.html#environment-variables">environment variables</a>, <a href="EnvUpdate.html">EnvUpdate</a>, <a href="SetEnv.html">SetEnv</a>, <a href="Run.html">Run</a>, <a href="Run.html">RunWait</a></p>
+<p><a href="EnvSet.html">EnvSet</a>, <a href="_NoEnv.html">#NoEnv</a>, <a href="EnvUpdate.html">EnvUpdate</a>, <a href="SetEnv.html">SetEnv</a>, <a href="Run.html">Run / RunWait</a></p>
 <h2 id="Examples">Examples</h2>
 <div class="ex" id="ExBasic">
-<p><a class="ex_number" href="#ExBasic"></a> Retrieves an environment variable and stores its value in <var>OutputVar</var>.</p>
+<p><a class="ex_number" href="#ExBasic"></a> Retrieves the value of an environment variable and stores it in <var>OutputVar</var>.</p>
 <pre>EnvGet, OutputVar, LogonServer</pre>
 </div>
 
@@ -50,8 +50,8 @@ MsgBox, Program files are in: %OutputVar%</pre>
 MsgBox, %A_UserName%'s Local directory is located at: %LocalAppData%</pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a0133d9f8c2d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcee803a1a2bdc","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/EnvGet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:15 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/EnvGet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:24 GMT -->
 </html>

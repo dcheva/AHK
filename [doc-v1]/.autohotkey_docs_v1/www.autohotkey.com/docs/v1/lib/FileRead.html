@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileRead.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:13 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileRead.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:54 GMT -->
 <head>
-<title>FileRead - Syntax &amp; Usage | AutoHotkey</title>
+<title>FileRead - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The FileRead command reads a file's contents into a variable." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -25,12 +25,12 @@
 
   <dt>Filename</dt>
   <dd><p>The name of the file to read, which is assumed to be in <a href="../Variables.html#WorkingDir">%A_WorkingDir%</a> if an absolute path isn't specified.</p>
-      <p><strong>Options</strong>: Zero or more of the following strings may be also be present immediately before the name of the file. Separate each option from the next with a single space or tab. For example: <code>*t *m5000 C:\Log Files\200601.txt</code>.</p>
-    <p><strong>*c</strong>: Load a <a href="../misc/Clipboard.html#ClipboardAll">ClipboardAll</a> file or other binary data. All other options are ignored when <strong>*c</strong> is present.</p>
-    <p><strong>*m1024</strong>: If this option is omitted, the entire file is loaded unless there is insufficient memory, in which case an error message is shown and the thread exits (but <a href="Try.html">Try</a> can be used to avoid this). Otherwise, replace 1024 with a decimal or hexadecimal number of bytes. If the file is larger than this, only its leading part is loaded.</p>
-    <p class="note"><strong>Note</strong>: This might result in the last line ending in a naked carriage return (`r) rather than `r`n.</p>
-    <p><strong>*t</strong>: Replaces any/all occurrences of carriage return &amp; linefeed (`r`n) with linefeed (`n). However, this translation reduces performance and is usually not necessary. For example, text containing `r`n is already in the right format to be added to a <a href="GuiControls.html#Edit">Gui Edit control</a>. Similarly, <a href="FileAppend.html">FileAppend</a> detects the presence of `r`n when it opens a new file; it knows to write each `r`n as-is rather than translating it to `r`r`n. Finally, the following <a href="LoopParse.html">parsing loop</a> will work correctly regardless of whether each line ends in `r`n or just `n: <code>Loop, parse, MyFileContents, `n, `r</code>.</p>
-    <p><strong>*Pnnn</strong>: <span class="ver">[AHK_L 42+]:</span> Overrides the default encoding set by <a href="FileEncoding.html">FileEncoding</a>, where <em>nnn</em> must be a numeric <a href="https://learn.microsoft.com/windows/desktop/Intl/code-page-identifiers">code page identifier</a>.</p></dd>
+      <p><strong>Options:</strong> Zero or more of the following strings may be also be present immediately before the name of the file. Separate each option from the next with a single space or tab. For example: <code>*t *m5000 C:\Log Files\200601.txt</code>.</p>
+    <p><strong>*c:</strong> Load a <a href="../misc/Clipboard.html#ClipboardAll">ClipboardAll</a> file or other binary data. All other options are ignored when <strong>*c</strong> is present.</p>
+    <p><strong>*m1024:</strong> If this option is omitted, the entire file is loaded unless there is insufficient memory, in which case an error message is shown and the thread exits (but <a href="Try.html">Try</a> can be used to avoid this). Otherwise, replace 1024 with a decimal or hexadecimal number of bytes. If the file is larger than this, only its leading part is loaded.</p>
+    <p class="note"><strong>Note:</strong> This might result in the last line ending in a naked carriage return (`r) rather than `r`n.</p>
+    <p><strong>*t:</strong> Replaces any/all occurrences of carriage return &amp; linefeed (`r`n) with linefeed (`n). However, this translation reduces performance and is usually not necessary. For example, text containing `r`n is already in the right format to be added to a <a href="GuiControls.html#Edit">Gui Edit control</a>. Similarly, <a href="FileAppend.html">FileAppend</a> detects the presence of `r`n when it opens a new file; it knows to write each `r`n as-is rather than translating it to `r`r`n. Finally, the following <a href="LoopParse.html">parsing loop</a> will work correctly regardless of whether each line ends in `r`n or just `n: <code>Loop, parse, MyFileContents, `n, `r</code>.</p>
+    <p><strong>*Pnnn</strong> <span class="ver">[AHK_L 42+]</span>: Overrides the default encoding set by <a href="FileEncoding.html">FileEncoding</a>, where <em>nnn</em> must be a numeric <a href="https://learn.microsoft.com/windows/win32/intl/code-page-identifiers">code page identifier</a>.</p></dd>
 
 </dl>
 
@@ -42,8 +42,8 @@
 <h2 id="Binary">Reading Binary Data</h2>
 <p>Depending on the file, parameters and default settings, FileRead may interpret the file data as text and convert it to the <a href="../Compat.html#Format">native encoding</a> used by the script. This is likely to cause problems if the file contains binary data, except in the following cases:</p>
 <ul>
-  <li>If the <span class="Syntax">*C</span> option is present, all code page and end-of-line translations are unconditionally bypassed.</li>
-  <li>If the <span class="Syntax">*P<i>nnn</i></span> option is present and <i>nnn</i> corresponds to the native string encoding, no code page translation occurrs.</li>
+  <li>If the *c option is present, all code page and end-of-line translations are unconditionally bypassed.</li>
+  <li>If the *Pnnn option is present and <i>nnn</i> corresponds to the native string encoding, no code page translation occurrs.</li>
   <li>If the current <a href="FileEncoding.html">file encoding</a> setting corresponds to the native string encoding, no code page translation occurrs.</li>
 </ul>
 <p>Note that once the data has been read into <em>OutputVar</em>, only the text before the first binary zero (if any are present) will be "seen" by most AutoHotkey commands and functions. However, the entire contents are still present and can be accessed by advanced methods such as <a href="NumGet.html">NumGet()</a>.</p>
@@ -51,7 +51,7 @@
 
 <h2 id="Remarks">Remarks</h2>
 <p>When the goal is to load all or a large part of a file into memory, FileRead performs much better than using a <a href="LoopReadFile.html">file-reading loop</a>.</p>
-<p>A file greater than 1 GB in size will cause <a href="../misc/ErrorLevel.html">ErrorLevel</a> to be set to 1 and <em>OutputVar</em> to be made blank unless the <strong>*m</strong> option is present, in which case the leading part of the file is loaded.</p>
+<p>A file greater than 1 GB in size will cause <a href="../misc/ErrorLevel.html">ErrorLevel</a> to be set to 1 and <em>OutputVar</em> to be made blank unless the *m option is present, in which case the leading part of the file is loaded.</p>
 <p>FileRead does not obey <a href="_MaxMem.html">#MaxMem</a>. If there is concern about using too much memory, check the file size beforehand with <a href="FileGetSize.html">FileGetSize</a>.</p>
 <p><a href="FileOpen.html">FileOpen()</a> provides more advanced functionality than FileRead, such as reading or writing data at a specific location in the file without reading the entire file into memory. See <a href="File.html">File Object</a> for a list of functions.</p>
 
@@ -76,8 +76,8 @@ if not ErrorLevel  <em>; Successfully loaded.</em>
 }</pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a0131e8bb677b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcee52cbb02bdc","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileRead.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:13 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileRead.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:54 GMT -->
 </html>

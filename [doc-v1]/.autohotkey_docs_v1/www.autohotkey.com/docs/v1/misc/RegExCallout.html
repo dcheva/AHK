@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/misc/RegExCallout.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:31 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/misc/RegExCallout.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:40 GMT -->
 <head>
-<title>Regular Expression Callouts | AutoHotkey</title>
+<title>Regular Expression Callouts | AutoHotkey v1</title>
 <meta name="description" content="RegEx callouts provide a means of temporarily passing control to the script in the middle of regular expression pattern matching." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -35,18 +35,19 @@
 
 <h2 id="callout-functions">RegEx Callout Functions</h2>
 
-<pre class="Syntax">Function(Match, CalloutNumber, FoundPos, Haystack, NeedleRegEx)
+<pre class="Syntax">
+Function(Match, CalloutNumber, FoundPos, Haystack, NeedleRegEx)
 {
     ...
 }
 </pre>
 <p>RegEx callout functions may define up to 5 parameters:</p>
 <ul>
-  <li><b>Match</b>: Equivalent to the <em>OutputVar</em> of RegExMatch(), including the creation of array variables if appropriate.</li>
-  <li><b>CalloutNumber</b>: Receives the <em>Number</em> of the RegEx callout.</li>
-  <li><b>FoundPos</b>: Receives the position of the current potential match.</li>
-  <li><b>Haystack</b>: Receives the <em>Haystack</em> passed to RegExMatch() or RegExReplace().</li>
-  <li><b>NeedleRegEx</b>: Receives the <em>NeedleRegEx</em> passed to RegExMatch() or RegExReplace().</li>
+  <li><b>Match:</b> Equivalent to the <em>OutputVar</em> of RegExMatch(), including the creation of array variables if appropriate.</li>
+  <li><b>CalloutNumber:</b> Receives the <em>Number</em> of the RegEx callout.</li>
+  <li><b>FoundPos:</b> Receives the position of the current potential match.</li>
+  <li><b>Haystack:</b> Receives the <em>Haystack</em> passed to RegExMatch() or RegExReplace().</li>
+  <li><b>NeedleRegEx:</b> Receives the <em>NeedleRegEx</em> passed to RegExMatch() or RegExReplace().</li>
 </ul>
 <p>These names are suggestive only. Actual names may vary.</p>
 
@@ -128,8 +129,8 @@ DebugRegEx(Match, CalloutNumber, FoundPos, Haystack, NeedleRegEx)
 <p>RegEx callouts are executed on the current quasi-thread, but the previous value of A_EventInfo will be restored after the RegEx callout function returns. ErrorLevel is not set until immediately before RegExMatch() or RegExReplace() returns.</p>
 <p>PCRE is optimized to abort early in some cases if it can determine that a match is not possible. For all RegEx callouts to be called in such cases, it may be necessary to disable these optimizations by specifying <span class="regex">(*NO_START_OPT)</span> at the start of the pattern. This requires <span class="ver">[v1.1.05]</span> or later.</p>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a014213b472d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcefa01e73d385","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/misc/RegExCallout.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:31 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/misc/RegExCallout.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:40 GMT -->
 </html>

@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/IsSet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:14 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/IsSet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:21 GMT -->
 <head>
-<title>IsSet() - Syntax &amp; Usage | AutoHotkey</title>
+<title>IsSet() - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The IsSet function return a non-zero number if the specified variable has been assigned a value." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -16,7 +16,7 @@
 
 <p>Returns a non-zero number if the specified variable has been assigned a value.</p>
 
-<pre class="Syntax">VarIsSet := <span class="func">IsSet</span>(Var)</pre>
+<pre class="Syntax">Boolean := <span class="func">IsSet</span>(Var)</pre>
 <h2 id="Parameters">Parameters</h2>
 <dl>
 
@@ -28,10 +28,10 @@
 </dl>
 
 <h2 id="Return_Value">Return Value</h2>
-<p>The return value is 1 (true) if <em>Var</em> has been assigned a value, otherwise 0 (false).</p>
+<p>This function returns 1 (true) if <em>Var</em> has been assigned a value, otherwise 0 (false).</p>
 
 <h2 id="Remarks">Remarks</h2>
-<p>A variable which has not been assigned a value is also known as an <a href="../Concepts.html#uninitialised-variables">uninitialised variable</a>.</p>
+<p>A variable which has not been assigned a value is also known as an <a href="../Concepts.html#uninitialized-variables">uninitialized variable</a>.</p>
 <p>This function is affected by the following technical limitations of AutoHotkey v1.1:</p>
 <ul>
   <li>Attempting to read a variable when <a href="_Warn.html#UseUnset">#Warn UseUnset</a> is enabled in MsgBox mode causes the variable to be marked as initialized to ensure the message is displayed only once for each variable. Subsequent calls to IsSet would return 1.</li>
@@ -43,15 +43,16 @@
 <h2 id="Examples">Examples</h2>
 <div class="ex" id="ExBasic">
 <p><a class="ex_number" href="#ExBasic"></a> Shows different uses for IsSet.</p>
-<pre>Loop 2
+<pre>
+Loop 2
     if !IsSet(MyVar)  <em>; Is this the first "use" of MyVar?</em>
         MyVar := A_Index  <em>; Initialize on first "use".</em>
 MsgBox % "MyVar is " (IsSet(MyVar) ? "set and has value """ MyVar """" : "unset")
 </pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a01338282a2d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcee7bcec22bdc","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/IsSet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:14 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/IsSet.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:21 GMT -->
 </html>

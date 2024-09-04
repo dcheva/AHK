@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Suspend.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:06 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Suspend.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:31 GMT -->
 <head>
-<title>Suspend - Syntax &amp; Usage | AutoHotkey</title>
+<title>Suspend - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The Suspend command disables or enables all or selected hotkeys and hotstrings." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -16,16 +16,17 @@
 
 <p>Disables or enables all or selected <a href="../Hotkeys.html">hotkeys</a> and <a href="../Hotstrings.html">hotstrings</a>.</p>
 
-<pre class="Syntax"><span class="func">Suspend</span> <span class="optional">, Mode</span></pre>
+<pre class="Syntax"><span class="func">Suspend</span> <span class="optional">, OnOffTogglePermit</span></pre>
 <h2 id="Parameters">Parameters</h2>
 <dl>
 
-  <dt>Mode</dt>
-  <dd><p><strong>On</strong>: Suspends all <a href="../Hotkeys.html">hotkeys</a> and <a href="../Hotstrings.html">hotstrings</a> except those explained the Remarks section.</p>
-      <p><strong>Off</strong>: Re-enables the hotkeys and hotstrings that were disable above.</p>
-      <p><strong>Toggle</strong> (default): Changes to the opposite of its previous state (On or Off).</p>
-    <p><strong>Permit</strong>: Does nothing except mark the current subroutine as being exempt from suspension.</p>
-      <p><span class="ver">[v1.1.30+]:</span> The decimal values 1, 0 and -1 may be used in place of On, Off and Toggle, respectively.</p>
+  <dt>OnOffTogglePermit</dt>
+  <dd><p>If blank or omitted, it defaults to <em>Toggle</em>. Otherwise, specify one of the following words:</p>
+      <p><strong>On:</strong> Suspends all <a href="../Hotkeys.html">hotkeys</a> and <a href="../Hotstrings.html">hotstrings</a> except those explained in the Remarks section.</p>
+      <p><strong>Off:</strong> Re-enables the hotkeys and hotstrings that were disable above.</p>
+      <p><strong>Toggle:</strong> Changes to the opposite of its previous state (On or Off).</p>
+    <p><strong>Permit:</strong> Does nothing except mark the current subroutine as being exempt from suspension.</p>
+      <p><span class="ver">[v1.1.30+]</span>: The decimal values 1, 0 and -1 may be used in place of On, Off and Toggle, respectively.</p>
       </dd>
 
 </dl>
@@ -36,9 +37,9 @@
 <p>The <a href="_InstallKeybdHook.html">keyboard</a> and/or <a href="_InstallMouseHook.html">mouse</a> hooks will be installed or removed if justified by the changes made by this command.</p>
 <p>To disable selected hotkeys or hotstrings automatically based on the type of window that is present, use <a href="_IfWinActive.html">#IfWinActive/Exist</a>.</p>
 <p>Suspending a script's hotkeys does not stop the script's already-running <a href="../misc/Threads.html">threads</a> (if any); use <a href="Pause.html">Pause</a> to do that.</p>
-<p>When a script's hotkeys are suspended, its tray icon changes to the letter S. This can be avoided by freezing the icon, which is done by specifying 1 for the last parameter of the Menu command. For example:</p>
-<pre><a href="Menu.html">Menu</a>, Tray, Icon, C:\My Icon.ico, , 1</pre>
-<p>The built-in variable <a href="../Variables.html#IsSuspended">A_IsSuspended</a> contains 1 if the script is suspended and 0 otherwise.</p>
+<p>When a script's hotkeys are suspended, its <a href="../Program.html#tray-icon">tray icon</a> changes to <img src="../static/ahk16_suspend.png" alt="a green S icon" style="vertical-align:-.2em;"> (or to <img src="../static/ahk16_pause_suspend.png" alt="a red S icon" style="vertical-align:-.2em;"> if the script is also <a href="Pause.html">paused</a>). This icon change can be avoided by freezing the icon, which is achieved by specifying 1 for the <em>Freeze</em> parameter of the <a href="Menu.html#Icon">Menu's Icon sub-command</a>. For example:</p>
+<pre>Menu, Tray, Icon, C:\My Icon.ico, , 1</pre>
+<p>The built-in variable <strong>A_IsSuspended</strong> contains 1 if the script is suspended and 0 otherwise.</p>
 <h2 id="Related">Related</h2>
 <p><a href="_IfWinActive.html">#IfWinActive/Exist</a>, <a href="Pause.html">Pause</a>, <a href="Menu.html">Menu</a>, <a href="ExitApp.html">ExitApp</a></p>
 <h2 id="Examples">Examples</h2>
@@ -55,8 +56,8 @@ ID_FILE_SUSPEND := 65404
 <a href="PostMessage.html">PostMessage</a>, WM_COMMAND, ID_FILE_SUSPEND,,, C:\YourScript.ahk ahk_class AutoHotkey</pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a012ecb89c2d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcee1a49c32bdc","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Suspend.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:06 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/Suspend.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:25:31 GMT -->
 </html>

@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileMoveDir.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:24 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileMoveDir.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:32 GMT -->
 <head>
-<title>FileMoveDir - Syntax &amp; Usage | AutoHotkey</title>
+<title>FileMoveDir - Syntax &amp; Usage | AutoHotkey v1</title>
 <meta name="description" content="The FileMoveDir command moves a folder along with all its sub-folders and files. It can also rename a folder." />
 <meta name="ahk:equiv-v2" content="lib/DirMove.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="../static/theme.css" rel="stylesheet" type="text/css" />
+<link href="../static/theme.css" rel="stylesheet" type="text/css" />
 <script src="../static/content.js" type="text/javascript"></script>
 </head>
 <body>
@@ -17,7 +17,7 @@
 
 <p>Moves a folder along with all its sub-folders and files. It can also rename a folder.</p>
 
-<pre class="Syntax"><span class="func">FileMoveDir</span>, Source, Dest <span class="optional">, Flag</span></pre>
+<pre class="Syntax"><span class="func">FileMoveDir</span>, Source, Dest <span class="optional">, OverwriteOrRename</span></pre>
 <h2 id="Parameters">Parameters</h2>
 <dl>
 
@@ -26,14 +26,14 @@
 
   <dt>Dest</dt>
   <dd><p>The new path and name of the directory (with no trailing baskslash), which is assumed to be in <a href="../Variables.html#WorkingDir">%A_WorkingDir%</a> if an absolute path isn't specified. For example: D:\My Folder.</p>
-  <p class="note"><strong>Note</strong>: <em>Dest</em> is the actual path and name that the directory will have after it is moved; it is <em>not</em> the directory into which <em>Source</em> is moved (except for the known limitation mentioned below).</p></dd>
+  <p class="note"><strong>Note:</strong> <em>Dest</em> is the actual path and name that the directory will have after it is moved; it is <em>not</em> the directory into which <em>Source</em> is moved (except for the known limitation mentioned below).</p></dd>
 
-  <dt>Flag</dt>
-  <dd><p>(options) Specify one of the following single characters:</p>
-      <p><strong>0</strong> (default): Do not overwrite existing files. The operation will fail if <em>Dest</em> already exists as a file or directory.</p>
-      <p><strong>1</strong>: Overwrite existing files. However, any files or subfolders inside <em>Dest</em> that do not have a counterpart in <em>Source</em> will not be deleted. <strong>Known limitation:</strong> If <em>Dest</em> already exists as a folder and it is on the same volume as <em>Source</em>, <em>Source</em> will be moved into it rather than overwriting it. To avoid this, see the next option.</p>
-      <p><strong>2</strong>: The same as mode 1 above except that the limitation is absent.</p>
-      <p><strong>R</strong>: Rename the directory rather than moving it. Although renaming normally has the same effect as moving, it is helpful in cases where you want "all or none" behavior; that is, when you don't want the operation to be only partially successful when <em>Source</em> or one of its files is locked (in use). Although this method cannot move <em>Source</em> onto a different volume, it can move it to any other directory on its own volume. The operation will fail if <em>Dest</em> already exists as a file or directory.</p></dd>
+  <dt>OverwriteOrRename</dt>
+  <dd><p>If blank or omitted, it defaults to 0. Otherwise, specify one of the following values to indicate whether to overwrite or rename existing files:</p>
+      <p><strong>0:</strong> Do not overwrite existing files. The operation will fail if <em>Dest</em> already exists as a file or directory.</p>
+      <p><strong>1:</strong> Overwrite existing files. However, any files or subfolders inside <em>Dest</em> that do not have a counterpart in <em>Source</em> will not be deleted. <strong>Known limitation:</strong> If <em>Dest</em> already exists as a folder and it is on the same volume as <em>Source</em>, <em>Source</em> will be moved into it rather than overwriting it. To avoid this, see the next option.</p>
+      <p><strong>2:</strong> The same as mode 1 above except that the limitation is absent.</p>
+      <p><strong>R:</strong> Rename the directory rather than moving it. Although renaming normally has the same effect as moving, it is helpful in cases where you want "all or none" behavior; that is, when you don't want the operation to be only partially successful when <em>Source</em> or one of its files is locked (in use). Although this method cannot move <em>Source</em> onto a different volume, it can move it to any other directory on its own volume. The operation will fail if <em>Dest</em> already exists as a file or directory.</p></dd>
 
 </dl>
 
@@ -44,7 +44,7 @@
 <p>FileMoveDir moves a single folder to a new location. To instead move the contents of a folder (all its files and subfolders), see the examples section of <a href="FileMove.html">FileMove</a>.</p>
 <p>If the source and destination are on different volumes or UNC paths, a copy/delete operation will be performed rather than a move.</p>
 <h2 id="Related">Related</h2>
-<p><a href="FileCopyDir.html">FileCopyDir</a>, <a href="FileCopy.html">FileCopy</a>, <a href="FileMove.html">FileMove</a>, <a href="FileDelete.html">FileDelete</a>, <a href="LoopFile.html">File-loops</a>, <a href="FileSelectFolder.html">FileSelectFolder</a>, <a href="SplitPath.html">SplitPath</a></p>
+<p><a href="FileCopyDir.html">FileCopyDir</a>, <a href="FileCopy.html">FileCopy</a>, <a href="FileMove.html">FileMove</a>, <a href="FileDelete.html">FileDelete</a>, <a href="LoopFile.html">file loops</a>, <a href="FileSelectFolder.html">FileSelectFolder</a>, <a href="SplitPath.html">SplitPath</a></p>
 <h2 id="Examples">Examples</h2>
 <div class="ex" id="ExNewDrive">
 <p><a class="ex_number" href="#ExNewDrive"></a> Moves a directory to a new drive.</p>
@@ -61,8 +61,8 @@
 <pre>FileMoveDir, C:\My Folder, C:\New Location\My Folder, R</pre>
 </div>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a013b66e082d8b","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdcef201cf92bdc","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileMoveDir.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:45:24 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/lib/FileMoveDir.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:27:33 GMT -->
 </html>

@@ -1,25 +1,67 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/AHKL_ChangeLog.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:43:43 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/AHKL_ChangeLog.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:21 GMT -->
 <head>
-<title>Changes &amp; New Features | AutoHotkey</title>
-<meta name="description" content="Changes and new features introduced by the current branch of AutoHotkey development (a.k.a. AutoHotkey_L)." />
+<title>Changes &amp; New Features | AutoHotkey v1</title>
+<meta name="description" content="Changes and new features introduced by the v1.1 branch of AutoHotkey development (formerly AutoHotkey_L)." />
 <meta name="ahk:equiv-v2" content="AHKL_ChangeLog.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="../../cdn-cgi/apps/head/21XiSFXBdVHXl7A_izEkLSn9ayc.js"></script><link href="static/theme.css" rel="stylesheet" type="text/css" />
+<link href="static/theme.css" rel="stylesheet" type="text/css" />
 <script src="static/content.js" type="text/javascript"></script>
 </head>
 
 <body>
 <h1>Changes &amp; New Features</h1>
-<p>Changes and new features introduced by the current branch of AutoHotkey development (a.k.a. AutoHotkey_L) are listed below.</p>
+<p>Changes and new features introduced by the v1.1 branch of AutoHotkey development (formerly AutoHotkey_L) are listed below.</p>
 <p>For older changes, see <a href="ChangeLogHelp.html">Archived Changes</a>.</p>
 
 <!--new revisions go here-->
+<h2 id="v1.1.37.02">1.1.37.02 - March 16, 2024</h2>
+<p>Fixed inability of <code>LWin::Alt</code> to be used to activate some Alt-combos.</p>
+<p>Fixed mouse AltTab hotkeys not suppressing execution of a prefix hotkey, such as <code>1::</code> for <code>1 &amp; WheelDown::AltTab</code>. (Broken by v1.1.37.00)</p>
+<p>Fixed hook hotkeys not recognizing modifiers which are pressed down by SendInput.</p>
+<p>Fixed some issues affecting suppressed Alt/Ctrl/Shift/Win hotkeys, such as:</p>
+<ul>
+  <li><code>*LCtrl::</code> blocked LCtrl from the active window, but sending Alt-key combinations would fail because the system thinks Ctrl is down, and would therefore send WM_KEYDOWN instead of WM_SYSKEYDOWN.</li>
+  <li><code>*LAlt::</code> caused the system to forget any prior <code>{LAlt DownR}</code>, so a remapping such as <code>LCtrl::LAlt</code> would not behave correctly while LAlt is physically down, even though LAlt was suppressed.</li>
+  <li>Other potential issues where the system's low-level tracking of a modifier key doesn't match up with the logical state.</li>
+</ul>
+<p>Fixed A_Clipboard ignoring assignment of pure numeric values.</p>
+<p>Fixed SendInput failing to release LCtrl after having released RAlt (if it isn't AltGr).</p>
+<p>Fixed new threads being unable to prevent a message check with Critical.</p>
+
+<h2 id="v1.1.37.01">1.1.37.01 - July 8, 2023</h2>
+<p>Fixed an issue with hotkeys not firing due to a race condition. If a modifier hotkey such as <code>~*RWin::</code> called Send or GetKeyState too soon, the OS could report that RWin isn't down, so the hook's modifier state would be "corrected" and hotkeys would wrongly fire or fail to fire. This was likely to occur only if another keyboard hook was installed more recently than the script's own hook, since in that case the OS would not update key state until the other hook's thread has resumed and returned.</p>
+<p>Fixed hotstrings to use the Last Found Window set by #If.</p>
+<p>Fixed MouseGetPos, ControlClick, ContextMenu Gui events and DropFile Gui events erroneously detecting a control at a specific point which actually lies one pixel below or to the right of the control.</p>
+<p>Fixed an issue where any attempt to reinstall the keyboard or mouse hook would fail if the OS had automatically uninstalled the hook. It is still necessary to meet certain conditions before any such attempt can be made.</p>
+
+<h2 id="v1.1.37.00">1.1.37.00 - July 2, 2023</h2>
+<p>Changed COM method and property calls to pass large integers as VT_I8, not VT_R8 (floating-point), so the original type and precision is retained. Integers in the 32-bit range are still passed as VT_I4.</p>
+<p>Added support for two-variable enumerators (for-loops) with IDispatch-wrapped AutoHotkey objects. Both the script invoking the object and the object itself must be running a supported AutoHotkey version.</p>
+<p>Added support for ByRef VARIANT in incoming COM calls. Instead of receiving a ComObject wrapper with the VT_BYREF|VT_VARIANT variant type, the script receives a temporary variable compatible with a normal ByRef parameter.</p>
+<p>Fixed omitted parameters to receive their default values rather than the "optional argument marker" when an AutoHotkey method is called via IDispatch (COM). The reverse translation was already done when <em>calling</em> COM methods in previous versions.</p>
+<p>Fixed <code>VerCompare(a, "&gt;" b)</code> and reduced code size marginally.</p>
+<p>Fixed AltTab-related load-time errors to be consistent with other errors.</p>
+<p>Fixed errors thrown by a ComObject wrapper not being propagated correctly if it is called via an object/COM.</p>
+<p>Fixed the Hotkey GUI control to allow setting the symbols <code>^</code>, <code>!</code> and <code>+</code> as hotkeys.</p>
+<p>Fixed the Hotkey control to include modifiers when its value is set to a symbol.</p>
+<p>Fixed Menu Add overwriting items which were appended by Menu Insert.</p>
+<p>Fixed potential misbehaviour of InputHook.KeyOpt() with single chars.</p>
+<ul>
+<li>Option removal potentially not affecting the corresponding SC.</li>
+<li>Options potentially also being applied to sc000.</li>
+</ul>
+<p>Fixed a bug with custom combos where a set of hotkeys like <code>a &amp b::</code>, <code>a::</code> and <code>a up::</code> would fail to suppress the release of <kbd>a</kbd> if <code>a::</code> alone is disabled with #If.</p>
+<p>Fixed a bug where a key-down event is correctly suppressed by a hotkey, but sending an additional key-down with SendLevel &gt; 0 would prevent the subsequent key-up from being suppressed, even if the sent event is ignored due to #InputLevel.</p>
+<p>Fixed <code>a &amp; b up::</code> not suppressing <kbd>b</kbd> if <code>a &amp; b::</code> is present but disabled by #If.</p>
+<p>Optimized allocation of cached COM property names for built-in IDispatch.</p>
+<p>Refactored code to support a build configuration for AutoHotkey as a DLL.</p>
+
 <h2 id="v1.1.36.02">1.1.36.02 - December 7, 2022</h2>
-<p>Improved ComObjConnect to allow detecting disconnect via __Delete.</p>
+<p>Improved <a href="lib/ComObjConnect.html">ComObjConnect()</a> to allow detecting disconnect via __Delete.</p>
 <p>Fixed a performance issue with command args exceeding 4*1024*1024 chars.</p>
 <p>Fixed FileCreateDir with network shares/UNC paths.</p>
 <p>Fixed undefined behavior for File.Length/Read() with console buffers.</p>
@@ -38,7 +80,7 @@
   <li>Negative values always being considered non-numeric.</li>
   <li>Positive values losing formatting, such as leading zeroes.</li>
 </ul>
-<p>Fixed potential crashes when inspecting a ComObject via DBGp after using ComObjConnect.</p>
+<p>Fixed potential crashes when inspecting a ComObject via DBGp after using <a href="lib/ComObjConnect.html">ComObjConnect()</a>.</p>
 <p>Fixed FileAppend to treat a blank <em>Encoding</em> as omitted.</p>
 <p>Fixed version comparisons to ignore numeric build info; e.g. 1.1.35.00+1+abcdef (1 is the number of commits since 1.1.35.00).</p>
 <p>Fixed <code>FileCreateDir X\Y\</code> (with trailing slash) failing to create X [broken by v1.1.35.00].</p>
@@ -78,7 +120,7 @@
 
 <h2 id="v1.1.34.04">1.1.34.04 - August 23, 2022</h2>
 <p>Fixed callback functions not being included in the debugger's call stack.</p>
-<p>Fixed MsgBox timeout reported as "OK" if shown within 100ms of startup.</p>
+<p>Fixed MsgBox timeout reported as "OK" if shown within 100&nbsp;ms of startup.</p>
 <p>Fixed Edit control to ignore <code>+WantTab</code> while <code>+ReadOnly</code> is in effect.</p>
 <p>Fixed property_get returning a local var when <code>-d</code> should prevent it.</p>
 <p>Fixed RegRead to support REG_MULTI_SZ values containing empty items.</p>
@@ -180,7 +222,7 @@
 
 <h2 id="v1.1.33.03">1.1.33.03 - March 1, 2021</h2>
 <p>Fixed crashing when an empty SafeArray is enumerated.</p>
-<p>Fixed height to not auto-expand for Button/Checkbox/Radio with -Wrap.</p>
+<p>Fixed height to not auto-expand for Button/CheckBox/Radio with -Wrap.</p>
 <p>Fixed WM_DESTROY bypassing release of objects in global/static vars.</p>
 <p>Fixed WinMenuSelectItem second-attempt matching to handle &amp; correctly. Specifically, items with actual text like "a &amp;&amp; b" which appear as "a &amp; b" will now match "a &amp; b" instead of "a&nbsp; b".</p>
 <p>Fixed breakpoint on Case/Default line breaking at end of previous case.</p>
@@ -270,7 +312,7 @@
 <p>Fixed menu and GUI events causing CPU-maxing loops in some cases. Specifically, when a modal message loop is running and the script is uninterruptible, menu and GUI event messages were repeatedly re-posted. These are now discarded, as they can't be handled or kept in the queue. This is consistent with hotkeys, etc.</p>
 <p>Fixed DllCall critical errors to always exit, ignoring OnExit result.</p>
 <p>Fixed <code>ExitApp 2</code> bypassing release of objects in global/static vars.</p>
-<p>Changed ComObjCreate to use CLSIDFromProgID for non-GUID strings. This fixes <code>ComObjCreate("Microsoft.Windows.ActCtx")</code> and possibly others which aren't in the registry but work with VBScript and JScript.</p>
+<p>Changed <a href="lib/ComObjCreate.html">ComObjCreate()</a> to use CLSIDFromProgID for non-GUID strings. This fixes <code>ComObjCreate("Microsoft.Windows.ActCtx")</code> and possibly others which aren't in the registry but work with VBScript and JScript.</p>
 
 <h2 id="v1.1.30.03">1.1.30.03 - April 4, 2019</h2>
 <p>Fixed debugger context_get triggering #Warn UseUnset.</p>
@@ -314,7 +356,7 @@
 <p>Added <code>Object.Count()</code> and <code>ObjCount(Object)</code>.</p>
 <p>Added <code>ObjGetBase(Object)</code> and <code>ObjSetBase(Object, Base)</code>.</p>
 <p>Added <code>ObjRawGet(Object, Key)</code>.</p>
-<p>Added <code>OnError(Func [, AddRemove])</code>.</p>
+<p>Added <code>OnError(Function [, AddRemove])</code>.</p>
 <p>Revised exception handling:</p>
 <ul>
   <li>If unhandled, show an error message/call OnError <em>before</em> the stack unwinds (making exceptions consistent with runtime errors).</li>
@@ -388,7 +430,7 @@
 <p>Fixed #Warn ClassOverwrite giving erroneous warnings.</p>
 
 <h2 id="v1.1.27.03">1.1.27.03 - January 6, 2018</h2>
-<p>Improved <code>Menu x, NoStandard</code> and <code>Menu x, DeleteAll</code> to work without attempting to destroy the underlying Win32 menu. This allows them to work when x is a menu bar or sub-menu of one.</p>
+<p>Improved <code>Menu x, NoStandard</code> and <code>Menu x, DeleteAll</code> to work without attempting to destroy the underlying Win32 menu. This allows them to work when x is a menu bar or submenu of one.</p>
 <p>Reworked the handling of <code>vkXXscYYY</code>:</p>
 <ul>
   <li>Fixed GetKeyVK and GetKeyName treating vkXXscYYY as vk00scYYY.</li>
@@ -421,7 +463,7 @@
   <li>It is now possible to Alt-Tab to Window Spy on Windows 10 without the contents of the GUI changing.</li>
 </ul>
 <p>Changed <a href="lib/Send.html#AZ">a-z to mean vk41-vk5A</a> when absent from the keyboard layout, except with Raw mode or when sending single unmodified characters. This allows hotkeys and sent keyboard shortcuts to work more intuitively on certain non-English keyboard layouts.</p>
-<p>Changed Send on ANSI versions to use <a href="http://msdn.microsoft.com/en-us/library/ms646310">SendInput()</a> in place of Alt+nnnnn for <a href="lib/Send.html#characters">special characters</a>.</p>
+<p>Changed Send on ANSI versions to use <a href="https://learn.microsoft.com/windows/win32/api/winuser/nf-winuser-sendinput">SendInput()</a> in place of Alt+nnnnn for <a href="lib/Send.html#characters">special characters</a>.</p>
 <p>Changed the rules for <a href="lib/_MenuMaskKey.html">masking Alt/Win</a> after pressing a hook hotkey:</p>
 <ul>
   <li>Explicitly sent Alt/Win up may be masked.  This fixes remappings such as <code>AppsKey::RWin</code>, but hotkeys which are intended to activate the Start Menu may require new workarounds.</li>
@@ -481,7 +523,7 @@
 
 <h2 id="v1.1.26.00">1.1.26.00 - June 10, 2017</h2>
 <p>Changed the format ListVars uses to display variables containing objects. The object's class name is now shown.</p>
-<p>Added "class" and "clsid" modes to ComObjType().</p>
+<p>Added "class" and "clsid" modes to <a href="lib/ComObjType.html">ComObjType()</a>.</p>
 <p>Revised class names shown by the debugger and significantly reduced code size in the process.</p>
 <p>Revised FileSetAttrib, FileSetTime and FileDelete to reduce code size. There should not be any changes in behaviour.</p>
 <p>Made other minor optimizations to code size.</p>
@@ -530,7 +572,7 @@
 <li>Autosizing failed if the tab control had negative screen coords.</li>
 <li>Hiding a Tab3 control with GuiControl now also hides its dialog/background.</li>
 </ul>
-<p>Fixed OnMessage to pass lParam as unsigned on 32-bit.</p>
+<p>Fixed OnMessage() to pass lParam as unsigned on 32-bit.</p>
 <p>Fixed <code>Gui Name :</code> to allow spaces before the colon.</p>
 <p>Fixed identifying a Gui or GuiControl by HWND with a negative value.</p>
 <p>Fixed ComObject to suppress any errors raised by <a href="lib/ComObjConnect.html">disconnection of events</a> after the script has released the object.</p>
@@ -549,7 +591,7 @@
 <h2 id="v1.1.24.00">1.1.24.00 - May 22, 2016</h2>
 <p><strong>Breaking changes:</strong></p>
 <p>Passing SetTimer's <a href="lib/SetTimer.html#Label"><em>Label</em></a> parameter an empty variable or an expression which results in an empty value is now considered an error. The parameter must be either given a non-empty value or <a href="lib/SetTimer.html#OmitLabel">completely omitted</a>.</p>
-<p><a href="lib/SetTimer.html#once">Run-once timers</a> are automatically deleted after running if they are associated with an object created by the script. This allows the object to be freed if the script is no longer referencing it, but it also means the timer's <em>Period</em> and <em>Priority</em> are not retained.</p>
+<p><a href="lib/SetTimer.html#Period">Run-once timers</a> are automatically deleted after running if they are associated with an object created by the script. This allows the object to be freed if the script is no longer referencing it, but it also means the timer's <em>Period</em> and <em>Priority</em> are not retained.</p>
 <p>SetTimer, Hotkey, GuiControl and Menu now check the minimum parameter count of functions given by reference (not just by name, as in previous versions). If the function requires too many parameters, an error is raised or ErrorLevel is set (as appropriate).</p>
 <p><strong>Backward-compatible changes:</strong></p>
 <p>If SetTimer's <a href="lib/SetTimer.html#Label"><em>Label</em></a> parameter is <a href="lib/SetTimer.html#OmitLabel">omitted</a> and <a href="Variables.html#ThisLabel">A_ThisLabel</a> is empty, the current timer (if any) is used.</p>
@@ -605,7 +647,7 @@
 <p>Small optimizations to the menu code and built-in var lookups.</p>
 <p>Fixed conversion of menu items to/from separators.</p>
 <p>Fixed A_ThisMenuItemPos to support duplicate item names.</p>
-<p>Fixed sub-menus sometimes not being recreated after a menu is deleted.</p>
+<p>Fixed submenus sometimes not being recreated after a menu is deleted.</p>
 <p>Fixed AutoHotkeyXXX.exe to launch AutoHotkey.chm, not AutoHotkeyXXX.chm.</p>
 
 <h2 id="v1.1.22.09">1.1.22.09 - November 11, 2015</h2>
@@ -628,7 +670,7 @@
 <p>Fixed Input and hotstrings to catch Unicode/non-key character events.</p>
 <p>Fixed auto-sizing of Edit controls to include the last line if blank.</p>
 <p>Fixed handling of out-of-memory in ComObj functions.</p>
-<p>Fixed ComObjArray to ignore excess parameters rather than crashing (only applies to dynamic calls).</p>
+<p>Fixed <a href="lib/ComObjArray.html">ComObjArray()</a> to ignore excess parameters rather than crashing (only applies to dynamic calls).</p>
 <p>Fixed GuiControl to append--not prepend--tabs, as documented.</p>
 <p>Fixed XP64 support.</p>
 
@@ -673,7 +715,7 @@
 <h2 id="v1.1.22.00">1.1.22.00 - May 1, 2015</h2>
 <p>Added SetErrorMode(SEM_FAILCRITICALERRORS) on program startup to suppress system-level error messages such as "There is no disk in the drive". Calling Drive or DriveGet no longer affects the process' error mode.</p>
 <p>Changed MonthCal controls to have tab-stop by default on Vista or later.</p>
-<p>Improved ComObjConnect to use IProvideClassInfo when available.</p>
+<p>Improved <a href="lib/ComObjConnect.html">ComObjConnect()</a> to use IProvideClassInfo when available.</p>
 <p>Fixed some issues with method/property definitions following an end brace on the same line.</p>
 <p>Fixed Text/Link control auto-sizing to compensate for the +Border (WS_BORDER) style.</p>
 <p>Fixed <code>Break <i>N</i></code> when Loop is used directly below If/Else/Try/Catch.</p>
@@ -707,7 +749,7 @@
 <p>Fixed MouseGetPos (OutputVarControl), GuiContextMenu and GuiDropFiles (A_GuiControl) to not ignore disabled controls [broken by v1.1.20.00].</p>
 
 <h2 id="v1.1.20.02">1.1.20.02 - March 11, 2015</h2>
-<p>Fixed add-first mode of OnMessage.</p>
+<p>Fixed add-first mode of OnMessage().</p>
 <p>Fixed A_OSVersion for unrecognized OSes on x64 builds.</p>
 <p>Fixed ExitApp to unpause the script before releasing objects in case a __delete meta-function is called.</p>
 <p>Trivial optimizations and code maintenance.</p>
@@ -748,7 +790,7 @@
   <li>Less likely to cause side-effects.</li>
   <li>Works in console windows.</li>
 </ul>
-<p>Changed A_OSVersion to use <a href="http://msdn.microsoft.com/en-us/library/ff561910">RtlGetVersion()</a>, so that it can detect Windows 10 and hopefully future versions.</p>
+<p>Changed A_OSVersion to use <a href="https://learn.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlgetversion">RtlGetVersion()</a>, so that it can detect Windows 10 and hopefully future versions.</p>
 <p>Changed A_OSVersion to return a version number of the form "major.minor.build" if it doesn't have a name for the OS.</p>
 <p>Changed objects to support <code>x[,y]</code>, <code>x.y[,z]</code> and <code>x[](y)</code>.</p>
 <ul>
@@ -790,7 +832,7 @@
 <p>Removed the 16-color icons which were used on Win9x/Win2k.</p>
 <p>Removed the separate tray icon resources.</p>
 <p>Improved selection of icon size when loading icons from DLL/EXE files.</p>
-<ul><li>In short, prefer to downscale rather than upscale. This is especially helpful on systems with 125% or 150% DPI, where the system icon sizes are 20/40 or 24/48 instead of 16/32. If all of these sizes are present in the icon resource, this change makes no difference.</li></ul>
+<ul><li>In short, prefer to downscale rather than upscale. This is especially helpful on systems with 125&nbsp;% or 150&nbsp;% DPI, where the system icon sizes are 20/40 or 24/48 instead of 16/32. If all of these sizes are present in the icon resource, this change makes no difference.</li></ul>
 <p>Fixed some issues with hotkey validation at load time.</p>
 <ul>
 	<li>Hotkeys which are never valid, like foo::, are now always treated as errors instead of giving a misleading warning about keyboard layout.</li>
@@ -910,7 +952,7 @@
 <h2 id="v1.1.15.00">1.1.15.00 - May 4, 2014</h2>
 <p>Added A_OSVersion value <code>WIN_8.1</code>.</p>
 <p>Changed the Hotkey command to apply/remove passthrough behavior on existing hotkey variants depending on whether the <a href="Hotkeys.html#Tilde">tilde (~) prefix</a> is present.</p>
-<p>Changed exe manifest to allow <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms724439">GetVersion</a>/<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms724451">GetVersionEx</a> to detect Windows 8.1.</p>
+<p>Changed exe manifest to allow <a href="https://learn.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversion">GetVersion</a>/<a href="https://learn.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa">GetVersionEx</a> to detect Windows 8.1.</p>
 
 <h2 id="v1.1.14.04">1.1.14.04 - April 25, 2014</h2>
 <p>Fixed DllCall() crashing the script when <em>Function</em> is pure integer 0.</p>
@@ -1064,7 +1106,7 @@
 
 <h2 id="v1.1.07.02">1.1.07.02 - March 22, 2012</h2>
 <p>Fixed a rare crash which can occur when GetClipboardData() fails.</p>
-<p>Fixed ComObjArray() to return an empty string on failure instead of an arbitrary integer.</p>
+<p>Fixed <a href="lib/ComObjArray.html">ComObjArray()</a> to return an empty string on failure instead of an arbitrary integer.</p>
 <p>Fixed <code>Object.Remove(i, "")</code> affecting integer keys when <code>!Object.HasKey(i)</code>.</p>
 
 <h2 id="v1.1.07.01">1.1.07.01 - March 2, 2012</h2>
@@ -1093,7 +1135,7 @@
 <p>Integrated <a href="lib/_InputLevel.html">#InputLevel</a> directive and <a href="lib/SendLevel.html">SendLevel</a> command <a href="https://github.com/Lexikos/AutoHotkey_L/pull/7">by Russell Davis</a>.</p>
 <p>Integrated support for <a href="lib/GuiControls.html#Link">Link</a> controls <a href="https://github.com/Lexikos/AutoHotkey_L/pull/9">by ChrisS85</a>.</p>
 <p><strong>Breaking changes:</strong></p>
-<p>Changed command parser to avoid trimming escaped characters such as <code>`t</code> or <code>`&nbsp;</code> at the beginning or end of an arg.</p>
+<p>Changed command parser to avoid trimming escaped characters such as <code>`t</code> or <code>` </code> at the beginning or end of an arg.</p>
 <p>Changed <a href="lib/MsgBox.html">MsgBox</a>'s smart comma handling to improve flexibility and consistency.</p>
 <ul>
   <li><code>%</code> can now be used to make Options or Timeout an expression.</li>
@@ -1139,7 +1181,7 @@
 <h2 id="v1.1.05.02">1.1.05.02 - November 20, 2011</h2>
 <p>Fixed false detection of end-of-file when loading a compiled script in some cases.</p>
 <p>Fixed SendInput to automatically release modifier keys when sending special characters or {U+xxxx} (which was broken by v1.1.00.01).</p>
-<p>Fixed ComObjConnect to filter out non-dispatch interfaces instead of allowing the script to crash.</p>
+<p>Fixed <a href="lib/ComObjConnect.html">ComObjConnect()</a> to filter out non-dispatch interfaces instead of allowing the script to crash.</p>
 <p>Fixed <code>new %VarContainingClassName%()</code>.</p>
 
 <h2 id="v1.1.05.01">1.1.05.01 - October 16, 2011</h2>
@@ -1173,7 +1215,7 @@
 <p>Fixed FileRemoveDir setting ErrorLevel incorrectly.</p>
 
 <h2 id="v1.1.04.00">1.1.04.00 - September 11, 2011</h2>
-<p class="warning"><strong>Warning</strong>: This release contains a number of potentially script-breaking changes.</p>
+<p class="warning"><strong>Warning:</strong> This release contains a number of potentially script-breaking changes.</p>
 <p>Added exception handling support: <a href="lib/Try.html">try</a>/<a href="lib/Catch.html">catch</a>/<a href="lib/Throw.html">throw</a> and <a href="lib/Throw.html#Exception">Exception()</a>.</p>
 <p>Added StdOut mode for <a href="lib/_Warn.html">#Warn</a>.</p>
 <p>Added <a href="lib/Gui.html#GuiHwndOutputVar">Gui +HwndVARNAME</a> option.</p>
@@ -1195,7 +1237,7 @@
   <li>RegRead, RegWrite and RegDelete now set A_LastError to the result of the operating system's GetLastError() function.</li>
   <li><a href="lib/Gui.html#LastFoundExist">+LastFoundExist</a> is now treated as an error if it is combined with another option (<a href="lib/Gui.html#LastFound">+LastFound</a> should be used in that case).</li>
 </ul>
-<p>Fixed a <a href="https://www.autohotkey.com/forum/topic76133.html">bug</a> affecting recursive variadic functions.</p>
+<p>Fixed a <a href="https://www.autohotkey.com/board/topic/70975-">bug</a> affecting recursive variadic functions.</p>
 
 <h2 id="v1.1.03.00">1.1.03.00 - August 28, 2011</h2>
 <p>Added support for GUI names.</p>
@@ -1205,7 +1247,7 @@
 <p>Added Name sub-command for GuiControlGet.</p>
 <p>Added support for ActiveX controls via the Gui command.</p>
 <p>Fixed: Empty hotkey control returned "vk00".</p>
-<p>Fixed: Crashes and memory leaks related to COM events/ComObjConnect.</p>
+<p>Fixed: Crashes and memory leaks related to COM events/<a href="lib/ComObjConnect.html">ComObjConnect()</a>.</p>
 <p>Fixed: <code>GuiControlGet OutputVar, Subcmd, <b>%OutputVar%</b></code> always failed.</p>
 <p>Changed "Missing (/[/{" error messages to "Unexpected )/]/}" for greater clarity.</p>
 <p>Changed ListLines to display While and Until lines which are executed each iteration.</p>
@@ -1240,8 +1282,8 @@
 <p>Added the capability to specify a window by process name or path: <code>ahk_exe %Name%.exe</code> or <code>ahk_exe %FullPath%</code>.</p>
 <p>Optimized ProcessName sub-command of WinGet.</p>
 <p>Changed SetTimer to use A_ThisLabel if Label is omitted.</p>
-<p>Updated ComObjConnect() to support using an object in place of a function name prefix.</p>
-<p>Improved ComObjConnect() to allow the prefix/object to be updated without first disconnecting.</p>
+<p>Updated <a href="lib/ComObjConnect.html">ComObjConnect()</a> to support using an object in place of a function name prefix.</p>
+<p>Improved <a href="lib/ComObjConnect.html">ComObjConnect()</a> to allow the prefix/object to be updated without first disconnecting.</p>
 <p>Improved parsing of continuation sections to allow expressions like <code>(x.y)[z]()</code> without escaping "(".</p>
 <p>Replaced the method used to store script text in 32-bit compiled scripts; now consistent with 64-bit.</p>
 <p>Fixed detection of AltGr in the active window's keyboard layout (on Unicode builds).</p>
@@ -1299,15 +1341,15 @@
 <p><strong><b>New features:</b></strong></p>
 <p><a href="lib/ComObjQuery.html">ComObjQuery</a>: Queries a COM object for an interface or service.</p>
 <p><a href="lib/ComObjFlags.html">ComObjFlags</a>: Retrieves or changes flags which control a COM wrapper object's behaviour.</p>
-<p><a href="lib/ComObjCreate.html">ComObjCreate</a> allows non-dispatch objects to be created if an interface identifier (IID) is given.</p>
+<p><a href="lib/ComObjCreate.html">ComObjCreate()</a> allows non-dispatch objects to be created if an interface identifier (IID) is given.</p>
 <p><a href="lib/ComObjArray.html">COM arrays</a> support for-loops and the Clone() method.</p>
 <p>ListVars shows the inner variant type and value of each COM wrapper object, in addition to the wrapper's address.</p>
 <p><strong><b>Changes:</b></strong></p>
 <p>When a literal integer or variable containing both a numeric string and cached binary integer is assigned to a field of an object, an integer is stored instead of a string. This particularly benefits scripts calling COM methods which accept integers but not strings, or have different behaviour depending on the type of value.</p>
-<p>NULL values are now allowed with ComObjParameter for the VT_UNKNOWN and VT_DISPATCH types.</p>
+<p>NULL values are now allowed with <a href="lib/ComObjActive.html#ComObjParameter">ComObjParameter()</a> for the VT_UNKNOWN and VT_DISPATCH types.</p>
 <p>Improved support for Common Language Runtime (.NET) objects via COM.</p>
 <p>FileRecycle should now warn before deleting a file which is too large to recycle.</p>
-<p>When a SafeArray created with ComObjArray is assigned to an element of another SafeArray, a separate copy is created. This prevents the script from crashing due to a second attempt at "destroying" the array. ComObjFlags allows this behaviour to be avoided.</p>
+<p>When a SafeArray created with <a href="lib/ComObjArray.html">ComObjArray()</a> is assigned to an element of another SafeArray, a separate copy is created. This prevents the script from crashing due to a second attempt at "destroying" the array. <a href="lib/ComObjFlags.html">ComObjFlags()</a> allows this behaviour to be avoided.</p>
 <p><strong><b>Fixes:</b></strong></p>
 <p>Assigning to a COM array of VT_DISPATCH or VT_UNKNOWN crashed the script.</p>
 <p>Break and Continue were tolerated outside of loops in some cases.</p>
@@ -1330,7 +1372,7 @@
 <li>COM wrapper objects left A_LastError unset in some cases.</li>
 <li>Gui submenu icons did not work on Windows 2000/XP/Server 2003.</li>
 <li>SplashImage clipped the image if height &gt; width.</li>
-<li>ComObjConnect did not alert when the first parameter is invalid.</li>
+<li><a href="lib/ComObjConnect.html">ComObjConnect()</a> did not alert when the first parameter is invalid.</li>
 <li>SplashImage now uses GDI+ only when the other methods fail, for compatibility.</li>
 <li>Tilde in <code>~x::</code> now affects <code>x &amp; y::</code> in the same way that <code>~x &amp; z::</code> would, instead of having no effect.</li>
 <li>A_PriorHotkey and A_TimeSincePriorHotkey now have the expected values when used with #If.</li>
@@ -1374,12 +1416,12 @@
 
 <h2 id="v1.0.91.00">1.0.91.00 - December 21, 2010</h2>
 <p><i>All changes in this release are COM-related.</i></p>
-<p>Added: <a href="lib/ComObjError.html">ComObjError</a> now returns the previous setting.</p>
+<p>Added: <a href="lib/ComObjError.html">ComObjError()</a> now returns the previous setting.</p>
 <p>Added: <a href="lib/ComObjType.html">ComObjType(co)</a> and <a href="lib/ComObjValue.html">ComObjValue(co)</a>.</p>
-<p>Added: <a href="lib/ComObjActive.html">ComObjMissing()</a>.</p>
+<p>Added: <a href="lib/ComObjActive.html#ComObjMissing">ComObjMissing()</a>.</p>
 <p>Added: <a href="lib/ComObjArray.html">ComObjArray()</a> and basic SAFEARRAY support.</p>
-<p>Added: "Take ownership" parameter for <a href="lib/ComObjActive.html">ComObjParameter()</a>.</p>
-<p>Changed: Values passed to COM functions via ComObjParameter are no longer freed in the process of calling the function.</p>
+<p>Added: "Take ownership" parameter for <a href="lib/ComObjActive.html#ComObjParameter">ComObjParameter()</a>.</p>
+<p>Changed: Values passed to COM functions via <a href="lib/ComObjActive.html#ComObjParameter">ComObjParameter()</a> are no longer freed in the process of calling the function.</p>
 <p>Changed: <code>ComObj.x()</code> now falls back to PROPERTYGET if member 'x' is not found. This fixes for-loops for some objects.</p>
 <p>Changed: Wrap unhandled variant types in an object rather than returning integer value.</p>
 <p>Changed: Manage VT_UNKNOWN/VT_ARRAY lifetime automatically, by default.</p>
@@ -1420,8 +1462,8 @@
 <p>Changed: RegisterCallback now enables execute access on callbacks in 32-bit builds (already did in 64-bit builds).</p>
 <p>Changed: RegisterCallback now treats explicit ParamCount="" as omitted.</p>
 <p>Fixed: For-loop was treating non-expression "0" as true for scripted enumerators.</p>
-<p>Fixed: ComEvent (ComObjConnect) not working on the ANSI build.</p>
-<p>Fixed: ComEvent (ComObjConnect) not correctly backing up/restoring local vars when calling a function which is already running.</p>
+<p>Fixed: ComEvent (<a href="lib/ComObjConnect.html">ComObjConnect</a>) not working on the ANSI build.</p>
+<p>Fixed: ComEvent (<a href="lib/ComObjConnect.html">ComObjConnect</a>) not correctly backing up/restoring local vars when calling a function which is already running.</p>
 <p>Fixed: Buffer overflow in A_EndChar when there is no end char.</p>
 <p>Fixed: Func-&gt;mNextFunc not inititialized to NULL (used only by LowLevel scripts).</p>
 <p>Debugger: Added the capability to retrieve an object's contents (with a supported debugger client).</p>
@@ -1494,9 +1536,9 @@
   <li><code>File.Read()</code> reads and returns the remainder of the file when used without parameters.</li>
   <li>File object now returns "" for unrecognized methods and invalid syntax rather than the numeric <i>address</i> of "".</li>
 </ul>
-<p>Changed: GroupAdd's Label parameter now applies to the whole group. <a href="https://www.autohotkey.com/forum/topic61362.html">[Discussion]</a></p>
+<p>Changed: GroupAdd's Label parameter now applies to the whole group. <a href="https://www.autohotkey.com/board/topic/56847-">[Discussion]</a></p>
 <p>Changed: GroupActivate sets ErrorLevel on success/failure. (Same thread as above.)</p>
-<p>Changed: <code>*/</code> at the beginning of a line is ignored if there was no <code>/*</code>. <a href="https://www.autohotkey.com/forum/topic61109.html">[Discussion]</a></p>
+<p>Changed: <code>*/</code> at the beginning of a line is ignored if there was no <code>/*</code>. <a href="https://www.autohotkey.com/board/topic/56602-">[Discussion]</a></p>
 <p>Removed ToCodePage and FromCodePage subcommands of Transform.</p>
 
 <h2 id="L53">Revision 53 - August 8, 2010</h2>
@@ -1511,12 +1553,12 @@
 </ul>
 <p><b>COM</b> (<i>changes since AutoHotkey64</i>):</p>
 <ul>
-  <li>Allow ComObjParameter to wrap 64-bit values in 32-bit builds.</li>
-  <li>Implemented more standard ref counting conventions in ComObjActive.</li>
+  <li>Allow <a href="lib/ComObjActive.html#ComObjParameter">ComObjParameter()</a> to wrap 64-bit values in 32-bit builds.</li>
+  <li>Implemented more standard ref counting conventions in <a href="lib/ComObjActive.html">ComObjActive()</a>.</li>
   <li>Prevent extraneous AddRef for new ComObjects in certain cases.</li>
   <li>Don't treat pdispVal==NULL return value from Invoke as an error.</li>
   <li>Fail more predictably when given wrong type of object.</li>
-  <li>Require explicit second param in ComObjType, don't assume "IID".</li>
+  <li>Require explicit second param in <a href="lib/ComObjType.html">ComObjType()</a>, don't assume "IID".</li>
   <li>Free local vars after ComEvent calls a function.</li>
   <li>Remove pVarResult param from ComEvent; use return value instead.</li>
   <li>Pass the original wrapper ComObject in each ComEvent call.</li>
@@ -1545,7 +1587,7 @@
 <p>Fixed: ObjRemove's Key parameter is now optional, as with <a href="lib/Object.html#Remove">Object._Remove</a>.</p>
 <p>Fixed: Files were improperly locked while reading, unlike in older versions.</p>
 <p>Fixed: Uppercase Hex format caused negative integers to become unsigned.</p>
-<p>Fixed: RegExMatch was corrupting output array items when specific conditions were met. See <a href="https://www.autohotkey.com/forum/topic59120.html">bug report</a>.</p>
+<p>Fixed: RegExMatch was corrupting output array items when specific conditions were met. See <a href="https://www.autohotkey.com/board/topic/54719-">bug report</a>.</p>
 
 <h2 id="L51">Revision 51 - April 11, 2010</h2>
 <p>Changed: Use &lt;EXENAME&gt;.ahk instead of AutoHotkey.ini or AutoHotkey.ahk.</p>
@@ -1622,7 +1664,7 @@
 <p>Fixed (Debugger): Error in Base64 decoding used by property_set.</p>
 
 <h2 id="L38">Revision 38 - November 17, 2009</h2>
-<p>Added: <a href="lib/_MenuMaskKey.html">#MenuMaskKey</a> directive to change which key is used to mask Alt/Win keyup events.  See <a href="https://www.autohotkey.com/forum/topic22378.html">this thread</a> for background information.</p>
+<p>Added: <a href="lib/_MenuMaskKey.html">#MenuMaskKey</a> directive to change which key is used to mask Alt/Win keyup events.  See <a href="https://www.autohotkey.com/board/topic/20619-">this thread</a> for background information.</p>
 <p>Changed: If <code>x[1,2]:=3</code> creates an object for <code>x[1]</code>, it's base is no longer automatically set to <code>x.base</code>.  See <a href="Objects.html#Subclassing_aoa">the documentation</a> for a method of controlling this behaviour.</p>
 
 <h2 id="L37">Revision 37 - November 7, 2009</h2>
@@ -1680,13 +1722,13 @@
 <pre>Menu, Icon, MenuItemName, Filename.png,, 0</pre>
 
 <h2 id="L28">Revision 28 - May 2, 2009</h2>
-<p>Improved average-case performance of dynamic function calls by implementing binary search for function name look-ups. This change also applies to other areas, such as load-time resolution of function references in expressions and run-time resolution by OnMessage, RegisterCallback, etc.</p>
+<p>Improved average-case performance of dynamic function calls by implementing binary search for function name look-ups. This change also applies to other areas, such as load-time resolution of function references in expressions and run-time resolution by OnMessage(), RegisterCallback(), etc.</p>
 
 <h2 id="L27">Revision 27 - April 26, 2009</h2>
 <p>Updated from v1.0.48.00 to v1.0.48.02.</p>
 
 <h2 id="L26">Revision 26 - April 11, 2009</h2>
-<p>Fixed: Menu icons were not drawn on items which have sub-menus if owner-drawing was in use.</p>
+<p>Fixed: Menu icons were not drawn on items which have submenus if owner-drawing was in use.</p>
 <p>Fixed: Menu icons were not freed if all menu items were deleted at once.</p>
 <p>Changed (Source): Renamed AutoHotkey.sln to AutoHotkey_L.sln to allow VS window to be identified more easily.</p>
 
@@ -1734,7 +1776,7 @@
 <p>Fixed: Loading of icons from executable files at sizes other than the system small/large.</p>
 
 <h2 id="L16">Revision 16 - February 4, 2009</h2>
-<p>Fixed: Deleting a menu item partially deleted its associated sub-menu.</p>
+<p>Fixed: Deleting a menu item partially deleted its associated submenu.</p>
 
 <h2 id="L15">Revision 15 - February 1, 2009</h2>
 <p>Fixed: SetFormat's presence in a *compiled* script was not disabling binary number write-caching. SetFormat should now work correctly in compiled scripts.</p>
@@ -1788,8 +1830,8 @@
 <p>Fixed: Access Violation caused by WinGetClass and subclassed windows.</p>
 <p>Fixed: Access Violation caused by empty dynamic function references.</p>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"78a0124d693c77b5","version":"2022.11.3","r":1,"token":"5204006f3e8e418e97b0c729c9eb0334","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bdced4b2cbed22b","version":"2024.8.0","r":1,"serverTiming":{"name":{"cfL4":true}},"token":"5204006f3e8e418e97b0c729c9eb0334","b":1}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.autohotkey.com/docs/v1/AHKL_ChangeLog.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jan 2023 16:44:03 GMT -->
+<!-- Mirrored from www.autohotkey.com/docs/v1/AHKL_ChangeLog.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Sep 2024 09:24:22 GMT -->
 </html>
