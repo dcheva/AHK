@@ -6,6 +6,6 @@ for /d %%d in (*.*) DO (
 @echo
 @echo // in "%%d" \\ --------------------------------
 cd "%%d"
-autogit "\"Update origins %date% at %time:~0,2%:%time:~3,2%:%time:~6,2%\""
+autogit "Update-origins-%date%-%TIME: =0%"
 cd ..
 )

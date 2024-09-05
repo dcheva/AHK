@@ -5,6 +5,6 @@ cd "%%d"
 @echo off
 @echo
 @echo // in "%%d" \\ --------------------------------
-autogit-off-line Offline update all
+autogit-off-line "Autogit-off-%date%-%TIME: =0%"
 cd ..
 )

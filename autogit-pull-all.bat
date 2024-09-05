@@ -5,6 +5,6 @@ cd "%%d"
 @echo off
 @echo
 @echo // in "%%d" \\ --------------------------------
-autogit-pull Update all
+autogit-pull "Autogit-pull-%date%-%TIME: =0%"
 cd ..
 )
