@@ -5,8 +5,8 @@ cd "%%d"
 @echo off
 @echo
 @echo // in "%%d" \\ --------------------------------
-@echo "autogit \"Update-remotes-%date%-%time:~0,2%:%time:~3,2%:%time:~6,2%\""
-autogit "\"Update-remotes-%date%-%time:~0,2%:%time:~3,2%:%time:~6,2%\""
+@echo "autogit \"Update-remotes-%TIME: =0%\""
+autogit "\"Update-remotes-%TIME: =0%\""
 autogit bucket
 cd ..
 )
