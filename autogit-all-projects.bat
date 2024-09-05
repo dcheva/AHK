@@ -1,4 +1,3 @@
-@echo off
 cd C:\Projects
 pushd C:\Projects
 for /d %%d in (*.*) DO (
