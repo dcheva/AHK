@@ -2,8 +2,9 @@
 cd .
 for /d %%d in (*.*) DO (
 @echo off
-cd "%%d"
+@echo
 @echo // in "%%d" \\ --------------------------------
-autogit Update all
+cd "%%d"
+autogit "Update origins %date% at %time:~0,2%:%time:~3,2%:%time:~6,2%"
 cd ..
 )
