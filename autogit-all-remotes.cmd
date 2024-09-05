@@ -3,7 +3,7 @@ for /d %%d in (*.*) DO (
 cd "%%d"
 @echo  //
 @echo // in "%%d" \\ --------------------------------
-autogit "\"autogit Update-remotes-%date%-%TIME: =0%\""
+autogit "Update-remotes-%date%-%TIME: =0%"
 autogit bucket
 cd ..
 )
