@@ -6,6 +6,9 @@
 [user]
 	name = "cheva"
 	email = dmitry.cheva@gmail.com
+[user-cheva]
+	name = "cheva"
+	email = dmitry.cheva@gmail.com
 [user-dcheva]
 	name = "Dmytro Cheva"
 	email = dmytro.cheva@gmail.com
