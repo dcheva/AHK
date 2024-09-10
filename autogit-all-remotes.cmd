@@ -4,6 +4,6 @@ cd "%%d"
 @echo  //
 @echo // in "%%d" \\ --------------------------------
 autogit "Update-remotes-%date%-%TIME: =0%"
-autogit bucket
+autogit-bucket
 cd ..
 )
