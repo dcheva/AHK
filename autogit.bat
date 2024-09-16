@@ -1,6 +1,6 @@
 git add -A
 git commit -m "%1 %2 %3 %4 %5 %6 %7 %8 %9"
-git fetch
+git fetch origin
 git merge -X theirs
 git commit -m "merged theirs"
 @echo off
