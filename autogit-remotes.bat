@@ -1,6 +1,4 @@
-echo on
-echo WTF
-autogit "Update-remotes-%date%-%TIME: =0%"
-echo on
-echo WTF
-autogit bucket
+cd .
+pushd .
+start autogit "Update-remotes-%date%-%TIME: =0%"
+start autogit bucket
