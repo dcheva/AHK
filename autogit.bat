@@ -6,7 +6,7 @@ git commit -m "merged theirs"
 @echo off
 @rem ---- command interpretator ----
 IF /I "%1" == "bucket" (
-    git push bucket --all
+    git push -u bucket --all
 ) ELSE (
     git push -u origin --all
 )
