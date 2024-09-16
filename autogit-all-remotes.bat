@@ -1,7 +1,7 @@
 cd .
 for /d %%d in (*.*) DO (
 cd "%%d"
-@echo
+@echo   /__      
 @echo  //
 @echo // in "%%d" \\ --------------------------------
 pushd .
