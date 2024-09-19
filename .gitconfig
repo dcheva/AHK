@@ -4,8 +4,8 @@
 	process = git-lfs filter-process
 	required = true
 [user]
-	name = "cheva"
-	email = dmitry.cheva@gmail.com
+	name = "Dee"
+	email = dee.covan@gmail.com
 [user-cheva]
 	name = "cheva"
 	email = dmitry.cheva@gmail.com
@@ -25,6 +25,5 @@
 [safe]
 	directory = C:/Projects
 	directory = C:/Projects/*
-	directory = C:/Projects/v4-00-cars
-[gui]
-	recentrepo = C:/Projects/v4-00-cars
+[core]
+	editor = C:/Programs/npp/npp.exe
