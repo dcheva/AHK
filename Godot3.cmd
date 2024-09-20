@@ -1,1 +1,1 @@
-start c:\Godot3\Godot_v3.6-rc1\Godot_v3.6-rc1_win64.exe %1
+start C:\Godot3\Godot_v3.6-stable\Godot_v3.6-stable_win64.exe %1
