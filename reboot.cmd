@@ -1,1 +1,1 @@
-pushd C:\Projects && autogit-all && shutdown /r /t 00
+shutdown /r /t 00
