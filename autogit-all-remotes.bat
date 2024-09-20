@@ -14,7 +14,7 @@ cd "%%d"
 @echo // in "%%d" \\ --------------------------------
 cd %%d
 pushd .
-start autogit bucket "Update-remotes-%date%-%TIME: =0%"
+start autogit bucket Update-remotes-%date%-%TIME: =0%
 cd ..
 pushd .
 )
