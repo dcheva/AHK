@@ -2035,14 +2035,14 @@
     {
       "symbol": "GAME_MENU_UI_STATIC->SAVE",
       "original": "Save",
-      "translation": "зберегти",
+      "translation": "Зберегти",
       "priority": 0,
       "reviewed": false
     },
     {
       "symbol": "GAME_MENU_UI_STATIC->LOAD",
       "original": "Load",
-      "translation": "навантаження",
+      "translation": "Завантажити",
       "priority": 0,
       "reviewed": false
     },
