@@ -2644,7 +2644,7 @@
     {
       "symbol": "SAVES->SAVE_BLOCK_COMBAT",
       "original": "Cannot save while enemies near",
-      "translation": "Неможливо зберегти, поки вороги поруч",
+      "translation": "Неможливо зберегти, доки вороги поруч",
       "priority": 0,
       "reviewed": false
     },
@@ -7460,7 +7460,7 @@
     {
       "symbol": "ARRIVAL->CONVO->PLAYER_DOLSON_HISTORY->DIALOGUE->11_PC",
       "original": "All for now.",
-      "translation": "Все поки.",
+      "translation": "Наразі все.",
       "priority": 0,
       "reviewed": false
     },
@@ -7922,7 +7922,7 @@
     {
       "symbol": "ARRIVAL->CONVO->YU_GATEWAY->DIALOGUE->4_PC",
       "original": "We're on it.",
-      "translation": "Ми на цьому.",
+      "translation": "Погоджуюсь.",
       "priority": 0,
       "reviewed": false
     },
