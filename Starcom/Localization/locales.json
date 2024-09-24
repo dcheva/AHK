@@ -1,0 +1,34 @@
+[
+  {
+    "code": "en-us",
+    "language": "English (Default)"
+  },
+  {
+    "code": "uk",
+    "language": "Ukrainean"
+  },
+  {
+    "code": "es",
+    "language": "Española"
+  },
+  {
+    "code": "fr",
+    "language": "Français"
+  },
+  {
+    "code": "pl",
+	"language": "Polski"
+  },
+  {
+    "code": "pt-BR",
+	"language": "Portugues (BR)"
+  },
+  {
+    "code": "pseudo",
+	"language": "Progent-A"
+  },
+  {
+    "code": "tr",
+	"language": "Türkçe"
+  }
+]
